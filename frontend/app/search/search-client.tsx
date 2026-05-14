@@ -8,6 +8,7 @@ import { RelocationMap } from "@/components/map/relocation-map";
 import { PropertyCard } from "@/components/property/property-card";
 import { Card } from "@/components/ui/card";
 import { useSearchStore } from "@/store/search-store";
+import styles from "./search-client.module.css";
 
 export function SearchClient() {
   const { response, runSearch } = useSearchStore();
@@ -17,21 +18,21 @@ export function SearchClient() {
   }, [response, runSearch]);
 
   return (
-    <div className="grid gap-5 lg:grid-cols-[250px_minmax(0,1fr)_390px]">
+    <div className={styles.layout}>
       <FilterSidebar />
-      <section className="space-y-4">
-        <Card className="p-4">
+      <section className={styles.workspace}>
+        <Card className={styles.searchCard}>
           <SearchBox />
         </Card>
         <RelocationMap />
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className={styles.propertyGrid}>
           {(response?.properties ?? []).map((property, index) => (
             <PropertyCard key={property._id} property={property} index={index} />
           ))}
         </div>
       </section>
-      <aside className="space-y-3">
-        <h2 className="font-semibold">AI ranking</h2>
+      <aside className={styles.ranking}>
+        <h2 className={styles.rankingTitle}>AI ranking</h2>
         <RecommendationList />
       </aside>
     </div>

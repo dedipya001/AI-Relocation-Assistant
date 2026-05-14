@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Building2, MapPinned, MessageSquareText, Scale } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import styles from "./nav.module.css";
 
 const links = [
   { href: "/search", label: "Search", icon: MapPinned },
@@ -10,15 +11,15 @@ const links = [
 
 export function Nav() {
   return (
-    <header className="sticky top-0 z-20 border-b border-border bg-background/88 backdrop-blur">
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
-        <Link href="/" className="flex items-center gap-2 font-semibold">
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-white">
+    <header className={styles.header}>
+      <div className={styles.inner}>
+        <Link href="/" className={styles.brand}>
+          <span className={styles.brandMark}>
             <Building2 size={18} />
           </span>
           Relocation AI
         </Link>
-        <nav className="hidden items-center gap-2 md:flex">
+        <nav className={styles.links}>
           {links.map((link) => (
             <Button key={link.href} asChild variant="ghost" size="sm">
               <Link href={link.href}>

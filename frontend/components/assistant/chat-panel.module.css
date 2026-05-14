@@ -1,0 +1,69 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  min-height: 620px;
+  padding: 1rem;
+}
+
+.messages {
+  display: grid;
+  flex: 1;
+  align-content: start;
+  gap: 0.75rem;
+  overflow-y: auto;
+  padding-right: 0.25rem;
+}
+
+.messageRow {
+  display: flex;
+}
+
+.fromUser {
+  justify-content: flex-end;
+}
+
+.fromAssistant {
+  justify-content: flex-start;
+}
+
+.bubble {
+  max-width: 82%;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.userBubble {
+  background: hsl(var(--primary));
+  color: white;
+}
+
+.assistantBubble,
+.loading {
+  background: hsl(var(--muted));
+  color: hsl(var(--foreground));
+}
+
+.loading {
+  width: max-content;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+.form {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 640px) {
+  .panel {
+    min-height: 540px;
+  }
+
+  .bubble {
+    max-width: 92%;
+  }
+}

@@ -1,11 +1,12 @@
 import { Nav } from "@/components/nav";
 import { SearchClient } from "./search-client";
+import styles from "./page.module.css";
 
 export default function SearchPage() {
   return (
     <>
       <Nav />
-      <main className="mx-auto max-w-7xl px-4 py-6">
+      <main className={styles.main}>
         <SearchClient />
       </main>
     </>

@@ -1,0 +1,112 @@
+.mapCard {
+  position: relative;
+  min-height: 520px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 20% 20%, hsl(49 83% 84% / 0.55), transparent 28%),
+    linear-gradient(135deg, hsl(154 28% 92%), hsl(200 34% 92%));
+}
+
+.mapCanvas,
+.grid {
+  position: absolute;
+  inset: 0;
+}
+
+.grid {
+  background-image:
+    linear-gradient(hsl(191 42% 21% / 0.18) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(191 42% 21% / 0.18) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+
+.office {
+  position: absolute;
+  top: 38%;
+  left: 42%;
+  border-radius: 0.5rem;
+  background: white;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  box-shadow: 0 18px 60px hsl(207 18% 13% / 0.12);
+}
+
+.pin {
+  position: absolute;
+}
+
+.newTown {
+  top: 34%;
+  left: 60%;
+}
+
+.sectorV {
+  top: 32%;
+  left: 35%;
+}
+
+.lakeTown {
+  top: 48%;
+  left: 25%;
+}
+
+.pinBody {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transform: translate(-50%, -50%);
+  border-radius: 0.5rem;
+  background: white;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  box-shadow: 0 18px 60px hsl(207 18% 13% / 0.12);
+}
+
+.pinIcon {
+  color: hsl(var(--accent));
+}
+
+.score {
+  border-radius: 0.25rem;
+  background: hsl(var(--primary));
+  padding: 0.125rem 0.375rem;
+  color: white;
+  font-size: 0.75rem;
+}
+
+.legend {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  border: 1px solid hsl(var(--border));
+  border-radius: 0.5rem;
+  background: hsl(0 0% 100% / 0.9);
+  padding: 0.75rem;
+  backdrop-filter: blur(12px);
+}
+
+.legendTitle {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.legendText {
+  margin-top: 0.25rem;
+  color: hsl(var(--foreground) / 0.6);
+  font-size: 0.75rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 640px) {
+  .mapCard {
+    min-height: 420px;
+  }
+
+  .pinBody,
+  .office {
+    font-size: 0.75rem;
+  }
+}

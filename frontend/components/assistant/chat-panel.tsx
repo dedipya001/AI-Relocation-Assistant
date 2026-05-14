@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { api } from "@/lib/api";
+import styles from "./chat-panel.module.css";
 
 type Message = { role: "user" | "assistant"; content: string };
 
@@ -32,18 +33,18 @@ export function ChatPanel() {
   }
 
   return (
-    <Card className="flex min-h-[620px] flex-col p-4">
-      <div className="flex-1 space-y-3 overflow-y-auto pr-1">
+    <Card className={styles.panel}>
+      <div className={styles.messages}>
         {messages.map((message, index) => (
-          <div key={index} className={message.role === "user" ? "flex justify-end" : "flex justify-start"}>
-            <div className={`max-w-[82%] rounded-lg px-3 py-2 text-sm leading-6 ${message.role === "user" ? "bg-primary text-white" : "bg-muted"}`}>
+          <div key={index} className={`${styles.messageRow} ${message.role === "user" ? styles.fromUser : styles.fromAssistant}`}>
+            <div className={`${styles.bubble} ${message.role === "user" ? styles.userBubble : styles.assistantBubble}`}>
               {message.content}
             </div>
           </div>
         ))}
-        {isLoading && <div className="rounded-lg bg-muted px-3 py-2 text-sm">Thinking through tradeoffs...</div>}
+        {isLoading && <div className={styles.loading}>Thinking through tradeoffs...</div>}
       </div>
-      <form onSubmit={onSubmit} className="mt-4 flex gap-2">
+      <form onSubmit={onSubmit} className={styles.form}>
         <Input value={input} onChange={(event) => setInput(event.target.value)} aria-label="Assistant message" />
         <Button type="submit" size="icon" aria-label="Send">
           <SendHorizonal size={18} />

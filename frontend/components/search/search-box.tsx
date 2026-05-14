@@ -5,6 +5,7 @@ import { Search, SlidersHorizontal } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { useSearchStore } from "@/store/search-store";
+import styles from "./search-box.module.css";
 
 export function SearchBox() {
   const { query, setQuery, runSearch, isLoading } = useSearchStore();
@@ -15,9 +16,9 @@ export function SearchBox() {
   }
 
   return (
-    <form onSubmit={onSubmit} className="space-y-3">
+    <form onSubmit={onSubmit} className={styles.form}>
       <Textarea value={query} onChange={(event) => setQuery(event.target.value)} aria-label="AI relocation prompt" />
-      <div className="flex flex-wrap gap-2">
+      <div className={styles.actions}>
         <Button type="submit" disabled={isLoading}>
           <Search size={17} />
           {isLoading ? "Thinking" : "Find best areas"}

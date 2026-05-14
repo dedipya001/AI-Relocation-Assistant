@@ -1,0 +1,44 @@
+.main {
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 750;
+}
+
+.tableCard {
+  margin-top: 1rem;
+  overflow: hidden;
+}
+
+.row,
+.head {
+  display: grid;
+  grid-template-columns: 1.2fr 0.7fr 0.8fr 0.9fr 0.8fr 1.7fr;
+  min-width: 780px;
+  gap: 0.75rem;
+  padding: 1rem;
+  font-size: 0.875rem;
+}
+
+.head {
+  border-bottom: 1px solid hsl(var(--border));
+  background: hsl(var(--muted));
+  font-weight: 700;
+}
+
+.row:nth-child(odd) {
+  background: white;
+}
+
+.row:nth-child(even) {
+  background: hsl(var(--background));
+}
+
+.scroll {
+  overflow-x: auto;
+}

@@ -15,15 +15,32 @@
   box-sizing: border-box;
 }
 
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+
 body {
   background: hsl(var(--background));
   color: hsl(var(--foreground));
   letter-spacing: 0;
+  margin: 0;
 }
 
-.map-grid {
-  background-image:
-    linear-gradient(rgba(31, 68, 77, 0.18) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(31, 68, 77, 0.18) 1px, transparent 1px);
-  background-size: 42px 42px;
+a {
+  color: inherit;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: hsl(var(--accent) / 0.22);
+}
+
+img {
+  max-width: 100%;
 }

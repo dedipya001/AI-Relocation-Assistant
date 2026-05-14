@@ -4,6 +4,7 @@ import { Nav } from "@/components/nav";
 import { Card } from "@/components/ui/card";
 import { api } from "@/lib/api";
 import { formatRent } from "@/lib/utils";
+import styles from "./page.module.css";
 
 export default async function PropertyPage({ params }: { params: { id: string } }) {
   let property;
@@ -16,26 +17,26 @@ export default async function PropertyPage({ params }: { params: { id: string } 
   return (
     <>
       <Nav />
-      <main className="mx-auto max-w-5xl px-4 py-6">
-        <div className="grid gap-5 lg:grid-cols-[1fr_320px]">
+      <main className={styles.main}>
+        <div className={styles.layout}>
           <section>
-            <div className="h-72 rounded-lg bg-[url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1400&q=80')] bg-cover bg-center" />
-            <h1 className="mt-5 text-3xl font-semibold">{property.title}</h1>
-            <p className="mt-2 text-foreground/65">{property.property_type} · {property.furnishing ?? "furnishing varies"}</p>
-            <div className="mt-4 flex flex-wrap gap-2">
+            <div className={styles.heroImage} />
+            <h1 className={styles.title}>{property.title}</h1>
+            <p className={styles.meta}>{property.property_type} - {property.furnishing ?? "furnishing varies"}</p>
+            <div className={styles.amenities}>
               {property.amenities.map((amenity) => (
-                <span key={amenity} className="rounded-lg bg-muted px-3 py-1 text-sm font-medium">
+                <span key={amenity} className={styles.amenity}>
                   {amenity}
                 </span>
               ))}
             </div>
           </section>
-          <aside className="space-y-3">
-            <Card className="p-4">
-              <p className="text-2xl font-semibold">{formatRent(property.rent)}</p>
-              <p className="text-sm text-foreground/60">listed rent per month</p>
+          <aside className={styles.sidebar}>
+            <Card className={styles.priceCard}>
+              <p className={styles.price}>{formatRent(property.rent)}</p>
+              <p className={styles.priceLabel}>listed rent per month</p>
               {property.lowest_price && (
-                <p className="mt-3 rounded-lg bg-muted p-3 text-sm text-primary">
+                <p className={styles.lowestPrice}>
                   Lowest price found online: {formatRent(property.lowest_price.rent)} on {property.lowest_price.source}
                 </p>
               )}
@@ -53,11 +54,11 @@ export default async function PropertyPage({ params }: { params: { id: string } 
 
 function Metric({ icon: Icon, label, value }: { icon: typeof Clock; label: string; value: string }) {
   return (
-    <Card className="flex items-center gap-3 p-4">
-      <Icon size={18} className="text-primary" />
+    <Card className={styles.metric}>
+      <Icon size={18} className={styles.metricIcon} />
       <div>
-        <p className="text-sm text-foreground/55">{label}</p>
-        <p className="font-semibold">{value}</p>
+        <p className={styles.metricLabel}>{label}</p>
+        <p className={styles.metricValue}>{value}</p>
       </div>
     </Card>
   );
