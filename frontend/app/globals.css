@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 42 34% 97%;
+  --foreground: 207 18% 13%;
+  --muted: 198 14% 90%;
+  --border: 204 16% 84%;
+  --primary: 176 58% 30%;
+  --accent: 7 78% 62%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  letter-spacing: 0;
+}
+
+.map-grid {
+  background-image:
+    linear-gradient(rgba(31, 68, 77, 0.18) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(31, 68, 77, 0.18) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
