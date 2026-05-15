@@ -24,9 +24,16 @@ class GeoPoint(BaseModel):
 
 
 class SourcePlatform(str, Enum):
+    openstreetmap = "OpenStreetMap"
+    mapbox = "Mapbox Search"
     housing = "Housing"
     magicbricks = "MagicBricks"
     acres99 = "99acres"
+    nobroker = "NoBroker"
+    broker_crm = "Broker CRM"
+    rera = "RERA"
+    apify = "Apify"
+    brightdata = "BrightData"
     facebook = "Facebook"
     telegram = "Telegram"
     broker = "Local Broker"

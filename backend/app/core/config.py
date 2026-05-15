@@ -26,6 +26,17 @@ class Settings(BaseSettings):
     GOOGLE_MAPS_API_KEY: str | None = None
     MAPBOX_ACCESS_TOKEN: str | None = None
 
+    APIFY_TOKEN: str | None = None
+    APIFY_MAGICBRICKS_ACTOR_ID: str | None = None
+    APIFY_99ACRES_ACTOR_ID: str | None = None
+    APIFY_NOBROKER_ACTOR_ID: str | None = None
+    BRIGHTDATA_API_KEY: str | None = None
+    BRIGHTDATA_MAGICBRICKS_DATASET_ID: str | None = None
+    BRIGHTDATA_99ACRES_DATASET_ID: str | None = None
+    BRIGHTDATA_NOBROKER_DATASET_ID: str | None = None
+    BROKER_CRM_FEED_URL: str | None = None
+    RERA_FEED_URL: str | None = None
+
     RATE_LIMIT_PER_MINUTE: int = 60
     SCRAPER_USER_AGENT: str = "RelocationAIResearchBot/0.1"
     SCRAPER_PROXY_URL: str | None = None

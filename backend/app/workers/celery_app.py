@@ -10,3 +10,11 @@ celery_app = Celery(
 )
 
 celery_app.conf.update(task_track_started=True, task_serializer="json", result_serializer="json", accept_content=["json"])
+
+celery_app.conf.beat_schedule = {
+    "daily-property-scrape-kolkata": {
+        "task": "scrape.properties.daily",
+        "schedule": 24 * 60 * 60,
+        "args": ("Kolkata",),
+    }
+}

@@ -31,6 +31,7 @@ export type Property = {
   furnishing?: string;
   images: string[];
   amenities: string[];
+  location?: { type: "Point"; coordinates: [number, number] };
   locality_id: string;
   nearby_metro?: string;
   commute_estimate_minutes?: number;

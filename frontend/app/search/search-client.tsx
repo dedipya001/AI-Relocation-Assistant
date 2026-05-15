@@ -24,7 +24,7 @@ export function SearchClient() {
         <Card className={styles.searchCard}>
           <SearchBox />
         </Card>
-        <RelocationMap />
+        <RelocationMap properties={response?.properties} />
         <div className={styles.propertyGrid}>
           {(response?.properties ?? []).map((property, index) => (
             <PropertyCard key={property._id} property={property} index={index} />

@@ -40,6 +40,11 @@ Open:
 
 ## Run Locally
 
+Prerequisites for non-Docker mode:
+
+- MongoDB running on localhost:27017
+- Redis running on localhost:6379
+
 Backend:
 
 ```bash
@@ -58,6 +63,44 @@ npm install
 npm run dev
 ```
 
+## Housing.com Ingestion Script
+
+Populate MongoDB listings using Playwright network interception (JSON API responses):
+
+```bash
+python scripts/populatePropertyData.py --city "Kolkata"
+```
+
+Useful flags:
+
+- `--search-url "https://housing.com/in/rent/kolkata"` (repeatable)
+- `--search-url "https://housing.com/in/rent/kolkata?page={page}" --max-pages 5`
+- `--headful` for debugging browser behavior
+- `--dry-run` to validate extraction without writing to MongoDB
+- `--no-deactivate-stale` to skip stale listing deactivation
+- `--storage-state backend/scripts/housing_storage_state.json` to reuse a trusted browser session
+
+If Housing serves a security/bot challenge, capture storage state once:
+
+```bash
+python backend/scripts/capture_housing_storage_state.py --output backend/scripts/housing_storage_state.json
+python scripts/populatePropertyData.py --city "Kolkata" --storage-state backend/scripts/housing_storage_state.json
+```
+
+Cron example (Linux):
+
+```bash
+0 */6 * * * cd /path/to/repo && /path/to/python scripts/populatePropertyData.py --city "Kolkata" >> /var/log/housing_ingest.log 2>&1
+```
+
+Windows Task Scheduler action example:
+
+```text
+Program/script: C:\path\to\python.exe
+Add arguments: scripts\populatePropertyData.py --city "Kolkata"
+Start in: C:\path\to\AI relocation Assistant
+```
+
 ## Environment
 
 Copy the example files and fill keys as needed:
@@ -68,12 +111,29 @@ copy backend\.env.example backend\.env
 copy frontend\.env.example frontend\.env.local
 ```
 
+Note:
+
+- `backend/.env.example` is configured for local services (`localhost`).
+- `docker-compose.yml` still injects Docker service hostnames (`mongo`, `redis`) when you run with Docker.
+
 Important keys:
 
 - `OPENAI_API_KEY`
 - `GOOGLE_MAPS_API_KEY`
 - `MAPBOX_ACCESS_TOKEN`
 - `NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN`
+
+The local frontend env already includes the Mapbox public token provided for development.
+
+## Free/Open APIs Used First
+
+- Mapbox GL JS for the interactive property map.
+- OpenStreetMap Nominatim for India locality geocoding.
+- OpenStreetMap Overpass API for early hostel/residential/apartment map leads.
+- MagicBricks, 99acres, NoBroker, and Broker CRM adapters for the listings layer.
+- Apify, BrightData, scheduled Playwright, and partner feed hooks for ingestion.
+
+See [docs/API_PROVIDERS.md](docs/API_PROVIDERS.md) for provider notes and caveats.
 
 ## MVP Phases
 

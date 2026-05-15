@@ -13,7 +13,12 @@
   inset: 0;
 }
 
+.mapCanvas {
+  z-index: 0;
+}
+
 .grid {
+  z-index: 1;
   background-image:
     linear-gradient(hsl(191 42% 21% / 0.18) 1px, transparent 1px),
     linear-gradient(90deg, hsl(191 42% 21% / 0.18) 1px, transparent 1px);
@@ -22,6 +27,7 @@
 
 .office {
   position: absolute;
+  z-index: 2;
   top: 38%;
   left: 42%;
   border-radius: 0.5rem;
@@ -34,6 +40,7 @@
 
 .pin {
   position: absolute;
+  z-index: 2;
 }
 
 .newTown {
@@ -78,6 +85,7 @@
 
 .legend {
   position: absolute;
+  z-index: 4;
   right: 1rem;
   bottom: 1rem;
   left: 1rem;
@@ -89,6 +97,9 @@
 }
 
 .legendTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
   font-size: 0.875rem;
   font-weight: 700;
 }
@@ -98,6 +109,130 @@
   color: hsl(var(--foreground) / 0.6);
   font-size: 0.75rem;
   line-height: 1.45;
+}
+
+.propertyMarker {
+  position: relative;
+  border: 0;
+  border-radius: 999px;
+  background: hsl(var(--accent));
+  color: white;
+  cursor: pointer;
+  font-size: 0.8125rem;
+  font-weight: 800;
+  padding: 0.45rem 0.7rem;
+  box-shadow:
+    0 10px 28px hsl(7 78% 35% / 0.28),
+    0 0 0 6px hsl(7 78% 62% / 0.16);
+  transform: translateY(0);
+  animation: markerFloat 2.6s ease-in-out infinite;
+}
+
+.propertyMarker::after {
+  position: absolute;
+  right: 50%;
+  bottom: -0.38rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  content: "";
+  background: hsl(var(--accent));
+  transform: translateX(50%) rotate(45deg);
+}
+
+.propertyMarker:hover,
+.activeMarker {
+  background: hsl(var(--primary));
+  box-shadow:
+    0 14px 34px hsl(176 58% 20% / 0.3),
+    0 0 0 8px hsl(176 58% 30% / 0.16);
+}
+
+.propertyMarker:hover::after,
+.activeMarker::after {
+  background: hsl(var(--primary));
+}
+
+.officeMarker {
+  border-radius: 999px;
+  background: hsl(var(--foreground));
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 0.45rem 0.7rem;
+  box-shadow: 0 12px 28px hsl(207 18% 13% / 0.28);
+}
+
+.popup :global(.mapboxgl-popup-content) {
+  overflow: hidden;
+  border-radius: 0.75rem;
+  padding: 0;
+  box-shadow: 0 20px 60px hsl(207 18% 13% / 0.22);
+}
+
+.popup :global(.mapboxgl-popup-close-button) {
+  width: 1.75rem;
+  height: 1.75rem;
+  color: hsl(var(--foreground));
+  font-size: 1.25rem;
+}
+
+.popup :global(.property-popup) {
+  min-width: 220px;
+  padding: 0.9rem;
+}
+
+.popup :global(.property-popup__eyebrow) {
+  color: hsl(var(--primary));
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.popup :global(.property-popup h3) {
+  margin: 0.25rem 0 0;
+  color: hsl(var(--foreground));
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+
+.popup :global(.property-popup__rent) {
+  margin-top: 0.55rem;
+  color: hsl(var(--accent));
+  font-size: 1.05rem;
+  font-weight: 850;
+}
+
+.popup :global(.property-popup__rent span) {
+  color: hsl(var(--foreground) / 0.56);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.popup :global(.property-popup p) {
+  margin: 0.4rem 0 0;
+  color: hsl(var(--foreground) / 0.64);
+  font-size: 0.8rem;
+}
+
+.popup :global(.property-popup strong) {
+  display: block;
+  margin-top: 0.55rem;
+  border-radius: 0.5rem;
+  background: hsl(var(--muted));
+  color: hsl(var(--primary));
+  padding: 0.45rem 0.55rem;
+  font-size: 0.78rem;
+}
+
+@keyframes markerFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
 }
 
 @media (max-width: 640px) {

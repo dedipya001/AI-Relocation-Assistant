@@ -25,6 +25,19 @@ export const api = {
       body: JSON.stringify({ query })
     }).catch(() => demoSearchResponse(query)),
   listProperties: () => request<Property[]>("/properties").catch(() => demoProperties),
+  aggregateProperties: (place = "Sector V Kolkata", sources = ["magicbricks", "99acres", "nobroker", "broker_crm"]) => {
+    const params = new URLSearchParams({ place });
+    sources.forEach((source) => params.append("sources", source));
+    return request<Property[]>(`/properties/aggregate?${params.toString()}`).catch(() => demoProperties);
+  },
+  listAggregateSources: () =>
+    request<Array<{ id: string; name: string; role: string; ingestion_methods: string[]; status: string; note: string }>>("/properties/aggregate/sources"),
+  listOpenDataProperties: (place = "Sector V Kolkata", sources = ["osm", "mapbox"]) => {
+    const params = new URLSearchParams({ place });
+    sources.forEach((source) => params.append("sources", source));
+    return request<Property[]>(`/properties/open-data?${params.toString()}`).catch(() => demoProperties);
+  },
+  listPropertySources: () => request<Array<{ id: string; name: string; kind: string; note: string }>>("/properties/open-data/sources"),
   getProperty: (id: string) =>
     request<Property>(`/properties/${id}`).catch(() => demoProperties.find((property) => property._id === id) ?? demoProperties[0]),
   listLocalities: () => request<Locality[]>("/localities").catch(() => demoLocalities),
