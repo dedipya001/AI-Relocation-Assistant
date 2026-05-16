@@ -1,5 +1,6 @@
 import asyncio
 import hashlib
+import os
 from math import cos, radians
 from typing import Any, Protocol
 
@@ -15,7 +16,7 @@ logger = structlog.get_logger(__name__)
 NOMINATIM_URL = "https://nominatim.openstreetmap.org/search"
 OVERPASS_URL = "https://overpass-api.de/api/interpreter"
 MAPBOX_GEOCODING_URL = "https://api.mapbox.com/geocoding/v5/mapbox.places"
-DEFAULT_MAPBOX_PUBLIC_TOKEN = "YOUR_MAPBOX_TOKEN_HERE"
+DEFAULT_MAPBOX_PUBLIC_TOKEN = os.getenv("MAPBOX_ACCESS_TOKEN", "")
 
 
 class PropertyLeadProvider(Protocol):

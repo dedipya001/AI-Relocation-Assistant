@@ -17,9 +17,7 @@ type RelocationMapProps = {
 type OverlayKey = "cafe" | "transit";
 
 const DEFAULT_OFFICE: [number, number] = [88.4335, 22.5762];
-const MAPBOX_TOKEN =
-  process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN ??
-  "YOUR_MAPBOX_TOKEN_HERE";
+const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN ?? "";
 
 let mapboxglCache: typeof import("mapbox-gl") | null = null;
 
