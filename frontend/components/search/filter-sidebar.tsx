@@ -13,7 +13,7 @@ const filters = [
 export function FilterSidebar() {
   return (
     <aside className={styles.sidebar}>
-      <h2 className={styles.heading}>Quick filters</h2>
+      <h2 className={styles.heading}>Lifestyle signals</h2>
       {filters.map((filter) => (
         <Card key={filter.label} className={styles.filter}>
           <span className={styles.iconBox}>

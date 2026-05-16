@@ -2,9 +2,9 @@
   position: sticky;
   top: 0;
   z-index: 20;
-  border-bottom: 1px solid hsl(var(--border));
-  background: hsl(var(--background) / 0.88);
-  backdrop-filter: blur(14px);
+  border-bottom: 1px solid hsl(215 14% 90%);
+  background: hsl(40 28% 97% / 0.88);
+  backdrop-filter: blur(16px);
 }
 
 .inner {

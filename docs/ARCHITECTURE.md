@@ -22,7 +22,6 @@
 │   ├── app/workers/          # Celery background tasks
 │   └── scripts/              # Seed and maintenance scripts
 ├── docs/                     # Architecture notes
-├── docker-compose.yml
 └── .env.example
 ```
 
@@ -86,7 +85,7 @@ Collections:
 
 ## 8. Initial Implementation Plan
 
-1. Foundation architecture, typed schemas, API routes, UI shell, Docker.
+1. Foundation architecture, typed schemas, API routes, UI shell.
 2. Replace heuristic intent parsing with OpenAI structured outputs.
 3. Add Google Maps/Mapbox commute adapters and cache responses.
 4. Implement source adapters for authorized marketplace feeds and community submissions.
@@ -96,11 +95,11 @@ Collections:
 
 ## 9. Starter Boilerplate Code
 
-The starter code is committed in `frontend/` and `backend/`. Run it locally with Docker or separate frontend/backend commands.
+The starter code is committed in `frontend/` and `backend/`. Run it locally with separate frontend/backend commands.
 
-## 10. Docker Setup
+## 10. Local Setup
 
-`docker-compose.yml` starts MongoDB, Redis, FastAPI, Celery worker, and Next.js.
+Run MongoDB and Redis locally, then run backend and frontend development servers.
 
 ## 11. Environment Variable Setup
 

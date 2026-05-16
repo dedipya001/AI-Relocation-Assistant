@@ -1,34 +1,41 @@
 .sidebar {
-  display: grid;
-  align-content: start;
-  gap: 0.75rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.45rem;
 }
 
 .heading {
+  margin: 0;
   color: hsl(var(--foreground) / 0.6);
-  font-size: 0.875rem;
+  font-size: 0.72rem;
   font-weight: 700;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
+  width: 100%;
 }
 
 .filter {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  padding: 0.75rem;
+  gap: 0.42rem;
+  border-radius: 999px;
+  padding: 0.3rem 0.58rem;
+  background: hsl(0 0% 100% / 0.82);
 }
 
 .iconBox {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.25rem;
-  height: 2.25rem;
-  border-radius: 0.5rem;
-  background: hsl(var(--muted));
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 999px;
+  background: hsl(var(--primary) / 0.11);
+  color: hsl(var(--primary));
 }
 
 .label {
-  font-size: 0.875rem;
-  font-weight: 600;
+  font-size: 0.74rem;
+  font-weight: 640;
 }

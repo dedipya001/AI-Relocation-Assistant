@@ -57,5 +57,9 @@ class IntentParser:
         return amount * 1000 if amount < 1000 else amount
 
     def _extract_office_location(self, query: str) -> str | None:
-        match = re.search(r"(?:work in|office in|near)\s+([A-Za-z0-9 ,.-]+?)(?:,| under| with| budget|$)", query, re.I)
+        match = re.search(
+            r"(?:work in|office in|near)\s+([A-Za-z0-9 ,.-]+?)(?:,| under| with| budget| for | so that | because |$)",
+            query,
+            re.I,
+        )
         return match.group(1).strip() if match else None

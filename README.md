@@ -9,7 +9,7 @@ The product combines natural-language search, locality intelligence, aggregated 
 - Frontend: Next.js App Router, React, TypeScript, Tailwind CSS, shadcn-style UI primitives, Zustand, Framer Motion, Mapbox-ready map layer
 - Backend: FastAPI, MongoDB, Motor, Redis, Celery
 - AI: OpenAI API, RAG-ready locality summaries, recommendation engine
-- Infrastructure: Docker, Docker Compose, environment-based config
+- Infrastructure: local environment-based config
 
 ## Current Foundation
 
@@ -18,25 +18,6 @@ The product combines natural-language search, locality intelligence, aggregated 
 - API routes for search, properties, localities, commute, feedback, assistant
 - Seed data for Sector V, New Town, and Lake Town
 - Next.js pages for landing, search, assistant, compare, property detail, locality detail
-- Docker Compose for MongoDB, Redis, API, worker, frontend
-
-## Run With Docker
-
-```bash
-docker compose up --build
-```
-
-Seed the database:
-
-```bash
-docker compose exec backend python scripts/seed.py
-```
-
-Open:
-
-- Frontend: http://localhost:3000
-- Backend health: http://localhost:8000/health
-- API docs: http://localhost:8000/docs
 
 ## Run Locally
 
@@ -68,7 +49,7 @@ npm run dev
 Populate MongoDB listings using Playwright network interception (JSON API responses):
 
 ```bash
-python scripts/populatePropertyData.py --city "Kolkata"
+python backend/scripts/populatePropertyData.py --city "Kolkata"
 ```
 
 Useful flags:
@@ -84,20 +65,20 @@ If Housing serves a security/bot challenge, capture storage state once:
 
 ```bash
 python backend/scripts/capture_housing_storage_state.py --output backend/scripts/housing_storage_state.json
-python scripts/populatePropertyData.py --city "Kolkata" --storage-state backend/scripts/housing_storage_state.json
+python backend/scripts/populatePropertyData.py --city "Kolkata" --storage-state backend/scripts/housing_storage_state.json
 ```
 
 Cron example (Linux):
 
 ```bash
-0 */6 * * * cd /path/to/repo && /path/to/python scripts/populatePropertyData.py --city "Kolkata" >> /var/log/housing_ingest.log 2>&1
+0 */6 * * * cd /path/to/repo && /path/to/python backend/scripts/populatePropertyData.py --city "Kolkata" >> /var/log/housing_ingest.log 2>&1
 ```
 
 Windows Task Scheduler action example:
 
 ```text
 Program/script: C:\path\to\python.exe
-Add arguments: scripts\populatePropertyData.py --city "Kolkata"
+Add arguments: backend\scripts\populatePropertyData.py --city "Kolkata"
 Start in: C:\path\to\AI relocation Assistant
 ```
 
@@ -114,7 +95,6 @@ copy frontend\.env.example frontend\.env.local
 Note:
 
 - `backend/.env.example` is configured for local services (`localhost`).
-- `docker-compose.yml` still injects Docker service hostnames (`mongo`, `redis`) when you run with Docker.
 
 Important keys:
 

@@ -1,68 +1,162 @@
-import Image from "next/image";
-import Link from "next/link";
-import { Clock, ExternalLink, MapPin, Sparkles } from "lucide-react";
-import { Card } from "@/components/ui/card";
-import { formatRent } from "@/lib/utils";
+"use client";
+
+import { motion } from "framer-motion";
+import { Clock, MapPin } from "lucide-react";
 import type { Property } from "@/types";
 import styles from "./property-card.module.css";
 
-const fallbackImages = [
-  "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=900&q=80",
-  "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
-  "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=900&q=80"
-];
+interface PropertyCardProps {
+  property: Property;
+  index?: number;
+  isActive?: boolean;
+  onClick?: () => void;
+}
 
-export function PropertyCard({ property, index = 0 }: { property: Property; index?: number }) {
-  const lowest = property.lowest_price;
+/* Map raw amenity strings to compact display labels */
+const AMENITY_LABELS: Record<string, string> = {
+  "high-speed internet":  "WiFi",
+  internet:               "WiFi",
+  wifi:                   "WiFi",
+  gym:                    "Gym",
+  metro:                  "Metro",
+  parking:                "Parking",
+  security:               "Secure",
+  "24/7 security":        "Secure",
+  pool:                   "Pool",
+  "power backup":         "Backup",
+  "swimming pool":        "Pool",
+  "modular kitchen":      "Kitchen",
+  "1bhk":                 "1BHK",
+  "2bhk":                 "2BHK",
+  "3bhk":                 "3BHK",
+  "4bhk":                 "4BHK",
+  "1 bhk":                "1BHK",
+  "2 bhk":                "2BHK",
+  "3 bhk":                "3BHK",
+  "4 bhk":                "4BHK",
+};
+
+/* Platforms / source names / meta tags to suppress from amenity display */
+const SKIP_TAGS = new Set([
+  "magicbricks", "housing.com", "99acres", "nobroker", "housing", "makaan",
+  "dataset-imported", "scraped", "api-imported", "no data", "n/a", "na",
+  /* furnishing variants — already shown in subtitle */
+  "furnished", "unfurnished", "semi-furnished", "semi furnished",
+  "fully furnished", "partially furnished",
+]);
+
+function label(raw: string): string {
+  return AMENITY_LABELS[raw.toLowerCase()] ?? raw;
+}
+
+/* Derive "why recommended" reasons from property data */
+function getWhyReasons(property: Property): string[] {
+  const reasons: string[] = [];
+  const amenitiesLower = (property.amenities ?? []).map((a) => a.toLowerCase());
+  const commute = property.commute_estimate_minutes;
+  const dist    = property.distance_to_office_km;
+
+  if (commute != null && commute <= 22)
+    reasons.push(`${commute} min commute`);
+  if (dist != null && dist <= 4)
+    reasons.push(`${dist.toFixed(1)} km away`);
+  if (amenitiesLower.some((a) => a.includes("wifi") || a.includes("internet")))
+    reasons.push("Fast internet");
+  if (amenitiesLower.some((a) => a.includes("metro")))
+    reasons.push("Metro access");
+  if (property.furnishing?.toLowerCase() === "furnished")
+    reasons.push("Move-in ready");
+  if (property.rent < 15000)
+    reasons.push("Under ₹15k");
+
+  return reasons.slice(0, 3);
+}
+
+export function PropertyCard({
+  property,
+  index = 0,
+  isActive = false,
+  onClick,
+}: PropertyCardProps) {
+  const commute = property.commute_estimate_minutes;
+  const dist    = property.distance_to_office_km;
+  const priceK  = Math.round(property.rent / 1000);
+
+  /* Smart tag array — commute + dist rendered explicitly, then amenities only */
+  const amenityTags = property.amenities
+    .filter((a) => !SKIP_TAGS.has(a.toLowerCase()) && a.length > 1 && a.length < 28)
+    .slice(0, 3)
+    .map(label);
+
+  const whyReasons = getWhyReasons(property);
 
   return (
-    <Card className={styles.card}>
-      <div className={styles.imageFrame}>
-        <Image src={fallbackImages[index % fallbackImages.length]} alt="" fill className={styles.image} sizes="420px" />
+    <motion.button
+      type="button"
+      className={`${styles.card} ${isActive ? styles.active : ""}`}
+      onClick={onClick}
+      whileHover={{ y: -1 }}
+      whileTap={{ scale: 0.985 }}
+      transition={{ type: "spring", stiffness: 480, damping: 28 }}
+    >
+      {/* Left: numbered index badge */}
+      <div className={`${styles.badge} ${isActive ? styles.badgeActive : ""}`}>
+        {index + 1}
       </div>
+
+      {/* Right: property info */}
       <div className={styles.body}>
-        <div className={styles.top}>
-          <div>
-            <Link href={`/property/${property._id}`} className={styles.title}>
-              {property.title}
-            </Link>
-            <p className={styles.meta}>{property.property_type} - {property.furnishing ?? "furnishing varies"}</p>
+        {/* Row 1 — locality + price */}
+        <div className={styles.topRow}>
+          <div className={styles.locationBlock}>
+            <span className={styles.locality}>
+              {property.locality ?? property.city ?? "—"}
+            </span>
+            {property.city && property.locality && (
+              <span className={styles.city}>{property.city}</span>
+            )}
           </div>
-          <div className={styles.price}>
-            <p className={styles.rent}>{formatRent(property.rent)}</p>
-            <p className={styles.period}>per month</p>
+          <div className={styles.priceBlock}>
+            <span className={styles.price}>₹{priceK}k</span>
+            <span className={styles.priceSuffix}>/mo</span>
           </div>
         </div>
-        <div className={styles.facts}>
-          {property.nearby_metro && (
-            <span className={styles.fact}>
-              <MapPin size={15} /> {property.nearby_metro} metro
+
+        {/* Row 2 — property type */}
+        <p className={styles.subtitle}>
+          {property.property_type}
+          {property.furnishing ? ` · ${property.furnishing}` : ""}
+        </p>
+
+        {/* Row 3 — smart tags */}
+        <div className={styles.tags}>
+          {commute != null && (
+            <span className={`${styles.tag} ${styles.tagCommute}`}>
+              <Clock size={9} /> {commute}&thinsp;min
             </span>
           )}
-          {property.commute_estimate_minutes && (
-            <span className={styles.fact}>
-              <Clock size={15} /> {property.commute_estimate_minutes} min office commute
+          {dist != null && (
+            <span className={styles.tag}>
+              <MapPin size={9} /> {dist.toFixed(1)}&thinsp;km
             </span>
           )}
-          {lowest && (
-            <span className={styles.lowest}>
-              <Sparkles size={15} /> Lowest price on {lowest.source}: {formatRent(lowest.rent)}
-            </span>
-          )}
-        </div>
-        <div className={styles.amenities}>
-          {property.amenities.slice(0, 3).map((amenity) => (
-            <span key={amenity} className={styles.amenity}>
-              {amenity}
-            </span>
+          {amenityTags.map((t) => (
+            <span key={t} className={styles.tag}>{t}</span>
           ))}
         </div>
-        {property.source_url && (
-          <a href={property.source_url} className={styles.source}>
-            Source <ExternalLink size={14} />
-          </a>
+
+        {/* Row 4 — WHY recommended */}
+        {whyReasons.length > 0 && (
+          <div className={styles.whyRow}>
+            {whyReasons.map((r) => (
+              <span key={r} className={styles.whyTag}>✓ {r}</span>
+            ))}
+          </div>
         )}
       </div>
-    </Card>
+
+      {/* Active left-edge accent bar */}
+      {isActive && <div className={styles.accentBar} />}
+    </motion.button>
   );
 }

@@ -36,6 +36,9 @@ export type Property = {
   nearby_metro?: string;
   commute_estimate_minutes?: number;
   lowest_price?: { source: string; rent: number; url?: string };
+  distance_to_office_km?: number;
+  city?: string;
+  locality?: string;
 };
 
 export type Recommendation = {
@@ -72,6 +75,7 @@ export type SearchResponse = {
   };
   recommendations: Recommendation[];
   properties: Property[];
+  office_coordinates?: [number, number] | null;
 };
 
 export type CommuteEstimate = {

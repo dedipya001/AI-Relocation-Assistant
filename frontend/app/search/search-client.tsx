@@ -1,40 +1,48 @@
 "use client";
 
-import { useEffect } from "react";
-import { FilterSidebar } from "@/components/search/filter-sidebar";
-import { RecommendationList } from "@/components/search/recommendation-list";
-import { SearchBox } from "@/components/search/search-box";
+import { useEffect, useState } from "react";
+import { AIPanel } from "@/components/search/ai-panel";
 import { RelocationMap } from "@/components/map/relocation-map";
-import { PropertyCard } from "@/components/property/property-card";
-import { Card } from "@/components/ui/card";
 import { useSearchStore } from "@/store/search-store";
+import type { Property } from "@/types";
 import styles from "./search-client.module.css";
 
 export function SearchClient() {
   const { response, runSearch } = useSearchStore();
+  const [activeIndex, setActiveIndex] = useState(0);
 
+  // Auto-search on first mount
   useEffect(() => {
     if (!response) void runSearch();
-  }, [response, runSearch]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // Reset active card when new results arrive
+  useEffect(() => {
+    setActiveIndex(0);
+  }, [response]);
+
+  const properties: Property[] = response?.properties ?? [];
 
   return (
-    <div className={styles.layout}>
-      <FilterSidebar />
-      <section className={styles.workspace}>
-        <Card className={styles.searchCard}>
-          <SearchBox />
-        </Card>
-        <RelocationMap properties={response?.properties} />
-        <div className={styles.propertyGrid}>
-          {(response?.properties ?? []).map((property, index) => (
-            <PropertyCard key={property._id} property={property} index={index} />
-          ))}
-        </div>
-      </section>
-      <aside className={styles.ranking}>
-        <h2 className={styles.rankingTitle}>AI ranking</h2>
-        <RecommendationList />
-      </aside>
+    <div className={styles.container}>
+      {/* Map fills the entire canvas — it IS the background */}
+      <div className={styles.mapPane}>
+        <RelocationMap
+          properties={properties}
+          activePropertyIndex={activeIndex}
+          officeCoordinates={response?.office_coordinates ?? undefined}
+          officeLabel={response?.intent?.filters?.office_location}
+          onMarkerClick={setActiveIndex}
+        />
+      </div>
+
+      {/* AI panel floats over the map as a glass overlay */}
+      <AIPanel
+        properties={properties}
+        activeIndex={activeIndex}
+        onSelect={setActiveIndex}
+      />
     </div>
   );
 }
