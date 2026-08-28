@@ -5,10 +5,11 @@ import { Card } from "@/components/ui/card";
 import { api } from "@/lib/api";
 import styles from "./page.module.css";
 
-export default async function LocalityPage({ params }: { params: { id: string } }) {
+export default async function LocalityPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
   let locality;
   try {
-    locality = await api.getLocality(params.id);
+    locality = await api.getLocality(id);
   } catch {
     notFound();
   }

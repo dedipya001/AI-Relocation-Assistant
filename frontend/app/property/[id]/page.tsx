@@ -6,10 +6,11 @@ import { api } from "@/lib/api";
 import { formatRent } from "@/lib/utils";
 import styles from "./page.module.css";
 
-export default async function PropertyPage({ params }: { params: { id: string } }) {
+export default async function PropertyPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
   let property;
   try {
-    property = await api.getProperty(params.id);
+    property = await api.getProperty(id);
   } catch {
     notFound();
   }

@@ -14,7 +14,11 @@ export const searchRouter = Router();
 searchRouter.post("/", async (req: Request, res: Response): Promise<void> => {
   try {
     const query = req.body?.query || "";
-    const key = cacheKey("ai_search_v2", { query });
+    const profile = req.body?.profile;
+    const customWeights = req.body?.weights;
+    const hardConstraints = req.body?.hard_constraints;
+
+    const key = cacheKey("ai_search_v2", { query, profile, customWeights, hardConstraints });
 
     const cached = await getJson(key);
     if (cached) {
@@ -23,11 +27,20 @@ searchRouter.post("/", async (req: Request, res: Response): Promise<void> => {
     }
 
     const intent = await new IntentParser().parse(query);
+
+    // City extraction from query or office location
+    const detectedCity =
+      detectCity(query) ||
+      (intent.filters.office_location ? detectCity(intent.filters.office_location) : undefined);
+    if (detectedCity && !intent.filters.city) {
+      intent.filters.city = detectedCity;
+    }
+
     const db = getDatabase();
     const propertyRepo = new PropertyRepository(db);
     const localityRepo = new LocalityRepository(db);
 
-    let properties = await propertyRepo.search(intent.filters);
+    let properties = await propertyRepo.search(intent.filters, 60);
 
     const officeCoordinates = intent.filters.office_location
       ? await resolveOfficeCoordinates(intent.filters.office_location)
@@ -51,10 +64,6 @@ searchRouter.post("/", async (req: Request, res: Response): Promise<void> => {
 
     const priceEngine = new LowestPriceEngine();
     const enriched = properties.map((prop) => priceEngine.attachLowestPrice(prop));
-
-    const profile = req.body?.profile;
-    const customWeights = req.body?.weights;
-    const hardConstraints = req.body?.hard_constraints;
 
     const recommendations = new RecommendationEngine().rank(
       enriched,
@@ -242,4 +251,62 @@ export function haversineKm(lon1: number, lat1: number, lon2: number, lat2: numb
       Math.sin(dLon / 2) ** 2;
   const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
   return radiusKm * c;
+}
+
+export function detectCity(text?: string | null): string | undefined {
+  if (!text) return undefined;
+  const lower = text.toLowerCase();
+  if (
+    lower.includes("bangalore") ||
+    lower.includes("bengaluru") ||
+    lower.includes("whitefield") ||
+    lower.includes("hsr") ||
+    lower.includes("koramangala") ||
+    lower.includes("bellandur") ||
+    lower.includes("indiranagar")
+  ) {
+    return "Bangalore";
+  }
+  if (
+    lower.includes("kolkata") ||
+    lower.includes("salt lake") ||
+    lower.includes("sector v") ||
+    lower.includes("new town") ||
+    lower.includes("rajarhat") ||
+    lower.includes("ballygunge")
+  ) {
+    return "Kolkata";
+  }
+  if (
+    lower.includes("mumbai") ||
+    lower.includes("powai") ||
+    lower.includes("andheri") ||
+    lower.includes("bandra") ||
+    lower.includes("goregaon") ||
+    lower.includes("thane")
+  ) {
+    return "Mumbai";
+  }
+  if (
+    lower.includes("pune") ||
+    lower.includes("hinjewadi") ||
+    lower.includes("wakad") ||
+    lower.includes("baner") ||
+    lower.includes("kharadi") ||
+    lower.includes("viman nagar") ||
+    lower.includes("magarpatta")
+  ) {
+    return "Pune";
+  }
+  if (
+    lower.includes("hyderabad") ||
+    lower.includes("hitec") ||
+    lower.includes("gachibowli") ||
+    lower.includes("madhapur") ||
+    lower.includes("kondapur") ||
+    lower.includes("financial district")
+  ) {
+    return "Hyderabad";
+  }
+  return undefined;
 }

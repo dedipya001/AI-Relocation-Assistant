@@ -19,7 +19,11 @@ propertiesRouter.get("/", async (req: Request, res: Response): Promise<void> => 
       ? [rawTypes]
       : [];
 
+    const city = typeof req.query.city === "string" ? req.query.city.trim() : undefined;
+    const limit = req.query.limit ? parseInt(req.query.limit as string, 10) : 40;
+
     const filters: PropertySearchFilters = {
+      city,
       budget_max: budgetMax,
       property_types: propertyTypes,
       locality_ids: [],
@@ -30,7 +34,7 @@ propertiesRouter.get("/", async (req: Request, res: Response): Promise<void> => 
 
     const db = getDatabase();
     const repo = new PropertyRepository(db);
-    const docs = await repo.search(filters);
+    const docs = await repo.search(filters, limit);
     const priceEngine = new LowestPriceEngine();
     const results = docs.map((doc) => priceEngine.attachLowestPrice(doc));
 

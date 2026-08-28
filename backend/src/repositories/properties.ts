@@ -12,7 +12,9 @@ export class PropertyRepository extends MongoRepository {
   }
 
   async search(filters: PropertySearchFilters, limit: number = 40): Promise<any[]> {
-    const query: Filter<any> = {};
+    const query: Filter<any> = {
+      is_active: { $ne: false },
+    };
 
     if (filters.budget_max) {
       query.rent = { $lte: filters.budget_max };
@@ -27,34 +29,28 @@ export class PropertyRepository extends MongoRepository {
       query.amenities = { $all: filters.amenities };
     }
 
-    const collections = await this.getPropertyCollections();
-    const perCollectionLimit = Math.max(limit, 100);
-    const docs: any[] = [];
+    let targetCollection = this.collection;
 
-    for (const coll of collections) {
-      const results = await coll
-        .find(query)
-        .sort({ rent: 1 })
-        .limit(perCollectionLimit)
-        .toArray();
-      docs.push(...results);
+    if (filters.city) {
+      const cleanCity = filters.city.toLowerCase().trim();
+      const citySlug = cleanCity === "bengaluru" ? "bangalore" : cleanCity;
+      const partitionName = `properties_${citySlug}`;
+      
+      const collections = await this.db.listCollections({ name: partitionName }).toArray();
+      if (collections.length > 0) {
+        targetCollection = this.db.collection(partitionName);
+      } else {
+        query.city = { $regex: new RegExp(filters.city, "i") };
+      }
     }
 
-    docs.sort((a, b) => (a.rent || 0) - (b.rent || 0));
-    return docs.slice(0, limit).map(serializeDoc);
-  }
+    const docs = await targetCollection
+      .find(query)
+      .sort({ rent: 1 })
+      .limit(limit)
+      .toArray();
 
-  async getPropertyCollections(): Promise<any[]> {
-    const collections = await this.db.listCollections().toArray();
-    const propertyCollectionNames = collections
-      .map((c) => c.name)
-      .filter((name) => name === PropertyRepository.COLLECTION_NAME || name.startsWith("properties_"))
-      .sort();
-
-    if (propertyCollectionNames.length === 0) {
-      return [this.collection];
-    }
-    return propertyCollectionNames.map((name) => this.db.collection(name));
+    return docs.map(serializeDoc);
   }
 
   async upsertByDedupeKey(payload: Record<string, any>): Promise<any> {

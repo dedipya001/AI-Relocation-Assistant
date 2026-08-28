@@ -46,6 +46,7 @@ export const PropertySchema = PropertyBaseSchema.extend({
 export type Property = z.infer<typeof PropertySchema>;
 
 export const PropertySearchFiltersSchema = z.object({
+  city: z.string().nullable().optional(),
   office_location: z.string().nullable().optional(),
   budget_max: z.number().nullable().optional(),
   property_types: z.array(z.string()).default([]),
