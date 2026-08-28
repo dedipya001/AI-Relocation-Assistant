@@ -1,6 +1,7 @@
 import { config } from "../core/config.js";
 import { SearchIntent } from "../models/ai.js";
 import { PropertySearchFilters } from "../models/property.js";
+import { AIAdvisor } from "./aiAdvisor.js";
 
 const PROPERTY_KEYWORDS: Record<string, string> = {
   pg: "PG",
@@ -24,8 +25,34 @@ const PREFERENCE_KEYWORDS: Record<string, string> = {
 };
 
 export class IntentParser {
+  private advisor = new AIAdvisor();
+
   async parse(query: string): Promise<SearchIntent> {
     const normalized = query.toLowerCase();
+
+    // 1. Try high-precision LLM extraction if OpenAI is enabled
+    if (config.OPENAI_API_KEY) {
+      const llmResult = await this.advisor.parseIntentWithLLM(query);
+      if (llmResult && llmResult.filters) {
+        return {
+          query,
+          filters: {
+            city: llmResult.filters.city || undefined,
+            office_location: llmResult.filters.office_location || this.extractOfficeLocation(query) || config.DEFAULT_OFFICE_HINT,
+            budget_max: llmResult.filters.budget_max || this.extractBudget(normalized),
+            property_types: llmResult.filters.property_types || [],
+            locality_ids: [],
+            amenities: llmResult.filters.amenities || [],
+            transport_modes: [],
+            preferences: llmResult.filters.preferences || [],
+          },
+          inferred_lifestyle: llmResult.inferred_lifestyle || [],
+          follow_up_questions: [],
+        };
+      }
+    }
+
+    // 2. Deterministic heuristic fallback
     const budget = this.extractBudget(normalized);
 
     const propertyTypes: string[] = [];
