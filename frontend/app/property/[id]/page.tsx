@@ -3,8 +3,15 @@ import { Clock, IndianRupee, MapPin, ShieldCheck } from "lucide-react";
 import { Nav } from "@/components/nav";
 import { Card } from "@/components/ui/card";
 import { api } from "@/lib/api";
+import { demoProperties } from "@/lib/demo-data";
 import { formatRent } from "@/lib/utils";
 import styles from "./page.module.css";
+
+export function generateStaticParams() {
+  return demoProperties.map((property) => ({
+    id: property._id,
+  }));
+}
 
 export default async function PropertyPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;

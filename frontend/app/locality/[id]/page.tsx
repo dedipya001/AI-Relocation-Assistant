@@ -3,7 +3,14 @@ import { Activity, Shield, Utensils, Wifi } from "lucide-react";
 import { Nav } from "@/components/nav";
 import { Card } from "@/components/ui/card";
 import { api } from "@/lib/api";
+import { demoLocalities } from "@/lib/demo-data";
 import styles from "./page.module.css";
+
+export function generateStaticParams() {
+  return demoLocalities.map((locality) => ({
+    id: locality._id,
+  }));
+}
 
 export default async function LocalityPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
