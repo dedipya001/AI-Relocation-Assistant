@@ -8,6 +8,7 @@
     "build": "tsc",
     "start": "node dist/index.js",
     "test": "tsx scripts/testEndpoints.ts",
+    "test:bench": "tsx scripts/testRecommendationEngine.ts",
     "typecheck": "tsc --noEmit",
     "seed": "tsx scripts/seed.ts",
     "import-dataset": "tsx scripts/importMagicBricksDataset.ts",

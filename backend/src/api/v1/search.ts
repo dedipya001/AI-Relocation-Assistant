@@ -52,11 +52,22 @@ searchRouter.post("/", async (req: Request, res: Response): Promise<void> => {
     const priceEngine = new LowestPriceEngine();
     const enriched = properties.map((prop) => priceEngine.attachLowestPrice(prop));
 
+    const profile = req.body?.profile;
+    const customWeights = req.body?.weights;
+    const hardConstraints = req.body?.hard_constraints;
+
     const recommendations = new RecommendationEngine().rank(
       enriched,
       localitiesById,
       intent.filters.preferences,
-      intent.filters.budget_max
+      intent.filters.budget_max,
+      {
+        profile,
+        customWeights,
+        hardConstraints,
+        preferences: intent.filters.preferences,
+        budgetMax: intent.filters.budget_max,
+      }
     );
 
     const result = {

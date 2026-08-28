@@ -225,6 +225,59 @@ async function main() {
     return `Inserted ID: ${res.data._id}, Score: ${res.data.score}`;
   });
 
+  // 18. Recommendations Profiles Endpoint
+  await runTest("List Recommendation Profiles (GET /api/v1/recommendations/profiles)", async () => {
+    const res = await axios.get(`${BASE_URL}/api/v1/recommendations/profiles`);
+    if (res.status !== 200 || !Array.isArray(res.data?.profiles) || res.data.profiles.length < 5) {
+      throw new Error(`Failed to list scoring profiles: ${JSON.stringify(res.data)}`);
+    }
+    return `Supported personas: [${res.data.profiles.join(", ")}]`;
+  });
+
+  // 19. Evaluate Direct Ranking & Subscores
+  await runTest("Evaluate Direct Ranking & Subscores (POST /api/v1/recommendations/rank)", async () => {
+    const sampleProps = [
+      {
+        _id: "test-prop-1",
+        title: "Test PG 1",
+        rent: 9000,
+        locality_id: "loc-sector-v",
+        commute_estimate_minutes: 10,
+        amenities: ["wifi", "meals"],
+      },
+      {
+        _id: "test-prop-2",
+        title: "Test Luxury 2BHK",
+        rent: 28000,
+        locality_id: "loc-new-town",
+        commute_estimate_minutes: 35,
+        amenities: ["lift", "pool"],
+      },
+    ];
+
+    const res = await axios.post(`${BASE_URL}/api/v1/recommendations/rank`, {
+      properties: sampleProps,
+      profile: "budget_saver",
+      hard_constraints: {
+        max_budget: 20000,
+      },
+    });
+
+    if (res.status !== 200 || !Array.isArray(res.data?.recommendations)) {
+      throw new Error(`Rank endpoint failed: ${JSON.stringify(res.data)}`);
+    }
+
+    const [first, second] = res.data.recommendations;
+    if (!first.score.subscores?.affordability || !first.score.explanation) {
+      throw new Error("Missing subscores breakdown or explanation");
+    }
+    if (second.is_eligible !== false || second.constraint_violations.length === 0) {
+      throw new Error("Expected 2nd property to fail hard budget constraint");
+    }
+
+    return `Rank #1 (${first.title}): score ${first.score.total}, Rank #2 marked ineligible (${second.constraint_violations[0]})`;
+  });
+
   // Summary
   console.log("\n=========================================");
   console.log("📊 TEST SUMMARY");
