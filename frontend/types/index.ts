@@ -35,29 +35,76 @@ export type Property = {
   locality_id: string;
   nearby_metro?: string;
   commute_estimate_minutes?: number;
-  lowest_price?: { source: string; rent: number; url?: string };
+  lowest_price?: { source: string; rent: number; url?: string; observed_at?: string };
   distance_to_office_km?: number;
   city?: string;
   locality?: string;
 };
 
+export type ScoringProfile =
+  | "balanced"
+  | "budget_saver"
+  | "tech_professional"
+  | "safety_priority"
+  | "family_first"
+  | "night_owl"
+  | "custom";
+
+export type ScoringWeights = {
+  affordability: number;
+  commute: number;
+  safety: number;
+  internet: number;
+  food_access: number;
+  lifestyle_fit: number;
+  property_quality: number;
+};
+
+export type HardConstraints = {
+  max_budget?: number | null;
+  max_commute_minutes?: number | null;
+  min_safety_score?: number | null;
+  min_internet_score?: number | null;
+  min_food_access_score?: number | null;
+  must_have_amenities?: string[];
+  allowed_property_types?: string[];
+};
+
+export type SubScoreDetail = {
+  score: number;
+  weight: number;
+  contribution: number;
+  label: string;
+  details: string;
+};
+
+export type RecommendationScore = {
+  affordability: number;
+  commute: number;
+  safety: number;
+  internet: number;
+  food_access: number;
+  lifestyle_fit: number;
+  property_quality?: number;
+  total: number;
+  confidence_score?: number;
+  explanation: string;
+  subscores?: Record<string, SubScoreDetail>;
+  penalties?: Array<{ reason: string; penalty_points: number }>;
+};
+
 export type Recommendation = {
+  rank?: number;
   entity_type: string;
   entity_id: string;
   title: string;
-  locality_name?: string;
-  score: {
-    affordability: number;
-    commute: number;
-    safety: number;
-    internet: number;
-    food_access: number;
-    lifestyle_fit: number;
-    total: number;
-    explanation: string;
-  };
+  locality_name?: string | null;
+  score: RecommendationScore;
   highlights: string[];
   tradeoffs: string[];
+  constraint_violations?: string[];
+  scoring_profile?: string;
+  is_eligible?: boolean;
 };
 
 export type SearchResponse = {

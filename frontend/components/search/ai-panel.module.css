@@ -1,4 +1,4 @@
-﻿/* ─── AI Panel — floating glass overlay over map ─────── */
+/* ─── AI Panel — floating glass overlay over map ─────── */
 .panel {
   position: absolute;
   top: 1rem;
@@ -158,6 +158,11 @@
   color: hsl(228 72% 58%);
   vertical-align: middle;
   margin: 0 1px;
+}
+
+.scoreHighlight {
+  font-weight: 700;
+  color: #059669;
 }
 
 /* ── Scrollable property list ───────────────────────── */

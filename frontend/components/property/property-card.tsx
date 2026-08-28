@@ -1,162 +1,215 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { Clock, MapPin } from "lucide-react";
-import type { Property } from "@/types";
+import { Clock, MapPin, Sparkles, AlertTriangle, ChevronRight } from "lucide-react";
+import type { Property, Recommendation } from "@/types";
+import { ScoreBreakdownModal } from "./score-breakdown-modal";
 import styles from "./property-card.module.css";
 
 interface PropertyCardProps {
   property: Property;
+  recommendation?: Recommendation;
   index?: number;
   isActive?: boolean;
   onClick?: () => void;
 }
 
-/* Map raw amenity strings to compact display labels */
 const AMENITY_LABELS: Record<string, string> = {
-  "high-speed internet":  "WiFi",
-  internet:               "WiFi",
-  wifi:                   "WiFi",
-  gym:                    "Gym",
-  metro:                  "Metro",
-  parking:                "Parking",
-  security:               "Secure",
-  "24/7 security":        "Secure",
-  pool:                   "Pool",
-  "power backup":         "Backup",
-  "swimming pool":        "Pool",
-  "modular kitchen":      "Kitchen",
-  "1bhk":                 "1BHK",
-  "2bhk":                 "2BHK",
-  "3bhk":                 "3BHK",
-  "4bhk":                 "4BHK",
-  "1 bhk":                "1BHK",
-  "2 bhk":                "2BHK",
-  "3 bhk":                "3BHK",
-  "4 bhk":                "4BHK",
+  "high-speed internet": "WiFi",
+  internet: "WiFi",
+  wifi: "WiFi",
+  gym: "Gym",
+  metro: "Metro",
+  parking: "Parking",
+  security: "Secure",
+  "24/7 security": "Secure",
+  pool: "Pool",
+  "power backup": "Backup",
+  "swimming pool": "Pool",
+  "modular kitchen": "Kitchen",
+  "1bhk": "1BHK",
+  "2bhk": "2BHK",
+  "3bhk": "3BHK",
+  "4bhk": "4BHK",
+  "1 bhk": "1BHK",
+  "2 bhk": "2BHK",
+  "3 bhk": "3BHK",
+  "4 bhk": "4BHK",
 };
 
-/* Platforms / source names / meta tags to suppress from amenity display */
 const SKIP_TAGS = new Set([
-  "magicbricks", "housing.com", "99acres", "nobroker", "housing", "makaan",
-  "dataset-imported", "scraped", "api-imported", "no data", "n/a", "na",
-  /* furnishing variants — already shown in subtitle */
-  "furnished", "unfurnished", "semi-furnished", "semi furnished",
-  "fully furnished", "partially furnished",
+  "magicbricks",
+  "housing.com",
+  "99acres",
+  "nobroker",
+  "housing",
+  "makaan",
+  "dataset-imported",
+  "scraped",
+  "api-imported",
+  "no data",
+  "n/a",
+  "na",
+  "furnished",
+  "unfurnished",
+  "semi-furnished",
+  "semi furnished",
+  "fully furnished",
+  "partially furnished",
 ]);
 
 function label(raw: string): string {
   return AMENITY_LABELS[raw.toLowerCase()] ?? raw;
 }
 
-/* Derive "why recommended" reasons from property data */
-function getWhyReasons(property: Property): string[] {
-  const reasons: string[] = [];
-  const amenitiesLower = (property.amenities ?? []).map((a) => a.toLowerCase());
-  const commute = property.commute_estimate_minutes;
-  const dist    = property.distance_to_office_km;
-
-  if (commute != null && commute <= 22)
-    reasons.push(`${commute} min commute`);
-  if (dist != null && dist <= 4)
-    reasons.push(`${dist.toFixed(1)} km away`);
-  if (amenitiesLower.some((a) => a.includes("wifi") || a.includes("internet")))
-    reasons.push("Fast internet");
-  if (amenitiesLower.some((a) => a.includes("metro")))
-    reasons.push("Metro access");
-  if (property.furnishing?.toLowerCase() === "furnished")
-    reasons.push("Move-in ready");
-  if (property.rent < 15000)
-    reasons.push("Under ₹15k");
-
-  return reasons.slice(0, 3);
+function getScoreBadgeClass(score: number): string {
+  if (score >= 85) return styles.scoreHigh;
+  if (score >= 72) return styles.scoreMid;
+  if (score >= 60) return styles.scoreFair;
+  return styles.scoreLow;
 }
 
 export function PropertyCard({
   property,
+  recommendation,
   index = 0,
   isActive = false,
   onClick,
 }: PropertyCardProps) {
-  const commute = property.commute_estimate_minutes;
-  const dist    = property.distance_to_office_km;
-  const priceK  = Math.round(property.rent / 1000);
+  const [showModal, setShowModal] = useState(false);
 
-  /* Smart tag array — commute + dist rendered explicitly, then amenities only */
+  const commute = property.commute_estimate_minutes;
+  const dist = property.distance_to_office_km;
+  const priceK = Math.round(property.rent / 1000);
+
+  const totalScore = recommendation?.score?.total;
+  const violations = recommendation?.constraint_violations ?? [];
+  const isEligible = recommendation?.is_eligible !== false;
+
   const amenityTags = property.amenities
     .filter((a) => !SKIP_TAGS.has(a.toLowerCase()) && a.length > 1 && a.length < 28)
     .slice(0, 3)
     .map(label);
 
-  const whyReasons = getWhyReasons(property);
+  const highlights = recommendation?.highlights ?? [];
 
   return (
-    <motion.button
-      type="button"
-      className={`${styles.card} ${isActive ? styles.active : ""}`}
-      onClick={onClick}
-      whileHover={{ y: -1 }}
-      whileTap={{ scale: 0.985 }}
-      transition={{ type: "spring", stiffness: 480, damping: 28 }}
-    >
-      {/* Left: numbered index badge */}
-      <div className={`${styles.badge} ${isActive ? styles.badgeActive : ""}`}>
-        {index + 1}
-      </div>
+    <>
+      <motion.div
+        className={`${styles.card} ${isActive ? styles.active : ""} ${
+          !isEligible ? styles.cardIneligible : ""
+        }`}
+        onClick={onClick}
+        whileHover={{ y: -1 }}
+        whileTap={{ scale: 0.985 }}
+        transition={{ type: "spring", stiffness: 480, damping: 28 }}
+      >
+        {/* Left: numbered index badge */}
+        <div className={`${styles.badge} ${isActive ? styles.badgeActive : ""}`}>
+          {index + 1}
+        </div>
 
-      {/* Right: property info */}
-      <div className={styles.body}>
-        {/* Row 1 — locality + price */}
-        <div className={styles.topRow}>
-          <div className={styles.locationBlock}>
-            <span className={styles.locality}>
-              {property.locality ?? property.city ?? "—"}
-            </span>
-            {property.city && property.locality && (
-              <span className={styles.city}>{property.city}</span>
+        {/* Right: property info */}
+        <div className={styles.body}>
+          {/* Row 1 — locality + score badge + price */}
+          <div className={styles.topRow}>
+            <div className={styles.locationBlock}>
+              <div className={styles.localityRow}>
+                <span className={styles.locality}>
+                  {property.locality ?? property.city ?? "—"}
+                </span>
+                {totalScore != null && (
+                  <span
+                    className={`${styles.scorePill} ${getScoreBadgeClass(totalScore)}`}
+                    title="Click 'Score Breakdown' below for explainable factor contributions"
+                  >
+                    ★ {totalScore}
+                  </span>
+                )}
+              </div>
+              {property.city && property.locality && (
+                <span className={styles.city}>{property.city}</span>
+              )}
+            </div>
+            <div className={styles.priceBlock}>
+              <span className={styles.price}>₹{priceK}k</span>
+              <span className={styles.priceSuffix}>/mo</span>
+            </div>
+          </div>
+
+          {/* Row 2 — property type */}
+          <p className={styles.subtitle}>
+            {property.property_type}
+            {property.furnishing ? ` · ${property.furnishing}` : ""}
+          </p>
+
+          {/* Constraint Violations Alert if any */}
+          {violations.length > 0 && (
+            <div className={styles.violationTag}>
+              <AlertTriangle size={10} />
+              <span>{violations[0]}</span>
+            </div>
+          )}
+
+          {/* Row 3 — smart tags */}
+          <div className={styles.tags}>
+            {commute != null && (
+              <span className={`${styles.tag} ${styles.tagCommute}`}>
+                <Clock size={9} /> {commute}&thinsp;min
+              </span>
             )}
-          </div>
-          <div className={styles.priceBlock}>
-            <span className={styles.price}>₹{priceK}k</span>
-            <span className={styles.priceSuffix}>/mo</span>
-          </div>
-        </div>
-
-        {/* Row 2 — property type */}
-        <p className={styles.subtitle}>
-          {property.property_type}
-          {property.furnishing ? ` · ${property.furnishing}` : ""}
-        </p>
-
-        {/* Row 3 — smart tags */}
-        <div className={styles.tags}>
-          {commute != null && (
-            <span className={`${styles.tag} ${styles.tagCommute}`}>
-              <Clock size={9} /> {commute}&thinsp;min
-            </span>
-          )}
-          {dist != null && (
-            <span className={styles.tag}>
-              <MapPin size={9} /> {dist.toFixed(1)}&thinsp;km
-            </span>
-          )}
-          {amenityTags.map((t) => (
-            <span key={t} className={styles.tag}>{t}</span>
-          ))}
-        </div>
-
-        {/* Row 4 — WHY recommended */}
-        {whyReasons.length > 0 && (
-          <div className={styles.whyRow}>
-            {whyReasons.map((r) => (
-              <span key={r} className={styles.whyTag}>✓ {r}</span>
+            {dist != null && (
+              <span className={styles.tag}>
+                <MapPin size={9} /> {dist.toFixed(1)}&thinsp;km
+              </span>
+            )}
+            {amenityTags.map((t) => (
+              <span key={t} className={styles.tag}>
+                {t}
+              </span>
             ))}
           </div>
-        )}
-      </div>
 
-      {/* Active left-edge accent bar */}
-      {isActive && <div className={styles.accentBar} />}
-    </motion.button>
+          {/* Row 4 — Top positive highlights */}
+          {highlights.length > 0 && (
+            <div className={styles.whyRow}>
+              {highlights.slice(0, 2).map((h, i) => (
+                <span key={i} className={styles.whyTag}>
+                  ✓ {h}
+                </span>
+              ))}
+            </div>
+          )}
+
+          {/* Row 5 — Explain Score button trigger */}
+          {recommendation && (
+            <button
+              type="button"
+              className={styles.explainBtn}
+              onClick={(e) => {
+                e.stopPropagation();
+                setShowModal(true);
+              }}
+            >
+              <Sparkles size={10} />
+              <span>Explain Score &amp; Factors</span>
+              <ChevronRight size={10} />
+            </button>
+          )}
+        </div>
+
+        {/* Active left-edge accent bar */}
+        {isActive && <div className={styles.accentBar} />}
+      </motion.div>
+
+      {/* Transparent Explainable Score Modal */}
+      <ScoreBreakdownModal
+        property={property}
+        recommendation={recommendation}
+        isOpen={showModal}
+        onClose={() => setShowModal(false)}
+      />
+    </>
   );
 }

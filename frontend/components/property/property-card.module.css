@@ -13,6 +13,7 @@
   text-align: left;
   transition: box-shadow 160ms ease, border-color 160ms ease, background 160ms ease;
   overflow: hidden;
+  user-select: none;
 }
 
 .card:hover {
@@ -24,6 +25,11 @@
   border-color: hsl(228 72% 58% / 0.38);
   background: hsl(228 72% 58% / 0.028);
   box-shadow: 0 0 0 3px hsl(228 72% 58% / 0.1), 0 6px 20px hsl(215 25% 8% / 0.07);
+}
+
+.cardIneligible {
+  border-color: rgba(244, 63, 94, 0.35);
+  background: rgba(244, 63, 94, 0.02);
 }
 
 .badge {
@@ -69,6 +75,12 @@
   gap: 0.08rem;
 }
 
+.localityRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 .locality {
   font-size: 0.8rem;
   font-weight: 700;
@@ -77,6 +89,39 @@
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 1.2;
+}
+
+.scorePill {
+  font-size: 0.6rem;
+  font-weight: 800;
+  padding: 1.5px 5px;
+  border-radius: 999px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.scoreHigh {
+  background: rgba(16, 185, 129, 0.12);
+  color: #059669;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.scoreMid {
+  background: rgba(14, 165, 233, 0.12);
+  color: #0284c7;
+  border: 1px solid rgba(14, 165, 233, 0.3);
+}
+
+.scoreFair {
+  background: rgba(245, 158, 11, 0.12);
+  color: #d97706;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.scoreLow {
+  background: rgba(244, 63, 94, 0.12);
+  color: #e11d48;
+  border: 1px solid rgba(244, 63, 94, 0.3);
 }
 
 .city {
@@ -112,6 +157,20 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.violationTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: #e11d48;
+  background: rgba(244, 63, 94, 0.08);
+  border: 1px solid rgba(244, 63, 94, 0.25);
+  border-radius: 4px;
+  padding: 2px 5px;
+  margin-top: 2px;
 }
 
 .tags {
@@ -170,4 +229,26 @@
   color: hsl(160 55% 32%);
   white-space: nowrap;
   line-height: 1;
+}
+
+/* ── Explain Score button ────────────────────────────── */
+.explainBtn {
+  margin-top: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.62rem;
+  font-weight: 600;
+  color: hsl(228 72% 58%);
+  background: transparent;
+  border: none;
+  padding: 2px 0;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+  align-self: flex-start;
+}
+
+.explainBtn:hover {
+  opacity: 0.75;
+  text-decoration: underline;
 }
