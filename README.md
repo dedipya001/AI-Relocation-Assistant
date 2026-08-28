@@ -6,9 +6,9 @@
 
 <p align="center">
   <img alt="Next.js" src="https://img.shields.io/badge/Next.js-TypeScript-black?logo=next.js" />
-  <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-Python-009688?logo=fastapi" />
+  <img alt="Express" src="https://img.shields.io/badge/Express-TypeScript-000000?logo=express" />
   <img alt="MongoDB" src="https://img.shields.io/badge/MongoDB-Data-47A248?logo=mongodb&logoColor=white" />
-  <img alt="Redis" src="https://img.shields.io/badge/Redis-Queues-DC382D?logo=redis&logoColor=white" />
+  <img alt="Redis" src="https://img.shields.io/badge/Redis-Cache-DC382D?logo=redis&logoColor=white" />
   <img alt="OpenAI" src="https://img.shields.io/badge/OpenAI-AI%20Assistant-412991?logo=openai" />
   <img alt="Status" src="https://img.shields.io/badge/status-active%20development-blue" />
 </p>
@@ -34,11 +34,10 @@ AI Relocation Intelligence turns that multi-factor decision into a guided search
 ```mermaid
 flowchart LR
     U[User] --> N[Next.js Web App]
-    N --> A[FastAPI Application]
+    N --> A[Express Application]
     A --> M[(MongoDB)]
     A --> R[(Redis)]
-    R --> C[Celery Workers]
-    C --> P[Listing Ingestion]
+    A --> P[Listing Ingestion]
     A --> O[OpenAI API]
     A --> G[Maps and Geocoding Providers]
     P --> M
@@ -51,9 +50,9 @@ flowchart LR
 | Layer | Responsibility |
 |---|---|
 | Next.js frontend | Search, assistant, comparison, property and locality experiences |
-| FastAPI backend | API orchestration, validation, recommendation and assistant endpoints |
+| Express backend | API orchestration, Zod validation, recommendation and assistant endpoints |
 | MongoDB | Properties, localities, commute data, feedback and AI summaries |
-| Redis + Celery | Background ingestion and asynchronous processing |
+| Redis | Caching and temporary state |
 | AI layer | Natural-language interpretation and locality recommendation support |
 | Map providers | Geocoding, map rendering and commute-related location context |
 
@@ -61,17 +60,17 @@ flowchart LR
 
 ```text
 frontend/    Next.js application
-backend/     FastAPI services, schemas, routes and workers
+backend/     Express TypeScript services, Zod schemas, routes and scripts
 docs/        Provider notes and project documentation
 ```
 
 ## Implemented foundation
 
-- Typed MongoDB and Pydantic models
+- Typed MongoDB models with Zod validation
 - Search, property, locality, commute, feedback and assistant routes
 - Landing, search, assistant, comparison and detail pages
 - Seed data for Kolkata localities
-- Playwright-based Housing.com ingestion workflow
+- Playwright-based Housing.com ingestion workflow & MagicBricks dataset importer
 - Environment-based configuration for local development
 
 ## Technical decisions
@@ -80,9 +79,9 @@ docs/        Provider notes and project documentation
 
 The assistant works on top of typed property and locality records rather than relying only on free-form model responses. This keeps recommendations easier to explain and improves the path toward evaluation and ranking.
 
-### Background ingestion
+### Fast caching & background processing
 
-Rental data collection can be slow and failure-prone. Redis and Celery separate ingestion work from interactive API requests so the user-facing application remains responsive.
+Rental data collection can be slow and failure-prone. Redis caching keeps user-facing API requests responsive while asynchronous ingestion scripts refresh database collections.
 
 ### Provider abstraction
 
@@ -92,8 +91,7 @@ Maps, geocoding and property sources are treated as replaceable providers. This 
 
 ### Requirements
 
-- Node.js
-- Python 3.11+
+- Node.js (v20+)
 - MongoDB on `localhost:27017`
 - Redis on `localhost:6379`
 
@@ -101,9 +99,9 @@ Maps, geocoding and property sources are treated as replaceable providers. This 
 
 ```bash
 cd backend
-python -m venv .venv
-pip install -r requirements.txt
-uvicorn app.main:app --reload
+npm install
+npm run seed     # Seeds sample Kolkata localities and properties
+npm run dev      # Starts Express backend on port 8000/8001
 ```
 
 ### Frontend
@@ -136,7 +134,11 @@ Never commit real credentials or browser storage-state files.
 ## Listing ingestion
 
 ```bash
-python backend/scripts/populatePropertyData.py --city "Kolkata"
+# Ingest MagicBricks datasetJson
+npm run --prefix backend import-dataset
+
+# Scrape Housing.com via Playwright
+npm run --prefix backend scrape-housing -- --city "Kolkata"
 ```
 
 Useful options:
