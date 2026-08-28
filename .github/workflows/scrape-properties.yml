@@ -40,18 +40,31 @@ jobs:
         working-directory: backend
         run: npx playwright install --with-deps chromium
 
-      - name: Ingest Recent Listings (Kolkata)
+      - name: Ingest Recent Listings (Multi-City)
         working-directory: backend
         env:
           MONGODB_URI: ${{ secrets.MONGODB_URI }}
           MONGODB_DB: ${{ secrets.MONGODB_DB || 'relocation_ai' }}
         run: |
           DATE_TAG=$(date +'%Y-%m-%d')
-          npx tsx scripts/populatePropertyData.ts \
-            --city "${{ github.event.inputs.city || 'Kolkata' }}" \
-            --max-pages "${{ github.event.inputs.max_pages || '2' }}" \
-            --export-json "../datasetJson/kolkata_recent_${DATE_TAG}.json" \
-            --deactivate-stale
+          TARGET_CITY="${{ github.event.inputs.city }}"
+          MAX_PAGES="${{ github.event.inputs.max_pages || '2' }}"
+          
+          if [ -n "$TARGET_CITY" ] && [ "$TARGET_CITY" != "ALL" ]; then
+            CITIES=("$TARGET_CITY")
+          else
+            CITIES=("Kolkata" "Bangalore" "Mumbai" "Pune")
+          fi
+
+          for CITY in "${CITIES[@]}"; do
+            SLUG=$(echo "$CITY" | tr '[:upper:]' '[:lower:]')
+            echo "=== Scraping $CITY ==="
+            npx tsx scripts/populatePropertyData.ts \
+              --city "$CITY" \
+              --max-pages "$MAX_PAGES" \
+              --export-json "../datasetJson/${SLUG}_recent_${DATE_TAG}.json" \
+              --deactivate-stale || echo "Warning: Scrape for $CITY encountered issues"
+          done
 
       - name: Commit Updated Dataset Snapshots
         run: |
