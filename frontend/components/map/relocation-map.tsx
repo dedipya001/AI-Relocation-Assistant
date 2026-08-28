@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useMemo, useRef, useState, useCallback } from "react";
 import { Coffee, Train } from "lucide-react";
@@ -19,9 +19,35 @@ type OverlayKey = "cafe" | "transit";
 const DEFAULT_OFFICE: [number, number] = [88.4335, 22.5762];
 const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN ?? "";
 
+const OSM_RASTER_STYLE: any = {
+  version: 8,
+  sources: {
+    "carto-voyager": {
+      type: "raster",
+      tiles: [
+        "https://a.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png",
+        "https://b.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png",
+        "https://c.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png",
+      ],
+      tileSize: 256,
+      attribution: "© OpenStreetMap, © CARTO",
+    },
+  },
+  layers: [
+    {
+      id: "carto-voyager-layer",
+      type: "raster",
+      source: "carto-voyager",
+      minzoom: 0,
+      maxzoom: 19,
+    },
+  ],
+};
+
 let mapboxglCache: typeof import("mapbox-gl") | null = null;
 
 async function fetchIsochrone(coords: [number, number]): Promise<any> {
+  if (!MAPBOX_TOKEN) return null;
   try {
     const r = await fetch(
       `https://api.mapbox.com/isochrone/v1/mapbox/driving/${coords[0]},${coords[1]}` +
@@ -38,6 +64,7 @@ async function fetchRoute(
   from: [number, number],
   to: [number, number]
 ): Promise<any> {
+  if (!MAPBOX_TOKEN) return null;
   try {
     const r = await fetch(
       `https://api.mapbox.com/directions/v5/mapbox/driving` +
@@ -100,13 +127,15 @@ export function RelocationMap({
 
   /* ── Effect 1: create map, isochrone rings, markers ─── */
   useEffect(() => {
-    if (!MAPBOX_TOKEN || !containerRef.current) return;
+    if (!containerRef.current) return;
     let cancelled = false;
 
     void (async () => {
       if (!mapboxglCache) {
         mapboxglCache = await import("mapbox-gl");
-        mapboxglCache.default.accessToken = MAPBOX_TOKEN;
+        if (MAPBOX_TOKEN) {
+          mapboxglCache.default.accessToken = MAPBOX_TOKEN;
+        }
       }
       if (cancelled || !containerRef.current) return;
 
@@ -115,7 +144,7 @@ export function RelocationMap({
 
       const map = new mgl.default.Map({
         container: containerRef.current!,
-        style:     "mapbox://styles/mapbox/light-v11",
+        style:     MAPBOX_TOKEN ? "mapbox://styles/mapbox/light-v11" : OSM_RASTER_STYLE,
         center:    office,
         zoom:      12,
         pitch:     0,
