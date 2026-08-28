@@ -4,9 +4,10 @@ import { useRef, useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Sparkles, MapPin, Clock, ArrowRight } from "lucide-react";
 import { SearchBox } from "@/components/search/search-box";
+import { PersonaSelector } from "@/components/search/persona-selector";
 import { PropertyCard } from "@/components/property/property-card";
 import { useSearchStore } from "@/store/search-store";
-import type { Property } from "@/types";
+import type { Property, Recommendation } from "@/types";
 import styles from "./ai-panel.module.css";
 
 interface AIPanelProps {
@@ -16,7 +17,7 @@ interface AIPanelProps {
 }
 
 export function AIPanel({ properties, activeIndex, onSelect }: AIPanelProps) {
-  const { isLoading, response } = useSearchStore();
+  const { isLoading, response, selectedProfile } = useSearchStore();
   const activeItemRef = useRef<HTMLDivElement>(null);
 
   // Keep the active card visible in the scrollable list
@@ -25,6 +26,11 @@ export function AIPanel({ properties, activeIndex, onSelect }: AIPanelProps) {
   }, [activeIndex]);
 
   const officeLabel = response?.intent?.filters?.office_location;
+  const recommendations: Recommendation[] = response?.recommendations ?? [];
+  const recommendationsById = new Map<string, Recommendation>(
+    recommendations.map((r) => [r.entity_id, r])
+  );
+
   const hasResults = properties.length > 0 && !isLoading;
 
   return (
@@ -39,6 +45,9 @@ export function AIPanel({ properties, activeIndex, onSelect }: AIPanelProps) {
         </div>
         <SearchBox compact />
       </div>
+
+      {/* ── Persona / Scoring Profile Bar ── */}
+      <PersonaSelector />
 
       {/* ── AI context bar: loading skeleton or summary ── */}
       <AnimatePresence mode="wait">
@@ -68,6 +77,8 @@ export function AIPanel({ properties, activeIndex, onSelect }: AIPanelProps) {
               count={properties.length}
               officeLabel={officeLabel}
               topProperty={properties[0]}
+              topRecommendation={recommendations[0]}
+              profile={selectedProfile}
             />
           </motion.div>
         )}
@@ -76,27 +87,31 @@ export function AIPanel({ properties, activeIndex, onSelect }: AIPanelProps) {
       {/* ── Scrollable property list ── */}
       <div className={styles.list} role="list">
         {hasResults
-          ? properties.map((property, index) => (
-              <motion.div
-                key={property._id}
-                role="listitem"
-                ref={index === activeIndex ? activeItemRef : undefined}
-                initial={{ opacity: 0, x: -12 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{
-                  delay: Math.min(index * 0.042, 0.55),
-                  duration: 0.3,
-                  ease: [0.22, 1, 0.36, 1],
-                }}
-              >
-                <PropertyCard
-                  property={property}
-                  index={index}
-                  isActive={index === activeIndex}
-                  onClick={() => onSelect(index)}
-                />
-              </motion.div>
-            ))
+          ? properties.map((property, index) => {
+              const rec = recommendationsById.get(property._id) ?? recommendations[index];
+              return (
+                <motion.div
+                  key={property._id}
+                  role="listitem"
+                  ref={index === activeIndex ? activeItemRef : undefined}
+                  initial={{ opacity: 0, x: -12 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{
+                    delay: Math.min(index * 0.042, 0.55),
+                    duration: 0.3,
+                    ease: [0.22, 1, 0.36, 1],
+                  }}
+                >
+                  <PropertyCard
+                    property={property}
+                    recommendation={rec}
+                    index={index}
+                    isActive={index === activeIndex}
+                    onClick={() => onSelect(index)}
+                  />
+                </motion.div>
+              );
+            })
           : !isLoading && <EmptyState />}
       </div>
     </aside>
@@ -107,11 +122,11 @@ export function AIPanel({ properties, activeIndex, onSelect }: AIPanelProps) {
 const THINKING_STAGES = [
   "Locating your office…",
   "Analyzing commute patterns…",
-  "Finding quieter neighbourhoods…",
-  "Comparing lifestyle signals…",
-  "Curating your top matches…",
+  "Computing multi-factor safety & internet scores…",
+  "Applying persona weights & constraints…",
+  "Curating explainable recommendations…",
 ];
-const STAGE_DELAYS = [0, 700, 1500, 2400, 3300];
+const STAGE_DELAYS = [0, 600, 1300, 2100, 3000];
 
 function LoadingState() {
   const [stageIdx, setStageIdx] = useState(0);
@@ -162,25 +177,37 @@ function AISummary({
   count,
   officeLabel,
   topProperty,
+  topRecommendation,
+  profile,
 }: {
   count: number;
   officeLabel?: string;
   topProperty?: Property;
+  topRecommendation?: Recommendation;
+  profile?: string;
 }) {
   const commute = topProperty?.commute_estimate_minutes;
-  const dist    = topProperty?.distance_to_office_km;
+  const dist = topProperty?.distance_to_office_km;
+  const score = topRecommendation?.score?.total;
+  const profileLabel = profile?.replace("_", " ").toUpperCase() || "BALANCED";
 
   return (
     <div className={styles.summary}>
       <p className={styles.summaryTitle}>
         <Sparkles size={12} className={styles.summaryIcon} />
-        {count} homes near {officeLabel ?? "your office"}
+        {count} homes ranked under {profileLabel} persona
       </p>
       <p className={styles.summaryBody}>
         {topProperty?.locality ? (
           <>
-            Closest match in{" "}
+            Top match: <strong>{topProperty.title}</strong> in{" "}
             <strong>{topProperty.locality}</strong>
+            {score != null && (
+              <>
+                {" "}·{" "}
+                <span className={styles.scoreHighlight}>★ {score}/100</span>
+              </>
+            )}
             {commute != null && (
               <>
                 {" "}·{" "}
@@ -195,10 +222,9 @@ function AISummary({
                 {" "}{dist.toFixed(1)}&thinsp;km
               </>
             )}
-            . Ranked by commute &amp; lifestyle fit.
           </>
         ) : (
-          "Results ranked by commute and lifestyle fit."
+          `Results ranked by multi-factor score near ${officeLabel ?? "your destination"}.`
         )}
       </p>
     </div>

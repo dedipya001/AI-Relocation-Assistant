@@ -150,27 +150,96 @@ export function demoSearchResponse(query: string): SearchResponse {
       follow_up_questions: []
     },
     properties: demoProperties,
-    recommendations: demoProperties.map((property, index) => ({
-      entity_type: "property",
-      entity_id: property._id,
-      title: property.title,
-      locality_name: demoLocalities.find((locality) => locality._id === property.locality_id)?.name,
-      score: {
-        affordability: [92, 78, 84, 81, 88][index] ?? 80,
-        commute: [91, 72, 58, 76, 62][index] ?? 70,
-        safety: [78, 82, 76, 73, 78][index] ?? 75,
-        internet: [86, 84, 78, 80, 82][index] ?? 80,
-        food_access: [92, 80, 84, 82, 78][index] ?? 80,
-        lifestyle_fit: [88, 80, 85, 76, 82][index] ?? 80,
-        total: [87.8, 80.6, 77.1, 78.4, 79.2][index] ?? 78,
-        explanation: `${property.title} balances rent, commute, safety, internet, and daily essentials for an India-first relocation search.`
-      },
-      highlights: [
-        `Rent around Rs ${property.rent.toLocaleString("en-IN")}`,
-        property.nearby_metro ? `Near ${property.nearby_metro}` : "Good locality access",
-        property.lowest_price ? `Lowest seen: Rs ${property.lowest_price.rent.toLocaleString("en-IN")}` : "Needs price verification"
-      ],
-      tradeoffs: index === 0 ? ["Late-night safety should be verified"] : ["Peak commute can stretch in rain"]
-    }))
+    recommendations: demoProperties.map((property, index) => {
+      const affordability = [92, 78, 84, 81, 88][index] ?? 80;
+      const commute = [91, 72, 58, 76, 62][index] ?? 70;
+      const safety = [78, 82, 76, 73, 78][index] ?? 75;
+      const internet = [86, 84, 78, 80, 82][index] ?? 80;
+      const foodAccess = [92, 80, 84, 82, 78][index] ?? 80;
+      const lifestyleFit = [88, 80, 85, 76, 82][index] ?? 80;
+      const propertyQuality = [85, 80, 75, 70, 75][index] ?? 75;
+      const total = [87.8, 80.6, 77.1, 78.4, 79.2][index] ?? 78;
+
+      return {
+        rank: index + 1,
+        entity_type: "property",
+        entity_id: property._id,
+        title: property.title,
+        locality_name: demoLocalities.find((locality) => locality._id === property.locality_id)?.name,
+        is_eligible: true,
+        scoring_profile: "balanced",
+        constraint_violations: [],
+        score: {
+          affordability,
+          commute,
+          safety,
+          internet,
+          food_access: foodAccess,
+          lifestyle_fit: lifestyleFit,
+          property_quality: propertyQuality,
+          total,
+          confidence_score: 85,
+          explanation: `${property.title} achieved a score of ${total}/100, driven by excellent rent affordability (${affordability}/100) and short commute (${commute}/100).`,
+          subscores: {
+            affordability: {
+              score: affordability,
+              weight: 0.22,
+              contribution: Number((affordability * 0.22).toFixed(2)),
+              label: "Affordability & Budget Fit",
+              details: `Rent Rs ${property.rent.toLocaleString("en-IN")}/mo is within budget.`,
+            },
+            commute: {
+              score: commute,
+              weight: 0.22,
+              contribution: Number((commute * 0.22).toFixed(2)),
+              label: "Commute & Proximity",
+              details: `Estimated ${property.commute_estimate_minutes ?? 25} mins travel time.`,
+            },
+            safety: {
+              score: safety,
+              weight: 0.20,
+              contribution: Number((safety * 0.20).toFixed(2)),
+              label: "Neighbourhood Safety",
+              details: `Locality safety composite: ${safety}/100.`,
+            },
+            internet: {
+              score: internet,
+              weight: 0.14,
+              contribution: Number((internet * 0.14).toFixed(2)),
+              label: "Internet & Connectivity",
+              details: `Broadband speed and fiber connectivity: ${internet}/100.`,
+            },
+            food_access: {
+              score: foodAccess,
+              weight: 0.10,
+              contribution: Number((foodAccess * 0.10).toFixed(2)),
+              label: "Food & Daily Essentials",
+              details: `Dining and daily essentials density: ${foodAccess}/100.`,
+            },
+            lifestyle_fit: {
+              score: lifestyleFit,
+              weight: 0.07,
+              contribution: Number((lifestyleFit * 0.07).toFixed(2)),
+              label: "Lifestyle Preferences",
+              details: "Matches specified lifestyle preferences.",
+            },
+            property_quality: {
+              score: propertyQuality,
+              weight: 0.05,
+              contribution: Number((propertyQuality * 0.05).toFixed(2)),
+              label: "Property & Amenities Quality",
+              details: `${property.furnishing || "Furnished"} layout with standard amenities.`,
+            },
+          },
+          penalties: [],
+        },
+        highlights: [
+          `Rent around Rs ${property.rent.toLocaleString("en-IN")}`,
+          property.nearby_metro ? `Near ${property.nearby_metro}` : "Good locality access",
+          property.lowest_price ? `Lowest seen: Rs ${property.lowest_price.rent.toLocaleString("en-IN")}` : "Needs price verification",
+        ],
+        tradeoffs: index === 0 ? ["Late-night safety should be verified"] : ["Peak commute can stretch in rain"],
+      };
+    }),
   };
 }
