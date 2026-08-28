@@ -1,0 +1,66 @@
+name: Scheduled Property Ingestion
+
+on:
+  schedule:
+    # Run twice a week: Every Monday and Friday at 03:00 UTC (08:30 AM IST)
+    - cron: '0 3 * * 1,5'
+  workflow_dispatch:
+    inputs:
+      city:
+        description: 'Target city to scrape'
+        required: false
+        default: 'Kolkata'
+      max_pages:
+        description: 'Max pages per locality'
+        required: false
+        default: '2'
+
+jobs:
+  scrape-and-sync:
+    name: Scrape Recent Listings & Sync
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: 'backend/package-lock.json'
+
+      - name: Install Backend Dependencies
+        working-directory: backend
+        run: npm ci
+
+      - name: Install Playwright Chromium & System Dependencies
+        working-directory: backend
+        run: npx playwright install --with-deps chromium
+
+      - name: Ingest Recent Listings (Kolkata)
+        working-directory: backend
+        env:
+          MONGODB_URI: ${{ secrets.MONGODB_URI }}
+          MONGODB_DB: ${{ secrets.MONGODB_DB || 'relocation_ai' }}
+        run: |
+          DATE_TAG=$(date +'%Y-%m-%d')
+          npx tsx scripts/populatePropertyData.ts \
+            --city "${{ github.event.inputs.city || 'Kolkata' }}" \
+            --max-pages "${{ github.event.inputs.max_pages || '2' }}" \
+            --export-json "../datasetJson/kolkata_recent_${DATE_TAG}.json" \
+            --deactivate-stale
+
+      - name: Commit Updated Dataset Snapshots
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add datasetJson/
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "chore(data): automated property ingest snapshot $(date +'%Y-%m-%d')"
+            git push
+          else
+            echo "No new dataset changes to commit."
+          fi

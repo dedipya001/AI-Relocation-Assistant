@@ -455,7 +455,8 @@ async function main() {
     .option("--mongo-uri <uri>", "MongoDB URI", config.MONGODB_URI)
     .option("--mongo-db <db>", "MongoDB Database", config.MONGODB_DB)
     .option("--deactivate-stale", "Mark unseen listings as inactive", false)
-    .option("--dry-run", "Collect only, do not write to DB", false);
+    .option("--dry-run", "Collect only, do not write to DB", false)
+    .option("--export-json <path>", "Path to export collected JSON dataset");
 
   program.parse();
   const opts = program.opts();
@@ -468,6 +469,12 @@ async function main() {
     dryRun: opts.dryRun,
     deactivateStale: opts.deactivateStale,
   });
+
+  if (opts.exportJson && result.sampleProperties) {
+    const exportPath = opts.exportJson;
+    fs.writeFileSync(exportPath, JSON.stringify(result.sampleProperties, null, 2), "utf-8");
+    console.log(`[EXPORT] Written ${result.totalCollected} properties to ${exportPath}`);
+  }
 
   console.log("\n=======================================================");
   console.log(`🎉 SCRAPE PIPELINE COMPLETED FOR ${result.city.toUpperCase()}`);
