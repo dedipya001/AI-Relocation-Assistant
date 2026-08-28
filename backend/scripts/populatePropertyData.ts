@@ -102,11 +102,18 @@ export class LivePropertyScraper {
 
     const page = await context.newPage();
 
-    // Locality clusters for target city
-    const localities =
-      slugify(this.city) === "kolkata"
-        ? ["Salt-Lake-City", "New-Town", "Sector-V", "Rajarhat", "Ballygunge", "EM-Bypass"]
-        : [this.city];
+    // Locality clusters for target cities
+    const citySlug = slugify(this.city);
+    let localities: string[] = [this.city];
+    if (citySlug.includes("kolkata")) {
+      localities = ["Salt-Lake-City", "New-Town", "Sector-V", "Rajarhat", "Ballygunge", "EM-Bypass"];
+    } else if (citySlug.includes("bangalore") || citySlug.includes("bengaluru")) {
+      localities = ["Whitefield", "Electronic-City", "HSR-Layout", "Koramangala", "Bellandur", "Indiranagar"];
+    } else if (citySlug.includes("mumbai")) {
+      localities = ["Powai", "Andheri-East", "Bandra-West", "Goregaon-East", "Thane-West"];
+    } else if (citySlug.includes("pune")) {
+      localities = ["Hinjewadi", "Wakad", "Baner", "Kharadi", "Viman-Nagar", "Magarpatta"];
+    }
 
     for (const locality of localities) {
       for (let p = 1; p <= maxPages; p++) {
@@ -441,6 +448,7 @@ export class LivePropertyScraper {
       totalCollected: uniqueListings.length,
       upsertedCount,
       staleDeactivated,
+      allProperties: uniqueListings,
       sampleProperties: uniqueListings.slice(0, 5),
     };
   }
@@ -470,9 +478,9 @@ async function main() {
     deactivateStale: opts.deactivateStale,
   });
 
-  if (opts.exportJson && result.sampleProperties) {
+  if (opts.exportJson && result.allProperties) {
     const exportPath = opts.exportJson;
-    fs.writeFileSync(exportPath, JSON.stringify(result.sampleProperties, null, 2), "utf-8");
+    fs.writeFileSync(exportPath, JSON.stringify(result.allProperties, null, 2), "utf-8");
     console.log(`[EXPORT] Written ${result.totalCollected} properties to ${exportPath}`);
   }
 
