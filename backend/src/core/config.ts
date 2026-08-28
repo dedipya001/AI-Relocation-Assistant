@@ -2,10 +2,10 @@ import dotenv from "dotenv";
 import path from "path";
 import { z } from "zod";
 
-// Load environment variables from .env file
-dotenv.config();
-// Also attempt to load from parent repo root if present
+// Load environment variables from single root .env
+dotenv.config({ path: path.resolve(process.cwd(), ".env") });
 dotenv.config({ path: path.resolve(process.cwd(), "../.env") });
+dotenv.config({ path: path.resolve(process.cwd(), "../../.env") });
 
 const configSchema = z.object({
   ENVIRONMENT: z.string().default("local"),
