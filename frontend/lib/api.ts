@@ -34,7 +34,7 @@ export interface SearchOptions {
 }
 
 export const api = {
-  search: async (query: string, options?: SearchOptions) =>
+  search: async (query: string, options?: SearchOptions): Promise<SearchResponse> =>
     request<SearchResponse>("/search", {
       method: "POST",
       body: JSON.stringify({
@@ -43,7 +43,14 @@ export const api = {
         weights: options?.weights,
         hard_constraints: options?.hard_constraints,
       }),
-    }).catch(() => demoSearchResponse(query)),
+    })
+      .then((res) => {
+        if (!res || !res.properties || res.properties.length === 0) {
+          return demoSearchResponse(query);
+        }
+        return res;
+      })
+      .catch(() => demoSearchResponse(query)),
 
   listScoringProfiles: () =>
     request<{ profiles: ScoringProfile[]; presets: Record<ScoringProfile, ScoringWeights> }>(

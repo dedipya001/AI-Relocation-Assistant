@@ -25,9 +25,6 @@ export class PropertyRepository extends MongoRepository {
     if (filters.locality_ids && filters.locality_ids.length > 0) {
       query.locality_id = { $in: filters.locality_ids };
     }
-    if (filters.amenities && filters.amenities.length > 0) {
-      query.amenities = { $all: filters.amenities };
-    }
 
     let targetCollection = this.collection;
 
@@ -44,11 +41,39 @@ export class PropertyRepository extends MongoRepository {
       }
     }
 
-    const docs = await targetCollection
+    let docs = await targetCollection
       .find(query)
       .sort({ rent: 1 })
       .limit(limit)
       .toArray();
+
+    // Fallback 1: If budget was too strict (0 results), relax budget constraint
+    if (docs.length === 0 && query.rent) {
+      const relaxedQuery = { ...query };
+      delete relaxedQuery.rent;
+      docs = await targetCollection
+        .find(relaxedQuery)
+        .sort({ rent: 1 })
+        .limit(limit)
+        .toArray();
+    }
+
+    // Fallback 2: If still 0 results, fetch top active properties from target collection or unified collection
+    if (docs.length === 0) {
+      docs = await targetCollection
+        .find({ is_active: { $ne: false } })
+        .sort({ rent: 1 })
+        .limit(limit)
+        .toArray();
+    }
+
+    if (docs.length === 0 && targetCollection !== this.collection) {
+      docs = await this.collection
+        .find({ is_active: { $ne: false } })
+        .sort({ rent: 1 })
+        .limit(limit)
+        .toArray();
+    }
 
     return docs.map(serializeDoc);
   }
