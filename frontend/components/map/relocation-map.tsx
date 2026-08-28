@@ -17,6 +17,8 @@ type RelocationMapProps = {
 
 type OverlayKey = "cafe" | "transit";
 
+const DEFAULT_OFFICE: [number, number] = [88.4335, 22.5762];
+
 function getMapboxToken(): string {
   if (process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN) {
     return process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN.trim();
