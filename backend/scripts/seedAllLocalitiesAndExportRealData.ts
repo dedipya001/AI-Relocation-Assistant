@@ -492,7 +492,17 @@ async function main() {
       { upsert: true }
     );
   }
-  console.log(`Upserted ${LOCALITIES_SEEDS.length} localities with full transit and lifestyle datasets.`);
+  console.log("Checking MongoDB properties collection...");
+  let propCount = await db.collection("properties").countDocuments({ is_active: { $ne: false } });
+  if (propCount === 0) {
+    console.log("Properties collection is empty. Automatically importing multi-city datasets from datasetJson/...");
+    const { execSync } = await import("child_process");
+    execSync("npx tsx scripts/importMagicBricksDataset.ts", {
+      cwd: path.resolve(__dirname, ".."),
+      stdio: "inherit",
+    });
+    propCount = await db.collection("properties").countDocuments({ is_active: { $ne: false } });
+  }
 
   console.log("Fetching all real properties from MongoDB...");
   const rawProps = await db.collection("properties").find({ is_active: { $ne: false } }).toArray();
