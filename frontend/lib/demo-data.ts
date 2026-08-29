@@ -99971,6 +99971,26585 @@ export const realProperties: Property[] = [
       "source": "MagicBricks",
       "rent": 11000
     }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dbe1",
+    "title": "3 BHK Flat   for Rent in Whitefield, Bangalore",
+    "rent": 60000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2215-Sq-ft-Multistorey-Apartment-FOR-Rent-ITPL-in-Bangalore&id=4d423834353535393337",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "ITPL",
+    "locality_id": "listing-bangalore-itpl-cf16a8",
+    "area_sqft": 1661,
+    "deposit": 120000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dM16mZEnmQ142VHrrtnm2xgA/Photo_h180_w240/84555937_3_restigeshantiniketan2_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.7286632,
+        12.9940799
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 60000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dbe3",
+    "title": "2 BHK  House for Rent in Varthur Kodi Bangalore",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1210-Sq-ft-Residential-House-FOR-Rent-Varthur-Kodi-in-Bangalore&id=4d423736323833383539",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Varthur Kodi",
+    "locality_id": "listing-bangalore-varthur-kodi-10f34f",
+    "area_sqft": 1210,
+    "deposit": 36000,
+    "images": [
+      "https://cdn.staticmb.com/srpstatic/images/no-image.svg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.74424743652344,
+        12.957818031311035
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dbe5",
+    "title": "2 BHK  House for Rent in Varthur Bangalore",
+    "rent": 17000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Residential-House-FOR-Rent-Varthur-in-Bangalore&id=4d423738323437313237",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Varthur",
+    "locality_id": "listing-bangalore-varthur-1e651c",
+    "area_sqft": 600,
+    "deposit": 34000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVN99A9dcoEvUP58__1S0Yo_YHgl79d/Photo_h180_w240/5fdf58c5-288b-427c-bc59-8be422d0369b_78247127_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.74251556396484,
+        12.941625595092773
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 17000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dbe7",
+    "title": "2 BHK Flat   for Rent in Whitefield, Bangalore",
+    "rent": 48000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1105-Sq-ft-Multistorey-Apartment-FOR-Rent-whitefield-in-Bangalore&id=4d423835383039333439",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Whitefield",
+    "locality_id": "listing-bangalore-whitefield-e4800a",
+    "area_sqft": null,
+    "deposit": 96000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMhPfZ38V5hBk6RZ-BIa-e95/Photo_h180_w240/85809349_9_PropertyImage418-42891849631803_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.74845,
+        13.031231
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 48000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dbe9",
+    "title": "2 BHK Flat   for Rent in Whitefield, Bangalore",
+    "rent": 48000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1185-Sq-ft-Multistorey-Apartment-FOR-Rent-EPIP-Zone-in-Bangalore&id=4d423835313838303431",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "EPIP Zone",
+    "locality_id": "listing-bangalore-epip-zone-7585d1",
+    "area_sqft": 1185,
+    "deposit": 96000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK48w9dsoRy91o1X-yCQxRXsZZSCl8/Photo_h180_w240/85188041_5_1781899873482-2068_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.71809387207031,
+        12.975160598754883
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 48000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dbeb",
+    "title": "3 BHK Flat   for Rent in Whitefield, Bangalore",
+    "rent": 60000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1180-Sq-ft-Multistorey-Apartment-FOR-Rent-Varthur-in-Bangalore&id=4d423731353237303239",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Varthur",
+    "locality_id": "listing-bangalore-varthur-1e651c",
+    "area_sqft": null,
+    "deposit": 120000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnzVG88A9ds62B1YVok4RvqYuya6TzGUc/Photo_h180_w240/5108_Screenshot202402122135392_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.74251723,
+        12.94162601
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 60000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dbed",
+    "title": "2 BHK Flat   for Rent in Whitefield, Bangalore",
+    "rent": 48000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1102-Sq-ft-Multistorey-Apartment-FOR-Rent-Varthur-in-Bangalore&id=4d423835363931343735",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Varthur",
+    "locality_id": "listing-bangalore-varthur-1e651c",
+    "area_sqft": 702,
+    "deposit": 96000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.74792,
+        12.937795
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 48000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dbef",
+    "title": "3 BHK Flat   for Rent in Whitefield, Bangalore",
+    "rent": 60000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1679-Sq-ft-Multistorey-Apartment-FOR-Rent-whitefield-in-Bangalore&id=4d423835333837353833",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Whitefield",
+    "locality_id": "listing-bangalore-whitefield-e4800a",
+    "area_sqft": 1679,
+    "deposit": 120000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dM6lX3LrUDulgQ5ASuJH93SV/Photo_h180_w240/85387583_6_PropertyImage695-5323442890455_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.76294105,
+        13.0155443
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 60000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dbf1",
+    "title": "2 BHK Flat   for Rent in Whitefield, Bangalore",
+    "rent": 48000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1250-Sq-ft-Multistorey-Apartment-FOR-Rent-whitefield-in-Bangalore&id=4d423836303837343037",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Whitefield",
+    "locality_id": "listing-bangalore-whitefield-e4800a",
+    "area_sqft": 900,
+    "deposit": 96000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dsnEjU_ogfz63WPiZDbtS12U/Photo_h180_w240/86087407_1_PropertyImage240-0200238676794_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.7434918,
+        12.9664438
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 48000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dbf3",
+    "title": "3 BHK Flat   for Rent in Whitefield, Bangalore",
+    "rent": 60000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1800-Sq-ft-Multistorey-Apartment-FOR-Rent-whitefield-in-Bangalore&id=4d423736323338363833",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Whitefield",
+    "locality_id": "listing-bangalore-whitefield-e4800a",
+    "area_sqft": null,
+    "deposit": 120000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2025/04/21/Project-Photo-20-Brigade-Harmony-Bangalore-5023130_2000_1500_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.74635,
+        12.957911
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 60000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dbf5",
+    "title": "2 BHK Flat   for Rent in Whitefield, Bangalore",
+    "rent": 48000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1245-Sq-ft-Multistorey-Apartment-FOR-Rent-whitefield-in-Bangalore&id=4d423835333835313133",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Whitefield",
+    "locality_id": "listing-bangalore-whitefield-e4800a",
+    "area_sqft": 1245,
+    "deposit": 96000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dM6lX3LrUDulgQ5ASuJH93SV/Photo_h180_w240/85385113_5_PropertyImage635-4584334876704_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.7618,
+        13.024725
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 48000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dbf7",
+    "title": "2 BHK Flat   for Rent in Whitefield, Bangalore",
+    "rent": 48000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1216-Sq-ft-Multistorey-Apartment-FOR-Rent-ITPL-in-Bangalore&id=4d423836303837303937",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "ITPL",
+    "locality_id": "listing-bangalore-itpl-cf16a8",
+    "area_sqft": null,
+    "deposit": 96000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.736453199217,
+        12.9864835182033
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 48000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dbf9",
+    "title": "3 BHK Flat   for Rent in Whitefield, Bangalore",
+    "rent": 60000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-3000-Sq-ft-Multistorey-Apartment-FOR-Rent-whitefield-in-Bangalore&id=4d423834383730373235",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Whitefield",
+    "locality_id": "listing-bangalore-whitefield-e4800a",
+    "area_sqft": 2700,
+    "deposit": 120000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dsMvPEPkQKYpH51gVdRpaG5K/Photo_h180_w240/84870725_9_hatsAppImage20260529at11.06.39_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.757508,
+        13.01442
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 60000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dbfb",
+    "title": "3 BHK Flat   for Rent in Whitefield, Bangalore",
+    "rent": 60000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2753-Sq-ft-Multistorey-Apartment-FOR-Rent-EPIP-Zone-in-Bangalore&id=4d423833373331393733",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "EPIP Zone",
+    "locality_id": "listing-bangalore-epip-zone-7585d1",
+    "area_sqft": 2753,
+    "deposit": 120000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2021/12/21/Project-Photo-15-Total-Windmills-Of-Your-Mind-Bangalore-5269677_800_1280_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.7183325,
+        12.9727779
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 60000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dbfd",
+    "title": "2 BHK Flat   for Rent in Whitefield, Bangalore",
+    "rent": 48000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1050-Sq-ft-Multistorey-Apartment-FOR-Rent-whitefield-in-Bangalore&id=4d423835333835363631",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Whitefield",
+    "locality_id": "listing-bangalore-whitefield-e4800a",
+    "area_sqft": null,
+    "deposit": 96000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dM6lX3LrUDulgQ5ASuJH93SV/Photo_h180_w240/85385661_6_PropertyImage254-81291087249636_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.744025,
+        12.984485
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 48000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dbff",
+    "title": "2 BHK Flat   for Rent in Whitefield, Bangalore",
+    "rent": 48000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1216-Sq-ft-Multistorey-Apartment-FOR-Rent-Varthur-in-Bangalore&id=4d423835333838333539",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Varthur",
+    "locality_id": "listing-bangalore-varthur-1e651c",
+    "area_sqft": 1100,
+    "deposit": 96000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.74251723,
+        12.94162601
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 48000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc01",
+    "title": "2 BHK Flat   for Rent in Whitefield, Bangalore",
+    "rent": 48000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1380-Sq-ft-Multistorey-Apartment-FOR-Rent-whitefield-in-Bangalore&id=4d423833373338373833",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Whitefield",
+    "locality_id": "listing-bangalore-whitefield-e4800a",
+    "area_sqft": 1250,
+    "deposit": 96000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99A9dcuysBlb-qbn9FVZp8pZ6WeK/Photo_h180_w240/83738783_8_PropertyImage381-93194110936156_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.72462277670692,
+        12.95648354490546
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 48000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc03",
+    "title": "3 BHK Flat   for Rent in Whitefield, Bangalore",
+    "rent": 60000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1459-Sq-ft-Multistorey-Apartment-FOR-Rent-whitefield-in-Bangalore&id=4d423835333837393739",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Whitefield",
+    "locality_id": "listing-bangalore-whitefield-e4800a",
+    "area_sqft": null,
+    "deposit": 120000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dM6lX3LrUDulgQ5ASuJH93SV/Photo_h180_w240/85387979_9_PropertyImage400-51278645842416_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.708082,
+        12.9922
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 60000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc05",
+    "title": "3 BHK Flat   for Rent in Whitefield, Bangalore",
+    "rent": 60000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1762-Sq-ft-Multistorey-Apartment-FOR-Rent-whitefield-in-Bangalore&id=4d423834383733333335",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Whitefield",
+    "locality_id": "listing-bangalore-whitefield-e4800a",
+    "area_sqft": null,
+    "deposit": 120000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.73909759521484,
+        12.968047142028809
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 60000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc07",
+    "title": "1 BHK Flat   for Rent in Whitefield, Bangalore",
+    "rent": 7000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-450-Sq-ft-Multistorey-Apartment-FOR-Rent-Channasandra-in-Bangalore&id=4d423538363837353135",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Channasandra",
+    "locality_id": "listing-bangalore-channasandra-3ea81d",
+    "area_sqft": 400,
+    "deposit": 14000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.76532052,
+        12.9801585
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 7000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc09",
+    "title": "1 BHK Flat   for Rent in Whitefield, Bangalore",
+    "rent": 7000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-450-Sq-ft-Multistorey-Apartment-FOR-Rent-Channasandra-in-Bangalore&id=4d423538363837303037",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Channasandra",
+    "locality_id": "listing-bangalore-channasandra-3ea81d",
+    "area_sqft": 400,
+    "deposit": 14000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.76532052,
+        12.9801585
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 7000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc0b",
+    "title": "3 BHK Flat   for Rent in Whitefield, Bangalore",
+    "rent": 60000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1701-Sq-ft-Multistorey-Apartment-FOR-Rent-ITPL-in-Bangalore&id=4d423831353130333137",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "ITPL",
+    "locality_id": "listing-bangalore-itpl-cf16a8",
+    "area_sqft": null,
+    "deposit": 120000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVT89I9ds4jUgtrY3IZeMhF9zKS-SZI/Photo_h180_w240/81510317_4_IMG20250827WA0019_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.733361,
+        12.968651
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 60000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc0d",
+    "title": "3 BHK Flat   for Rent in Whitefield, Bangalore",
+    "rent": 60000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2500-Sq-ft-Multistorey-Apartment-FOR-Rent-whitefield-in-Bangalore&id=4d423834383733313233",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Whitefield",
+    "locality_id": "listing-bangalore-whitefield-e4800a",
+    "area_sqft": 2000,
+    "deposit": 120000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9d8o-4f8RCAKGX8Lvb-WL5WIo/Photo_h180_w240/84873123_7_1780061035694-9312_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.739097,
+        12.9680475
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 60000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc0f",
+    "title": "3 BHK Flat   for Rent in Whitefield, Bangalore",
+    "rent": 60000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1700-Sq-ft-Multistorey-Apartment-FOR-Rent-whitefield-in-Bangalore&id=4d423835333838303831",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Whitefield",
+    "locality_id": "listing-bangalore-whitefield-e4800a",
+    "area_sqft": 1700,
+    "deposit": 120000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dM6lX3LrUDulgQ5ASuJH93SV/Photo_h180_w240/85388081_7_1783145379363-1726_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.7437736,
+        12.9837074
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 60000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc11",
+    "title": "3 BHK Flat   for Rent in Whitefield, Bangalore",
+    "rent": 60000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1750-Sq-ft-Multistorey-Apartment-FOR-Rent-whitefield-in-Bangalore&id=4d423738323338323839",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Whitefield",
+    "locality_id": "listing-bangalore-whitefield-e4800a",
+    "area_sqft": 1600,
+    "deposit": 120000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVN99A9dcImb-nkrgicEtH9-XMKPCBZ/Photo_h180_w240/78238289_19_PropertyImage1742298180385_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.62638854980469,
+        13.048593521118164
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 60000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc13",
+    "title": "3 BHK Flat   for Rent in Whitefield, Bangalore",
+    "rent": 60000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1600-Sq-ft-Multistorey-Apartment-FOR-Rent-Nallurhalli-in-Bangalore&id=4d423834313934353035",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Nallurhalli",
+    "locality_id": "listing-bangalore-nallurhalli-93a3b6",
+    "area_sqft": 1400,
+    "deposit": 120000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK48w9dswIFiLhLPnc86JOnYOWtwE_/Photo_h180_w240/84194505_7_layArea2_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.7437227020143,
+        12.9690455937965
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 60000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc15",
+    "title": "2 BHK Flat   for Rent in Whitefield, Bangalore",
+    "rent": 48000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1242-Sq-ft-Multistorey-Apartment-FOR-Rent-Varthur-in-Bangalore&id=4d423832343935363431",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Varthur",
+    "locality_id": "listing-bangalore-varthur-1e651c",
+    "area_sqft": 980,
+    "deposit": 96000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVE88E9dMImVTx5bLYJR9tsTlJJLIP7/Photo_h180_w240/82495641_1_PropertyImage465-3558681803821_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.74373129154752,
+        12.934572151761898
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 48000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc17",
+    "title": "2 BHK Flat   for Rent in Whitefield, Bangalore",
+    "rent": 48000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1352-Sq-ft-Multistorey-Apartment-FOR-Rent-Prasanth-Layout-in-Bangalore&id=4d423835393033303039",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Prasanth Layout",
+    "locality_id": "listing-bangalore-prasanth-layout-96aee9",
+    "area_sqft": 1100,
+    "deposit": 96000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dM27Tp2xUt0YFF1J2vUy-VMb/Photo_h180_w240/85903009_1_creenshot20260807at3.31.198239PM_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.74361,
+        12.980448
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 48000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc19",
+    "title": "3 BHK Flat   for Rent in Whitefield, Bangalore",
+    "rent": 60000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1718-Sq-ft-Multistorey-Apartment-FOR-Rent-whitefield-in-Bangalore&id=4d423835353435353635",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Whitefield",
+    "locality_id": "listing-bangalore-whitefield-e4800a",
+    "area_sqft": 1200,
+    "deposit": 120000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dc5zCjFA7taOs_Tg1L8ShJQT/Photo_h180_w240/85545565_10_hatsAppImage20250923at10.51.38PM1_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.739097,
+        12.9680475
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 60000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc1b",
+    "title": "2 BHK Flat   for Rent in Whitefield, Bangalore",
+    "rent": 48000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1102-Sq-ft-Multistorey-Apartment-FOR-Rent-Varthur-in-Bangalore&id=4d423833313931303235",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Varthur",
+    "locality_id": "listing-bangalore-varthur-1e651c",
+    "area_sqft": 638,
+    "deposit": 96000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK98w9d8uV0a2fJGz_jGQJkY8hU0Kr/Photo_h180_w240/83191025_9_PropertyImage413-07430633900987_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.74251723,
+        12.94162601
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 48000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc1d",
+    "title": "Home",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Indiranagar&cityName=Bangalore&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Indiranagar",
+    "locality_id": "listing-bangalore-indiranagar-46bf06",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc1f",
+    "title": "Flats for Rent in Bangalore",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Indiranagar&cityName=Bangalore&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Indiranagar",
+    "locality_id": "listing-bangalore-indiranagar-46bf06",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc21",
+    "title": "Flats for Rent in Whitefield",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Whitefield&cityName=Bangalore&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Whitefield",
+    "locality_id": "listing-bangalore-whitefield-e4800a",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc23",
+    "title": "1 BHK Flats for Rent in Whitefield",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Whitefield&cityName=Bangalore&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Whitefield",
+    "locality_id": "listing-bangalore-whitefield-e4800a",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc25",
+    "title": "3 BHK Flat   for Rent in Electronic City, Bangalore",
+    "rent": 28000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1280-Sq-ft-Multistorey-Apartment-FOR-Rent-Electronic-City-Phase-2-in-Bangalore&id=4d423833323031323535",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Electronic City Phase 2",
+    "locality_id": "listing-bangalore-electronic-city-phase-2-a787dd",
+    "area_sqft": 900,
+    "deposit": 56000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVG88A9dcuYrmflWIafiZHSGsj8ajUv/Photo_h180_w240/83201255_7_1770787797219-7813_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.675366,
+        12.8339509
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 28000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc27",
+    "title": "1 BHK Flat   for Rent in Electronic City, Bangalore",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-450-Sq-ft-Multistorey-Apartment-FOR-Rent-Electronic-City-in-Bangalore&id=4d423833323031343635",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Electronic City",
+    "locality_id": "listing-bangalore-electronic-city-c4f89c",
+    "area_sqft": 400,
+    "deposit": 36000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVG88A9dc5snWeoXcPGDmjCOC_UaolN/Photo_h180_w240/83201465_2_PropertyImage1771027313916_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.674025,
+        12.835072
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc29",
+    "title": "3 BHK Flat   for Rent in Electronic City, Bangalore",
+    "rent": 28000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1275-Sq-ft-Multistorey-Apartment-FOR-Rent-Electronic-City-in-Bangalore&id=4d423636303930333739",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Electronic City",
+    "locality_id": "listing-bangalore-electronic-city-c4f89c",
+    "area_sqft": 1100,
+    "deposit": 56000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnzVN99A9ds6cGSirAG5pw2KldKw2Tze5/Photo_h180_w240/66090379_3_PropertyImage1711275848159_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.6599403969321,
+        12.8209752514432
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 28000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc2b",
+    "title": "2 BHK Flat   for Rent in Electronic City, Bangalore",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1800-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Electronic-City-Phase-2-in-Bangalore&id=4d423736323831333337",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Electronic City Phase 2",
+    "locality_id": "listing-bangalore-electronic-city-phase-2-a787dd",
+    "area_sqft": 900,
+    "deposit": 36000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnzVE88E9dMvQ7zmHBKLYRp7FQ42iywny/Photo_h180_w240/76281337_1_xteriorView_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.68222508,
+        12.84681621
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc2d",
+    "title": "2 BHK Flat   for Rent in Electronic City, Bangalore",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1150-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Electronic-City-Phase-2-in-Bangalore&id=4d423835313833393833",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Electronic City Phase 2",
+    "locality_id": "listing-bangalore-electronic-city-phase-2-a787dd",
+    "area_sqft": 650,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.6822280883789,
+        12.846816062927246
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc2f",
+    "title": "2 BHK Flat   for Rent in Electronic City, Bangalore",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1300-Sq-ft-Multistorey-Apartment-FOR-Rent-Electronics-City-Phase-1-in-Bangalore&id=4d423832353037343133",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Electronics City Phase 1",
+    "locality_id": "listing-bangalore-electronics-city-phase-1-fffaf9",
+    "area_sqft": 1000,
+    "deposit": 36000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVE88E9dMPDD2k6xwjkbOmW7swUefAb/Photo_h180_w240/82507413_8_hatsAppImage20251209at16.51.0471e89312_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.658189,
+        12.840731
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc31",
+    "title": "2 BHK Flat   for Rent in Electronic City, Bangalore",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1188-Sq-ft-Multistorey-Apartment-FOR-Rent-Hosa-Road-in-Bangalore&id=4d423835383037373833",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Hosa Road",
+    "locality_id": "listing-bangalore-hosa-road-e9bd4f",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMuik2I4q1t27vNWGbD9BntY/Photo_h180_w240/85807783_1_MG20160301184919_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.667361,
+        12.891815
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc33",
+    "title": "2 BHK  House for Rent in Phase 2 Electronic City Bangalore",
+    "rent": 11000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Residential-House-FOR-Rent-Electronic-City-Phase-2-in-Bangalore&id=4d423538353830373939",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Electronic City Phase 2",
+    "locality_id": "listing-bangalore-electronic-city-phase-2-a787dd",
+    "area_sqft": 1200,
+    "deposit": 22000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAmjVE88E9dsqu5vuxNe5jtDvi0Nd5BUZG/Photo_h180_w240/58580799_6_PropertyImage779-6401872419975_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.68222508,
+        12.84681621
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 11000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc35",
+    "title": "2 BHK Flat   for Rent in Electronic City, Bangalore",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1030-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Electronic-City-in-Bangalore&id=4d423834383730303539",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Electronic City",
+    "locality_id": "listing-bangalore-electronic-city-c4f89c",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.675366,
+        12.8339509
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc37",
+    "title": "1 BHK  House for Rent in Phase 1 Electronics City Bangalore",
+    "rent": 10000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-500-Sq-ft-Residential-House-FOR-Rent-Electronics-City-Phase-1-in-Bangalore&id=4d423835383034353839",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Electronics City Phase 1",
+    "locality_id": "listing-bangalore-electronics-city-phase-1-fffaf9",
+    "area_sqft": null,
+    "deposit": 20000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.66035526,
+        12.84251915
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 10000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc39",
+    "title": "2 BHK Flat   for Rent in Electronic City, Bangalore",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-800-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Electronic-City-in-Bangalore&id=4d423835383034353633",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Electronic City",
+    "locality_id": "listing-bangalore-electronic-city-c4f89c",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.675366,
+        12.8339509
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc3b",
+    "title": "2 BHK Flat   for Rent in Electronic City, Bangalore",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1252-Sq-ft-Multistorey-Apartment-FOR-Rent-Electronic-City-Phase-2-in-Bangalore&id=4d423432363530393337",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Electronic City Phase 2",
+    "locality_id": "listing-bangalore-electronic-city-phase-2-a787dd",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mDkjVK48w9dcsvap0Sc3G3kB0UmNmkp0uJ/Photo_h180_w240/42650937_8_IMG-20190610-WA0014_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.67416381835938,
+        12.858707427978516
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc3d",
+    "title": "3 BHK Flat   for Rent in Electronic City, Bangalore",
+    "rent": 28000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1360-Sq-ft-Multistorey-Apartment-FOR-Rent-Konappana-Agrahara-in-Bangalore&id=4d423739393139373237",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Konappana Agrahara",
+    "locality_id": "listing-bangalore-konappana-agrahara-fceae6",
+    "area_sqft": null,
+    "deposit": 56000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVK48w9dMPrvqqA_Aufin20PMWgeq-i/Photo_h180_w240/79919727_2_1000256120_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.67369006,
+        12.89248661
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 28000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc3f",
+    "title": "3 BHK Flat   for Rent in Electronic City, Bangalore",
+    "rent": 28000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1850-Sq-ft-Multistorey-Apartment-FOR-Rent-Electronic-City-in-Bangalore&id=4d423835313732333737",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Electronic City",
+    "locality_id": "listing-bangalore-electronic-city-c4f89c",
+    "area_sqft": null,
+    "deposit": 56000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK48w9dcNuvObK4AFLLKafWE0RIuQT/Photo_h180_w240/21d15ad8-da56-4deb-9142-eb44a3b28713_85172377_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.666882,
+        12.833497
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 28000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc41",
+    "title": "3 BHK Flat   for Rent in Electronic City, Bangalore",
+    "rent": 28000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1735-Sq-ft-Multistorey-Apartment-FOR-Rent-Electronics-City-Phase-1-in-Bangalore&id=4d423638303536303033",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Electronics City Phase 1",
+    "locality_id": "listing-bangalore-electronics-city-phase-1-fffaf9",
+    "area_sqft": null,
+    "deposit": 56000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAmDVK4849dsovZbCQZDJH9FJ3-1-0OYdD/Photo_h180_w240/1ce37d2d-58f5-47e7-882d-14c369e27b13_68056003_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.66035526,
+        12.84251915
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 28000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc43",
+    "title": "2 BHK  House for Rent in Doddathoguru, Electronic City Bangalore",
+    "rent": 16000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-900-Sq-ft-Residential-House-FOR-Rent-Doddathoguru-in-Bangalore&id=4d423432383037383637",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Doddathoguru",
+    "locality_id": "listing-bangalore-doddathoguru-057120",
+    "area_sqft": 850,
+    "deposit": 32000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mDkjVK48w9dcLo4mJMhTgz4rg7PLUTWadt/Photo_h180_w240/42807867_8_screenshot_180_240.png"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.64932250976562,
+        12.847312927246094
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 16000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc45",
+    "title": "1 BHK Flat   for Rent in Electronic City, Bangalore",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-670-Sq-ft-Multistorey-Apartment-FOR-Rent-Electronic-City-in-Bangalore&id=4d423831343630353333",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Electronic City",
+    "locality_id": "listing-bangalore-electronic-city-c4f89c",
+    "area_sqft": 460,
+    "deposit": 36000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dswwvk-lhLmjWpryRtHFS-H2/Photo_h180_w240/81460533_6_PropertyImage941-4550686685845_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.656054,
+        12.8212959
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc47",
+    "title": "1 BHK  House for Rent in Doddathoguru, Electronic City Bangalore",
+    "rent": 15000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-500-Sq-ft-Residential-House-FOR-Rent-Doddathoguru-in-Bangalore&id=4d423635393135353931",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Doddathoguru",
+    "locality_id": "listing-bangalore-doddathoguru-057120",
+    "area_sqft": 425,
+    "deposit": 30000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAmDVN99A9dM-AdR_cDZh41gaPtJBVs7XX/Photo_h180_w240/65915591_4_PropertyImage889-6073908958147_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.64680668,
+        12.84825613
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 15000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc49",
+    "title": "3 BHK Flat   for Rent in Electronic City, Bangalore",
+    "rent": 28000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1500-Sq-ft-Multistorey-Apartment-FOR-Rent-Electronic-City-Phase-2-in-Bangalore&id=4d423635393038363635",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Electronic City Phase 2",
+    "locality_id": "listing-bangalore-electronic-city-phase-2-a787dd",
+    "area_sqft": 1500,
+    "deposit": 56000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2019/12/30/Project-Photo-46-SNN-Raj-Greenbay-Bangalore-5082567_667_1000_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.678307,
+        12.853151
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 28000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc4b",
+    "title": "2 BHK Flat   for Rent in Electronic City, Bangalore",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-990-Sq-ft-Multistorey-Apartment-FOR-Rent-Electronic-City-in-Bangalore&id=4d423836303835363937",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Electronic City",
+    "locality_id": "listing-bangalore-electronic-city-c4f89c",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dsopY7AsfT_NoDTthZQKtMm1/Photo_h180_w240/86085697_4_PropertyImage881-6937558550732_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.6934145,
+        12.8312635
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc4d",
+    "title": "2 BHK Flat   for Rent in Electronic City, Bangalore",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1500-Sq-ft-Multistorey-Apartment-FOR-Rent-Electronic-City-in-Bangalore&id=4d423832343732303239",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Electronic City",
+    "locality_id": "listing-bangalore-electronic-city-c4f89c",
+    "area_sqft": 850,
+    "deposit": 36000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK98w9dc_qEn_G900dRVqiL0z-4Uwk/Photo_h180_w240/82472029_2_PropertyImage1768464203755_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.650438,
+        12.801546
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc4f",
+    "title": "1 BHK  House for Rent in Electronic City Bangalore",
+    "rent": 12000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-600-Sq-ft-Residential-House-FOR-Rent-Electronic-City-in-Bangalore&id=4d423734363332343731",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Electronic City",
+    "locality_id": "listing-bangalore-electronic-city-c4f89c",
+    "area_sqft": null,
+    "deposit": 24000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.675366,
+        12.8339509
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 12000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc51",
+    "title": "3 BHK Flat   for Rent in Electronic City, Bangalore",
+    "rent": 28000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1400-Sq-ft-Multistorey-Apartment-FOR-Rent-Electronic-City-in-Bangalore&id=4d423436323939333039",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Electronic City",
+    "locality_id": "listing-bangalore-electronic-city-c4f89c",
+    "area_sqft": 1300,
+    "deposit": 56000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mDkjVO-dQ9ds8Nytgsww00OB65gDHWccrT/Photo_h180_w240/46299309_10_2_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.675366,
+        12.8339509
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 28000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc53",
+    "title": "2 BHK Flat   for Rent in Electronic City, Bangalore",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1010-Sq-ft-Multistorey-Apartment-FOR-Rent-Electronic-City-Phase-2-in-Bangalore&id=4d423738333536313031",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Electronic City Phase 2",
+    "locality_id": "listing-bangalore-electronic-city-phase-2-a787dd",
+    "area_sqft": 850,
+    "deposit": 36000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVN99A9dcgMCel-pIIvHSPdvL1aPVic/Photo_h180_w240/78356101_13_6d96c7613854247a2d66b48ca510ff0_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.7028212,
+        12.8307268
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc55",
+    "title": "2 BHK Flat   for Rent in Electronic City, Bangalore",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Multistorey-Apartment-FOR-Rent-Electronics-City-Phase-1-in-Bangalore&id=4d423831353232333739",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Electronics City Phase 1",
+    "locality_id": "listing-bangalore-electronics-city-phase-1-fffaf9",
+    "area_sqft": 1200,
+    "deposit": 36000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVT89I9ds4jUgtrY3IZeMhF9zKS-SZI/Photo_h180_w240/81522379_4_1758733654414-013_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.645495,
+        12.84195
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc57",
+    "title": "2 BHK  House for Rent in Hosa Road Area Bangalore",
+    "rent": 20000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Residential-House-FOR-Rent-Hosa-Road-in-Bangalore&id=4d423834323033333131",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Hosa Road",
+    "locality_id": "listing-bangalore-hosa-road-e9bd4f",
+    "area_sqft": 750,
+    "deposit": 40000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB5tA9dchl0yxbJLPybXQEja-5c-WY/Photo_h180_w240/84203311_14_PropertyImage28-471012321057533_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.65561606,
+        12.87126841
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 20000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc59",
+    "title": "1 BHK Flat   for Rent in Electronic City, Bangalore",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-45-Sq-ft-Multistorey-Apartment-FOR-Rent-Electronics-City-Phase-1-in-Bangalore&id=4d423736333133373739",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Electronics City Phase 1",
+    "locality_id": "listing-bangalore-electronics-city-phase-1-fffaf9",
+    "area_sqft": 45,
+    "deposit": 36000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2023/04/26/Project-Photo-3-Sai-Nivas-Bangalore-5190165_1500_2000_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.63700771,
+        13.00101184
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc5b",
+    "title": "3 BHK Flat   for Rent in Electronic City, Bangalore",
+    "rent": 28000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1495-Sq-ft-Multistorey-Apartment-FOR-Rent-Electronic-City-in-Bangalore&id=4d423736333035343035",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Electronic City",
+    "locality_id": "listing-bangalore-electronic-city-c4f89c",
+    "area_sqft": null,
+    "deposit": 56000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnzVE88E9dMg9AcZD-GHvO8nKoi9FNJ3T/Photo_h180_w240/76305405_8_PropertyImage482-4175442152434_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.6508532,
+        12.8374291
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 28000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc5d",
+    "title": "3 BHK Flat   for Rent in Electronic City, Bangalore",
+    "rent": 28000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1555-Sq-ft-Multistorey-Apartment-FOR-Rent-Electronic-City-in-Bangalore&id=4d423434303936303933",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Electronic City",
+    "locality_id": "listing-bangalore-electronic-city-c4f89c",
+    "area_sqft": 1555,
+    "deposit": 56000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mDkjVB48U9dc7j8fAb3nSRvty4YWzfWxci/Photo_h180_w240/44096093_2_PropertyImage534-3051677347084_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.655886,
+        12.83509
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 28000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc5f",
+    "title": "3 BHK Flat   for Rent in Electronic City, Bangalore",
+    "rent": 28000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1385-Sq-ft-Multistorey-Apartment-FOR-Rent-Kammasandra-in-Bangalore&id=4d423835383130313437",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Kammasandra",
+    "locality_id": "listing-bangalore-kammasandra-3f569a",
+    "area_sqft": 1385,
+    "deposit": 56000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMhPfZ38V5hBk6RZ-BIa-e95/Photo_h180_w240/9054_1785645681921.776112_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.68222508,
+        12.84681621
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 28000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc61",
+    "title": "Flats for Rent in Electronic City",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Electronic-City&cityName=Bangalore&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Electronic City",
+    "locality_id": "listing-bangalore-electronic-city-c4f89c",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc63",
+    "title": "1 BHK Flats for Rent in Electronic City",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Electronic-City&cityName=Bangalore&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Electronic City",
+    "locality_id": "listing-bangalore-electronic-city-c4f89c",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc65",
+    "title": "2 BHK Flat   for Rent in HSR Layout, Bangalore",
+    "rent": 57000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-600-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Hosapalya-in-Bangalore&id=4d423835383038343037",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Hosapalya",
+    "locality_id": "listing-bangalore-hosapalya-3f3d5c",
+    "area_sqft": null,
+    "deposit": 114000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.64472198486328,
+        12.896199226379395
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 57000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc67",
+    "title": "2 BHK Flat   for Rent in HSR Layout, Bangalore",
+    "rent": 57000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-950-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Teachers-Colony-HSR-Layout-in-Bangalore&id=4d423836303838323637",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Teachers Colony -HSR Layout",
+    "locality_id": "listing-bangalore-teachers-colony-hsr-layout-052dab",
+    "area_sqft": null,
+    "deposit": 114000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.6350582,
+        12.91973237
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 57000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc69",
+    "title": "2 BHK Flat   for Rent in HSR Layout, Bangalore",
+    "rent": 57000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Builder-Floor-Apartment-FOR-Rent-HSR-Layout-Sector-2-in-Bangalore&id=4d423833373331383235",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Sector 2 HSR Layout",
+    "locality_id": "listing-bangalore-sector-2-hsr-layout-9dc9a7",
+    "area_sqft": 1000,
+    "deposit": 114000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dMyt69hsB0Z_12u1C979XZNU/Photo_h180_w240/83731825_4_PropertyImage866-7630493358583_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.64727783203125,
+        12.908997535705566
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 57000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc6b",
+    "title": "1 BHK Flat   for Rent in HSR Layout, Bangalore",
+    "rent": 21900,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-610-Sq-ft-Multistorey-Apartment-FOR-Rent-HSR-Layout-in-Bangalore&id=4d423835313837313635",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "HSR Layout",
+    "locality_id": "listing-bangalore-hsr-layout-7b6f6a",
+    "area_sqft": 610,
+    "deposit": 43800,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK48w9dsv0kYgrfsFfIj6r_lgEHVqc/Photo_h180_w240/85187165_1_PropertyImage546-1345812978949_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.6445763,
+        12.9114311
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 21900
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc6d",
+    "title": "2 BHK Flat   for Rent in HSR Layout, Bangalore",
+    "rent": 57000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1100-Sq-ft-Multistorey-Apartment-FOR-Rent-HSR-Layout-Sector-1-in-Bangalore&id=4d423538313733353733",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Sector 1 HSR Layout",
+    "locality_id": "listing-bangalore-sector-1-hsr-layout-15e55f",
+    "area_sqft": 900,
+    "deposit": 114000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAmjVO-dQ9dsPK6ROZJRTWc81JnsSC75pI/Photo_h180_w240/58173573_7_PropertyImage979-9883458365592_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.65408132,
+        12.91779537
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 57000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc6f",
+    "title": "1 BHK Flat   for Rent in HSR Layout, Bangalore",
+    "rent": 21900,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-600-Sq-ft-Builder-Floor-Apartment-FOR-Rent-HSR-Layout-Sector-1-in-Bangalore&id=4d423836313734343433",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Sector 1 HSR Layout",
+    "locality_id": "listing-bangalore-sector-1-hsr-layout-15e55f",
+    "area_sqft": 600,
+    "deposit": 43800,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dswwvk-lhLmjWpryRtHFS-H2/Photo_h180_w240/86174443_3_PropertyImage527-9283968869682_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.65408132,
+        12.91779537
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 21900
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc71",
+    "title": "2 BHK Flat   for Rent in HSR Layout, Bangalore",
+    "rent": 57000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1409-Sq-ft-Multistorey-Apartment-FOR-Rent-HSR-Layout-Sector-7-in-Bangalore&id=4d423538323635343431",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Sector 7 HSR Layout",
+    "locality_id": "listing-bangalore-sector-7-hsr-layout-526bb3",
+    "area_sqft": 1410,
+    "deposit": 114000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAmjVO-dQ9d8rbNK9sbbB5M5LGpPVgYpYq/Photo_h180_w240/58265441_8_hatsAppImage2021-11-27at3.49.49PM(1)_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.648141,
+        12.908499
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 57000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc73",
+    "title": "1 BHK Flat   for Rent in HSR Layout, Bangalore",
+    "rent": 21900,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-600-Sq-ft-Builder-Floor-Apartment-FOR-Rent-HSR-Layout-Sector-1-in-Bangalore&id=4d423836313734313231",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Sector 1 HSR Layout",
+    "locality_id": "listing-bangalore-sector-1-hsr-layout-15e55f",
+    "area_sqft": 600,
+    "deposit": 43800,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dswwvk-lhLmjWpryRtHFS-H2/Photo_h180_w240/86174121_2_PropertyImage537-9578124580407_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.65408132,
+        12.91779537
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 21900
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc75",
+    "title": "2 BHK  House for Rent in Sector 1st HSR Layout Bangalore",
+    "rent": 45000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1100-Sq-ft-Residential-House-FOR-Rent-HSR-Layout-Sector-1-in-Bangalore&id=4d423835383130393135",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Sector 1 HSR Layout",
+    "locality_id": "listing-bangalore-sector-1-hsr-layout-15e55f",
+    "area_sqft": 1000,
+    "deposit": 90000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMhPfZ38V5hBk6RZ-BIa-e95/Photo_h180_w240/85810915_5_PropertyImage817-8959027265396_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.65408132,
+        12.91779537
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 45000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc77",
+    "title": "1 BHK  House for Rent in ITI Layout HSR Layout Bangalore",
+    "rent": 20000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-400-Sq-ft-Residential-House-FOR-Rent-ITI-Layout-in-Bangalore&id=4d423835313932343439",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "ITI Layout",
+    "locality_id": "listing-bangalore-iti-layout-32d0c5",
+    "area_sqft": null,
+    "deposit": 40000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.64515487,
+        12.90207849
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 20000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc79",
+    "title": "2 BHK Flat   for Rent in HSR Layout, Bangalore",
+    "rent": 57000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1350-Sq-ft-Builder-Floor-Apartment-FOR-Rent-HSR-Layout-in-Bangalore&id=4d423836303938303037",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "HSR Layout",
+    "locality_id": "listing-bangalore-hsr-layout-7b6f6a",
+    "area_sqft": 1150,
+    "deposit": 114000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dsvMOeVv1oEgiwYXJQpX4bpV/Photo_h180_w240/86098007_2_PropertyImage592-2155419518263_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.6445763,
+        12.9114311
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 57000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc7b",
+    "title": "3 BHK  House for Rent in Hsr Layout Bangalore",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2800-Sq-ft-Residential-House-FOR-Rent-HSR-Layout-in-Bangalore&id=4d423836303938303033",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "HSR Layout",
+    "locality_id": "listing-bangalore-hsr-layout-7b6f6a",
+    "area_sqft": 2600,
+    "deposit": 260000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dsvMOeVv1oEgiwYXJQpX4bpV/Photo_h180_w240/86098003_2_PropertyImage12-065229176779436_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.6445763,
+        12.9114311
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc7d",
+    "title": "3 BHK Flat   for Rent in HSR Layout, Bangalore",
+    "rent": 80000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2400-Sq-ft-Builder-Floor-Apartment-FOR-Rent-HSR-Layout-in-Bangalore&id=4d423836303938303031",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "HSR Layout",
+    "locality_id": "listing-bangalore-hsr-layout-7b6f6a",
+    "area_sqft": 2200,
+    "deposit": 160000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dsvMOeVv1oEgiwYXJQpX4bpV/Photo_h180_w240/86098001_1_PropertyImage870-4919419211342_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.6445763,
+        12.9114311
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 80000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc7f",
+    "title": "3 BHK Villa for Rent in Hsr Layout Bangalore",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2400-Sq-ft-Villa-FOR-Rent-HSR-Layout-in-Bangalore&id=4d423831353232393031",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "HSR Layout",
+    "locality_id": "listing-bangalore-hsr-layout-7b6f6a",
+    "area_sqft": 3800,
+    "deposit": 260000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVT89I9ds_GCF4oyMz0U_q_V6zPrFWo/Photo_h180_w240/81522901_1_1758740355761-0492_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.64457702636719,
+        12.911431312561035
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc81",
+    "title": "2 BHK Flat   for Rent in HSR Layout, Bangalore",
+    "rent": 57000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-800-Sq-ft-Multistorey-Apartment-FOR-Rent-HSR-Layout-Sector-3-in-Bangalore&id=4d423831353234333537",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Sector 3 HSR Layout",
+    "locality_id": "listing-bangalore-sector-3-hsr-layout-6fe2fc",
+    "area_sqft": 800,
+    "deposit": 114000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.64174686,
+        12.90821536
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 57000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc83",
+    "title": "1 BHK  House for Rent in Sector 2 HSR Layout Bangalore",
+    "rent": 24000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-600-Sq-ft-Residential-House-FOR-Rent-HSR-Layout-Sector-2-in-Bangalore&id=4d423835393938323739",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Sector 2 HSR Layout",
+    "locality_id": "listing-bangalore-sector-2-hsr-layout-9dc9a7",
+    "area_sqft": null,
+    "deposit": 48000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.64727907,
+        12.90899741
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 24000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc85",
+    "title": "3 BHK Flat   for Rent in HSR Layout, Bangalore",
+    "rent": 80000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2600-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Royal-Palcid-layout-in-Bangalore&id=4d423834313631303037",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Royal Placid Layout",
+    "locality_id": "listing-bangalore-royal-placid-layout-25747c",
+    "area_sqft": 2200,
+    "deposit": 160000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB5tA9dMN8ujopO2qHe05-9qLhVA47/Photo_h180_w240/84161007_1_1_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.65713738,
+        12.90092904
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 80000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc87",
+    "title": "3 BHK Flat   for Rent in HSR Layout, Bangalore",
+    "rent": 80000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2250-Sq-ft-Multistorey-Apartment-FOR-Rent-HSR-Layout-in-Bangalore&id=4d423739383035333837",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "HSR Layout",
+    "locality_id": "listing-bangalore-hsr-layout-7b6f6a",
+    "area_sqft": 18000,
+    "deposit": 160000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVK48w9dMgkgv9ZXT_Brr1u2ZWtLqSH/Photo_h180_w240/79805387_8_MG20131103162014_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.647943,
+        12.907657
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 80000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc89",
+    "title": "1 BHK  House for Rent in Sector 7 HSR Layout Bangalore",
+    "rent": 34000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-450-Sq-ft-Residential-House-FOR-Rent-HSR-Layout-Sector-7-in-Bangalore&id=4d423431303136303731",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Sector 7 HSR Layout",
+    "locality_id": "listing-bangalore-sector-7-hsr-layout-526bb3",
+    "area_sqft": null,
+    "deposit": 68000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.635074,
+        12.908989
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 34000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc8b",
+    "title": "3 BHK Villa for Rent in Sector 1st HSR Layout Bangalore",
+    "rent": 70000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1200-Sq-ft-Villa-FOR-Rent-HSR-Layout-Sector-1-in-Bangalore&id=4d423833363830393935",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Sector 1 HSR Layout",
+    "locality_id": "listing-bangalore-sector-1-hsr-layout-15e55f",
+    "area_sqft": 1300,
+    "deposit": 140000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99A9dM19OKV5vc2iPAHm-tLDZa9P/Photo_h180_w240/83680995_1_1772875240694-3932_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.65408325195312,
+        12.917795181274414
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 70000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc8d",
+    "title": "1 BHK Flat   for Rent in HSR Layout, Bangalore",
+    "rent": 21900,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-600-Sq-ft-Builder-Floor-Apartment-FOR-Rent-HSR-Layout-Sector-1-in-Bangalore&id=4d423833313338383335",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Sector 1 HSR Layout",
+    "locality_id": "listing-bangalore-sector-1-hsr-layout-15e55f",
+    "area_sqft": null,
+    "deposit": 43800,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK98w9dsKEDBFqbMhQzDuGq77D3k7J/Photo_h180_w240/83138835_6_IMG_7105_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.65408132,
+        12.91779537
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 21900
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc8f",
+    "title": "2 BHK Flat   for Rent in HSR Layout, Bangalore",
+    "rent": 57000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Builder-Floor-Apartment-FOR-Rent-HSR-Layout-Sector-2-in-Bangalore&id=4d423835353333363039",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Sector 2 HSR Layout",
+    "locality_id": "listing-bangalore-sector-2-hsr-layout-9dc9a7",
+    "area_sqft": 1200,
+    "deposit": 114000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dc5zCjFA7taOs_Tg1L8ShJQT/Photo_h180_w240/85533609_1_PropertyImage498-9815348944625_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.64727783203125,
+        12.908997535705566
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 57000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc91",
+    "title": "2 BHK  House for Rent in Sector 1st HSR Layout Bangalore",
+    "rent": 45000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-900-Sq-ft-Residential-House-FOR-Rent-HSR-Layout-Sector-1-in-Bangalore&id=4d423834353138363435",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Sector 1 HSR Layout",
+    "locality_id": "listing-bangalore-sector-1-hsr-layout-15e55f",
+    "area_sqft": 900,
+    "deposit": 90000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dM9yLTugznCijzQe7-Vccf_B/Photo_h180_w240/84518645_9_PropertyImage195-86467471399806_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.65408132,
+        12.91779537
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 45000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc93",
+    "title": "1 BHK  House for Rent in Sector 7 HSR Layout Bangalore",
+    "rent": 34000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-900-Sq-ft-Residential-House-FOR-Rent-HSR-Layout-Sector-7-in-Bangalore&id=4d423835353434353037",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Sector 7 HSR Layout",
+    "locality_id": "listing-bangalore-sector-7-hsr-layout-526bb3",
+    "area_sqft": null,
+    "deposit": 68000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dc5zCjFA7taOs_Tg1L8ShJQT/Photo_h180_w240/85544507_2_hatsAppImage20260714at18.15.181_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.63507080078125,
+        12.908988952636719
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 34000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc95",
+    "title": "1 BHK Flat   for Rent in HSR Layout, Bangalore",
+    "rent": 21900,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-750-Sq-ft-Multistorey-Apartment-FOR-Rent-HSR-Layout-Sector-5-in-Bangalore&id=4d423833373239313139",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Sector 5 HSR Layout",
+    "locality_id": "listing-bangalore-sector-5-hsr-layout-173b9a",
+    "area_sqft": 700,
+    "deposit": 43800,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99A9dcuysBlb-qbn9FVZp8pZ6WeK/Photo_h180_w240/83729119_3_ewbui3_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.63308884,
+        12.92086722
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 21900
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc97",
+    "title": "3 BHK Flat   for Rent in HSR Layout, Bangalore",
+    "rent": 80000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1800-Sq-ft-Multistorey-Apartment-FOR-Rent-HSR-Layout-in-Bangalore&id=4d423736313333393231",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "HSR Layout",
+    "locality_id": "listing-bangalore-hsr-layout-7b6f6a",
+    "area_sqft": null,
+    "deposit": 160000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2023/08/18/Project-Photo-4-The-Empress-Bangalore-5053893_721_1600_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.6482573,
+        12.919138
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 80000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc99",
+    "title": "2 BHK  House for Rent in Sector 2 HSR Layout Bangalore",
+    "rent": 50000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Residential-House-FOR-Rent-HSR-Layout-Sector-2-in-Bangalore&id=4d423835333738393433",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Sector 2 HSR Layout",
+    "locality_id": "listing-bangalore-sector-2-hsr-layout-9dc9a7",
+    "area_sqft": 1200,
+    "deposit": 100000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dMlZ2NghAgMmUJKlKTnVXS82/Photo_h180_w240/85378943_1_PropertyImage193-194641070651_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.64727907,
+        12.90899741
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 50000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc9b",
+    "title": "1 BHK Flat   for Rent in HSR Layout, Bangalore",
+    "rent": 21900,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-500-Sq-ft-Builder-Floor-Apartment-FOR-Rent-HSR-Layout-Sector-3-in-Bangalore&id=4d423834383537383935",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Sector 3 HSR Layout",
+    "locality_id": "listing-bangalore-sector-3-hsr-layout-6fe2fc",
+    "area_sqft": 490,
+    "deposit": 43800,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dsLKZhan6xjENK-a9Uo0PR2q/Photo_h180_w240/84857895_7_hatsAppImage20210915at12.06.20PM_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.64174686,
+        12.90821536
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 21900
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc9d",
+    "title": "1 BHK  House for Rent in Sector 1st HSR Layout Bangalore",
+    "rent": 32000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-700-Sq-ft-Residential-House-FOR-Rent-HSR-Layout-Sector-1-in-Bangalore&id=4d423835333738383337",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Sector 1 HSR Layout",
+    "locality_id": "listing-bangalore-sector-1-hsr-layout-15e55f",
+    "area_sqft": 600,
+    "deposit": 64000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.65408132,
+        12.91779537
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 32000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dc9f",
+    "title": "1 BHK Flat   for Rent in HSR Layout, Bangalore",
+    "rent": 21900,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-750-Sq-ft-Multistorey-Apartment-FOR-Rent-ITI-Layout-in-Bangalore&id=4d423833313539373135",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "ITI Layout",
+    "locality_id": "listing-bangalore-iti-layout-32d0c5",
+    "area_sqft": null,
+    "deposit": 43800,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK98w9dsNhVkQpx3a95wl8CyCeiz0p/Photo_h180_w240/83159715_2_IMG2468_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.64515686035156,
+        12.902078628540039
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 21900
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dca1",
+    "title": "Flats for Rent in HSR Layout",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=HSR-Layout&cityName=Bangalore&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "HSR Layout",
+    "locality_id": "listing-bangalore-hsr-layout-7b6f6a",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dca3",
+    "title": "1 BHK Flats for Rent in HSR Layout",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=HSR-Layout&cityName=Bangalore&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "HSR Layout",
+    "locality_id": "listing-bangalore-hsr-layout-7b6f6a",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dca5",
+    "title": "3 BHK Flat   for Rent in Koramangala, Bangalore",
+    "rent": 85000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1436-Sq-ft-Multistorey-Apartment-FOR-Rent-Koramangala-in-Bangalore&id=4d423835353437363133",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Koramangala",
+    "locality_id": "listing-bangalore-koramangala-ca50ac",
+    "area_sqft": null,
+    "deposit": 170000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2026/03/22/Project-Photo-26-Raheja-Residency-Bangalore-5000454_720_1280_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.631825,
+        12.928405
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 85000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dca7",
+    "title": "3 BHK Flat   for Rent in Koramangala, Bangalore",
+    "rent": 85000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1700-Sq-ft-Multistorey-Apartment-FOR-Rent-Koramangala-in-Bangalore&id=4d423835333837363937",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Koramangala",
+    "locality_id": "listing-bangalore-koramangala-ca50ac",
+    "area_sqft": null,
+    "deposit": 170000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dM6lX3LrUDulgQ5ASuJH93SV/Photo_h180_w240/85387697_3_PropertyImage513-7655403610934_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.631825,
+        12.928405
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 85000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dca9",
+    "title": "1 BHK Flat   for Rent in Koramangala, Bangalore",
+    "rent": 28000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-500-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Koramangala-Block-1-in-Bangalore&id=4d423835333834353433",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Block 1st Koramangala",
+    "locality_id": "listing-bangalore-block-1st-koramangala-d4a38f",
+    "area_sqft": 550,
+    "deposit": 56000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.63378395,
+        12.93124845
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 28000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcab",
+    "title": "2 BHK Flat   for Rent in Koramangala, Bangalore",
+    "rent": 65000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1050-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Koramangala-Block-1-in-Bangalore&id=4d423834353438313533",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Block 1st Koramangala",
+    "locality_id": "listing-bangalore-block-1st-koramangala-d4a38f",
+    "area_sqft": 900,
+    "deposit": 130000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dM16mZEnmQ142VHrrtnm2xgA/Photo_h180_w240/84548153_6_PropertyImage86-74664403359911_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.63618902,
+        12.92292393
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 65000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcad",
+    "title": "2 BHK Flat   for Rent in Koramangala, Bangalore",
+    "rent": 65000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1350-Sq-ft-Multistorey-Apartment-FOR-Rent-Koramangala-in-Bangalore&id=4d423835333834333937",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Koramangala",
+    "locality_id": "listing-bangalore-koramangala-ca50ac",
+    "area_sqft": 1300,
+    "deposit": 130000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2022/12/07/Project-Photo-39-Sipani-Classe-Bangalore-5026128_585_1040_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.619101,
+        12.940797
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 65000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcaf",
+    "title": "3 BHK Flat   for Rent in Koramangala, Bangalore",
+    "rent": 85000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1600-Sq-ft-Multistorey-Apartment-FOR-Rent-Koramangala-Block-1-in-Bangalore&id=4d423731343830333339",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Block 1st Koramangala",
+    "locality_id": "listing-bangalore-block-1st-koramangala-d4a38f",
+    "area_sqft": 1600,
+    "deposit": 170000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnzVG88A9dsqnbgMbDLWlEm3ES9fmmaqe/Photo_h180_w240/71480339_16_PropertyImage794-1608303958483_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.63618902,
+        12.92292393
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 85000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcb1",
+    "title": "3 BHK Flat   for Rent in Koramangala, Bangalore",
+    "rent": 85000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1800-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Koramangala-in-Bangalore&id=4d423739393938323537",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Koramangala",
+    "locality_id": "listing-bangalore-koramangala-ca50ac",
+    "area_sqft": null,
+    "deposit": 170000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.626569,
+        12.928728
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 85000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcb3",
+    "title": "2 BHK Flat   for Rent in Koramangala, Bangalore",
+    "rent": 65000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1100-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Koramangala-Block-1-in-Bangalore&id=4d423738323431393431",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Block 1st Koramangala",
+    "locality_id": "listing-bangalore-block-1st-koramangala-d4a38f",
+    "area_sqft": 1000,
+    "deposit": 130000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVN99A9dMLwOqpPEOW3ICtdZy5fT8Df/Photo_h180_w240/78241941_8_MG20250308WA0042_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.63618902,
+        12.92292393
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 65000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcb5",
+    "title": "3 BHK Flat   for Rent in Koramangala, Bangalore",
+    "rent": 85000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1800-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Koramangala-Block-4-in-Bangalore&id=4d423835353437303433",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Koramangala Block 4",
+    "locality_id": "listing-bangalore-koramangala-block-4-d53b8a",
+    "area_sqft": 1600,
+    "deposit": 170000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dc-WUGQDRWhjmMYadCFP0efz/Photo_h180_w240/85547043_18_PropertyImage245-83168864030225_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.62876503,
+        12.9333919
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 85000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcb7",
+    "title": "1 BHK  House for Rent in Block 4 Koramangala Bangalore",
+    "rent": 30000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-600-Sq-ft-Residential-House-FOR-Rent-Koramangala-Block-4-in-Bangalore&id=4d423835353436383137",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Koramangala Block 4",
+    "locality_id": "listing-bangalore-koramangala-block-4-d53b8a",
+    "area_sqft": 550,
+    "deposit": 60000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dc-WUGQDRWhjmMYadCFP0efz/Photo_h180_w240/85546817_4_PropertyImage176-46418994303025_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.62876503,
+        12.9333919
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 30000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcb9",
+    "title": "2 BHK Flat   for Rent in Koramangala, Bangalore",
+    "rent": 65000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1500-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Koramangala-Block-6-in-Bangalore&id=4d423738323339373433",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Block 6th Koramangala",
+    "locality_id": "listing-bangalore-block-6th-koramangala-320cd3",
+    "area_sqft": 1300,
+    "deposit": 130000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVN99A9dMLwOqpPEOW3ICtdZy5fT8Df/Photo_h180_w240/78239743_1_0240506173344_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.62349700927734,
+        12.938913345336914
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 65000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcbb",
+    "title": "2 BHK Flat   for Rent in Koramangala, Bangalore",
+    "rent": 65000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Koramangala-8th-Block-in-Bangalore&id=4d423835333835343133",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Koramangala 8th Block",
+    "locality_id": "listing-bangalore-koramangala-8th-block-263f08",
+    "area_sqft": 1100,
+    "deposit": 130000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dM6lX3LrUDulgQ5ASuJH93SV/Photo_h180_w240/85385413_3_PropertyImage627-4346169502408_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.61864676,
+        12.94211218
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 65000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcbd",
+    "title": "2 BHK Flat   for Rent in Koramangala, Bangalore",
+    "rent": 65000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1325-Sq-ft-Multistorey-Apartment-FOR-Rent-Koramangala-in-Bangalore&id=4d423836303834383131",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Koramangala",
+    "locality_id": "listing-bangalore-koramangala-ca50ac",
+    "area_sqft": 1080,
+    "deposit": 130000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/Project-Photo-12-Esteem-Splendor-Bangalore-5007288_261_800_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.60976119,
+        12.938791
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 65000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcbf",
+    "title": "3 BHK  House for Rent in Koramangala Bangalore",
+    "rent": 65000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1800-Sq-ft-Residential-House-FOR-Rent-Koramangala-in-Bangalore&id=4d423833313635393837",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Koramangala",
+    "locality_id": "listing-bangalore-koramangala-ca50ac",
+    "area_sqft": 1650,
+    "deposit": 130000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK98w9dsNhVkQpx3a95wl8CyCeiz0p/Photo_h180_w240/83165987_11_PropertyImage773-9374426751795_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.626569,
+        12.928728
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 65000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcc1",
+    "title": "2 BHK Flat   for Rent in Koramangala, Bangalore",
+    "rent": 65000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1680-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Koramangala-in-Bangalore&id=4d423833373133323631",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Koramangala",
+    "locality_id": "listing-bangalore-koramangala-ca50ac",
+    "area_sqft": 1550,
+    "deposit": 130000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99A9dcpX6kwYURgK32ejB1QEvBRq/Photo_h180_w240/83713261_8_PropertyImage775-8317206701886_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.626569,
+        12.928728
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 65000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcc3",
+    "title": "3 BHK Flat   for Rent in Koramangala, Bangalore",
+    "rent": 85000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1750-Sq-ft-Multistorey-Apartment-FOR-Rent-Koramangala-in-Bangalore&id=4d423835363836333337",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Koramangala",
+    "locality_id": "listing-bangalore-koramangala-ca50ac",
+    "area_sqft": 1499,
+    "deposit": 170000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/Project-Photo-14-Prestige-St-Johns-Wood-Bangalore-5006802_1280_959_310_462.JPEG"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.611039,
+        12.92917
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 85000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcc5",
+    "title": "2 BHK  House for Rent in Koramangala Bangalore",
+    "rent": 19000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-600-Sq-ft-Residential-House-FOR-Rent-Koramangala-in-Bangalore&id=4d423836303835303333",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Koramangala",
+    "locality_id": "listing-bangalore-koramangala-ca50ac",
+    "area_sqft": 600,
+    "deposit": 38000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dsopY7AsfT_NoDTthZQKtMm1/Photo_h180_w240/86085033_2_PropertyImage36-67181448080037_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.626569,
+        12.928728
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 19000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcc7",
+    "title": "2 BHK Flat   for Rent in Koramangala, Bangalore",
+    "rent": 65000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1249-Sq-ft-Multistorey-Apartment-FOR-Rent-Koramangala-in-Bangalore&id=4d423835353431393939",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Koramangala",
+    "locality_id": "listing-bangalore-koramangala-ca50ac",
+    "area_sqft": 848,
+    "deposit": 130000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dc5zCjFA7taOs_Tg1L8ShJQT/Photo_h180_w240/85541999_1_PropertyImage336-06927457913525_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.6349475,
+        12.9313669
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 65000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcc9",
+    "title": "2 BHK  House for Rent in Koramangala Bangalore",
+    "rent": 19000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-600-Sq-ft-Residential-House-FOR-Rent-Koramangala-in-Bangalore&id=4d423836303835303637",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Koramangala",
+    "locality_id": "listing-bangalore-koramangala-ca50ac",
+    "area_sqft": 600,
+    "deposit": 38000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dsopY7AsfT_NoDTthZQKtMm1/Photo_h180_w240/86085067_4_PropertyImage773-8573536515139_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.626569,
+        12.928728
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 19000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dccb",
+    "title": "2 BHK  House for Rent in Block 1st Koramangala Bangalore",
+    "rent": 27000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-600-Sq-ft-Residential-House-FOR-Rent-Koramangala-Block-1-in-Bangalore&id=4d423834313832383237",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Block 1st Koramangala",
+    "locality_id": "listing-bangalore-block-1st-koramangala-d4a38f",
+    "area_sqft": null,
+    "deposit": 54000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.63618902,
+        12.92292393
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 27000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dccd",
+    "title": "1 BHK Flat   for Rent in Koramangala, Bangalore",
+    "rent": 28000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-450-Sq-ft-Multistorey-Apartment-FOR-Rent-Koramangala-in-Bangalore&id=4d423835313732383339",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Koramangala",
+    "locality_id": "listing-bangalore-koramangala-ca50ac",
+    "area_sqft": 650,
+    "deposit": 56000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK48w9dcNuvObK4AFLLKafWE0RIuQT/Photo_h180_w240/85172839_4_1781846242310-0947_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.62657165527344,
+        12.928728103637695
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 28000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dccf",
+    "title": "1 BHK Flat   for Rent in Koramangala, Bangalore",
+    "rent": 28000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-700-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Koramangala-Block-4-in-Bangalore&id=4d423835363835373835",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Koramangala Block 4",
+    "locality_id": "listing-bangalore-koramangala-block-4-d53b8a",
+    "area_sqft": 600,
+    "deposit": 56000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds7L9fW8LeHz5PsBdljtELWY/Photo_h180_w240/85685785_2_PropertyImage41-17850457935168_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.62876503,
+        12.9333919
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 28000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcd1",
+    "title": "3 BHK Flat   for Rent in Koramangala, Bangalore",
+    "rent": 85000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2400-Sq-ft-Multistorey-Apartment-FOR-Rent-Koramangala-Block-4-in-Bangalore&id=4d423835353632383937",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Koramangala Block 4",
+    "locality_id": "listing-bangalore-koramangala-block-4-d53b8a",
+    "area_sqft": 2500,
+    "deposit": 170000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dcx7vpvHuatU5ZEVlYOoLnPS/Photo_h180_w240/85562897_7_1784141157305-156_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.6287612915039,
+        12.933391571044922
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 85000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcd3",
+    "title": "1 BHK Flat   for Rent in Koramangala, Bangalore",
+    "rent": 28000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-500-Sq-ft-Multistorey-Apartment-FOR-Rent-Koramangala-8th-Block-in-Bangalore&id=4d423835353438383735",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Koramangala 8th Block",
+    "locality_id": "listing-bangalore-koramangala-8th-block-263f08",
+    "area_sqft": 450,
+    "deposit": 56000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dc-WUGQDRWhjmMYadCFP0efz/Photo_h180_w240/85548875_3_PropertyImage189-11434685503937_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.61864676,
+        12.94211218
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 28000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcd5",
+    "title": "2 BHK  House for Rent in Block 4 Koramangala Bangalore",
+    "rent": 33000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Residential-House-FOR-Rent-Koramangala-Block-4-in-Bangalore&id=4d423835383039363133",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Koramangala Block 4",
+    "locality_id": "listing-bangalore-koramangala-block-4-d53b8a",
+    "area_sqft": 1200,
+    "deposit": 66000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMhPfZ38V5hBk6RZ-BIa-e95/Photo_h180_w240/85809613_1_PropertyImage818-1109708598203_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.62876503,
+        12.9333919
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 33000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcd7",
+    "title": "1 BHK Flat   for Rent in Koramangala, Bangalore",
+    "rent": 28000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-600-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Koramangala-Block-4-in-Bangalore&id=4d423835383039353939",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Koramangala Block 4",
+    "locality_id": "listing-bangalore-koramangala-block-4-d53b8a",
+    "area_sqft": 600,
+    "deposit": 56000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMhPfZ38V5hBk6RZ-BIa-e95/Photo_h180_w240/85809599_1_PropertyImage254-0172605737453_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.6287612915039,
+        12.933391571044922
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 28000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcd9",
+    "title": "2 BHK  House for Rent in Block 1st Koramangala Bangalore",
+    "rent": 27000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Residential-House-FOR-Rent-Koramangala-Block-1-in-Bangalore&id=4d423835393035363439",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Block 1st Koramangala",
+    "locality_id": "listing-bangalore-block-1st-koramangala-d4a38f",
+    "area_sqft": 750,
+    "deposit": 54000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMJlG51mXRLynFZ5vdxK-Je8/Photo_h180_w240/85905649_6_PropertyImage889-5992139406599_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.63618902,
+        12.92292393
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 27000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcdb",
+    "title": "3 BHK Flat   for Rent in Koramangala, Bangalore",
+    "rent": 85000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1500-Sq-ft-Multistorey-Apartment-FOR-Rent-Koramangala-in-Bangalore&id=4d423833323036393933",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Koramangala",
+    "locality_id": "listing-bangalore-koramangala-ca50ac",
+    "area_sqft": null,
+    "deposit": 170000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2026/03/22/Project-Photo-31-Raheja-Residency-Bangalore-5000454_1280_720_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.631825,
+        12.928405
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 85000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcdd",
+    "title": "2 BHK  House for Rent in Koramangala 8Th Block Bangalore",
+    "rent": 40000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Residential-House-FOR-Rent-Koramangala-8th-Block-in-Bangalore&id=4d423835393938363335",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Koramangala 8th Block",
+    "locality_id": "listing-bangalore-koramangala-8th-block-263f08",
+    "area_sqft": null,
+    "deposit": 80000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.61864676,
+        12.94211218
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 40000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcdf",
+    "title": "2 BHK Flat   for Rent in Koramangala, Bangalore",
+    "rent": 65000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Multistorey-Apartment-FOR-Rent-Koramangala-in-Bangalore&id=4d423835383130313635",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Koramangala",
+    "locality_id": "listing-bangalore-koramangala-ca50ac",
+    "area_sqft": null,
+    "deposit": 130000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2026/03/22/Project-Photo-23-Raheja-Residency-Bangalore-5000454_1280_960_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.631825,
+        12.928405
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 65000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dce1",
+    "title": "Flats for Rent in Koramangala",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Koramangala&cityName=Bangalore&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Koramangala",
+    "locality_id": "listing-bangalore-koramangala-ca50ac",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dce3",
+    "title": "1 BHK Flats for Rent in Koramangala",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Koramangala&cityName=Bangalore&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Koramangala",
+    "locality_id": "listing-bangalore-koramangala-ca50ac",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dce5",
+    "title": "3 BHK Flat   for Rent in Bellandur, Bangalore",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2145-Sq-ft-Multistorey-Apartment-FOR-Rent-Bellandur-in-Bangalore&id=4d423835363932343531",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Bellandur",
+    "locality_id": "listing-bangalore-bellandur-b634fa",
+    "area_sqft": 1615,
+    "deposit": 260000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds7L9fW8LeHz5PsBdljtELWY/Photo_h180_w240/85692451_7_bbd8db629ea4b78aa824dbbd5431c0b_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.67440113,
+        12.93146029
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dce7",
+    "title": "3 BHK Flat   for Rent in Bellandur, Bangalore",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1711-Sq-ft-Multistorey-Apartment-FOR-Rent-Bellandur-in-Bangalore&id=4d423835363931333231",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Bellandur",
+    "locality_id": "listing-bangalore-bellandur-b634fa",
+    "area_sqft": 1511,
+    "deposit": 260000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds7L9fW8LeHz5PsBdljtELWY/Photo_h180_w240/85691321_3_hatsAppImage20260116at4.41.03PM1_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.684521,
+        12.933155
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dce9",
+    "title": "2 BHK Flat   for Rent in Bellandur, Bangalore",
+    "rent": 42000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1250-Sq-ft-Multistorey-Apartment-FOR-Rent-Green-Glen-Layout-in-Bangalore&id=4d423739393733333933",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Green Glen Layout",
+    "locality_id": "listing-bangalore-green-glen-layout-3af7a0",
+    "area_sqft": 1300,
+    "deposit": 84000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVK48w9dckXjemxSGwHt3U051alCDfh/Photo_h180_w240/79973393_6_1749779963297-2798_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.66883850097656,
+        12.926838874816895
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 42000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dceb",
+    "title": "3 BHK Flat   for Rent in Bellandur, Bangalore",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2321-Sq-ft-Multistorey-Apartment-FOR-Rent-Green-Glen-Layout-in-Bangalore&id=4d423835363931393839",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Green Glen Layout",
+    "locality_id": "listing-bangalore-green-glen-layout-3af7a0",
+    "area_sqft": 1950,
+    "deposit": 260000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dcKzTt7N4__ZrqzZI4Efi3c6/Photo_h180_w240/85691989_1_PropertyImage96-59833148652253_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.668475,
+        12.926533
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dced",
+    "title": "2 BHK Flat   for Rent in Bellandur, Bangalore",
+    "rent": 42000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1250-Sq-ft-Multistorey-Apartment-FOR-Rent-Bellandur-in-Bangalore&id=4d423835353437313837",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Bellandur",
+    "locality_id": "listing-bangalore-bellandur-b634fa",
+    "area_sqft": null,
+    "deposit": 84000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.67440113,
+        12.93146029
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 42000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcef",
+    "title": "3 BHK Flat   for Rent in Bellandur, Bangalore",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1400-Sq-ft-Multistorey-Apartment-FOR-Rent-Bellandur-in-Bangalore&id=4d423636303638303231",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Bellandur",
+    "locality_id": "listing-bangalore-bellandur-b634fa",
+    "area_sqft": null,
+    "deposit": 260000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2023/01/25/Project-Photo-36-Orchid-Lakeview-Bangalore-5029089_901_2000_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.677803,
+        12.931554
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcf1",
+    "title": "3 BHK Flat   for Rent in Bellandur, Bangalore",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2520-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Devarabisanahalli-in-Bangalore&id=4d423836303837373831",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Devarabisanahalli",
+    "locality_id": "listing-bangalore-devarabisanahalli-9aff58",
+    "area_sqft": 2268,
+    "deposit": 260000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dsopY7AsfT_NoDTthZQKtMm1/Photo_h180_w240/86087781_4_MG20260807174859697HDR.jpg_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.688451,
+        12.921171
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcf3",
+    "title": "3 BHK Flat   for Rent in Bellandur, Bangalore",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1650-Sq-ft-Multistorey-Apartment-FOR-Rent-Bellandur-in-Bangalore&id=4d423835333835373139",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Bellandur",
+    "locality_id": "listing-bangalore-bellandur-b634fa",
+    "area_sqft": 1300,
+    "deposit": 260000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.669992,
+        12.925857
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcf5",
+    "title": "1 BHK Flat   for Rent in Bellandur, Bangalore",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-900-Sq-ft-Multistorey-Apartment-FOR-Rent-Green-Glen-Layout-in-Bangalore&id=4d423833313733333839",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Green Glen Layout",
+    "locality_id": "listing-bangalore-green-glen-layout-3af7a0",
+    "area_sqft": 890,
+    "deposit": 36000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK98w9dsNhVkQpx3a95wl8CyCeiz0p/Photo_h180_w240/83173389_1_1769702407940-291_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.66883850097656,
+        12.926838874816895
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcf7",
+    "title": "3 BHK Flat   for Rent in Bellandur, Bangalore",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2212-Sq-ft-Multistorey-Apartment-FOR-Rent-Bellandur-in-Bangalore&id=4d423833373231343839",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Bellandur",
+    "locality_id": "listing-bangalore-bellandur-b634fa",
+    "area_sqft": null,
+    "deposit": 260000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99A9dcpX6kwYURgK32ejB1QEvBRq/Photo_h180_w240/83721489_1_hatsAppImage20251128at22.35.121_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.6827795,
+        12.9184674
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcf9",
+    "title": "3 BHK Flat   for Rent in Bellandur, Bangalore",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1711-Sq-ft-Multistorey-Apartment-FOR-Rent-Bellandur-in-Bangalore&id=4d423835313737323139",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Bellandur",
+    "locality_id": "listing-bangalore-bellandur-b634fa",
+    "area_sqft": null,
+    "deposit": 260000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK48w9dcNuvObK4AFLLKafWE0RIuQT/Photo_h180_w240/85177219_10_hatsAppImage20260618at14.51.45_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.695683,
+        12.939486
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcfb",
+    "title": "3 BHK Flat   for Rent in Bellandur, Bangalore",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1749-Sq-ft-Multistorey-Apartment-FOR-Rent-Bellandur-in-Bangalore&id=4d423834353338323937",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Bellandur",
+    "locality_id": "listing-bangalore-bellandur-b634fa",
+    "area_sqft": null,
+    "deposit": 260000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dc-WUGQDRWhjmMYadCFP0efz/Photo_h180_w240/84538297_10_PropertyImage811-7232302221381_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.6747738,
+        12.9219876
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcfd",
+    "title": "3 BHK Flat   for Rent in Bellandur, Bangalore",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1839-Sq-ft-Multistorey-Apartment-FOR-Rent-Bellandur-in-Bangalore&id=4d423835353432393931",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Bellandur",
+    "locality_id": "listing-bangalore-bellandur-b634fa",
+    "area_sqft": 1539,
+    "deposit": 260000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dc-WUGQDRWhjmMYadCFP0efz/Photo_h180_w240/85542991_9_PropertyImage652-1497999941993_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.6891866,
+        12.935866
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dcff",
+    "title": "3 BHK Flat   for Rent in Bellandur, Bangalore",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1705-Sq-ft-Multistorey-Apartment-FOR-Rent-Green-Glen-Layout-in-Bangalore&id=4d423834383634393135",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Green Glen Layout",
+    "locality_id": "listing-bangalore-green-glen-layout-3af7a0",
+    "area_sqft": null,
+    "deposit": 260000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dsLKZhan6xjENK-a9Uo0PR2q/Photo_h180_w240/84864915_9_G9_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.668779,
+        12.923022
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd01",
+    "title": "3 BHK Flat   for Rent in Bellandur, Bangalore",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2425-Sq-ft-Multistorey-Apartment-FOR-Rent-Bellandur-in-Bangalore&id=4d423835383035373935",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Bellandur",
+    "locality_id": "listing-bangalore-bellandur-b634fa",
+    "area_sqft": 2400,
+    "deposit": 260000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2026/04/07/Project-Photo-24-Purva-Whitehall-Bangalore-5006215_886_2000_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.672204,
+        12.917179
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd03",
+    "title": "3 BHK Flat   for Rent in Bellandur, Bangalore",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1800-Sq-ft-Multistorey-Apartment-FOR-Rent-Bellandur-in-Bangalore&id=4d423635383835343835",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Bellandur",
+    "locality_id": "listing-bangalore-bellandur-b634fa",
+    "area_sqft": null,
+    "deposit": 260000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2026/06/24/Project-Photo-54-Orchid-Lakeview-Bangalore-5029089_577_1280_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.677803,
+        12.931554
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd05",
+    "title": "2 BHK Flat   for Rent in Bellandur, Bangalore",
+    "rent": 42000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1218-Sq-ft-Multistorey-Apartment-FOR-Rent-Bellandur-in-Bangalore&id=4d423835383034383031",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Bellandur",
+    "locality_id": "listing-bangalore-bellandur-b634fa",
+    "area_sqft": 950,
+    "deposit": 84000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dc1tG94a7DAzJqfpRKhnirOd/Photo_h180_w240/85804801_3_PropertyImage38-58946556475051_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.699721,
+        12.9024845
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 42000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd07",
+    "title": "3 BHK Flat   for Rent in Bellandur, Bangalore",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1850-Sq-ft-Multistorey-Apartment-FOR-Rent-Bellandur-in-Bangalore&id=4d423833373136343137",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Bellandur",
+    "locality_id": "listing-bangalore-bellandur-b634fa",
+    "area_sqft": null,
+    "deposit": 260000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99A9dcuysBlb-qbn9FVZp8pZ6WeK/Photo_h180_w240/83716417_6_PropertyImage719-6168651675548_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.688451,
+        12.921171
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd09",
+    "title": "2 BHK Flat   for Rent in Bellandur, Bangalore",
+    "rent": 42000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1280-Sq-ft-Multistorey-Apartment-FOR-Rent-Bellandur-in-Bangalore&id=4d423834353338343431",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Bellandur",
+    "locality_id": "listing-bangalore-bellandur-b634fa",
+    "area_sqft": null,
+    "deposit": 84000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dM16mZEnmQ142VHrrtnm2xgA/Photo_h180_w240/84538441_9_PropertyImage129-61594222080151_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.6747738,
+        12.9219876
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 42000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd0b",
+    "title": "2 BHK Flat   for Rent in Bellandur, Bangalore",
+    "rent": 42000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1450-Sq-ft-Multistorey-Apartment-FOR-Rent-Devarabisanahalli-in-Bangalore&id=4d423835333830333839",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Devarabisanahalli",
+    "locality_id": "listing-bangalore-devarabisanahalli-9aff58",
+    "area_sqft": 1250,
+    "deposit": 84000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2023/01/25/Project-Photo-4-Adarsh-Palm-Retreat-Tower-I-Bangalore-5265039_901_2000_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.688451,
+        12.921171
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 42000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd0d",
+    "title": "2 BHK Flat   for Rent in Bellandur, Bangalore",
+    "rent": 42000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1250-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Green-Glen-Layout-in-Bangalore&id=4d423731333533393233",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Green Glen Layout",
+    "locality_id": "listing-bangalore-green-glen-layout-3af7a0",
+    "area_sqft": 1100,
+    "deposit": 84000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnzVG88A9dcgXJW1gmP8CEwfQqAyjp2zU/Photo_h180_w240/71353923_9_49fbcbe36ae472fabe366042401c1bc_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.699043,
+        12.949607
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 42000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd0f",
+    "title": "3 BHK Flat   for Rent in Bellandur, Bangalore",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1730-Sq-ft-Multistorey-Apartment-FOR-Rent-Bellandur-in-Bangalore&id=4d423834383735303339",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Bellandur",
+    "locality_id": "listing-bangalore-bellandur-b634fa",
+    "area_sqft": 1530,
+    "deposit": 260000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dMtRbHKmVX78BvdQaAVv98j3/Photo_h180_w240/84875039_4_PropertyImage44-59231008256881_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.696071,
+        12.920319
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd11",
+    "title": "2 BHK Flat   for Rent in Bellandur, Bangalore",
+    "rent": 42000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1184-Sq-ft-Multistorey-Apartment-FOR-Rent-Bellandur-in-Bangalore&id=4d423835363933303631",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Bellandur",
+    "locality_id": "listing-bangalore-bellandur-b634fa",
+    "area_sqft": 950,
+    "deposit": 84000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds7L9fW8LeHz5PsBdljtELWY/Photo_h180_w240/85693061_10_a9f82fc726e864b01726ec912521ff92580679623large_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.6891866,
+        12.935866
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 42000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd13",
+    "title": "3 BHK Flat   for Rent in Bellandur, Bangalore",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2697-Sq-ft-Multistorey-Apartment-FOR-Rent-Bellandur-in-Bangalore&id=4d423835393034383437",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Bellandur",
+    "locality_id": "listing-bangalore-bellandur-b634fa",
+    "area_sqft": 2259,
+    "deposit": 260000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9ds_dULBheHqUJ839p3MitHXX/Photo_h180_w240/85904847_2_PropertyImage590-4239414282519_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.66036,
+        12.928998
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd15",
+    "title": "2 BHK Flat   for Rent in Bellandur, Bangalore",
+    "rent": 42000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1700-Sq-ft-Multistorey-Apartment-FOR-Rent-Yemalur-in-Bangalore&id=4d423831353139333735",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Yemalur",
+    "locality_id": "listing-bangalore-yemalur-4d268a",
+    "area_sqft": 1200,
+    "deposit": 84000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2026/06/24/Project-Photo-42-Rohan-Jharoka-2-Bangalore-5027035_901_2000_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.6777613739811,
+        12.9482595024849
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 42000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd17",
+    "title": "3 BHK Flat   for Rent in Bellandur, Bangalore",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1360-Sq-ft-Multistorey-Apartment-FOR-Rent-Bellandur-in-Bangalore&id=4d423831353331363931",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Bellandur",
+    "locality_id": "listing-bangalore-bellandur-b634fa",
+    "area_sqft": 1200,
+    "deposit": 260000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVT89I9ds_GCF4oyMz0U_q_V6zPrFWo/Photo_h180_w240/81531691_1_PropertyImage356-15499715524334_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.6717859,
+        12.9255132
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd19",
+    "title": "3 BHK Flat   for Rent in Bellandur, Bangalore",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1850-Sq-ft-Multistorey-Apartment-FOR-Rent-Bellandur-in-Bangalore&id=4d423835363933393937",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Bellandur",
+    "locality_id": "listing-bangalore-bellandur-b634fa",
+    "area_sqft": 1400,
+    "deposit": 260000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2024/06/20/Project-Photo-1-Adarsh-Palm-Retreat-Tower-II-Bangalore-5114447_576_1280_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.688794,
+        12.918873
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd1b",
+    "title": "3 BHK Flat   for Rent in Bellandur, Bangalore",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1675-Sq-ft-Multistorey-Apartment-FOR-Rent-Green-Glen-Layout-in-Bangalore&id=4d423835363934313331",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Green Glen Layout",
+    "locality_id": "listing-bangalore-green-glen-layout-3af7a0",
+    "area_sqft": 1300,
+    "deposit": 260000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.669992,
+        12.925857
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd1d",
+    "title": "3 BHK Flat   for Rent in Bellandur, Bangalore",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2400-Sq-ft-Multistorey-Apartment-FOR-Rent-Bellandur-in-Bangalore&id=4d423831353337343531",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Bellandur",
+    "locality_id": "listing-bangalore-bellandur-b634fa",
+    "area_sqft": null,
+    "deposit": 260000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVT89I9ds_GCF4oyMz0U_q_V6zPrFWo/Photo_h180_w240/81537451_1_HOTO20250925185720_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.67440113,
+        12.93146029
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd1f",
+    "title": "2 BHK Flat   for Rent in Bellandur, Bangalore",
+    "rent": 42000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1350-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Devarabisanahalli-in-Bangalore&id=4d423834383738323633",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Devarabisanahalli",
+    "locality_id": "listing-bangalore-devarabisanahalli-9aff58",
+    "area_sqft": 1150,
+    "deposit": 84000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/Project-Photo-8-Vijayasri-Golden-Orchids-Bangalore-5006169_909_1200_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.68657,
+        12.927515
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 42000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd21",
+    "title": "Flats for Rent in Bellandur",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Bellandur&cityName=Bangalore&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Bellandur",
+    "locality_id": "listing-bangalore-bellandur-b634fa",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd23",
+    "title": "1 BHK Flats for Rent in Bellandur",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Bellandur&cityName=Bangalore&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Bellandur",
+    "locality_id": "listing-bangalore-bellandur-b634fa",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd25",
+    "title": "2 BHK Flat   for Rent in Indira Nagar, Bangalore",
+    "rent": 52000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Multistorey-Apartment-FOR-Rent-Doopanahalli-in-Bangalore&id=4d423835313833373735",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Doopanahalli",
+    "locality_id": "listing-bangalore-doopanahalli-ee3459",
+    "area_sqft": 800,
+    "deposit": 104000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK48w9dcNuvObK4AFLLKafWE0RIuQT/Photo_h180_w240/85183775_2_MG20230428WA0097_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.63934487,
+        12.96749968
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 52000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd27",
+    "title": "3 BHK Flat   for Rent in Indira Nagar, Bangalore",
+    "rent": 120000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2200-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Indira-Nagar-in-Bangalore&id=4d423836303838373333",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Indira Nagar",
+    "locality_id": "listing-bangalore-indira-nagar-fb2ba9",
+    "area_sqft": 1850,
+    "deposit": 240000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dsopY7AsfT_NoDTthZQKtMm1/Photo_h180_w240/86088733_9_hatsAppImage20260820at11.31.39AM12_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.64114595,
+        12.97360816
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 120000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd29",
+    "title": "1 BHK  House for Rent in Indiranagar Bangalore",
+    "rent": 35000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-650-Sq-ft-Residential-House-FOR-Rent-Indira-Nagar-in-Bangalore&id=4d423835393034323637",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Indira Nagar",
+    "locality_id": "listing-bangalore-indira-nagar-fb2ba9",
+    "area_sqft": 600,
+    "deposit": 70000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dM27Tp2xUt0YFF1J2vUy-VMb/Photo_h180_w240/85904267_8_PropertyImage761-7857388575951_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.64114595,
+        12.97360816
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 35000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd2b",
+    "title": "3 BHK Flat   for Rent in Indira Nagar, Bangalore",
+    "rent": 120000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1800-Sq-ft-Multistorey-Apartment-FOR-Rent-Indira-Nagar-in-Bangalore&id=4d423835313837313535",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Indira Nagar",
+    "locality_id": "listing-bangalore-indira-nagar-fb2ba9",
+    "area_sqft": 1800,
+    "deposit": 240000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK48w9dcNuvObK4AFLLKafWE0RIuQT/Photo_h180_w240/85187155_5_PropertyImage612-9249461910541_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.64114595,
+        12.97360816
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 120000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd2d",
+    "title": "2 BHK  House for Rent in Indiranagar Bangalore",
+    "rent": 28000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-900-Sq-ft-Residential-House-FOR-Rent-Indira-Nagar-in-Bangalore&id=4d423835333835373337",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Indira Nagar",
+    "locality_id": "listing-bangalore-indira-nagar-fb2ba9",
+    "area_sqft": null,
+    "deposit": 56000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.64114595,
+        12.97360816
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 28000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd2f",
+    "title": "3 BHK  House for Rent in Indiranagar Bangalore",
+    "rent": 80000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1799-Sq-ft-Residential-House-FOR-Rent-Indira-Nagar-in-Bangalore&id=4d423731343137373137",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Indira Nagar",
+    "locality_id": "listing-bangalore-indira-nagar-fb2ba9",
+    "area_sqft": 1150,
+    "deposit": 160000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnzVG88A9dcwGTDhuNgS2v8w6KnXW8qNW/Photo_h180_w240/71417717_10_1708064349790-75411_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.64114379882812,
+        12.973608016967773
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 80000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd31",
+    "title": "1 BHK Flat   for Rent in Indira Nagar, Bangalore",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-641-Sq-ft-Multistorey-Apartment-FOR-Rent-Indira-nagar-Stage-2-in-Bangalore&id=4d423835313733373639",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Indira nagar Stage 2",
+    "locality_id": "listing-bangalore-indira-nagar-stage-2-585574",
+    "area_sqft": 601,
+    "deposit": 36000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK48w9dcNuvObK4AFLLKafWE0RIuQT/Photo_h180_w240/85173769_4__180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.634801,
+        12.979466
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd33",
+    "title": "2 BHK Flat   for Rent in Indira Nagar, Bangalore",
+    "rent": 52000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Multistorey-Apartment-FOR-Rent-Defence-Colony-Indira-nagar-in-Bangalore&id=4d423835383035343237",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Defence Colony-Indira nagar",
+    "locality_id": "listing-bangalore-defence-colony-indira-nagar-aa0c2b",
+    "area_sqft": 1200,
+    "deposit": 104000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMuik2I4q1t27vNWGbD9BntY/Photo_h180_w240/85805427_7_PropertyImage166-66509157854804_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.64387512207031,
+        12.97617244720459
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 52000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd35",
+    "title": "2 BHK Flat   for Rent in Indira Nagar, Bangalore",
+    "rent": 52000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1400-Sq-ft-Multistorey-Apartment-FOR-Rent-Indira-Nagar-in-Bangalore&id=4d423835353431313137",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Indira Nagar",
+    "locality_id": "listing-bangalore-indira-nagar-fb2ba9",
+    "area_sqft": 1200,
+    "deposit": 104000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dc5zCjFA7taOs_Tg1L8ShJQT/Photo_h180_w240/85541117_4_PropertyImage80-59918335633898_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.64114595,
+        12.97360816
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 52000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd37",
+    "title": "1 BHK Flat   for Rent in Indira Nagar, Bangalore",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-901-Sq-ft-Multistorey-Apartment-FOR-Rent-Indira-nagar-Stage-2-in-Bangalore&id=4d423835313733353437",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Indira nagar Stage 2",
+    "locality_id": "listing-bangalore-indira-nagar-stage-2-585574",
+    "area_sqft": 801,
+    "deposit": 36000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK48w9dcNuvObK4AFLLKafWE0RIuQT/Photo_h180_w240/85173547_7__180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.634801,
+        12.979466
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd39",
+    "title": "1 BHK  House for Rent in Indiranagar Bangalore",
+    "rent": 35000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-460-Sq-ft-Residential-House-FOR-Rent-Indira-Nagar-in-Bangalore&id=4d423739393138363633",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Indira Nagar",
+    "locality_id": "listing-bangalore-indira-nagar-fb2ba9",
+    "area_sqft": 460,
+    "deposit": 70000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2026/05/20/Project-Photo-23-Laa-Royal-Manor-Bangalore-5007699_963_1280_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.641547,
+        12.971969
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 35000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd3b",
+    "title": "2 BHK  House for Rent in Hoysala Nagar Indiranagar Bangalore",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-750-Sq-ft-Residential-House-FOR-Rent-Hoysala-nagar-in-Bangalore&id=4d423636313233353531",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Hoysala Nagar",
+    "locality_id": "listing-bangalore-hoysala-nagar-400a5a",
+    "area_sqft": 750,
+    "deposit": 36000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAmDVN99A9dcKAwfYn68djOpLqDNjCa3Y3/Photo_h180_w240/66123551_3_PropertyImage702-8512482857077_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.63485404,
+        12.97868714
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd3d",
+    "title": "2 BHK  House for Rent in Indiranagar Bangalore",
+    "rent": 28000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Residential-House-FOR-Rent-Indira-Nagar-in-Bangalore&id=4d423731353837303639",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Indira Nagar",
+    "locality_id": "listing-bangalore-indira-nagar-fb2ba9",
+    "area_sqft": null,
+    "deposit": 56000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.64114595,
+        12.97360816
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 28000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd3f",
+    "title": "2 BHK  House for Rent in Stage 2 Indiranagar Bangalore",
+    "rent": 27000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-900-Sq-ft-Residential-House-FOR-Rent-Indira-nagar-Stage-2-in-Bangalore&id=4d423834383432343831",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Indira nagar Stage 2",
+    "locality_id": "listing-bangalore-indira-nagar-stage-2-585574",
+    "area_sqft": null,
+    "deposit": 54000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9ds0UMxZw5NcuvKSqkmNMPNkN/Photo_h180_w240/84842481_13_MG20200704133526_180_240.JPEG"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.634801,
+        12.979466
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 27000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd41",
+    "title": "3 BHK Flat   for Rent in Indira Nagar, Bangalore",
+    "rent": 120000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1450-Sq-ft-Multistorey-Apartment-FOR-Rent-Indira-Nagar-in-Bangalore&id=4d423835393839303037",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Indira Nagar",
+    "locality_id": "listing-bangalore-indira-nagar-fb2ba9",
+    "area_sqft": 1300,
+    "deposit": 240000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dcl8cosUQsuHimwDxtES33wf/Photo_h180_w240/85989007_1_PropertyImage849-9373337008534_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.64114595,
+        12.97360816
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 120000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd43",
+    "title": "1 BHK Flat   for Rent in Indira Nagar, Bangalore",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-680-Sq-ft-Multistorey-Apartment-FOR-Rent-Indira-Nagar-in-Bangalore&id=4d423835363737333933",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Indira Nagar",
+    "locality_id": "listing-bangalore-indira-nagar-fb2ba9",
+    "area_sqft": 550,
+    "deposit": 36000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dsk3cl92f9lwNWfkFYN_uu47/Photo_h180_w240/85677393_3_PropertyImage662-9919994735569_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.6335264,
+        12.9734369
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd45",
+    "title": "1 BHK Flat   for Rent in Indira Nagar, Bangalore",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-550-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Indira-nagar-Stage-1-in-Bangalore&id=4d423836303739373335",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Indira nagar Stage 1",
+    "locality_id": "listing-bangalore-indira-nagar-stage-1-a5e19c",
+    "area_sqft": 550,
+    "deposit": 36000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dcNWFIuOSEE0hZ4jgx9C3gTa/Photo_h180_w240/86079735_6_PropertyImage634-7917250562426_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.63904216,
+        12.97994695
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd47",
+    "title": "3 BHK Flat   for Rent in Indira Nagar, Bangalore",
+    "rent": 120000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2100-Sq-ft-Multistorey-Apartment-FOR-Rent-Indira-nagar-Stage-2-in-Bangalore&id=4d423835383033323937",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Indira nagar Stage 2",
+    "locality_id": "listing-bangalore-indira-nagar-stage-2-585574",
+    "area_sqft": 1800,
+    "deposit": 240000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMuik2I4q1t27vNWGbD9BntY/Photo_h180_w240/85803297_12_hatsAppImage20260801at4.11.24PM2_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.634801,
+        12.979466
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 120000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd49",
+    "title": "3 BHK Flat   for Rent in Indira Nagar, Bangalore",
+    "rent": 120000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1602-Sq-ft-Multistorey-Apartment-FOR-Rent-Indira-Nagar-in-Bangalore&id=4d423836313732303637",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Indira Nagar",
+    "locality_id": "listing-bangalore-indira-nagar-fb2ba9",
+    "area_sqft": 1450,
+    "deposit": 240000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dswwvk-lhLmjWpryRtHFS-H2/Photo_h180_w240/86172067_5_8b440f2cb20423fb3d43158f418be5e1_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.64114595,
+        12.97360816
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 120000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd4b",
+    "title": "3 BHK Flat   for Rent in Indira Nagar, Bangalore",
+    "rent": 120000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1650-Sq-ft-Multistorey-Apartment-FOR-Rent-Indira-Nagar-in-Bangalore&id=4d423835353431323039",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Indira Nagar",
+    "locality_id": "listing-bangalore-indira-nagar-fb2ba9",
+    "area_sqft": 1450,
+    "deposit": 240000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dc5zCjFA7taOs_Tg1L8ShJQT/Photo_h180_w240/85541209_2_PropertyImage633-4408887036714_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.64114595,
+        12.97360816
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 120000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd4d",
+    "title": "2 BHK Flat   for Rent in Indira Nagar, Bangalore",
+    "rent": 52000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-900-Sq-ft-Multistorey-Apartment-FOR-Rent-Indira-nagar-Stage-2-in-Bangalore&id=4d423834383335363635",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Indira nagar Stage 2",
+    "locality_id": "listing-bangalore-indira-nagar-stage-2-585574",
+    "area_sqft": 950,
+    "deposit": 104000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dszxaUMzT2nDl5ZQMv0Raart/Photo_h180_w240/84835665_3__180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.634801,
+        12.979466
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 52000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd4f",
+    "title": "1 BHK Flat   for Rent in Indira Nagar, Bangalore",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-555-Sq-ft-Multistorey-Apartment-FOR-Rent-Hoysala-Nagar-Stage-2-in-Bangalore&id=4d423834383335353635",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Hoysala Nagar Stage 2",
+    "locality_id": "listing-bangalore-hoysala-nagar-stage-2-7e17f2",
+    "area_sqft": 590,
+    "deposit": 36000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dszxaUMzT2nDl5ZQMv0Raart/Photo_h180_w240/84835565_3__180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.63532757,
+        12.97966655
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd51",
+    "title": "2 BHK Flat   for Rent in Indira Nagar, Bangalore",
+    "rent": 52000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-800-Sq-ft-Multistorey-Apartment-FOR-Rent-Indira-nagar-Stage-2-in-Bangalore&id=4d423834383335373233",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Indira nagar Stage 2",
+    "locality_id": "listing-bangalore-indira-nagar-stage-2-585574",
+    "area_sqft": 750,
+    "deposit": 104000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dszxaUMzT2nDl5ZQMv0Raart/Photo_h180_w240/84835723_8__180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.634801,
+        12.979466
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 52000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd53",
+    "title": "2 BHK Flat   for Rent in Indira Nagar, Bangalore",
+    "rent": 52000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1201-Sq-ft-Multistorey-Apartment-FOR-Rent-Indira-Nagar-in-Bangalore&id=4d423831333237333337",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Indira Nagar",
+    "locality_id": "listing-bangalore-indira-nagar-fb2ba9",
+    "area_sqft": 1060,
+    "deposit": 104000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVT89I9dctvns_apQA9qD60dzJFbbuh/Photo_h180_w240/81327337_9__180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.64114595,
+        12.97360816
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 52000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd55",
+    "title": "3 BHK Flat   for Rent in Indira Nagar, Bangalore",
+    "rent": 120000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1680-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Indira-Nagar-in-Bangalore&id=4d423739373632373537",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Indira Nagar",
+    "locality_id": "listing-bangalore-indira-nagar-fb2ba9",
+    "area_sqft": 1650,
+    "deposit": 240000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVK48w9ds-2r9LEct0UGtTKhvSVYz4p/Photo_h180_w240/79762757_10_1750844416036-302_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.64114595,
+        12.97360816
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 120000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd57",
+    "title": "3 BHK  House for Rent in Indiranagar Bangalore",
+    "rent": 80000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1850-Sq-ft-Residential-House-FOR-Rent-Indira-Nagar-in-Bangalore&id=4d423734313734313337",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Indira Nagar",
+    "locality_id": "listing-bangalore-indira-nagar-fb2ba9",
+    "area_sqft": null,
+    "deposit": 160000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.64114379882812,
+        12.973608016967773
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 80000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd59",
+    "title": "3 BHK  House for Rent in Indiranagar Bangalore",
+    "rent": 80000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2500-Sq-ft-Residential-House-FOR-Rent-Indira-Nagar-in-Bangalore&id=4d423833313231393937",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Indira Nagar",
+    "locality_id": "listing-bangalore-indira-nagar-fb2ba9",
+    "area_sqft": null,
+    "deposit": 160000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK98w9ds9S7bs6NHpgElVDjasBdW2v/Photo_h180_w240/83121997_19_hatsAppImage20260125at11.47.25_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.64114595,
+        12.97360816
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 80000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd5b",
+    "title": "2 BHK Flat   for Rent in Indira Nagar, Bangalore",
+    "rent": 52000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Multistorey-Apartment-FOR-Rent-Indira-Nagar-in-Bangalore&id=4d423834313932363835",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Indira Nagar",
+    "locality_id": "listing-bangalore-indira-nagar-fb2ba9",
+    "area_sqft": 1200,
+    "deposit": 104000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB5tA9dcuIPdOf2HDFECMLbA1ejHG5/Photo_h180_w240/84192685_2_MG20211002WA0009_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.645909,
+        12.96086
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 52000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd5d",
+    "title": "3 BHK Villa for Rent in Indiranagar Bangalore",
+    "rent": 70000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2200-Sq-ft-Villa-FOR-Rent-Indira-Nagar-in-Bangalore&id=4d423734343839393833",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Indira Nagar",
+    "locality_id": "listing-bangalore-indira-nagar-fb2ba9",
+    "area_sqft": 2200,
+    "deposit": 140000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnzVB48U9dsmm6LqpvUZQOqLvN1BVeZBO/Photo_h180_w240/74489983_5_PropertyImage444-7903092158954_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.64114595,
+        12.97360816
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 70000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd5f",
+    "title": "3 BHK Flat   for Rent in Indira Nagar, Bangalore",
+    "rent": 120000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2000-Sq-ft-Multistorey-Apartment-FOR-Rent-Indira-nagar-Stage-2-in-Bangalore&id=4d423635393539303433",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Indira nagar Stage 2",
+    "locality_id": "listing-bangalore-indira-nagar-stage-2-585574",
+    "area_sqft": 1800,
+    "deposit": 240000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAmDVN99A9dM2IwbVbWuWigGN69azvGVIW/Photo_h180_w240/65959043_7_PropertyImage72-43599942026357_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        77.63480377197266,
+        12.979466438293457
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 120000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd61",
+    "title": "Flats for Rent in Indira Nagar",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Indiranagar&cityName=Bangalore&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Indiranagar",
+    "locality_id": "listing-bangalore-indiranagar-46bf06",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd63",
+    "title": "1 BHK Flats for Rent in Indira Nagar",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Indiranagar&cityName=Bangalore&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Bangalore",
+    "locality": "Indiranagar",
+    "locality_id": "listing-bangalore-indiranagar-46bf06",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd65",
+    "title": "2 BHK Flat   for Rent in Salt Lake City, Kolkata",
+    "rent": 35000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-600-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Salt-Lake-City-Sector-4-in-Kolkata&id=4d423835383038333937",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector 4 Salt Lake City",
+    "locality_id": "listing-kolkata-sector-4-salt-lake-city-85ac08",
+    "area_sqft": null,
+    "deposit": 70000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMuik2I4q1t27vNWGbD9BntY/Photo_h180_w240/85808397_7_000018624_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.415491525741,
+        22.5582608925548
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 35000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd67",
+    "title": "2 BHK Villa for Rent in Sector 2 Salt Lake City Kolkata",
+    "rent": 20000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1050-Sq-ft-Villa-FOR-Rent-Salt-Lake-City-Sector-2-in-Kolkata&id=4d423835333835333435",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector 2 Salt Lake City",
+    "locality_id": "listing-kolkata-sector-2-salt-lake-city-786f01",
+    "area_sqft": 950,
+    "deposit": 40000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/2026/Jul/04/Photo_h300_w450/85385345_1_PropertyImage322-35851065130237_300_450.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4253928073494,
+        22.5900582451224
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 20000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd69",
+    "title": "2 BHK  House for Rent in Sector 2 Salt Lake City Kolkata",
+    "rent": 30000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Residential-House-FOR-Rent-Salt-Lake-City-Sector-2-in-Kolkata&id=4d423833313837353833",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector 2 Salt Lake City",
+    "locality_id": "listing-kolkata-sector-2-salt-lake-city-786f01",
+    "area_sqft": null,
+    "deposit": 60000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK98w9d8pwi_jcj9ISp1bzMRF8BjFL/Photo_h180_w240/83187583_6_000011316_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4253928073494,
+        22.5900582451224
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 30000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd6b",
+    "title": "2 BHK  House for Rent in Sector 2 Salt Lake City Kolkata",
+    "rent": 30000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1050-Sq-ft-Residential-House-FOR-Rent-Salt-Lake-City-Sector-2-in-Kolkata&id=4d423835353435343837",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector 2 Salt Lake City",
+    "locality_id": "listing-kolkata-sector-2-salt-lake-city-786f01",
+    "area_sqft": 750,
+    "deposit": 60000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dc5zCjFA7taOs_Tg1L8ShJQT/Photo_h180_w240/85545487_1_PropertyImage758-5043004036914_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4253928073494,
+        22.5900582451224
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 30000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd6d",
+    "title": "2 BHK Flat   for Rent in Merlin 5th Avenue, Sector 5 Salt Lake City, Kolkata",
+    "rent": 40000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1026-Sq-ft-Multistorey-Apartment-FOR-Rent-Salt-Lake-City-Sector-5-in-Kolkata&id=4d423833313837383535",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector 5 Salt Lake City",
+    "locality_id": "listing-kolkata-sector-5-salt-lake-city-cb8dd5",
+    "area_sqft": 718,
+    "deposit": 80000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVG88A9dM1XJtvHH-3aQcVtR9Bm5v3q/Photo_h180_w240/83187855_2_PropertyImage79-10013892019762_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.412308,
+        22.5683
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 40000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd6f",
+    "title": "3 BHK Flat   for Rent in Ideal Aquaview, Sector 5 Salt Lake City, Kolkata",
+    "rent": 60000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1510-Sq-ft-Multistorey-Apartment-FOR-Rent-Salt-Lake-City-Sector-5-in-Kolkata&id=4d423836303837323535",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector 5 Salt Lake City",
+    "locality_id": "listing-kolkata-sector-5-salt-lake-city-cb8dd5",
+    "area_sqft": 975,
+    "deposit": 120000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dsopY7AsfT_NoDTthZQKtMm1/Photo_h180_w240/86087255_15_PropertyImage541-4151466924044_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4494486999999,
+        22.5707789
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 60000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd71",
+    "title": "3 BHK  House for Rent in Block BK Sector 2 Salt Lake City Kolkata",
+    "rent": 30000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1800-Sq-ft-Residential-House-FOR-Rent-Block-BK-Sector-2-Salt-Lake-City-in-Kolkata&id=4d423638303537323835",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Block BK Sector 2 Salt Lake City",
+    "locality_id": "listing-kolkata-block-bk-sector-2-salt-lake-city-bba89c",
+    "area_sqft": 1500,
+    "deposit": 60000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnzVK4849dstdowCwFB4AhMMcB9l9IsQg/Photo_h180_w240/68057285_4_0240621151900_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4289416877574,
+        22.5873704743321
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 30000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd73",
+    "title": "3 BHK Flat   for Rent in Ideal Aquaview, Sector 5 Salt Lake City, Kolkata",
+    "rent": 60000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1475-Sq-ft-Multistorey-Apartment-FOR-Rent-Nayapatty-in-Kolkata&id=4d423834313835303731",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector V",
+    "locality_id": "listing-kolkata-sector-v-47eb17",
+    "area_sqft": 968,
+    "deposit": 120000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB5tA9dcptZ4bcc84oOxHxzJMD2QJZ/Photo_h180_w240/84185071_6_hatsAppImage20260410at17.50.412_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4494486999999,
+        22.5707789
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 60000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd75",
+    "title": "3 BHK Flat   for Rent in Salt Lake City, Kolkata",
+    "rent": 45000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1050-Sq-ft-Multistorey-Apartment-FOR-Rent-Salt-Lake-City-Sector-3-in-Kolkata&id=4d423835393939303335",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector 3 Salt Lake City",
+    "locality_id": "listing-kolkata-sector-3-salt-lake-city-6f3501",
+    "area_sqft": 1050,
+    "deposit": 90000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dcl8cosUQsuHimwDxtES33wf/Photo_h180_w240/85999035_2_PropertyImage740-7809076000392_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.41191101074219,
+        22.574474334716797
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 45000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd77",
+    "title": "2 BHK Villa for Rent in Salt Lake City Kolkata",
+    "rent": 25000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Villa-FOR-Rent-Salt-Lake-City-in-Kolkata&id=4d423830313830363135",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Salt Lake City",
+    "locality_id": "listing-kolkata-salt-lake-city-b97e95",
+    "area_sqft": 1000,
+    "deposit": 50000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVK48w9dsxbQS0Ajh4jZ4PFZ1ZynKoI/Photo_h180_w240/80180615_2_PropertyImage225-73021314510666_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4138875485428,
+        22.5844069447332
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 25000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd79",
+    "title": "3 BHK  House for Rent in Salt Lake City Kolkata",
+    "rent": 30000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1500-Sq-ft-Residential-House-FOR-Rent-Salt-Lake-City-in-Kolkata&id=4d423830313830343833",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Salt Lake City",
+    "locality_id": "listing-kolkata-salt-lake-city-b97e95",
+    "area_sqft": 1500,
+    "deposit": 60000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVK48w9dsxbQS0Ajh4jZ4PFZ1ZynKoI/Photo_h180_w240/80180483_5_PropertyImage401-07113368644286_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4138875485428,
+        22.5844069447332
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 30000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd7b",
+    "title": "3 BHK  House for Rent in Sector 1 Salt Lake City Kolkata",
+    "rent": 44000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1700-Sq-ft-Residential-House-FOR-Rent-Salt-Lake-City-Sector-1-in-Kolkata&id=4d423832353131353035",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector 1 Salt Lake City",
+    "locality_id": "listing-kolkata-sector-1-salt-lake-city-7563fd",
+    "area_sqft": null,
+    "deposit": 88000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4089425,
+        22.592145
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 44000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd7d",
+    "title": "2 BHK  House for Rent in Sector 5 Salt Lake City Kolkata",
+    "rent": 20000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-600-Sq-ft-Residential-House-FOR-Rent-Salt-Lake-City-Sector-5-in-Kolkata&id=4d423731353433303233",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector 5 Salt Lake City",
+    "locality_id": "listing-kolkata-sector-5-salt-lake-city-cb8dd5",
+    "area_sqft": 400,
+    "deposit": 40000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4323485164974,
+        22.5777730025888
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 20000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd7f",
+    "title": "3 BHK Flat   for Rent in Merlin 5th Avenue, Sector 5 Salt Lake City, Kolkata",
+    "rent": 110000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1765-Sq-ft-Multistorey-Apartment-FOR-Rent-Nayapatty-in-Kolkata&id=4d423834313537343437",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector V",
+    "locality_id": "listing-kolkata-sector-v-47eb17",
+    "area_sqft": null,
+    "deposit": 220000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB5tA9dMN8ujopO2qHe05-9qLhVA47/Photo_h180_w240/84157447_3_hatsAppImage20260320at12.09.51PM_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.412308,
+        22.5683
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 110000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd81",
+    "title": "3 BHK Flat   for Rent in Panache, Sector 5 Salt Lake City, Kolkata",
+    "rent": 85000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1050-Sq-ft-Multistorey-Apartment-FOR-Rent-Salt-Lake-City-Sector-5-in-Kolkata&id=4d423835363737353835",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector 5 Salt Lake City",
+    "locality_id": "listing-kolkata-sector-5-salt-lake-city-cb8dd5",
+    "area_sqft": 900,
+    "deposit": 170000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dsk3cl92f9lwNWfkFYN_uu47/Photo_h180_w240/85677585_1_hatsAppImage20260507at5.54.37AM1_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4480675,
+        22.5699922
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 85000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd83",
+    "title": "3 BHK Flat   for Rent in Merlin 5th Avenue, Sector 5 Salt Lake City, Kolkata",
+    "rent": 110000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1667-Sq-ft-Multistorey-Apartment-FOR-Rent-Nayapatty-in-Kolkata&id=4d423834313536353233",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector V",
+    "locality_id": "listing-kolkata-sector-v-47eb17",
+    "area_sqft": null,
+    "deposit": 220000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB5tA9dMN8ujopO2qHe05-9qLhVA47/Photo_h180_w240/84156523_2_hatsAppImage20260408at15.01.311_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.412308,
+        22.5683
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 110000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd85",
+    "title": "2 BHK  House for Rent in Sector 2 Salt Lake City Kolkata",
+    "rent": 30000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Residential-House-FOR-Rent-Salt-Lake-City-Sector-2-in-Kolkata&id=4d423835363738303937",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector 2 Salt Lake City",
+    "locality_id": "listing-kolkata-sector-2-salt-lake-city-786f01",
+    "area_sqft": null,
+    "deposit": 60000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4253928073494,
+        22.5900582451224
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 30000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd87",
+    "title": "3 BHK Flat   for Rent in Panache, Sector 5 Salt Lake City, Kolkata",
+    "rent": 85000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1450-Sq-ft-Multistorey-Apartment-FOR-Rent-Salt-Lake-City-Sector-5-in-Kolkata&id=4d423835363737333331",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector 5 Salt Lake City",
+    "locality_id": "listing-kolkata-sector-5-salt-lake-city-cb8dd5",
+    "area_sqft": 1200,
+    "deposit": 170000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dsk3cl92f9lwNWfkFYN_uu47/Photo_h180_w240/85677331_1_hatsAppImage20260420at5.55.11AM2_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4480675,
+        22.5699922
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 85000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd89",
+    "title": "2 BHK Flat   for Rent in Merlin 5th Avenue, Sector 5 Salt Lake City, Kolkata",
+    "rent": 40000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-965-Sq-ft-Multistorey-Apartment-FOR-Rent-Nayapatty-in-Kolkata&id=4d423834313535383939",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector V",
+    "locality_id": "listing-kolkata-sector-v-47eb17",
+    "area_sqft": null,
+    "deposit": 80000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB5tA9dMN8ujopO2qHe05-9qLhVA47/Photo_h180_w240/84155899_2_hatsAppImage20260407at10.50.04AM_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.412308,
+        22.5683
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 40000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd8b",
+    "title": "3 BHK Flat   for Rent in Ideal Aquaview, Sector 5 Salt Lake City, Kolkata",
+    "rent": 60000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1510-Sq-ft-Multistorey-Apartment-FOR-Rent-Salt-Lake-City-Sector-5-in-Kolkata&id=4d423833313332333833",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector 5 Salt Lake City",
+    "locality_id": "listing-kolkata-sector-5-salt-lake-city-cb8dd5",
+    "area_sqft": null,
+    "deposit": 120000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2025/01/30/Project-Photo-108-Ideal-Aquaview-Kolkata-5028728_960_1280_310_462.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4494486999999,
+        22.5707789
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 60000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd8d",
+    "title": "3 BHK Flat   for Rent in Merlin 5th Avenue, Sector 5 Salt Lake City, Kolkata",
+    "rent": 110000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1765-Sq-ft-Multistorey-Apartment-FOR-Rent-Nayapatty-in-Kolkata&id=4d423834313536383735",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector V",
+    "locality_id": "listing-kolkata-sector-v-47eb17",
+    "area_sqft": null,
+    "deposit": 220000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB5tA9dMN8ujopO2qHe05-9qLhVA47/Photo_h180_w240/84156875_4_hatsAppImage20260409at12.37.27_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.412308,
+        22.5683
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 110000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd8f",
+    "title": "3 BHK Flat   for Rent in Ideal Aquaview, Sector 5 Salt Lake City, Kolkata",
+    "rent": 60000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1505-Sq-ft-Multistorey-Apartment-FOR-Rent-Salt-Lake-City-Sector-5-in-Kolkata&id=4d423736303236343337",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector 5 Salt Lake City",
+    "locality_id": "listing-kolkata-sector-5-salt-lake-city-cb8dd5",
+    "area_sqft": null,
+    "deposit": 120000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnzVO-dQ9dcxZuseQDsRBEKsEVHQpBoI9/Photo_h180_w240/76026437_12_PropertyImage726-4193685370398_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4494486999999,
+        22.5707789
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 60000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd91",
+    "title": "2 BHK Flat   for Rent in Merlin 5th Avenue, Sector 5 Salt Lake City, Kolkata",
+    "rent": 40000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-965-Sq-ft-Multistorey-Apartment-FOR-Rent-Nayapatty-in-Kolkata&id=4d423834313538313733",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector V",
+    "locality_id": "listing-kolkata-sector-v-47eb17",
+    "area_sqft": null,
+    "deposit": 80000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB5tA9dMN8ujopO2qHe05-9qLhVA47/Photo_h180_w240/84158173_1_hatsAppImage20260409at13.10.226_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.412308,
+        22.5683
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 40000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd93",
+    "title": "3 BHK Flat   for Rent in Panache, Sector 5 Salt Lake City, Kolkata",
+    "rent": 85000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1712-Sq-ft-Multistorey-Apartment-FOR-Rent-Salt-Lake-City-Sector-5-in-Kolkata&id=4d423833363836353731",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector 5 Salt Lake City",
+    "locality_id": "listing-kolkata-sector-5-salt-lake-city-cb8dd5",
+    "area_sqft": 1220,
+    "deposit": 170000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dc2szNKMJ-BT66tLMISzqPiG/Photo_h180_w240/83686571_11_1779011828618-047_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4480675,
+        22.5699922
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 85000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd95",
+    "title": "3 BHK Flat   for Rent in Merlin 5th Avenue, Sector 5 Salt Lake City, Kolkata",
+    "rent": 110000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1496-Sq-ft-Multistorey-Apartment-FOR-Rent-Nayapatty-in-Kolkata&id=4d423831333834343339",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector V",
+    "locality_id": "listing-kolkata-sector-v-47eb17",
+    "area_sqft": 1274,
+    "deposit": 220000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVT89I9dc9-95rUC_uJBPVe9UswOHQj/Photo_h180_w240/81384439_16_hatsAppImage20250915at1.13.52PM1_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.412308,
+        22.5683
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 110000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd97",
+    "title": "2 BHK  House for Rent in Sector 5 Salt Lake City Kolkata",
+    "rent": 20000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1362-Sq-ft-Residential-House-FOR-Rent-Salt-Lake-City-Sector-5-in-Kolkata&id=4d423835353430323231",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector 5 Salt Lake City",
+    "locality_id": "listing-kolkata-sector-5-salt-lake-city-cb8dd5",
+    "area_sqft": 1200,
+    "deposit": 40000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dc5zCjFA7taOs_Tg1L8ShJQT/Photo_h180_w240/85540221_1_PropertyImage628-2334630141365_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4323501586914,
+        22.57777214050293
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 20000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd99",
+    "title": "1 BHK  House for Rent in Salt Lake City Kolkata",
+    "rent": 9000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-400-Sq-ft-Residential-House-FOR-Rent-Salt-Lake-City-in-Kolkata&id=4d423831343436353837",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Salt Lake City",
+    "locality_id": "listing-kolkata-salt-lake-city-b97e95",
+    "area_sqft": 400,
+    "deposit": 18000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.41388702392578,
+        22.584407806396484
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 9000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd9b",
+    "title": "3 BHK Flat   for Rent in Merlin 5th Avenue, Sector 5 Salt Lake City, Kolkata",
+    "rent": 110000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1930-Sq-ft-Multistorey-Apartment-FOR-Rent-Salt-Lake-City-Sector-5-in-Kolkata&id=4d423731333235323035",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector 5 Salt Lake City",
+    "locality_id": "listing-kolkata-sector-5-salt-lake-city-cb8dd5",
+    "area_sqft": null,
+    "deposit": 220000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnzVG88A9dcofkcfnz4LYRWIl6TAZDYsV/Photo_h180_w240/71325205_19_hatsAppImage20240131at23.34.472_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.412308,
+        22.5683
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 110000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd9d",
+    "title": "2 BHK Flat   for Rent in Salt Lake City, Kolkata",
+    "rent": 35000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Multistorey-Apartment-FOR-Rent-Sukant-Nagar-in-Kolkata&id=4d423739383938363131",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sukant Nagar",
+    "locality_id": "listing-kolkata-sukant-nagar-fc21b4",
+    "area_sqft": 500,
+    "deposit": 70000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dMtjRG6uYIsWI__0bZwpJDBD/Photo_h180_w240/1053874476175402_79898611_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4166503592485,
+        22.5609985874065
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 35000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dd9f",
+    "title": "3 BHK  House for Rent in Salt Lake City Kolkata",
+    "rent": 30000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1500-Sq-ft-Residential-House-FOR-Rent-Salt-Lake-City-in-Kolkata&id=4d423831343436373431",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Salt Lake City",
+    "locality_id": "listing-kolkata-salt-lake-city-b97e95",
+    "area_sqft": 1500,
+    "deposit": 60000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVT89I9dcNNTGXH-PdU8alhc8CvxiSl/Photo_h180_w240/81446741_2_PropertyImage694-7929508994923_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.41388702392578,
+        22.584407806396484
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 30000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dda1",
+    "title": "Home",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=EM-Bypass&cityName=Kolkata&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "EM Bypass",
+    "locality_id": "listing-kolkata-em-bypass-46681c",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dda3",
+    "title": "Flats for Rent in Kolkata",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=EM-Bypass&cityName=Kolkata&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "EM Bypass",
+    "locality_id": "listing-kolkata-em-bypass-46681c",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dda5",
+    "title": "Flats for Rent in Salt Lake City",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Sector-V&cityName=Kolkata&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector V",
+    "locality_id": "listing-kolkata-sector-v-47eb17",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dda7",
+    "title": "1 BHK Flats for Rent in Salt Lake City",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Salt-Lake-City&cityName=Kolkata&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Salt Lake City",
+    "locality_id": "listing-kolkata-salt-lake-city-b97e95",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dda9",
+    "title": "1 BHK Flat  for Rent in New Town Tower, New Town, Kolkata",
+    "rent": 67787,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-900-Sq-ft-Multistorey-Apartment-FOR-Rent-New-Town-in-Kolkata&id=4d423734353839323833",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "New Town",
+    "locality_id": "listing-kolkata-new-town-f2d6af",
+    "area_sqft": 890,
+    "deposit": 135574,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/2024/Aug/28/Photo_h300_w450/74589283_1_exelssevenstormjuhaszimrus981916Copy_300_450.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.462283,
+        22.580178
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 67787
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddab",
+    "title": "2 BHK  House for Rent in New Town Kolkata",
+    "rent": 15000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Residential-House-FOR-Rent-New-Town-in-Kolkata&id=4d423731353336393935",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "New Town",
+    "locality_id": "listing-kolkata-new-town-f2d6af",
+    "area_sqft": 1200,
+    "deposit": 30000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/2024/Feb/23/Photo_h300_w450/71536995_1_hatsAppImage20240213at12.33.58PM1_300_450.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.48213958740234,
+        22.591331481933594
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 15000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddad",
+    "title": "3 BHK Flat  for Rent in New Town, Kolkata",
+    "rent": 95000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2000-Sq-ft-Multistorey-Apartment-FOR-Rent-New-Town-in-Kolkata&id=4d423835363932333935",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "New Town",
+    "locality_id": "listing-kolkata-new-town-f2d6af",
+    "area_sqft": 1700,
+    "deposit": 190000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds7L9fW8LeHz5PsBdljtELWY/Photo_h180_w240/85692395_15_PropertyImage881-6215835631135_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.48213958740234,
+        22.591331481933594
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 95000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddaf",
+    "title": "3 BHK Flat  for Rent in Amit ECOS, New Town, Kolkata",
+    "rent": 62000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1377-Sq-ft-Multistorey-Apartment-FOR-Rent-New-Town-in-Kolkata&id=4d423833373431343633",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "New Town",
+    "locality_id": "listing-kolkata-new-town-f2d6af",
+    "area_sqft": null,
+    "deposit": 124000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99A9dchfXuafBmXQiQJWRmi-FvOr/Photo_h180_w240/83741463_1_PropertyImage413-91066548104413_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3628734,
+        22.5743545
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 62000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddb1",
+    "title": "3 BHK Flat  for Rent in GLS Ask Akash, New Town, Kolkata",
+    "rent": 25000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1250-Sq-ft-Multistorey-Apartment-FOR-Rent-New-Town-in-Kolkata&id=4d423835313838303833",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "New Town",
+    "locality_id": "listing-kolkata-new-town-f2d6af",
+    "area_sqft": null,
+    "deposit": 50000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3628734,
+        22.5743545
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 25000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddb3",
+    "title": "3 BHK Flat   for Rent in New Town, Kolkata",
+    "rent": 20000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1000-Sq-ft-Multistorey-Apartment-FOR-Rent-New-Town-in-Kolkata&id=4d423834353533343837",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "New Town",
+    "locality_id": "listing-kolkata-new-town-f2d6af",
+    "area_sqft": 1000,
+    "deposit": 40000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dM16mZEnmQ142VHrrtnm2xgA/Photo_h180_w240/84553487_10_hatsAppImage20260507at14.59.37_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4821379,
+        22.5913323
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 20000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddb5",
+    "title": "2 BHK Flat   for Rent in Sunny Fort, New Town, Kolkata",
+    "rent": 27000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1112-Sq-ft-Multistorey-Apartment-FOR-Rent-Action-Area-2B-in-Kolkata&id=4d423835363839363331",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Action Area 2B",
+    "locality_id": "listing-kolkata-action-area-2b-920b21",
+    "area_sqft": null,
+    "deposit": 54000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds7L9fW8LeHz5PsBdljtELWY/Photo_h180_w240/85689631_2_1784888315152-6162_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.455538,
+        22.582889
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 27000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddb7",
+    "title": "3 BHK Flat   for Rent in Shapoorji Paloonji Sukhobristi, New Town, Kolkata",
+    "rent": 30000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-901-Sq-ft-Multistorey-Apartment-FOR-Rent-New-Town-in-Kolkata&id=4d423835363839313533",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "New Town",
+    "locality_id": "listing-kolkata-new-town-f2d6af",
+    "area_sqft": null,
+    "deposit": 60000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds7L9fW8LeHz5PsBdljtELWY/Photo_h180_w240/85689153_6_PropertyImage869-3442751700501_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.512065,
+        22.5682296
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 30000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddb9",
+    "title": "2 BHK Flat   for Rent in Moon Beam Apartment, New Town, Kolkata",
+    "rent": 16000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-950-Sq-ft-Multistorey-Apartment-FOR-Rent-New-Town-in-Kolkata&id=4d423835353435353535",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "New Town",
+    "locality_id": "listing-kolkata-new-town-f2d6af",
+    "area_sqft": 724,
+    "deposit": 32000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dc5zCjFA7taOs_Tg1L8ShJQT/Photo_h180_w240/85545555_4_PropertyImage80-4950476664974_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3628734,
+        22.5743545
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 16000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddbb",
+    "title": "3 BHK Flat   for Rent in Utsa Luxury, New Town, Kolkata",
+    "rent": 55000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1822-Sq-ft-Multistorey-Apartment-FOR-Rent-New-Town-in-Kolkata&id=4d423835333835383839",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "New Town",
+    "locality_id": "listing-kolkata-new-town-f2d6af",
+    "area_sqft": 1500,
+    "deposit": 110000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/Project-Photo-1-Utsa-Luxury-Kolkata-5074650_972_1296_310_462.JPEG"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4530455,
+        22.5837951
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 55000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddbd",
+    "title": "3 BHK Flat   for Rent in New Town, Kolkata",
+    "rent": 20000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1450-Sq-ft-Multistorey-Apartment-FOR-Rent-Action-Area-1-in-Kolkata&id=4d423739393738313433",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Action Area 1",
+    "locality_id": "listing-kolkata-action-area-1-842e8f",
+    "area_sqft": 1250,
+    "deposit": 40000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVK48w9dsxbQS0Ajh4jZ4PFZ1ZynKoI/Photo_h180_w240/79978143_10_PropertyImage258-06308187723226_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4632851916895,
+        22.5782811149978
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 20000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddbf",
+    "title": "2 BHK Flat   for Rent in New Town, Kolkata",
+    "rent": 16000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-950-Sq-ft-Multistorey-Apartment-FOR-Rent-New-Town-in-Kolkata&id=4d423835353435323031",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "New Town",
+    "locality_id": "listing-kolkata-new-town-f2d6af",
+    "area_sqft": 724,
+    "deposit": 32000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dc5zCjFA7taOs_Tg1L8ShJQT/Photo_h180_w240/85545201_1_PropertyImage472-51866108645703_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.47206115722656,
+        22.575695037841797
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 16000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddc1",
+    "title": "3 BHK Flat   for Rent in New Town, Kolkata",
+    "rent": 20000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1550-Sq-ft-Multistorey-Apartment-FOR-Rent-New-Town-in-Kolkata&id=4d423835393034333435",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "New Town",
+    "locality_id": "listing-kolkata-new-town-f2d6af",
+    "area_sqft": 1450,
+    "deposit": 40000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dM27Tp2xUt0YFF1J2vUy-VMb/Photo_h180_w240/85904345_8_PropertyImage716-6805951841981_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4821379,
+        22.5913323
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 20000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddc3",
+    "title": "1 BHK Flat   for Rent in New Town Nidhu Ban , New Town, Kolkata",
+    "rent": 67889,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-900-Sq-ft-Multistorey-Apartment-FOR-Rent-New-Town-in-Kolkata&id=4d423734353636303137",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "New Town",
+    "locality_id": "listing-kolkata-new-town-f2d6af",
+    "area_sqft": 780,
+    "deposit": 135778,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnzVB48U9ds23ge-nE73klmkFtSkgLF_M/Photo_h180_w240/74566017_1_exelssevenstormjuhaszimrus981916Copy_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3628734,
+        22.5743545
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 67889
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddc5",
+    "title": "2 BHK Flat   for Rent in Anik One Rajarhat, New Town, Kolkata",
+    "rent": 70000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1244-Sq-ft-Multistorey-Apartment-FOR-Rent-Action-Area-1-in-Kolkata&id=4d423834383638353135",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Action Area 1",
+    "locality_id": "listing-kolkata-action-area-1-842e8f",
+    "area_sqft": 740,
+    "deposit": 140000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dsMvPEPkQKYpH51gVdRpaG5K/Photo_h180_w240/84868515_2_hatsAppImage20230309at5.14.55PM_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4537368,
+        22.634218
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 70000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddc7",
+    "title": "3 BHK Flat   for Rent in TATA Avenida, New Town, Kolkata",
+    "rent": 80000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1925-Sq-ft-Multistorey-Apartment-FOR-Rent-New-Town-in-Kolkata&id=4d423734353331323731",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "New Town",
+    "locality_id": "listing-kolkata-new-town-f2d6af",
+    "area_sqft": 1300,
+    "deposit": 160000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVK48w9dcsfOUM2HxHd4RDBpmofotAg/Photo_h180_w240/74531271_8_BD1_180_240.JPG"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4981966,
+        22.5812247
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 80000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddc9",
+    "title": "3 BHK Flat   for Rent in Greenwood Sonata, New Town, Kolkata",
+    "rent": 55000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1846-Sq-ft-Multistorey-Apartment-FOR-Rent-New-Town-in-Kolkata&id=4d423736313832383937",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "New Town",
+    "locality_id": "listing-kolkata-new-town-f2d6af",
+    "area_sqft": 1846,
+    "deposit": 110000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2022/08/13/Project-Photo-29-Greenwood-Sonata-Kolkata-5018316_901_2000_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.45219,
+        22.622568
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 55000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddcb",
+    "title": "3 BHK Flat   for Rent in New Town, Kolkata",
+    "rent": 20000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1480-Sq-ft-Multistorey-Apartment-FOR-Rent-Action-Area-1-in-Kolkata&id=4d423833373232373939",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Action Area 1",
+    "locality_id": "listing-kolkata-action-area-1-842e8f",
+    "area_sqft": 1100,
+    "deposit": 40000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99A9dcpX6kwYURgK32ejB1QEvBRq/Photo_h180_w240/83722799_3_PropertyImage156-68737547192723_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4632851916895,
+        22.5782811149978
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 20000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddcd",
+    "title": "2 BHK Flat   for Rent in Hidco Appartment, New Town, Kolkata",
+    "rent": 22000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1050-Sq-ft-Multistorey-Apartment-FOR-Rent-New-Town-in-Kolkata&id=4d423835363837343739",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "New Town",
+    "locality_id": "listing-kolkata-new-town-f2d6af",
+    "area_sqft": 750,
+    "deposit": 44000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds7L9fW8LeHz5PsBdljtELWY/Photo_h180_w240/85687479_8_PropertyImage778-0919675422751_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3628734,
+        22.5743545
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 22000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddcf",
+    "title": "1 BHK Flat   for Rent in Anik One Rajarhat, New Town, Kolkata",
+    "rent": 50000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-923-Sq-ft-Multistorey-Apartment-FOR-Rent-New-Town-in-Kolkata&id=4d423835333830353535",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "New Town",
+    "locality_id": "listing-kolkata-new-town-f2d6af",
+    "area_sqft": null,
+    "deposit": 100000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dM6lX3LrUDulgQ5ASuJH93SV/Photo_h180_w240/85380555_5_PropertyImage407-54590717514026_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4537368,
+        22.634218
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 50000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddd1",
+    "title": "2 BHK Flat   for Rent in Uniworld City, New Town, Kolkata",
+    "rent": 27000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-810-Sq-ft-Multistorey-Apartment-FOR-Rent-Action-Area-3-in-Kolkata&id=4d423833373132393235",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Action Area 3",
+    "locality_id": "listing-kolkata-action-area-3-696cc6",
+    "area_sqft": null,
+    "deposit": 54000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99A9dcpX6kwYURgK32ejB1QEvBRq/Photo_h180_w240/83712925_9_PropertyImage696-2224098576492_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4941247,
+        22.5597917
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 27000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddd3",
+    "title": "3 BHK Flat   for Rent in New Town, Kolkata",
+    "rent": 20000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1250-Sq-ft-Builder-Floor-Apartment-FOR-Rent-New-Town-in-Kolkata&id=4d423833373132383435",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "New Town",
+    "locality_id": "listing-kolkata-new-town-f2d6af",
+    "area_sqft": null,
+    "deposit": 40000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4821379,
+        22.5913323
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 20000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddd5",
+    "title": "2 BHK Flat   for Rent in Anik One Rajarhat, New Town, Kolkata",
+    "rent": 70000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1244-Sq-ft-Multistorey-Apartment-FOR-Rent-Action-Area-1-in-Kolkata&id=4d423834313834373139",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Action Area 1",
+    "locality_id": "listing-kolkata-action-area-1-842e8f",
+    "area_sqft": null,
+    "deposit": 140000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB5tA9dcptZ4bcc84oOxHxzJMD2QJZ/Photo_h180_w240/84184719_11_hatsAppImage20260410at14.21.101_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4537368,
+        22.634218
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 70000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddd7",
+    "title": "2 BHK Flat   for Rent in New Town Residency, New Town, Kolkata",
+    "rent": 25000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1050-Sq-ft-Multistorey-Apartment-FOR-Rent-Action-Area-1-in-Kolkata&id=4d423832343732363635",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Action Area 1",
+    "locality_id": "listing-kolkata-action-area-1-842e8f",
+    "area_sqft": 960,
+    "deposit": 50000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVE88E9dM34ADyuY3njz9BcKXsxLUdc/Photo_h180_w240/82472665_7_MG20251207WA0008_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.44,
+        22.587166
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 25000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddd9",
+    "title": "2 BHK Flat   for Rent in Anik One Rajarhat, New Town, Kolkata",
+    "rent": 70000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1244-Sq-ft-Multistorey-Apartment-FOR-Rent-New-Town-in-Kolkata&id=4d423834313833323633",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "New Town",
+    "locality_id": "listing-kolkata-new-town-f2d6af",
+    "area_sqft": null,
+    "deposit": 140000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB5tA9dcptZ4bcc84oOxHxzJMD2QJZ/Photo_h180_w240/84183263_8_PropertyImage676-6567098972148_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4537368,
+        22.634218
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 70000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dddb",
+    "title": "3 BHK Flat   for Rent in PS ONE10, New Town, Kolkata",
+    "rent": 45000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1680-Sq-ft-Multistorey-Apartment-FOR-Rent-New-Town-in-Kolkata&id=4d423734343730323837",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "New Town",
+    "locality_id": "listing-kolkata-new-town-f2d6af",
+    "area_sqft": 1470,
+    "deposit": 90000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2024/04/29/Project-Photo-43-ONE10-Kolkata-5123325_480_853_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4642999,
+        22.5688742
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 45000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dddd",
+    "title": "2 BHK Flat   for Rent in Anik One Rajarhat, New Town, Kolkata",
+    "rent": 70000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1244-Sq-ft-Multistorey-Apartment-FOR-Rent-Action-Area-1-in-Kolkata&id=4d423834313834313133",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Action Area 1",
+    "locality_id": "listing-kolkata-action-area-1-842e8f",
+    "area_sqft": null,
+    "deposit": 140000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB5tA9dcptZ4bcc84oOxHxzJMD2QJZ/Photo_h180_w240/84184113_4_hatsAppImage20260410at14.23.162_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4537368,
+        22.634218
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 70000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dddf",
+    "title": "3 BHK Flat   for Rent in New Age, New Town, Kolkata",
+    "rent": 28000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-910-Sq-ft-Multistorey-Apartment-FOR-Rent-New-Town-in-Kolkata&id=4d423835313734323131",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "New Town",
+    "locality_id": "listing-kolkata-new-town-f2d6af",
+    "area_sqft": null,
+    "deposit": 56000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3628734,
+        22.5743545
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 28000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dde1",
+    "title": "3 BHK Flat   for Rent in Rohra Address, New Town, Kolkata",
+    "rent": 33000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1300-Sq-ft-Multistorey-Apartment-FOR-Rent-New-Town-in-Kolkata&id=4d423836303834373439",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "New Town",
+    "locality_id": "listing-kolkata-new-town-f2d6af",
+    "area_sqft": null,
+    "deposit": 66000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2025/10/28/Rohra-Address-5101471_Landscape_View_3e3c12ba-f35_310_462.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.452593,
+        22.589523
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 33000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dde3",
+    "title": "3 BHK Flat   for Rent in Shapoorji Paloonji Sukhobristi, New Town, Kolkata",
+    "rent": 30000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1300-Sq-ft-Multistorey-Apartment-FOR-Rent-New-Town-in-Kolkata&id=4d423834383738333331",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "New Town",
+    "locality_id": "listing-kolkata-new-town-f2d6af",
+    "area_sqft": 900,
+    "deposit": 60000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dsMvPEPkQKYpH51gVdRpaG5K/Photo_h180_w240/84878331_8_PropertyImage43-91261167956317_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.512065,
+        22.5682296
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 30000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dde5",
+    "title": "Flats for Rent in New Town",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=New-Town&cityName=Kolkata&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "New Town",
+    "locality_id": "listing-kolkata-new-town-f2d6af",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dde7",
+    "title": "1 BHK Flats for Rent in New Town",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=New-Town&cityName=Kolkata&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "New Town",
+    "locality_id": "listing-kolkata-new-town-f2d6af",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dde9",
+    "title": "2 BHK  House for Rent in Sector 5 Salt Lake City Kolkata",
+    "rent": 20000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-400-Sq-ft-Residential-House-FOR-Rent-Salt-Lake-City-Sector-5-in-Kolkata&id=4d423731333339343535",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector 5 Salt Lake City",
+    "locality_id": "listing-kolkata-sector-5-salt-lake-city-cb8dd5",
+    "area_sqft": 350,
+    "deposit": 40000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnzVG88A9dcv6y5KkZDw1blDfSa5EWPj1/Photo_h180_w240/71339455_4_PropertyImage838-1351879406403_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4323485164974,
+        22.5777730025888
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 20000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddeb",
+    "title": "2 BHK Flat   for Rent in Sector 5 Salt Lake City, Kolkata",
+    "rent": 22000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Salt-Lake-City-Sector-5-in-Kolkata&id=4d423835333836343035",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector 5 Salt Lake City",
+    "locality_id": "listing-kolkata-sector-5-salt-lake-city-cb8dd5",
+    "area_sqft": 1050,
+    "deposit": 44000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dM6lX3LrUDulgQ5ASuJH93SV/Photo_h180_w240/85386405_1_hatsAppImage20260704at10.09.51AM_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4323485164974,
+        22.5777730025888
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 22000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dded",
+    "title": "3 BHK Flat   for Rent in Merlin 5th Avenue, Sector 5 Salt Lake City, Kolkata",
+    "rent": 110000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1247-Sq-ft-Multistorey-Apartment-FOR-Rent-Salt-Lake-City-Sector-5-in-Kolkata&id=4d423739393838393437",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector 5 Salt Lake City",
+    "locality_id": "listing-kolkata-sector-5-salt-lake-city-cb8dd5",
+    "area_sqft": null,
+    "deposit": 220000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVK48w9dckXjemxSGwHt3U051alCDfh/Photo_h180_w240/79988947_6_PropertyImage629-5829361618936_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.412308,
+        22.5683
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 110000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddef",
+    "title": "3 BHK Flat   for Rent in Merlin 5th Avenue, Sector 5 Salt Lake City, Kolkata",
+    "rent": 110000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1247-Sq-ft-Multistorey-Apartment-FOR-Rent-Salt-Lake-City-Sector-5-in-Kolkata&id=4d423835353338313135",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector 5 Salt Lake City",
+    "locality_id": "listing-kolkata-sector-5-salt-lake-city-cb8dd5",
+    "area_sqft": null,
+    "deposit": 220000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dc5zCjFA7taOs_Tg1L8ShJQT/Photo_h180_w240/85538115_11_PropertyImage719-8123421532032_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.412308,
+        22.5683
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 110000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddf1",
+    "title": "3 BHK Flat   for Rent in Ideal Aquaview, Sector 5 Salt Lake City, Kolkata",
+    "rent": 60000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1510-Sq-ft-Multistorey-Apartment-FOR-Rent-Salt-Lake-City-Sector-5-in-Kolkata&id=4d423834383532393939",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector 5 Salt Lake City",
+    "locality_id": "listing-kolkata-sector-5-salt-lake-city-cb8dd5",
+    "area_sqft": 1005,
+    "deposit": 120000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK48w9dMuaOw98AxsJR8vqwuKu-puR/Photo_h180_w240/84852999_20_PropertyImage834-6242149829297_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4494486999999,
+        22.5707789
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 60000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddf3",
+    "title": "3 BHK Flat   for Rent in Merlin 5th Avenue, Sector 5 Salt Lake City, Kolkata",
+    "rent": 110000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1771-Sq-ft-Multistorey-Apartment-FOR-Rent-Salt-Lake-City-Sector-5-in-Kolkata&id=4d423736303734363931",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector 5 Salt Lake City",
+    "locality_id": "listing-kolkata-sector-5-salt-lake-city-cb8dd5",
+    "area_sqft": 1500,
+    "deposit": 220000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnzVO-dQ9dcOH78dHAQurmKA0M11RB0aa/Photo_h180_w240/76074691_4_PropertyImage92-0202141017239_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.412308,
+        22.5683
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 110000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddf5",
+    "title": "2 BHK Flat   for Rent in Merlin 5th Avenue, Sector 5 Salt Lake City, Kolkata",
+    "rent": 40000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-965-Sq-ft-Multistorey-Apartment-FOR-Rent-Nayapatty-in-Kolkata&id=4d423834313638343435",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector V",
+    "locality_id": "listing-kolkata-sector-v-47eb17",
+    "area_sqft": null,
+    "deposit": 80000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB5tA9dMN8ujopO2qHe05-9qLhVA47/Photo_h180_w240/84168445_6_hatsAppImage20260409at19.29.222_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.412308,
+        22.5683
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 40000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddf7",
+    "title": "3 BHK Flat   for Rent in Ideal Aquaview, Sector 5 Salt Lake City, Kolkata",
+    "rent": 60000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1505-Sq-ft-Multistorey-Apartment-FOR-Rent-Salt-Lake-City-Sector-5-in-Kolkata&id=4d423734333938383533",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector 5 Salt Lake City",
+    "locality_id": "listing-kolkata-sector-5-salt-lake-city-cb8dd5",
+    "area_sqft": 1000,
+    "deposit": 120000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnzVB48U9dc0Pfitb0IqZwWbkF87fuH5H/Photo_h180_w240/74398853_8_deal1_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4494486999999,
+        22.5707789
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 60000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddf9",
+    "title": "2 BHK Flat   for Rent in Panache, Sector 5 Salt Lake City, Kolkata",
+    "rent": 55000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1500-Sq-ft-Multistorey-Apartment-FOR-Rent-Salt-Lake-City-Sector-5-in-Kolkata&id=4d423835333834323437",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector 5 Salt Lake City",
+    "locality_id": "listing-kolkata-sector-5-salt-lake-city-cb8dd5",
+    "area_sqft": 1000,
+    "deposit": 110000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2022/08/12/Project-Photo-23-Panache-Kolkata-5072879_2000_901_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4480675,
+        22.5699922
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 55000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddfb",
+    "title": "2 BHK Flat   for Rent in Ideal Aquaview, Sector 5 Salt Lake City, Kolkata",
+    "rent": 32000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1090-Sq-ft-Multistorey-Apartment-FOR-Rent-Nayapatty-in-Kolkata&id=4d423834353736343933",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector V",
+    "locality_id": "listing-kolkata-sector-v-47eb17",
+    "area_sqft": 688,
+    "deposit": 64000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dchY_9LBIqUKbFJbEmObqETk/Photo_h180_w240/84576493_1_PropertyImage927-0566149103748_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4494486999999,
+        22.5707789
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 32000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddfd",
+    "title": "3 BHK Flat   for Rent in Panache, Sector 5 Salt Lake City, Kolkata",
+    "rent": 85000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1615-Sq-ft-Multistorey-Apartment-FOR-Rent-Salt-Lake-City-Sector-5-in-Kolkata&id=4d423833373730333735",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector 5 Salt Lake City",
+    "locality_id": "listing-kolkata-sector-5-salt-lake-city-cb8dd5",
+    "area_sqft": 1700,
+    "deposit": 170000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99A9dcm6BLPcrds9ojCs5vbjQ4BL/Photo_h180_w240/83770375_7_hatsAppImage20260313at6.19.34PM_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4480675,
+        22.5699922
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 85000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ddff",
+    "title": "3 BHK Flat   for Rent in Sector 5 Salt Lake City, Kolkata",
+    "rent": 23000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1050-Sq-ft-Multistorey-Apartment-FOR-Rent-Salt-Lake-City-Sector-5-in-Kolkata&id=4d423834323730393639",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector 5 Salt Lake City",
+    "locality_id": "listing-kolkata-sector-5-salt-lake-city-cb8dd5",
+    "area_sqft": 900,
+    "deposit": 46000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4323485164974,
+        22.5777730025888
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 23000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de01",
+    "title": "3 BHK Flat   for Rent in Merlin 5th Avenue, Sector 5 Salt Lake City, Kolkata",
+    "rent": 110000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1862-Sq-ft-Multistorey-Apartment-FOR-Rent-Nayapatty-in-Kolkata&id=4d423834323633313737",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector V",
+    "locality_id": "listing-kolkata-sector-v-47eb17",
+    "area_sqft": null,
+    "deposit": 220000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB5tA9dcx0unlVikhGwb_uD9bMJioa/Photo_h180_w240/84263177_12_hatsAppImage20260416at12.46.022_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.412308,
+        22.5683
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 110000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de03",
+    "title": "Flats for Rent in Sector 5 Salt Lake City",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Sector-V&cityName=Kolkata&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector V",
+    "locality_id": "listing-kolkata-sector-v-47eb17",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de05",
+    "title": "1 BHK Flats for Rent in Sector 5 Salt Lake City",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Sector-V&cityName=Kolkata&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Sector V",
+    "locality_id": "listing-kolkata-sector-v-47eb17",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de07",
+    "title": "3 BHK Flat  for Rent in Rajarhat, Kolkata",
+    "rent": 40000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1329-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajarhat-in-Kolkata&id=4d423835313838333637",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Rajarhat",
+    "locality_id": "listing-kolkata-rajarhat-dc46d5",
+    "area_sqft": null,
+    "deposit": 80000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/2026/Jun/20/Photo_h300_w450/85188367_1_PropertyImage29-89925687155759_300_450.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.44036865234375,
+        22.622400283813477
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 40000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de09",
+    "title": "3 BHK Flat  for Rent in Aspira Loharuka Green Chinar, Chinar Park, Rajarhat, Kolkata",
+    "rent": 25000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1076-Sq-ft-Multistorey-Apartment-FOR-Rent-Chinar-Park-in-Kolkata&id=4d423538373131313035",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Chinar Park",
+    "locality_id": "listing-kolkata-chinar-park-89b7dc",
+    "area_sqft": null,
+    "deposit": 50000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAmjVE88E9dsKMNFGsaBkK7aw31CWTrtlC/Photo_h180_w240/58711105_6_WhatsAppImage2021-12-20at2.58.45PM(5)_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4476731,
+        22.622388
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 25000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de0b",
+    "title": "3 BHK Flat  for Rent in Srijan Heritage Enclave Phase II, Rajarhat, Kolkata",
+    "rent": 25000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1329-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajarhat-in-Kolkata&id=4d423830303031343333",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Rajarhat",
+    "locality_id": "listing-kolkata-rajarhat-dc46d5",
+    "area_sqft": null,
+    "deposit": 50000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVK48w9dc7rCkN7GlSEZunRhI03omxC/Photo_h180_w240/80001433_2_r88_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.464732,
+        22.633286
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 25000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de0d",
+    "title": "3 BHK Flat   for Rent in Oswal Orchard Avaasa, Rajarhat, Kolkata",
+    "rent": 45000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1321-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajarhat-in-Kolkata&id=4d423831353035363137",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Rajarhat",
+    "locality_id": "listing-kolkata-rajarhat-dc46d5",
+    "area_sqft": 975,
+    "deposit": 90000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVT89I9dsnf1aGhMUqaqVSglOkAU33r/Photo_h180_w240/81505617_5_1758640457285-887_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4576994,
+        22.6325786
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 45000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de0f",
+    "title": "2 BHK Flat   for Rent in Rajarhat, Kolkata",
+    "rent": 15500,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-995-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajarhat-in-Kolkata&id=4d423731353132343037",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Rajarhat",
+    "locality_id": "listing-kolkata-rajarhat-dc46d5",
+    "area_sqft": null,
+    "deposit": 31000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnzVN99A9dMkONAU2L4y8dwsBK80OAq0X/Photo_h180_w240/71512407_7_IMG20230320162438_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.45018005371094,
+        22.63220977783203
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 15500
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de11",
+    "title": "2 BHK Flat   for Rent in Rajarhat, Kolkata",
+    "rent": 15500,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-785-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Rajarhat-in-Kolkata&id=4d423834313934313131",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Rajarhat",
+    "locality_id": "listing-kolkata-rajarhat-dc46d5",
+    "area_sqft": null,
+    "deposit": 31000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4501774973632,
+        22.6322091416971
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 15500
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de13",
+    "title": "3 BHK Villa for Rent in Vedic Sanjeeva Gardens , Rajarhat Kolkata",
+    "rent": 70000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1850-Sq-ft-Villa-FOR-Rent-Rajarhat-in-Kolkata&id=4d423832343934343233",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Rajarhat",
+    "locality_id": "listing-kolkata-rajarhat-dc46d5",
+    "area_sqft": 1600,
+    "deposit": 140000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVE88E9dMPDD2k6xwjkbOmW7swUefAb/Photo_h180_w240/82494423_7_1765268588388-4702_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.460578,
+        22.5681442
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 70000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de15",
+    "title": "3 BHK Flat   for Rent in Rajarhat, Kolkata",
+    "rent": 21000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1500-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajarhat-in-Kolkata&id=4d423835363930333035",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Rajarhat",
+    "locality_id": "listing-kolkata-rajarhat-dc46d5",
+    "area_sqft": null,
+    "deposit": 42000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4501774973632,
+        22.6322091416971
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 21000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de17",
+    "title": "3 BHK Flat   for Rent in Rajarhat, Kolkata",
+    "rent": 21000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1200-Sq-ft-Multistorey-Apartment-FOR-Rent-Chinar-Park-in-Kolkata&id=4d423835383035323433",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Chinar Park",
+    "locality_id": "listing-kolkata-chinar-park-89b7dc",
+    "area_sqft": null,
+    "deposit": 42000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMuik2I4q1t27vNWGbD9BntY/Photo_h180_w240/85805243_4_hatsAppImage20260627at6.33.01PM_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4390133,
+        22.6244838
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 21000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de19",
+    "title": "3 BHK Flat   for Rent in Realtech Rajotto, Rajarhat, Kolkata",
+    "rent": 15000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1195-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajarhat-in-Kolkata&id=4d423834383635303731",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Rajarhat",
+    "locality_id": "listing-kolkata-rajarhat-dc46d5",
+    "area_sqft": 810,
+    "deposit": 30000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK48w9dsoRy91o1X-yCQxRXsZZSCl8/Photo_h180_w240/84865071_8_PropertyImage1781967338994_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4310521,
+        22.6140369
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 15000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de1b",
+    "title": "1 BHK  House for Rent in Sulanggari Kolkata",
+    "rent": 12000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-1100-Sq-ft-Residential-House-FOR-Rent-Sulanggari-in-Kolkata&id=4d423836313734353039",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Rajarhat",
+    "locality_id": "listing-kolkata-rajarhat-dc46d5",
+    "area_sqft": 600,
+    "deposit": 24000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4515609741211,
+        22.600814819335938
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 12000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de1d",
+    "title": "2 BHK Flat   for Rent in Magnolia Oxygen, Rajarhat, Kolkata",
+    "rent": 19000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-897-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajarhat-in-Kolkata&id=4d423831343734343231",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Rajarhat",
+    "locality_id": "listing-kolkata-rajarhat-dc46d5",
+    "area_sqft": 897,
+    "deposit": 38000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVT89I9dsvXYQsmZjdA_zFV1dW6-Zoq/Photo_h180_w240/81474421_15_hatsAppImage20250921at3.33.46PM_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.496544,
+        22.620778
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 19000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de1f",
+    "title": "3 BHK Flat   for Rent in Magnolia Elite, Rajarhat, Kolkata",
+    "rent": 15000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1069-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajarhat-in-Kolkata&id=4d423831343730313537",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Rajarhat",
+    "locality_id": "listing-kolkata-rajarhat-dc46d5",
+    "area_sqft": null,
+    "deposit": 30000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVT89I9dsnf1aGhMUqaqVSglOkAU33r/Photo_h180_w240/81470157_15_000088490_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.499372,
+        22.611674
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 15000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de21",
+    "title": "3 BHK Flat   for Rent in PS The Soul, Rajarhat, Kolkata",
+    "rent": 35000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-707-Sq-ft-Multistorey-Apartment-FOR-Rent-Bishnupur-Rajarhat-in-Kolkata&id=4d423835313733343039",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Bishnupur Rajarhat",
+    "locality_id": "listing-kolkata-bishnupur-rajarhat-398c06",
+    "area_sqft": null,
+    "deposit": 70000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK48w9dcNuvObK4AFLLKafWE0RIuQT/Photo_h180_w240/85173409_2_hatsAppImage20260617at12.57.13PM2_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.5159877,
+        22.5718829
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 35000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de23",
+    "title": "3 BHK Flat   for Rent in Rosedale NRI Complex, Rajarhat, Kolkata",
+    "rent": 62000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2231-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajarhat-in-Kolkata&id=4d423832343730393531",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Rajarhat",
+    "locality_id": "listing-kolkata-rajarhat-dc46d5",
+    "area_sqft": 1771,
+    "deposit": 124000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVE88E9dMPDD2k6xwjkbOmW7swUefAb/Photo_h180_w240/82470951_14_PropertyImage376-5741351155071_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.411944,
+        22.5123615
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 62000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de25",
+    "title": "2 BHK Flat   for Rent in Vedic Village, Rajarhat, Kolkata",
+    "rent": 15000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-950-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajarhat-in-Kolkata&id=4d423731333536323839",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Rajarhat",
+    "locality_id": "listing-kolkata-rajarhat-dc46d5",
+    "area_sqft": 950,
+    "deposit": 30000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnzVG88A9dcnyfzgjM0HvODUqCJL-8h80/Photo_h180_w240/71356289_20_71356289_8_PropertyImage829-5916915859541_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.521303,
+        22.608541
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 15000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de27",
+    "title": "2 BHK Flat   for Rent in IVY Greens, Rajarhat, Kolkata",
+    "rent": 16000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1040-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajarhat-in-Kolkata&id=4d423635383430373633",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Rajarhat",
+    "locality_id": "listing-kolkata-rajarhat-dc46d5",
+    "area_sqft": 1040,
+    "deposit": 32000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAmDVG88A9dsISIExlitBmEFmAEz2YfAUZ/Photo_h180_w240/65840763_7_hatsAppImage20230227at4.49.33AM_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3628734,
+        22.5743545
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 16000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de29",
+    "title": "3 BHK Flat   for Rent in Sankalpa 2, Rajarhat, Kolkata",
+    "rent": 50000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1345-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajarhat-in-Kolkata&id=4d423834353539343939",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Rajarhat",
+    "locality_id": "listing-kolkata-rajarhat-dc46d5",
+    "area_sqft": null,
+    "deposit": 100000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dM16mZEnmQ142VHrrtnm2xgA/Photo_h180_w240/84559499_9_PropertyImage512-0190791457435_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4658128,
+        22.580185
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 50000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de2b",
+    "title": "2 BHK Flat   for Rent in Realtech Rajotto, Rajarhat, Kolkata",
+    "rent": 20000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-600-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajarhat-in-Kolkata&id=4d423830313831353837",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Rajarhat",
+    "locality_id": "listing-kolkata-rajarhat-dc46d5",
+    "area_sqft": 401,
+    "deposit": 40000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVK48w9dsxbQS0Ajh4jZ4PFZ1ZynKoI/Photo_h180_w240/1646_80181587_photos_magicbricks_20250626124816_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4310521,
+        22.6140369
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 20000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de2d",
+    "title": "3 BHK Flat   for Rent in Pansari Purti Star, Rajarhat, Kolkata",
+    "rent": 27000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1250-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajarhat-in-Kolkata&id=4d423736323930333737",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Rajarhat",
+    "locality_id": "listing-kolkata-rajarhat-dc46d5",
+    "area_sqft": null,
+    "deposit": 54000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/Project-Photo-36-Purti-Star-Kolkata-5000565_945_672_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4641886,
+        22.6325102
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 27000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de2f",
+    "title": "3 BHK Flat   for Rent in PS The Soul, Rajarhat, Kolkata",
+    "rent": 35000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1077-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajarhat-in-Kolkata&id=4d423834323035333431",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Rajarhat",
+    "locality_id": "listing-kolkata-rajarhat-dc46d5",
+    "area_sqft": null,
+    "deposit": 70000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB5tA9dchl0yxbJLPybXQEja-5c-WY/Photo_h180_w240/84205341_12_PropertyImage493-7899867191177_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.5159877,
+        22.5718829
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 35000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de31",
+    "title": "2 BHK Flat   for Rent in Shrachi Greenwood Elements, Rajarhat, Kolkata",
+    "rent": 22000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-822-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajarhat-in-Kolkata&id=4d423834323035303633",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Rajarhat",
+    "locality_id": "listing-kolkata-rajarhat-dc46d5",
+    "area_sqft": null,
+    "deposit": 44000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB5tA9dchl0yxbJLPybXQEja-5c-WY/Photo_h180_w240/84205063_2_PropertyImage863-4433541464854_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4561722999999,
+        22.629377
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 22000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de33",
+    "title": "2 BHK Flat   for Rent in Magnolia Oxygen, Rajarhat, Kolkata",
+    "rent": 19000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-897-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajarhat-in-Kolkata&id=4d423738323632383637",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Rajarhat",
+    "locality_id": "listing-kolkata-rajarhat-dc46d5",
+    "area_sqft": null,
+    "deposit": 38000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVN99A9dMMVYP8Mu1taCxmnx7ACGrM_/Photo_h180_w240/78262867_4_PropertyImage692-3945125625925_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.496544,
+        22.620778
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 19000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de35",
+    "title": "1 BHK Flat   for Rent in DLF New Town Heights, Rajarhat, Kolkata",
+    "rent": 14000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-655-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajarhat-in-Kolkata&id=4d423835383039393735",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Rajarhat",
+    "locality_id": "listing-kolkata-rajarhat-dc46d5",
+    "area_sqft": null,
+    "deposit": 28000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMhPfZ38V5hBk6RZ-BIa-e95/Photo_h180_w240/85809975_6_PropertyImage341-962487078985_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.440371,
+        22.6224
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 14000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de37",
+    "title": "3 BHK Flat   for Rent in Rameswara Waterview, Rajarhat, Kolkata",
+    "rent": 16000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1055-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajarhat-in-Kolkata&id=4d423434303431333633",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Rajarhat",
+    "locality_id": "listing-kolkata-rajarhat-dc46d5",
+    "area_sqft": null,
+    "deposit": 32000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mDkjVP9dY9dsqtT1N8NrKAKBGeuDG5JC5e/Photo_h180_w240/44041363_8_5_4_3_3_IMG_20190106_180409_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4821379,
+        22.5913323
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 16000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de39",
+    "title": "3 BHK Flat   for Rent in Subarnarekha, Rajarhat, Kolkata",
+    "rent": 30000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1500-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajarhat-in-Kolkata&id=4d423835353332363833",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Rajarhat",
+    "locality_id": "listing-kolkata-rajarhat-dc46d5",
+    "area_sqft": 1300,
+    "deposit": 60000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2022/02/21/Project-Photo-2-Subarnarekha-Kolkata-5196937_923_2000_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3837011,
+        22.4894618
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 30000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de3b",
+    "title": "3 BHK Flat   for Rent in Magnolia Merlion, Rajarhat, Kolkata",
+    "rent": 24000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1203-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajarhat-in-Kolkata&id=4d423833313332313939",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Rajarhat",
+    "locality_id": "listing-kolkata-rajarhat-dc46d5",
+    "area_sqft": null,
+    "deposit": 48000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK98w9dsy_A0T-yLlXbwJMbAnmivmO/Photo_h180_w240/83132199_6_PropertyImage509-63366781436395_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.5102994,
+        22.5898372
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 24000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de3d",
+    "title": "1 BHK Flat   for Rent in Shrachi Greenwood Elements, Rajarhat, Kolkata",
+    "rent": 12000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-722-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajarhat-in-Kolkata&id=4d423835353331393235",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Rajarhat",
+    "locality_id": "listing-kolkata-rajarhat-dc46d5",
+    "area_sqft": null,
+    "deposit": 24000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dc5zCjFA7taOs_Tg1L8ShJQT/Photo_h180_w240/85531925_1_PropertyImage606-4065753926351_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4561722999999,
+        22.629377
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 12000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de3f",
+    "title": "3 BHK Flat   for Rent in Sankalpa 3, Rajarhat, Kolkata",
+    "rent": 55000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1350-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajarhat-in-Kolkata&id=4d423832343035313031",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Rajarhat",
+    "locality_id": "listing-kolkata-rajarhat-dc46d5",
+    "area_sqft": 1080,
+    "deposit": 110000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVG88A9dcmQGs1iD_tF3_QnW_RGwNLu/Photo_h180_w240/82405101_10_PropertyImage1770987301892_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4646228,
+        22.5793965
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 55000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de41",
+    "title": "2 BHK Flat   for Rent in Realtech Titli, Rajarhat, Kolkata",
+    "rent": 16000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-981-Sq-ft-Multistorey-Apartment-FOR-Rent-Noapara-in-Kolkata&id=4d423832343034393139",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Noapara",
+    "locality_id": "listing-kolkata-noapara-210948",
+    "area_sqft": 740,
+    "deposit": 32000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dcyIQYtZR47eDZUT5DY638B9/Photo_h180_w240/82404919_5_000006043_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.449007,
+        22.617381
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 16000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de43",
+    "title": "Flats for Rent in Rajarhat",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Rajarhat&cityName=Kolkata&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Rajarhat",
+    "locality_id": "listing-kolkata-rajarhat-dc46d5",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de45",
+    "title": "1 BHK Flats for Rent in Rajarhat",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Rajarhat&cityName=Kolkata&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Rajarhat",
+    "locality_id": "listing-kolkata-rajarhat-dc46d5",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de47",
+    "title": "1 BHK Flat   for Rent in Ballygunge, Kolkata",
+    "rent": 8000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-600-Sq-ft-Multistorey-Apartment-FOR-Rent-Ballygunge-Place-in-Kolkata&id=4d423739393934343139",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Ballygunge Place",
+    "locality_id": "listing-kolkata-ballygunge-place-663608",
+    "area_sqft": 480,
+    "deposit": 16000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3693845,
+        22.526858
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 8000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de49",
+    "title": "3 BHK  House for Rent in Ballygunge Park, Ballygunge Kolkata",
+    "rent": 75000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1800-Sq-ft-Residential-House-FOR-Rent-Ballygunge-Park-in-Kolkata&id=4d423433333833313031",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Ballygunge Park",
+    "locality_id": "listing-kolkata-ballygunge-park-0d8a09",
+    "area_sqft": null,
+    "deposit": 150000,
+    "images": [
+      "https://cdn.staticmb.com/srpstatic/images/no-image.svg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.369805207514,
+        22.5319855022851
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 75000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de4b",
+    "title": "3 BHK Flat   for Rent in Ballygunge, Kolkata",
+    "rent": 50000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1800-Sq-ft-Multistorey-Apartment-FOR-Rent-Ballygunge-Place-in-Kolkata&id=4d423739393437383239",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Ballygunge Place",
+    "locality_id": "listing-kolkata-ballygunge-place-663608",
+    "area_sqft": null,
+    "deposit": 100000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3693845,
+        22.526858
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 50000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de4d",
+    "title": "3 BHK Flat   for Rent in Ballygunge, Kolkata",
+    "rent": 50000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1900-Sq-ft-Multistorey-Apartment-FOR-Rent-Ballygunge-in-Kolkata&id=4d423835333832373933",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Ballygunge",
+    "locality_id": "listing-kolkata-ballygunge-791bc3",
+    "area_sqft": 1425,
+    "deposit": 100000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dMlZ2NghAgMmUJKlKTnVXS82/Photo_h180_w240/85382793_6_a6d710cda254837849fafd2260ad2c3_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3659360116177,
+        22.5286222234965
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 50000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de4f",
+    "title": "2 BHK Flat   for Rent in Ballygunge, Kolkata",
+    "rent": 42000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-620-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Ballygunge-Place-in-Kolkata&id=4d423731333633363131",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Ballygunge Place",
+    "locality_id": "listing-kolkata-ballygunge-place-663608",
+    "area_sqft": null,
+    "deposit": 84000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnzVG88A9dcgXJW1gmP8CEwfQqAyjp2zU/Photo_h180_w240/71363611_2_IMG20240208WA0012_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3693845,
+        22.526858
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 42000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de51",
+    "title": "3 BHK Flat   for Rent in Aspirations Elixir, Ballygunge, Kolkata",
+    "rent": 70000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1820-Sq-ft-Multistorey-Apartment-FOR-Rent-Park-Circus-in-Kolkata&id=4d423836313738313131",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Park Circus",
+    "locality_id": "listing-kolkata-park-circus-d7be56",
+    "area_sqft": 1118,
+    "deposit": 140000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/Project-Photo-8-Elixir-Kolkata-5113049_663_1000_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3719193,
+        22.548021
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 70000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de53",
+    "title": "3 BHK Flat   for Rent in Ballygunge, Kolkata",
+    "rent": 50000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1600-Sq-ft-Multistorey-Apartment-FOR-Rent-Dover-Terrace-in-Kolkata&id=4d423734363130343035",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Dover Terrace",
+    "locality_id": "listing-kolkata-dover-terrace-6a18fe",
+    "area_sqft": 1600,
+    "deposit": 100000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnzVO-dQ9dcJitZIEqrVGs5LOk8MMUjV6/Photo_h180_w240/74610405_3_IMG-20241015-WA0003_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.36593627929688,
+        22.528621673583984
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 50000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de55",
+    "title": "2 BHK Flat   for Rent in Ballygunge, Kolkata",
+    "rent": 42000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1700-Sq-ft-Multistorey-Apartment-FOR-Rent-Ballygunge-in-Kolkata&id=4d423832353131313739",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Ballygunge",
+    "locality_id": "listing-kolkata-ballygunge-791bc3",
+    "area_sqft": 1350,
+    "deposit": 84000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVE88E9dMPDD2k6xwjkbOmW7swUefAb/Photo_h180_w240/82511179_4_hatsAppImage20251209at8.54.49PM1_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3659360116177,
+        22.5286222234965
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 42000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de57",
+    "title": "2 BHK Flat   for Rent in Ballygunge, Kolkata",
+    "rent": 42000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-900-Sq-ft-Multistorey-Apartment-FOR-Rent-Lake-Terrace-in-Kolkata&id=4d423431333430363037",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Lake Terrace",
+    "locality_id": "listing-kolkata-lake-terrace-74cbed",
+    "area_sqft": null,
+    "deposit": 84000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3565316293828,
+        22.5159349605491
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 42000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de59",
+    "title": "1 BHK Flat   for Rent in Ballygunge, Kolkata",
+    "rent": 8000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-300-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Ballygunge-in-Kolkata&id=4d423433333534333931",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Ballygunge",
+    "locality_id": "listing-kolkata-ballygunge-791bc3",
+    "area_sqft": null,
+    "deposit": 16000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dchY_9LBIqUKbFJbEmObqETk/Photo_h180_w240/5a70c7e9-f1e6-44c8-b64e-0b805b54eb71_43354391_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3659360116177,
+        22.5286222234965
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 8000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de5b",
+    "title": "3 BHK Flat   for Rent in Ballygunge, Kolkata",
+    "rent": 50000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2800-Sq-ft-Multistorey-Apartment-FOR-Rent-Ballygunge-Place-in-Kolkata&id=4d423538303236313031",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Ballygunge Place",
+    "locality_id": "listing-kolkata-ballygunge-place-663608",
+    "area_sqft": 2600,
+    "deposit": 100000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAmjVO-dQ9dcKXTIImTZ1GD_BSnL0gLsgj/Photo_h180_w240/58026101_1_MG_2642(1)_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3693845,
+        22.526858
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 50000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de5d",
+    "title": "3 BHK Flat   for Rent in Ajanta Apartments, Ballygunge, Kolkata",
+    "rent": 120000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-3000-Sq-ft-Multistorey-Apartment-FOR-Rent-Ballygunge-in-Kolkata&id=4d423635343033373031",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Ballygunge",
+    "locality_id": "listing-kolkata-ballygunge-791bc3",
+    "area_sqft": 2800,
+    "deposit": 240000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2022/03/09/Project-Photo-1-Ajanta-Apartments-Kolkata-5326471_768_1229_310_462.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.360907,
+        22.535856
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 120000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de5f",
+    "title": "2 BHK Flat   for Rent in Ballygunge, Kolkata",
+    "rent": 42000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-750-Sq-ft-Multistorey-Apartment-FOR-Rent-Ballygunge-in-Kolkata&id=4d423835363731353531",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Ballygunge",
+    "locality_id": "listing-kolkata-ballygunge-791bc3",
+    "area_sqft": null,
+    "deposit": 84000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds0mGwp40SLEmawOl_oK7yG5/Photo_h180_w240/85671551_1_PropertyImage900-2023501163933_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3659360116177,
+        22.5286222234965
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 42000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de61",
+    "title": "3 BHK Flat   for Rent in Ballygunge, Kolkata",
+    "rent": 50000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1843-Sq-ft-Multistorey-Apartment-FOR-Rent-Ballygunge-Place-in-Kolkata&id=4d423836313736353933",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Ballygunge Place",
+    "locality_id": "listing-kolkata-ballygunge-place-663608",
+    "area_sqft": null,
+    "deposit": 100000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dswwvk-lhLmjWpryRtHFS-H2/Photo_h180_w240/86176593_11_PropertyImage135-90681252315383_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3693845,
+        22.526858
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 50000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de63",
+    "title": "2 BHK Flat   for Rent in MDA Imperial Park, Ballygunge, Kolkata",
+    "rent": 20000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1100-Sq-ft-Multistorey-Apartment-FOR-Rent-Park-Circus-in-Kolkata&id=4d423734333134343731",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Park Circus",
+    "locality_id": "listing-kolkata-park-circus-d7be56",
+    "area_sqft": 900,
+    "deposit": 40000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnzVB48U9dcj7TSsW1c_ARp_0NSn3uMIl/Photo_h180_w240/74314471_3_WhatsAppImage20240624at7.46.20AM_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.376647,
+        22.542619
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 20000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de65",
+    "title": "2 BHK Flat   for Rent in Ballygunge, Kolkata",
+    "rent": 42000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-800-Sq-ft-Multistorey-Apartment-FOR-Rent-Park-Circus-in-Kolkata&id=4d423836303831353433",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Park Circus",
+    "locality_id": "listing-kolkata-park-circus-d7be56",
+    "area_sqft": 700,
+    "deposit": 84000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3688797115956,
+        22.5379451293073
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 42000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de67",
+    "title": "3 BHK Flat   for Rent in Mandeville Garden Court Lily, Ballygunge, Kolkata",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1977-Sq-ft-Multistorey-Apartment-FOR-Rent-Ballygunge-in-Kolkata&id=4d423833313338313235",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Ballygunge",
+    "locality_id": "listing-kolkata-ballygunge-791bc3",
+    "area_sqft": null,
+    "deposit": 260000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB5tA9dc2R4CwWIfar6o0Ur0iRc1n6/Photo_h180_w240/83138125_4_PropertyImage740-6072865993469_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3715531,
+        22.5248182
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de69",
+    "title": "2 BHK Flat   for Rent in Ballygunge, Kolkata",
+    "rent": 42000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-750-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Ballygunge-in-Kolkata&id=4d423832343033323533",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Ballygunge",
+    "locality_id": "listing-kolkata-ballygunge-791bc3",
+    "area_sqft": null,
+    "deposit": 84000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVG88A9dMKJc9sQECIwyc5dIPke5zlN/Photo_h180_w240/82403253_2_PropertyImage937-200845580026_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.36593627929688,
+        22.528621673583984
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 42000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de6b",
+    "title": "3 BHK Flat   for Rent in Fort Oasis, Ballygunge, Kolkata",
+    "rent": 70000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1816-Sq-ft-Multistorey-Apartment-FOR-Rent-Ballygunge-in-Kolkata&id=4d423835353634383631",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Ballygunge",
+    "locality_id": "listing-kolkata-ballygunge-791bc3",
+    "area_sqft": null,
+    "deposit": 140000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dcx7vpvHuatU5ZEVlYOoLnPS/Photo_h180_w240/85564861_5_hatsAppImage20260705at10.59.27_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3564938,
+        22.5228287
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 70000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de6d",
+    "title": "3 BHK Flat   for Rent in Sureka Santosh Gardens, Ballygunge, Kolkata",
+    "rent": 75000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1800-Sq-ft-Multistorey-Apartment-FOR-Rent-Ballygunge-in-Kolkata&id=4d423835353635323735",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Ballygunge",
+    "locality_id": "listing-kolkata-ballygunge-791bc3",
+    "area_sqft": null,
+    "deposit": 150000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.367664,
+        22.52147
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 75000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de6f",
+    "title": "3 BHK Flat   for Rent in Ballygunge, Kolkata",
+    "rent": 50000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1800-Sq-ft-Multistorey-Apartment-FOR-Rent-Ballygunge-in-Kolkata&id=4d423834323530383239",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Ballygunge",
+    "locality_id": "listing-kolkata-ballygunge-791bc3",
+    "area_sqft": null,
+    "deposit": 100000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3659360116177,
+        22.5286222234965
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 50000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de71",
+    "title": "3 BHK Flat   for Rent in Merlin Legacy, Ballygunge, Kolkata",
+    "rent": 43000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1300-Sq-ft-Multistorey-Apartment-FOR-Rent-Park-Circus-in-Kolkata&id=4d423539323631333239",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Park Circus",
+    "locality_id": "listing-kolkata-park-circus-d7be56",
+    "area_sqft": 1000,
+    "deposit": 86000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAmTVE88E9dc25yZpmBgZipolt6z7wEJdZ/Photo_h180_w240/59261329_14_1671252864330-0035_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3754443999999,
+        22.5528627
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 43000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de73",
+    "title": "3 BHK Flat   for Rent in Ballygunge, Kolkata",
+    "rent": 50000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1600-Sq-ft-Multistorey-Apartment-FOR-Rent-Ballygunge-in-Kolkata&id=4d423435343638323639",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Ballygunge",
+    "locality_id": "listing-kolkata-ballygunge-791bc3",
+    "area_sqft": null,
+    "deposit": 100000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mDkjVP9dY9dcwMbWgJDAOThbBg2ZOJTyeW/Photo_h180_w240/45468269_10_PropertyImage997-7285948485305_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.36267852783203,
+        22.528024673461914
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 50000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de75",
+    "title": "2 BHK Flat   for Rent in Ballygunge, Kolkata",
+    "rent": 42000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1150-Sq-ft-Multistorey-Apartment-FOR-Rent-Ballygunge-Park-in-Kolkata&id=4d423738333134383233",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Ballygunge Park",
+    "locality_id": "listing-kolkata-ballygunge-park-0d8a09",
+    "area_sqft": 900,
+    "deposit": 84000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVN99A9dcoEvUP58__1S0Yo_YHgl79d/Photo_h180_w240/78314823_6_hatsAppImage20250310at15.23.17_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.369805207514,
+        22.5319855022851
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 42000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de77",
+    "title": "3 BHK Flat   for Rent in Fort Oasis, Ballygunge, Kolkata",
+    "rent": 70000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1588-Sq-ft-Multistorey-Apartment-FOR-Rent-Ballygunge-in-Kolkata&id=4d423834383839363833",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Ballygunge",
+    "locality_id": "listing-kolkata-ballygunge-791bc3",
+    "area_sqft": 1175,
+    "deposit": 140000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9d8o-4f8RCAKGX8Lvb-WL5WIo/Photo_h180_w240/84889683_4_1780148988697-7854_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3564938,
+        22.5228287
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 70000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de79",
+    "title": "1 BHK Flat   for Rent in Ballygunge, Kolkata",
+    "rent": 8000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-650-Sq-ft-Multistorey-Apartment-FOR-Rent-Ballygunge-Place-in-Kolkata&id=4d423539323935383935",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Ballygunge Place",
+    "locality_id": "listing-kolkata-ballygunge-place-663608",
+    "area_sqft": null,
+    "deposit": 16000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3693845,
+        22.526858
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 8000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de7b",
+    "title": "1 BHK  House for Rent in Ballygunge Kolkata",
+    "rent": 6000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-200-Sq-ft-Residential-House-FOR-Rent-Ballygunge-in-Kolkata&id=4d423834323730393437",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Ballygunge",
+    "locality_id": "listing-kolkata-ballygunge-791bc3",
+    "area_sqft": 200,
+    "deposit": 12000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3659360116177,
+        22.5286222234965
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 6000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de7d",
+    "title": "1 BHK Flat   for Rent in Ballygunge, Kolkata",
+    "rent": 8000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-550-Sq-ft-Multistorey-Apartment-FOR-Rent-Ballygunge-in-Kolkata&id=4d423835323235373539",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Ballygunge",
+    "locality_id": "listing-kolkata-ballygunge-791bc3",
+    "area_sqft": null,
+    "deposit": 16000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3659360116177,
+        22.5286222234965
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 8000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de7f",
+    "title": "3 BHK Flat   for Rent in Ekta Floral, Ballygunge, Kolkata",
+    "rent": 55000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1565-Sq-ft-Multistorey-Apartment-FOR-Rent-Park-Circus-in-Kolkata&id=4d423836313739373939",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Park Circus",
+    "locality_id": "listing-kolkata-park-circus-d7be56",
+    "area_sqft": null,
+    "deposit": 110000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9ds3V5BrmLwdOcagI5k-YHpIW/Photo_h180_w240/86179799_6_PropertyImage890-1486255455122_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3804382,
+        22.5510741
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 55000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de81",
+    "title": "2 BHK Flat   for Rent in Ekta Floral, Ballygunge, Kolkata",
+    "rent": 36000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1184-Sq-ft-Multistorey-Apartment-FOR-Rent-Park-Circus-in-Kolkata&id=4d423836313739373931",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Park Circus",
+    "locality_id": "listing-kolkata-park-circus-d7be56",
+    "area_sqft": null,
+    "deposit": 72000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/Project-Photo-8-Ekta-Floral-Kolkata-5001383_600_800_310_462.JPEG"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3804382,
+        22.5510741
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 36000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de83",
+    "title": "Flats for Rent in Ballygunge",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Ballygunge&cityName=Kolkata&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Ballygunge",
+    "locality_id": "listing-kolkata-ballygunge-791bc3",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de85",
+    "title": "1 BHK Flats for Rent in Ballygunge",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Ballygunge&cityName=Kolkata&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Ballygunge",
+    "locality_id": "listing-kolkata-ballygunge-791bc3",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de87",
+    "title": "2 BHK Flat  for Rent in Birati, Kolkata",
+    "rent": 8000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-800-Sq-ft-Multistorey-Apartment-FOR-Rent-Birati-in-Kolkata&id=4d423636303930343635",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Birati",
+    "locality_id": "listing-kolkata-birati-e4ccd6",
+    "area_sqft": null,
+    "deposit": 16000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAmDVN99A9dsI4PjLbKPAebZ0Lrj89_1e8/Photo_h180_w240/66090465_1_PropertyImage229-34776194960426_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.429313,
+        22.6690556
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 8000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de89",
+    "title": "2 BHK Flat  for Rent in Topsia, Kolkata",
+    "rent": 150000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1090-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Topsia-in-Kolkata&id=4d423433383633303137",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Topsia",
+    "locality_id": "listing-kolkata-topsia-76d811",
+    "area_sqft": null,
+    "deposit": 300000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.38972446,
+        22.53857773
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 150000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de8b",
+    "title": "3 BHK Flat  for Rent in Rajwada Rosewood, Narendrapur Rajpur Sonarpur, Kolkata",
+    "rent": 15000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1125-Sq-ft-Multistorey-Apartment-FOR-Rent-Narendrapur-in-Kolkata&id=4d423433393339353831",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Narendrapur",
+    "locality_id": "listing-kolkata-narendrapur-3118fc",
+    "area_sqft": 1000,
+    "deposit": 30000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mDkjVT89I9dMmBLPjSIPCmvaw0luARsSdP/Photo_h180_w240/43939581_8_PropertyImage817-3487178679404_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3993696,
+        22.4281673
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 15000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de8d",
+    "title": "2 BHK Flat  for Rent in Uttar Para, Kolkata",
+    "rent": 17000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-640-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kolkata&id=4d423835333839323037",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Uttar Para",
+    "locality_id": "listing-kolkata-uttar-para-d6bc9f",
+    "area_sqft": null,
+    "deposit": 34000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.58281914,
+        23.20751282
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 17000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de8f",
+    "title": "1 BHK Flat  for Rent in Mission Niketan, Mission Pally, Narendrapur, Kolkata",
+    "rent": 7000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-511-Sq-ft-Multistorey-Apartment-FOR-Rent-Mission-Pally-in-Kolkata&id=4d423834323032343135",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Mission Pally",
+    "locality_id": "listing-kolkata-mission-pally-674485",
+    "area_sqft": null,
+    "deposit": 14000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB5tA9dcuIPdOf2HDFECMLbA1ejHG5/Photo_h180_w240/84202415_1_PropertyImage140-2324158868513_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4128755999999,
+        22.4383623
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 7000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de91",
+    "title": "3 BHK Flat  for Rent in Merlin Pristine, New Alipore, Kolkata",
+    "rent": 58000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1500-Sq-ft-Multistorey-Apartment-FOR-Rent-New-Alipore-in-Kolkata&id=4d423833373430393135",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "New Alipore",
+    "locality_id": "listing-kolkata-new-alipore-43181a",
+    "area_sqft": null,
+    "deposit": 116000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99A9dcuysBlb-qbn9FVZp8pZ6WeK/Photo_h180_w240/83740915_1_PropertyImage865-5799336586634_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3247732999999,
+        22.5072993
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 58000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de93",
+    "title": "3 BHK Flat  for Rent in Merlin Residency, Prince Anwar Shah Road, Kolkata",
+    "rent": 65000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1840-Sq-ft-Multistorey-Apartment-FOR-Rent-Prince-Anwar-Shah-Road-in-Kolkata&id=4d423832353130313937",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Prince Anwar Shah Road",
+    "locality_id": "listing-kolkata-prince-anwar-shah-road-fb2003",
+    "area_sqft": 1380,
+    "deposit": 130000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2025/01/10/Project-Photo-56-Merlin-Residency-Kolkata-5020448_960_1280_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3497012,
+        22.5021547
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 65000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de95",
+    "title": "2 BHK Flat  for Rent in Kalikapur Road, Kolkata",
+    "rent": 19000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-800-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kolkata&id=4d423835333839303437",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Kalikapur Road",
+    "locality_id": "listing-kolkata-kalikapur-road-8e3366",
+    "area_sqft": null,
+    "deposit": 38000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dM6lX3LrUDulgQ5ASuJH93SV/Photo_h180_w240/85389047_5_PropertyImage437-94124079793215_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.38478967,
+        22.50243866
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 19000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de97",
+    "title": "2 BHK Flat  for Rent in  Kolkata",
+    "rent": 12000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-827-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kolkata&id=4d423833323030393739",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "EM Bypass",
+    "locality_id": "listing-kolkata-em-bypass-46681c",
+    "area_sqft": null,
+    "deposit": 24000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 12000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de99",
+    "title": "3 BHK Flat  for Rent in South City, Tollygunge, Kolkata",
+    "rent": 65000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1350-Sq-ft-Multistorey-Apartment-FOR-Rent-Tollygunge-in-Kolkata&id=4d423832353039373035",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Tollygunge",
+    "locality_id": "listing-kolkata-tollygunge-b229f9",
+    "area_sqft": 1150,
+    "deposit": 130000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2025/04/10/Project-Photo-60-South-City-Kolkata-5022467_960_1280_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3597506999999,
+        22.500561
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 65000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de9b",
+    "title": "1 BHK Flat  for Rent in Botanical Garden Area, Kolkata",
+    "rent": 12000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-250-Sq-ft-Multistorey-Apartment-FOR-Rent-Botanical-Garden-Area-in-Kolkata&id=4d423835313838303637",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "EM Bypass",
+    "locality_id": "listing-kolkata-em-bypass-46681c",
+    "area_sqft": 250,
+    "deposit": 24000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.307034,
+        22.556524
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 12000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de9d",
+    "title": "2 BHK Flat  for Rent in Thakdari, Kolkata",
+    "rent": 14500,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1100-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kolkata&id=4d423833373430353237",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Thakdari",
+    "locality_id": "listing-kolkata-thakdari-471c7f",
+    "area_sqft": 900,
+    "deposit": 29000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99A9dcuysBlb-qbn9FVZp8pZ6WeK/Photo_h180_w240/83740527_4_773243473825_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.45809709,
+        22.57084997
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 14500
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88de9f",
+    "title": "3 BHK Flat  for Rent in South City, Tollygunge, Kolkata",
+    "rent": 65000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1350-Sq-ft-Multistorey-Apartment-FOR-Rent-Tollygunge-in-Kolkata&id=4d423832353039363331",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Tollygunge",
+    "locality_id": "listing-kolkata-tollygunge-b229f9",
+    "area_sqft": 1150,
+    "deposit": 130000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/Project-Photo-21-South-City-Galaxy-Kolkata-5022467_972_1296_310_462.JPEG"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3597506999999,
+        22.500561
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 65000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dea1",
+    "title": "2 BHK Flat  for Rent in Dum Dum, Kolkata",
+    "rent": 11000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-760-Sq-ft-Multistorey-Apartment-FOR-Rent-Dum-Dum-in-Kolkata&id=4d423636303836343135",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Dum Dum",
+    "locality_id": "listing-kolkata-dum-dum-664733",
+    "area_sqft": null,
+    "deposit": 22000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAmDVN99A9dcy7zqOzT7Zkmasgy2_nP8Fw/Photo_h180_w240/66086415_2_PropertyImage831-3194278436042_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.42129516601562,
+        22.635007858276367
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 11000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dea3",
+    "title": "3 BHK  House for Rent in Belur Kolkata",
+    "rent": 15000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1200-Sq-ft-Residential-House-FOR-Rent-Belur-in-Kolkata&id=4d423538373239343735",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Belur",
+    "locality_id": "listing-kolkata-belur-0ea79d",
+    "area_sqft": null,
+    "deposit": 30000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3506468,
+        22.6322886
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 15000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dea5",
+    "title": "2 BHK Flat  for Rent in Shree Krishna, Alipore, Kolkata",
+    "rent": 8000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-880-Sq-ft-Multistorey-Apartment-FOR-Rent-Alipore-in-Kolkata&id=4d423835363932353431",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Alipore",
+    "locality_id": "listing-kolkata-alipore-985365",
+    "area_sqft": null,
+    "deposit": 16000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3527960999999,
+        22.5630997
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 8000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dea7",
+    "title": "2 BHK Flat  for Rent in Sugam Sudhir, Garia, Kolkata",
+    "rent": 25000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1069-Sq-ft-Multistorey-Apartment-FOR-Rent-Garia-in-Kolkata&id=4d423830303031343631",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Garia",
+    "locality_id": "listing-kolkata-garia-97d47f",
+    "area_sqft": null,
+    "deposit": 50000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVK48w9dc8OUBY4seppTdsrJBNq9x-i/Photo_h180_w240/80001461_2_PropertyImage21-273503314802266_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3895963,
+        22.4515119
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 25000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dea9",
+    "title": "1 BHK  House for Rent in Netaji Nagar Kolkata",
+    "rent": 15000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-400-Sq-ft-Residential-House-FOR-Rent-Netaji-Nagar-in-Kolkata&id=4d423834353535343635",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Netaji Nagar",
+    "locality_id": "listing-kolkata-netaji-nagar-b0b346",
+    "area_sqft": 400,
+    "deposit": 30000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dMNBlsSzPXx_emghaW7Dj69H/Photo_h180_w240/84555465_6_PropertyImage446-8288410583292_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.36119079589844,
+        22.478979110717773
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 15000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88deab",
+    "title": "1 BHK  House for Rent in Prince Park, Haltu Kolkata",
+    "rent": 9000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-800-Sq-ft-Residential-House-FOR-Rent-Prince-Park-in-Kolkata&id=4d423736323830323433",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Prince Park",
+    "locality_id": "listing-kolkata-prince-park-335b2d",
+    "area_sqft": null,
+    "deposit": 18000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3967652954794,
+        22.5015383097843
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 9000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dead",
+    "title": "2 BHK Flat  for Rent in Greenfield City, Joth Shibrampur, Kolkata",
+    "rent": 10000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-774-Sq-ft-Multistorey-Apartment-FOR-Rent-Joth-Shibrampur-in-Kolkata&id=4d423433383735343239",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Joth Shibrampur",
+    "locality_id": "listing-kolkata-joth-shibrampur-14ec28",
+    "area_sqft": null,
+    "deposit": 20000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mDkjVB48U9dM41pLOwYJm6jCYY_zGKKPek/Photo_h180_w240/43875429_1_IMG_20181216_135659_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.2728079390406,
+        22.49180769562
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 10000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88deaf",
+    "title": "3 BHK Flat  for Rent in Nayabad, Kolkata",
+    "rent": 13500,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1080-Sq-ft-Multistorey-Apartment-FOR-Rent-Nayabad-in-Kolkata&id=4d423835383038363331",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Nayabad",
+    "locality_id": "listing-kolkata-nayabad-b75b1f",
+    "area_sqft": 980,
+    "deposit": 27000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMuik2I4q1t27vNWGbD9BntY/Photo_h180_w240/85808631_5_PropertyImage597-8426195428938_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.4187745,
+        22.483427
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 13500
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88deb1",
+    "title": "2 BHK Flat  for Rent in Ramgarh Garia, Kolkata",
+    "rent": 10000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-800-Sq-ft-Multistorey-Apartment-FOR-Rent-Ramgarh-in-Kolkata&id=4d423832353034303331",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "Ramgarh",
+    "locality_id": "listing-kolkata-ramgarh-cefce2",
+    "area_sqft": null,
+    "deposit": 20000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVE88E9dMPDD2k6xwjkbOmW7swUefAb/Photo_h180_w240/82504031_4_PropertyImage743-5479864419349_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3741077041568,
+        22.4745876470602
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 10000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88deb3",
+    "title": "1 BHK Flats for Rent in Kolkata",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=EM-Bypass&cityName=Kolkata&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Kolkata",
+    "locality": "EM Bypass",
+    "locality_id": "listing-kolkata-em-bypass-46681c",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88deb5",
+    "title": "2 BHK Flat  for Rent in Kanakia Silicon Valley, Powai, Mumbai",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-771-Sq-ft-Multistorey-Apartment-FOR-Rent-Powai-in-Mumbai&id=4d423834353535383139",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Powai",
+    "locality_id": "listing-mumbai-powai-615ccf",
+    "area_sqft": 771,
+    "deposit": 36000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dM16mZEnmQ142VHrrtnm2xgA/Photo_h180_w240/84555819_2_hatsAppImage20250916at5.04.22PM1_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.9187360999999,
+        19.119094
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88deb7",
+    "title": "2 BHK Flat  for Rent in Kanakia Silicon Valley, Powai, Mumbai",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1050-Sq-ft-Multistorey-Apartment-FOR-Rent-Powai-in-Mumbai&id=4d423831353135383237",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Powai",
+    "locality_id": "listing-mumbai-powai-615ccf",
+    "area_sqft": 672,
+    "deposit": 36000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVT89I9ds4jUgtrY3IZeMhF9zKS-SZI/Photo_h180_w240/81515827_3_PropertyImage606-4792155414347_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.9187360999999,
+        19.119094
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88deb9",
+    "title": "2 BHK Flat  for Rent in Kanakia Silicon Valley, Powai, Mumbai",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-666-Sq-ft-Multistorey-Apartment-FOR-Rent-Powai-in-Mumbai&id=4d423834353535363033",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Powai",
+    "locality_id": "listing-mumbai-powai-615ccf",
+    "area_sqft": 666,
+    "deposit": 36000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dM16mZEnmQ142VHrrtnm2xgA/Photo_h180_w240/84555603_1_hatsAppImage20250916at5.04.22PM_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.9187360999999,
+        19.119094
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88debb",
+    "title": "2 BHK Flat  for Rent in Hiranandani Castle Rock, Hiranandani Gardens, Mumbai",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-777-Sq-ft-Multistorey-Apartment-FOR-Rent-Hiranandani-Gardens-in-Mumbai&id=4d423835353437363433",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Thane West",
+    "locality_id": "listing-mumbai-thane-west-4077ae",
+    "area_sqft": 1050,
+    "deposit": 260000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dc-WUGQDRWhjmMYadCFP0efz/Photo_h180_w240/85547643_3_PropertyImage343-3351364145419_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.90494,
+        19.11889
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88debd",
+    "title": "2 BHK Flat   for Rent in Powai, Mumbai",
+    "rent": 100000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-905-Sq-ft-Multistorey-Apartment-FOR-Rent-Chandivali-in-Mumbai&id=4d423538373434303837",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Chandivali",
+    "locality_id": "listing-mumbai-chandivali-7a239a",
+    "area_sqft": null,
+    "deposit": 200000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAmTVK98w9dM_4jNbvMNVjuCIYF9zb9zcW/Photo_h180_w240/58744087_8_WhatsApp-Image-2022-01-05-at-6-18-16-PM--1-_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8991928100586,
+        19.110488891601562
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 100000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88debf",
+    "title": "1 BHK Flat   for Rent in Hiranandani Gardens, Powai, Mumbai",
+    "rent": 30000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-389-Sq-ft-Multistorey-Apartment-FOR-Rent-Powai-in-Mumbai&id=4d423835313838313737",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Powai",
+    "locality_id": "listing-mumbai-powai-615ccf",
+    "area_sqft": 389,
+    "deposit": 60000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK48w9dsoRy91o1X-yCQxRXsZZSCl8/Photo_h180_w240/85188177_5_PropertyImage597-0728733934579_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.90868,
+        19.11528
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 30000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dec1",
+    "title": "2 BHK Flat   for Rent in Kanakia Silicon Valley, Powai, Mumbai",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1250-Sq-ft-Multistorey-Apartment-FOR-Rent-Powai-in-Mumbai&id=4d423831353037373537",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Powai",
+    "locality_id": "listing-mumbai-powai-615ccf",
+    "area_sqft": 810,
+    "deposit": 36000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVT89I9dswr5qHsNA_DLq2wtg4oU8GJ/Photo_h180_w240/81507757_2_PropertyImage911-2704682250165_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.9187360999999,
+        19.119094
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dec3",
+    "title": "3 BHK Flat   for Rent in Nahar Amrit Shakti powai, Powai, Mumbai",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1445-Sq-ft-Multistorey-Apartment-FOR-Rent-Chandivali-in-Mumbai&id=4d423831353037363939",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Chandivali",
+    "locality_id": "listing-mumbai-chandivali-7a239a",
+    "area_sqft": 1000,
+    "deposit": 36000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVT89I9ds4jUgtrY3IZeMhF9zKS-SZI/Photo_h180_w240/81507699_4_axresdefault_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8992184,
+        19.1076133
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dec5",
+    "title": "3 BHK Flat   for Rent in Kanakia Silicon Valley, Powai, Mumbai",
+    "rent": 140000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1545-Sq-ft-Multistorey-Apartment-FOR-Rent-Powai-in-Mumbai&id=4d423831353037363535",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Powai",
+    "locality_id": "listing-mumbai-powai-615ccf",
+    "area_sqft": 1000,
+    "deposit": 280000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVT89I9dswr5qHsNA_DLq2wtg4oU8GJ/Photo_h180_w240/81507655_8_PropertyImage453-38342830656865_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.9187360999999,
+        19.119094
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 140000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dec7",
+    "title": "2 BHK Flat   for Rent in K Raheja Vistas, Powai, Mumbai",
+    "rent": 87000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1150-Sq-ft-Multistorey-Apartment-FOR-Rent-Raheja-Vihar-in-Mumbai&id=4d423835363931333531",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Raheja Vihar",
+    "locality_id": "listing-mumbai-raheja-vihar-f8e873",
+    "area_sqft": 750,
+    "deposit": 174000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds7L9fW8LeHz5PsBdljtELWY/Photo_h180_w240/85691351_8_MG20170107131551_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8943269999999,
+        19.1198926
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 87000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dec9",
+    "title": "2 BHK Flat   for Rent in Nahar Amrit Shakti powai, Powai, Mumbai",
+    "rent": 75000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1185-Sq-ft-Multistorey-Apartment-FOR-Rent-Chandivali-in-Mumbai&id=4d423835353435303933",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Chandivali",
+    "locality_id": "listing-mumbai-chandivali-7a239a",
+    "area_sqft": 785,
+    "deposit": 150000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds7L9fW8LeHz5PsBdljtELWY/Photo_h180_w240/85545093_7_PropertyImage825-7751050230926_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8992184,
+        19.1076133
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 75000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88decb",
+    "title": "2 BHK Flat   for Rent in Nahar Amrit Shakti, Powai, Mumbai",
+    "rent": 77000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1195-Sq-ft-Multistorey-Apartment-FOR-Rent-Chandivali-in-Mumbai&id=4d423835353435303833",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Chandivali",
+    "locality_id": "listing-mumbai-chandivali-7a239a",
+    "area_sqft": 775,
+    "deposit": 154000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dcx7vpvHuatU5ZEVlYOoLnPS/Photo_h180_w240/85545083_7_PropertyImage678-4561432749119_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.88872,
+        19.11195
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 77000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88decd",
+    "title": "2 BHK Flat   for Rent in Nahar Amrit Shakti powai, Powai, Mumbai",
+    "rent": 75000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1212-Sq-ft-Multistorey-Apartment-FOR-Rent-Chandivali-in-Mumbai&id=4d423835353435303637",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Chandivali",
+    "locality_id": "listing-mumbai-chandivali-7a239a",
+    "area_sqft": 785,
+    "deposit": 150000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds7L9fW8LeHz5PsBdljtELWY/Photo_h180_w240/85545067_6_PropertyImage761-9686719619921_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8992184,
+        19.1076133
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 75000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88decf",
+    "title": "2 BHK Flat   for Rent in Nahar Amrit Shakti Rosa Alba, Powai, Mumbai",
+    "rent": 76000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1250-Sq-ft-Multistorey-Apartment-FOR-Rent-Chandivali-in-Mumbai&id=4d423835353435303439",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Chandivali",
+    "locality_id": "listing-mumbai-chandivali-7a239a",
+    "area_sqft": 800,
+    "deposit": 152000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds7L9fW8LeHz5PsBdljtELWY/Photo_h180_w240/85545049_9_PropertyImage871-0594277160855_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.89768,
+        19.10734
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 76000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ded1",
+    "title": "2 BHK Flat   for Rent in Nahar Amrit Shakti, Powai, Mumbai",
+    "rent": 77000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Multistorey-Apartment-FOR-Rent-Chandivali-in-Mumbai&id=4d423835353435303435",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Chandivali",
+    "locality_id": "listing-mumbai-chandivali-7a239a",
+    "area_sqft": 800,
+    "deposit": 154000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds7L9fW8LeHz5PsBdljtELWY/Photo_h180_w240/85545045_1_PropertyImage327-63580481025434_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.88872,
+        19.11195
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 77000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ded3",
+    "title": "1 BHK Flat   for Rent in Raheja Vihar, Powai, Mumbai",
+    "rent": 42000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-590-Sq-ft-Multistorey-Apartment-FOR-Rent-Powai-in-Mumbai&id=4d423834313933363233",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Powai",
+    "locality_id": "listing-mumbai-powai-615ccf",
+    "area_sqft": 450,
+    "deposit": 84000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB5tA9dcuIPdOf2HDFECMLbA1ejHG5/Photo_h180_w240/84193623_3_PropertyImage376-37964416161253_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8951151,
+        19.1190749
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 42000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ded5",
+    "title": "2 BHK Flat   for Rent in Powai, Mumbai",
+    "rent": 100000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1350-Sq-ft-Multistorey-Apartment-FOR-Rent-Powai-in-Mumbai&id=4d423834313933353335",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Powai",
+    "locality_id": "listing-mumbai-powai-615ccf",
+    "area_sqft": 800,
+    "deposit": 200000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB5tA9dcuIPdOf2HDFECMLbA1ejHG5/Photo_h180_w240/84193535_4_PropertyImage887-9626552274943_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.90508270263672,
+        19.11967658996582
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 100000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ded7",
+    "title": "2 BHK Flat   for Rent in Godrej Urban Park, Powai, Mumbai",
+    "rent": 70000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-900-Sq-ft-Multistorey-Apartment-FOR-Rent-Chandivali-in-Mumbai&id=4d423833313834393537",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Chandivali",
+    "locality_id": "listing-mumbai-chandivali-7a239a",
+    "area_sqft": 680,
+    "deposit": 140000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVG88A9dMtO-yRO5mu0u2tyhJWpGdWp/Photo_h180_w240/83184957_2_PropertyImage772-6156328288898_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.9013531,
+        19.1059626
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 70000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88ded9",
+    "title": "3 BHK Flat   for Rent in Hiranandani Glen Dale Apartment, Powai, Mumbai",
+    "rent": 300000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2125-Sq-ft-Multistorey-Apartment-FOR-Rent-Hiranandani-Gardens-in-Mumbai&id=4d423836303837303333",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Powai",
+    "locality_id": "listing-mumbai-powai-615ccf",
+    "area_sqft": 1700,
+    "deposit": 600000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dsopY7AsfT_NoDTthZQKtMm1/Photo_h180_w240/86087033_6_hatsAppImage20210609at6.04.17PM2_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.9117697,
+        19.1155599
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 300000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dedb",
+    "title": "3 BHK Flat   for Rent in L&T Emerald Isle, Powai, Mumbai",
+    "rent": 170000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1820-Sq-ft-Multistorey-Apartment-FOR-Rent-Powai-in-Mumbai&id=4d423835353434323135",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Powai",
+    "locality_id": "listing-mumbai-powai-615ccf",
+    "area_sqft": 1300,
+    "deposit": 340000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dc5zCjFA7taOs_Tg1L8ShJQT/Photo_h180_w240/85544215_8_hatsAppImage20220112at12.36.29PM1_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.89386,
+        19.1254
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 170000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dedd",
+    "title": "2 BHK Flat   for Rent in Powai, Mumbai",
+    "rent": 100000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1100-Sq-ft-Multistorey-Apartment-FOR-Rent-Hiranandani-Gardens-in-Mumbai&id=4d423836303836393433",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Powai",
+    "locality_id": "listing-mumbai-powai-615ccf",
+    "area_sqft": 780,
+    "deposit": 200000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9ds44CuUi08R5DP8HB-1_4QY3/Photo_h180_w240/86086943_6_PropertyImage781-350122757797_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.9107894897461,
+        19.119380950927734
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 100000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dedf",
+    "title": "3 BHK Flat   for Rent in Emerald Isle Elanor, Powai, Mumbai",
+    "rent": 160000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1500-Sq-ft-Multistorey-Apartment-FOR-Rent-Powai-in-Mumbai&id=4d423834383733363337",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Powai",
+    "locality_id": "listing-mumbai-powai-615ccf",
+    "area_sqft": 1100,
+    "deposit": 320000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dsMvPEPkQKYpH51gVdRpaG5K/Photo_h180_w240/84873637_2_MG20161229131109_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8898427,
+        19.1287118
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 160000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dee1",
+    "title": "3 BHK Flat   for Rent in Hiranandani Highland, Powai, Mumbai",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1250-Sq-ft-Multistorey-Apartment-FOR-Rent-Hiranandani-Gardens-in-Mumbai&id=4d423835393034323531",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Powai",
+    "locality_id": "listing-mumbai-powai-615ccf",
+    "area_sqft": 800,
+    "deposit": 260000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMJlG51mXRLynFZ5vdxK-Je8/Photo_h180_w240/85904251_5_PropertyImage324-7737767347666_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.9126965,
+        19.1176422
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dee3",
+    "title": "2 BHK Flat   for Rent in Godrej Urban Park, Powai, Mumbai",
+    "rent": 70000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-975-Sq-ft-Multistorey-Apartment-FOR-Rent-Chandivali-in-Mumbai&id=4d423831353130313639",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Chandivali",
+    "locality_id": "listing-mumbai-chandivali-7a239a",
+    "area_sqft": 625,
+    "deposit": 140000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVE88E9dc0uVX8F3ZTI_Sr8tyZkXqfa/Photo_h180_w240/81510169_1_PropertyImage54-33507161660545_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.9013531,
+        19.1059626
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 70000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dee5",
+    "title": "2 BHK Flat   for Rent in Godrej Urban Park, Powai, Mumbai",
+    "rent": 70000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-950-Sq-ft-Multistorey-Apartment-FOR-Rent-Chandivali-in-Mumbai&id=4d423831353130303933",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Chandivali",
+    "locality_id": "listing-mumbai-chandivali-7a239a",
+    "area_sqft": 650,
+    "deposit": 140000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVE88E9dc0uVX8F3ZTI_Sr8tyZkXqfa/Photo_h180_w240/81510093_7_PropertyImage2-1146446724068513_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.9013531,
+        19.1059626
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 70000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dee7",
+    "title": "3 BHK Flat   for Rent in Kanakia Silicon Valley, Powai, Mumbai",
+    "rent": 140000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1750-Sq-ft-Multistorey-Apartment-FOR-Rent-Hiranandani-Gardens-in-Mumbai&id=4d423831343839373939",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Powai",
+    "locality_id": "listing-mumbai-powai-615ccf",
+    "area_sqft": 1111,
+    "deposit": 280000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVT89I9dsg6j_TimvR3gmZaNHddBg4L/Photo_h180_w240/81489799_1_44a9d861a77478eb8726f03d23ed0c9_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.9187360999999,
+        19.119094
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 140000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dee9",
+    "title": "1 BHK Flat   for Rent in Hiranandani Gardens Cypress, Powai, Mumbai",
+    "rent": 51000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-600-Sq-ft-Multistorey-Apartment-FOR-Rent-Powai-in-Mumbai&id=4d423835393936373635",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Powai",
+    "locality_id": "listing-mumbai-powai-615ccf",
+    "area_sqft": 360,
+    "deposit": 102000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dcl8cosUQsuHimwDxtES33wf/Photo_h180_w240/85996765_9_hatsAppImage20260813at16.30.46_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.90833,
+        19.11529
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 51000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88deeb",
+    "title": "3 BHK Flat   for Rent in Gurukrupa Gyanam, Powai, Mumbai",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1300-Sq-ft-Multistorey-Apartment-FOR-Rent-Powai-in-Mumbai&id=4d423835363837323031",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Powai",
+    "locality_id": "listing-mumbai-powai-615ccf",
+    "area_sqft": 908,
+    "deposit": 260000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds8ur6D_hl8ez8n71sawRcZ4/Photo_h180_w240/85687201_6__180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.9046745999999,
+        19.1164074
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88deed",
+    "title": "3 BHK Flat   for Rent in Lodha Bellagio, Powai, Mumbai",
+    "rent": 150000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1985-Sq-ft-Multistorey-Apartment-FOR-Rent-Powai-in-Mumbai&id=4d423835313736333433",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Powai",
+    "locality_id": "listing-mumbai-powai-615ccf",
+    "area_sqft": 1205,
+    "deposit": 300000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK48w9dcNuvObK4AFLLKafWE0RIuQT/Photo_h180_w240/85176343_1_518othRustomjeeUrbaniaAzzianoThaneMasterbed_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.9187997,
+        19.1217316
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 150000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88deef",
+    "title": "2 BHK Flat   for Rent in Nahar Laurel and Lilac, Powai, Mumbai",
+    "rent": 68000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-924-Sq-ft-Multistorey-Apartment-FOR-Rent-Chandivali-in-Mumbai&id=4d423739393338313139",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Chandivali",
+    "locality_id": "listing-mumbai-chandivali-7a239a",
+    "area_sqft": 640,
+    "deposit": 136000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVK48w9dcr6YxZ1tK8wyiI7BvRC96PA/Photo_h180_w240/79938119_10_hatsAppImage20201215at3.29.15PM2_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.89976,
+        19.1046
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 68000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88def1",
+    "title": "Home",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Thane-West&cityName=Mumbai&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Thane West",
+    "locality_id": "listing-mumbai-thane-west-4077ae",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88def3",
+    "title": "Flats for Rent in Mumbai",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Thane-West&cityName=Mumbai&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Thane West",
+    "locality_id": "listing-mumbai-thane-west-4077ae",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88def5",
+    "title": "Flats for Rent in Powai",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Powai&cityName=Mumbai&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Powai",
+    "locality_id": "listing-mumbai-powai-615ccf",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88def7",
+    "title": "1 BHK Flats for Rent in Powai",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Powai&cityName=Mumbai&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Powai",
+    "locality_id": "listing-mumbai-powai-615ccf",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88def9",
+    "title": "1 BHK Flat   for Rent in Arkade Prime, Andheri East, Mumbai",
+    "rent": 70000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-610-Sq-ft-Multistorey-Apartment-FOR-Rent-Marol-in-Mumbai&id=4d423834323032303037",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Marol",
+    "locality_id": "listing-mumbai-marol-82ebee",
+    "area_sqft": 495,
+    "deposit": 140000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/2026/Aug/19/Photo_h300_w450/84202007_7_022179155924ddfb60f07c738700ff5_300_450.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8813672,
+        19.1091296
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 70000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88defb",
+    "title": "1 BHK Flat   for Rent in Crescent Landmark, Andheri East, Mumbai",
+    "rent": 55000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-600-Sq-ft-Multistorey-Apartment-FOR-Rent-Marol-in-Mumbai&id=4d423835333837373735",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Marol",
+    "locality_id": "listing-mumbai-marol-82ebee",
+    "area_sqft": 450,
+    "deposit": 110000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/2026/Jul/04/Photo_h300_w450/85387775_1_creenshot20260704115758_300_450.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.88772,
+        19.1159
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 55000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88defd",
+    "title": "2 BHK Flat   for Rent in Sher e Punjab, Andheri East, Mumbai",
+    "rent": 65000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-900-Sq-ft-Multistorey-Apartment-FOR-Rent-Andheri-East-in-Mumbai&id=4d423835383038353537",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Andheri East",
+    "locality_id": "listing-mumbai-andheri-east-39b158",
+    "area_sqft": 800,
+    "deposit": 130000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMuik2I4q1t27vNWGbD9BntY/Photo_h180_w240/85808557_12_PropertyImage520-4127130191016_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.87329,
+        19.11496
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 65000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88deff",
+    "title": "2 BHK Flat   for Rent in VKG Passcode Beverly Hills, Andheri East, Mumbai",
+    "rent": 65000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Multistorey-Apartment-FOR-Rent-Marol-in-Mumbai&id=4d423835393033313131",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Marol",
+    "locality_id": "listing-mumbai-marol-82ebee",
+    "area_sqft": 676,
+    "deposit": 130000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dM27Tp2xUt0YFF1J2vUy-VMb/Photo_h180_w240/85903111_7_29e6ec90c30477c827fae950cee489c_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8319514,
+        18.9582347
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 65000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df01",
+    "title": "2 BHK Flat   for Rent in Lilium Lantana, Andheri East, Mumbai",
+    "rent": 80000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1285-Sq-ft-Multistorey-Apartment-FOR-Rent-Andheri-East-in-Mumbai&id=4d423835383037343435",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Andheri East",
+    "locality_id": "listing-mumbai-andheri-east-39b158",
+    "area_sqft": null,
+    "deposit": 160000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMuik2I4q1t27vNWGbD9BntY/Photo_h180_w240/85807445_11_PropertyImage205-25046259699366_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.89911,
+        19.10598
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 80000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df03",
+    "title": "2 BHK Flat   for Rent in Lilium Lantana, Andheri East, Mumbai",
+    "rent": 80000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1285-Sq-ft-Multistorey-Apartment-FOR-Rent-Andheri-East-in-Mumbai&id=4d423835383037343035",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Andheri East",
+    "locality_id": "listing-mumbai-andheri-east-39b158",
+    "area_sqft": null,
+    "deposit": 160000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMuik2I4q1t27vNWGbD9BntY/Photo_h180_w240/85807405_17_PropertyImage463-57047806536434_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.89911,
+        19.10598
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 80000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df05",
+    "title": "2 BHK Flat   for Rent in Lilium Lantana, Andheri East, Mumbai",
+    "rent": 80000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1280-Sq-ft-Multistorey-Apartment-FOR-Rent-Andheri-East-in-Mumbai&id=4d423835383037333731",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Andheri East",
+    "locality_id": "listing-mumbai-andheri-east-39b158",
+    "area_sqft": null,
+    "deposit": 160000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMuik2I4q1t27vNWGbD9BntY/Photo_h180_w240/85807371_8_PropertyImage540-512879778284_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.89911,
+        19.10598
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 80000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df07",
+    "title": "1 BHK Flat   for Rent in Newyork Ranbir Heights, Andheri East, Mumbai",
+    "rent": 55000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-540-Sq-ft-Multistorey-Apartment-FOR-Rent-Andheri-East-in-Mumbai&id=4d423835353434313139",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Andheri East",
+    "locality_id": "listing-mumbai-andheri-east-39b158",
+    "area_sqft": 460,
+    "deposit": 110000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dc5zCjFA7taOs_Tg1L8ShJQT/Photo_h180_w240/85544119_10_hatsAppImage20260714at6.35.44PM1_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8319514,
+        18.9582347
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 55000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df09",
+    "title": "2 BHK Flat   for Rent in Orbit The Chakravarti Ashok CHS, Andheri East, Mumbai",
+    "rent": 90000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-900-Sq-ft-Multistorey-Apartment-FOR-Rent-Andheri-East-in-Mumbai&id=4d423835333835373531",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Andheri East",
+    "locality_id": "listing-mumbai-andheri-east-39b158",
+    "area_sqft": 900,
+    "deposit": 180000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8560483,
+        19.180693
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 90000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df0b",
+    "title": "2 BHK Flat   for Rent in Andheri East, Mumbai",
+    "rent": 72000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-750-Sq-ft-Multistorey-Apartment-FOR-Rent-Marol-in-Mumbai&id=4d423834353534313037",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Marol",
+    "locality_id": "listing-mumbai-marol-82ebee",
+    "area_sqft": 645,
+    "deposit": 144000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dM16mZEnmQ142VHrrtnm2xgA/Photo_h180_w240/84554107_9_hatsAppImage20260503at10.42.372_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.87269592285156,
+        19.115489959716797
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 72000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df0d",
+    "title": "1 BHK Flat   for Rent in Neel Sarovar, Andheri East, Mumbai",
+    "rent": 55000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-615-Sq-ft-Multistorey-Apartment-FOR-Rent-Marol-in-Mumbai&id=4d423835393937363137",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Marol",
+    "locality_id": "listing-mumbai-marol-82ebee",
+    "area_sqft": 501,
+    "deposit": 110000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dcl8cosUQsuHimwDxtES33wf/Photo_h180_w240/85997617_1_c192d3d7b09473c87dcd6607a75cf43_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.87206,
+        19.11719
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 55000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df0f",
+    "title": "2 BHK Flat   for Rent in Savannah Avalon, Andheri East, Mumbai",
+    "rent": 70000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Multistorey-Apartment-FOR-Rent-Marol-in-Mumbai&id=4d423835393034323739",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Marol",
+    "locality_id": "listing-mumbai-marol-82ebee",
+    "area_sqft": 701,
+    "deposit": 140000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dM27Tp2xUt0YFF1J2vUy-VMb/Photo_h180_w240/85904279_1_84d39aa1efc49c39e2bc828a1809ee9_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8817126,
+        19.1113152
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 70000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df11",
+    "title": "3 BHK  House for Rent in Kalpataru Estate, Andheri East Mumbai",
+    "rent": 96000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1244-Sq-ft-Residential-House-FOR-Rent-Andheri-East-in-Mumbai&id=4d423831353039313531",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Andheri East",
+    "locality_id": "listing-mumbai-andheri-east-39b158",
+    "area_sqft": null,
+    "deposit": 192000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVE88E9dck_PCoLc298UeEWNV8RC2hY/Photo_h180_w240/81509151_2_PropertyImage693-7869993516925_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.86714,
+        19.13767
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 96000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df13",
+    "title": "2 BHK Flat   for Rent in Sheth Vasant Oasis, Andheri East, Mumbai",
+    "rent": 110000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Multistorey-Apartment-FOR-Rent-Andheri-East-in-Mumbai&id=4d423832353035393735",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Andheri East",
+    "locality_id": "listing-mumbai-andheri-east-39b158",
+    "area_sqft": 750,
+    "deposit": 220000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVE88E9dcrS0tXPj6xLLLYZ1P329Px5/Photo_h180_w240/82505975_7_PropertyImage935-122502578906_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8851471,
+        19.1148918
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 110000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df15",
+    "title": "2 BHK Flat   for Rent in Brindavan Apartment, Andheri East, Mumbai",
+    "rent": 72000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-800-Sq-ft-Multistorey-Apartment-FOR-Rent-Andheri-East-in-Mumbai&id=4d423831343931363839",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Andheri East",
+    "locality_id": "listing-mumbai-andheri-east-39b158",
+    "area_sqft": 750,
+    "deposit": 144000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVT89I9dsg6j_TimvR3gmZaNHddBg4L/Photo_h180_w240/81491689_1_PropertyImage152-84004837380684_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.88268,
+        19.05522
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 72000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df17",
+    "title": "1 BHK Flat   for Rent in Guru Niwas, Andheri East, Mumbai",
+    "rent": 50000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-470-Sq-ft-Multistorey-Apartment-FOR-Rent-Andheri-East-in-Mumbai&id=4d423831343931363035",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Andheri East",
+    "locality_id": "listing-mumbai-andheri-east-39b158",
+    "area_sqft": 470,
+    "deposit": 100000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVP9dY9dMzqa_WG3o7SxkcVeX1nOVy5/Photo_h180_w240/81491605_5_PropertyImage110-38542637307313_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8565536999999,
+        19.1258278
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 50000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df19",
+    "title": "1 BHK  House for Rent in Chakala Mumbai",
+    "rent": 16000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-240-Sq-ft-Residential-House-FOR-Rent-Chakala-in-Mumbai&id=4d423834313934313233",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Chakala",
+    "locality_id": "listing-mumbai-chakala-61badd",
+    "area_sqft": null,
+    "deposit": 32000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8576871585438,
+        19.1105611385167
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 16000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df1b",
+    "title": "1 BHK Flat   for Rent in Atul Blue Fortuna, Andheri East, Mumbai",
+    "rent": 65000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-610-Sq-ft-Multistorey-Apartment-FOR-Rent-Marol-in-Mumbai&id=4d423834353432323733",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Marol",
+    "locality_id": "listing-mumbai-marol-82ebee",
+    "area_sqft": 495,
+    "deposit": 130000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dMyfw8RkMrOV8mMRDke7jmvg/Photo_h180_w240/84542273_5_4ed39d4aded4b5c9e9d8920099ae131_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.88309,
+        19.11821
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 65000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df1d",
+    "title": "2 BHK Flat   for Rent in Andheri East, Mumbai",
+    "rent": 72000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-900-Sq-ft-Multistorey-Apartment-FOR-Rent-JB-Nagar-in-Mumbai&id=4d423831343730303031",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "JB Nagar",
+    "locality_id": "listing-mumbai-jb-nagar-b14c86",
+    "area_sqft": 720,
+    "deposit": 144000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVT89I9dsoyO15lzYmt1AOvdUvnrOnK/Photo_h180_w240/81470001_5_PropertyImage346-284837226071_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8680393749074,
+        19.1099298135585
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 72000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df1f",
+    "title": "2 BHK Flat   for Rent in Kalpataru Estate, Andheri East, Mumbai",
+    "rent": 100000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1098-Sq-ft-Multistorey-Apartment-FOR-Rent-Andheri-East-in-Mumbai&id=4d423835393031333639",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Andheri East",
+    "locality_id": "listing-mumbai-andheri-east-39b158",
+    "area_sqft": 800,
+    "deposit": 200000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dM27Tp2xUt0YFF1J2vUy-VMb/Photo_h180_w240/85901369_5_hatsAppImage20260806at2.26.45PM1_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.86714,
+        19.13767
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 100000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df21",
+    "title": "1 BHK Flat   for Rent in Sheth Vasant Oasis, Andheri East, Mumbai",
+    "rent": 62000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-600-Sq-ft-Multistorey-Apartment-FOR-Rent-Marol-in-Mumbai&id=4d423836303835363037",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Marol",
+    "locality_id": "listing-mumbai-marol-82ebee",
+    "area_sqft": 450,
+    "deposit": 124000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2026/04/24/Project-Photo-113-Vasant-Oasis-Mumbai-5018367_1080_1440_310_462.JPG"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8851471,
+        19.1148918
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 62000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df23",
+    "title": "3 BHK Flat   for Rent in Mahindra Vicinio, Andheri East, Mumbai",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1400-Sq-ft-Multistorey-Apartment-FOR-Rent-Andheri-East-in-Mumbai&id=4d423835333830343137",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Andheri East",
+    "locality_id": "listing-mumbai-andheri-east-39b158",
+    "area_sqft": 1270,
+    "deposit": 260000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dMlZ2NghAgMmUJKlKTnVXS82/Photo_h180_w240/85380417_13_PropertyImage993-2237672627544_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8571789,
+        19.118422
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df25",
+    "title": "1 BHK Flat   for Rent in Green Fields, Andheri East, Mumbai",
+    "rent": 33000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-532-Sq-ft-Multistorey-Apartment-FOR-Rent-Andheri-East-in-Mumbai&id=4d423834353430383931",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Andheri East",
+    "locality_id": "listing-mumbai-andheri-east-39b158",
+    "area_sqft": 450,
+    "deposit": 66000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dsMvPEPkQKYpH51gVdRpaG5K/Photo_h180_w240/84540891_6_MG20260507164617_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.16737,
+        18.43246
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 33000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df27",
+    "title": "1 BHK Flat   for Rent in Andheri East, Mumbai",
+    "rent": 21000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-585-Sq-ft-Multistorey-Apartment-FOR-Rent-MIDC-Industrial-Estate-in-Mumbai&id=4d423835313735343435",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "MIDC Industrial Estate",
+    "locality_id": "listing-mumbai-midc-industrial-estate-a3e511",
+    "area_sqft": 440,
+    "deposit": 42000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK48w9dcNuvObK4AFLLKafWE0RIuQT/Photo_h180_w240/85175445_2_hatsAppImage20250820at4.09.01PM_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.86861419677734,
+        19.124835968017578
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 21000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df29",
+    "title": "3 BHK Flat   for Rent in Sher e Punjab, Andheri East, Mumbai",
+    "rent": 88000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-850-Sq-ft-Multistorey-Apartment-FOR-Rent-Andheri-East-in-Mumbai&id=4d423835363837383937",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Andheri East",
+    "locality_id": "listing-mumbai-andheri-east-39b158",
+    "area_sqft": 730,
+    "deposit": 176000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849d8vpk7ZalkmBUfixyuKQY-l8/Photo_h180_w240/85687897_7_PropertyImage406-04516676871447_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.87329,
+        19.11496
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 88000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df2b",
+    "title": "2 BHK Flat   for Rent in Raj Paradise B Wing CHS Ltd, Andheri East, Mumbai",
+    "rent": 65000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1050-Sq-ft-Multistorey-Apartment-FOR-Rent-Marol-in-Mumbai&id=4d423835333832313033",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Marol",
+    "locality_id": "listing-mumbai-marol-82ebee",
+    "area_sqft": 750,
+    "deposit": 130000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8727,
+        19.11549
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 65000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df2d",
+    "title": "3 BHK Flat   for Rent in Andheri East, Mumbai",
+    "rent": 190000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2616-Sq-ft-Multistorey-Apartment-FOR-Rent-Tunga-Village-in-Mumbai&id=4d423835313734323035",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Tunga Village",
+    "locality_id": "listing-mumbai-tunga-village-09d08e",
+    "area_sqft": 1675,
+    "deposit": 380000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK48w9dsoRy91o1X-yCQxRXsZZSCl8/Photo_h180_w240/85174205_10_PropertyImage187-73471107892524_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.90508270263672,
+        19.11967658996582
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 190000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df2f",
+    "title": "2 BHK Flat   for Rent in Divya Darpan, Andheri East, Mumbai",
+    "rent": 75000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-720-Sq-ft-Multistorey-Apartment-FOR-Rent-Andheri-East-in-Mumbai&id=4d423836303930333939",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Andheri East",
+    "locality_id": "listing-mumbai-andheri-east-39b158",
+    "area_sqft": 667,
+    "deposit": 150000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dsopY7AsfT_NoDTthZQKtMm1/Photo_h180_w240/86090399_5_PropertyImage444-21373438648794_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8517553,
+        19.1261793
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 75000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df31",
+    "title": "1 BHK Flat   for Rent in Andheri East, Mumbai",
+    "rent": 21000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-247-Sq-ft-Multistorey-Apartment-FOR-Rent-Bhim-Nagar-Andheri-East-in-Mumbai&id=4d423538393031353837",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Bhim Nagar Andheri East",
+    "locality_id": "listing-mumbai-bhim-nagar-andheri-east-c37e6b",
+    "area_sqft": null,
+    "deposit": 42000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAmTVK98w9dMPLNyn8w9m-TX4nkVdECWeQ/Photo_h180_w240/58901587_6_IMG_20190618_151322_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.86989,
+        19.11353
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 21000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df33",
+    "title": "2 BHK Flat   for Rent in VKG Krishna Residences, Andheri East, Mumbai",
+    "rent": 85000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-850-Sq-ft-Multistorey-Apartment-FOR-Rent-Chakala-in-Mumbai&id=4d423835393939303733",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Chakala",
+    "locality_id": "listing-mumbai-chakala-61badd",
+    "area_sqft": 750,
+    "deposit": 170000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dcl8cosUQsuHimwDxtES33wf/Photo_h180_w240/85999073_6_hatsAppImage20260813at17.51.451_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8594396,
+        19.1099306
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 85000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df35",
+    "title": "Flats for Rent in Andheri",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Andheri-East&cityName=Mumbai&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Andheri East",
+    "locality_id": "listing-mumbai-andheri-east-39b158",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df37",
+    "title": "Flats for Rent in Andheri East",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Andheri-East&cityName=Mumbai&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Andheri East",
+    "locality_id": "listing-mumbai-andheri-east-39b158",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df39",
+    "title": "1 BHK Flats for Rent in Andheri East",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Andheri-East&cityName=Mumbai&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Andheri East",
+    "locality_id": "listing-mumbai-andheri-east-39b158",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df3b",
+    "title": "3 BHK Flat   for Rent in Bright land Glow, Bandra West, Mumbai",
+    "rent": 250000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1450-Sq-ft-Multistorey-Apartment-FOR-Rent-Bandra-West-in-Mumbai&id=4d423833373339393937",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "locality_id": "listing-mumbai-bandra-west-2a12cc",
+    "area_sqft": 1250,
+    "deposit": 500000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/2026/Mar/11/Photo_h300_w450/83739997_1_1773239962856-0291_300_450.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.83579,
+        19.05949
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 250000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df3d",
+    "title": "3 BHK Flat   for Rent in Ekta Everglades, Bandra West, Mumbai",
+    "rent": 260000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1300-Sq-ft-Multistorey-Apartment-FOR-Rent-Bandra-West-in-Mumbai&id=4d423835363839393131",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "locality_id": "listing-mumbai-bandra-west-2a12cc",
+    "area_sqft": 1000,
+    "deposit": 520000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/2026/Jul/24/Photo_h300_w450/85689911_11_hatsAppImage20260723at4.42.43PM2_300_450.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.83049,
+        19.06787
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 260000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df3f",
+    "title": "3 BHK Flat   for Rent in Bandra West, Mumbai",
+    "rent": 35000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2000-Sq-ft-Multistorey-Apartment-FOR-Rent-Bandra-West-in-Mumbai&id=4d423834313934323931",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "locality_id": "listing-mumbai-bandra-west-2a12cc",
+    "area_sqft": 1800,
+    "deposit": 70000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dcKzTt7N4__ZrqzZI4Efi3c6/Photo_h180_w240/84194291_7_014a77fb49245bbb63a6890e65a9455_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.830829,
+        19.055229
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 35000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df41",
+    "title": "2 BHK Flat   for Rent in Ashiana Glaxo Cooperative Housing Society, Bandra West, Mumbai",
+    "rent": 120000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Multistorey-Apartment-FOR-Rent-Bandra-West-in-Mumbai&id=4d423835393032373639",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "locality_id": "listing-mumbai-bandra-west-2a12cc",
+    "area_sqft": 850,
+    "deposit": 240000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dM27Tp2xUt0YFF1J2vUy-VMb/Photo_h180_w240/85902769_8_hatsAppImage20260730at4.27.26PM1_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8237772,
+        19.0472257
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 120000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df43",
+    "title": "3 BHK Flat   for Rent in The Legacy Apartment, Bandra West, Mumbai",
+    "rent": 300000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1800-Sq-ft-Multistorey-Apartment-FOR-Rent-Bandra-West-in-Mumbai&id=4d423835393032353635",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "locality_id": "listing-mumbai-bandra-west-2a12cc",
+    "area_sqft": 1600,
+    "deposit": 600000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dM27Tp2xUt0YFF1J2vUy-VMb/Photo_h180_w240/85902565_8_hatsAppImage20260805at5.12.37PM_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.83062,
+        19.05856
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 300000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df45",
+    "title": "3 BHK Flat   for Rent in Bandra West, Mumbai",
+    "rent": 35000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1300-Sq-ft-Multistorey-Apartment-FOR-Rent-Bandra-West-in-Mumbai&id=4d423836313736383133",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "locality_id": "listing-mumbai-bandra-west-2a12cc",
+    "area_sqft": 1100,
+    "deposit": 70000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dswwvk-lhLmjWpryRtHFS-H2/Photo_h180_w240/86176813_7_d9b7d1a8f674edc9031ea957be4955c_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.830829,
+        19.055229
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 35000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df47",
+    "title": "2 BHK Flat   for Rent in Bandra West, Mumbai",
+    "rent": 190000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-900-Sq-ft-Multistorey-Apartment-FOR-Rent-Bandra-West-in-Mumbai&id=4d423835393934393933",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "locality_id": "listing-mumbai-bandra-west-2a12cc",
+    "area_sqft": 800,
+    "deposit": 380000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dcl8cosUQsuHimwDxtES33wf/Photo_h180_w240/85994993_7_PropertyImage648-447925844139_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.830829,
+        19.055229
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 190000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df49",
+    "title": "2 BHK Flat   for Rent in Bandra West, Mumbai",
+    "rent": 190000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-900-Sq-ft-Multistorey-Apartment-FOR-Rent-Bandra-West-in-Mumbai&id=4d423833313734373935",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "locality_id": "listing-mumbai-bandra-west-2a12cc",
+    "area_sqft": 800,
+    "deposit": 380000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK98w9d8pwi_jcj9ISp1bzMRF8BjFL/Photo_h180_w240/83174795_1_1769740195895-6171_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.83082580566406,
+        19.05522918701172
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 190000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df4b",
+    "title": "3 BHK Flat   for Rent in Bandra West, Mumbai",
+    "rent": 35000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1700-Sq-ft-Multistorey-Apartment-FOR-Rent-Bandra-West-in-Mumbai&id=4d423833373139323033",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "locality_id": "listing-mumbai-bandra-west-2a12cc",
+    "area_sqft": 1500,
+    "deposit": 70000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99A9dcpX6kwYURgK32ejB1QEvBRq/Photo_h180_w240/83719203_9_9b6c200fcd14e2c92d1c4ecd9ac7782_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.830829,
+        19.055229
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 35000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df4d",
+    "title": "3 BHK Flat   for Rent in Casa Pali, Bandra West, Mumbai",
+    "rent": 35000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1200-Sq-ft-Multistorey-Apartment-FOR-Rent-Bandra-West-in-Mumbai&id=4d423835363836393331",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "locality_id": "listing-mumbai-bandra-west-2a12cc",
+    "area_sqft": 1200,
+    "deposit": 70000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds7L9fW8LeHz5PsBdljtELWY/Photo_h180_w240/85686931_8_HOTO202607241217558_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8319514,
+        18.9582347
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 35000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df4f",
+    "title": "2 BHK Flat   for Rent in Sea Pebbles Apartment, Bandra West, Mumbai",
+    "rent": 170000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1100-Sq-ft-Multistorey-Apartment-FOR-Rent-Bandra-West-in-Mumbai&id=4d423833313732363435",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "locality_id": "listing-mumbai-bandra-west-2a12cc",
+    "area_sqft": 800,
+    "deposit": 340000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK98w9dsNhVkQpx3a95wl8CyCeiz0p/Photo_h180_w240/83172645_4_PropertyImage159-1467676967059_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.82261,
+        19.05848
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 170000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df51",
+    "title": "3 BHK Flat   for Rent in L Amour Apartment, Bandra West, Mumbai",
+    "rent": 240000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1600-Sq-ft-Multistorey-Apartment-FOR-Rent-Bandra-West-in-Mumbai&id=4d423833313730353939",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "locality_id": "listing-mumbai-bandra-west-2a12cc",
+    "area_sqft": 1200,
+    "deposit": 480000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK98w9dsNhVkQpx3a95wl8CyCeiz0p/Photo_h180_w240/83170599_7_PropertyImage961-2982411519628_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.83122,
+        19.05951
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 240000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df53",
+    "title": "3 BHK Flat   for Rent in Bandra West, Mumbai",
+    "rent": 35000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-4000-Sq-ft-Multistorey-Apartment-FOR-Rent-Bandra-West-in-Mumbai&id=4d423834353433323331",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "locality_id": "listing-mumbai-bandra-west-2a12cc",
+    "area_sqft": 3800,
+    "deposit": 70000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dM16mZEnmQ142VHrrtnm2xgA/Photo_h180_w240/84543231_13_1778139904298-897_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.83082580566406,
+        19.05522918701172
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 35000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df55",
+    "title": "3 BHK Flat   for Rent in Bandra West, Mumbai",
+    "rent": 35000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1200-Sq-ft-Multistorey-Apartment-FOR-Rent-Mount-Mary-in-Mumbai&id=4d423835383035303833",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Mount Mary",
+    "locality_id": "listing-mumbai-mount-mary-a8a9f7",
+    "area_sqft": 1000,
+    "deposit": 70000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.82381,
+        19.04625
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 35000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df57",
+    "title": "3 BHK Flat   for Rent in Parishram By Rustomjee, Bandra West, Mumbai",
+    "rent": 35000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1800-Sq-ft-Multistorey-Apartment-FOR-Rent-Bandra-West-in-Mumbai&id=4d423833313638313231",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "locality_id": "listing-mumbai-bandra-west-2a12cc",
+    "area_sqft": 1452,
+    "deposit": 70000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK98w9dsNhVkQpx3a95wl8CyCeiz0p/Photo_h180_w240/83168121_5_PropertyImage821-3502482865125_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8277295,
+        19.0677193
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 35000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df59",
+    "title": "3 BHK Flat   for Rent in DLH Signature, Bandra West, Mumbai",
+    "rent": 35000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1900-Sq-ft-Multistorey-Apartment-FOR-Rent-Bandra-West-in-Mumbai&id=4d423834353339353531",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "locality_id": "listing-mumbai-bandra-west-2a12cc",
+    "area_sqft": 1250,
+    "deposit": 70000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dM16mZEnmQ142VHrrtnm2xgA/Photo_h180_w240/84539551_5_PropertyImage246-03360377617756_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8315013,
+        19.0519777
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 35000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df5b",
+    "title": "3 BHK Flat   for Rent in Bandra West, Mumbai",
+    "rent": 35000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1200-Sq-ft-Multistorey-Apartment-FOR-Rent-Bandra-West-in-Mumbai&id=4d423836303834393833",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "locality_id": "listing-mumbai-bandra-west-2a12cc",
+    "area_sqft": 1200,
+    "deposit": 70000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.830829,
+        19.055229
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 35000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df5d",
+    "title": "2 BHK Flat   for Rent in Tulips Apartment, Bandra West, Mumbai",
+    "rent": 180000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Multistorey-Apartment-FOR-Rent-Bandra-West-in-Mumbai&id=4d423833313734373535",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "locality_id": "listing-mumbai-bandra-west-2a12cc",
+    "area_sqft": 900,
+    "deposit": 360000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK98w9d8pwi_jcj9ISp1bzMRF8BjFL/Photo_h180_w240/83174755_8_1769739119650-66827_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.82695,
+        19.0525
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 180000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df5f",
+    "title": "2 BHK Flat   for Rent in Devansh Villa, Bandra West, Mumbai",
+    "rent": 160000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-850-Sq-ft-Multistorey-Apartment-FOR-Rent-Bandra-West-in-Mumbai&id=4d423833313734373439",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "locality_id": "listing-mumbai-bandra-west-2a12cc",
+    "area_sqft": 800,
+    "deposit": 320000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK98w9d8pwi_jcj9ISp1bzMRF8BjFL/Photo_h180_w240/83174749_5_1769738893853-9453_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.83614,
+        19.05821
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 160000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df61",
+    "title": "3 BHK Flat   for Rent in Bandra West, Mumbai",
+    "rent": 35000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1300-Sq-ft-Multistorey-Apartment-FOR-Rent-Bandra-West-in-Mumbai&id=4d423835383034363237",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "locality_id": "listing-mumbai-bandra-west-2a12cc",
+    "area_sqft": 1100,
+    "deposit": 70000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMuik2I4q1t27vNWGbD9BntY/Photo_h180_w240/85804627_2_hatsAppImage20260731at12.39.43PM2_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.830829,
+        19.055229
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 35000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df63",
+    "title": "3 BHK Flat   for Rent in Dheeraj Devika, Bandra West, Mumbai",
+    "rent": 200000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1600-Sq-ft-Multistorey-Apartment-FOR-Rent-Bandra-West-in-Mumbai&id=4d423835393934303333",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "locality_id": "listing-mumbai-bandra-west-2a12cc",
+    "area_sqft": 1400,
+    "deposit": 400000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dcl8cosUQsuHimwDxtES33wf/Photo_h180_w240/85994033_11_hatsAppImage20260805at4.44.48PM_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.83083,
+        19.05523
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 200000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df65",
+    "title": "2 BHK Flat   for Rent in Bright land Glow, Bandra West, Mumbai",
+    "rent": 180000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1089-Sq-ft-Multistorey-Apartment-FOR-Rent-Bandra-West-in-Mumbai&id=4d423831343536343639",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "locality_id": "listing-mumbai-bandra-west-2a12cc",
+    "area_sqft": 750,
+    "deposit": 360000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVT89I9dcNNTGXH-PdU8alhc8CvxiSl/Photo_h180_w240/81456469_15_PropertyImage203-42483765495288_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.83579,
+        19.05949
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 180000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df67",
+    "title": "1 BHK Flat   for Rent in Kamal Pushpa, Bandra West, Mumbai",
+    "rent": 80000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-600-Sq-ft-Multistorey-Apartment-FOR-Rent-Bandra-Reclamation-in-Mumbai&id=4d423835393939303931",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Bandra Reclamation",
+    "locality_id": "listing-mumbai-bandra-reclamation-5434bf",
+    "area_sqft": 500,
+    "deposit": 160000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dcl8cosUQsuHimwDxtES33wf/Photo_h180_w240/85999091_6_PropertyImage891-2416997474544_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8430923,
+        19.083894
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 80000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df69",
+    "title": "1 BHK Flat   for Rent in Raheja Kanti Apartments, Bandra West, Mumbai",
+    "rent": 200000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-800-Sq-ft-Multistorey-Apartment-FOR-Rent-Bandra-West-in-Mumbai&id=4d423834353539343131",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "locality_id": "listing-mumbai-bandra-west-2a12cc",
+    "area_sqft": 600,
+    "deposit": 400000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dM16mZEnmQ142VHrrtnm2xgA/Photo_h180_w240/84559411_7_1778173895760-7428_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8225229,
+        19.0484216
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 200000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df6b",
+    "title": "2 BHK Flat   for Rent in Bandra West, Mumbai",
+    "rent": 190000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Multistorey-Apartment-FOR-Rent-Mount-Mary-in-Mumbai&id=4d423736323933323431",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Mount Mary",
+    "locality_id": "listing-mumbai-mount-mary-a8a9f7",
+    "area_sqft": 950,
+    "deposit": 380000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnzVE88E9dMg9AcZD-GHvO8nKoi9FNJ3T/Photo_h180_w240/76293241_1_C_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.81941986083984,
+        19.0462589263916
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 190000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df6d",
+    "title": "1 BHK Flat   for Rent in Raheja Kanti Apartments, Bandra West, Mumbai",
+    "rent": 200000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-615-Sq-ft-Multistorey-Apartment-FOR-Rent-Bandra-West-in-Mumbai&id=4d423835393938383533",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "locality_id": "listing-mumbai-bandra-west-2a12cc",
+    "area_sqft": 520,
+    "deposit": 400000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dcl8cosUQsuHimwDxtES33wf/Photo_h180_w240/85998853_2_PropertyImage988-1180728156055_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8225229,
+        19.0484216
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 200000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df6f",
+    "title": "3 BHK Flat   for Rent in Bandra West, Mumbai",
+    "rent": 35000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-3500-Sq-ft-Multistorey-Apartment-FOR-Rent-Bandra-West-in-Mumbai&id=4d423833373435343337",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "locality_id": "listing-mumbai-bandra-west-2a12cc",
+    "area_sqft": 3000,
+    "deposit": 70000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99A9dc5GgxkW_-O-c6xJhS1x6dvo/Photo_h180_w240/83745437_7_d0bc06b5a754d55914d6c9414874497_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.83082580566406,
+        19.05522918701172
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 35000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df71",
+    "title": "3 BHK Flat   for Rent in Pali Hill Apartment, Bandra West, Mumbai",
+    "rent": 35000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2300-Sq-ft-Multistorey-Apartment-FOR-Rent-Bandra-West-in-Mumbai&id=4d423835363935353731",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "locality_id": "listing-mumbai-bandra-west-2a12cc",
+    "area_sqft": 1500,
+    "deposit": 70000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds7L9fW8LeHz5PsBdljtELWY/Photo_h180_w240/85695571_8_hatsAppImage20260724at6.02.10PM_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.82661,
+        19.06294
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 35000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df73",
+    "title": "1 BHK Flat   for Rent in Bandra West, Mumbai",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-620-Sq-ft-Multistorey-Apartment-FOR-Rent-Bandra-West-in-Mumbai&id=4d423834313537373335",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "locality_id": "listing-mumbai-bandra-west-2a12cc",
+    "area_sqft": 500,
+    "deposit": 260000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB5tA9dMN8ujopO2qHe05-9qLhVA47/Photo_h180_w240/84157735_8_MG20260409WA0015_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.830829,
+        19.055229
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df75",
+    "title": "3 BHK Flat   for Rent in The Designate, Bandra West, Mumbai",
+    "rent": 300000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2200-Sq-ft-Multistorey-Apartment-FOR-Rent-Swami-Vivekananda-Road-in-Mumbai&id=4d423832343133373139",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Swami Vivekananda Road",
+    "locality_id": "listing-mumbai-swami-vivekananda-road-6bda10",
+    "area_sqft": 1450,
+    "deposit": 600000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVE88E9dMnpaWmgzYJXYxu2qwJEeIje/Photo_h180_w240/82413719_8_000397712_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8380206,
+        19.0755243
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 300000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df77",
+    "title": "Flats for Rent in Bandra",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Bandra-West&cityName=Mumbai&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "locality_id": "listing-mumbai-bandra-west-2a12cc",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df79",
+    "title": "Flats for Rent in Bandra West",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Bandra-West&cityName=Mumbai&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "locality_id": "listing-mumbai-bandra-west-2a12cc",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df7b",
+    "title": "1 BHK Flats for Rent in Bandra West",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Bandra-West&cityName=Mumbai&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "locality_id": "listing-mumbai-bandra-west-2a12cc",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df7d",
+    "title": "3 BHK Flat  for Rent in Oberoi Esquire, Yashodham, Mumbai",
+    "rent": 220000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2256-Sq-ft-Multistorey-Apartment-FOR-Rent-Yashodham-in-Mumbai&id=4d423830303031343737",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Thane West",
+    "locality_id": "listing-mumbai-thane-west-4077ae",
+    "area_sqft": 1367,
+    "deposit": 440000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVK48w9dc7rCkN7GlSEZunRhI03omxC/Photo_h180_w240/80001477_11_squire3bhk4cleanup_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.86356,
+        19.16977
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 220000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df7f",
+    "title": "3 BHK Flat  for Rent in DB Orchid Woods, Gokuldham Colony Goregaon East, Mumbai",
+    "rent": 150000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1820-Sq-ft-Multistorey-Apartment-FOR-Rent-Gokuldham-in-Mumbai&id=4d423835313837393235",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Gokuldham",
+    "locality_id": "listing-mumbai-gokuldham-e45251",
+    "area_sqft": 1275,
+    "deposit": 300000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK48w9dsoRy91o1X-yCQxRXsZZSCl8/Photo_h180_w240/85187925_9_632641418050125197193211888037395o_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8702058,
+        19.1714476
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 150000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df81",
+    "title": "2 BHK Flat  for Rent in JP Decks, Gokuldham Colony Goregaon East, Mumbai",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1186-Sq-ft-Multistorey-Apartment-FOR-Rent-Gokuldham-in-Mumbai&id=4d423835313837383937",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Gokuldham",
+    "locality_id": "listing-mumbai-gokuldham-e45251",
+    "area_sqft": 830,
+    "deposit": 36000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK48w9dsoRy91o1X-yCQxRXsZZSCl8/Photo_h180_w240/85187897_3_hatsAppImage20250306at10.04.13PM6_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.86898,
+        19.17647
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df83",
+    "title": "3 BHK Flat   for Rent in Raheja Sherwood, Goregaon East, Mumbai",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1525-Sq-ft-Multistorey-Apartment-FOR-Rent-CAMA-Industrial-Estate-in-Mumbai&id=4d423835313837373039",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "CAMA Industrial Estate",
+    "locality_id": "listing-mumbai-cama-industrial-estate-8f3249",
+    "area_sqft": 1050,
+    "deposit": 260000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK48w9dcNuvObK4AFLLKafWE0RIuQT/Photo_h180_w240/85187709_12_89c9c955f9f458bbf060557c175ffd2_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.85542,
+        19.15481
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df85",
+    "title": "2 BHK Flat   for Rent in Dgs Heights, Goregaon East, Mumbai",
+    "rent": 35000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-800-Sq-ft-Multistorey-Apartment-FOR-Rent-Goregaon-East-in-Mumbai&id=4d423836313736373033",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Goregaon East",
+    "locality_id": "listing-mumbai-goregaon-east-cb0213",
+    "area_sqft": 615,
+    "deposit": 70000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8758090633208,
+        19.1562110822264
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 35000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df87",
+    "title": "3 BHK Flat   for Rent in Lakshchandi Height, Goregaon East, Mumbai",
+    "rent": 120000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1500-Sq-ft-Multistorey-Apartment-FOR-Rent-Gokuldham-in-Mumbai&id=4d423836313735383235",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Gokuldham",
+    "locality_id": "listing-mumbai-gokuldham-e45251",
+    "area_sqft": 1121,
+    "deposit": 240000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2021/12/08/Project-Photo-16-Lakshchandi-Height-Mumbai-5000920_400_600_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.86971,
+        19.172513
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 120000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df89",
+    "title": "2 BHK Flat   for Rent in Lakshchandi Height, Goregaon East, Mumbai",
+    "rent": 75000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1110-Sq-ft-Multistorey-Apartment-FOR-Rent-Gokuldham-in-Mumbai&id=4d423836313735363935",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Gokuldham",
+    "locality_id": "listing-mumbai-gokuldham-e45251",
+    "area_sqft": 850,
+    "deposit": 150000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2025/05/14/Project-Photo-30-Lakshchandi-Height-Mumbai-5000920_960_1280_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.86971,
+        19.172513
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 75000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df8b",
+    "title": "2 BHK Flat   for Rent in DB Orchid Woods, Goregaon East, Mumbai",
+    "rent": 100000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1420-Sq-ft-Multistorey-Apartment-FOR-Rent-Gokuldham-in-Mumbai&id=4d423836313735353633",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Gokuldham",
+    "locality_id": "listing-mumbai-gokuldham-e45251",
+    "area_sqft": 985,
+    "deposit": 200000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dswwvk-lhLmjWpryRtHFS-H2/Photo_h180_w240/86175563_2_hatsAppImage20260815at4.31.11PM3_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8702058,
+        19.1714476
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 100000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df8d",
+    "title": "3 BHK Flat   for Rent in Aster Tower, Goregaon East, Mumbai",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1500-Sq-ft-Multistorey-Apartment-FOR-Rent-Goregaon-East-in-Mumbai&id=4d423834313933353239",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Goregaon East",
+    "locality_id": "listing-mumbai-goregaon-east-cb0213",
+    "area_sqft": 1100,
+    "deposit": 260000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB5tA9dchl0yxbJLPybXQEja-5c-WY/Photo_h180_w240/84193529_6_PropertyImage772-3212511813795_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.86081,
+        19.17638
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df8f",
+    "title": "2 BHK Flat   for Rent in DB Orchid Woods, Goregaon East, Mumbai",
+    "rent": 100000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1420-Sq-ft-Multistorey-Apartment-FOR-Rent-Gokuldham-in-Mumbai&id=4d423835353434303933",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Gokuldham",
+    "locality_id": "listing-mumbai-gokuldham-e45251",
+    "area_sqft": 985,
+    "deposit": 200000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dc5zCjFA7taOs_Tg1L8ShJQT/Photo_h180_w240/85544093_5_hatsAppImage20260630at9.42.28AM1_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8702058,
+        19.1714476
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 100000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df91",
+    "title": "1 BHK Flat   for Rent in Dindoshi Mahad Complex, Goregaon East, Mumbai",
+    "rent": 50000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-680-Sq-ft-Multistorey-Apartment-FOR-Rent-Goregaon-East-in-Mumbai&id=4d423835313837303235",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Goregaon East",
+    "locality_id": "listing-mumbai-goregaon-east-cb0213",
+    "area_sqft": null,
+    "deposit": 100000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/Project-Photo-7-Dindoshi-Mahad-Complex-Mumbai-5001329_1224_1632_310_462.JPEG"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8616978,
+        19.1762177
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 50000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df93",
+    "title": "3 BHK Flat   for Rent in DB Orchid Woods, Goregaon East, Mumbai",
+    "rent": 110000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1820-Sq-ft-Multistorey-Apartment-FOR-Rent-Gokuldham-in-Mumbai&id=4d423835363931363935",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Gokuldham",
+    "locality_id": "listing-mumbai-gokuldham-e45251",
+    "area_sqft": 1121,
+    "deposit": 220000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2026/07/06/Project-Photo-54-DB-Woods-Mumbai-5022852_1505_2000_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8702058,
+        19.1714476
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 110000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df95",
+    "title": "1 BHK Flat   for Rent in Goregaon East, Mumbai",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-350-Sq-ft-Multistorey-Apartment-FOR-Rent-Gokuldham-in-Mumbai&id=4d423538353535343031",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Gokuldham",
+    "locality_id": "listing-mumbai-gokuldham-e45251",
+    "area_sqft": 250,
+    "deposit": 36000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAmjVE88E9dcI0y5VQqy53uqPWdsJsOvjJ/Photo_h180_w240/58555401_1_PropertyImage355-74588390629305_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8716991438016,
+        19.1729755212444
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df97",
+    "title": "2 BHK Flat   for Rent in DB Orchid Woods, Goregaon East, Mumbai",
+    "rent": 100000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-985-Sq-ft-Multistorey-Apartment-FOR-Rent-Goregaon-East-in-Mumbai&id=4d423834313837353037",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Goregaon East",
+    "locality_id": "listing-mumbai-goregaon-east-cb0213",
+    "area_sqft": 800,
+    "deposit": 200000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB5tA9dcptZ4bcc84oOxHxzJMD2QJZ/Photo_h180_w240/84187507_6_all2_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8702058,
+        19.1714476
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 100000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df99",
+    "title": "3 BHK Flat   for Rent in Oberoi Esquire, Goregaon East, Mumbai",
+    "rent": 210000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1913-Sq-ft-Multistorey-Apartment-FOR-Rent-Goregaon-East-in-Mumbai&id=4d423835363837373537",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Goregaon East",
+    "locality_id": "listing-mumbai-goregaon-east-cb0213",
+    "area_sqft": 1367,
+    "deposit": 420000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds7L9fW8LeHz5PsBdljtELWY/Photo_h180_w240/85687757_8_hatsAppImage20241229at15.45.5722e59d1f_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.86356,
+        19.16977
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 210000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df9b",
+    "title": "2 BHK Flat   for Rent in Raheja Heights Phase 2, Goregaon East, Mumbai",
+    "rent": 72000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Multistorey-Apartment-FOR-Rent-ITT-Bhatti-in-Mumbai&id=4d423835393935313737",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "ITT Bhatti",
+    "locality_id": "listing-mumbai-itt-bhatti-6945d8",
+    "area_sqft": 750,
+    "deposit": 144000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dcl8cosUQsuHimwDxtES33wf/Photo_h180_w240/85995177_7_hatsAppImage20260711at4.24.38PM2_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.88104,
+        19.14841
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 72000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df9d",
+    "title": "3 BHK Flat   for Rent in JP Decks, Goregaon East, Mumbai",
+    "rent": 140000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2200-Sq-ft-Multistorey-Apartment-FOR-Rent-Gokuldham-in-Mumbai&id=4d423835363835383437",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Gokuldham",
+    "locality_id": "listing-mumbai-gokuldham-e45251",
+    "area_sqft": 1750,
+    "deposit": 280000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds7L9fW8LeHz5PsBdljtELWY/Photo_h180_w240/85685847_7_hatsAppImage20260724at12.39.47PM_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.86898,
+        19.17647
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 140000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88df9f",
+    "title": "3 BHK Flat   for Rent in Goregaon East, Mumbai",
+    "rent": 210000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1796-Sq-ft-Multistorey-Apartment-FOR-Rent-Goregaon-East-in-Mumbai&id=4d423833313730303539",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Goregaon East",
+    "locality_id": "listing-mumbai-goregaon-east-cb0213",
+    "area_sqft": 1396,
+    "deposit": 420000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK98w9dsNhVkQpx3a95wl8CyCeiz0p/Photo_h180_w240/83170059_9_hatsAppImage20260129at11.44.13_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.87580871582031,
+        19.156211853027344
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 210000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfa1",
+    "title": "3 BHK Flat   for Rent in Oberoi Exquisite, Goregaon East, Mumbai",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1690-Sq-ft-Multistorey-Apartment-FOR-Rent-Goregaon-East-in-Mumbai&id=4d423835363837363335",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Goregaon East",
+    "locality_id": "listing-mumbai-goregaon-east-cb0213",
+    "area_sqft": 1040,
+    "deposit": 36000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds7L9fW8LeHz5PsBdljtELWY/Photo_h180_w240/85687635_1_hatsAppImage20260402at14.11.04_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.86367,
+        19.17181
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfa3",
+    "title": "2 BHK Flat   for Rent in Raheja Heights Phase 2, Goregaon East, Mumbai",
+    "rent": 72000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Multistorey-Apartment-FOR-Rent-Gokuldham-in-Mumbai&id=4d423835363836363635",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Gokuldham",
+    "locality_id": "listing-mumbai-gokuldham-e45251",
+    "area_sqft": 750,
+    "deposit": 144000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds7L9fW8LeHz5PsBdljtELWY/Photo_h180_w240/85686665_5_hatsAppImage20260724at12.48.22PM1_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.88104,
+        19.14841
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 72000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfa5",
+    "title": "2 BHK Flat   for Rent in Mantri Serene, Goregaon East, Mumbai",
+    "rent": 50000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1110-Sq-ft-Multistorey-Apartment-FOR-Rent-Goregaon-East-in-Mumbai&id=4d423836313733363439",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Goregaon East",
+    "locality_id": "listing-mumbai-goregaon-east-cb0213",
+    "area_sqft": 750,
+    "deposit": 100000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dswwvk-lhLmjWpryRtHFS-H2/Photo_h180_w240/86173649_5_antriserenebedroom2_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.88118,
+        19.16792
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 50000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfa7",
+    "title": "2 BHK Flat   for Rent in Madhuban , Goregaon East, Mumbai",
+    "rent": 65000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1113-Sq-ft-Multistorey-Apartment-FOR-Rent-Goregaon-East-in-Mumbai&id=4d423834313836393039",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Goregaon East",
+    "locality_id": "listing-mumbai-goregaon-east-cb0213",
+    "area_sqft": 680,
+    "deposit": 130000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK48w9dMO46aVhXuxgHlw_xhBEUQSV/Photo_h180_w240/84186909_3_PropertyImage501-69691177127186_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8692711,
+        19.1590077
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 65000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfa9",
+    "title": "1 BHK Flat   for Rent in Conwood Astoria, Goregaon East, Mumbai",
+    "rent": 47000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-620-Sq-ft-Multistorey-Apartment-FOR-Rent-Goregaon-East-in-Mumbai&id=4d423538323931303035",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Goregaon East",
+    "locality_id": "listing-mumbai-goregaon-east-cb0213",
+    "area_sqft": 450,
+    "deposit": 94000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAmDVK48w9dsz97zLDy9HcT8DSkv26y_xm/Photo_h180_w240/58291005_3_PropertyImage396-7127065329619_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.87167,
+        19.16938
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 47000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfab",
+    "title": "3 BHK Flat   for Rent in Satellite Tower Goregaon East, Goregaon East, Mumbai",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1700-Sq-ft-Multistorey-Apartment-FOR-Rent-Goregaon-East-in-Mumbai&id=4d423834353339393031",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Goregaon East",
+    "locality_id": "listing-mumbai-goregaon-east-cb0213",
+    "area_sqft": 1300,
+    "deposit": 260000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dMyfw8RkMrOV8mMRDke7jmvg/Photo_h180_w240/84539901_2_930df45914846428a394912b7d7665e_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8738123999999,
+        19.1738763
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfad",
+    "title": "2 BHK Flat   for Rent in Bhoomi Gokul, Goregaon East, Mumbai",
+    "rent": 50000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-654-Sq-ft-Multistorey-Apartment-FOR-Rent-Goregaon-East-in-Mumbai&id=4d423833373135333037",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Goregaon East",
+    "locality_id": "listing-mumbai-goregaon-east-cb0213",
+    "area_sqft": 654,
+    "deposit": 100000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/Project-Photo-5-Bhoomi-Gokul-Mumbai-5084590_1224_1632_310_462.JPEG"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.86579,
+        19.17778
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 50000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfaf",
+    "title": "2 BHK Flat   for Rent in JP Decks, Goregaon East, Mumbai",
+    "rent": 83000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1105-Sq-ft-Multistorey-Apartment-FOR-Rent-Gokuldham-in-Mumbai&id=4d423835353430383735",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Gokuldham",
+    "locality_id": "listing-mumbai-gokuldham-e45251",
+    "area_sqft": 850,
+    "deposit": 166000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2025/01/03/Project-Photo-65-JP-Decks-Blue-Mumbai-5070051_1125_2000_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.86898,
+        19.17647
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 83000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfb1",
+    "title": "2 BHK Flat   for Rent in JP Decks, Goregaon East, Mumbai",
+    "rent": 83000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1105-Sq-ft-Multistorey-Apartment-FOR-Rent-Goregaon-East-in-Mumbai&id=4d423835353430373033",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Goregaon East",
+    "locality_id": "listing-mumbai-goregaon-east-cb0213",
+    "area_sqft": 850,
+    "deposit": 166000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2025/01/03/Project-Photo-65-JP-Decks-Blue-Mumbai-5070051_1125_2000_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.86898,
+        19.17647
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 83000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfb3",
+    "title": "1 BHK Flat   for Rent in Aspen Park, Goregaon East, Mumbai",
+    "rent": 57000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-650-Sq-ft-Multistorey-Apartment-FOR-Rent-CAMA-Industrial-Estate-in-Mumbai&id=4d423836303834373833",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "CAMA Industrial Estate",
+    "locality_id": "listing-mumbai-cama-industrial-estate-8f3249",
+    "area_sqft": 430,
+    "deposit": 114000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dsopY7AsfT_NoDTthZQKtMm1/Photo_h180_w240/86084783_4_9d5ceaeac3140e4ae99d1e0a029241a_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.85194,
+        19.15578
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 57000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfb5",
+    "title": "2 BHK Flat   for Rent in Mantri Park, Goregaon East, Mumbai",
+    "rent": 55000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1050-Sq-ft-Multistorey-Apartment-FOR-Rent-Goregaon-East-in-Mumbai&id=4d423538313831353733",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Goregaon East",
+    "locality_id": "listing-mumbai-goregaon-east-cb0213",
+    "area_sqft": 689,
+    "deposit": 110000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnzVK4849dcoABpEPfJeQ-P4HBaDf45ZL/Photo_h180_w240/58181573_6_PropertyImage349-17057029884944_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.88082,
+        19.16938
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 55000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfb7",
+    "title": "1 BHK Flat   for Rent in Sarthak Apartment, Goregaon East, Mumbai",
+    "rent": 38000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-540-Sq-ft-Multistorey-Apartment-FOR-Rent-Goregaon-East-in-Mumbai&id=4d423835313732343239",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Goregaon East",
+    "locality_id": "listing-mumbai-goregaon-east-cb0213",
+    "area_sqft": 540,
+    "deposit": 76000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8386211,
+        19.0147615
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 38000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfb9",
+    "title": "Flats for Rent in Goregaon",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Goregaon-East&cityName=Mumbai&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Goregaon East",
+    "locality_id": "listing-mumbai-goregaon-east-cb0213",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfbb",
+    "title": "Flats for Rent in Goregaon East",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Goregaon-East&cityName=Mumbai&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Goregaon East",
+    "locality_id": "listing-mumbai-goregaon-east-cb0213",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfbd",
+    "title": "1 BHK Flats for Rent in Goregaon East",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Goregaon-East&cityName=Mumbai&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Goregaon East",
+    "locality_id": "listing-mumbai-goregaon-east-cb0213",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfbf",
+    "title": "3 BHK Flat  for Rent in Acme Oasis, Kandivali East, Mumbai",
+    "rent": 60000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-980-Sq-ft-Multistorey-Apartment-FOR-Rent-Kandivali-East-in-Mumbai&id=4d423835353438313635",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Kandivali East",
+    "locality_id": "listing-mumbai-kandivali-east-a91e61",
+    "area_sqft": 980,
+    "deposit": 120000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2020/06/17/Project-Photo-32-Oasis-Mumbai-5024115_840_1217_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8579823,
+        19.1367277
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 60000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfc1",
+    "title": "1 BHK Flat  for Rent in Neelyog Apartment, Kandivali West, Mumbai",
+    "rent": 35000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-484-Sq-ft-Multistorey-Apartment-FOR-Rent-Kandivali-West-in-Mumbai&id=4d423835353438313437",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Kandivali West",
+    "locality_id": "listing-mumbai-kandivali-west-f5371f",
+    "area_sqft": 400,
+    "deposit": 70000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/2026/Jul/15/Photo_h300_w450/85548147_7_hatsAppImage20260710at6.04.06PM_300_450.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.91721,
+        19.09159
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 35000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfc3",
+    "title": "2 BHK Flat  for Rent in Mulund West, Mumbai",
+    "rent": 56000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-950-Sq-ft-Multistorey-Apartment-FOR-Rent-Mulund-West-in-Mumbai&id=4d423731353337383531",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Mulund West",
+    "locality_id": "listing-mumbai-mulund-west-bf5ba5",
+    "area_sqft": 663,
+    "deposit": 112000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99A9dsz2yHdta6kZcsZdZvY01x2i/Photo_h180_w240/71537851_3_PropertyImage833-9483555160997_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.09855651855469,
+        19.21002960205078
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 56000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfc5",
+    "title": "2 BHK Flat  for Rent in Acme Oasis, Kandivali East, Mumbai",
+    "rent": 48000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-740-Sq-ft-Multistorey-Apartment-FOR-Rent-Kandivali-East-in-Mumbai&id=4d423835353438313137",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Kandivali East",
+    "locality_id": "listing-mumbai-kandivali-east-a91e61",
+    "area_sqft": 740,
+    "deposit": 96000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2020/06/17/Project-Photo-26-Oasis-Mumbai-5024115_699_1048_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8579823,
+        19.1367277
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 48000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfc7",
+    "title": "3 BHK Flat  for Rent in Mavji Meeras Empire, Goregaon West, Mumbai",
+    "rent": 70000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1100-Sq-ft-Multistorey-Apartment-FOR-Rent-Goregaon-West-in-Mumbai&id=4d423834353535393535",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Goregaon West",
+    "locality_id": "listing-mumbai-goregaon-west-838f49",
+    "area_sqft": 1100,
+    "deposit": 140000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dM16mZEnmQ142VHrrtnm2xgA/Photo_h180_w240/84555955_11_PropertyImage405-07474933139673_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.83974,
+        19.16493
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 70000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfc9",
+    "title": "2 BHK Flat  for Rent in Johaan Signature Isle, Matunga East, Mumbai",
+    "rent": 120000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-850-Sq-ft-Multistorey-Apartment-FOR-Rent-Matunga-East-in-Mumbai&id=4d423832353130323239",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Matunga East",
+    "locality_id": "listing-mumbai-matunga-east-ff6ff8",
+    "area_sqft": 810,
+    "deposit": 240000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVE88E9ds-eHhF-Sd5v_EDoVP0hYGGQ/Photo_h180_w240/82510229_1_1766649219487-3809_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8584374,
+        19.0224032
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 120000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfcb",
+    "title": "1 BHK Flat  for Rent in Ariana Residency, Borivali East, Mumbai",
+    "rent": 30200,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-600-Sq-ft-Multistorey-Apartment-FOR-Rent-Borivali-East-in-Mumbai&id=4d423834353535383731",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Borivali East",
+    "locality_id": "listing-mumbai-borivali-east-1caa5d",
+    "area_sqft": 395,
+    "deposit": 60400,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dc2e5M6EEhW5zqPvNR31ewAy/Photo_h180_w240/84555871_6_1784195671858-8308_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8326783999999,
+        19.1275962
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 30200
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfcd",
+    "title": "2 BHK Flat  for Rent in Kohinoor City, Kurla West, Mumbai",
+    "rent": 65000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1040-Sq-ft-Multistorey-Apartment-FOR-Rent-Kurla-West-in-Mumbai&id=4d423734353835343039",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Kurla West",
+    "locality_id": "listing-mumbai-kurla-west-fa1f52",
+    "area_sqft": 910,
+    "deposit": 130000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dMNBlsSzPXx_emghaW7Dj69H/Photo_h180_w240/74585409_9_PropertyImage564-6772366810441_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.88472,
+        19.07979
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 65000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfcf",
+    "title": "3 BHK Flat  for Rent in Suvasya Swastik Platinum, Vikhroli East, Mumbai",
+    "rent": 76000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-781-Sq-ft-Multistorey-Apartment-FOR-Rent-Vikhroli-East-in-Mumbai&id=4d423836303839303339",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Vikhroli East",
+    "locality_id": "listing-mumbai-vikhroli-east-02baef",
+    "area_sqft": null,
+    "deposit": 152000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dsopY7AsfT_NoDTthZQKtMm1/Photo_h180_w240/86089039_1_PropertyImage849-3930898150278_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.9336953999999,
+        19.113265
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 76000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfd1",
+    "title": "1 BHK Flat  for Rent in Bhoj Bhawan, Chembur, Mumbai",
+    "rent": 52000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-700-Sq-ft-Multistorey-Apartment-FOR-Rent-Chembur-in-Mumbai&id=4d423831353137333039",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Chembur",
+    "locality_id": "listing-mumbai-chembur-c51a17",
+    "area_sqft": 500,
+    "deposit": 104000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/Project-Photo-12-Bhoj-Bhawan-Mumbai-5078891_1296_972_310_462.JPEG"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8923693,
+        19.0552447
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 52000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfd3",
+    "title": "3 BHK Flat  for Rent in Shahaji Raje Marg, Mumbai",
+    "rent": 150000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1200-Sq-ft-Multistorey-Apartment-FOR-Rent-Shahaji-Raje-Marg-in-Mumbai&id=4d423835383039313837",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Thane West",
+    "locality_id": "listing-mumbai-thane-west-4077ae",
+    "area_sqft": 1060,
+    "deposit": 300000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMhPfZ38V5hBk6RZ-BIa-e95/Photo_h180_w240/85809187_5_PropertyImage256-9620798043295_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.848601,
+        19.108454
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 150000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfd5",
+    "title": "2 BHK Flat  for Rent in Rising Sun Midtown Bay, Mahim West, Mumbai",
+    "rent": 210000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1238-Sq-ft-Multistorey-Apartment-FOR-Rent-Mahim-West-in-Mumbai&id=4d423835313838303533",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Mahim West",
+    "locality_id": "listing-mumbai-mahim-west-939b2d",
+    "area_sqft": 860,
+    "deposit": 420000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK48w9dsoRy91o1X-yCQxRXsZZSCl8/Photo_h180_w240/85188053_16_hatsAppImage20260619at16.49.001_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.840968,
+        19.0362671
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 210000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfd7",
+    "title": "3 BHK Flat  for Rent in Ashford Casa Grande, Lower Parel, Mumbai",
+    "rent": 35000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2100-Sq-ft-Multistorey-Apartment-FOR-Rent-Lower-Parel-in-Mumbai&id=4d423433383936333537",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Lower Parel",
+    "locality_id": "listing-mumbai-lower-parel-57b5dd",
+    "area_sqft": 1950,
+    "deposit": 70000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnzVG88A9dcnyfzgjM0HvODUqCJL-8h80/Photo_h180_w240/43896357_2_7376a85e1f34f01a1484e07fae5c7d2_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.82696,
+        18.99935
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 35000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfd9",
+    "title": "3 BHK Flat  for Rent in Godrej Nest, Lokhandwala Township Kandivali East, Mumbai",
+    "rent": 63000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-856-Sq-ft-Multistorey-Apartment-FOR-Rent-Lokhandwala-Township-in-Mumbai&id=4d423736323832323231",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Lokhandwala Township Kandivali East",
+    "locality_id": "listing-mumbai-lokhandwala-township-kandivali-east-82aa4d",
+    "area_sqft": 850,
+    "deposit": 126000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK98w9dsiuahHwZkLjw8mm7nCT3zYM/Photo_h180_w240/76282221_5_PropertyImage646-4559399852409_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8678051999999,
+        19.1961897
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 63000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfdb",
+    "title": "3 BHK Flat  for Rent in Sugee Marina Bay, Worli, Mumbai",
+    "rent": 35000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1817-Sq-ft-Multistorey-Apartment-FOR-Rent-Worli-in-Mumbai&id=4d423836303838393835",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Worli",
+    "locality_id": "listing-mumbai-worli-723435",
+    "area_sqft": 1600,
+    "deposit": 70000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dsopY7AsfT_NoDTthZQKtMm1/Photo_h180_w240/86088985_1_PropertyImage970-3660054517579_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8201507,
+        19.0116768
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 35000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfdd",
+    "title": "2 BHK Flat  for Rent in Spring Grove, Kandivali East, Mumbai",
+    "rent": 55000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1270-Sq-ft-Multistorey-Apartment-FOR-Rent-Kandivali-East-in-Mumbai&id=4d423835353437383031",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Kandivali East",
+    "locality_id": "listing-mumbai-kandivali-east-a91e61",
+    "area_sqft": null,
+    "deposit": 110000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/Project-Photo-1-Spring-Grove-Mumbai-5000751_240_420_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.869478,
+        19.196857
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 55000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfdf",
+    "title": "1 BHK Flat  for Rent in SK PNK Imperial Heights, Mira Road Area, Mumbai",
+    "rent": 20000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-650-Sq-ft-Multistorey-Apartment-FOR-Rent-Mira-Road-in-Mumbai&id=4d423833323030363835",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Mira Road",
+    "locality_id": "listing-mumbai-mira-road-c2c95f",
+    "area_sqft": 450,
+    "deposit": 40000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVG88A9dMijFduKGqiDxjx9ZTdO5kGI/Photo_h180_w240/83200685_7_PropertyImage514-7449414902037_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.8741017999999,
+        19.2718303
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 20000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfe1",
+    "title": "3 BHK Flat  for Rent in SD Alpine, Thakur Village, Kandivali East, Mumbai",
+    "rent": 90000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1400-Sq-ft-Multistorey-Apartment-FOR-Rent-Thakur-Village-in-Mumbai&id=4d423831353135333033",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Thakur Village",
+    "locality_id": "listing-mumbai-thakur-village-d4a4bd",
+    "area_sqft": 1013,
+    "deposit": 180000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVT89I9ds4jUgtrY3IZeMhF9zKS-SZI/Photo_h180_w240/81515303_8_hatsAppImage20230104at12.55.393_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.87197,
+        19.20512
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 90000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfe3",
+    "title": "3 BHK Flat  for Rent in Sunteck City Avenue 1, Best Nagar Goregaon West, Mumbai",
+    "rent": 110000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1540-Sq-ft-Multistorey-Apartment-FOR-Rent-Best-Nagar-Goregaon-West-in-Mumbai&id=4d423834383734313139",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Best Nagar - Goregaon West",
+    "locality_id": "listing-mumbai-best-nagar-goregaon-west-f55896",
+    "area_sqft": 1088,
+    "deposit": 220000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dsMvPEPkQKYpH51gVdRpaG5K/Photo_h180_w240/84874119_9_hatsAppImage20240710at22.03.38_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.84622,
+        19.15105
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 110000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfe5",
+    "title": "2 BHK Flat  for Rent in Runwal Nirvana, Parel, Mumbai",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Multistorey-Apartment-FOR-Rent-Parel-in-Mumbai&id=4d423738323437313039",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Parel",
+    "locality_id": "listing-mumbai-parel-6b7293",
+    "area_sqft": 800,
+    "deposit": 260000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dsvMOeVv1oEgiwYXJQpX4bpV/Photo_h180_w240/78247109_5_PropertyImage414-92665037277567_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.84752,
+        19.00337
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfe7",
+    "title": "2 BHK Flat  for Rent in Legend Siroya Level The Residences, Andheri West, Mumbai",
+    "rent": 65000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-585-Sq-ft-Multistorey-Apartment-FOR-Rent-Andheri-West-in-Mumbai&id=4d423835333838373533",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Andheri West",
+    "locality_id": "listing-mumbai-andheri-west-4356c3",
+    "area_sqft": 585,
+    "deposit": 130000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dM6lX3LrUDulgQ5ASuJH93SV/Photo_h180_w240/85388753_3_PropertyImage14-517818382210447_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.836118,
+        19.1459097
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 65000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfe9",
+    "title": "2 BHK Flat  for Rent in Nirmal City Of Joy, Mulund West, Mumbai",
+    "rent": 52000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1045-Sq-ft-Multistorey-Apartment-FOR-Rent-Mulund-West-in-Mumbai&id=4d423832353038363537",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Mulund West",
+    "locality_id": "listing-mumbai-mulund-west-bf5ba5",
+    "area_sqft": 726,
+    "deposit": 104000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVE88E9dMPDD2k6xwjkbOmW7swUefAb/Photo_h180_w240/82508657_8_edroom1_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.9576249,
+        19.179115
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 52000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfeb",
+    "title": "2 BHK Flat  for Rent in Mahim, Mumbai",
+    "rent": 130000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1300-Sq-ft-Multistorey-Apartment-FOR-Rent-Mahim-in-Mumbai&id=4d423833373339383939",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Mahim",
+    "locality_id": "listing-mumbai-mahim-088b3f",
+    "area_sqft": 750,
+    "deposit": 260000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99A9dcuysBlb-qbn9FVZp8pZ6WeK/Photo_h180_w240/83739899_1_PropertyImage921-784894746186_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.841927,
+        19.038975
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 130000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfed",
+    "title": "1 BHK Flats for Rent in Mumbai",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Thane-West&cityName=Mumbai&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Mumbai",
+    "locality": "Thane West",
+    "locality_id": "listing-mumbai-thane-west-4077ae",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfef",
+    "title": "2 BHK Flat   for Rent in Shapoorji Pallonji Joyville Hinjewadi, Hinjewadi, Pune",
+    "rent": 37000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-800-Sq-ft-Multistorey-Apartment-FOR-Rent-Hinjewadi-Village-in-Pune&id=4d423835393937373839",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Hinjewadi Village",
+    "locality_id": "listing-pune-hinjewadi-village-9f8a43",
+    "area_sqft": 620,
+    "deposit": 74000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/2026/Aug/13/Photo_h300_w450/85997789_3_hatsAppImage20260812at9.01.30PM1_300_450.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7205185,
+        18.5680419
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 37000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dff1",
+    "title": "1 BHK Flat   for Rent in Paranjape Blue Ridge, Hinjewadi, Pune",
+    "rent": 26000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-651-Sq-ft-Multistorey-Apartment-FOR-Rent-Hinjewadi-Phase-1-in-Pune&id=4d423835353437363235",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Hinjewadi Phase 1",
+    "locality_id": "listing-pune-hinjewadi-phase-1-20d132",
+    "area_sqft": 445,
+    "deposit": 52000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/2026/Jul/15/Photo_h300_w450/85547625_1_32311c0a93d4f8ca2adb80a8022333d_300_450.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.741096,
+        18.575073
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 26000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dff3",
+    "title": "2 BHK Flat   for Rent in Javdekar Yashwin Phase II, Hinjewadi, Pune",
+    "rent": 32000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-840-Sq-ft-Multistorey-Apartment-FOR-Rent-Hinjewadi-in-Pune&id=4d423835313837363937",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Hinjewadi",
+    "locality_id": "listing-pune-hinjewadi-d5300a",
+    "area_sqft": null,
+    "deposit": 64000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK48w9dcNuvObK4AFLLKafWE0RIuQT/Photo_h180_w240/85187697_5_PropertyImage779-8694592412995_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7195983,
+        18.6104977
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 32000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dff5",
+    "title": "3 BHK Flat   for Rent in Kolte Patil Life Republic, Hinjewadi, Pune",
+    "rent": 28500,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-800-Sq-ft-Multistorey-Apartment-FOR-Rent-Hinjewadi-in-Pune&id=4d423835333839313137",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Hinjewadi",
+    "locality_id": "listing-pune-hinjewadi-d5300a",
+    "area_sqft": null,
+    "deposit": 57000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dcJAsc5THdpTRqjfUjSNesSV/Photo_h180_w240/85389117_1_PropertyImage376-4982272287678_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.709768,
+        18.618311
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 28500
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dff7",
+    "title": "2 BHK Flat   for Rent in Paranjape Blue Ridge, Hinjewadi, Pune",
+    "rent": 40000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-751-Sq-ft-Multistorey-Apartment-FOR-Rent-Hinjewadi-Phase-1-in-Pune&id=4d423835333838383531",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Hinjewadi Phase 1",
+    "locality_id": "listing-pune-hinjewadi-phase-1-20d132",
+    "area_sqft": 600,
+    "deposit": 80000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dM6lX3LrUDulgQ5ASuJH93SV/Photo_h180_w240/85388851_5_37c064438004653b5ed61830279435b_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.741096,
+        18.575073
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 40000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dff9",
+    "title": "2 BHK Flat   for Rent in Pegasus Megapolis, Hinjewadi, Pune",
+    "rent": 30000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1051-Sq-ft-Multistorey-Apartment-FOR-Rent-Hinjewadi-Phase-3-in-Pune&id=4d423835353437373339",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Hinjewadi Phase 3",
+    "locality_id": "listing-pune-hinjewadi-phase-3-c7691c",
+    "area_sqft": 894,
+    "deposit": 60000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dc-WUGQDRWhjmMYadCFP0efz/Photo_h180_w240/85547739_8_f07074ca8b147c6a1cc1f37948e9f17_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7423829999999,
+        18.5911148
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 30000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dffb",
+    "title": "3 BHK Flat   for Rent in Kohinoor Sportsville, Hinjewadi, Pune",
+    "rent": 33000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1050-Sq-ft-Multistorey-Apartment-FOR-Rent-Bodkewadi-in-Pune&id=4d423835393033393631",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Bodkewadi",
+    "locality_id": "listing-pune-bodkewadi-9b7718",
+    "area_sqft": 900,
+    "deposit": 66000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dM27Tp2xUt0YFF1J2vUy-VMb/Photo_h180_w240/85903961_9_477172112d14597af4ee27ca5f760f5_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.723199,
+        18.5741815
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 33000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dffd",
+    "title": "3 BHK Flat   for Rent in Kolte Patil Life Republic R16, Hinjewadi, Pune",
+    "rent": 36000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1650-Sq-ft-Multistorey-Apartment-FOR-Rent-Marunji-in-Pune&id=4d423834383732343733",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Marunji",
+    "locality_id": "listing-pune-marunji-ccff20",
+    "area_sqft": 1200,
+    "deposit": 72000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2018/12/07/Project-Photo-4-Life-Republic-R16-Pune-5120045_536_691_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7156718999999,
+        18.6232875
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 36000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88dfff",
+    "title": "2 BHK Flat   for Rent in Kolte Patil Life Republic Aros, Hinjewadi, Pune",
+    "rent": 26000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-969-Sq-ft-Multistorey-Apartment-FOR-Rent-Hinjewadi-in-Pune&id=4d423836313736343933",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Hinjewadi",
+    "locality_id": "listing-pune-hinjewadi-d5300a",
+    "area_sqft": null,
+    "deposit": 52000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2022/12/12/Project-Photo-4-Life-Republic-R13-Pune-5386509_600_800_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7156718999999,
+        18.6232875
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 26000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e001",
+    "title": "3 BHK Flat   for Rent in Peninsula Ashok Meadows, Hinjewadi, Pune",
+    "rent": 40000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1554-Sq-ft-Multistorey-Apartment-FOR-Rent-Hinjewadi-Rajiv-Gandhi-Infotech-Park-in-Pune&id=4d423836303837343435",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Hinjewadi Rajiv Gandhi Infotech Park",
+    "locality_id": "listing-pune-hinjewadi-rajiv-gandhi-infotech-park-0ef064",
+    "area_sqft": 1196,
+    "deposit": 80000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dsopY7AsfT_NoDTthZQKtMm1/Photo_h180_w240/86087445_2_PropertyImage962-8500964349101_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7260874999999,
+        18.583542
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 40000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e003",
+    "title": "1 BHK Flat   for Rent in Paranjape The Lofts, Hinjewadi, Pune",
+    "rent": 26000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-650-Sq-ft-Multistorey-Apartment-FOR-Rent-Hinjewadi-in-Pune&id=4d423834353439393935",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Hinjewadi",
+    "locality_id": "listing-pune-hinjewadi-d5300a",
+    "area_sqft": 480,
+    "deposit": 52000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dM16mZEnmQ142VHrrtnm2xgA/Photo_h180_w240/84549995_1_PropertyImage285-1809442813417_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7359312,
+        18.5816205
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 26000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e005",
+    "title": "1 BHK Flat   for Rent in Kolte Patil Life Republic, Hinjewadi, Pune",
+    "rent": 18001,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-612-Sq-ft-Multistorey-Apartment-FOR-Rent-Hinjewadi-in-Pune&id=4d423731343535343733",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Hinjewadi",
+    "locality_id": "listing-pune-hinjewadi-d5300a",
+    "area_sqft": 453,
+    "deposit": 36002,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVT89I9dsnf1aGhMUqaqVSglOkAU33r/Photo_h180_w240/71455473_1_PropertyImage864-8427649281838_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.709768,
+        18.618311
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18001
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e007",
+    "title": "2 BHK Flat   for Rent in Hinjewadi, Pune",
+    "rent": 14000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1100-Sq-ft-Multistorey-Apartment-FOR-Rent-Hinjewadi-in-Pune&id=4d423731343535343239",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Hinjewadi",
+    "locality_id": "listing-pune-hinjewadi-d5300a",
+    "area_sqft": null,
+    "deposit": 28000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7220719182405,
+        18.601732750311
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 14000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e009",
+    "title": "2 BHK Flat   for Rent in High Mount Phase 2, Hinjewadi, Pune",
+    "rent": 29000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-750-Sq-ft-Multistorey-Apartment-FOR-Rent-Hinjewadi-in-Pune&id=4d423834313939373639",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Hinjewadi",
+    "locality_id": "listing-pune-hinjewadi-d5300a",
+    "area_sqft": 750,
+    "deposit": 58000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB5tA9dcuIPdOf2HDFECMLbA1ejHG5/Photo_h180_w240/84199769_2_PropertyImage302-8258757048037_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7031474,
+        18.593978
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 29000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e00b",
+    "title": "1 BHK Flat   for Rent in Rohan Prathama, Hinjewadi, Pune",
+    "rent": 21000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-651-Sq-ft-Multistorey-Apartment-FOR-Rent-Shinde-Nagar-Hinjewadi-Rajiv-Gandhi-Infotech-Park-in-Pune&id=4d423835333838343037",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Shinde Nagar Hinjewadi Rajiv Gandhi Infotech Park",
+    "locality_id": "listing-pune-shinde-nagar-hinjewadi-rajiv-gandhi-infotech-park-b84c67",
+    "area_sqft": 407,
+    "deposit": 42000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dM6lX3LrUDulgQ5ASuJH93SV/Photo_h180_w240/85388407_8_3f67c493a15404c931caceae297e3a3_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7396165999999,
+        18.5852304
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 21000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e00d",
+    "title": "2 BHK Flat   for Rent in TCG The Crown Greens, Hinjewadi, Pune",
+    "rent": 40000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-999-Sq-ft-Multistorey-Apartment-FOR-Rent-Hinjewadi-in-Pune&id=4d423834353439383431",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Hinjewadi",
+    "locality_id": "listing-pune-hinjewadi-d5300a",
+    "area_sqft": null,
+    "deposit": 80000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dM16mZEnmQ142VHrrtnm2xgA/Photo_h180_w240/84549841_3_PropertyImage808-0197640051206_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7068752,
+        18.5920303
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 40000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e00f",
+    "title": "1 BHK Flat   for Rent in Basera Eternity, Hinjewadi, Pune",
+    "rent": 23000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-760-Sq-ft-Multistorey-Apartment-FOR-Rent-Hinjewadi-Phase-1-in-Pune&id=4d423834353439363835",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Hinjewadi Phase 1",
+    "locality_id": "listing-pune-hinjewadi-phase-1-20d132",
+    "area_sqft": 500,
+    "deposit": 46000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dM16mZEnmQ142VHrrtnm2xgA/Photo_h180_w240/84549685_8_hatsAppImage20260507at1.07.14PM_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7312532999999,
+        18.5856974
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 23000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e011",
+    "title": "2 BHK Flat   for Rent in Pride Park Astra, Hinjewadi, Pune",
+    "rent": 30000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-930-Sq-ft-Multistorey-Apartment-FOR-Rent-Marunji-in-Pune&id=4d423734353334373837",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Marunji",
+    "locality_id": "listing-pune-marunji-ccff20",
+    "area_sqft": 775,
+    "deposit": 60000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnzVT89I9dM-ZkCPfK0v3Re94wqU5UvJI/Photo_h180_w240/3969_IMG5120_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7230179,
+        18.6002642
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 30000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e013",
+    "title": "2 BHK Flat   for Rent in Pegasus Megapolis, Hinjewadi, Pune",
+    "rent": 30000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-965-Sq-ft-Multistorey-Apartment-FOR-Rent-Hinjewadi-Phase-3-in-Pune&id=4d423832343737373431",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Hinjewadi Phase 3",
+    "locality_id": "listing-pune-hinjewadi-phase-3-c7691c",
+    "area_sqft": 750,
+    "deposit": 60000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVE88E9dM34ADyuY3njz9BcKXsxLUdc/Photo_h180_w240/82477741_8_1765109128152-02_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7423829999999,
+        18.5911148
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 30000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e015",
+    "title": "2 BHK Flat   for Rent in Kohinoor Coral, Hinjewadi, Pune",
+    "rent": 28000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-884-Sq-ft-Multistorey-Apartment-FOR-Rent-Hinjewadi-in-Pune&id=4d423835363837313535",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Hinjewadi",
+    "locality_id": "listing-pune-hinjewadi-d5300a",
+    "area_sqft": 680,
+    "deposit": 56000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds8ur6D_hl8ez8n71sawRcZ4/Photo_h180_w240/85687155_7_PropertyImage968-0422575632977_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.6826212,
+        18.5891012
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 28000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e017",
+    "title": "2 BHK Flat   for Rent in Godrej 24, Hinjewadi, Pune",
+    "rent": 31000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Multistorey-Apartment-FOR-Rent-Hinjewadi-Rajiv-Gandhi-Infotech-Park-in-Pune&id=4d423834313836353039",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Hinjewadi Rajiv Gandhi Infotech Park",
+    "locality_id": "listing-pune-hinjewadi-rajiv-gandhi-infotech-park-0ef064",
+    "area_sqft": 940,
+    "deposit": 62000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK48w9dsPWQyI2IzY2e6l--qrutsWY/Photo_h180_w240/84186509_3_1782645735551-4011_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7284476999999,
+        18.5846808
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 31000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e019",
+    "title": "2 BHK Flat   for Rent in Kohinoor Coral, Hinjewadi, Pune",
+    "rent": 28000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-912-Sq-ft-Multistorey-Apartment-FOR-Rent-Hinjewadi-in-Pune&id=4d423835383035333337",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Hinjewadi",
+    "locality_id": "listing-pune-hinjewadi-d5300a",
+    "area_sqft": 652,
+    "deposit": 56000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMuik2I4q1t27vNWGbD9BntY/Photo_h180_w240/85805337_2_PropertyImage521-5480236547337_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.6826212,
+        18.5891012
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 28000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e01b",
+    "title": "2 BHK Flat   for Rent in Saheel ITrend Homes, Hinjewadi, Pune",
+    "rent": 30000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-648-Sq-ft-Multistorey-Apartment-FOR-Rent-Hinjewadi-Rajiv-Gandhi-Infotech-Park-in-Pune&id=4d423834313838333733",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Hinjewadi Rajiv Gandhi Infotech Park",
+    "locality_id": "listing-pune-hinjewadi-rajiv-gandhi-infotech-park-0ef064",
+    "area_sqft": 648,
+    "deposit": 60000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2025/10/08/Project-Photo-30-ITrend-Homes-Pune-5093263_963_1280_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.699538,
+        18.596464
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 30000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e01d",
+    "title": "1 BHK Flat   for Rent in TCG The Cliff Garden, Hinjewadi, Pune",
+    "rent": 25000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-572-Sq-ft-Multistorey-Apartment-FOR-Rent-Hinjewadi-in-Pune&id=4d423835383034343631",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Hinjewadi",
+    "locality_id": "listing-pune-hinjewadi-d5300a",
+    "area_sqft": 450,
+    "deposit": 50000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dM-z-jc2BaDCQji8m8mIU7Ta/Photo_h180_w240/85804461_1_PropertyImage122-27497309597146_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.6915128,
+        18.5725729
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 25000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e01f",
+    "title": "2 BHK Flat   for Rent in Vilas Javdekar Yashone Hinjewadi Phase 1, Hinjewadi, Pune",
+    "rent": 42000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-940-Sq-ft-Multistorey-Apartment-FOR-Rent-Hinjewadi-in-Pune&id=4d423739393135353239",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Hinjewadi",
+    "locality_id": "listing-pune-hinjewadi-d5300a",
+    "area_sqft": null,
+    "deposit": 84000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVK48w9dMPrvqqA_Aufin20PMWgeq-i/Photo_h180_w240/79915529_7_IMG20250603WA0001_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7205188,
+        18.5775846
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 42000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e021",
+    "title": "2 BHK Flat   for Rent in Kolte Patil R10 at Life Republic, Hinjewadi, Pune",
+    "rent": 22000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-850-Sq-ft-Multistorey-Apartment-FOR-Rent-Hinjewadi-in-Pune&id=4d423835363837383139",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Hinjewadi",
+    "locality_id": "listing-pune-hinjewadi-d5300a",
+    "area_sqft": 650,
+    "deposit": 44000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds7L9fW8LeHz5PsBdljtELWY/Photo_h180_w240/85687819_10_PropertyImage375-91670241929944_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.8786239,
+        18.5246091
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 22000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e023",
+    "title": "3 BHK Flat   for Rent in R7 LIFE REPUBLIC, Hinjewadi, Pune",
+    "rent": 29000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1200-Sq-ft-Multistorey-Apartment-FOR-Rent-Hinjewadi-in-Pune&id=4d423833373135323039",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Hinjewadi",
+    "locality_id": "listing-pune-hinjewadi-d5300a",
+    "area_sqft": null,
+    "deposit": 58000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99A9dcpX6kwYURgK32ejB1QEvBRq/Photo_h180_w240/83715209_5_PropertyImage263-6340367942638_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7164897999999,
+        18.6234379
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 29000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e025",
+    "title": "3 BHK Flat   for Rent in Peninsula Ashok Meadows, Hinjewadi, Pune",
+    "rent": 40000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1586-Sq-ft-Multistorey-Apartment-FOR-Rent-Hinjewadi-in-Pune&id=4d423835363835393635",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Hinjewadi",
+    "locality_id": "listing-pune-hinjewadi-d5300a",
+    "area_sqft": 1220,
+    "deposit": 80000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds7L9fW8LeHz5PsBdljtELWY/Photo_h180_w240/85685965_2_PropertyImage119-38480026816967_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7260874999999,
+        18.583542
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 40000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e027",
+    "title": "3 BHK Flat   for Rent in Pride Park Titan, Hinjewadi, Pune",
+    "rent": 36000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1378-Sq-ft-Multistorey-Apartment-FOR-Rent-Marunji-in-Pune&id=4d423836303835363639",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Marunji",
+    "locality_id": "listing-pune-marunji-ccff20",
+    "area_sqft": 1060,
+    "deposit": 72000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2022/08/24/Project-Photo-19-Park-Titan-Pune-5325359_600_800_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7247111,
+        18.6006161
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 36000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e029",
+    "title": "2 BHK Flat   for Rent in Paranjape Blue Ridge, Hinjewadi, Pune",
+    "rent": 40000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1027-Sq-ft-Multistorey-Apartment-FOR-Rent-Hinjewadi-Phase-1-in-Pune&id=4d423835333831393731",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Hinjewadi Phase 1",
+    "locality_id": "listing-pune-hinjewadi-phase-1-20d132",
+    "area_sqft": 926,
+    "deposit": 80000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dMlZ2NghAgMmUJKlKTnVXS82/Photo_h180_w240/85381971_1_6aa8aad845f474681c1afc003413323_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.741096,
+        18.575073
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 40000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e02b",
+    "title": "Home",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Magarpatta&cityName=Pune&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Magarpatta",
+    "locality_id": "listing-pune-magarpatta-e2e532",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e02d",
+    "title": "Flats for Rent in Pune",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Magarpatta&cityName=Pune&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Magarpatta",
+    "locality_id": "listing-pune-magarpatta-e2e532",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e02f",
+    "title": "Flats for Rent in Pimpri Chinchwad",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Wakad&cityName=Pune&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Wakad",
+    "locality_id": "listing-pune-wakad-8e0d82",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e031",
+    "title": "Flats for Rent in Hinjewadi",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Hinjewadi&cityName=Pune&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Hinjewadi",
+    "locality_id": "listing-pune-hinjewadi-d5300a",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e033",
+    "title": "1 BHK Flats for Rent in Hinjewadi",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Hinjewadi&cityName=Pune&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Hinjewadi",
+    "locality_id": "listing-pune-hinjewadi-d5300a",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e035",
+    "title": "3 BHK Flat   for Rent in Kalpataru Exquisite, Wakad, Pune",
+    "rent": 65000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1680-Sq-ft-Multistorey-Apartment-FOR-Rent-Wakad-in-Pune&id=4d423836313737323835",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Wakad",
+    "locality_id": "listing-pune-wakad-8e0d82",
+    "area_sqft": 1250,
+    "deposit": 130000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/2026/Aug/26/Photo_h300_w450/86177285_1_hatsAppImage20260617at10.35.41AM_300_450.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.770487,
+        18.5928631
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 65000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e037",
+    "title": "2 BHK Flat   for Rent in Vilas Javdekar Yashwin Encore, Wakad, Pune",
+    "rent": 31000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-960-Sq-ft-Multistorey-Apartment-FOR-Rent-Wakad-in-Pune&id=4d423831353133393833",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Wakad",
+    "locality_id": "listing-pune-wakad-8e0d82",
+    "area_sqft": 750,
+    "deposit": 62000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2025/10/28/Yashwin-Encore-5118981_Play_Area_for_Kids_d4550146-f5a_310_462.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7526647,
+        18.5976186
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 31000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e039",
+    "title": "3 BHK Flat   for Rent in Vilas Javdekar Yashwin Nuovo Centro, Wakad, Pune",
+    "rent": 50000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1300-Sq-ft-Multistorey-Apartment-FOR-Rent-Wakad-in-Pune&id=4d423835353437353837",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Wakad",
+    "locality_id": "listing-pune-wakad-8e0d82",
+    "area_sqft": 1082,
+    "deposit": 100000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dc-WUGQDRWhjmMYadCFP0efz/Photo_h180_w240/85547587_1_hatsAppImage20260715at10.19.23AM_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7579709,
+        18.6003222
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 50000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e03b",
+    "title": "2 BHK Flat   for Rent in Wakad, Pune",
+    "rent": 33000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1050-Sq-ft-Multistorey-Apartment-FOR-Rent-Shankar-Kalat-Nagar-in-Pune&id=4d423835393937383933",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Wakad",
+    "locality_id": "listing-pune-wakad-8e0d82",
+    "area_sqft": 750,
+    "deposit": 66000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dcl8cosUQsuHimwDxtES33wf/Photo_h180_w240/85997893_7_PropertyImage106-63858499284673_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.80311584472656,
+        18.546955108642578
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 33000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e03d",
+    "title": "2 BHK Flat   for Rent in GK Wonders Armada, Wakad, Pune",
+    "rent": 28000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1020-Sq-ft-Multistorey-Apartment-FOR-Rent-Wakad-in-Pune&id=4d423836313737313531",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Wakad",
+    "locality_id": "listing-pune-wakad-8e0d82",
+    "area_sqft": 799,
+    "deposit": 56000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2025/04/18/Project-Photo-27-Armada-Pune-5084994_691_921_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7316582,
+        18.5849186
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 28000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e03f",
+    "title": "3 BHK Flat   for Rent in Goyal My Homes Wakad, Wakad, Pune",
+    "rent": 40000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1011-Sq-ft-Multistorey-Apartment-FOR-Rent-Wakad-in-Pune&id=4d423835333838373635",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Wakad",
+    "locality_id": "listing-pune-wakad-8e0d82",
+    "area_sqft": 778,
+    "deposit": 80000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dM6lX3LrUDulgQ5ASuJH93SV/Photo_h180_w240/85388765_1_PropertyImage702-380207611891_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7641245,
+        18.6010921
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 40000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e041",
+    "title": "3 BHK Flat   for Rent in Wakad, Pune",
+    "rent": 45000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1400-Sq-ft-Multistorey-Apartment-FOR-Rent-Shankar-Kalat-Nagar-in-Pune&id=4d423835393034353131",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Wakad",
+    "locality_id": "listing-pune-wakad-8e0d82",
+    "area_sqft": 1150,
+    "deposit": 90000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dcNWFIuOSEE0hZ4jgx9C3gTa/Photo_h180_w240/85904511_6_PropertyImage708-632626751109_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.76453399658203,
+        18.601255416870117
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 45000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e043",
+    "title": "3 BHK Flat   for Rent in Paranjape Broadway, Wakad, Pune",
+    "rent": 48000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1650-Sq-ft-Multistorey-Apartment-FOR-Rent-Wakad-in-Pune&id=4d423835393034303235",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Wakad",
+    "locality_id": "listing-pune-wakad-8e0d82",
+    "area_sqft": 1250,
+    "deposit": 96000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2025/04/09/Project-Photo-16-Paranjape-Broadway-Pune-5115705_963_1280_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7644918,
+        18.6018078
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 48000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e045",
+    "title": "2 BHK Flat   for Rent in Wakad, Pune",
+    "rent": 33000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1014-Sq-ft-Multistorey-Apartment-FOR-Rent-Shankar-Kalat-Nagar-in-Pune&id=4d423835353435303537",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Wakad",
+    "locality_id": "listing-pune-wakad-8e0d82",
+    "area_sqft": 710,
+    "deposit": 66000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dsvMOeVv1oEgiwYXJQpX4bpV/Photo_h180_w240/85545057_2_PropertyImage596-4781591282084_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.76737976074219,
+        18.598529815673828
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 33000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e047",
+    "title": "2 BHK Flat   for Rent in Wakad, Pune",
+    "rent": 33000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-876-Sq-ft-Multistorey-Apartment-FOR-Rent-Wakad-in-Pune&id=4d423834383639363439",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Wakad",
+    "locality_id": "listing-pune-wakad-8e0d82",
+    "area_sqft": null,
+    "deposit": 66000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dsMvPEPkQKYpH51gVdRpaG5K/Photo_h180_w240/5eb54f83-5080-453a-a284-91535cbd92a7_84869649_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7645369,
+        18.601256
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 33000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e049",
+    "title": "3 BHK Flat   for Rent in Kamalaraj Athens , Wakad, Pune",
+    "rent": 45000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1500-Sq-ft-Multistorey-Apartment-FOR-Rent-Wakad-in-Pune&id=4d423836313735343235",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Wakad",
+    "locality_id": "listing-pune-wakad-8e0d82",
+    "area_sqft": 1200,
+    "deposit": 90000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dswwvk-lhLmjWpryRtHFS-H2/Photo_h180_w240/6812_1787742852141.72311_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7703566,
+        18.5982588
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 45000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e04b",
+    "title": "1 BHK Flat   for Rent in Saheel ITrend Life, Wakad, Pune",
+    "rent": 20500,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-700-Sq-ft-Multistorey-Apartment-FOR-Rent-Wakad-in-Pune&id=4d423836313735333633",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Wakad",
+    "locality_id": "listing-pune-wakad-8e0d82",
+    "area_sqft": 500,
+    "deposit": 41000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2024/03/22/Project-Photo-23-ITrend-Life-Pune-5124541_960_1280_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7657303,
+        18.6005147
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 20500
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e04d",
+    "title": "1 BHK Flat   for Rent in Goyal My Homes Wakad, Wakad, Pune",
+    "rent": 24000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-634-Sq-ft-Multistorey-Apartment-FOR-Rent-Bhujbal-Vasti-in-Pune&id=4d423835363930343039",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Bhujbal Vasti",
+    "locality_id": "listing-pune-bhujbal-vasti-ae456c",
+    "area_sqft": 450,
+    "deposit": 48000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds7L9fW8LeHz5PsBdljtELWY/Photo_h180_w240/85690409_1_hatsAppImage20260723at11.13.04AM1_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7641245,
+        18.6010921
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 24000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e04f",
+    "title": "2 BHK Flat   for Rent in Nandan Inspera, Wakad, Pune",
+    "rent": 29000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1155-Sq-ft-Multistorey-Apartment-FOR-Rent-Shankar-Kalat-Nagar-in-Pune&id=4d423834313935393039",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Wakad",
+    "locality_id": "listing-pune-wakad-8e0d82",
+    "area_sqft": 856,
+    "deposit": 58000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB5tA9dchl0yxbJLPybXQEja-5c-WY/Photo_h180_w240/84195909_1_PropertyImage61-75315080644906_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.766914,
+        18.598216
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 29000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e051",
+    "title": "3 BHK Flat   for Rent in Waghere Kalpataru Harmony, Wakad, Pune",
+    "rent": 40000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1500-Sq-ft-Multistorey-Apartment-FOR-Rent-Wakad-in-Pune&id=4d423834353531343431",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Wakad",
+    "locality_id": "listing-pune-wakad-8e0d82",
+    "area_sqft": 1200,
+    "deposit": 80000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dcpQS3hGddjQOjeuU18hAqMl/Photo_h180_w240/84551441_5_PropertyImage184-7529181612133_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7686785,
+        18.5922406
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 40000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e053",
+    "title": "2 BHK Flat   for Rent in Vilas Javdekar YashOne Wakad Central, Wakad, Pune",
+    "rent": 37000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1050-Sq-ft-Multistorey-Apartment-FOR-Rent-Wakad-in-Pune&id=4d423836313735393133",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Wakad",
+    "locality_id": "listing-pune-wakad-8e0d82",
+    "area_sqft": 801,
+    "deposit": 74000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dswwvk-lhLmjWpryRtHFS-H2/Photo_h180_w240/86175913_5_hatsAppImage20260824at12.28.21PM_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7365868999999,
+        18.6197913
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 37000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e055",
+    "title": "2 BHK Flat   for Rent in VTP Hilife, Wakad, Pune",
+    "rent": 32000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1010-Sq-ft-Multistorey-Apartment-FOR-Rent-Wakad-in-Pune&id=4d423836313736373931",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Wakad",
+    "locality_id": "listing-pune-wakad-8e0d82",
+    "area_sqft": 800,
+    "deposit": 64000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dswwvk-lhLmjWpryRtHFS-H2/Photo_h180_w240/86176791_9_hatsAppImage20260821at5.32.00PM1_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.766408,
+        18.612558
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 32000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e057",
+    "title": "1 BHK Flat   for Rent in Wakad, Pune",
+    "rent": 13000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-550-Sq-ft-Multistorey-Apartment-FOR-Rent-Wakad-in-Pune&id=4d423833313937343135",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Wakad",
+    "locality_id": "listing-pune-wakad-8e0d82",
+    "area_sqft": null,
+    "deposit": 26000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK98w9d8uV0a2fJGz_jGQJkY8hU0Kr/Photo_h180_w240/83197415_2_IMG20180904191244_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.76453399658203,
+        18.601255416870117
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 13000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e059",
+    "title": "2 BHK Flat   for Rent in Ruby Park, Wakad, Pune",
+    "rent": 21000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1140-Sq-ft-Multistorey-Apartment-FOR-Rent-Wakad-in-Pune&id=4d423538363735363733",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Wakad",
+    "locality_id": "listing-pune-wakad-8e0d82",
+    "area_sqft": null,
+    "deposit": 42000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAmjVE88E9dsy3OwQ4zGgNTpX9E5K2-m4F/Photo_h180_w240/58675673_2_IMG-20211218-WA0073_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7794033,
+        18.5953429
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 21000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e05b",
+    "title": "1 BHK Flat   for Rent in Samruddhi Festive Residency, Wakad, Pune",
+    "rent": 20000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-900-Sq-ft-Multistorey-Apartment-FOR-Rent-Wakad-in-Pune&id=4d423832353038313439",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Wakad",
+    "locality_id": "listing-pune-wakad-8e0d82",
+    "area_sqft": 550,
+    "deposit": 40000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2024/12/18/Project-Photo-12-Festive-Residency-Pune-5116039_397_636_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7646619,
+        18.6045063
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 20000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e05d",
+    "title": "3 BHK Flat   for Rent in Pristine Prolife, Wakad, Pune",
+    "rent": 42000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1550-Sq-ft-Multistorey-Apartment-FOR-Rent-Wakad-in-Pune&id=4d423835393034323135",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Wakad",
+    "locality_id": "listing-pune-wakad-8e0d82",
+    "area_sqft": 1250,
+    "deposit": 84000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dM27Tp2xUt0YFF1J2vUy-VMb/Photo_h180_w240/85904215_1_hatsAppImage20260702at4.18.41PM1_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.757554,
+        18.598592
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 42000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e05f",
+    "title": "2 BHK Flat   for Rent in Paranjape Broadway, Wakad, Pune",
+    "rent": 34000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1250-Sq-ft-Multistorey-Apartment-FOR-Rent-Wakad-in-Pune&id=4d423834353530323333",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Wakad",
+    "locality_id": "listing-pune-wakad-8e0d82",
+    "area_sqft": 1000,
+    "deposit": 68000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dM16mZEnmQ142VHrrtnm2xgA/Photo_h180_w240/84550233_1_hatsAppImage20260507at1.20.47PM1_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7644918,
+        18.6018078
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 34000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e061",
+    "title": "2 BHK  House for Rent in Wakad Pune",
+    "rent": 26000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-875-Sq-ft-Residential-House-FOR-Rent-Wakad-in-Pune&id=4d423636303031383839",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Wakad",
+    "locality_id": "listing-pune-wakad-8e0d82",
+    "area_sqft": null,
+    "deposit": 52000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7645369,
+        18.601256
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 26000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e063",
+    "title": "2 BHK Flat   for Rent in Aswani Galaxy, Wakad, Pune",
+    "rent": 28000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Multistorey-Apartment-FOR-Rent-Wakad-in-Pune&id=4d423835393033343037",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Wakad",
+    "locality_id": "listing-pune-wakad-8e0d82",
+    "area_sqft": 720,
+    "deposit": 56000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dct0xiGTFbZd3An2h-2odZve/Photo_h180_w240/85903407_4_PropertyImage922-0095476073404_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.764235,
+        18.602407
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 28000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e065",
+    "title": "2 BHK Flat   for Rent in Saheel ITrend Life, Wakad, Pune",
+    "rent": 31000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-850-Sq-ft-Multistorey-Apartment-FOR-Rent-Wakad-in-Pune&id=4d423835363837333539",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Wakad",
+    "locality_id": "listing-pune-wakad-8e0d82",
+    "area_sqft": 664,
+    "deposit": 62000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds7L9fW8LeHz5PsBdljtELWY/Photo_h180_w240/85687359_1_PropertyImage453-1743703028109_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7657303,
+        18.6005147
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 31000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e067",
+    "title": "2 BHK Flat   for Rent in Lifestyle Royal Oak, Wakad, Pune",
+    "rent": 30000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-850-Sq-ft-Multistorey-Apartment-FOR-Rent-Wakad-in-Pune&id=4d423835333832323131",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Wakad",
+    "locality_id": "listing-pune-wakad-8e0d82",
+    "area_sqft": 700,
+    "deposit": 60000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2025/10/08/Project-Photo-55-Royal-Oak-Pune-5084882_1505_2000_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.8786239,
+        18.5246091
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 30000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e069",
+    "title": "2 BHK Flat   for Rent in Kishor Shubhankar Heights, Wakad, Pune",
+    "rent": 32000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-900-Sq-ft-Multistorey-Apartment-FOR-Rent-Wakad-in-Pune&id=4d423835363837313533",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Wakad",
+    "locality_id": "listing-pune-wakad-8e0d82",
+    "area_sqft": 750,
+    "deposit": 64000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds7L9fW8LeHz5PsBdljtELWY/Photo_h180_w240/85687153_7_PropertyImage688-7852192058391_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7654367,
+        18.5967274
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 32000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e06b",
+    "title": "2 BHK Flat   for Rent in Mont Vert Seville, Wakad, Pune",
+    "rent": 32000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-949-Sq-ft-Multistorey-Apartment-FOR-Rent-Wakad-in-Pune&id=4d423833313737343235",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Wakad",
+    "locality_id": "listing-pune-wakad-8e0d82",
+    "area_sqft": null,
+    "deposit": 64000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVG88A9dcxkKc0vCr4cWA03eRNuwG6M/Photo_h180_w240/83177425_8_1771217420142-6677_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7672664,
+        18.6027027
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 32000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e06d",
+    "title": "2 BHK Flat   for Rent in Vilas Javdekar Yashwin Encore, Wakad, Pune",
+    "rent": 31000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-984-Sq-ft-Multistorey-Apartment-FOR-Rent-Wakad-in-Pune&id=4d423836303834383333",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Wakad",
+    "locality_id": "listing-pune-wakad-8e0d82",
+    "area_sqft": 740,
+    "deposit": 62000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dsopY7AsfT_NoDTthZQKtMm1/Photo_h180_w240/86084833_5_PropertyImage367-22154268520535_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7526647,
+        18.5976186
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 31000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e06f",
+    "title": "2 BHK Flat   for Rent in Whistling Palms, Wakad, Pune",
+    "rent": 31000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1150-Sq-ft-Multistorey-Apartment-FOR-Rent-Wakad-in-Pune&id=4d423835333830343639",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Wakad",
+    "locality_id": "listing-pune-wakad-8e0d82",
+    "area_sqft": 750,
+    "deposit": 62000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dMlZ2NghAgMmUJKlKTnVXS82/Photo_h180_w240/85380469_5_PropertyImage588-0253449479095_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7748513,
+        18.5901897
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 31000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e071",
+    "title": "Flats for Rent in Wakad",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Wakad&cityName=Pune&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Wakad",
+    "locality_id": "listing-pune-wakad-8e0d82",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e073",
+    "title": "1 BHK Flats for Rent in Wakad",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Wakad&cityName=Pune&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Wakad",
+    "locality_id": "listing-pune-wakad-8e0d82",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e075",
+    "title": "2 BHK Flat   for Rent in Trimurti Orean, Baner, Pune",
+    "rent": 32000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-950-Sq-ft-Multistorey-Apartment-FOR-Rent-Baner-in-Pune&id=4d423734353836303139",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Baner",
+    "locality_id": "listing-pune-baner-230165",
+    "area_sqft": null,
+    "deposit": 64000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/2026/Aug/24/Photo_h300_w450/74586019_7_PropertyImage280-12044423915205_300_450.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.78381,
+        18.557025
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 32000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e077",
+    "title": "2 BHK Flat   for Rent in Baner, Pune",
+    "rent": 40000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Multistorey-Apartment-FOR-Rent-Baner-in-Pune&id=4d423835333839303931",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Baner",
+    "locality_id": "listing-pune-baner-230165",
+    "area_sqft": 780,
+    "deposit": 80000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/2026/Jul/04/Photo_h300_w450/85389091_7_1783147916371-2657_300_450.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7838134765625,
+        18.55997085571289
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 40000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e079",
+    "title": "2 BHK Flat   for Rent in Deshpande Giri Sparsh, Baner, Pune",
+    "rent": 50000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1220-Sq-ft-Multistorey-Apartment-FOR-Rent-Baner-in-Pune&id=4d423835383038363435",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Baner",
+    "locality_id": "listing-pune-baner-230165",
+    "area_sqft": 935,
+    "deposit": 100000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMuik2I4q1t27vNWGbD9BntY/Photo_h180_w240/85808645_3_PropertyImage898-8325923285739_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.8786239,
+        18.5246091
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 50000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e07b",
+    "title": "3 BHK  House for Rent in Sai Residency, Baner Pune",
+    "rent": 50000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1500-Sq-ft-Residential-House-FOR-Rent-Baner-in-Pune&id=4d423835333837333733",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Baner",
+    "locality_id": "listing-pune-baner-230165",
+    "area_sqft": 1200,
+    "deposit": 100000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/Project-Photo-9-Sai-Residency-Pune-5005243_1296_972_310_462.JPEG"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.93856335,
+        18.55024856
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 50000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e07d",
+    "title": "3 BHK Flat   for Rent in Paranjape Yuthika, Baner, Pune",
+    "rent": 60000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2400-Sq-ft-Multistorey-Apartment-FOR-Rent-Baner-in-Pune&id=4d423835393033313233",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Baner",
+    "locality_id": "listing-pune-baner-230165",
+    "area_sqft": 1800,
+    "deposit": 120000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dM27Tp2xUt0YFF1J2vUy-VMb/Photo_h180_w240/85903123_13_hatsAppImage20260807at17.41.521_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7705541,
+        18.5617877
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 60000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e07f",
+    "title": "3 BHK Flat   for Rent in ABIL Imperial Atria, Baner, Pune",
+    "rent": 65000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1770-Sq-ft-Multistorey-Apartment-FOR-Rent-Baner-in-Pune&id=4d423835363932323235",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Baner",
+    "locality_id": "listing-pune-baner-230165",
+    "area_sqft": 1500,
+    "deposit": 130000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds7L9fW8LeHz5PsBdljtELWY/Photo_h180_w240/85692225_18_PropertyImage743-0471115725926_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7732582,
+        18.5554481
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 65000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e081",
+    "title": "1 BHK Flat   for Rent in Puraniks Aldea, Baner, Pune",
+    "rent": 29000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-640-Sq-ft-Multistorey-Apartment-FOR-Rent-Baner-in-Pune&id=4d423835353437343035",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Baner",
+    "locality_id": "listing-pune-baner-230165",
+    "area_sqft": 500,
+    "deposit": 58000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dc-WUGQDRWhjmMYadCFP0efz/Photo_h180_w240/85547405_2_MG20250211WA0003_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7618968,
+        18.5680077
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 29000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e083",
+    "title": "2 BHK Flat   for Rent in Pride Park Xpress, Baner, Pune",
+    "rent": 34500,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1180-Sq-ft-Multistorey-Apartment-FOR-Rent-Baner-in-Pune&id=4d423835353437323731",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Baner",
+    "locality_id": "listing-pune-baner-230165",
+    "area_sqft": 874,
+    "deposit": 69000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMxeFMjy-WP1P2-zemtvrCD7/Photo_h180_w240/85547271_7_PropertyImage639-2379819123472_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7768354999999,
+        18.5721708
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 34500
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e085",
+    "title": "2 BHK Flat   for Rent in Nimani Alive Skypark, Baner, Pune",
+    "rent": 40000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Multistorey-Apartment-FOR-Rent-Balewadi-Phata-in-Pune&id=4d423835353437323133",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Balewadi Phata",
+    "locality_id": "listing-pune-balewadi-phata-95103e",
+    "area_sqft": 928,
+    "deposit": 80000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dc-WUGQDRWhjmMYadCFP0efz/Photo_h180_w240/85547213_3_MG20231206WA0028_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7810169999999,
+        18.5655695
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 40000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e087",
+    "title": "3 BHK Flat   for Rent in Paranjape Yuthika, Baner, Pune",
+    "rent": 60000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2350-Sq-ft-Multistorey-Apartment-FOR-Rent-Baner-in-Pune&id=4d423835393033343331",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Baner",
+    "locality_id": "listing-pune-baner-230165",
+    "area_sqft": 1800,
+    "deposit": 120000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dM27Tp2xUt0YFF1J2vUy-VMb/Photo_h180_w240/85903431_16_hatsAppImage20260807at17.41.50_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7705541,
+        18.5617877
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 60000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e089",
+    "title": "2 BHK Flat   for Rent in Regency Orion, Baner, Pune",
+    "rent": 42000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1155-Sq-ft-Multistorey-Apartment-FOR-Rent-Baner-in-Pune&id=4d423835383035353539",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Baner",
+    "locality_id": "listing-pune-baner-230165",
+    "area_sqft": 900,
+    "deposit": 84000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMuik2I4q1t27vNWGbD9BntY/Photo_h180_w240/85805559_3_MG20210803124817_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.76898,
+        18.55165
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 42000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e08b",
+    "title": "2 BHK Flat   for Rent in VTP Sierra, Baner, Pune",
+    "rent": 31000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Multistorey-Apartment-FOR-Rent-Baner-in-Pune&id=4d423835393031333039",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Baner",
+    "locality_id": "listing-pune-baner-230165",
+    "area_sqft": 700,
+    "deposit": 62000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dct0xiGTFbZd3An2h-2odZve/Photo_h180_w240/85901309_5_PropertyImage794-9348942734068_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7607704,
+        18.5541229
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 31000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e08d",
+    "title": "3 BHK Flat   for Rent in Nandan Prospera Gold, Baner, Pune",
+    "rent": 110000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2250-Sq-ft-Multistorey-Apartment-FOR-Rent-Baner-in-Pune&id=4d423835363836393531",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Baner",
+    "locality_id": "listing-pune-baner-230165",
+    "area_sqft": 1850,
+    "deposit": 220000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds7L9fW8LeHz5PsBdljtELWY/Photo_h180_w240/85686951_13_PropertyImage419-5543204394092_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7706304,
+        18.5701288
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 110000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e08f",
+    "title": "2 BHK Flat   for Rent in Crest Avenue, Baner, Pune",
+    "rent": 40000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Multistorey-Apartment-FOR-Rent-Baner-in-Pune&id=4d423835383035373639",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Baner",
+    "locality_id": "listing-pune-baner-230165",
+    "area_sqft": 950,
+    "deposit": 80000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMuik2I4q1t27vNWGbD9BntY/Photo_h180_w240/85805769_3_6735883O1501789381Copy_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7689146,
+        18.5512594
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 40000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e091",
+    "title": "3 BHK Flat   for Rent in Supreme Estia, Baner, Pune",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1620-Sq-ft-Multistorey-Apartment-FOR-Rent-Baner-in-Pune&id=4d423834313831353933",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Baner",
+    "locality_id": "listing-pune-baner-230165",
+    "area_sqft": 1070,
+    "deposit": 36000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2026/04/01/Project-Photo-171-Supreme-Estia-Pune-5147389_960_1280_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7802452,
+        18.5560688
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e093",
+    "title": "3 BHK Flat   for Rent in Pride Purple Park Xpress II, Baner, Pune",
+    "rent": 48000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1585-Sq-ft-Multistorey-Apartment-FOR-Rent-Dasar-in-Pune&id=4d423635383933383731",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Dasar",
+    "locality_id": "listing-pune-dasar-149bca",
+    "area_sqft": 1200,
+    "deposit": 96000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnzVK98w9dM1WlmOrImdGxgT6o0upCoa5/Photo_h180_w240/65893871_10_PropertyImage592-9794316727667_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7768354999999,
+        18.5721708
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 48000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e095",
+    "title": "3 BHK Flat   for Rent in Nirmiti Tivoli Apartments, Baner, Pune",
+    "rent": 52000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1850-Sq-ft-Multistorey-Apartment-FOR-Rent-Baner-in-Pune&id=4d423836313733383835",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Baner",
+    "locality_id": "listing-pune-baner-230165",
+    "area_sqft": null,
+    "deposit": 104000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dswwvk-lhLmjWpryRtHFS-H2/Photo_h180_w240/86173885_11_PropertyImage531-6927093513689_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7796254,
+        18.5590152
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 52000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e097",
+    "title": "2 BHK Flat   for Rent in Whispering Winds, Baner, Pune",
+    "rent": 40000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-891-Sq-ft-Multistorey-Apartment-FOR-Rent-Baner-in-Pune&id=4d423835383035393633",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Baner",
+    "locality_id": "listing-pune-baner-230165",
+    "area_sqft": null,
+    "deposit": 80000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMhPfZ38V5hBk6RZ-BIa-e95/Photo_h180_w240/85805963_3_PropertyImage60-43223146335652_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7963727,
+        18.5614974
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 40000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e099",
+    "title": "2 BHK Flat   for Rent in VTP Sierra, Baner, Pune",
+    "rent": 31000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Multistorey-Apartment-FOR-Rent-Baner-in-Pune&id=4d423836303835353335",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Baner",
+    "locality_id": "listing-pune-baner-230165",
+    "area_sqft": 700,
+    "deposit": 62000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dsopY7AsfT_NoDTthZQKtMm1/Photo_h180_w240/86085535_4_PropertyImage723-6273345506354_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7607704,
+        18.5541229
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 31000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e09b",
+    "title": "2 BHK Flat   for Rent in Paranjape Yuthika, Baner, Pune",
+    "rent": 39000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Multistorey-Apartment-FOR-Rent-Baner-in-Pune&id=4d423835383035323931",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Baner",
+    "locality_id": "listing-pune-baner-230165",
+    "area_sqft": 950,
+    "deposit": 78000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMuik2I4q1t27vNWGbD9BntY/Photo_h180_w240/85805291_7_MG20211211144720_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7705541,
+        18.5617877
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 39000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e09d",
+    "title": "2 BHK Flat   for Rent in F5 Mount Unique, Baner, Pune",
+    "rent": 35000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Multistorey-Apartment-FOR-Rent-Baner-in-Pune&id=4d423835313735323831",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Baner",
+    "locality_id": "listing-pune-baner-230165",
+    "area_sqft": 900,
+    "deposit": 70000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK48w9dcNuvObK4AFLLKafWE0RIuQT/Photo_h180_w240/85175281_1_MG20230312WA0029_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.76789,
+        18.548779
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 35000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e09f",
+    "title": "3 BHK Flat   for Rent in Kolte Patil 24k Sereno, Baner, Pune",
+    "rent": 80000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1500-Sq-ft-Multistorey-Apartment-FOR-Rent-Baner-in-Pune&id=4d423833373139323437",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Baner",
+    "locality_id": "listing-pune-baner-230165",
+    "area_sqft": 1350,
+    "deposit": 160000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99A9dcxON7ORqJ5kJcm8xBHLQzwp/Photo_h180_w240/83719247_13_PropertyImage572-5089436901497_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.780269,
+        18.552999
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 80000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0a1",
+    "title": "3 BHK Flat   for Rent in VTP Sierra, Baner, Pune",
+    "rent": 42000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1350-Sq-ft-Multistorey-Apartment-FOR-Rent-Baner-in-Pune&id=4d423836303835363235",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Baner",
+    "locality_id": "listing-pune-baner-230165",
+    "area_sqft": 1000,
+    "deposit": 84000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dsopY7AsfT_NoDTthZQKtMm1/Photo_h180_w240/86085625_7_PropertyImage693-5416416786693_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7607704,
+        18.5541229
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 42000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0a3",
+    "title": "3 BHK Flat   for Rent in Paranjape Yuthika, Baner, Pune",
+    "rent": 60000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1600-Sq-ft-Multistorey-Apartment-FOR-Rent-Baner-in-Pune&id=4d423832343639303437",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Baner",
+    "locality_id": "listing-pune-baner-230165",
+    "area_sqft": 1300,
+    "deposit": 120000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVE88E9dMwdWmntyMcO5OKmieVseDS8/Photo_h180_w240/82469047_13_MG20210803124647_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7705541,
+        18.5617877
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 60000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0a5",
+    "title": "3 BHK Flat   for Rent in Pride Valencia, Baner, Pune",
+    "rent": 50000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1600-Sq-ft-Multistorey-Apartment-FOR-Rent-Baner-in-Pune&id=4d423835333931353131",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Baner",
+    "locality_id": "listing-pune-baner-230165",
+    "area_sqft": 1300,
+    "deposit": 100000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dM6lX3LrUDulgQ5ASuJH93SV/Photo_h180_w240/85391511_10_1783154095025-19811_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.780992,
+        18.559728
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 50000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0a7",
+    "title": "2 BHK Flat   for Rent in Ganga Acropolis, Baner, Pune",
+    "rent": 37000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Multistorey-Apartment-FOR-Rent-Baner-in-Pune&id=4d423835393938393433",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Baner",
+    "locality_id": "listing-pune-baner-230165",
+    "area_sqft": 804,
+    "deposit": 74000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dcl8cosUQsuHimwDxtES33wf/Photo_h180_w240/85998943_1_PropertyImage113-15380805832376_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7626788,
+        18.5567087
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 37000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0a9",
+    "title": "1 BHK Flat   for Rent in Raman Vara, Baner, Pune",
+    "rent": 25000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-720-Sq-ft-Multistorey-Apartment-FOR-Rent-Baner-in-Pune&id=4d423836313738333035",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Baner",
+    "locality_id": "listing-pune-baner-230165",
+    "area_sqft": 510,
+    "deposit": 50000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dswwvk-lhLmjWpryRtHFS-H2/Photo_h180_w240/86178305_2_PropertyImage843-1476090600094_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7776406,
+        18.5514625
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 25000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0ab",
+    "title": "3 BHK Flat   for Rent in Supreme Amadore, Baner, Pune",
+    "rent": 230000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2050-Sq-ft-Multistorey-Apartment-FOR-Rent-Baner-in-Pune&id=4d423835353530303039",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Baner",
+    "locality_id": "listing-pune-baner-230165",
+    "area_sqft": null,
+    "deposit": 460000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dc-WUGQDRWhjmMYadCFP0efz/Photo_h180_w240/85550009_11_PropertyImage480-00484220970475_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.77438726,
+        18.55650659
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 230000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0ad",
+    "title": "3 BHK Flat   for Rent in Rohan Leher, Baner, Pune",
+    "rent": 49000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1940-Sq-ft-Multistorey-Apartment-FOR-Rent-Baner-in-Pune&id=4d423835333930363139",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Baner",
+    "locality_id": "listing-pune-baner-230165",
+    "area_sqft": 1400,
+    "deposit": 98000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dM6lX3LrUDulgQ5ASuJH93SV/Photo_h180_w240/85390619_6_PropertyImage199-02695190400632_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7838163,
+        18.5599716
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 49000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0af",
+    "title": "2 BHK Flat   for Rent in Rachana Bella Casa II, Baner, Pune",
+    "rent": 33000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-850-Sq-ft-Multistorey-Apartment-FOR-Rent-Baner-in-Pune&id=4d423836303839343831",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Baner",
+    "locality_id": "listing-pune-baner-230165",
+    "area_sqft": 850,
+    "deposit": 66000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dsgh1xqrKkIX9lEYxKiwHi50/Photo_h180_w240/86089481_8_PropertyImage432-53988694781333_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.7869597,
+        18.5615712
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 33000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0b1",
+    "title": "Flats for Rent in Baner",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Baner&cityName=Pune&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Baner",
+    "locality_id": "listing-pune-baner-230165",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0b3",
+    "title": "1 BHK Flats for Rent in Baner",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Baner&cityName=Pune&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Baner",
+    "locality_id": "listing-pune-baner-230165",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0b5",
+    "title": "3 BHK Flat   for Rent in Nyati Elysia, Kharadi, Pune",
+    "rent": 55000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1495-Sq-ft-Multistorey-Apartment-FOR-Rent-Kharadi-in-Pune&id=4d423835393034373231",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Kharadi",
+    "locality_id": "listing-pune-kharadi-c9a1d2",
+    "area_sqft": 1150,
+    "deposit": 110000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dM27Tp2xUt0YFF1J2vUy-VMb/Photo_h180_w240/85904721_7_hatsAppImage20230505at2.23.14PM2_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.936124,
+        18.542737
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 55000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0b7",
+    "title": "3 BHK Flat   for Rent in Kharadi, Pune",
+    "rent": 38000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1520-Sq-ft-Multistorey-Apartment-FOR-Rent-Kharadi-in-Pune&id=4d423835393937383635",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Kharadi",
+    "locality_id": "listing-pune-kharadi-c9a1d2",
+    "area_sqft": 1400,
+    "deposit": 76000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/2026/Aug/13/Photo_h300_w450/85997865_2_PropertyImage555-6128259937636_300_450.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9454065,
+        18.5527185
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 38000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0b9",
+    "title": "2 BHK Flat   for Rent in S G Lake Vishwajeet Residency, Kharadi, Pune",
+    "rent": 31000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1092-Sq-ft-Multistorey-Apartment-FOR-Rent-Kharadi-in-Pune&id=4d423832353039343835",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Kharadi",
+    "locality_id": "listing-pune-kharadi-c9a1d2",
+    "area_sqft": 950,
+    "deposit": 62000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dcpiY2ROQC06Hz8KVsZn0VuR/Photo_h180_w240/82509485_10_PropertyImage607-251280366198_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.94682,
+        18.5655932
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 31000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0bb",
+    "title": "1 BHK Flat   for Rent in Aple Ghar , Kharadi, Pune",
+    "rent": 16500,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-500-Sq-ft-Multistorey-Apartment-FOR-Rent-Tulaja-Bhawani-Nagar-in-Pune&id=4d423830303034353135",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Tulaja Bhawani Nagar",
+    "locality_id": "listing-pune-tulaja-bhawani-nagar-8de9ec",
+    "area_sqft": 500,
+    "deposit": 33000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVK48w9dc8OUBY4seppTdsrJBNq9x-i/Photo_h180_w240/80004515_2_MG20250614171457_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9500101,
+        18.5666469
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 16500
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0bd",
+    "title": "2 BHK Flat   for Rent in Galaxy One, Kharadi, Pune",
+    "rent": 60000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1250-Sq-ft-Multistorey-Apartment-FOR-Rent-Kharadi-in-Pune&id=4d423835333839313039",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Kharadi",
+    "locality_id": "listing-pune-kharadi-c9a1d2",
+    "area_sqft": 950,
+    "deposit": 120000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dM6lX3LrUDulgQ5ASuJH93SV/Photo_h180_w240/85389109_8_hatsAppImage20260701at1.38.20PM1_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.949337,
+        18.54897
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 60000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0bf",
+    "title": "2 BHK Flat   for Rent in Unique Youtopia, Kharadi, Pune",
+    "rent": 41000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-762-Sq-ft-Multistorey-Apartment-FOR-Rent-EON-Free-Zone-in-Pune&id=4d423836313737323837",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "EON Free Zone",
+    "locality_id": "listing-pune-eon-free-zone-d14360",
+    "area_sqft": 750,
+    "deposit": 82000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2022/01/11/Project-Photo-4-Unique-Youtopia-Pune-5325149_600_800_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9368088,
+        18.5376206
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 41000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0c1",
+    "title": "3 BHK Flat   for Rent in Kolte Patil Tuscan Parkland, Kharadi, Pune",
+    "rent": 70000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1500-Sq-ft-Multistorey-Apartment-FOR-Rent-Kharadi-in-Pune&id=4d423738323532313931",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Kharadi",
+    "locality_id": "listing-pune-kharadi-c9a1d2",
+    "area_sqft": 1200,
+    "deposit": 140000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB5tA9dMN8ujopO2qHe05-9qLhVA47/Photo_h180_w240/78252191_5_1775650747744-4692_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9428733,
+        18.555817
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 70000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0c3",
+    "title": "3 BHK Flat   for Rent in Acolade, Kharadi, Pune",
+    "rent": 61000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2200-Sq-ft-Multistorey-Apartment-FOR-Rent-Kharadi-in-Pune&id=4d423835333838383631",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Kharadi",
+    "locality_id": "listing-pune-kharadi-c9a1d2",
+    "area_sqft": 2000,
+    "deposit": 122000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dM6lX3LrUDulgQ5ASuJH93SV/Photo_h180_w240/85388861_5_hatsAppImage20260703at16.41.381_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9348068,
+        18.547179
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 61000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0c5",
+    "title": "2 BHK Flat   for Rent in Unique Youtopia, Kharadi, Pune",
+    "rent": 41000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1100-Sq-ft-Multistorey-Apartment-FOR-Rent-Kharadi-in-Pune&id=4d423835393034353133",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Kharadi",
+    "locality_id": "listing-pune-kharadi-c9a1d2",
+    "area_sqft": 762,
+    "deposit": 82000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dc1tG94a7DAzJqfpRKhnirOd/Photo_h180_w240/85904513_7_PropertyImage696-8994612631622_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9368088,
+        18.5376206
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 41000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0c7",
+    "title": "2 BHK Flat   for Rent in Nyati Elysia, Kharadi, Pune",
+    "rent": 38000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-972-Sq-ft-Multistorey-Apartment-FOR-Rent-Kharadi-in-Pune&id=4d423835393034353031",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Kharadi",
+    "locality_id": "listing-pune-kharadi-c9a1d2",
+    "area_sqft": 720,
+    "deposit": 76000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dM27Tp2xUt0YFF1J2vUy-VMb/Photo_h180_w240/85904501_4_hatsAppImage20230505at2.23.15PM_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.936124,
+        18.542737
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 38000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0c9",
+    "title": "2 BHK Flat   for Rent in Mahalaxmi Zen Elite, Kharadi, Pune",
+    "rent": 45000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-910-Sq-ft-Multistorey-Apartment-FOR-Rent-Kharadi-in-Pune&id=4d423835383038363539",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Kharadi",
+    "locality_id": "listing-pune-kharadi-c9a1d2",
+    "area_sqft": 860,
+    "deposit": 90000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMuik2I4q1t27vNWGbD9BntY/Photo_h180_w240/85808659_3_PropertyImage995-4839107961111_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9524541999999,
+        18.54798
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 45000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0cb",
+    "title": "2 BHK Flat   for Rent in Majestique Marbella, Kharadi, Pune",
+    "rent": 34000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1180-Sq-ft-Multistorey-Apartment-FOR-Rent-Kharadi-in-Pune&id=4d423831353036303335",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Kharadi",
+    "locality_id": "listing-pune-kharadi-c9a1d2",
+    "area_sqft": null,
+    "deposit": 68000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVT89I9dsnf1aGhMUqaqVSglOkAU33r/Photo_h180_w240/81506035_3_PropertyImage165-16863519117453_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9414051,
+        18.5590888
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 34000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0cd",
+    "title": "1 BHK Flat   for Rent in Altius Drome, Kharadi, Pune",
+    "rent": 25000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-750-Sq-ft-Multistorey-Apartment-FOR-Rent-Kharadi-in-Pune&id=4d423433343532323937",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Kharadi",
+    "locality_id": "listing-pune-kharadi-c9a1d2",
+    "area_sqft": 600,
+    "deposit": 50000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnzVT89I9dcN8fp9nZqoBgknn2nPz30JI/Photo_h180_w240/43452297_4_HOTO202409191233001_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9298740999999,
+        18.5488586
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 25000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0cf",
+    "title": "2 BHK Flat   for Rent in Kohinoor Zen Estate, Kharadi, Pune",
+    "rent": 48000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-962-Sq-ft-Multistorey-Apartment-FOR-Rent-Kharadi-in-Pune&id=4d423835383037343533",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Kharadi",
+    "locality_id": "listing-pune-kharadi-c9a1d2",
+    "area_sqft": 720,
+    "deposit": 96000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2019/10/01/Project-Photo-10-ZEN-Estate-Pune-5126643_711_1280_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9385509,
+        18.5379808
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 48000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0d1",
+    "title": "2 BHK Flat   for Rent in Duville Riverdale Heights, Kharadi, Pune",
+    "rent": 38000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-990-Sq-ft-Multistorey-Apartment-FOR-Rent-Kharadi-in-Pune&id=4d423835393033313033",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Kharadi",
+    "locality_id": "listing-pune-kharadi-c9a1d2",
+    "area_sqft": 740,
+    "deposit": 76000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dM27Tp2xUt0YFF1J2vUy-VMb/Photo_h180_w240/85903103_2_hatsAppImage20240616at4.23.55PM_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.93737,
+        18.55403
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 38000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0d3",
+    "title": "2 BHK Flat   for Rent in Nirman Altius, Kharadi, Pune",
+    "rent": 45000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-800-Sq-ft-Multistorey-Apartment-FOR-Rent-Kharadi-in-Pune&id=4d423836303837323431",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Kharadi",
+    "locality_id": "listing-pune-kharadi-c9a1d2",
+    "area_sqft": 800,
+    "deposit": 90000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dsopY7AsfT_NoDTthZQKtMm1/Photo_h180_w240/86087241_5_PropertyImage179-21575368830622_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.938691,
+        18.554005
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 45000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0d5",
+    "title": "3 BHK Flat   for Rent in Pristine Allure, Kharadi, Pune",
+    "rent": 52000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1016-Sq-ft-Multistorey-Apartment-FOR-Rent-Kharadi-in-Pune&id=4d423834313933333133",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Kharadi",
+    "locality_id": "listing-pune-kharadi-c9a1d2",
+    "area_sqft": 960,
+    "deposit": 104000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK48w9dM-LUlpyreC96wAAQJvbr1QT/Photo_h180_w240/84193313_6_PropertyImage268-06944777725005_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9333343,
+        18.5389766
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 52000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0d7",
+    "title": "2 BHK Flat   for Rent in Kohinoor Zen Estate, Kharadi, Pune",
+    "rent": 48000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1050-Sq-ft-Multistorey-Apartment-FOR-Rent-Kharadi-in-Pune&id=4d423835363839323733",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Kharadi",
+    "locality_id": "listing-pune-kharadi-c9a1d2",
+    "area_sqft": 752,
+    "deposit": 96000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds7L9fW8LeHz5PsBdljtELWY/Photo_h180_w240/85689273_1_hatsAppImage20260723at11.39.19PM1_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9385509,
+        18.5379808
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 48000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0d9",
+    "title": "2 BHK Flat   for Rent in Duville Riverdale Heights, Kharadi, Pune",
+    "rent": 38000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1080-Sq-ft-Multistorey-Apartment-FOR-Rent-Kharadi-in-Pune&id=4d423835313834333331",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Kharadi",
+    "locality_id": "listing-pune-kharadi-c9a1d2",
+    "area_sqft": 840,
+    "deposit": 76000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK48w9dcNuvObK4AFLLKafWE0RIuQT/Photo_h180_w240/85184331_5_PropertyImage505-68939415440985_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.93737,
+        18.55403
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 38000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0db",
+    "title": "2 BHK Flat   for Rent in EK Lavya  Sky Lark, Kharadi, Pune",
+    "rent": 27000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-955-Sq-ft-Multistorey-Apartment-FOR-Rent-Kharadi-in-Pune&id=4d423835393034333833",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Kharadi",
+    "locality_id": "listing-pune-kharadi-c9a1d2",
+    "area_sqft": 700,
+    "deposit": 54000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dc1tG94a7DAzJqfpRKhnirOd/Photo_h180_w240/85904383_6_PropertyImage285-72592796416274_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9540234,
+        18.5598706
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 27000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0dd",
+    "title": "3 BHK Flat   for Rent in Duville Riverdale Residences, Kharadi, Pune",
+    "rent": 47000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1300-Sq-ft-Multistorey-Apartment-FOR-Rent-Kharadi-in-Pune&id=4d423835353437333839",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Kharadi",
+    "locality_id": "listing-pune-kharadi-c9a1d2",
+    "area_sqft": 1300,
+    "deposit": 94000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2022/08/01/Project-Photo-12-Riverdale-Residences-Pune-5125457_600_800_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9404954,
+        18.5405718
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 47000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0df",
+    "title": "3 BHK Flat   for Rent in Gera World of Joy, Kharadi, Pune",
+    "rent": 48000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1800-Sq-ft-Multistorey-Apartment-FOR-Rent-Kharadi-in-Pune&id=4d423835333838313435",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Kharadi",
+    "locality_id": "listing-pune-kharadi-c9a1d2",
+    "area_sqft": 1458,
+    "deposit": 96000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dMNzvti7CImVX2CFbPeFXFfz/Photo_h180_w240/85388145_1_1783511939017-428_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.962301,
+        18.5646893
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 48000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0e1",
+    "title": "2 BHK Flat   for Rent in Kohinoor Zen Estate, Kharadi, Pune",
+    "rent": 48000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1050-Sq-ft-Multistorey-Apartment-FOR-Rent-Kharadi-in-Pune&id=4d423835393034313637",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Kharadi",
+    "locality_id": "listing-pune-kharadi-c9a1d2",
+    "area_sqft": 755,
+    "deposit": 96000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dM27Tp2xUt0YFF1J2vUy-VMb/Photo_h180_w240/85904167_1_hatsAppImage20260806at3.48.45PM1_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9385509,
+        18.5379808
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 48000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0e3",
+    "title": "2 BHK Flat   for Rent in Duville Riverdale Grove, Kharadi, Pune",
+    "rent": 36000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-990-Sq-ft-Multistorey-Apartment-FOR-Rent-Kharadi-in-Pune&id=4d423835393034333137",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Kharadi",
+    "locality_id": "listing-pune-kharadi-c9a1d2",
+    "area_sqft": 750,
+    "deposit": 72000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dM27Tp2xUt0YFF1J2vUy-VMb/Photo_h180_w240/85904317_4_hatsAppImage20260726at17.11.57_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9416875,
+        18.5428125
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 36000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0e5",
+    "title": "3 BHK Flat   for Rent in Guardian Eastern Meadows, Kharadi, Pune",
+    "rent": 45000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1605-Sq-ft-Multistorey-Apartment-FOR-Rent-Kharadi-in-Pune&id=4d423835393034323833",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Kharadi",
+    "locality_id": "listing-pune-kharadi-c9a1d2",
+    "area_sqft": 1150,
+    "deposit": 90000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dciZKN5X6XVqoV75Zk9Pig__/Photo_h180_w240/85904283_5_PropertyImage508-8462453083516_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.95106,
+        18.56908
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 45000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0e7",
+    "title": "2 BHK Flat   for Rent in Gagan Avencia, Kharadi, Pune",
+    "rent": 35000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-990-Sq-ft-Multistorey-Apartment-FOR-Rent-EON-Free-Zone-in-Pune&id=4d423835333838313039",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "EON Free Zone",
+    "locality_id": "listing-pune-eon-free-zone-d14360",
+    "area_sqft": 717,
+    "deposit": 70000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dMKW5I34ozd4dFJ_zGnYCSQT/Photo_h180_w240/85388109_6_b702fb4b3fd48929df326c369faad06_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.954437,
+        18.558002
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 35000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0e9",
+    "title": "3 BHK Flat   for Rent in Guardian Eastern Meadows, Kharadi, Pune",
+    "rent": 45000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1620-Sq-ft-Multistorey-Apartment-FOR-Rent-Kharadi-in-Pune&id=4d423835383037313937",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Kharadi",
+    "locality_id": "listing-pune-kharadi-c9a1d2",
+    "area_sqft": 1150,
+    "deposit": 90000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMuik2I4q1t27vNWGbD9BntY/Photo_h180_w240/85807197_4_PropertyImage106-14723120733771_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.95106,
+        18.56908
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 45000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0eb",
+    "title": "3 BHK Flat   for Rent in Nyati Elysia, Kharadi, Pune",
+    "rent": 55000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1700-Sq-ft-Multistorey-Apartment-FOR-Rent-Kharadi-in-Pune&id=4d423836313735353939",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Kharadi",
+    "locality_id": "listing-pune-kharadi-c9a1d2",
+    "area_sqft": 1500,
+    "deposit": 110000,
+    "images": [
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2026/01/08/Project-Photo-121-Nyati-Elysia-Pune-5020019_1280_960_310_462.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.936124,
+        18.542737
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 55000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0ed",
+    "title": "3 BHK Flat   for Rent in Duville Riverdale Residences, Kharadi, Pune",
+    "rent": 47000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1550-Sq-ft-Multistorey-Apartment-FOR-Rent-Kharadi-in-Pune&id=4d423538353732383837",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Kharadi",
+    "locality_id": "listing-pune-kharadi-c9a1d2",
+    "area_sqft": 1200,
+    "deposit": 94000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAmTVB5tA9dsIzgQK_lHtp-gvfzEtmgydi/Photo_h180_w240/58572887_7_PropertyImage223-1884078060078_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9404954,
+        18.5405718
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 47000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0ef",
+    "title": "2 BHK Flat   for Rent in Duville Riverdale Grove, Kharadi, Pune",
+    "rent": 36000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1155-Sq-ft-Multistorey-Apartment-FOR-Rent-Kharadi-in-Pune&id=4d423835383035393133",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Kharadi",
+    "locality_id": "listing-pune-kharadi-c9a1d2",
+    "area_sqft": 821,
+    "deposit": 72000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMuik2I4q1t27vNWGbD9BntY/Photo_h180_w240/85805913_5_PropertyImage55-94432718133191_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9416875,
+        18.5428125
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 36000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0f1",
+    "title": "Flats for Rent in Kharadi",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Kharadi&cityName=Pune&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Kharadi",
+    "locality_id": "listing-pune-kharadi-c9a1d2",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0f3",
+    "title": "1 BHK Flats for Rent in Kharadi",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Kharadi&cityName=Pune&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Kharadi",
+    "locality_id": "listing-pune-kharadi-c9a1d2",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0f5",
+    "title": "2 BHK Flat   for Rent in Lunkad Garden, Viman Nagar Central, Pune",
+    "rent": 38000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Multistorey-Apartment-FOR-Rent-Viman-Nagar-in-Pune&id=4d423836303838333831",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Viman Nagar Central",
+    "locality_id": "listing-pune-viman-nagar-central-0802da",
+    "area_sqft": 800,
+    "deposit": 76000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/2026/Aug/20/Photo_h300_w450/86088381_2_PropertyImage291-08076129356755_300_450.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.914677,
+        18.566385
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 38000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0f7",
+    "title": "1 BHK Flat   for Rent in Lunkad Garden, Viman Nagar Central, Pune",
+    "rent": 27000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-700-Sq-ft-Multistorey-Apartment-FOR-Rent-Viman-Nagar-in-Pune&id=4d423836303838333137",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Viman Nagar Central",
+    "locality_id": "listing-pune-viman-nagar-central-0802da",
+    "area_sqft": 480,
+    "deposit": 54000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/2026/Aug/20/Photo_h300_w450/86088317_3_PropertyImage766-1176270389606_300_450.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.914677,
+        18.566385
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 27000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0f9",
+    "title": "3 BHK Flat   for Rent in Sky View Apartment, Viman Nagar Central, Pune",
+    "rent": 90000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1690-Sq-ft-Multistorey-Apartment-FOR-Rent-Viman-Nagar-in-Pune&id=4d423834313932393133",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Viman Nagar Central",
+    "locality_id": "listing-pune-viman-nagar-central-0802da",
+    "area_sqft": null,
+    "deposit": 180000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB5tA9dcuIPdOf2HDFECMLbA1ejHG5/Photo_h180_w240/84192913_5_PropertyImage468-47922710274526_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9200997,
+        18.56804439
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 90000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0fb",
+    "title": "2 BHK Flat   for Rent in Shree Radhe Krishna, Viman Nagar Central, Pune",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Multistorey-Apartment-FOR-Rent-Viman-Nagar-in-Pune&id=4d423835313834333537",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Viman Nagar Central",
+    "locality_id": "listing-pune-viman-nagar-central-0802da",
+    "area_sqft": 950,
+    "deposit": 36000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK48w9dcNuvObK4AFLLKafWE0RIuQT/Photo_h180_w240/85184357_4_PropertyImage522-1511186963038_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.8003227,
+        18.622627
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0fd",
+    "title": "2 BHK Flat   for Rent in Neco Garden, Viman Nagar Central, Pune",
+    "rent": 35000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1100-Sq-ft-Multistorey-Apartment-FOR-Rent-Viman-Nagar-in-Pune&id=4d423836303838373335",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Viman Nagar Central",
+    "locality_id": "listing-pune-viman-nagar-central-0802da",
+    "area_sqft": 750,
+    "deposit": 70000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dsvMOeVv1oEgiwYXJQpX4bpV/Photo_h180_w240/86088735_3_PropertyImage625-3226235952354_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9141441,
+        18.5605157
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 35000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e0ff",
+    "title": "2 BHK Flat   for Rent in Shubh Gateway, Viman Nagar Central, Pune",
+    "rent": 55000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-912-Sq-ft-Multistorey-Apartment-FOR-Rent-Viman-Nagar-in-Pune&id=4d423835393032383931",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Viman Nagar Central",
+    "locality_id": "listing-pune-viman-nagar-central-0802da",
+    "area_sqft": null,
+    "deposit": 110000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dM27Tp2xUt0YFF1J2vUy-VMb/Photo_h180_w240/85902891_7_PropertyImage865-2497850367898_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9076108,
+        18.5757281
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 55000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e101",
+    "title": "2 BHK Flat   for Rent in Eden Garden, Viman Nagar Central, Pune",
+    "rent": 40000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1012-Sq-ft-Multistorey-Apartment-FOR-Rent-Viman-Nagar-in-Pune&id=4d423836313735393531",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Viman Nagar Central",
+    "locality_id": "listing-pune-viman-nagar-central-0802da",
+    "area_sqft": 809,
+    "deposit": 80000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dswwvk-lhLmjWpryRtHFS-H2/Photo_h180_w240/86175951_1_PropertyImage574-0895361038444_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.83811833,
+        18.51686
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 40000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e103",
+    "title": "2 BHK Flat   for Rent in Festival Apartments, Viman Nagar Central, Pune",
+    "rent": 34000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-900-Sq-ft-Multistorey-Apartment-FOR-Rent-Viman-Nagar-in-Pune&id=4d423836313734323635",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Viman Nagar Central",
+    "locality_id": "listing-pune-viman-nagar-central-0802da",
+    "area_sqft": 700,
+    "deposit": 68000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9179777,
+        18.566825
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 34000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e105",
+    "title": "1 BHK Flat   for Rent in Shubh Gateway, Viman Nagar Central, Pune",
+    "rent": 12000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-750-Sq-ft-Multistorey-Apartment-FOR-Rent-Viman-Nagar-in-Pune&id=4d423834383634303933",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Viman Nagar Central",
+    "locality_id": "listing-pune-viman-nagar-central-0802da",
+    "area_sqft": 750,
+    "deposit": 24000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dsLKZhan6xjENK-a9Uo0PR2q/Photo_h180_w240/84864093_1_PropertyImage943-0021534297182_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9076108,
+        18.5757281
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 12000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e107",
+    "title": "3 BHK Flat   for Rent in Konark Nagar Phase II, Viman Nagar Central, Pune",
+    "rent": 72000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2000-Sq-ft-Multistorey-Apartment-FOR-Rent-Konark-Nagar-in-Pune&id=4d423835333832323037",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Konark Nagar",
+    "locality_id": "listing-pune-konark-nagar-3f786f",
+    "area_sqft": 1400,
+    "deposit": 144000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dMlZ2NghAgMmUJKlKTnVXS82/Photo_h180_w240/85382207_11_HOTO202504162006372_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.912265,
+        18.566258
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 72000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e109",
+    "title": "2 BHK Villa for Rent in Konark Campus, Viman Nagar Pune",
+    "rent": 58000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1400-Sq-ft-Villa-FOR-Rent-Viman-Nagar-in-Pune&id=4d423836303835353731",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Viman Nagar Central",
+    "locality_id": "listing-pune-viman-nagar-central-0802da",
+    "area_sqft": 1100,
+    "deposit": 116000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dsopY7AsfT_NoDTthZQKtMm1/Photo_h180_w240/86085571_4_PropertyImage870-9800019186091_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9090952999999,
+        18.5710539
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 58000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e10b",
+    "title": "3 BHK Flat   for Rent in Lunkad Sky Vie, Viman Nagar Central, Pune",
+    "rent": 80000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1700-Sq-ft-Multistorey-Apartment-FOR-Rent-Viman-Nagar-in-Pune&id=4d423731343139343335",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Viman Nagar Central",
+    "locality_id": "listing-pune-viman-nagar-central-0802da",
+    "area_sqft": 1550,
+    "deposit": 160000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnzVG88A9dcwGTDhuNgS2v8w6KnXW8qNW/Photo_h180_w240/71419435_1_PropertyImage683-0119863403402_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.912309,
+        18.567766
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 80000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e10d",
+    "title": "3 BHK Flat   for Rent in Lunkad Sky Vie, Viman Nagar Central, Pune",
+    "rent": 80000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1690-Sq-ft-Multistorey-Apartment-FOR-Rent-Viman-Nagar-in-Pune&id=4d423834313831373131",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Viman Nagar Central",
+    "locality_id": "listing-pune-viman-nagar-central-0802da",
+    "area_sqft": null,
+    "deposit": 160000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dM9yLTugznCijzQe7-Vccf_B/Photo_h180_w240/84181711_9_PropertyImage765-6055890075903_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.912309,
+        18.567766
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 80000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e10f",
+    "title": "3 BHK Flat   for Rent in Lunkad Sky Vie, Viman Nagar Central, Pune",
+    "rent": 80000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1690-Sq-ft-Multistorey-Apartment-FOR-Rent-Viman-Nagar-in-Pune&id=4d423835313732333539",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Viman Nagar Central",
+    "locality_id": "listing-pune-viman-nagar-central-0802da",
+    "area_sqft": 1200,
+    "deposit": 160000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK48w9dcNuvObK4AFLLKafWE0RIuQT/Photo_h180_w240/85172359_1_MG20210906WA0049_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.912309,
+        18.567766
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 80000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e111",
+    "title": "2 BHK Flat   for Rent in Eden Garden, Viman Nagar Central, Pune",
+    "rent": 40000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1010-Sq-ft-Multistorey-Apartment-FOR-Rent-Clover-Park-in-Pune&id=4d423834353431303037",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Clover Park",
+    "locality_id": "listing-pune-clover-park-21c36f",
+    "area_sqft": 900,
+    "deposit": 80000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dM16mZEnmQ142VHrrtnm2xgA/Photo_h180_w240/84541007_1_PropertyImage88-62135331774601_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.83811833,
+        18.51686
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 40000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e113",
+    "title": "2 BHK Flat   for Rent in Lalwani Residency, Viman Nagar Central, Pune",
+    "rent": 45000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1500-Sq-ft-Multistorey-Apartment-FOR-Rent-Viman-Nagar-in-Pune&id=4d423836313733373937",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Viman Nagar Central",
+    "locality_id": "listing-pune-viman-nagar-central-0802da",
+    "area_sqft": 1300,
+    "deposit": 90000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.91965573,
+        18.55814669
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 45000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e115",
+    "title": "2 BHK Flat   for Rent in F5 Eastwoods, Viman Nagar Central, Pune",
+    "rent": 70000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-2100-Sq-ft-Multistorey-Apartment-FOR-Rent-Clover-Park-in-Pune&id=4d423835333831343135",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Clover Park",
+    "locality_id": "listing-pune-clover-park-21c36f",
+    "area_sqft": 2000,
+    "deposit": 140000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dMlZ2NghAgMmUJKlKTnVXS82/Photo_h180_w240/85381415_13_hatsAppImage20260516at15.27.141_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.908849,
+        18.5694282
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 70000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e117",
+    "title": "2 BHK Flat   for Rent in Anand Anand Residency, Viman Nagar Central, Pune",
+    "rent": 38000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1150-Sq-ft-Multistorey-Apartment-FOR-Rent-Viman-Nagar-in-Pune&id=4d423836303835313239",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Viman Nagar Central",
+    "locality_id": "listing-pune-viman-nagar-central-0802da",
+    "area_sqft": 900,
+    "deposit": 76000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dsopY7AsfT_NoDTthZQKtMm1/Photo_h180_w240/86085129_6_PropertyImage186-10884994096978_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9074861,
+        18.561313
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 38000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e119",
+    "title": "2 BHK Flat   for Rent in Lunkad Gold Coast, Viman Nagar Central, Pune",
+    "rent": 42000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Multistorey-Apartment-FOR-Rent-Viman-Nagar-in-Pune&id=4d423836303834393335",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Viman Nagar Central",
+    "locality_id": "listing-pune-viman-nagar-central-0802da",
+    "area_sqft": 900,
+    "deposit": 84000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dsopY7AsfT_NoDTthZQKtMm1/Photo_h180_w240/86084935_1_PropertyImage899-4812540400666_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9078744,
+        18.5668887
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 42000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e11b",
+    "title": "2 BHK Flat   for Rent in Zircon, Viman Nagar Central, Pune",
+    "rent": 50000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1250-Sq-ft-Multistorey-Apartment-FOR-Rent-Viman-Nagar-in-Pune&id=4d423834383633373835",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Viman Nagar Central",
+    "locality_id": "listing-pune-viman-nagar-central-0802da",
+    "area_sqft": 950,
+    "deposit": 100000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dsMvPEPkQKYpH51gVdRpaG5K/Photo_h180_w240/84863785_1_PropertyImage681-0704598313188_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9212581,
+        18.5650094
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 50000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e11d",
+    "title": "2 BHK Flat   for Rent in Lunkad Amazon, Viman Nagar Central, Pune",
+    "rent": 44000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Multistorey-Apartment-FOR-Rent-Viman-Nagar-in-Pune&id=4d423836303835323031",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Viman Nagar Central",
+    "locality_id": "listing-pune-viman-nagar-central-0802da",
+    "area_sqft": 900,
+    "deposit": 88000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dsopY7AsfT_NoDTthZQKtMm1/Photo_h180_w240/86085201_5_PropertyImage298-0343526777308_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9095569,
+        18.5661868
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 44000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e11f",
+    "title": "2 BHK Flat   for Rent in Ganga Hamlet, Viman Nagar Central, Pune",
+    "rent": 44000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1100-Sq-ft-Multistorey-Apartment-FOR-Rent-Ganga-Hamlet-in-Pune&id=4d423835363934373833",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Ganga Hamlet",
+    "locality_id": "listing-pune-ganga-hamlet-d67f53",
+    "area_sqft": 1000,
+    "deposit": 88000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dc6A9SHeEPMEW_DmpQqAdSe8/Photo_h180_w240/85694783_6_IMANELIGANCETHAKUR4_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.909991,
+        18.564293
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 44000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e121",
+    "title": "3 BHK Flat   for Rent in Shubh Nirvana, Viman Nagar Central, Pune",
+    "rent": 75000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1500-Sq-ft-Multistorey-Apartment-FOR-Rent-Viman-Nagar-in-Pune&id=4d423835333931323233",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Viman Nagar Central",
+    "locality_id": "listing-pune-viman-nagar-central-0802da",
+    "area_sqft": null,
+    "deposit": 150000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dM6lX3LrUDulgQ5ASuJH93SV/Photo_h180_w240/85391223_1_PropertyImage935-3781503929561_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9099679,
+        18.5750306
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 75000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e123",
+    "title": "2 BHK Flat   for Rent in Eden Garden, Viman Nagar Central, Pune",
+    "rent": 40000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1050-Sq-ft-Multistorey-Apartment-FOR-Rent-Sakore-Nagar-in-Pune&id=4d423835373037343237",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Sakore Nagar",
+    "locality_id": "listing-pune-sakore-nagar-7a678b",
+    "area_sqft": 800,
+    "deposit": 80000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds8ur6D_hl8ez8n71sawRcZ4/Photo_h180_w240/85707427_5_NHKEDENGARDEN38K4_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.83811833,
+        18.51686
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 40000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e125",
+    "title": "3 BHK Villa for Rent in Kalpana Villa Housing Society, Viman Nagar Pune",
+    "rent": 150000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2000-Sq-ft-Villa-FOR-Rent-Viman-Nagar-in-Pune&id=4d423835353530303731",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Viman Nagar Central",
+    "locality_id": "listing-pune-viman-nagar-central-0802da",
+    "area_sqft": 1500,
+    "deposit": 300000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dc-WUGQDRWhjmMYadCFP0efz/Photo_h180_w240/85550071_15_PropertyImage150-81929956994512_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9138514,
+        18.5682879
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 150000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e127",
+    "title": "2 BHK Flat   for Rent in Rohan Mithila, Viman Nagar Central, Pune",
+    "rent": 38000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1350-Sq-ft-Multistorey-Apartment-FOR-Rent-Viman-Nagar-in-Pune&id=4d423538383335313935",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Viman Nagar Central",
+    "locality_id": "listing-pune-viman-nagar-central-0802da",
+    "area_sqft": 1100,
+    "deposit": 76000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAmTVK98w9dM_4jNbvMNVjuCIYF9zb9zcW/Photo_h180_w240/58835195_13_PropertyImage747-6496509045303_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.908519,
+        18.572395
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 38000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e129",
+    "title": "3 BHK Flat   for Rent in Viman Nagar Central, Pune",
+    "rent": 60000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1400-Sq-ft-Multistorey-Apartment-FOR-Rent-Konark-Nagar-in-Pune&id=4d423836313738323131",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Konark Nagar",
+    "locality_id": "listing-pune-konark-nagar-3f786f",
+    "area_sqft": 1100,
+    "deposit": 120000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dswwvk-lhLmjWpryRtHFS-H2/Photo_h180_w240/86178211_11_PropertyImage109-84871943702379_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.912723137965,
+        18.5678271472787
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 60000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e12b",
+    "title": "2 BHK Flat   for Rent in Anand Anand Residency, Viman Nagar Central, Pune",
+    "rent": 38000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-967-Sq-ft-Multistorey-Apartment-FOR-Rent-Viman-Nagar-in-Pune&id=4d423836303839393335",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Viman Nagar Central",
+    "locality_id": "listing-pune-viman-nagar-central-0802da",
+    "area_sqft": 967,
+    "deposit": 76000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9074861,
+        18.561313
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 38000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e12d",
+    "title": "3 BHK Flat   for Rent in Zircon, Viman Nagar Central, Pune",
+    "rent": 63000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1590-Sq-ft-Multistorey-Apartment-FOR-Rent-Viman-Nagar-in-Pune&id=4d423835383130323835",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Viman Nagar Central",
+    "locality_id": "listing-pune-viman-nagar-central-0802da",
+    "area_sqft": null,
+    "deposit": 126000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMhPfZ38V5hBk6RZ-BIa-e95/Photo_h180_w240/85810285_2_PropertyImage635-246926021089_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9212581,
+        18.5650094
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 63000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e12f",
+    "title": "3 BHK Flat   for Rent in Shubh Nirvana, Viman Nagar Central, Pune",
+    "rent": 75000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1500-Sq-ft-Multistorey-Apartment-FOR-Rent-Viman-Nagar-in-Pune&id=4d423835353530343839",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Viman Nagar Central",
+    "locality_id": "listing-pune-viman-nagar-central-0802da",
+    "area_sqft": 1350,
+    "deposit": 150000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dc-WUGQDRWhjmMYadCFP0efz/Photo_h180_w240/85550489_10_38796944O1775476628101_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9099679,
+        18.5750306
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 75000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e131",
+    "title": "Flats for Rent in Viman Nagar Central",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Viman-Nagar&cityName=Pune&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Viman Nagar",
+    "locality_id": "listing-pune-viman-nagar-8f4f50",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e133",
+    "title": "1 BHK Flats for Rent in Viman Nagar Central",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Viman-Nagar&cityName=Pune&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Viman Nagar",
+    "locality_id": "listing-pune-viman-nagar-8f4f50",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e135",
+    "title": "2 BHK Flat   for Rent in Agrawal Gardens, Magarpatta City, Pune",
+    "rent": 21000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-920-Sq-ft-Multistorey-Apartment-FOR-Rent-Magarpatta-City-in-Pune&id=4d423835363932333335",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Magarpatta City",
+    "locality_id": "listing-pune-magarpatta-city-5d2800",
+    "area_sqft": 750,
+    "deposit": 42000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/2026/Aug/06/Photo_h300_w450/85692335_1_PropertyImage970-4864214956078_300_450.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9290589,
+        18.5005683
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 21000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e137",
+    "title": "3 BHK  House for Rent in Magarpatta City Erica, Magarpatta Pune",
+    "rent": 65000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-Residential-House-FOR-Rent-Magarpatta-City-in-Pune&id=4d423835383039333037",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Magarpatta City",
+    "locality_id": "listing-pune-magarpatta-city-5d2800",
+    "area_sqft": null,
+    "deposit": 130000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/2026/Aug/02/Photo_h300_w450/85809307_3_hatsAppImage20260717at12.20.17PM5_300_450.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.929434,
+        18.51099
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 65000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e139",
+    "title": "2 BHK Flat   for Rent in Kumar 47 East, Magarpatta City, Pune",
+    "rent": 40000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1240-Sq-ft-Multistorey-Apartment-FOR-Rent-Magarpatta-City-in-Pune&id=4d423835383037313033",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Magarpatta City",
+    "locality_id": "listing-pune-magarpatta-city-5d2800",
+    "area_sqft": 1050,
+    "deposit": 80000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMuik2I4q1t27vNWGbD9BntY/Photo_h180_w240/8752_1785590540915.77614_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.8786239,
+        18.5246091
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 40000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e13b",
+    "title": "3 BHK Flat   for Rent in Kumar Sienna, Magarpatta City, Pune",
+    "rent": 90000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2293-Sq-ft-Multistorey-Apartment-FOR-Rent-Magarpatta-City-in-Pune&id=4d423835313834353933",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Magarpatta City",
+    "locality_id": "listing-pune-magarpatta-city-5d2800",
+    "area_sqft": 1641,
+    "deposit": 180000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK48w9dcNuvObK4AFLLKafWE0RIuQT/Photo_h180_w240/85184593_5_PropertyImage108-65206577310838_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9343069,
+        18.5149324
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 90000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e13d",
+    "title": "3 BHK Flat   for Rent in Marvel Diva 2, Magarpatta City, Pune",
+    "rent": 80000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2200-Sq-ft-Multistorey-Apartment-FOR-Rent-Phase-2-Magarpatta-in-Pune&id=4d423836313736383035",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Phase 2 Magarpatta",
+    "locality_id": "listing-pune-phase-2-magarpatta-47e1b5",
+    "area_sqft": 1715,
+    "deposit": 160000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dswwvk-lhLmjWpryRtHFS-H2/Photo_h180_w240/86176805_15_hatsAppImage20260826at5.21.56PM1_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9290688999999,
+        18.521038
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 80000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e13f",
+    "title": "2 BHK Flat   for Rent in Sylvania, Magarpatta City, Pune",
+    "rent": 42000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1250-Sq-ft-Multistorey-Apartment-FOR-Rent-Magarpatta-City-in-Pune&id=4d423836303837363533",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Magarpatta City",
+    "locality_id": "listing-pune-magarpatta-city-5d2800",
+    "area_sqft": 1000,
+    "deposit": 84000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dsopY7AsfT_NoDTthZQKtMm1/Photo_h180_w240/86087653_1_PropertyImage869-9024966469309_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9274497,
+        18.5189758
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 42000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e141",
+    "title": "1 BHK Flat   for Rent in Magarpatta Annex, Magarpatta City, Pune",
+    "rent": 30000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-860-Sq-ft-Multistorey-Apartment-FOR-Rent-Phase-2-Magarpatta-in-Pune&id=4d423835383035393135",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Phase 2 Magarpatta",
+    "locality_id": "listing-pune-phase-2-magarpatta-47e1b5",
+    "area_sqft": 720,
+    "deposit": 60000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMuik2I4q1t27vNWGbD9BntY/Photo_h180_w240/85805915_1_hatsAppImage20260801at3.50.50PM_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9271644,
+        18.5158057
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 30000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e143",
+    "title": "1 BHK Flat   for Rent in Magarpatta Annex, Magarpatta City, Pune",
+    "rent": 30000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-860-Sq-ft-Multistorey-Apartment-FOR-Rent-Phase-2-Magarpatta-in-Pune&id=4d423835383035383335",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Phase 2 Magarpatta",
+    "locality_id": "listing-pune-phase-2-magarpatta-47e1b5",
+    "area_sqft": 720,
+    "deposit": 60000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dMuik2I4q1t27vNWGbD9BntY/Photo_h180_w240/85805835_3_hatsAppImage20260731at6.09.42PM2_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9271644,
+        18.5158057
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 30000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e145",
+    "title": "1 BHK Flat   for Rent in Magarpatta Heliconia, Magarpatta City, Pune",
+    "rent": 28000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-700-Sq-ft-Multistorey-Apartment-FOR-Rent-Magarpatta-City-in-Pune&id=4d423835333830333133",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Magarpatta City",
+    "locality_id": "listing-pune-magarpatta-city-5d2800",
+    "area_sqft": 450,
+    "deposit": 56000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dMNzvti7CImVX2CFbPeFXFfz/Photo_h180_w240/85380313_1_PropertyImage1783598691729_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9246471,
+        18.5088536
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 28000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e147",
+    "title": "1 BHK Flat   for Rent in Magarpatta City, Pune",
+    "rent": 35000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-620-Sq-ft-Multistorey-Apartment-FOR-Rent-Magarpatta-City-in-Pune&id=4d423836313733363131",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Magarpatta City",
+    "locality_id": "listing-pune-magarpatta-city-5d2800",
+    "area_sqft": 420,
+    "deposit": 70000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dswwvk-lhLmjWpryRtHFS-H2/Photo_h180_w240/86173611_9_hatsAppImage20260807at15.26.311Copy_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.92464447021484,
+        18.508853912353516
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 35000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e149",
+    "title": "3 BHK Flat   for Rent in Karia Konark Vista, Magarpatta City, Pune",
+    "rent": 85000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2511-Sq-ft-Multistorey-Apartment-FOR-Rent-Magarpatta-City-in-Pune&id=4d423835333830313735",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Magarpatta City",
+    "locality_id": "listing-pune-magarpatta-city-5d2800",
+    "area_sqft": 1800,
+    "deposit": 170000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dMlZ2NghAgMmUJKlKTnVXS82/Photo_h180_w240/85380175_4_PropertyImage251-54255847993545_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.934237,
+        18.5231717
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 85000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e14b",
+    "title": "1 BHK Flat   for Rent in Magarpatta City Zinnia, Magarpatta City, Pune",
+    "rent": 23000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-600-Sq-ft-Multistorey-Apartment-FOR-Rent-Magarpatta-City-in-Pune&id=4d423736353734333035",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Magarpatta City",
+    "locality_id": "listing-pune-magarpatta-city-5d2800",
+    "area_sqft": 450,
+    "deposit": 46000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK48w9dsPWQyI2IzY2e6l--qrutsWY/Photo_h180_w240/76574305_5_1782652898768-5608_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9242251,
+        18.5011464
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 23000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e14d",
+    "title": "1 BHK Flat   for Rent in Magarpatta Annex, Magarpatta City, Pune",
+    "rent": 30000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-860-Sq-ft-Multistorey-Apartment-FOR-Rent-Magarpatta-City-in-Pune&id=4d423736353734313435",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Magarpatta City",
+    "locality_id": "listing-pune-magarpatta-city-5d2800",
+    "area_sqft": 650,
+    "deposit": 60000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB5tA9dcptZ4bcc84oOxHxzJMD2QJZ/Photo_h180_w240/76574145_7_1775816624865-9302_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9271644,
+        18.5158057
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 30000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e14f",
+    "title": "3 BHK Flat   for Rent in Trillium, Magarpatta City, Pune",
+    "rent": 53000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1530-Sq-ft-Multistorey-Apartment-FOR-Rent-Phase-2-Magarpatta-in-Pune&id=4d423836313737363331",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Phase 2 Magarpatta",
+    "locality_id": "listing-pune-phase-2-magarpatta-47e1b5",
+    "area_sqft": 1390,
+    "deposit": 106000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dswwvk-lhLmjWpryRtHFS-H2/Photo_h180_w240/86177631_5_hatsAppImage20260701at12.03.26PM_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9264069,
+        18.5180247
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 53000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e151",
+    "title": "2 BHK Flat   for Rent in Magarpatta City, Pune",
+    "rent": 40000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1350-Sq-ft-Multistorey-Apartment-FOR-Rent-Magarpatta-City-in-Pune&id=4d423835333839353731",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Magarpatta City",
+    "locality_id": "listing-pune-magarpatta-city-5d2800",
+    "area_sqft": 1050,
+    "deposit": 80000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dM6lX3LrUDulgQ5ASuJH93SV/Photo_h180_w240/85389571_6_hatsAppImage20260629at16.13.12_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9263036508773,
+        18.5167373381986
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 40000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e153",
+    "title": "2 BHK Flat   for Rent in Magarpatta Jasminium, Magarpatta City, Pune",
+    "rent": 34000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1208-Sq-ft-Multistorey-Apartment-FOR-Rent-Magarpatta-City-in-Pune&id=4d423734363134363937",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Magarpatta City",
+    "locality_id": "listing-pune-magarpatta-city-5d2800",
+    "area_sqft": 980,
+    "deposit": 68000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVK48w9d8qUyZEiyXVmr9d6Ok7oEGLN/Photo_h180_w240/74614697_10_PropertyImage251-09691175023542_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.922415,
+        18.51142
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 34000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e155",
+    "title": "3 BHK Flat   for Rent in Jasminum, Magarpatta City, Pune",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1500-Sq-ft-Multistorey-Apartment-FOR-Rent-Magarpatta-City-in-Pune&id=4d423830303133383139",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Magarpatta City",
+    "locality_id": "listing-pune-magarpatta-city-5d2800",
+    "area_sqft": 1320,
+    "deposit": 36000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVK48w9dc8OUBY4seppTdsrJBNq9x-i/Photo_h180_w240/80013819_12_PropertyImage362-19790472251145_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.8786239,
+        18.5246091
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e157",
+    "title": "3 BHK Flat   for Rent in Marvel Diva 2, Magarpatta City, Pune",
+    "rent": 80000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-3500-Sq-ft-Multistorey-Apartment-FOR-Rent-Phase-2-Magarpatta-in-Pune&id=4d423835363935303937",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Phase 2 Magarpatta",
+    "locality_id": "listing-pune-phase-2-magarpatta-47e1b5",
+    "area_sqft": 3000,
+    "deposit": 160000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds7L9fW8LeHz5PsBdljtELWY/Photo_h180_w240/85695097_8_hatsAppImage20260723at13.06.171_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9290688999999,
+        18.521038
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 80000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e159",
+    "title": "2 BHK Flat   for Rent in Magarpatta City, Pune",
+    "rent": 40000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1155-Sq-ft-Multistorey-Apartment-FOR-Rent-Magarpatta-City-in-Pune&id=4d423835333931373433",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Magarpatta City",
+    "locality_id": "listing-pune-magarpatta-city-5d2800",
+    "area_sqft": 850,
+    "deposit": 80000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849dM6lX3LrUDulgQ5ASuJH93SV/Photo_h180_w240/85391743_3_umarParadiseB2Flat10_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9263036508773,
+        18.5167373381986
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 40000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e15b",
+    "title": "1 BHK Flat   for Rent in Magarpatta Annex, Magarpatta City, Pune",
+    "rent": 30000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/1-BHK-625-Sq-ft-Multistorey-Apartment-FOR-Rent-Magarpatta-City-in-Pune&id=4d423832353139313835",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Magarpatta City",
+    "locality_id": "listing-pune-magarpatta-city-5d2800",
+    "area_sqft": 530,
+    "deposit": 60000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVE88E9dcrS0tXPj6xLLLYZ1P329Px5/Photo_h180_w240/82519185_12_hatsAppImage20251209at15.08.031_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9271644,
+        18.5158057
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 30000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e15d",
+    "title": "2 BHK Flat   for Rent in Daffodils, Magarpatta City, Pune",
+    "rent": 35000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-975-Sq-ft-Multistorey-Apartment-FOR-Rent-Magarpatta-City-in-Pune&id=4d423835363936303033",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Magarpatta City",
+    "locality_id": "listing-pune-magarpatta-city-5d2800",
+    "area_sqft": 885,
+    "deposit": 70000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds7L9fW8LeHz5PsBdljtELWY/Photo_h180_w240/85696003_2_hatsAppImage20260710at6.17.28PM_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.8876325,
+        18.4383063
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 35000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e15f",
+    "title": "2 BHK Flat   for Rent in Sylvania, Magarpatta City, Pune",
+    "rent": 42000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1250-Sq-ft-Multistorey-Apartment-FOR-Rent-Magarpatta-City-in-Pune&id=4d423739383331373339",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Magarpatta City",
+    "locality_id": "listing-pune-magarpatta-city-5d2800",
+    "area_sqft": 1110,
+    "deposit": 84000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVK48w9dMnB2Koa9oEshY-UeQvwe9dn/Photo_h180_w240/79831739_1_hatsAppImage20250603at12.16.11PM1_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9274497,
+        18.5189758
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 42000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e161",
+    "title": "3 BHK Flat   for Rent in Kumar Sienna, Magarpatta City, Pune",
+    "rent": 90000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2293-Sq-ft-Multistorey-Apartment-FOR-Rent-Magarpatta-City-in-Pune&id=4d423834353138353533",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Magarpatta City",
+    "locality_id": "listing-pune-magarpatta-city-5d2800",
+    "area_sqft": 1641,
+    "deposit": 180000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9dM9yLTugznCijzQe7-Vccf_B/Photo_h180_w240/84518553_2_66aad60dff64991938f17ce07fffb94_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9343069,
+        18.5149324
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 90000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e163",
+    "title": "3 BHK Flat   for Rent in Panchshil One North, Magarpatta City, Pune",
+    "rent": 140000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-3000-Sq-ft-Multistorey-Apartment-FOR-Rent-Magarpatta-City-in-Pune&id=4d423833313836313831",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Magarpatta City",
+    "locality_id": "listing-pune-magarpatta-city-5d2800",
+    "area_sqft": null,
+    "deposit": 280000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVN99s9ds8ch7z3s6r06sFf01_2lj7M/Photo_h180_w240/83186181_10_PropertyImage639-9426591543238_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.924923,
+        18.519801
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 140000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e165",
+    "title": "3 BHK Flat   for Rent in Kumar Prospera, Magarpatta City, Pune",
+    "rent": 60000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-1900-Sq-ft-Multistorey-Apartment-FOR-Rent-Magarpatta-City-in-Pune&id=4d423836313735323437",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Magarpatta City",
+    "locality_id": "listing-pune-magarpatta-city-5d2800",
+    "area_sqft": 1260,
+    "deposit": 120000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dswwvk-lhLmjWpryRtHFS-H2/Photo_h180_w240/86175247_1_umarProsperaMagarpatta3_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9341451,
+        18.5167714
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 60000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e167",
+    "title": "2 BHK Flat   for Rent in Jasminum, Magarpatta City, Pune",
+    "rent": 40000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1170-Sq-ft-Multistorey-Apartment-FOR-Rent-Phase-2-Magarpatta-in-Pune&id=4d423836313732353135",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Phase 2 Magarpatta",
+    "locality_id": "listing-pune-phase-2-magarpatta-47e1b5",
+    "area_sqft": 1200,
+    "deposit": 80000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dswwvk-lhLmjWpryRtHFS-H2/Photo_h180_w240/86172515_3_hatsAppImage20260823at10.36.01_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.8786239,
+        18.5246091
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 40000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e169",
+    "title": "2 BHK Flat   for Rent in Kumar Paradise, Magarpatta City, Pune",
+    "rent": 30000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1089-Sq-ft-Multistorey-Apartment-FOR-Rent-Magarpatta-City-in-Pune&id=4d423834313737363531",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Magarpatta City",
+    "locality_id": "listing-pune-magarpatta-city-5d2800",
+    "area_sqft": 807,
+    "deposit": 60000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB5tA9dcptZ4bcc84oOxHxzJMD2QJZ/Photo_h180_w240/84177651_1_1775816736341-7039_180_240.jpg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9242251,
+        18.5011464
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 30000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e16b",
+    "title": "2 BHK Flat   for Rent in Magarpatta City, Pune",
+    "rent": 40000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1340-Sq-ft-Multistorey-Apartment-FOR-Rent-Magarpatta-City-in-Pune&id=4d423835363833363739",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Magarpatta City",
+    "locality_id": "listing-pune-magarpatta-city-5d2800",
+    "area_sqft": 1050,
+    "deposit": 80000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVK4849ds7L9fW8LeHz5PsBdljtELWY/Photo_h180_w240/85683679_5_hatsAppImage20260629at16.13.12_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.9263036508773,
+        18.5167373381986
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 40000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e16d",
+    "title": "3 BHK Villa for Rent in Magarpatta City Erica, Magarpatta Pune",
+    "rent": 62000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/3-BHK-2020-Sq-ft-Villa-FOR-Rent-Magarpatta-City-in-Pune&id=4d423831343436393337",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Magarpatta City",
+    "locality_id": "listing-pune-magarpatta-city-5d2800",
+    "area_sqft": 1850,
+    "deposit": 124000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnjVT89I9dcNNTGXH-PdU8alhc8CvxiSl/Photo_h180_w240/81446937_9_hatsAppImage20250919at1.24.40PM_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.929434,
+        18.51099
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 62000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e16f",
+    "title": "2 BHK Flat   for Rent in Magarpatta City, Pune",
+    "rent": 40000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/propertyDetails/2-BHK-1170-Sq-ft-Multistorey-Apartment-FOR-Rent-Jasminium-Society-in-Pune&id=4d423836313733313337",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Jasminium Society",
+    "locality_id": "listing-pune-jasminium-society-d1f412",
+    "area_sqft": 1200,
+    "deposit": 80000,
+    "images": [
+      "https://img.staticmb.com/mbphoto/property/cropped_images/XIwvQlc61t8ZIpanz4mAnTVB48U9dswwvk-lhLmjWpryRtHFS-H2/Photo_h180_w240/86173137_9_hatsAppImage20260826at15.13.511_180_240.jpeg"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.87862396240234,
+        18.524608612060547
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 40000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e171",
+    "title": "Flats for Rent in Hadapsar",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Magarpatta&cityName=Pune&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Magarpatta",
+    "locality_id": "listing-pune-magarpatta-e2e532",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e173",
+    "title": "Flats for Rent in Magarpatta City",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Magarpatta&cityName=Pune&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Magarpatta",
+    "locality_id": "listing-pune-magarpatta-e2e532",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
+  },
+  {
+    "_id": "6a92a7a91ac55ee32b88e175",
+    "title": "1 BHK Flats for Rent in Magarpatta City",
+    "rent": 18000,
+    "source_platform": "MagicBricks",
+    "source_url": "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=1,2,3&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Residential-House,Villa&Locality=Magarpatta&cityName=Pune&sortBy=mostRecent&page=1",
+    "property_type": "apartment",
+    "furnishing": "Semi-Furnished",
+    "city": "Pune",
+    "locality": "Magarpatta",
+    "locality_id": "listing-pune-magarpatta-e2e532",
+    "area_sqft": null,
+    "deposit": 36000,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Security",
+      "Power Backup",
+      "Car Parking",
+      "Elevator",
+      "Water Supply"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ]
+    },
+    "nearby_metro": "Salt Lake Sector V Metro",
+    "commute_estimate_minutes": 25,
+    "lowest_price": {
+      "source": "MagicBricks",
+      "rent": 18000
+    }
   }
 ];
 
