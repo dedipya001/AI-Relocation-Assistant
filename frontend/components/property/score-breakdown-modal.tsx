@@ -14,7 +14,6 @@ import {
   Home,
   Clock,
   DollarSign,
-  ExternalLink,
 } from "lucide-react";
 import type { Property, Recommendation } from "@/types";
 import styles from "./score-breakdown-modal.module.css";
@@ -217,28 +216,6 @@ export function ScoreBreakdownModal({
               <span>AI Recommendation Context</span>
             </div>
             <p className={styles.explanationText}>{explanation}</p>
-          </div>
-
-          {/* ── Modal Footer: Direct Provider Website Link ── */}
-          <div className={styles.modalFooter}>
-            <p className={styles.footerDisclaimer}>
-              Redirects to official {property.source_platform || "listing portal"} page. No booking fees.
-            </p>
-            <a
-              href={
-                property.listing_url ||
-                property.source_url ||
-                recommendation?.listing_url ||
-                recommendation?.source_url ||
-                "#"
-              }
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.directListingBtn}
-            >
-              <span>View on {property.source_platform || "Provider"}</span>
-              <ExternalLink size={13} />
-            </a>
           </div>
         </motion.div>
       </div>

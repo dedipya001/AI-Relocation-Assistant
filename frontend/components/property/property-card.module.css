@@ -231,18 +231,9 @@
   line-height: 1;
 }
 
-/* ── Actions Row (Explain Score + External Listing Link) ── */
-.actionsRow {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  margin-top: 6px;
-  padding-top: 4px;
-  border-top: 1px solid rgba(226, 232, 240, 0.6);
-}
-
+/* ── Explain Score button ────────────────────────────── */
 .explainBtn {
+  margin-top: 5px;
   display: inline-flex;
   align-items: center;
   gap: 4px;
@@ -254,31 +245,10 @@
   padding: 2px 0;
   cursor: pointer;
   transition: opacity 0.15s ease;
+  align-self: flex-start;
 }
 
 .explainBtn:hover {
   opacity: 0.75;
   text-decoration: underline;
-}
-
-.providerLinkBtn {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 0.62rem;
-  font-weight: 700;
-  color: #0284c7;
-  background: rgba(14, 165, 233, 0.08);
-  border: 1px solid rgba(14, 165, 233, 0.25);
-  border-radius: 4px;
-  padding: 3px 7px;
-  text-decoration: none;
-  transition: all 0.15s ease;
-  white-space: nowrap;
-}
-
-.providerLinkBtn:hover {
-  background: #0284c7;
-  color: #ffffff;
-  border-color: #0284c7;
 }

@@ -31,8 +31,6 @@ export type Property = {
   title: string;
   source_platform: string;
   source_url?: string | null;
-  listing_url?: string | null;
-  provider_url?: string | null;
   property_type: string;
   rent: number;
   deposit?: number | null;
@@ -46,7 +44,6 @@ export type Property = {
   commute_estimate_minutes?: number | null;
   lowest_price?: { source: string; rent: number; url?: string | null; observed_at?: string } | null;
   distance_to_office_km?: number | null;
-  road_distance_km?: number | null;
   city?: string | null;
   locality?: string | null;
 };
@@ -109,17 +106,6 @@ export type Recommendation = {
   entity_id: string;
   title: string;
   locality_name?: string | null;
-  source_platform?: string | null;
-  source_url?: string | null;
-  listing_url?: string | null;
-  provider_url?: string | null;
-  rent?: number;
-  deposit?: number | null;
-  distance_km?: number | null;
-  commute_minutes?: number | null;
-  furnishing?: string | null;
-  images?: string[];
-  amenities?: string[];
   score: RecommendationScore;
   highlights: string[];
   tradeoffs: string[];
