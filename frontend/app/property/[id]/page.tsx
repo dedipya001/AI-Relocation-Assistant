@@ -8,7 +8,7 @@ import { formatRent } from "@/lib/utils";
 import styles from "./page.module.css";
 
 export function generateStaticParams() {
-  return demoProperties.map((property) => ({
+  return demoProperties.slice(0, 100).map((property) => ({
     id: property._id,
   }));
 }

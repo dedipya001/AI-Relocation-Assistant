@@ -15,6 +15,13 @@ export type Locality = {
   summary: string;
   tags: string[];
   scores: ScoreBundle;
+  coordinates?: [number, number];
+  score?: number;
+  metrics?: Record<string, any>;
+  pros?: string[];
+  cons?: string[];
+  community_sentiment?: Record<string, any>;
+  top_amenities?: string[];
   essentials: Array<{ name: string; category: string; distance_meters: number; rating?: number }>;
   things_to_do: Array<{ name: string; category: string; distance_meters: number; rating?: number }>;
 };
@@ -23,22 +30,22 @@ export type Property = {
   _id: string;
   title: string;
   source_platform: string;
-  source_url?: string;
+  source_url?: string | null;
   property_type: string;
   rent: number;
-  deposit?: number;
-  area_sqft?: number;
-  furnishing?: string;
+  deposit?: number | null;
+  area_sqft?: number | null;
+  furnishing?: string | null;
   images: string[];
   amenities: string[];
-  location?: { type: "Point"; coordinates: [number, number] };
+  location?: { type: "Point"; coordinates: [number, number] } | null;
   locality_id: string;
-  nearby_metro?: string;
-  commute_estimate_minutes?: number;
-  lowest_price?: { source: string; rent: number; url?: string; observed_at?: string };
-  distance_to_office_km?: number;
-  city?: string;
-  locality?: string;
+  nearby_metro?: string | null;
+  commute_estimate_minutes?: number | null;
+  lowest_price?: { source: string; rent: number; url?: string | null; observed_at?: string } | null;
+  distance_to_office_km?: number | null;
+  city?: string | null;
+  locality?: string | null;
 };
 
 export type ScoringProfile =
