@@ -136,12 +136,16 @@ export const demoProperties: Property[] = [
 ];
 
 export function demoSearchResponse(query: string): SearchResponse {
+  const isCandor = query.toLowerCase().includes("candor");
+  const officeCoords: [number, number] = isCandor ? [88.4770, 22.5835] : [88.4335, 22.5762];
+  const officeLoc = isCandor ? "Candor TechSpace, New Town, Kolkata" : "Sector V, Kolkata";
+
   return {
     intent: {
       query,
       filters: {
-        office_location: "Sector V, Kolkata",
-        budget_max: 15000,
+        office_location: officeLoc,
+        budget_max: 35000,
         property_types: ["PG", "apartment", "shared flat", "co-living"],
         preferences: ["peaceful", "internet reliability", "food access"],
         transport_modes: ["metro", "app cab"]
@@ -149,6 +153,7 @@ export function demoSearchResponse(query: string): SearchResponse {
       inferred_lifestyle: ["internet reliability", "food access", "low commute"],
       follow_up_questions: []
     },
+    office_coordinates: officeCoords,
     properties: demoProperties,
     recommendations: demoProperties.map((property, index) => {
       const affordability = [92, 78, 84, 81, 88][index] ?? 80;

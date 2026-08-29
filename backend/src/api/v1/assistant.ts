@@ -26,7 +26,7 @@ assistantRouter.post("/chat", async (req: Request, res: Response): Promise<void>
     let properties = await propertyRepo.search(intent.filters);
 
     const officeCoordinates = intent.filters.office_location
-      ? await resolveOfficeCoordinates(intent.filters.office_location)
+      ? await resolveOfficeCoordinates(intent.filters.office_location, intent.filters.city)
       : null;
 
     if (officeCoordinates) {
