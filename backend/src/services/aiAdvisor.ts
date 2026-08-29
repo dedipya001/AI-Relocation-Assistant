@@ -135,13 +135,14 @@ Provide your relocation recommendations and genuine advice tailored to the user.
         messages: [
           {
             role: "system",
-            content: `You are an intent extraction engine for an Indian real estate relocation platform.
+            content: `You are an expert intent extraction engine for an Indian real estate relocation platform.
 Extract structured fields in valid JSON matching this schema:
 {
-  "office_location": string or null,
-  "city": string or null (one of "Bangalore", "Kolkata", "Mumbai", "Pune", "Hyderabad"),
+  "target_location": string or null (the specific neighborhood, street, lane, tech park, or landmark the user wants to live in or near, e.g. "Tarulia Lane", "Kestopur", "Manyata Tech Park", "Baner", "Indiranagar", "BKC", "Candor Gate 2"),
+  "office_location": string or null (workplace/office landmark if explicitly distinct from home search location),
+  "city": string or null (one of "Kolkata", "Bangalore", "Mumbai", "Pune", "Hyderabad", "Delhi NCR"),
   "budget_max": number in INR or null,
-  "property_types": array of strings (e.g. ["1BHK", "2BHK", "3BHK", "PG", "Studio"]),
+  "property_types": array of strings (e.g. ["1BHK", "2BHK", "3BHK", "PG", "Studio", "apartment"]),
   "amenities": array of strings (e.g. ["WiFi", "Gym", "Power Backup", "Parking", "Security", "Pool"]),
   "preferences": array of strings (e.g. ["peaceful", "safety", "metro connectivity", "low traffic", "food access"]),
   "inferred_lifestyle": array of strings
@@ -153,9 +154,11 @@ Extract structured fields in valid JSON matching this schema:
       });
 
       const parsed = JSON.parse(response.choices[0]?.message?.content || "{}");
+      const targetLoc = parsed.target_location || parsed.office_location || undefined;
+
       return {
         filters: {
-          office_location: parsed.office_location || undefined,
+          office_location: targetLoc,
           city: parsed.city || undefined,
           budget_max: parsed.budget_max || undefined,
           property_types: parsed.property_types || [],
@@ -166,6 +169,49 @@ Extract structured fields in valid JSON matching this schema:
         },
         inferred_lifestyle: parsed.inferred_lifestyle || parsed.preferences || [],
       };
+    } catch {
+      return null;
+    }
+  }
+
+  /**
+   * Resolves coordinates for Indian sub-localities, lanes, roads, and tech parks using LLM GIS knowledge.
+   */
+  async resolveLocationWithLLM(location: string, city: string): Promise<[number, number] | null> {
+    if (!this.openai) return null;
+
+    try {
+      const response = await this.openai.chat.completions.create({
+        model: config.OPENAI_MODEL || "gpt-4o-mini",
+        response_format: { type: "json_object" },
+        messages: [
+          {
+            role: "system",
+            content: `You are an expert Indian GIS geocoder with exhaustive knowledge of neighborhoods, sub-localities, streets, colonies, and IT corridors in Kolkata, Bangalore, Pune, Mumbai, Hyderabad, and Delhi NCR.
+Return the exact GPS coordinates [longitude, latitude] and parent locality in valid JSON:
+{
+  "coordinates": [number, number], // [longitude, latitude] e.g. [88.4380, 22.5870] for Tarulia Lane / Kestopur Kolkata
+  "parent_locality": string,
+  "confidence": number // 0 to 1
+}`,
+          },
+          {
+            role: "user",
+            content: `Location: "${location}", City: "${city}"`,
+          },
+        ],
+        temperature: 0.0,
+      });
+
+      const parsed = JSON.parse(response.choices[0]?.message?.content || "{}");
+      if (Array.isArray(parsed.coordinates) && parsed.coordinates.length === 2) {
+        const lon = Number(parsed.coordinates[0]);
+        const lat = Number(parsed.coordinates[1]);
+        if (!isNaN(lon) && !isNaN(lat) && lon > 65 && lon < 95 && lat > 8 && lat < 36) {
+          return [lon, lat];
+        }
+      }
+      return null;
     } catch {
       return null;
     }

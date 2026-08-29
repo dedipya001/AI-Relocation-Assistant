@@ -110,9 +110,26 @@ export class IntentParser {
   }
 
   private extractOfficeLocation(query: string): string | null {
-    const match = query.match(
-      /(?:work in|office in|near)\s+([A-Za-z0-9 ,.-]+?)(?:,| under| with| budget| for | so that | because |$)/i
+    // 1. Direct office / near / workplace patterns
+    const workMatch = query.match(
+      /(?:work in|office in|office is|office at|near|around|close to|nearby)\s+([A-Za-z0-9 ,.-]+?)(?:,| under| with| budget| for | so that | because |$)/i
     );
-    return match && match[1] ? match[1].trim() : null;
+    if (workMatch && workMatch[1]?.trim()) {
+      return workMatch[1].trim();
+    }
+
+    // 2. Direct locality search patterns: "flat in...", "in tarulia lane", "around balewadi"
+    const locMatch = query.match(
+      /(?:flat in|flats in|apartment in|pg in|house in|room in|place in|in|at)\s+([A-Za-z0-9 ,.-]+?)(?:,| under| with| budget| for | so that | because |$)/i
+    );
+    if (locMatch && locMatch[1]?.trim()) {
+      const cleaned = locMatch[1].trim();
+      const genericCities = ["kolkata", "bangalore", "bengaluru", "pune", "mumbai", "delhi", "hyderabad", "chennai"];
+      if (!genericCities.includes(cleaned.toLowerCase())) {
+        return cleaned;
+      }
+    }
+
+    return null;
   }
 }

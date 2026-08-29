@@ -145,18 +145,32 @@ async function main() {
   // 12. Commute Estimation
   await runTest("Commute Estimation (POST /api/v1/commute/estimate)", async () => {
     const res = await axios.post(`${BASE_URL}/api/v1/commute/estimate`, {
-      origin: "Sector V",
-      destination: "New Town Action Area I",
+      origin: "Tarulia Lane",
+      destination: "Sector V, Salt Lake",
       modes: ["metro", "uber", "rapido", "bus"],
     });
     if (res.status !== 200 || !Array.isArray(res.data) || res.data.length !== 4) {
       throw new Error(`Commute estimate failed: ${JSON.stringify(res.data)}`);
     }
     const metro = res.data.find((m: any) => m.mode === "metro");
-    return `4 modes estimated (Metro: ${metro?.minutes} mins, Rs ${metro?.monthly_cost}/mo)`;
+    return `4 modes estimated (Metro: ${metro?.minutes} mins, Rs ${metro?.monthly_cost}/mo, Dist: ${metro?.distance_km} km)`;
   });
 
-  // 13. AI Search with Intent, Geocoding & Ranking
+  // 13. Time-of-Day Traffic Analytics
+  await runTest("Diurnal Traffic Data by Time of Day (POST /api/v1/commute/traffic)", async () => {
+    const res = await axios.post(`${BASE_URL}/api/v1/commute/traffic`, {
+      origin: "Tarulia Lane, Kolkata",
+      destination: "Candor TechSpace, New Town",
+      city: "Kolkata",
+    });
+    if (res.status !== 200 || !res.data?.traffic_data?.time_slots || !res.data?.traffic_data?.hourly_profile) {
+      throw new Error(`Traffic data endpoint failed: ${JSON.stringify(res.data)}`);
+    }
+    const slots = res.data.traffic_data.time_slots;
+    return `Dist: ${res.data.road_distance_km} km, Morning Peak: ${slots.morning_peak.driving_minutes}m (x${slots.morning_peak.multiplier}), Midday: ${slots.midday.driving_minutes}m, Evening Peak: ${slots.evening_peak.driving_minutes}m, 24h data points: ${res.data.traffic_data.hourly_profile.length}`;
+  });
+
+  // 14. AI Search with Intent, Geocoding & Ranking
   await runTest("AI Relocation Search (POST /api/v1/search)", async () => {
     const res = await axios.post(`${BASE_URL}/api/v1/search`, {
       query: "peaceful 1bhk near sector v under 15k with metro and wifi",

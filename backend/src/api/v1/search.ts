@@ -4,7 +4,9 @@ import { config } from "../../core/config.js";
 import { getDatabase } from "../../db/mongo.js";
 import { LocalityRepository } from "../../repositories/localities.js";
 import { PropertyRepository } from "../../repositories/properties.js";
+import { AIAdvisor } from "../../services/aiAdvisor.js";
 import { cacheKey, getJson, setJson } from "../../services/cache.js";
+import { CommuteService } from "../../services/commute.js";
 import { IntentParser } from "../../services/intentParser.js";
 import { LowestPriceEngine } from "../../services/lowestPrice.js";
 import { RecommendationEngine } from "../../services/recommendations.js";
@@ -18,7 +20,7 @@ searchRouter.post("/", async (req: Request, res: Response): Promise<void> => {
     const customWeights = req.body?.weights;
     const hardConstraints = req.body?.hard_constraints;
 
-    const key = cacheKey("ai_search_v2", { query, profile, customWeights, hardConstraints });
+    const key = cacheKey("ai_search_v3", { query, profile, customWeights, hardConstraints });
 
     const cached = await getJson(key);
     if (cached) {
@@ -36,19 +38,19 @@ searchRouter.post("/", async (req: Request, res: Response): Promise<void> => {
       intent.filters.city = detectedCity;
     }
 
-    const db = getDatabase();
-    const propertyRepo = new PropertyRepository(db);
-    const localityRepo = new LocalityRepository(db);
-
-    let properties = await propertyRepo.search(intent.filters, 60);
-
     const officeCoordinates = intent.filters.office_location
       ? await resolveOfficeCoordinates(intent.filters.office_location, intent.filters.city)
       : null;
 
+    const db = getDatabase();
+    const propertyRepo = new PropertyRepository(db);
+    const localityRepo = new LocalityRepository(db);
+
+    let properties = await propertyRepo.search(intent.filters, 60, officeCoordinates);
+
     if (officeCoordinates) {
       rankByOfficeProximity(properties, officeCoordinates);
-      properties = keepNearbyRelocationOptions(properties);
+      properties = keepNearbyRelocationOptions(properties, 40, 15.0);
     }
 
     const localityIds = Array.from(new Set(properties.map((p) => p.locality_id).filter(Boolean)));
@@ -79,9 +81,20 @@ searchRouter.post("/", async (req: Request, res: Response): Promise<void> => {
       }
     );
 
+    // Calculate traffic data for the primary search area
+    const commuteService = new CommuteService();
+    const topDistance = enriched[0]?.distance_to_office_km || 3.5;
+    const topRoadDistance = enriched[0]?.road_distance_km || topDistance * 1.3;
+    const trafficData = commuteService.calculateTrafficData(
+      topDistance,
+      topRoadDistance,
+      intent.filters.city || "Kolkata"
+    );
+
     const result = {
       intent,
       office_coordinates: officeCoordinates ? [officeCoordinates[0], officeCoordinates[1]] : null,
+      traffic_data: trafficData,
       recommendations,
       properties: enriched,
     };
@@ -113,32 +126,43 @@ export async function resolveOfficeCoordinates(
 ): Promise<[number, number] | null> {
   if (!officeLocation) return null;
 
-  const known = knownOfficeCoordinates(officeLocation, city);
+  const normalizedCity = (city || detectCity(officeLocation) || config.DEFAULT_CITY).trim();
+  const known = knownOfficeCoordinates(officeLocation, normalizedCity);
   if (known) return known;
 
-  const normalizedCity = (city || "").toLowerCase().trim();
-  const cityCenter = CITY_CENTERS[normalizedCity];
+  const cityCenter = CITY_CENTERS[normalizedCity.toLowerCase()];
 
+  // 1. Try Mapbox Geocoding with proximity biasing
   if (config.MAPBOX_ACCESS_TOKEN) {
     const coords = await geocodeWithMapbox(
       officeLocation,
       config.MAPBOX_ACCESS_TOKEN,
-      city,
+      normalizedCity,
       cityCenter
     );
     if (coords) return coords;
   }
 
-  const coords = await geocodeWithNominatim(officeLocation, city);
+  // 2. Try OpenStreetMap Nominatim
+  const coords = await geocodeWithNominatim(officeLocation, normalizedCity);
   if (coords) return coords;
+
+  // 3. Try AI LLM Spatial Geocoding for obscure sub-localities, lanes, roads, or colonies
+  try {
+    const aiAdvisor = new AIAdvisor();
+    const aiCoords = await aiAdvisor.resolveLocationWithLLM(officeLocation, normalizedCity);
+    if (aiCoords) return aiCoords;
+  } catch {
+    // Non-critical fallback
+  }
 
   if (
     config.DEFAULT_OFFICE_HINT &&
     config.DEFAULT_OFFICE_HINT.toLowerCase() !== officeLocation.toLowerCase()
   ) {
-    const knownDefault = knownOfficeCoordinates(config.DEFAULT_OFFICE_HINT, city);
+    const knownDefault = knownOfficeCoordinates(config.DEFAULT_OFFICE_HINT, normalizedCity);
     if (knownDefault) return knownDefault;
-    return geocodeWithNominatim(config.DEFAULT_OFFICE_HINT, city);
+    return geocodeWithNominatim(config.DEFAULT_OFFICE_HINT, normalizedCity);
   }
 
   return null;
@@ -151,7 +175,7 @@ export function knownOfficeCoordinates(
   const normalized = officeLocation.toLowerCase();
   const normalizedCity = (city || "").toLowerCase().trim();
 
-  // ── KOLKATA TECH PARKS & HUBS ──
+  // ── KOLKATA TECH PARKS & SUB-LOCALITIES ──
   if (
     normalizedCity === "kolkata" ||
     normalized.includes("kolkata") ||
@@ -159,8 +183,26 @@ export function knownOfficeCoordinates(
     normalized.includes("new town") ||
     normalized.includes("rajarhat") ||
     normalized.includes("sector v") ||
-    normalized.includes("sector 5")
+    normalized.includes("sector 5") ||
+    normalized.includes("kestopur") ||
+    normalized.includes("tarulia") ||
+    normalized.includes("baguiati")
   ) {
+    if (normalized.includes("tarulia") || normalized.includes("krishnapur")) {
+      return [88.4380, 22.5870]; // Tarulia Lane / Krishnapur (near Kestopur & AA-1)
+    }
+    if (normalized.includes("kestopur")) {
+      return [88.4350, 22.5920]; // Kestopur VIP Road Corridor
+    }
+    if (normalized.includes("baguiati") || normalized.includes("teghoria")) {
+      return [88.4280, 22.6100]; // Baguiati / Teghoria
+    }
+    if (normalized.includes("lake town") || normalized.includes("bangur")) {
+      return [88.4035, 22.6033]; // Lake Town
+    }
+    if (normalized.includes("rajarhat main road") || normalized.includes("chinar park")) {
+      return [88.4412, 22.6237]; // Rajarhat Main Road / Chinar Park
+    }
     if (normalized.includes("candor") || normalized.includes("unitech")) {
       return [88.4770, 22.5835]; // Candor TechSpace New Town AA-1 (Gates 1, 2, 3)
     }
@@ -190,6 +232,12 @@ export function knownOfficeCoordinates(
     }
     if (normalized.includes("new town") || normalized.includes("action area")) {
       return [88.4798, 22.5797];
+    }
+    if (normalized.includes("kasba") || normalized.includes("acropolis")) {
+      return [88.3900, 22.5150];
+    }
+    if (normalized.includes("ballygunge")) {
+      return [88.3659, 22.5280];
     }
   }
 
@@ -359,12 +407,26 @@ export function rankByOfficeProximity(
     const coords = item.location?.coordinates || [];
     if (coords.length >= 2) {
       const distanceKm = haversineKm(officeLon, officeLat, Number(coords[0]), Number(coords[1]));
+      const roadKm = distanceKm < 2.0 ? distanceKm * 1.2 : distanceKm * 1.32;
       item.distance_to_office_km = Number(distanceKm.toFixed(2));
-      if (!item.commute_estimate_minutes) {
-        item.commute_estimate_minutes = Math.max(6, Math.floor(distanceKm * 4 + 8));
-      }
+      item.road_distance_km = Number(roadKm.toFixed(2));
+
+      // Free-flow base driving speed ~32 km/h; peak rush speed ~16 km/h
+      const baseDriving = Math.max(4, Math.round((roadKm / 32.0) * 60 + 3));
+      const peakMorning = Math.round(baseDriving * 1.85);
+      const peakEvening = Math.round(baseDriving * 1.95);
+      const offPeak = Math.round(baseDriving * 1.15);
+
+      item.off_peak_commute_minutes = offPeak;
+      item.commute_estimate_minutes = peakMorning;
+      item.peak_commute_minutes = peakMorning;
+      item.peak_evening_minutes = peakEvening;
+      item.metro_commute_minutes = Math.max(8, Math.round((roadKm / 35.0) * 60 + 8));
+      item.bike_taxi_minutes = Math.max(3, Math.round((roadKm / 28.0) * 60 * 1.35 + 2));
     } else {
       item.distance_to_office_km = 999.0;
+      item.road_distance_km = 999.0;
+      item.commute_estimate_minutes = 45;
     }
   }
 
@@ -377,31 +439,25 @@ export function rankByOfficeProximity(
 
 export function keepNearbyRelocationOptions(
   properties: Record<string, any>[],
-  maxItems: number = 40
+  maxItems: number = 40,
+  maxRadiusKm: number = 15.0
 ): Record<string, any>[] {
   if (!properties || properties.length === 0) return properties;
 
-  const nearest = [...properties].sort(
-    (a, b) => (a.distance_to_office_km || 999.0) - (b.distance_to_office_km || 999.0)
+  const valid = properties.filter((p) => (p.distance_to_office_km || 999.0) < 900);
+  if (valid.length === 0) return properties.slice(0, maxItems);
+
+  // Strictly filter to nearby properties within maxRadiusKm (e.g. 15 km max)
+  const strictlyNearby = valid.filter(
+    (item) => (item.distance_to_office_km || 999.0) <= maxRadiusKm
   );
-  const anchor = nearest[0];
-  const anchorCity = (anchor.city || "").trim().toLowerCase();
 
-  const nearby: Record<string, any>[] = [];
-  const radiusKm = 35.0;
-
-  for (const item of nearest) {
-    const distance = Number(item.distance_to_office_km || 999.0);
-    const itemCity = (item.city || "").trim().toLowerCase();
-
-    const cityMatches = Boolean(anchorCity) && itemCity === anchorCity;
-    const isNear = distance <= radiusKm;
-    if (cityMatches || isNear) {
-      nearby.push(item);
-    }
+  if (strictlyNearby.length >= 3) {
+    return strictlyNearby.slice(0, maxItems);
   }
 
-  return (nearby.length > 0 ? nearby : nearest).slice(0, maxItems);
+  // If very few candidates exist, return nearest available
+  return valid.slice(0, maxItems);
 }
 
 export function haversineKm(lon1: number, lat1: number, lon2: number, lat2: number): number {
