@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Clock, MapPin, Sparkles, AlertTriangle, ChevronRight } from "lucide-react";
+import { Clock, MapPin, Sparkles, AlertTriangle, ChevronRight, ExternalLink } from "lucide-react";
 import type { Property, Recommendation } from "@/types";
 import { ScoreBreakdownModal } from "./score-breakdown-modal";
 import styles from "./property-card.module.css";
@@ -182,21 +182,44 @@ export function PropertyCard({
             </div>
           )}
 
-          {/* Row 5 — Explain Score button trigger */}
-          {recommendation && (
-            <button
-              type="button"
-              className={styles.explainBtn}
-              onClick={(e) => {
-                e.stopPropagation();
-                setShowModal(true);
-              }}
-            >
-              <Sparkles size={10} />
-              <span>Explain Score &amp; Factors</span>
-              <ChevronRight size={10} />
-            </button>
-          )}
+          {/* Row 5 — Actions: Explain Score + View on Provider Listing */}
+          <div className={styles.actionsRow}>
+            {recommendation && (
+              <button
+                type="button"
+                className={styles.explainBtn}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setShowModal(true);
+                }}
+              >
+                <Sparkles size={10} />
+                <span>Explain Score</span>
+                <ChevronRight size={10} />
+              </button>
+            )}
+
+            {/* Direct Provider Listing Link (MagicBricks, NoBroker, etc.) */}
+            {(property.listing_url || property.source_url || recommendation?.listing_url || recommendation?.source_url) && (
+              <a
+                href={
+                  property.listing_url ||
+                  property.source_url ||
+                  recommendation?.listing_url ||
+                  recommendation?.source_url ||
+                  "#"
+                }
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.providerLinkBtn}
+                onClick={(e) => e.stopPropagation()}
+                title={`Open listing on ${property.source_platform || "Provider"}`}
+              >
+                <span>{property.source_platform || "View Listing"}</span>
+                <ExternalLink size={10} />
+              </a>
+            )}
+          </div>
         </div>
 
         {/* Active left-edge accent bar */}
