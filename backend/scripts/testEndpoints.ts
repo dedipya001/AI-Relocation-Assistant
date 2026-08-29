@@ -72,7 +72,21 @@ async function main() {
     }
   });
 
-  // 5. List Properties
+  // 5. Compare Localities Head-to-Head
+  await runTest("Compare Localities Head-to-Head (POST /api/v1/localities/compare)", async () => {
+    const res = await axios.post(`${BASE_URL}/api/v1/localities/compare`, {
+      locality_ids: ["loc-new-town", "loc-sector-v", "loc-lake-town"],
+      city: "Kolkata",
+      workplace: "Candor TechSpace Gate 2, New Town",
+    });
+    if (res.status !== 200 || !Array.isArray(res.data?.localities) || res.data.localities.length !== 3) {
+      throw new Error(`Locality comparison failed: ${JSON.stringify(res.data)}`);
+    }
+    const winners = res.data.category_winners;
+    return `Compared ${res.data.localities.length} localities against ${res.data.workplace}. Budget Winner: ${winners?.affordability?.name}, Commute Winner: ${winners?.commute?.name}, Overall: ${winners?.overall?.name}`;
+  });
+
+  // 6. List Properties
   let samplePropertyId = "";
   await runTest("List Properties (GET /api/v1/properties)", async () => {
     const res = await axios.get(`${BASE_URL}/api/v1/properties?budget_max=20000`);
