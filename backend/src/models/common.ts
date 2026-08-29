@@ -32,6 +32,7 @@ export enum TransportMode {
   Ola = "ola",
   Cityflow = "cityflow",
   Hexa = "hexa",
+  ShuttleSpeed = "shuttle_speed",
 }
 
 export function utcNow(): Date {

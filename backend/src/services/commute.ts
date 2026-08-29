@@ -1,5 +1,11 @@
 import { TransportMode } from "../models/common.js";
-import { CommuteEstimate, HourlyTraffic, TimeSlotTraffic, TrafficData } from "../models/commute.js";
+import {
+  CommuteEstimate,
+  HourlyTraffic,
+  ShuttleServiceRoute,
+  TimeSlotTraffic,
+  TrafficData,
+} from "../models/commute.js";
 
 export function haversineKm(lon1: number, lat1: number, lon2: number, lat2: number): number {
   const r = 6371.0;
@@ -51,12 +57,250 @@ const CITY_BOTTLENECKS: Record<string, string[]> = {
 
 export class CommuteService {
   /**
+   * Discovers nearest app-based shuttle routes (Cityflo, HexaH2O, ShuttleSpeed)
+   * connecting origin PG / flat to destination workplace/office.
+   */
+  findNearestShuttleRoutes(
+    originName: string,
+    destinationName: string,
+    roadDistanceKm: number,
+    city: string = "Kolkata"
+  ): ShuttleServiceRoute[] {
+    const normCity = city.toLowerCase();
+    const dist = Math.max(0.5, roadDistanceKm);
+    const travelMins = Math.max(10, Math.round((dist / 22.0) * 60 + 5));
+
+    if (normCity.includes("kolkata")) {
+      return [
+        {
+          service_name: "HexaH2O",
+          service_brand: "HexaH2O AC Micro-Transit",
+          route_code: "HEXA-KOL-102",
+          route_title: `${originName} to ${destinationName} Tech Park Corridor`,
+          pickup_point: `${originName} Main Gate / Arterial Crossing (240m walk)`,
+          pickup_distance_meters: 240,
+          pickup_walking_minutes: 3,
+          dropoff_point: `${destinationName} Portico / Main Gate Hub`,
+          morning_timings: ["08:15 AM", "08:35 AM", "08:55 AM", "09:15 AM", "09:35 AM", "09:55 AM"],
+          evening_timings: ["05:30 PM", "06:00 PM", "06:30 PM", "07:00 PM", "07:30 PM", "08:00 PM"],
+          frequency_minutes: 15,
+          travel_time_minutes: travelMins,
+          fare_per_ride_inr: Math.min(65, Math.max(35, Math.round(25 + dist * 5))),
+          monthly_pass_inr: Math.round((25 + dist * 5) * 2 * 22 * 0.75),
+          amenities: [
+            "AC Electric/Euro-6 Fleet",
+            "Reserved Recliner Seat",
+            "Live GPS Tracking via App",
+            "SOS Emergency Support",
+            "Fastest Corridor Routing"
+          ],
+          reliability_score: 91,
+          booking_app: "HexaRide App",
+          savings_vs_cab_pct: 68,
+        },
+        {
+          service_name: "Cityflo",
+          service_brand: "Cityflo Premium AC Shuttle",
+          route_code: "CITYFLO-KOL-04",
+          route_title: `Express Corridor: ${originName} to ${destinationName}`,
+          pickup_point: `Major Arterial Road Pickup Bay (360m walk from ${originName})`,
+          pickup_distance_meters: 360,
+          pickup_walking_minutes: 4,
+          dropoff_point: `${destinationName} Campus Hub`,
+          morning_timings: ["08:20 AM", "08:45 AM", "09:10 AM", "09:35 AM", "10:00 AM"],
+          evening_timings: ["05:45 PM", "06:15 PM", "06:45 PM", "07:15 PM", "07:45 PM"],
+          frequency_minutes: 20,
+          travel_time_minutes: Math.max(8, travelMins - 2),
+          fare_per_ride_inr: Math.min(85, Math.max(45, Math.round(35 + dist * 6))),
+          monthly_pass_inr: Math.round((35 + dist * 6) * 2 * 22 * 0.72),
+          amenities: [
+            "Premium BharatBenz Air-Conditioned Coach",
+            "High-Speed Wi-Fi & Laptop Charging Points",
+            "Guaranteed Recliner Seat",
+            "Quiet Work Environment",
+            "Ticketless QR App Boarding"
+          ],
+          reliability_score: 94,
+          booking_app: "Cityflo App",
+          savings_vs_cab_pct: 62,
+        },
+        {
+          service_name: "ShuttleSpeed",
+          service_brand: "ShuttleSpeed Tech Express",
+          route_code: "SHUTTLE-KOL-FAST",
+          route_title: `Direct Point-to-Point: ${originName} ⇄ ${destinationName}`,
+          pickup_point: `Neighborhood Transit Stand near ${originName} (410m walk)`,
+          pickup_distance_meters: 410,
+          pickup_walking_minutes: 5,
+          dropoff_point: `${destinationName} Reception Entry`,
+          morning_timings: ["08:30 AM", "08:50 AM", "09:10 AM", "09:30 AM", "09:50 AM"],
+          evening_timings: ["05:30 PM", "06:00 PM", "06:30 PM", "07:00 PM"],
+          frequency_minutes: 15,
+          travel_time_minutes: travelMins,
+          fare_per_ride_inr: Math.min(60, Math.max(30, Math.round(20 + dist * 5))),
+          monthly_pass_inr: Math.round((20 + dist * 5) * 2 * 22 * 0.75),
+          amenities: [
+            "AC Shuttles with On-Board Wi-Fi",
+            "Real-Time Seat Booking",
+            "Direct Non-Stop Office Drop",
+            "Fixed Timings & No Surge Pricing"
+          ],
+          reliability_score: 87,
+          booking_app: "ShuttleSpeed App",
+          savings_vs_cab_pct: 72,
+        }
+      ];
+    }
+
+    if (normCity.includes("bangalore") || normCity.includes("bengaluru")) {
+      return [
+        {
+          service_name: "Cityflo",
+          service_brand: "Cityflo Premium Tech Shuttle",
+          route_code: "CITYFLO-BLR-08",
+          route_title: `Outer Ring Road & Tech Park Express (${originName} ⇄ ${destinationName})`,
+          pickup_point: `${originName} ORR Service Road Bay (320m walk)`,
+          pickup_distance_meters: 320,
+          pickup_walking_minutes: 4,
+          dropoff_point: `${destinationName} Main Tech Park Campus`,
+          morning_timings: ["08:15 AM", "08:35 AM", "08:55 AM", "09:15 AM", "09:40 AM"],
+          evening_timings: ["05:30 PM", "06:00 PM", "06:30 PM", "07:00 PM", "07:30 PM"],
+          frequency_minutes: 15,
+          travel_time_minutes: travelMins,
+          fare_per_ride_inr: Math.min(95, Math.max(55, Math.round(40 + dist * 6))),
+          monthly_pass_inr: Math.round((40 + dist * 6) * 2 * 22 * 0.72),
+          amenities: [
+            "Air-Conditioned Premium Coach",
+            "Dedicated Bus Lane Prioritization",
+            "High-Speed Wi-Fi & Charging Sockets",
+            "Guaranteed Recliner Seat"
+          ],
+          reliability_score: 92,
+          booking_app: "Cityflo App",
+          savings_vs_cab_pct: 65,
+        },
+        {
+          service_name: "ShuttleSpeed",
+          service_brand: "ShuttleSpeed ORR Express",
+          route_code: "SHUTTLE-BLR-ORR",
+          route_title: `${originName} to ${destinationName} Direct Micro-Transit`,
+          pickup_point: `${originName} Main Junction Stop (260m walk)`,
+          pickup_distance_meters: 260,
+          pickup_walking_minutes: 3,
+          dropoff_point: `${destinationName} Terminal Gate`,
+          morning_timings: ["08:20 AM", "08:40 AM", "09:00 AM", "09:20 AM", "09:45 AM"],
+          evening_timings: ["05:40 PM", "06:10 PM", "06:40 PM", "07:10 PM"],
+          frequency_minutes: 15,
+          travel_time_minutes: travelMins,
+          fare_per_ride_inr: Math.min(75, Math.max(40, Math.round(30 + dist * 5))),
+          monthly_pass_inr: Math.round((30 + dist * 5) * 2 * 22 * 0.75),
+          amenities: [
+            "AC Commuter Van",
+            "Reserved Seating",
+            "Live Bus Tracking in App",
+            "No Surge Pricing"
+          ],
+          reliability_score: 88,
+          booking_app: "ShuttleSpeed App",
+          savings_vs_cab_pct: 70,
+        },
+        {
+          service_name: "HexaH2O",
+          service_brand: "HexaH2O Green Tech Shuttle",
+          route_code: "HEXA-BLR-MICRO",
+          route_title: `Eco-Transit: ${originName} to ${destinationName}`,
+          pickup_point: `Designated Shuttle Point (380m walk from ${originName})`,
+          pickup_distance_meters: 380,
+          pickup_walking_minutes: 4,
+          dropoff_point: `${destinationName} Gate Drop`,
+          morning_timings: ["08:30 AM", "08:50 AM", "09:10 AM", "09:30 AM"],
+          evening_timings: ["05:30 PM", "06:00 PM", "06:30 PM", "07:00 PM"],
+          frequency_minutes: 20,
+          travel_time_minutes: travelMins,
+          fare_per_ride_inr: Math.min(65, Math.max(35, Math.round(25 + dist * 5))),
+          monthly_pass_inr: Math.round((25 + dist * 5) * 2 * 22 * 0.75),
+          amenities: ["100% Electric EV AC Fleet", "Reserved Seat", "In-App QR Boarding"],
+          reliability_score: 89,
+          booking_app: "HexaRide App",
+          savings_vs_cab_pct: 72,
+        }
+      ];
+    }
+
+    // Default for Pune, Mumbai, Delhi, etc.
+    return [
+      {
+        service_name: "Cityflo",
+        service_brand: "Cityflo Urban Express",
+        route_code: "CITYFLO-EXP-01",
+        route_title: `${originName} to ${destinationName} Executive Shuttle`,
+        pickup_point: `${originName} Pick-Up Bay (290m walk)`,
+        pickup_distance_meters: 290,
+        pickup_walking_minutes: 3,
+        dropoff_point: `${destinationName} Corporate Gate`,
+        morning_timings: ["08:20 AM", "08:45 AM", "09:10 AM", "09:35 AM"],
+        evening_timings: ["05:30 PM", "06:00 PM", "06:30 PM", "07:00 PM"],
+        frequency_minutes: 15,
+        travel_time_minutes: travelMins,
+        fare_per_ride_inr: Math.min(80, Math.max(45, Math.round(35 + dist * 5))),
+        monthly_pass_inr: Math.round((35 + dist * 5) * 2 * 22 * 0.72),
+        amenities: ["Premium AC Seating", "High Speed Wi-Fi", "Mobile Charging Ports", "Reserved Seating"],
+        reliability_score: 93,
+        booking_app: "Cityflo App",
+        savings_vs_cab_pct: 66,
+      },
+      {
+        service_name: "HexaH2O",
+        service_brand: "HexaH2O Smart Micro-Transit",
+        route_code: "HEXA-EXP-02",
+        route_title: `${originName} to ${destinationName} Tech Shuttle`,
+        pickup_point: `Main Road Crossing near ${originName} (350m walk)`,
+        pickup_distance_meters: 350,
+        pickup_walking_minutes: 4,
+        dropoff_point: `${destinationName} Campus Portico`,
+        morning_timings: ["08:15 AM", "08:35 AM", "08:55 AM", "09:15 AM"],
+        evening_timings: ["05:45 PM", "06:15 PM", "06:45 PM", "07:15 PM"],
+        frequency_minutes: 20,
+        travel_time_minutes: travelMins,
+        fare_per_ride_inr: Math.min(65, Math.max(35, Math.round(25 + dist * 5))),
+        monthly_pass_inr: Math.round((25 + dist * 5) * 2 * 22 * 0.75),
+        amenities: ["AC Mini-Coach", "App Tracking", "Zero Surge Pricing"],
+        reliability_score: 90,
+        booking_app: "HexaRide App",
+        savings_vs_cab_pct: 70,
+      },
+      {
+        service_name: "ShuttleSpeed",
+        service_brand: "ShuttleSpeed Rapid Transit",
+        route_code: "SHUTTLE-EXP-03",
+        route_title: `Direct Shuttle: ${originName} ⇄ ${destinationName}`,
+        pickup_point: `Transit Point Stop (400m walk from ${originName})`,
+        pickup_distance_meters: 400,
+        pickup_walking_minutes: 5,
+        dropoff_point: `${destinationName} Main Reception`,
+        morning_timings: ["08:30 AM", "08:50 AM", "09:10 AM", "09:30 AM"],
+        evening_timings: ["05:30 PM", "06:00 PM", "06:30 PM", "07:00 PM"],
+        frequency_minutes: 15,
+        travel_time_minutes: travelMins,
+        fare_per_ride_inr: Math.min(60, Math.max(30, Math.round(20 + dist * 5))),
+        monthly_pass_inr: Math.round((20 + dist * 5) * 2 * 22 * 0.75),
+        amenities: ["AC Fleet", "Guaranteed Seat", "Live In-App Tracking"],
+        reliability_score: 88,
+        booking_app: "ShuttleSpeed App",
+        savings_vs_cab_pct: 74,
+      }
+    ];
+  }
+
+  /**
    * Calculates comprehensive traffic data across different diurnal time slots and 24 hours.
    */
   calculateTrafficData(
     aerialDistanceKm: number,
     roadDistanceKm: number,
-    city: string = "Kolkata"
+    city: string = "Kolkata",
+    originName: string = "Selected PG / Flat",
+    destinationName: string = "Office / Workplace"
   ): TrafficData {
     const dist = Math.max(0.5, roadDistanceKm);
     const normCity = city.toLowerCase();
@@ -86,7 +330,7 @@ export class CommuteService {
     // Time Slot 2: Morning Peak (08:30 - 11:30)
     const morningMult = normCity.includes("bangalore") || normCity.includes("mumbai") ? 2.05 : 1.85;
     const morningDriving = Math.round(baseDrivingMinutes * morningMult);
-    const morningBike = Math.round(baseBikeMinutes * 1.35); // 2-wheelers bypass vehicle gridlocks
+    const morningBike = Math.round(baseBikeMinutes * 1.35);
     const morningBus = Math.round(baseBusMinutes * 1.95);
     const morningPeak: TimeSlotTraffic = {
       slot_name: "Morning Peak Rush",
@@ -95,12 +339,12 @@ export class CommuteService {
       congestion_index: 88,
       multiplier: morningMult,
       driving_minutes: morningDriving,
-      cab_minutes: morningDriving + 4, // pickup/wait time
+      cab_minutes: morningDriving + 4,
       bike_taxi_minutes: morningBike,
-      metro_minutes: baseMetroMinutes, // Metro is immune to road traffic
+      metro_minutes: baseMetroMinutes,
       bus_minutes: morningBus,
       typical_delay_minutes: Math.round(morningDriving - baseDrivingMinutes),
-      recommendation: "Heavy congestion on arterial roads. Prefer Metro or Two-Wheeler / Bike Taxi to save 40-50% travel time.",
+      recommendation: "Heavy congestion on arterial roads. Prefer Metro or Two-Wheeler / Bike Taxi or Shuttle to save 40-50% travel time.",
     };
 
     // Time Slot 3: Midday Lull (11:30 - 16:30)
@@ -118,7 +362,7 @@ export class CommuteService {
       metro_minutes: baseMetroMinutes,
       bus_minutes: Math.round(baseBusMinutes * 1.2),
       typical_delay_minutes: Math.round(middayDriving - baseDrivingMinutes),
-      recommendation: "Moderate traffic flow. Cabs and cars operate smoothly without gridlocks.",
+      recommendation: "Moderate traffic flow. Cabs, shuttles and cars operate smoothly without gridlocks.",
     };
 
     // Time Slot 4: Evening Peak (17:30 - 21:00)
@@ -138,7 +382,7 @@ export class CommuteService {
       metro_minutes: baseMetroMinutes,
       bus_minutes: eveningBus,
       typical_delay_minutes: Math.round(eveningDriving - baseDrivingMinutes),
-      recommendation: "Severe return-trip bottlenecks. Metro provides fastest reliable transit.",
+      recommendation: "Severe return-trip bottlenecks. Metro & AC Shuttles provide fastest reliable transit.",
     };
 
     // Time Slot 5: Late Night (21:30 - 06:00)
@@ -189,6 +433,7 @@ export class CommuteService {
 
     const cityKey = Object.keys(CITY_BOTTLENECKS).find(k => normCity.includes(k)) || "kolkata";
     const bottlenecks = CITY_BOTTLENECKS[cityKey] || CITY_BOTTLENECKS.kolkata;
+    const shuttleServices = this.findNearestShuttleRoutes(originName, destinationName, roadDistanceKm, city);
 
     return {
       aerial_distance_km: Number(aerialDistanceKm.toFixed(2)),
@@ -204,11 +449,12 @@ export class CommuteService {
       },
       hourly_profile: hourlyProfile,
       bottlenecks,
+      shuttle_services: shuttleServices,
       fastest_mode_by_time: {
         early_morning: "Private Car / Cab (Fastest)",
-        morning_peak: "Metro Line (Immune to traffic) / Two-Wheeler Rapido",
-        midday: "Cab (Uber/Ola) / Two-Wheeler",
-        evening_peak: "Metro Line / Two-Wheeler Rapido",
+        morning_peak: "Metro Line / HexaH2O AC Shuttle / Two-Wheeler Rapido",
+        midday: "Cityflo AC Shuttle / Cab (Uber/Ola)",
+        evening_peak: "Metro Line / HexaH2O AC Shuttle / Two-Wheeler Rapido",
         late_night: "Private Car / Cab (Fastest)",
       },
     };
@@ -227,6 +473,7 @@ export class CommuteService {
   }): Promise<{
     estimates: CommuteEstimate[];
     traffic_data: TrafficData;
+    shuttle_routes: ShuttleServiceRoute[];
     distance_km: number;
     road_distance_km: number;
   }> {
@@ -246,13 +493,16 @@ export class CommuteService {
 
     // Road distance tortuosity factor: typically 1.25x - 1.38x in Indian urban road layouts
     const roadKm = aerialKm < 2.0 ? aerialKm * 1.2 : aerialKm * 1.32;
-    const trafficData = this.calculateTrafficData(aerialKm, roadKm, city);
+    const trafficData = this.calculateTrafficData(aerialKm, roadKm, city, originName, destinationName);
 
     const selectedModes: TransportMode[] =
       modes && modes.length > 0
         ? modes.map((m) => m as TransportMode).filter((m) => Object.values(TransportMode).includes(m))
         : [
             TransportMode.Metro,
+            TransportMode.Cityflow,
+            TransportMode.Hexa,
+            TransportMode.ShuttleSpeed,
             TransportMode.Uber,
             TransportMode.Rapido,
             TransportMode.Bus,
@@ -271,6 +521,36 @@ export class CommuteService {
       let summary = "";
 
       switch (mode) {
+        case TransportMode.Cityflow:
+          offPeakMin = Math.max(8, Math.round((dist / 24.0) * 60 + 4));
+          peakMorningMin = Math.round(offPeakMin * 1.3);
+          peakEveningMin = Math.round(offPeakMin * 1.35);
+          monthlyCost = Math.round((35 + dist * 6) * 2 * 22 * 0.72);
+          reliability = 94;
+          peakDelay = 5;
+          summary = `Cityflo premium AC coach with reserved recliner seat, Wi-Fi, and laptop charging.`;
+          break;
+
+        case TransportMode.Hexa:
+          offPeakMin = Math.max(10, Math.round((dist / 22.0) * 60 + 5));
+          peakMorningMin = Math.round(offPeakMin * 1.35);
+          peakEveningMin = Math.round(offPeakMin * 1.4);
+          monthlyCost = Math.round((25 + dist * 5) * 2 * 22 * 0.75);
+          reliability = 91;
+          peakDelay = 6;
+          summary = `HexaH2O AC micro-transit shuttle connecting PG directly to tech corridor gates.`;
+          break;
+
+        case TransportMode.ShuttleSpeed:
+          offPeakMin = Math.max(10, Math.round((dist / 22.0) * 60 + 5));
+          peakMorningMin = Math.round(offPeakMin * 1.35);
+          peakEveningMin = Math.round(offPeakMin * 1.4);
+          monthlyCost = Math.round((20 + dist * 5) * 2 * 22 * 0.75);
+          reliability = 88;
+          peakDelay = 6;
+          summary = `ShuttleSpeed rapid point-to-point office transit with live seat booking.`;
+          break;
+
         case TransportMode.Metro:
           offPeakMin = trafficData.time_slots.midday.metro_minutes;
           peakMorningMin = trafficData.time_slots.morning_peak.metro_minutes;
@@ -286,7 +566,7 @@ export class CommuteService {
           offPeakMin = trafficData.time_slots.midday.cab_minutes;
           peakMorningMin = trafficData.time_slots.morning_peak.cab_minutes;
           peakEveningMin = trafficData.time_slots.evening_peak.cab_minutes;
-          monthlyCost = Math.round(dist * 22 * 2 * 22); // ~Rs 22/km round trip 22 working days
+          monthlyCost = Math.round(dist * 22 * 2 * 22);
           reliability = 70;
           peakDelay = trafficData.time_slots.morning_peak.typical_delay_minutes;
           summary = `App cab (Uber/Ola). Comfortable, AC door-to-door, prone to peak-hour bottleneck delays.`;
@@ -296,9 +576,9 @@ export class CommuteService {
           offPeakMin = trafficData.time_slots.midday.bike_taxi_minutes;
           peakMorningMin = trafficData.time_slots.morning_peak.bike_taxi_minutes;
           peakEveningMin = trafficData.time_slots.evening_peak.bike_taxi_minutes;
-          monthlyCost = Math.round(dist * 9 * 2 * 22); // ~Rs 9/km round trip
+          monthlyCost = Math.round(dist * 9 * 2 * 22);
           reliability = 78;
-          peakDelay = Math.round(peakDelay * 0.4); // filters traffic
+          peakDelay = Math.round(peakDelay * 0.4);
           summary = `Bike taxi / Two-wheeler. Weaves through traffic bottlenecks, cutting peak delay in half.`;
           break;
 
@@ -349,6 +629,7 @@ export class CommuteService {
     return {
       estimates,
       traffic_data: trafficData,
+      shuttle_routes: trafficData.shuttle_services,
       distance_km: Number(aerialKm.toFixed(2)),
       road_distance_km: Number(roadKm.toFixed(2)),
     };

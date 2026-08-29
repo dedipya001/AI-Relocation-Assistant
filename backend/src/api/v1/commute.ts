@@ -81,6 +81,7 @@ commuteRouter.post("/traffic", async (req: Request, res: Response): Promise<void
       destination_coordinates: destCoords,
       aerial_distance_km: detailed.distance_km,
       road_distance_km: detailed.road_distance_km,
+      shuttle_services: detailed.shuttle_routes,
       traffic_data: detailed.traffic_data,
       mode_estimates: detailed.estimates,
     });

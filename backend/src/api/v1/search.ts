@@ -81,20 +81,25 @@ searchRouter.post("/", async (req: Request, res: Response): Promise<void> => {
       }
     );
 
-    // Calculate traffic data for the primary search area
+    // Calculate traffic and shuttle data for the primary search area
     const commuteService = new CommuteService();
     const topDistance = enriched[0]?.distance_to_office_km || 3.5;
     const topRoadDistance = enriched[0]?.road_distance_km || topDistance * 1.3;
+    const originLocality = enriched[0]?.locality || intent.filters.office_location || "Selected Property";
+    const destOffice = intent.filters.office_location || "Workplace";
     const trafficData = commuteService.calculateTrafficData(
       topDistance,
       topRoadDistance,
-      intent.filters.city || "Kolkata"
+      intent.filters.city || "Kolkata",
+      originLocality,
+      destOffice
     );
 
     const result = {
       intent,
       office_coordinates: officeCoordinates ? [officeCoordinates[0], officeCoordinates[1]] : null,
       traffic_data: trafficData,
+      shuttle_services: trafficData.shuttle_services,
       recommendations,
       properties: enriched,
     };

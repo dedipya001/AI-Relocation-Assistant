@@ -28,6 +28,28 @@ export const HourlyTrafficSchema = z.object({
 });
 export type HourlyTraffic = z.infer<typeof HourlyTrafficSchema>;
 
+export const ShuttleServiceRouteSchema = z.object({
+  service_name: z.string(), // "Cityflo" | "HexaH2O" | "ShuttleSpeed"
+  service_brand: z.string(), // "HexaH2O AC Micro-Transit", etc.
+  route_code: z.string(),
+  route_title: z.string(),
+  pickup_point: z.string(),
+  pickup_distance_meters: z.number(),
+  pickup_walking_minutes: z.number(),
+  dropoff_point: z.string(),
+  morning_timings: z.array(z.string()),
+  evening_timings: z.array(z.string()),
+  frequency_minutes: z.number(),
+  travel_time_minutes: z.number(),
+  fare_per_ride_inr: z.number(),
+  monthly_pass_inr: z.number(),
+  amenities: z.array(z.string()),
+  reliability_score: z.number().min(0).max(100),
+  booking_app: z.string(),
+  savings_vs_cab_pct: z.number(),
+});
+export type ShuttleServiceRoute = z.infer<typeof ShuttleServiceRouteSchema>;
+
 export const TrafficDataSchema = z.object({
   aerial_distance_km: z.number(),
   road_distance_km: z.number(),
@@ -42,6 +64,7 @@ export const TrafficDataSchema = z.object({
   }),
   hourly_profile: z.array(HourlyTrafficSchema),
   bottlenecks: z.array(z.string()),
+  shuttle_services: z.array(ShuttleServiceRouteSchema).default([]),
   fastest_mode_by_time: z.record(z.string()),
 });
 export type TrafficData = z.infer<typeof TrafficDataSchema>;
@@ -67,6 +90,7 @@ export const CommuteDataSchema = z.object({
   destination: z.string(),
   estimates: z.array(CommuteEstimateSchema),
   traffic_data: TrafficDataSchema.optional(),
+  shuttle_routes: z.array(ShuttleServiceRouteSchema).default([]),
   provider: z.string(),
   created_at: z.union([z.date(), z.string()]).default(() => new Date().toISOString()),
 });
