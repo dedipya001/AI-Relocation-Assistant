@@ -72,7 +72,64 @@ async function main() {
     }
   });
 
-  // 5. List Properties
+  // 5. Compare Localities Head-to-Head
+  await runTest("Compare Localities Head-to-Head (POST /api/v1/localities/compare)", async () => {
+    const res = await axios.post(`${BASE_URL}/api/v1/localities/compare`, {
+      locality_ids: ["loc-new-town", "loc-sector-v", "loc-lake-town"],
+      city: "Kolkata",
+      workplace: "Candor TechSpace Gate 2, New Town",
+    });
+    if (res.status !== 200 || !Array.isArray(res.data?.localities) || res.data.localities.length !== 3) {
+      throw new Error(`Locality comparison failed: ${JSON.stringify(res.data)}`);
+    }
+    const winners = res.data.category_winners;
+    return `Compared ${res.data.localities.length} localities against ${res.data.workplace}. Budget Winner: ${winners?.affordability?.name}, Commute Winner: ${winners?.commute?.name}, Overall: ${winners?.overall?.name}`;
+  });
+
+  // 6. Real Metro Lines Network
+  await runTest("All Metro Lines by City (GET /api/v1/transit/metro)", async () => {
+    const res = await axios.get(`${BASE_URL}/api/v1/transit/metro?city=Kolkata`);
+    if (res.status !== 200 || !Array.isArray(res.data?.lines) || res.data.lines.length === 0) {
+      throw new Error(`Metro lines fetch failed: ${JSON.stringify(res.data)}`);
+    }
+    const linesSummary = res.data.lines.map((l: any) => `${l.name} (${l.total_stations} stns, ${l.length_km}km)`).join(" | ");
+    return `Found ${res.data.lines.length} metro lines for Kolkata: ${linesSummary}`;
+  });
+
+  // 7. Real Bus Routes
+  await runTest("Real Bus Routes by City (GET /api/v1/transit/bus)", async () => {
+    const res = await axios.get(`${BASE_URL}/api/v1/transit/bus?city=Kolkata`);
+    if (res.status !== 200 || !Array.isArray(res.data?.routes) || res.data.routes.length === 0) {
+      throw new Error(`Bus routes fetch failed: ${JSON.stringify(res.data)}`);
+    }
+    return `Found ${res.data.routes.length} bus routes (e.g. ${res.data.routes.map((r: any) => r.route_number).join(", ")})`;
+  });
+
+  // 8. Cafes & Clubs Lifestyle Directory
+  await runTest("Cafes & Clubs Lifestyle Directory (GET /api/v1/transit/lifestyle)", async () => {
+    const res = await axios.get(`${BASE_URL}/api/v1/transit/lifestyle?locality_id=loc-sector-v`);
+    if (res.status !== 200 || !Array.isArray(res.data?.venues) || res.data.venues.length === 0) {
+      throw new Error(`Lifestyle venues fetch failed: ${JSON.stringify(res.data)}`);
+    }
+    return `Found ${res.data.venues.length} venues in Sector V (e.g. ${res.data.venues.map((v: any) => `${v.name} [${v.category}]`).join(", ")})`;
+  });
+
+  // 9. Nearest Transit & Lifestyle Hubs
+  await runTest("Nearest Transit & Lifestyle Hubs (POST /api/v1/transit/hubs)", async () => {
+    const res = await axios.post(`${BASE_URL}/api/v1/transit/hubs`, {
+      coordinates: [88.4335, 22.5762], // Sector V SDF
+      max_radius_km: 5.0,
+    });
+    if (res.status !== 200 || !Array.isArray(res.data?.metro_stations) || !Array.isArray(res.data?.cafes_nearby)) {
+      throw new Error(`Nearest hubs search failed: ${JSON.stringify(res.data)}`);
+    }
+    const nearestMetro = res.data.metro_stations[0];
+    const nearestCafe = res.data.cafes_nearby[0];
+    const nearestClub = res.data.clubs_and_breweries[0];
+    return `Nearest Metro: ${nearestMetro?.station_name} (${nearestMetro?.distance_km}km, ${nearestMetro?.line_name}), Cafe: ${nearestCafe?.venue?.name} (${nearestCafe?.distance_km}km), Club/Brewery: ${nearestClub?.venue?.name} (${nearestClub?.distance_km}km)`;
+  });
+
+  // 10. List Properties
   let samplePropertyId = "";
   await runTest("List Properties (GET /api/v1/properties)", async () => {
     const res = await axios.get(`${BASE_URL}/api/v1/properties?budget_max=20000`);
