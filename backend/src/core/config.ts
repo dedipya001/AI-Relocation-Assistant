@@ -43,6 +43,12 @@ const configSchema = z.object({
   SCRAPER_USER_AGENT: z.string().default("RelocationAIResearchBot/0.1"),
   SCRAPER_PROXY_URL: z.string().optional(),
 
+  SITE_NAME: z.string().default("ThikanaKhojo"),
+  SITE_DOMAIN: z.string().default("thikanakhojo.com"),
+  SITE_URL: z.string().default("https://thikanakhojo.com"),
+  CONTACT_EMAIL: z.string().default("thikanakhojo@gmail.com"),
+  ADSENSE_PUB_ID: z.string().default("pub-0000000000000000"),
+
   DEFAULT_CITY: z.string().default("Kolkata"),
   DEFAULT_OFFICE_HINT: z.string().default("Sector V, Salt Lake, Kolkata"),
 });
@@ -52,9 +58,15 @@ const rawConfig = configSchema.parse(process.env);
 export const config = {
   ...rawConfig,
   port: rawConfig.PORT ?? rawConfig.API_PORT,
-  corsOrigins: rawConfig.FRONTEND_URL.split(",")
-    .map((origin) => origin.trim())
-    .filter(Boolean),
+  corsOrigins: [
+    ...rawConfig.FRONTEND_URL.split(",")
+      .map((origin) => origin.trim())
+      .filter(Boolean),
+    "https://thikanakhojo.com",
+    "https://www.thikanakhojo.com",
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+  ],
   cachePrefix: `relocation:${rawConfig.ENVIRONMENT}`,
 };
 

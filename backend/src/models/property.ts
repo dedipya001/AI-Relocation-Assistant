@@ -13,6 +13,8 @@ export const PropertyBaseSchema = z.object({
   title: z.string(),
   source_platform: z.nativeEnum(SourcePlatform),
   source_url: z.string().nullable().optional(),
+  listing_url: z.string().nullable().optional(),
+  provider_url: z.string().nullable().optional(),
   property_type: z.string(),
   rent: z.number(),
   deposit: z.number().nullable().optional(),

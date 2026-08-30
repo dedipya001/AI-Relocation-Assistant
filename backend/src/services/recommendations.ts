@@ -204,11 +204,26 @@ export class RecommendationEngine {
         penalties,
       };
 
+      const sourceUrl = resolveProviderListingUrl(item);
+      const sourcePlatform = item.source_platform || item.lowest_price?.source || "MagicBricks";
+
       return {
+        rank: 0,
         entity_type: "property",
         entity_id: String(item._id),
         title: item.title,
-        locality_name: locality.name || null,
+        locality_name: locality.name || item.locality || null,
+        source_platform: sourcePlatform,
+        source_url: sourceUrl,
+        listing_url: sourceUrl,
+        provider_url: sourceUrl,
+        rent: item.rent,
+        deposit: item.deposit ?? null,
+        distance_km: item.distance_to_office_km ?? null,
+        commute_minutes: item.commute_estimate_minutes ?? null,
+        furnishing: item.furnishing ?? null,
+        images: Array.isArray(item.images) ? item.images : [],
+        amenities: Array.isArray(item.amenities) ? item.amenities : [],
         score: scoreResult,
         highlights,
         tradeoffs,
@@ -585,3 +600,55 @@ export class RecommendationEngine {
     return `${item.title} achieved an overall score of ${totalScore}/100 under the ${profileLabel} profile, primarily driven by strong ${topFactors.join(" and ")} in ${locality.name || "the locality"}.`;
   }
 }
+
+export function resolveProviderListingUrl(item: Record<string, any>): string {
+  const appendUtm = (url: string): string => {
+    if (!url || typeof url !== "string" || !url.startsWith("http")) return url;
+    const delimiter = url.includes("?") ? "&" : "?";
+    if (url.includes("utm_source=")) return url;
+    return `${url}${delimiter}utm_source=thikanakhojo.com&utm_medium=referral&utm_campaign=relocation_assistant`;
+  };
+
+  if (item.source_url && typeof item.source_url === "string" && item.source_url.startsWith("http")) {
+    return appendUtm(item.source_url);
+  }
+  if (item.listing_url && typeof item.listing_url === "string" && item.listing_url.startsWith("http")) {
+    return appendUtm(item.listing_url);
+  }
+  if (item.provider_url && typeof item.provider_url === "string" && item.provider_url.startsWith("http")) {
+    return appendUtm(item.provider_url);
+  }
+  if (item.lowest_price?.url && typeof item.lowest_price.url === "string" && item.lowest_price.url.startsWith("http")) {
+    return appendUtm(item.lowest_price.url);
+  }
+  if (Array.isArray(item.price_history)) {
+    for (const ph of item.price_history) {
+      if (ph?.url && typeof ph.url === "string" && ph.url.startsWith("http")) {
+        return appendUtm(ph.url);
+      }
+    }
+  }
+
+  const platform = String(item.source_platform || "MagicBricks").toLowerCase();
+  const city = encodeURIComponent((item.city || "Kolkata").toLowerCase().trim());
+  const locality = item.locality || "Kolkata";
+  const localitySlug = encodeURIComponent(locality.trim());
+
+  let targetUrl = `https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=${city}&Locality=${localitySlug}`;
+
+  if (platform.includes("magicbricks")) {
+    targetUrl = `https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=${city}&Locality=${localitySlug}`;
+  } else if (platform.includes("99acres")) {
+    const slug = locality.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+    targetUrl = `https://www.99acres.com/rent-property-in-${slug}-${city}-ffid`;
+  } else if (platform.includes("nobroker")) {
+    const slug = locality.toLowerCase().replace(/[^a-z0-9]+/g, "_");
+    targetUrl = `https://www.nobroker.in/flats-for-rent-in-${slug}_${city}`;
+  } else if (platform.includes("housing")) {
+    const slug = locality.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+    targetUrl = `https://housing.com/in/buy/rent-in-${slug}-${city}`;
+  }
+
+  return appendUtm(targetUrl);
+}
+

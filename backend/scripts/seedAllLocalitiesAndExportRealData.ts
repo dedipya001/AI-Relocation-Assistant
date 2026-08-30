@@ -459,17 +459,50 @@ const LOCALITIES_SEEDS = [
 async function main() {
   await connectMongo();
   const db = getDatabase();
+  const { TransitAndLifestyleService } = await import("../src/services/transitAndLifestyleService.js");
+  const transitService = new TransitAndLifestyleService();
 
-  console.log("Upserting comprehensive real localities into MongoDB...");
+  console.log("Upserting comprehensive real localities into MongoDB with full Metro, Bus, Cafe & Club data...");
   for (const loc of LOCALITIES_SEEDS) {
     const slug = (loc._id as string).replace("loc-", "");
+    const hubs = transitService.findNearestHubs(loc.coordinates[0], loc.coordinates[1], 8.0);
+    const busRoutes = transitService.getBusRoutes(loc.city);
+    const cafes = transitService.getLifestyle({ localityId: loc._id, city: loc.city, category: "cafe" });
+    const specialtyCoffee = transitService.getLifestyle({ localityId: loc._id, city: loc.city, category: "specialty_coffee" });
+    const clubsAndBreweries = transitService.getLifestyle({ localityId: loc._id, city: loc.city, category: "brewery" })
+      .concat(transitService.getLifestyle({ localityId: loc._id, city: loc.city, category: "club" }))
+      .concat(transitService.getLifestyle({ localityId: loc._id, city: loc.city, category: "lounge" }));
+
+    const enhancedLoc = {
+      ...loc,
+      slug,
+      transit: {
+        nearest_metro_stations: hubs.metro_stations,
+        primary_bus_routes: busRoutes.slice(0, 4),
+      },
+      lifestyle: {
+        cafes: [...cafes, ...specialtyCoffee].slice(0, 5),
+        clubs_and_nightlife: clubsAndBreweries.slice(0, 5),
+      },
+    };
+
     await db.collection("localities").updateOne(
       { _id: loc._id as any },
-      { $set: { ...loc, slug } },
+      { $set: enhancedLoc },
       { upsert: true }
     );
   }
-  console.log(`Upserted ${LOCALITIES_SEEDS.length} localities into MongoDB.`);
+  console.log("Checking MongoDB properties collection...");
+  let propCount = await db.collection("properties").countDocuments({ is_active: { $ne: false } });
+  if (propCount === 0) {
+    console.log("Properties collection is empty. Automatically importing multi-city datasets from datasetJson/...");
+    const { execSync } = await import("child_process");
+    execSync("npx tsx scripts/importMagicBricksDataset.ts", {
+      cwd: path.resolve(__dirname, ".."),
+      stdio: "inherit",
+    });
+    propCount = await db.collection("properties").countDocuments({ is_active: { $ne: false } });
+  }
 
   console.log("Fetching all real properties from MongoDB...");
   const rawProps = await db.collection("properties").find({ is_active: { $ne: false } }).toArray();
