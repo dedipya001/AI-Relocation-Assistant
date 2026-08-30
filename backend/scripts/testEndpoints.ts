@@ -364,6 +364,53 @@ async function main() {
     return `Rank #1 (${first.title}): score ${first.score.total}, Rank #2 marked ineligible (${second.constraint_violations[0]})`;
   });
 
+  // 27. Root AdSense Verification File (GET /ads.txt)
+  await runTest("Root AdSense Verification File (GET /ads.txt)", async () => {
+    const res = await axios.get(`${BASE_URL}/ads.txt`);
+    if (res.status !== 200 || !res.data.includes("google.com")) {
+      throw new Error(`Invalid ads.txt response: ${res.data}`);
+    }
+    return `ads.txt verified with publisher format: ${res.data.trim()}`;
+  });
+
+  // 28. Search Engine Robots & Sitemap Directives (GET /robots.txt)
+  await runTest("Search Engine Robots & Sitemap Directives (GET /robots.txt)", async () => {
+    const res = await axios.get(`${BASE_URL}/robots.txt`);
+    if (res.status !== 200 || !res.data.includes("Sitemap:")) {
+      throw new Error(`Invalid robots.txt response: ${res.data}`);
+    }
+    return `robots.txt correctly declares sitemap directive: ${res.data.split("\n").filter((l: string) => l.startsWith("Sitemap"))[0]}`;
+  });
+
+  // 29. Dynamic XML Sitemap (GET /sitemap.xml)
+  await runTest("Dynamic XML Sitemap (GET /sitemap.xml)", async () => {
+    const res = await axios.get(`${BASE_URL}/sitemap.xml`);
+    if (res.status !== 200 || !res.data.includes("<urlset") || !res.data.includes("thikanakhojo.com")) {
+      throw new Error(`Invalid sitemap.xml response`);
+    }
+    const urlMatches = (res.data.match(/<loc>/g) || []).length;
+    return `Sitemap successfully generated with ${urlMatches} indexed URLs targeting thikanakhojo.com`;
+  });
+
+  // 30. Brand Metadata & Support Email (GET /api/v1/seo/brand-metadata)
+  await runTest("Brand Metadata & Support Email (GET /api/v1/seo/brand-metadata)", async () => {
+    const res = await axios.get(`${BASE_URL}/api/v1/seo/brand-metadata`);
+    if (res.status !== 200 || res.data?.domain !== "thikanakhojo.com" || res.data?.contact_email !== "thikanakhojo@gmail.com") {
+      throw new Error(`Brand metadata mismatch: ${JSON.stringify(res.data)}`);
+    }
+    return `Brand: ${res.data.site_name} (${res.data.domain}), Contact: ${res.data.contact_email}, Cities: ${res.data.supported_cities.join(", ")}`;
+  });
+
+  // 31. Rich Results Schema.org JSON-LD (GET /api/v1/seo/schema-org)
+  await runTest("Rich Results Schema.org JSON-LD (GET /api/v1/seo/schema-org)", async () => {
+    const res = await axios.get(`${BASE_URL}/api/v1/seo/schema-org`);
+    if (res.status !== 200 || !Array.isArray(res.data?.["@graph"])) {
+      throw new Error(`Invalid Schema.org graph: ${JSON.stringify(res.data)}`);
+    }
+    const org = res.data["@graph"].find((i: any) => i["@type"] === "Organization");
+    return `Structured Data: Organization "${org?.name}" with contact point "${org?.email}"`;
+  });
+
   // Summary
   console.log("\n=========================================");
   console.log("📊 TEST SUMMARY");

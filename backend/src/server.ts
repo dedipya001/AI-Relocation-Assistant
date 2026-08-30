@@ -52,7 +52,18 @@ export function createServer(): Express {
 
   // Health check endpoint
   app.get("/health", (_req: Request, res: Response) => {
-    res.json({ status: "ok" });
+    res.json({ status: "ok", site: config.SITE_NAME, domain: config.SITE_DOMAIN });
+  });
+
+  // Root SEO & Verification Endpoints (AdSense & Search Engines)
+  app.get("/ads.txt", (req: Request, res: Response) => {
+    import("./api/v1/seo.js").then((m) => m.handleAdsTxt(req, res));
+  });
+  app.get("/robots.txt", (req: Request, res: Response) => {
+    import("./api/v1/seo.js").then((m) => m.handleRobotsTxt(req, res));
+  });
+  app.get("/sitemap.xml", (req: Request, res: Response) => {
+    import("./api/v1/seo.js").then((m) => m.handleSitemapXml(req, res));
   });
 
   // Mount API v1 router
