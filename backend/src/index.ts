@@ -20,7 +20,7 @@ async function bootstrap() {
           port: config.port,
           env: config.ENVIRONMENT,
         },
-        `AI Relocation Intelligence API running at http://${config.API_HOST}:${config.port}`
+        `thikanakhojo.com API running at http://${config.API_HOST}:${config.port}`
       );
     });
 

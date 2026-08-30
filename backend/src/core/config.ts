@@ -40,7 +40,7 @@ const configSchema = z.object({
   RERA_FEED_URL: z.string().optional(),
 
   RATE_LIMIT_PER_MINUTE: z.coerce.number().default(60),
-  SCRAPER_USER_AGENT: z.string().default("RelocationAIResearchBot/0.1"),
+  SCRAPER_USER_AGENT: z.string().default("ThikanaKhojoBot/0.1"),
   SCRAPER_PROXY_URL: z.string().optional(),
 
   DEFAULT_CITY: z.string().default("Kolkata"),

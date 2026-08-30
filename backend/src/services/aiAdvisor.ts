@@ -57,7 +57,7 @@ export class AIAdvisor {
 
     // 2. Query OpenAI GPT-4o-mini with ground-truth search context
     try {
-      const systemPrompt = `You are "Relocation AI", an expert, pragmatic, and highly empathetic relocation consultant specializing in Indian tech hubs (Bengaluru, Kolkata, Mumbai, Pune, Hyderabad).
+      const systemPrompt = `You are "thikanakhojo.com AI Assistant", an expert, pragmatic, and highly empathetic relocation consultant specializing in Indian tech hubs (Bengaluru, Kolkata, Mumbai, Pune, Hyderabad).
 Your goal is to provide honest, grounded, and genuinely helpful real-world advice to home-seekers.
 
 CRITICAL GUIDELINES:
