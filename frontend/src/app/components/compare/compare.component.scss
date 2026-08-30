@@ -1,0 +1,16 @@
+.main { max-width: 1100px; margin: 0 auto; padding: 2rem 1.25rem; }
+.title { font-size: 1.5rem; font-weight: 900; letter-spacing: -0.025em; margin-bottom: 1.25rem; }
+.table-card { overflow: hidden; }
+.scroll { overflow-x: auto; }
+.head, .row {
+  display: grid;
+  grid-template-columns: 160px 70px 90px 100px 90px 1fr;
+  border-bottom: 1px solid var(--border);
+}
+.head { background: hsl(215 14% 96%); }
+.head span { padding: 0.65rem 1rem; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
+.row { transition: background 0.15s; }
+.row:last-child { border-bottom: none; }
+.row:hover { background: hsl(215 14% 98%); }
+.row span { padding: 0.85rem 1rem; font-size: 0.84rem; color: var(--foreground); display: flex; align-items: center; }
+.row span:first-child { font-weight: 700; }

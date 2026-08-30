@@ -1,0 +1,58 @@
+.panel {
+  position: absolute; left: 0; top: 0; bottom: 0;
+  width: 400px; max-width: 95vw; z-index: 10;
+  background: hsl(0 0% 100% / 0.92); backdrop-filter: blur(16px) saturate(1.5);
+  border-right: 1px solid var(--border);
+  box-shadow: 4px 0 32px hsl(215 25% 8% / 0.08);
+  display: flex; flex-direction: column; overflow: hidden;
+}
+.panel-header {
+  padding: 0.75rem 1rem 0.6rem;
+  border-bottom: 1px solid var(--border);
+  display: flex; flex-direction: column; gap: 0.55rem;
+}
+.brand { display: flex; align-items: center; gap: 0.4rem; }
+.brand-mark {
+  width: 1.6rem; height: 1.6rem; border-radius: 0.4rem;
+  background: linear-gradient(135deg, hsl(228,72%,58%), hsl(228,72%,45%));
+  color: white; display: flex; align-items: center; justify-content: center;
+  font-size: 0.75rem;
+}
+.brand-text { font-size: 0.88rem; font-weight: 700; letter-spacing: -0.015em; }
+.context-bar { padding: 0.6rem 1rem; border-bottom: 1px solid var(--border); min-height: 3.5rem; }
+
+/* Loading */
+.loading { display: flex; flex-direction: column; gap: 0.6rem; }
+.loading-row { display: flex; align-items: center; gap: 0.4rem; }
+.dot {
+  width: 6px; height: 6px; border-radius: 50%; background: var(--primary);
+  animation: dot-bounce 1.1s ease-in-out infinite;
+}
+.loading-text { font-size: 0.75rem; color: var(--muted); }
+.shimmer-stack { display: flex; flex-direction: column; gap: 0.35rem; }
+.shimmer-bar {
+  height: 8px; border-radius: 4px;
+  background: linear-gradient(90deg, hsl(215 14% 92%) 25%, hsl(215 14% 97%) 50%, hsl(215 14% 92%) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.6s infinite;
+}
+
+/* Summary */
+.summary { display: flex; flex-direction: column; gap: 0.2rem; }
+.summary-title { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); display: flex; align-items: center; gap: 0.3rem; }
+.sparkle { color: var(--primary); }
+.summary-body { font-size: 0.78rem; color: var(--foreground); line-height: 1.45; }
+.score-highlight { color: hsl(160 55% 38%); font-weight: 700; }
+
+/* List */
+.list {
+  flex: 1; overflow-y: auto; padding: 0.75rem 0.75rem;
+  display: flex; flex-direction: column; gap: 0.5rem;
+}
+
+/* Empty */
+.empty { display: flex; flex-direction: column; align-items: center; gap: 0.75rem; padding: 2.5rem 1rem; text-align: center; }
+.empty-orb { font-size: 2rem; }
+.empty-title { font-size: 0.92rem; font-weight: 700; color: var(--foreground); }
+.empty-desc { font-size: 0.8rem; color: var(--muted); max-width: 280px; line-height: 1.5; }
+.empty-hint { font-size: 0.74rem; color: var(--muted); font-style: italic; }

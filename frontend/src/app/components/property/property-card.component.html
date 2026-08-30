@@ -1,0 +1,153 @@
+<div
+  class="card"
+  [class.active]="isActive"
+  [class.ineligible]="isIneligible"
+  (click)="onClick.emit()"
+>
+  <div class="badge" [class.badge-active]="isActive">{{ (index ?? 0) + 1 }}</div>
+
+  <div class="body">
+    <!-- Row 1: locality + score + price -->
+    <div class="top-row">
+      <div class="location-block">
+        <div class="locality-row">
+          <span class="locality">{{ property.locality ?? property.city ?? '—' }}</span>
+          @if (totalScore !== null) {
+            <span class="score-pill" [class]="scorePillClass">★ {{ totalScore }}</span>
+          }
+        </div>
+        @if (property.city && property.locality) {
+          <span class="city">{{ property.city }}</span>
+        }
+      </div>
+      <div class="price-block">
+        <span class="price">₹{{ priceK }}k</span>
+        <span class="price-suffix">/mo</span>
+      </div>
+    </div>
+
+    <!-- Row 2: type & furnishing -->
+    <p class="subtitle">
+      {{ property.property_type }}{{ property.furnishing ? ' · ' + property.furnishing : '' }}
+    </p>
+
+    <!-- Violations -->
+    @if (violations.length > 0) {
+      <div class="violation-tag">
+        <span>⚠</span><span>{{ violations[0] }}</span>
+      </div>
+    }
+
+    <!-- Tags -->
+    <div class="tags">
+      @if (property.commute_estimate_minutes !== null && property.commute_estimate_minutes !== undefined) {
+        <span class="tag tag-commute">⏱ {{ property.commute_estimate_minutes }}&thinsp;min</span>
+      }
+      @if (property.distance_to_office_km !== null && property.distance_to_office_km !== undefined) {
+        <span class="tag">📍 {{ property.distance_to_office_km!.toFixed(1) }}&thinsp;km</span>
+      }
+      @for (t of amenityTags; track t) {
+        <span class="tag">{{ t }}</span>
+      }
+    </div>
+
+    <!-- Highlights -->
+    @if (highlights.length > 0) {
+      <div class="why-row">
+        @for (h of highlights.slice(0, 2); track h) {
+          <span class="why-tag">✓ {{ h }}</span>
+        }
+      </div>
+    }
+
+    <!-- Explain Score -->
+    @if (recommendation) {
+      <button type="button" class="explain-btn" (click)="openModal($event)">
+        <span>✦</span>
+        <span>Explain Score & Factors</span>
+        <span>›</span>
+      </button>
+    }
+  </div>
+
+  @if (isActive) { <div class="accent-bar"></div> }
+</div>
+
+<!-- Score Breakdown Modal -->
+@if (showModal() && recommendation) {
+  <div class="modal-backdrop" (click)="showModal.set(false)">
+    <div class="modal" (click)="$event.stopPropagation()">
+      <div class="modal-header">
+        <div>
+          <div class="modal-tag-row">
+            <span class="profile-badge">✦ {{ (recommendation.scoring_profile ?? 'balanced').replace('_', ' ').toUpperCase() }}</span>
+            @if (recommendation.rank) { <span class="rank-badge">Rank #{{ recommendation.rank }}</span> }
+          </div>
+          <h2 class="modal-title">{{ property.title }}</h2>
+          <p class="modal-locality">{{ property.locality || property.city || 'Kolkata' }} · ₹{{ property.rent.toLocaleString('en-IN') }}/mo</p>
+        </div>
+        <button type="button" class="close-btn" (click)="showModal.set(false)">✕</button>
+      </div>
+
+      <div class="score-hero">
+        <div class="score-circle" [style.border-color]="scoreColor">
+          <span class="score-num" [style.color]="scoreColor">{{ totalScore ?? 75 }}</span>
+          <span class="score-max">/ 100</span>
+        </div>
+        <div>
+          <h3 class="score-heading">Composite Match Score</h3>
+          <p class="score-sub">Calculated using 7 weighted criteria &amp; active persona.</p>
+        </div>
+        <div class="confidence-pill">
+          📈 {{ recommendation.score.confidence_score ?? 85 }}% Confidence
+        </div>
+      </div>
+
+      @if (violations.length > 0) {
+        <div class="violations-card">
+          <strong>⚠ Hard Constraint Violations</strong>
+          <ul>@for (v of violations; track v) { <li>{{ v }}</li> }</ul>
+        </div>
+      }
+
+      @if (subscores.length > 0) {
+        <div class="factors-section">
+          <h4>Weighted Factor Breakdown</h4>
+          @for (item of subscores; track item.key) {
+            <div class="factor-item">
+              <div class="factor-header">
+                <span class="factor-name">{{ item.label }}</span>
+                <span class="factor-score" [style.color]="getColor(item.score)">{{ item.score }}/100</span>
+                <span class="factor-weight">({{ (item.weight * 100) | number:'1.0-0' }}% wt → +{{ item.contribution }} pts)</span>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill" [style.width.%]="item.score" [style.background-color]="getColor(item.score)"></div>
+              </div>
+              @if (item.details) { <p class="factor-details">{{ item.details }}</p> }
+            </div>
+          }
+        </div>
+      }
+
+      <div class="insights-grid">
+        @if (highlights.length > 0) {
+          <div class="insight-box positive">
+            <h5>✔ Key Strengths</h5>
+            <ul>@for (h of highlights; track h) { <li>{{ h }}</li> }</ul>
+          </div>
+        }
+        @if (tradeoffs.length > 0) {
+          <div class="insight-box negative">
+            <h5>⚠ Tradeoffs</h5>
+            <ul>@for (t of tradeoffs; track t) { <li>{{ t }}</li> }</ul>
+          </div>
+        }
+      </div>
+
+      <div class="explanation-box">
+        <strong>✦ AI Recommendation Context</strong>
+        <p>{{ recommendation.score.explanation }}</p>
+      </div>
+    </div>
+  </div>
+}

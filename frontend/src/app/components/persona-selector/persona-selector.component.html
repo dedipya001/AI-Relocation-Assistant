@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="label-row">
+    <span class="section-label">Scoring Persona</span>
+    <span class="active-hint">{{ activeHint }}</span>
+  </div>
+  <div class="scroll-track">
+    @for (p of personas; track p.id) {
+      <button
+        type="button"
+        class="persona-btn"
+        [class.active]="store.selectedProfile() === p.id"
+        (click)="select(p.id)"
+        [disabled]="store.isLoading()"
+      >
+        <span class="icon">{{ p.icon }}</span>
+        <span class="lbl">{{ p.label }}</span>
+      </button>
+    }
+  </div>
+</div>

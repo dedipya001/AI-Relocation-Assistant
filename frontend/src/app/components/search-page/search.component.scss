@@ -1,0 +1,4 @@
+:host { display: flex; flex-direction: column; height: 100vh; overflow: hidden; }
+.page { display: flex; flex-direction: column; height: 100vh; overflow: hidden; }
+.container { flex: 1; position: relative; overflow: hidden; min-height: 0; }
+.map-pane { position: absolute; inset: 0; display: block; }

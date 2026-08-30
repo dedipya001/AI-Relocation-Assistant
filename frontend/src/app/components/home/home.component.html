@@ -1,0 +1,31 @@
+<app-nav />
+<main class="main">
+  <section class="intro">
+    <div class="intro-text">
+      <p class="eyebrow">AI relocation intelligence</p>
+      <h1 class="headline">Find where life works near your office.</h1>
+      <p class="copy">
+        Search with natural language and rank homes by commute, real rent signals,
+        safety, internet, food, and daily-life fit.
+      </p>
+    </div>
+    <div class="search-card card">
+      <app-search-box />
+    </div>
+    <div class="signals">
+      @for (s of signals; track s.label) {
+        <div class="signal card">
+          <span class="signal-icon">{{ s.icon }}</span>
+          <p class="signal-value">{{ s.value }}</p>
+          <p class="signal-label">{{ s.label }}</p>
+        </div>
+      }
+    </div>
+    <a routerLink="/search" class="cta-btn">
+      Open full search &nbsp;→
+    </a>
+  </section>
+  <div class="map-wrap">
+    <app-relocation-map />
+  </div>
+</main>

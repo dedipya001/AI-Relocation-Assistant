@@ -1,0 +1,181 @@
+@import 'mapbox-gl/dist/mapbox-gl.css';
+
+/* ─── Design Tokens ─────────────────────────────────────────────────────── */
+:root {
+  --background:  hsl(40, 28%, 97%);
+  --foreground:  hsl(215, 28%, 10%);
+  --muted:       hsl(215, 15%, 55%);
+  --border:      hsl(215, 14%, 89%);
+  --surface:     hsl(0, 0%, 100%);
+  --primary:     hsl(228, 72%, 58%);
+  --primary-dark:hsl(228, 72%, 44%);
+  --accent:      hsl(25, 90%, 58%);
+  --positive:    hsl(160, 55%, 38%);
+  --radius:      0.75rem;
+  --shadow-sm:   0 1px 3px hsl(215 25% 8% / 0.08);
+  --shadow-md:   0 4px 16px hsl(215 25% 8% / 0.10);
+  --shadow-lg:   0 16px 40px hsl(215 25% 8% / 0.14);
+}
+
+/* ─── Reset & Base ──────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+  font-size: 15px;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: var(--background);
+  color: var(--foreground);
+  letter-spacing: -0.01em;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, input, textarea {
+  font: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+img { max-width: 100%; }
+
+::selection {
+  background: hsl(25 90% 58% / 0.22);
+}
+
+/* ─── Mapbox Popup Overrides ────────────────────────────────────────────── */
+.relo-popup .mapboxgl-popup-content {
+  padding: 0;
+  border-radius: 0.8rem;
+  box-shadow: 0 16px 40px hsl(215 25% 8% / 0.14), 0 0 0 1px hsl(215 14% 89%);
+  overflow: hidden;
+  font-family: inherit;
+}
+
+.relo-popup .mapboxgl-popup-tip { display: none; }
+
+.relo-popup-inner {
+  padding: 0.7rem 0.85rem;
+  background: white;
+  min-width: 180px;
+}
+
+.relo-popup-header {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 0.25rem;
+}
+
+.relo-popup-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  background: hsl(228 72% 58%);
+  color: white;
+  font-size: 0.62rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.relo-popup-locality {
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: hsl(215 28% 10%);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.relo-popup-price {
+  font-size: 1rem;
+  font-weight: 800;
+  color: hsl(215 28% 10%);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.4rem;
+}
+
+.relo-popup-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.relo-popup-tag {
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
+  background: hsl(215 14% 93%);
+  color: hsl(215 20% 38%);
+  font-size: 0.62rem;
+  font-weight: 600;
+}
+
+.relo-popup-tag-commute {
+  background: hsl(228 72% 58% / 0.12);
+  color: hsl(228 72% 45%);
+}
+
+/* ─── Animation Keyframes ───────────────────────────────────────────────── */
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.5; }
+}
+@keyframes dot-bounce {
+  0%, 100% { transform: scale(0.7); opacity: 0.25; }
+  50%       { transform: scale(1);   opacity: 1;    }
+}
+@keyframes slide-in-left {
+  from { opacity: 0; transform: translateX(-12px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes modal-in {
+  from { opacity: 0; transform: scale(0.94) translateY(15px); }
+  to   { opacity: 1; transform: scale(1)    translateY(0);    }
+}
+@keyframes bar-fill {
+  from { width: 0; }
+}
+
+/* ─── Utility classes ───────────────────────────────────────────────────── */
+.fade-in { animation: fadeIn 0.38s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.slide-in { animation: slide-in-left 0.3s cubic-bezier(0.22, 1, 0.36, 1) both; }
+
+/* ─── Card base ─────────────────────────────────────────────────────────── */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ─── Scrollbar ─────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: hsl(215 14% 82%); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: hsl(215 15% 68%); }

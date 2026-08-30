@@ -1,0 +1,49 @@
+@if (compact) {
+  <form class="compact-form" (ngSubmit)="onSubmit()">
+    <textarea
+      class="compact-textarea"
+      [(ngModel)]="store.query"
+      name="query"
+      aria-label="AI relocation prompt"
+      placeholder="Office at Sector V · rent ≤ ₹20k · café culture · quiet evenings…"
+      (keydown.enter)="onEnter($event)"
+    ></textarea>
+    <button type="submit" class="compact-btn" [disabled]="store.isLoading()">
+      @if (store.isLoading()) {
+        <svg class="spin" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg>
+      } @else {
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg>
+      }
+      <span>{{ store.isLoading() ? 'Searching…' : 'Search' }}</span>
+    </button>
+  </form>
+} @else {
+  <form class="full-form" (ngSubmit)="onSubmit()">
+    <div class="form-header">
+      <p class="form-label">Tell the relocation AI what kind of life you want.</p>
+      <p class="form-hint">Include office, commute comfort, budget, and lifestyle vibe.</p>
+    </div>
+    <textarea
+      class="full-textarea"
+      [(ngModel)]="queryModel"
+      name="query"
+      aria-label="AI relocation prompt"
+      rows="4"
+    ></textarea>
+    <div class="prompt-chips">
+      @for (prompt of prompts; track prompt) {
+        <button type="button" class="chip" (click)="setPrompt(prompt)">{{ prompt }}</button>
+      }
+    </div>
+    <div class="form-actions">
+      <button type="submit" class="btn-primary" [disabled]="store.isLoading()">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg>
+        {{ store.isLoading() ? 'Mapping your relocation…' : 'Start AI relocation search' }}
+      </button>
+      <button type="button" class="btn-secondary" (click)="onSubmit()">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        Refresh recommendations
+      </button>
+    </div>
+  </form>
+}

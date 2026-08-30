@@ -1,0 +1,63 @@
+<app-nav />
+<main class="main">
+  @if (property()) {
+    <div class="layout">
+      <section>
+        <div class="hero-image"></div>
+        <h1 class="title">{{ property()!.title }}</h1>
+        <p class="meta">{{ property()!.property_type }}{{ property()!.furnishing ? ' - ' + property()!.furnishing : '' }}</p>
+        <div class="amenities">
+          @for (a of property()!.amenities; track a) {
+            <span class="amenity">{{ a }}</span>
+          }
+        </div>
+      </section>
+
+      <aside class="sidebar">
+        <div class="price-card card">
+          <p class="price">{{ formatRent(property()!.rent) }}</p>
+          <p class="price-label">listed rent per month</p>
+          @if (property()!.lowest_price) {
+            <p class="lowest-price">
+              Lowest found: {{ formatRent(property()!.lowest_price!.rent) }} on {{ property()!.lowest_price!.source }}
+            </p>
+          }
+        </div>
+
+        <div class="metric card">
+          <span class="metric-icon">⏱</span>
+          <div>
+            <p class="metric-label">Commute</p>
+            <p class="metric-value">{{ property()!.commute_estimate_minutes ?? 'TBD' }} min</p>
+          </div>
+        </div>
+        <div class="metric card">
+          <span class="metric-icon">📍</span>
+          <div>
+            <p class="metric-label">Nearby metro</p>
+            <p class="metric-value">{{ property()!.nearby_metro ?? 'TBD' }}</p>
+          </div>
+        </div>
+        <div class="metric card">
+          <span class="metric-icon">₹</span>
+          <div>
+            <p class="metric-label">Deposit</p>
+            <p class="metric-value">{{ property()!.deposit ? formatRent(property()!.deposit!) : 'TBD' }}</p>
+          </div>
+        </div>
+        <div class="metric card">
+          <span class="metric-icon">🛡</span>
+          <div>
+            <p class="metric-label">Fair rent</p>
+            <p class="metric-value">Coming from crowdsourcing</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  } @else {
+    <div class="loading-state">
+      <div class="spinner"></div>
+      <p>Loading property…</p>
+    </div>
+  }
+</main>

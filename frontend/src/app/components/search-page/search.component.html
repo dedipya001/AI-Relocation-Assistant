@@ -1,0 +1,21 @@
+<div class="page">
+  <app-nav />
+  <div class="container">
+    <!-- Map fills entire canvas -->
+    <div class="map-pane">
+      <app-relocation-map
+        [properties]="store.properties()"
+        [activePropertyIndex]="activeIndex()"
+        [officeCoordinates]="store.officeCoordinates()"
+        [officeLabel]="store.officeLabel()"
+        (markerClick)="activeIndex.set($event)"
+      />
+    </div>
+
+    <!-- AI glass overlay panel -->
+    <app-ai-panel
+      [activeIndex]="activeIndex()"
+      (onSelect)="activeIndex.set($event)"
+    />
+  </div>
+</div>

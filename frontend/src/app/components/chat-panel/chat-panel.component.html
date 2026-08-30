@@ -1,0 +1,27 @@
+<div class="panel">
+  <div class="messages">
+    @for (msg of messages(); track $index) {
+      <div class="message-row" [class.from-user]="msg.role === 'user'" [class.from-assistant]="msg.role === 'assistant'">
+        <div class="bubble" [class.user-bubble]="msg.role === 'user'" [class.assistant-bubble]="msg.role === 'assistant'">
+          {{ msg.content }}
+        </div>
+      </div>
+    }
+    @if (isLoading()) {
+      <div class="thinking">Thinking through tradeoffs…</div>
+    }
+  </div>
+  <form class="chat-form" (ngSubmit)="onSubmit()">
+    <input
+      class="chat-input"
+      [(ngModel)]="input"
+      name="message"
+      aria-label="Assistant message"
+      placeholder="Ask about commute, rent, safety…"
+      [disabled]="isLoading()"
+    />
+    <button type="submit" class="send-btn" [disabled]="isLoading()" aria-label="Send">
+      ➤
+    </button>
+  </form>
+</div>

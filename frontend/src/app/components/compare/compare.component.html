@@ -1,0 +1,23 @@
+<app-nav />
+<main class="main">
+  <h1 class="title">Compare localities</h1>
+  <div class="table-card card">
+    <div class="scroll">
+      <div class="head">
+        <span>Locality</span>
+        <span>Score</span>
+        <span>Commute</span>
+        <span>Rent from</span>
+        <span>Internet</span>
+        <span>AI read</span>
+      </div>
+      @for (row of rows; track row[0]) {
+        <div class="row">
+          @for (cell of row; track $index) {
+            <span>{{ cell }}</span>
+          }
+        </div>
+      }
+    </div>
+  </div>
+</main>

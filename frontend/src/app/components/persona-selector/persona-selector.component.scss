@@ -1,0 +1,21 @@
+.container { padding: 0.6rem 1rem; border-bottom: 1px solid var(--border); }
+.label-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem; }
+.section-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+.active-hint { font-size: 0.7rem; color: var(--muted); max-width: 200px; text-align: right; }
+.scroll-track { display: flex; gap: 0.3rem; overflow-x: auto; padding-bottom: 2px; }
+.scroll-track::-webkit-scrollbar { height: 3px; }
+.persona-btn {
+  display: inline-flex; align-items: center; gap: 0.3rem;
+  padding: 0.3rem 0.65rem; border-radius: 999px;
+  border: 1px solid var(--border); white-space: nowrap;
+  font-size: 0.74rem; font-weight: 500; color: var(--muted);
+  background: white; transition: all 0.15s; position: relative;
+}
+.persona-btn:hover:not(:disabled) { border-color: var(--primary); color: var(--primary); }
+.persona-btn.active {
+  border-color: var(--primary); background: hsl(228 72% 58% / 0.1);
+  color: var(--primary); font-weight: 600;
+  box-shadow: 0 0 0 3px hsl(228 72% 58% / 0.12);
+}
+.persona-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.icon { font-size: 0.8rem; }

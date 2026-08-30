@@ -1,0 +1,23 @@
+<div class="map-card">
+  <div #mapContainer class="map-canvas"></div>
+
+  <div class="overlay-controls">
+    <button class="overlay-btn" [class.on]="cafeOn()" (click)="toggleCafe()" title="Show cafés & restaurants">
+      ☕ <span>Cafés</span>
+    </button>
+    <button class="overlay-btn" [class.on]="transitOn()" (click)="toggleTransit()" title="Show metro & transit">
+      🚇 <span>Metro</span>
+    </button>
+  </div>
+
+  @if (mapReady()) {
+    <div class="ring-legend">
+      <p class="ring-title">Commute from office</p>
+      <div class="ring-items">
+        <span class="ring-item"><span class="ring-dot" style="opacity:.82"></span>10 min</span>
+        <span class="ring-item"><span class="ring-dot" style="opacity:.52"></span>20 min</span>
+        <span class="ring-item"><span class="ring-dot" style="opacity:.32"></span>30 min</span>
+      </div>
+    </div>
+  }
+</div>

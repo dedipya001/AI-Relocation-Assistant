@@ -1,0 +1,19 @@
+.main { max-width: 1100px; margin: 0 auto; padding: 2rem 1.25rem; }
+.layout { display: grid; grid-template-columns: 1fr 320px; gap: 2rem; align-items: start; }
+.hero-image { height: 280px; border-radius: 0.75rem; background: linear-gradient(135deg, hsl(228 72% 58% / 0.15), hsl(25 90% 58% / 0.12)); margin-bottom: 1.5rem; }
+.title { font-size: 1.6rem; font-weight: 900; letter-spacing: -0.025em; margin-bottom: 0.4rem; }
+.meta { font-size: 0.85rem; color: var(--muted); margin-bottom: 1rem; }
+.amenities { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.amenity { padding: 0.25rem 0.65rem; border-radius: 999px; background: hsl(215 14% 93%); color: var(--muted); font-size: 0.75rem; font-weight: 600; }
+.sidebar { display: flex; flex-direction: column; gap: 0.75rem; }
+.price-card { padding: 1.25rem; }
+.price { font-size: 1.6rem; font-weight: 900; letter-spacing: -0.03em; color: var(--foreground); }
+.price-label { font-size: 0.75rem; color: var(--muted); margin-top: 0.2rem; }
+.lowest-price { font-size: 0.75rem; color: hsl(160 55% 38%); margin-top: 0.5rem; font-weight: 600; }
+.metric { padding: 0.8rem 1rem; display: flex; align-items: center; gap: 0.75rem; }
+.metric-icon { font-size: 1.1rem; flex-shrink: 0; }
+.metric-label { font-size: 0.72rem; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+.metric-value { font-size: 0.88rem; font-weight: 700; color: var(--foreground); margin-top: 0.15rem; }
+.loading-state { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 50vh; gap: 1rem; color: var(--muted); }
+.spinner { width: 2rem; height: 2rem; border: 3px solid var(--border); border-top-color: var(--primary); border-radius: 50%; animation: spin 0.8s linear infinite; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } }

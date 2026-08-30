@@ -1,0 +1,85 @@
+<aside class="panel">
+  <!-- Header -->
+  <div class="panel-header">
+    <div class="brand">
+      <div class="brand-mark">✦</div>
+      <span class="brand-text">Relocation AI</span>
+    </div>
+    <app-search-box [compact]="true" />
+  </div>
+
+  <!-- Persona bar -->
+  <app-persona-selector />
+
+  <!-- Context bar: loading or summary -->
+  <div class="context-bar">
+    @if (store.isLoading()) {
+      <div class="loading fade-in">
+        <div class="loading-row">
+          <span class="dot" style="animation-delay:0s"></span>
+          <span class="dot" style="animation-delay:.18s"></span>
+          <span class="dot" style="animation-delay:.36s"></span>
+          <span class="loading-text">{{ thinkingStage() }}</span>
+        </div>
+        <div class="shimmer-stack">
+          <div class="shimmer-bar" style="width:100%"></div>
+          <div class="shimmer-bar" style="width:78%"></div>
+          <div class="shimmer-bar" style="width:90%"></div>
+        </div>
+      </div>
+    }
+
+    @if (store.hasResults() && !store.isLoading()) {
+      <div class="summary fade-in">
+        <p class="summary-title">
+          <span class="sparkle">✦</span>
+          {{ store.properties().length }} homes ranked under
+          {{ (store.selectedProfile() || 'balanced').replace('_', ' ').toUpperCase() }} persona
+        </p>
+        <p class="summary-body">
+          @if (topProperty() && topProperty()!.locality; as loc) {
+            Top match: <strong>{{ topProperty()!.title }}</strong> in
+            <strong>{{ loc }}</strong>
+            @if (topScore() !== null) {
+              &nbsp;·&nbsp;<span class="score-highlight">★ {{ topScore() }}/100</span>
+            }
+            @if (topProperty()!.commute_estimate_minutes !== null) {
+              &nbsp;·&nbsp;⏱ {{ topProperty()!.commute_estimate_minutes }}&thinsp;min
+            }
+            @if (topProperty()!.distance_to_office_km !== null) {
+              &nbsp;·&nbsp;📍 {{ topProperty()!.distance_to_office_km!.toFixed(1) }}&thinsp;km
+            }
+          } @else {
+            Results ranked by multi-factor score near {{ store.officeLabel() ?? 'your destination' }}.
+          }
+        </p>
+      </div>
+    }
+  </div>
+
+  <!-- Property list -->
+  <div class="list" role="list">
+    @if (store.hasResults() && !store.isLoading()) {
+      @for (property of store.properties(); track property._id; let i = $index) {
+        <app-property-card
+          [property]="property"
+          [recommendation]="getRecommendation(property._id, i)"
+          [index]="i"
+          [isActive]="i === activeIndex"
+          (onClick)="onSelect.emit(i)"
+        />
+      }
+    } @else if (!store.isLoading()) {
+      <div class="empty">
+        <div class="empty-orb">📍</div>
+        <p class="empty-title">Describe where you want to live</p>
+        <p class="empty-desc">
+          Tell the AI your office location, commute limit, budget, and the lifestyle that matters to you.
+        </p>
+        <div class="empty-hint">
+          › <em>"Office at Sector V · rent ≤ ₹20k · good cafés · quiet evenings"</em>
+        </div>
+      </div>
+    }
+  </div>
+</aside>

@@ -1,0 +1,17 @@
+.main { max-width: 1100px; margin: 0 auto; padding: 2rem 1.25rem; }
+.layout { display: grid; grid-template-columns: 1fr 340px; gap: 2rem; }
+.title { font-size: 1.8rem; font-weight: 900; letter-spacing: -0.03em; margin-bottom: 0.5rem; }
+.summary { font-size: 0.92rem; color: var(--muted); line-height: 1.6; margin-bottom: 1.5rem; }
+.scores { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; }
+.score-card { padding: 1rem; display: flex; flex-direction: column; align-items: center; gap: 0.3rem; text-align: center; }
+.score-icon { font-size: 1.2rem; }
+.score-value { font-size: 1.5rem; font-weight: 900; letter-spacing: -0.03em; color: var(--primary); }
+.score-label { font-size: 0.72rem; color: var(--muted); font-weight: 600; }
+.essentials { padding: 1.25rem; }
+.essentials-title { font-size: 0.88rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin-bottom: 0.75rem; }
+.place-list { display: flex; flex-direction: column; gap: 0.5rem; }
+.place { display: flex; justify-content: space-between; align-items: center; font-size: 0.82rem; padding: 0.4rem 0; border-bottom: 1px solid var(--border); }
+.place:last-child { border-bottom: none; }
+.loading-state { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 50vh; gap: 1rem; color: var(--muted); }
+.spinner { width: 2rem; height: 2rem; border: 3px solid var(--border); border-top-color: var(--primary); border-radius: 50%; animation: spin 0.8s linear infinite; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } .scores { grid-template-columns: repeat(2, 1fr); } }

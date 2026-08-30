@@ -1,0 +1,49 @@
+<app-nav />
+<main class="main">
+  @if (locality()) {
+    <section class="layout">
+      <div>
+        <h1 class="title">{{ locality()!.name }}</h1>
+        <p class="summary">{{ locality()!.summary }}</p>
+        <div class="scores">
+          <div class="score-card card">
+            <span class="score-icon">🛡</span>
+            <p class="score-value">{{ locality()!.scores.overall }}</p>
+            <p class="score-label">Safety</p>
+          </div>
+          <div class="score-card card">
+            <span class="score-icon">📶</span>
+            <p class="score-value">{{ locality()!.scores.internet }}</p>
+            <p class="score-label">Internet</p>
+          </div>
+          <div class="score-card card">
+            <span class="score-icon">🍴</span>
+            <p class="score-value">{{ locality()!.scores.food_access }}</p>
+            <p class="score-label">Food</p>
+          </div>
+          <div class="score-card card">
+            <span class="score-icon">🚇</span>
+            <p class="score-value">{{ locality()!.scores.commute_reliability }}</p>
+            <p class="score-label">Commute</p>
+          </div>
+        </div>
+      </div>
+      <div class="essentials card">
+        <h2 class="essentials-title">Nearby essentials</h2>
+        <div class="place-list">
+          @for (place of locality()!.essentials; track place.name) {
+            <div class="place">
+              <span>{{ place.name }}</span>
+              <span>{{ (place.distance_meters / 1000).toFixed(1) }} km</span>
+            </div>
+          }
+        </div>
+      </div>
+    </section>
+  } @else {
+    <div class="loading-state">
+      <div class="spinner"></div>
+      <p>Loading locality…</p>
+    </div>
+  }
+</main>

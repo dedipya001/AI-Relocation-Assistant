@@ -1,0 +1,44 @@
+:host { display: block; width: 100%; height: 100%; }
+.map-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  background: hsl(215 14% 93%);
+}
+.map-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.overlay-controls {
+  position: absolute; top: 0.75rem; left: 0.75rem; z-index: 10;
+  display: flex; flex-direction: column; gap: 0.3rem;
+}
+.overlay-btn {
+  display: flex; align-items: center; gap: 0.3rem;
+  padding: 0.35rem 0.65rem; border-radius: 0.5rem;
+  background: hsl(0 0% 100% / 0.92); backdrop-filter: blur(8px);
+  border: 1px solid var(--border); font-size: 0.73rem;
+  font-weight: 600; color: var(--muted); cursor: pointer;
+  transition: all 0.15s;
+}
+.overlay-btn:hover { color: var(--foreground); background: white; }
+.overlay-btn.on {
+  background: hsl(228 72% 58% / 0.12); color: var(--primary);
+  border-color: hsl(228 72% 58% / 0.4);
+}
+.ring-legend {
+  position: absolute; bottom: 1.5rem; left: 0.75rem; z-index: 10;
+  background: hsl(0 0% 100% / 0.92); backdrop-filter: blur(8px);
+  border: 1px solid var(--border); border-radius: 0.5rem;
+  padding: 0.45rem 0.7rem;
+}
+.ring-title {
+  font-size: 0.65rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.05em; color: var(--muted); margin-bottom: 0.3rem;
+}
+.ring-items { display: flex; flex-direction: column; gap: 0.2rem; }
+.ring-item { display: flex; align-items: center; gap: 0.4rem; font-size: 0.7rem; color: var(--muted); }
+.ring-dot { width: 10px; height: 10px; border-radius: 50%; background: hsl(228 72% 58%); flex-shrink: 0; }
