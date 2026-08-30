@@ -94,6 +94,7 @@ ${JSON.stringify(candidateContext, null, 2)}
 
 Provide your relocation recommendations and genuine advice tailored to the user.`;
 
+      const startTime = Date.now();
       const response = await this.openai.chat.completions.create({
         model: config.OPENAI_MODEL || "gpt-4o-mini",
         messages: [
@@ -103,6 +104,19 @@ Provide your relocation recommendations and genuine advice tailored to the user.
         temperature: 0.35,
         max_tokens: 700,
       });
+      const durationMs = Date.now() - startTime;
+
+      if (response.usage) {
+        const { analyticsService } = await import("./analyticsService.js");
+        analyticsService.logOpenAIUsage({
+          operation: "advisor_chat",
+          model: config.OPENAI_MODEL || "gpt-4o-mini",
+          promptTokens: response.usage.prompt_tokens,
+          completionTokens: response.usage.completion_tokens,
+          durationMs,
+          metadata: { query: message, primaryLocality },
+        }).catch(() => {});
+      }
 
       const answer =
         response.choices[0]?.message?.content?.trim() ||

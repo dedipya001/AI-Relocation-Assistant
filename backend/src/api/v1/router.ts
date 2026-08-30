@@ -1,4 +1,5 @@
 import { Router } from "express";
+import { adminRouter } from "./admin.js";
 import { assistantRouter } from "./assistant.js";
 import { commuteRouter } from "./commute.js";
 import { feedbackRouter } from "./feedback.js";
@@ -20,6 +21,8 @@ apiRouter.use("/feedback", feedbackRouter);
 apiRouter.use("/assistant", assistantRouter);
 apiRouter.use("/recommendations", recommendationsRouter);
 apiRouter.use("/seo", seoRouter);
+apiRouter.use("/admin", adminRouter);
+
 
 
 

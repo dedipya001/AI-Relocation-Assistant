@@ -54,10 +54,10 @@ export async function handleSitemapXml(_req: Request, res: Response): Promise<vo
 
     // Core static routes
     const staticRoutes = [
-      { url: `${siteUrl}/`, priority: "1.0", changefreq: "daily" },
-      { url: `${siteUrl}/search`, priority: "0.9", changefreq: "daily" },
-      { url: `${siteUrl}/assistant`, priority: "0.9", changefreq: "daily" },
-      { url: `${siteUrl}/compare`, priority: "0.8", changefreq: "weekly" },
+      { url: `${siteUrl}/`, priority: "1.0", changefreq: "daily", lastmod: nowIso },
+      { url: `${siteUrl}/search`, priority: "0.9", changefreq: "daily", lastmod: nowIso },
+      { url: `${siteUrl}/assistant`, priority: "0.9", changefreq: "daily", lastmod: nowIso },
+      { url: `${siteUrl}/compare`, priority: "0.8", changefreq: "weekly", lastmod: nowIso },
     ];
 
     // Fetch all active localities from MongoDB
