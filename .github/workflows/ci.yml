@@ -1,0 +1,83 @@
+name: Continuous Integration & Typecheck
+
+on:
+  pull_request:
+    branches:
+      - dev
+      - main
+  push:
+    branches:
+      - dev
+      - main
+      - 'feat/**'
+      - 'fix/**'
+      - 'dedipya-dev'
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  backend-typecheck-and-test:
+    name: Backend Typecheck & Build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: backend/package-lock.json
+
+      - name: Install Dependencies
+        working-directory: backend
+        run: npm ci
+
+      - name: Run Backend Typecheck
+        working-directory: backend
+        run: npm run typecheck
+
+      - name: Build Backend (tsc)
+        working-directory: backend
+        run: npm run build
+
+      - name: Run Recommendation Benchmark Tests
+        working-directory: backend
+        run: npm run test:bench
+
+  frontend-typecheck-and-build:
+    name: Frontend Typecheck & Build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install Dependencies
+        working-directory: frontend
+        run: npm ci
+
+      - name: Run Frontend Typecheck
+        working-directory: frontend
+        run: npm run typecheck
+
+      - name: Build Next.js Production App
+        working-directory: frontend
+        env:
+          GITHUB_ACTIONS: "true"
+          NEXT_PUBLIC_API_URL: "http://localhost:8001/api/v1"
+        run: npm run build
