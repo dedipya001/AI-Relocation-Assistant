@@ -526,6 +526,120 @@ async function main() {
     return `Found ${res.data.results_count} properties. Top match: "${top.title}" in ${top.locality} (Score: ${top.semantic_similarity_score}, Rent: ₹${top.rent}, Matched: ${top.matched_features.slice(0, 2).join(", ")})`;
   });
 
+  // 42. Verified Regional GIS Boundary Lookup (GET /api/v1/geo/boundary)
+  await runTest("Verified Regional GIS Boundary Lookup (GET /api/v1/geo/boundary)", async () => {
+    const res = await axios.get(`${BASE_URL}/api/v1/geo/boundary`, {
+      params: { region: "Sector V", city: "Kolkata" },
+    });
+    if (res.status !== 200 || !res.data?.boundary?.bounding_box) {
+      throw new Error(`Boundary lookup returned invalid data: ${JSON.stringify(res.data)}`);
+    }
+    const b = res.data.boundary;
+    return `Verified Region: ${b.region_name} (${b.city}), Centroid: [${b.centroid}], BBox: [${b.bounding_box.join(", ")}], Radius: ${b.boundary_radius_km}km, Source: ${b.source}`;
+  });
+
+  // 43. Verified Regional Spatial Boundary Verification (POST /api/v1/geo/verify-boundary)
+  await runTest("Verified Regional Spatial Boundary Verification (POST /api/v1/geo/verify-boundary)", async () => {
+    const res = await axios.post(`${BASE_URL}/api/v1/geo/verify-boundary`, {
+      region: "Bellandur",
+      city: "Bangalore",
+      coordinates: [77.6750, 12.9300], // inside Bellandur
+    });
+    if (res.status !== 200 || res.data?.isInside !== true) {
+      throw new Error(`Boundary verification failed: ${JSON.stringify(res.data)}`);
+    }
+    return `Verified: Point [77.675, 12.93] is inside ${res.data.region} (${res.data.city}). Centroid Dist: ${res.data.distanceFromCentroidKm}km (Source: ${res.data.source})`;
+  });
+
+  // 44. Standardized Locality Resolution & Canonical Name (GET /api/v1/search/resolve-locality)
+  await runTest("Standardized Locality Resolution & Canonical Name (GET /api/v1/search/resolve-locality)", async () => {
+    const res = await axios.get(`${BASE_URL}/api/v1/search/resolve-locality`, {
+      params: { q: "sec 5", city: "Kolkata" },
+    });
+    if (res.status !== 200 || !res.data?.location || res.data.location.canonicalName !== "Sector V, Salt Lake") {
+      throw new Error(`Locality resolution failed: ${JSON.stringify(res.data)}`);
+    }
+    const loc = res.data.location;
+    return `Resolved '${loc.searchedName}' -> '${loc.canonicalName}', [${loc.longitude}, ${loc.latitude}], City: ${loc.city}, Source: ${loc.source}, Confidence: ${loc.confidence}`;
+  });
+
+  // 45. Spelling Variation & Alias Disambiguation (GET /api/v1/geo/resolve)
+  await runTest("Spelling Variation & Alias Disambiguation (GET /api/v1/geo/resolve)", async () => {
+    const res = await axios.get(`${BASE_URL}/api/v1/geo/resolve`, {
+      params: { q: "hinjewadi", city: "Pune" },
+    });
+    if (res.status !== 200 || !res.data?.location || res.data.location.canonicalName !== "Hinjawadi") {
+      throw new Error(`Alias resolution failed: ${JSON.stringify(res.data)}`);
+    }
+    const loc = res.data.location;
+    return `Resolved '${loc.searchedName}' -> '${loc.canonicalName}', [${loc.longitude}, ${loc.latitude}], Radius: ${loc.boundary_radius_km}km, District: ${loc.district}`;
+  });
+
+  // 46. Reverse-Geocoding of Coordinates to Real Locality (POST /api/v1/geo/reverse-geocode)
+  await runTest("Reverse-Geocoding of Coordinates to Real Locality (POST /api/v1/geo/reverse-geocode)", async () => {
+    const res = await axios.post(`${BASE_URL}/api/v1/geo/reverse-geocode`, {
+      coordinates: [88.4335, 22.5762],
+    });
+    if (res.status !== 200 || !res.data?.success) {
+      throw new Error(`Reverse geocode failed: ${JSON.stringify(res.data)}`);
+    }
+    return `Coordinates [88.4335, 22.5762] mapped to locality: "${res.data.locality}" (City: "${res.data.city}")`;
+  });
+
+  // 47. Exact vs Nearby Property Partition & Distance (POST /api/v1/search)
+  await runTest("Exact vs Nearby Property Partition & Distance (POST /api/v1/search)", async () => {
+    const res = await axios.post(`${BASE_URL}/api/v1/search`, {
+      query: "I need PG in Sector 5 under 15k",
+    });
+    if (
+      res.status !== 200 ||
+      !res.data?.verified_location ||
+      !Array.isArray(res.data?.exact_matches) ||
+      !Array.isArray(res.data?.nearby_matches) ||
+      !res.data?.debug_log
+    ) {
+      throw new Error(`Search response missing required locality partition: ${JSON.stringify(res.data)}`);
+    }
+    const top = res.data.recommendations[0];
+    const topProp = res.data.properties[0];
+    return `Verified Locality: "${res.data.verified_location.canonicalName}". Exact Matches: ${res.data.exact_matches_count}, Nearby Matches: ${res.data.nearby_matches_count}. Top Property Locality: "${topProp.actual_locality_name || topProp.locality}" (Dist: ${topProp.distance_to_office_km}km)`;
+  });
+
+  // 48. Debug Trace Logging for Every Locality Search (POST /api/v1/search)
+  await runTest("Debug Trace Logging for Every Locality Search (POST /api/v1/search)", async () => {
+    const res = await axios.post(`${BASE_URL}/api/v1/search`, {
+      query: "PG in Kestopur near bus stand",
+    });
+    if (!res.data?.debug_log || !Array.isArray(res.data.debug_log.property_trace)) {
+      throw new Error(`Debug log trace missing: ${JSON.stringify(res.data)}`);
+    }
+    const d = res.data.debug_log;
+    return `Debug Trace logged: Query="${d.original_query}", Extracted="${d.extracted_locality}", Canonical="${d.canonical_locality}", Provider="${d.geocoding_provider}", Evaluated=${d.properties_evaluated}, Trace Samples=${d.property_trace.length}`;
+  });
+
+  // 49. Move-in Cost, Tariff & Cross-Platform Price Comparison (POST /api/v1/properties/cost-breakdown)
+  await runTest("Move-in Cost, Tariff & Cross-Platform Price Comparison (POST /api/v1/properties/cost-breakdown)", async () => {
+    const res = await axios.post(`${BASE_URL}/api/v1/properties/cost-breakdown`, {
+      title: "Tarulia Main Road AC PG with Food & WiFi",
+      city: "Kolkata",
+      locality: "Tarulia Lane, Kestopur",
+      property_type: "PG",
+      rent: 5500,
+      source_platform: "Housing",
+    });
+    if (
+      res.status !== 200 ||
+      !res.data?.cross_platform_comparison ||
+      !res.data?.upfront_move_in_cost ||
+      !res.data?.monthly_recurring_utilities
+    ) {
+      throw new Error(`Cost breakdown failed: ${JSON.stringify(res.data)}`);
+    }
+    const d = res.data;
+    const u = d.monthly_recurring_utilities;
+    return `Tarulia PG: Rent=Rs ${d.monthly_rent} (${d.cross_platform_comparison.best_platform}), Upfront=Rs ${d.upfront_move_in_cost.total_upfront_cash_required_inr}, Electricity: Submeter=Rs ${u.landlord_submeter_rate_inr_per_kwh}/kWh (Bill=Rs ${u.estimated_monthly_electricity_inr}/mo), Govt=Rs ${u.official_discom_slab_rate_inr_per_kwh}/kWh, Markup=Rs ${u.landlord_submeter_markup_monthly_inr}/mo`;
+  });
+
   // Summary
   console.log("\n=========================================");
   console.log("📊 TEST SUMMARY");

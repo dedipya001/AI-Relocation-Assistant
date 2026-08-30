@@ -111,3 +111,55 @@ propertiesRouter.get("/:property_id", async (req: Request, res: Response): Promi
     res.status(500).json({ error: (error as Error).message });
   }
 });
+
+// POST /api/v1/properties/cost-breakdown
+propertiesRouter.post("/cost-breakdown", async (req: Request, res: Response): Promise<void> => {
+  try {
+    const { moveInCostService } = await import("../../services/moveInCostService.js");
+    const { title, city, locality, property_type, rent, deposit, source_platform, source_url, price_history } = req.body || {};
+
+    if (!rent || rent <= 0) {
+      res.status(400).json({ error: "Missing required positive rent amount" });
+      return;
+    }
+
+    const breakdown = moveInCostService.calculateCostBreakdown({
+      title: title || "Rental Property",
+      city: city || "Kolkata",
+      locality: locality || "Locality",
+      property_type: property_type || "PG",
+      rent: Number(rent),
+      deposit: deposit ? Number(deposit) : undefined,
+      source_platform,
+      source_url,
+      price_history,
+    });
+
+    res.json(breakdown);
+  } catch (error) {
+    res.status(500).json({ error: (error as Error).message });
+  }
+});
+
+// GET /api/v1/properties/:property_id/cost-breakdown
+propertiesRouter.get("/:property_id/cost-breakdown", async (req: Request, res: Response): Promise<void> => {
+  try {
+    const { moveInCostService } = await import("../../services/moveInCostService.js");
+    const db = getDatabase();
+    const repo = new PropertyRepository(db);
+    const propertyId = Array.isArray(req.params.property_id)
+      ? req.params.property_id[0]
+      : req.params.property_id;
+    const doc = await repo.get(propertyId);
+    if (!doc) {
+      res.status(404).json({ detail: "Property not found" });
+      return;
+    }
+
+    const breakdown = moveInCostService.calculateCostBreakdown(doc);
+    res.json(breakdown);
+  } catch (error) {
+    res.status(500).json({ error: (error as Error).message });
+  }
+});
+
