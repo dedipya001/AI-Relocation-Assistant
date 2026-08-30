@@ -1,5 +1,6 @@
 import axios from "axios";
 import { Router, Request, Response } from "express";
+import { z } from "zod";
 import { config } from "../../core/config.js";
 import { getDatabase } from "../../db/mongo.js";
 import { LocalityRepository } from "../../repositories/localities.js";
@@ -10,8 +11,39 @@ import { CommuteService } from "../../services/commute.js";
 import { IntentParser } from "../../services/intentParser.js";
 import { LowestPriceEngine } from "../../services/lowestPrice.js";
 import { RecommendationEngine } from "../../services/recommendations.js";
+import { vectorSearchService } from "../../services/vectorSearchService.js";
 
 export const searchRouter = Router();
+
+const SemanticSearchInSchema = z.object({
+  query: z.string().min(1, "Query string is required"),
+  city: z.string().optional(),
+  locality: z.string().optional(),
+  budget_max: z.number().optional(),
+  budget_min: z.number().optional(),
+  property_types: z.array(z.string()).optional(),
+  limit: z.number().min(1).max(50).default(20),
+  threshold: z.number().min(0).max(1).default(0.45),
+});
+
+/**
+ * POST /api/v1/search/semantic
+ * Natural language semantic property search using OpenAI embeddings & hybrid ranking
+ */
+searchRouter.post("/semantic", async (req: Request, res: Response): Promise<void> => {
+  try {
+    const parsed = SemanticSearchInSchema.parse(req.body);
+    const result = await vectorSearchService.executeSemanticSearch(parsed);
+    res.json(result);
+  } catch (error) {
+    if (error instanceof z.ZodError) {
+      res.status(400).json({ error: "Validation error", details: error.errors });
+      return;
+    }
+    res.status(500).json({ error: (error as Error).message });
+  }
+});
+
 
 searchRouter.post("/", async (req: Request, res: Response): Promise<void> => {
   try {
@@ -103,6 +135,21 @@ searchRouter.post("/", async (req: Request, res: Response): Promise<void> => {
       recommendations,
       properties: enriched,
     };
+
+    // Log telemetry asynchronously
+    import("../../services/analyticsService.js").then(({ analyticsService }) => {
+      analyticsService.logSearchTelemetry({
+        query,
+        city: intent.filters.city || undefined,
+        officeLocation: intent.filters.office_location || undefined,
+        budgetMax: intent.filters.budget_max || undefined,
+        propertyTypes: intent.filters.property_types || [],
+        amenities: intent.filters.amenities || [],
+        preferences: intent.filters.preferences || [],
+        resultsCount: enriched.length,
+        isCacheHit: false,
+      }).catch(() => {});
+    });
 
     await setJson(key, result, 300);
     res.json(result);

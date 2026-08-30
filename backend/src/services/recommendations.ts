@@ -602,22 +602,29 @@ export class RecommendationEngine {
 }
 
 export function resolveProviderListingUrl(item: Record<string, any>): string {
+  const appendUtm = (url: string): string => {
+    if (!url || typeof url !== "string" || !url.startsWith("http")) return url;
+    const delimiter = url.includes("?") ? "&" : "?";
+    if (url.includes("utm_source=")) return url;
+    return `${url}${delimiter}utm_source=thikanakhojo.com&utm_medium=referral&utm_campaign=relocation_assistant`;
+  };
+
   if (item.source_url && typeof item.source_url === "string" && item.source_url.startsWith("http")) {
-    return item.source_url;
+    return appendUtm(item.source_url);
   }
   if (item.listing_url && typeof item.listing_url === "string" && item.listing_url.startsWith("http")) {
-    return item.listing_url;
+    return appendUtm(item.listing_url);
   }
   if (item.provider_url && typeof item.provider_url === "string" && item.provider_url.startsWith("http")) {
-    return item.provider_url;
+    return appendUtm(item.provider_url);
   }
   if (item.lowest_price?.url && typeof item.lowest_price.url === "string" && item.lowest_price.url.startsWith("http")) {
-    return item.lowest_price.url;
+    return appendUtm(item.lowest_price.url);
   }
   if (Array.isArray(item.price_history)) {
     for (const ph of item.price_history) {
       if (ph?.url && typeof ph.url === "string" && ph.url.startsWith("http")) {
-        return ph.url;
+        return appendUtm(ph.url);
       }
     }
   }
@@ -627,21 +634,21 @@ export function resolveProviderListingUrl(item: Record<string, any>): string {
   const locality = item.locality || "Kolkata";
   const localitySlug = encodeURIComponent(locality.trim());
 
+  let targetUrl = `https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=${city}&Locality=${localitySlug}`;
+
   if (platform.includes("magicbricks")) {
-    return `https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=${city}&Locality=${localitySlug}`;
-  }
-  if (platform.includes("99acres")) {
+    targetUrl = `https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=${city}&Locality=${localitySlug}`;
+  } else if (platform.includes("99acres")) {
     const slug = locality.toLowerCase().replace(/[^a-z0-9]+/g, "-");
-    return `https://www.99acres.com/rent-property-in-${slug}-${city}-ffid`;
-  }
-  if (platform.includes("nobroker")) {
+    targetUrl = `https://www.99acres.com/rent-property-in-${slug}-${city}-ffid`;
+  } else if (platform.includes("nobroker")) {
     const slug = locality.toLowerCase().replace(/[^a-z0-9]+/g, "_");
-    return `https://www.nobroker.in/flats-for-rent-in-${slug}_${city}`;
-  }
-  if (platform.includes("housing")) {
+    targetUrl = `https://www.nobroker.in/flats-for-rent-in-${slug}_${city}`;
+  } else if (platform.includes("housing")) {
     const slug = locality.toLowerCase().replace(/[^a-z0-9]+/g, "-");
-    return `https://housing.com/in/buy/rent-in-${slug}-${city}`;
+    targetUrl = `https://housing.com/in/buy/rent-in-${slug}-${city}`;
   }
 
-  return `https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=${city}&Locality=${localitySlug}`;
+  return appendUtm(targetUrl);
 }
+

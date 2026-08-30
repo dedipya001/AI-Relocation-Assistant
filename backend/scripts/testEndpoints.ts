@@ -364,6 +364,168 @@ async function main() {
     return `Rank #1 (${first.title}): score ${first.score.total}, Rank #2 marked ineligible (${second.constraint_violations[0]})`;
   });
 
+  // 27. Root AdSense Verification File (GET /ads.txt)
+  await runTest("Root AdSense Verification File (GET /ads.txt)", async () => {
+    const res = await axios.get(`${BASE_URL}/ads.txt`);
+    if (res.status !== 200 || !res.data.includes("google.com")) {
+      throw new Error(`Invalid ads.txt response: ${res.data}`);
+    }
+    return `ads.txt verified with publisher format: ${res.data.trim()}`;
+  });
+
+  // 28. Search Engine Robots & Sitemap Directives (GET /robots.txt)
+  await runTest("Search Engine Robots & Sitemap Directives (GET /robots.txt)", async () => {
+    const res = await axios.get(`${BASE_URL}/robots.txt`);
+    if (res.status !== 200 || !res.data.includes("Sitemap:")) {
+      throw new Error(`Invalid robots.txt response: ${res.data}`);
+    }
+    return `robots.txt correctly declares sitemap directive: ${res.data.split("\n").filter((l: string) => l.startsWith("Sitemap"))[0]}`;
+  });
+
+  // 29. Dynamic XML Sitemap (GET /sitemap.xml)
+  await runTest("Dynamic XML Sitemap (GET /sitemap.xml)", async () => {
+    const res = await axios.get(`${BASE_URL}/sitemap.xml`);
+    if (res.status !== 200 || !res.data.includes("<urlset") || !res.data.includes("thikanakhojo.com")) {
+      throw new Error(`Invalid sitemap.xml response`);
+    }
+    const urlMatches = (res.data.match(/<loc>/g) || []).length;
+    return `Sitemap successfully generated with ${urlMatches} indexed URLs targeting thikanakhojo.com`;
+  });
+
+  // 30. Brand Metadata & Support Email (GET /api/v1/seo/brand-metadata)
+  await runTest("Brand Metadata & Support Email (GET /api/v1/seo/brand-metadata)", async () => {
+    const res = await axios.get(`${BASE_URL}/api/v1/seo/brand-metadata`);
+    if (res.status !== 200 || res.data?.domain !== "thikanakhojo.com" || res.data?.contact_email !== "thikanakhojo@gmail.com") {
+      throw new Error(`Brand metadata mismatch: ${JSON.stringify(res.data)}`);
+    }
+    return `Brand: ${res.data.site_name} (${res.data.domain}), Contact: ${res.data.contact_email}, Cities: ${res.data.supported_cities.join(", ")}`;
+  });
+
+  // 31. Rich Results Schema.org JSON-LD (GET /api/v1/seo/schema-org)
+  await runTest("Rich Results Schema.org JSON-LD (GET /api/v1/seo/schema-org)", async () => {
+    const res = await axios.get(`${BASE_URL}/api/v1/seo/schema-org`);
+    if (res.status !== 200 || !Array.isArray(res.data?.["@graph"])) {
+      throw new Error(`Invalid Schema.org graph: ${JSON.stringify(res.data)}`);
+    }
+    const org = res.data["@graph"].find((i: any) => i["@type"] === "Organization");
+    return `Structured Data: Organization "${org?.name}" with contact point "${org?.email}"`;
+  });
+
+  // 32. Ingest Ad Impression & Click Event (POST /api/v1/admin/ads/events)
+  await runTest("Ingest Ad Click & Impression Events (POST /api/v1/admin/ads/events)", async () => {
+    const resImp = await axios.post(`${BASE_URL}/api/v1/admin/ads/events`, {
+      event_type: "impression",
+      ad_slot: "header_banner",
+      provider: "adsense",
+      locality_id: "loc-sector-v",
+      rpm_estimate_inr: 150.0,
+    });
+    const resClick = await axios.post(`${BASE_URL}/api/v1/admin/ads/events`, {
+      event_type: "click",
+      ad_slot: "locality_card_ad",
+      provider: "adsense",
+      locality_id: "loc-sector-v",
+      cpc_estimate_inr: 28.0,
+    });
+    if (resImp.status !== 200 || resClick.status !== 200) {
+      throw new Error(`Ad event logging failed`);
+    }
+    return `Recorded impression & click (Est revenue: ₹${resClick.data?.event?.estimated_revenue_inr})`;
+  });
+
+  // 33. Admin Dashboard Overview (GET /api/v1/admin/dashboard)
+  await runTest("Admin Dashboard Overview (GET /api/v1/admin/dashboard)", async () => {
+    const res = await axios.get(`${BASE_URL}/api/v1/admin/dashboard`);
+    if (res.status !== 200 || !res.data?.executive_summary || !res.data?.api_costs) {
+      throw new Error(`Admin dashboard payload invalid: ${JSON.stringify(res.data)}`);
+    }
+    const summary = res.data.executive_summary;
+    return `Total Searches: ${summary.total_searches_processed}, API Spend: ₹${summary.total_api_spend_inr}, Ad Earnings: ₹${summary.total_ad_earnings_inr}, Net Profit: ₹${summary.net_profit_inr}`;
+  });
+
+  // 34. OpenAI Token Usage & Costs (GET /api/v1/admin/costs/openai)
+  await runTest("OpenAI Token Usage & Costs (GET /api/v1/admin/costs/openai)", async () => {
+    const res = await axios.get(`${BASE_URL}/api/v1/admin/costs/openai`);
+    if (res.status !== 200 || !res.data?.summary) {
+      throw new Error(`OpenAI costs endpoint invalid: ${JSON.stringify(res.data)}`);
+    }
+    return `Tokens: ${res.data.summary.total_tokens_consumed.toLocaleString()}, Spend: ₹${res.data.summary.total_cost_inr} ($${res.data.summary.total_cost_usd})`;
+  });
+
+  // 35. Mapbox API Usage & Spend (GET /api/v1/admin/costs/mapbox)
+  await runTest("Mapbox API Usage & Spend (GET /api/v1/admin/costs/mapbox)", async () => {
+    const res = await axios.get(`${BASE_URL}/api/v1/admin/costs/mapbox`);
+    if (res.status !== 200 || !res.data?.summary) {
+      throw new Error(`Mapbox costs endpoint invalid: ${JSON.stringify(res.data)}`);
+    }
+    return `Requests: ${res.data.summary.total_requests} (Free tier quota remaining: ${res.data.summary.remaining_free_requests})`;
+  });
+
+  // 36. Top Searched Localities & Demand (GET /api/v1/admin/trends/searches)
+  await runTest("Top Searched Localities & Demand (GET /api/v1/admin/trends/searches)", async () => {
+    const res = await axios.get(`${BASE_URL}/api/v1/admin/trends/searches`);
+    if (res.status !== 200 || !Array.isArray(res.data?.top_searched_localities)) {
+      throw new Error(`Search trends endpoint invalid: ${JSON.stringify(res.data)}`);
+    }
+    const top = res.data.top_searched_localities[0];
+    return `Top Locality: ${top.locality} (${top.city}) with ${top.search_volume} searches (${top.share_pct}%), Avg Budget: ₹${top.avg_budget_inr}/mo`;
+  });
+
+  // 37. Property Demand & Price Bands (GET /api/v1/admin/trends/demand)
+  await runTest("Property Demand & Price Bands (GET /api/v1/admin/trends/demand)", async () => {
+    const res = await axios.get(`${BASE_URL}/api/v1/admin/trends/demand`);
+    if (res.status !== 200 || !Array.isArray(res.data?.high_demand_price_bands)) {
+      throw new Error(`Demand trends endpoint invalid: ${JSON.stringify(res.data)}`);
+    }
+    const topBand = res.data.high_demand_price_bands[1];
+    return `Top Demand Price Band: ${topBand.band} (${topBand.demand_share_pct}% market share)`;
+  });
+
+  // 38. Feature Demand by Age Demographics (GET /api/v1/admin/trends/demographics)
+  await runTest("Feature Demand by Age Demographics (GET /api/v1/admin/trends/demographics)", async () => {
+    const res = await axios.get(`${BASE_URL}/api/v1/admin/trends/demographics`);
+    if (res.status !== 200 || !Array.isArray(res.data?.demographic_matrix)) {
+      throw new Error(`Demographics endpoint invalid: ${JSON.stringify(res.data)}`);
+    }
+    const genZ = res.data.demographic_matrix.find((d: any) => d.age_group === "18-24");
+    const pro = res.data.demographic_matrix.find((d: any) => d.age_group === "25-32");
+    return `Gen-Z Top Feature: ${genZ?.top_demanded_amenities[0]?.amenity} | Young Pros Top Feature: ${pro?.top_demanded_amenities[0]?.amenity}`;
+  });
+
+  // 39. Ad Performance & Monetization (GET /api/v1/admin/ads/performance)
+  await runTest("Ad Performance & Monetization (GET /api/v1/admin/ads/performance)", async () => {
+    const res = await axios.get(`${BASE_URL}/api/v1/admin/ads/performance`);
+    if (res.status !== 200 || !res.data?.summary) {
+      throw new Error(`Ad performance endpoint invalid: ${JSON.stringify(res.data)}`);
+    }
+    return `Impressions: ${res.data.summary.total_impressions.toLocaleString()}, Clicks: ${res.data.summary.total_clicks}, CTR: ${res.data.summary.click_through_rate_pct}%, Est Earnings: ₹${res.data.summary.estimated_earnings_inr}`;
+  });
+
+  // 40. Platform Growth & Revenue Goals (GET /api/v1/admin/goals)
+  await runTest("Platform Growth & Revenue Goals (GET /api/v1/admin/goals)", async () => {
+    const res = await axios.get(`${BASE_URL}/api/v1/admin/goals`);
+    if (res.status !== 200 || !Array.isArray(res.data?.goals)) {
+      throw new Error(`Goals endpoint invalid: ${JSON.stringify(res.data)}`);
+    }
+    const revGoal = res.data.goals[0];
+    return `Revenue Goal: ₹${revGoal.current_inr}/₹${revGoal.target_inr} (${revGoal.progress_pct}% - ${revGoal.status})`;
+  });
+
+  // 41. Semantic Natural Language Search (POST /api/v1/search/semantic)
+  await runTest("Semantic Natural Language Search (POST /api/v1/search/semantic)", async () => {
+    const res = await axios.post(`${BASE_URL}/api/v1/search/semantic`, {
+      query: "Quiet top-floor flat near tech park with natural sunlight, power backup, and pet friendly",
+      city: "Kolkata",
+      budget_max: 20000,
+      limit: 5,
+    });
+    if (res.status !== 200 || !Array.isArray(res.data?.properties) || res.data.properties.length === 0) {
+      throw new Error(`Semantic search returned invalid results: ${JSON.stringify(res.data)}`);
+    }
+    const top = res.data.properties[0];
+    return `Found ${res.data.results_count} properties. Top match: "${top.title}" in ${top.locality} (Score: ${top.semantic_similarity_score}, Rent: ₹${top.rent}, Matched: ${top.matched_features.slice(0, 2).join(", ")})`;
+  });
+
   // Summary
   console.log("\n=========================================");
   console.log("📊 TEST SUMMARY");

@@ -1,0 +1,60 @@
+name: Branch Protection & Direct Push Guard
+
+on:
+  push:
+    branches:
+      - dev
+      - main
+      - 'feat/**'
+      - 'fix/**'
+      - 'dedipya-dev'
+  pull_request:
+    branches:
+      - dev
+      - main
+
+permissions:
+  contents: write
+  pull-requests: read
+
+jobs:
+  direct-push-guard:
+    name: Verify PR Compliance & Direct Push Guard
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Validate Direct Push Policy
+        shell: bash
+        run: |
+          echo "========================================================"
+          echo "🛡️ THIKANAKHOJO BRANCH PROTECTION & COMMIT GUARD"
+          echo "========================================================"
+          echo "Target Branch: ${{ github.ref_name }}"
+          echo "Event: ${{ github.event_name }}"
+
+          # If pushed directly to protected core branches (main or dev)
+          if [[ "${{ github.ref_name }}" == "main" || "${{ github.ref_name }}" == "dev" ]] && [[ "${{ github.event_name }}" == "push" ]]; then
+            COMMIT_MSG=$(git log -1 --pretty=%B)
+            PARENT_COUNT=$(git rev-list --parents -n 1 HEAD | awk '{print NF}')
+            
+            echo "Latest Commit Subject: $(git log -1 --pretty=%s)"
+            echo "Parent Commit Count: $PARENT_COUNT"
+
+            # PR Merges have at least 2 parents (NF >= 3 in rev-list) or explicit merge commit headers
+            if [[ $PARENT_COUNT -lt 3 ]] && [[ ! "$COMMIT_MSG" =~ "Merge pull request" ]] && [[ ! "$COMMIT_MSG" =~ "Merge branch" ]]; then
+              echo ""
+              echo "❌ DIRECT COMMIT POLICY VIOLATION DETECTED!"
+              echo "⛔ Direct commits cannot be pushed directly to '${{ github.ref_name }}'."
+              echo "📢 All changes MUST be submitted via a Pull Request (PR) and pass CI."
+              echo "⚠️ Any unapproved direct commits pushed to this branch will be rejected and reverted."
+              echo "========================================================"
+              exit 1
+            fi
+            echo "✅ Verified: Commit on '${{ github.ref_name }}' originates from an approved Pull Request merge."
+          else
+            echo "✅ Branch '${{ github.ref_name }}' compliant. All modifications must target PRs for merging."
+          fi

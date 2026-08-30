@@ -40,9 +40,10 @@ jobs:
         working-directory: backend
         run: npm ci
 
-      - name: Build & Test Backend
+      - name: Typecheck, Build & Test Backend
         working-directory: backend
         run: |
+          npm run typecheck
           npm run build
           npm run test:bench
 
