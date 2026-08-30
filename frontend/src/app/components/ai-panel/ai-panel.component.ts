@@ -35,7 +35,7 @@ export class AIPanelComponent {
 
   private recMap = computed<Map<string, Recommendation>>(() => {
     const recs = this.store.recommendations();
-    return new Map(recs.map((r) => [r.entity_id, r]));
+    return new Map(recs.map((r: Recommendation) => [r.entity_id, r]));
   });
 
   constructor() {

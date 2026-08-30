@@ -10,7 +10,15 @@ import { searchRouter } from "./search.js";
 import { seoRouter } from "./seo.js";
 import { transitRouter } from "./transit.js";
 
+import { config } from "../../core/config.js";
+
 export const apiRouter = Router();
+
+apiRouter.get("/config", (_req, res) => {
+  res.json({
+    mapboxToken: config.MAPBOX_ACCESS_TOKEN || process.env.MAPBOX_ACCESS_TOKEN || "",
+  });
+});
 
 apiRouter.use("/search", searchRouter);
 apiRouter.use("/properties", propertiesRouter);
@@ -22,6 +30,7 @@ apiRouter.use("/assistant", assistantRouter);
 apiRouter.use("/recommendations", recommendationsRouter);
 apiRouter.use("/seo", seoRouter);
 apiRouter.use("/admin", adminRouter);
+
 
 
 

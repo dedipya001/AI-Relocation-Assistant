@@ -5,7 +5,21 @@ import {
 import { environment } from '../../../environments/environment';
 import type { Property } from '../../core/models/relocation.models';
 
-const MAPBOX_TOKEN: string = environment.mapboxToken;
+let runtimeMapboxToken: string = environment.mapboxToken;
+
+async function getMapboxToken(): Promise<string> {
+  if (runtimeMapboxToken) return runtimeMapboxToken;
+  try {
+    const res = await fetch(`${environment.apiUrl}/config`);
+    if (res.ok) {
+      const data = await res.json();
+      if (data.mapboxToken) {
+        runtimeMapboxToken = data.mapboxToken;
+      }
+    }
+  } catch {}
+  return runtimeMapboxToken;
+}
 
 const DEFAULT_OFFICE: [number, number] = [88.4335, 22.5762];
 
@@ -28,23 +42,25 @@ const OSM_RASTER_STYLE: any = {
 let mapboxglCache: typeof import('mapbox-gl') | null = null;
 
 async function fetchIsochrone(coords: [number, number]): Promise<any> {
-  if (!MAPBOX_TOKEN) return null;
+  const token = await getMapboxToken();
+  if (!token) return null;
   try {
     const r = await fetch(
       `https://api.mapbox.com/isochrone/v1/mapbox/driving/${coords[0]},${coords[1]}` +
-      `?contours_minutes=10,20,30&polygons=true&access_token=${MAPBOX_TOKEN}`
+      `?contours_minutes=10,20,30&polygons=true&access_token=${token}`
     );
     return r.ok ? r.json() : null;
   } catch { return null; }
 }
 
 async function fetchRoute(from: [number, number], to: [number, number]): Promise<any> {
-  if (!MAPBOX_TOKEN) return null;
+  const token = await getMapboxToken();
+  if (!token) return null;
   try {
     const r = await fetch(
       `https://api.mapbox.com/directions/v5/mapbox/driving` +
       `/${from[0]},${from[1]};${to[0]},${to[1]}` +
-      `?geometries=geojson&overview=full&access_token=${MAPBOX_TOKEN}`
+      `?geometries=geojson&overview=full&access_token=${token}`
     );
     if (!r.ok) return null;
     const d = await r.json();
@@ -146,12 +162,14 @@ export class RelocationMapComponent implements AfterViewInit, OnChanges, OnDestr
     if (this.cancelled) return;
     this.mgl = mapboxglCache;
 
+    const token = await getMapboxToken();
+
     // Set access token
-    (this.mgl as any).default.accessToken = MAPBOX_TOKEN;
+    (this.mgl as any).default.accessToken = token;
 
     this.map = new (this.mgl as any).default.Map({
       container,
-      style: MAPBOX_TOKEN
+      style: token
         ? 'mapbox://styles/mapbox/light-v11'
         : OSM_RASTER_STYLE,
       center: this.office,
