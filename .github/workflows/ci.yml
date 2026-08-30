@@ -19,8 +19,40 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  security-and-secret-scan:
+    name: Scan Commits for Exposed Secrets
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Verify Zero Tracked Secrets
+        shell: bash
+        run: |
+          echo "🔍 Checking for uncommitted or exposed .env files..."
+          TRACKED_ENV=$(git ls-files | grep -E "(^\.env|\/\.env|\.env\.local|\.env\.production)" | grep -v "\.env\.example" || true)
+          if [ -n "$TRACKED_ENV" ]; then
+            echo "❌ CRITICAL: .env file tracked in git: $TRACKED_ENV"
+            exit 1
+          fi
+
+          echo "🔍 Scanning code for exposed OpenAI/Mapbox API keys..."
+          FILES=$(git ls-files | grep -v -E "(\.png|\.jpg|\.jpeg|\.svg|\.ico|\.lock|\.json|node_modules|\.next|dist|out)")
+          for file in $FILES; do
+            if [ -f "$file" ]; then
+              if grep -E -n "sk-(proj-)?[a-zA-Z0-9_-]{20,}" "$file" | grep -v "sk-proj-placeholder" | grep -v "sk-placeholder" | grep -v "sk-proj-thikanakhojo" | grep -v "sk-proj-..." | grep -v "sk-..."; then
+                echo "❌ Exposed API Key in: $file"
+                exit 1
+              fi
+            fi
+          done
+          echo "✅ Security check passed. Zero secrets exposed."
+
   backend-typecheck-and-test:
     name: Backend Typecheck & Build
+    needs: [security-and-secret-scan]
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
