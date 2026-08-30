@@ -45,19 +45,20 @@ export class EmailService {
    * Format and queue an alert when a user submits negotiated rent feedback
    */
   async sendNegotiatedRentAlert(data: {
-    property_id: string;
-    original_rent: number;
+    property_id?: string | null;
+    listed_rent: number;
     negotiated_rent: number;
-    locality?: string;
-    notes?: string;
+    locality?: string | null;
+    notes?: string | null;
   }): Promise<void> {
-    const savings = data.original_rent - data.negotiated_rent;
-    const pct = Math.round((savings / data.original_rent) * 100);
+    const listed = data.listed_rent || 15000;
+    const savings = listed - data.negotiated_rent;
+    const pct = listed > 0 ? Math.round((savings / listed) * 100) : 0;
 
     await this.notifyAdmin({
       subject: `[${config.SITE_NAME}] New Negotiated Rent Reported in ${data.locality || "Kolkata"} (Saved ₹${savings}/mo - ${pct}%)`,
-      body: `A user reported an accepted negotiated rent for Property ID ${data.property_id}:
-- Listed Rent: ₹${data.original_rent.toLocaleString("en-IN")}/mo
+      body: `A user reported an accepted negotiated rent for Property ID ${data.property_id || "General Locality"}:
+- Listed Rent: ₹${listed.toLocaleString("en-IN")}/mo
 - Negotiated Rent: ₹${data.negotiated_rent.toLocaleString("en-IN")}/mo
 - Monthly Savings: ₹${savings.toLocaleString("en-IN")}/mo (${pct}%)
 - Locality: ${data.locality || "Unknown"}
@@ -72,8 +73,8 @@ export class EmailService {
   async sendLocalityFeedbackAlert(data: {
     locality_id: string;
     score: number;
-    category?: string;
-    comment?: string;
+    category?: string | null;
+    comment?: string | null;
   }): Promise<void> {
     await this.notifyAdmin({
       subject: `[${config.SITE_NAME}] Community Locality Feedback: ${data.locality_id} (Score: ${data.score}/100)`,

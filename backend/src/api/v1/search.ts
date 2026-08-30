@@ -104,6 +104,21 @@ searchRouter.post("/", async (req: Request, res: Response): Promise<void> => {
       properties: enriched,
     };
 
+    // Log telemetry asynchronously
+    import("../../services/analyticsService.js").then(({ analyticsService }) => {
+      analyticsService.logSearchTelemetry({
+        query,
+        city: intent.filters.city || undefined,
+        officeLocation: intent.filters.office_location || undefined,
+        budgetMax: intent.filters.budget_max || undefined,
+        propertyTypes: intent.filters.property_types || [],
+        amenities: intent.filters.amenities || [],
+        preferences: intent.filters.preferences || [],
+        resultsCount: enriched.length,
+        isCacheHit: false,
+      }).catch(() => {});
+    });
+
     await setJson(key, result, 300);
     res.json(result);
   } catch (error) {

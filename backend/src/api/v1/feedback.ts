@@ -23,9 +23,9 @@ feedbackRouter.post("/negotiated-rents", async (req: Request, res: Response): Pr
     // Notify admin email asynchronously
     emailService.sendNegotiatedRentAlert({
       property_id: parsed.property_id,
-      original_rent: parsed.original_rent,
+      listed_rent: parsed.listed_rent,
       negotiated_rent: parsed.negotiated_rent,
-      notes: parsed.notes,
+      locality: parsed.locality_id,
     }).catch(() => {});
 
     res.json(serializeDoc({ ...doc, _id: result.insertedId }));
