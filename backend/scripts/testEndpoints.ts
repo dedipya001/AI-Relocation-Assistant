@@ -511,6 +511,21 @@ async function main() {
     return `Revenue Goal: ₹${revGoal.current_inr}/₹${revGoal.target_inr} (${revGoal.progress_pct}% - ${revGoal.status})`;
   });
 
+  // 41. Semantic Natural Language Search (POST /api/v1/search/semantic)
+  await runTest("Semantic Natural Language Search (POST /api/v1/search/semantic)", async () => {
+    const res = await axios.post(`${BASE_URL}/api/v1/search/semantic`, {
+      query: "Quiet top-floor flat near tech park with natural sunlight, power backup, and pet friendly",
+      city: "Kolkata",
+      budget_max: 20000,
+      limit: 5,
+    });
+    if (res.status !== 200 || !Array.isArray(res.data?.properties) || res.data.properties.length === 0) {
+      throw new Error(`Semantic search returned invalid results: ${JSON.stringify(res.data)}`);
+    }
+    const top = res.data.properties[0];
+    return `Found ${res.data.results_count} properties. Top match: "${top.title}" in ${top.locality} (Score: ${top.semantic_similarity_score}, Rent: ₹${top.rent}, Matched: ${top.matched_features.slice(0, 2).join(", ")})`;
+  });
+
   // Summary
   console.log("\n=========================================");
   console.log("📊 TEST SUMMARY");
