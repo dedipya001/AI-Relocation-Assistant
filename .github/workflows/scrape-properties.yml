@@ -15,6 +15,9 @@ on:
         required: false
         default: '2'
 
+permissions:
+  contents: write
+
 jobs:
   scrape-and-sync:
     name: Scrape Recent Listings & Sync
@@ -24,6 +27,9 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
 
       - name: Set up Node.js 20
         uses: actions/setup-node@v4
@@ -73,6 +79,7 @@ jobs:
           git add datasetJson/
           if ! git diff-index --quiet HEAD; then
             git commit -m "chore(data): automated property ingest snapshot $(date +'%Y-%m-%d')"
+            git pull --rebase origin main || true
             git push
           else
             echo "No new dataset changes to commit."
