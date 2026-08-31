@@ -77,10 +77,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add datasetJson/
-          if ! git diff-index --quiet HEAD; then
+          if [ -n "$(git status --porcelain datasetJson)" ]; then
             git commit -m "chore(data): automated property ingest snapshot $(date +'%Y-%m-%d')"
-            git pull --rebase origin main || true
-            git push
+            git pull --rebase origin "${{ github.ref_name }}" || true
+            git push origin "HEAD:${{ github.ref_name }}"
           else
             echo "No new dataset changes to commit."
           fi
