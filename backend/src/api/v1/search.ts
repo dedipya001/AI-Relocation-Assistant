@@ -11,18 +11,43 @@ import { CommuteService } from "../../services/commute.js";
 import { IntentParser } from "../../services/intentParser.js";
 import { LowestPriceEngine } from "../../services/lowestPrice.js";
 import { RecommendationEngine } from "../../services/recommendations.js";
+import { localityResolutionService, LocationSearchDebugEntry } from "../../services/localityResolutionService.js";
+import { regionBoundaryService } from "../../services/regionBoundaryService.js";
 import { vectorSearchService } from "../../services/vectorSearchService.js";
 
 export const searchRouter = Router();
+
+/**
+ * GET /api/v1/search/resolve-locality
+ * Validates and resolves any locality into a VerifiedLocationObject
+ */
+searchRouter.get("/resolve-locality", async (req: Request, res: Response): Promise<void> => {
+  try {
+    const query = (req.query.q as string) || (req.query.locality as string) || "";
+    const city = (req.query.city as string) || undefined;
+    if (!query.trim()) {
+      res.status(400).json({ error: "Missing required query parameter: q or locality" });
+      return;
+    }
+    const location = await localityResolutionService.resolveLocality(query, city);
+    if (!location) {
+      res.status(404).json({ error: `Locality '${query}' could not be verified by GIS providers` });
+      return;
+    }
+    res.json({ success: true, location });
+  } catch (err) {
+    res.status(500).json({ error: (err as Error).message });
+  }
+});
 
 const SemanticSearchInSchema = z.object({
   query: z.string().min(1, "Query string is required"),
   city: z.string().optional(),
   locality: z.string().optional(),
-  budget_max: z.number().optional(),
+  budget_max: z.number().positive().optional(),
   budget_min: z.number().optional(),
   property_types: z.array(z.string()).optional(),
-  limit: z.number().min(1).max(50).default(20),
+  limit: z.number().min(1).max(50).default(10),
   threshold: z.number().min(0).max(1).default(0.45),
 });
 
@@ -70,7 +95,14 @@ searchRouter.post("/", async (req: Request, res: Response): Promise<void> => {
       intent.filters.city = detectedCity;
     }
 
-    const officeCoordinates = intent.filters.office_location
+    // 1. Authoritative Locality & Boundary Resolution
+    const verifiedLocation = intent.filters.office_location
+      ? await localityResolutionService.resolveLocality(intent.filters.office_location, intent.filters.city)
+      : null;
+
+    const officeCoordinates: [number, number] | null = verifiedLocation
+      ? [verifiedLocation.longitude, verifiedLocation.latitude]
+      : intent.filters.office_location
       ? await resolveOfficeCoordinates(intent.filters.office_location, intent.filters.city)
       : null;
 
@@ -78,7 +110,7 @@ searchRouter.post("/", async (req: Request, res: Response): Promise<void> => {
     const propertyRepo = new PropertyRepository(db);
     const localityRepo = new LocalityRepository(db);
 
-    let properties = await propertyRepo.search(intent.filters, 60, officeCoordinates);
+    let properties = await propertyRepo.search(intent.filters, 60, officeCoordinates, verifiedLocation);
 
     if (officeCoordinates) {
       rankByOfficeProximity(properties, officeCoordinates);
@@ -113,6 +145,17 @@ searchRouter.post("/", async (req: Request, res: Response): Promise<void> => {
       }
     );
 
+    // Separate recommendations into Exact Locality Matches vs Nearby Matches
+    const exactMatches = recommendations.filter((r) => {
+      const prop = enriched.find((p) => String(p._id) === r.entity_id);
+      return prop?.is_exact_locality_match !== false;
+    });
+
+    const nearbyMatches = recommendations.filter((r) => {
+      const prop = enriched.find((p) => String(p._id) === r.entity_id);
+      return prop?.is_nearby_match === true;
+    });
+
     // Calculate traffic and shuttle data for the primary search area
     const commuteService = new CommuteService();
     const topDistance = enriched[0]?.distance_to_office_km || 3.5;
@@ -127,9 +170,57 @@ searchRouter.post("/", async (req: Request, res: Response): Promise<void> => {
       destOffice
     );
 
+    // Build comprehensive debug trace
+    const debugLog: LocationSearchDebugEntry = {
+      original_query: query,
+      extracted_locality: intent.filters.office_location || "None",
+      canonical_locality: verifiedLocation?.canonicalName || "General Search",
+      geocoding_provider: verifiedLocation?.source || "None",
+      resolved_coordinates: officeCoordinates ? [officeCoordinates[0], officeCoordinates[1]] : [0, 0],
+      boundary_radius_km: verifiedLocation?.boundary_radius_km || 0,
+      has_polygon_boundary: Boolean(verifiedLocation?.boundary),
+      bounding_box: verifiedLocation?.bounding_box,
+      properties_evaluated: enriched.length,
+      exact_matches_count: exactMatches.length,
+      nearby_matches_count: nearbyMatches.length,
+      property_trace: enriched.slice(0, 15).map((p) => ({
+        property_id: String(p._id),
+        title: p.title,
+        coordinates: p.location?.coordinates || [0, 0],
+        raw_locality: p.actual_locality_name || p.locality,
+        distance_km: p.distance_to_office_km,
+        classification: p.is_exact_locality_match
+          ? "exact_match"
+          : p.is_nearby_match
+          ? "nearby_match"
+          : "excluded_outside_range",
+        inclusion_reason: p.is_exact_locality_match
+          ? `Inside verified boundary of ${verifiedLocation?.canonicalName || "Locality"}`
+          : `Within nearby corridor (${p.distance_to_office_km} km from centroid)`,
+      })),
+    };
+
     const result = {
       intent,
       office_coordinates: officeCoordinates ? [officeCoordinates[0], officeCoordinates[1]] : null,
+      verified_location: verifiedLocation || undefined,
+      verified_region_boundary: verifiedLocation
+        ? {
+            region_name: verifiedLocation.canonicalName,
+            city: verifiedLocation.city,
+            display_name: verifiedLocation.canonicalName,
+            centroid: [verifiedLocation.longitude, verifiedLocation.latitude],
+            bounding_box: verifiedLocation.bounding_box || [0, 0, 0, 0],
+            boundary_radius_km: verifiedLocation.boundary_radius_km,
+            source: verifiedLocation.source,
+          }
+        : undefined,
+      exact_matches_count: exactMatches.length,
+      nearby_matches_count: nearbyMatches.length,
+      exact_matches: exactMatches,
+      nearby_matches: nearbyMatches,
+      location_suggestions: verifiedLocation?.suggestions || undefined,
+      debug_log: debugLog,
       traffic_data: trafficData,
       shuttle_services: trafficData.shuttle_services,
       recommendations,
@@ -181,6 +272,14 @@ export async function resolveOfficeCoordinates(
   const normalizedCity = (city || detectCity(officeLocation) || config.DEFAULT_CITY).trim();
   const known = knownOfficeCoordinates(officeLocation, normalizedCity);
   if (known) return known;
+
+  // 1. Try verified regional GIS boundary service (OSM Nominatim & Mapbox)
+  try {
+    const verified = await regionBoundaryService.getVerifiedBoundary(officeLocation, normalizedCity);
+    if (verified?.centroid) return verified.centroid;
+  } catch {
+    // Non-critical fallback
+  }
 
   const cityCenter = CITY_CENTERS[normalizedCity.toLowerCase()];
 
