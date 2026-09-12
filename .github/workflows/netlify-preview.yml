@@ -1,0 +1,68 @@
+name: Netlify Preview Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: netlify-preview
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install frontend dependencies
+        run: npm --prefix frontend ci
+
+      - name: Build frontend-only static preview
+        env:
+          NETLIFY_STATIC_DEPLOY: "true"
+          NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN: ""
+          NEXT_PUBLIC_GOOGLE_CLIENT_ID: ""
+        run: npm --prefix frontend run build
+
+      - name: Deploy anonymously to Netlify
+        id: netlify
+        shell: bash
+        run: |
+          set -euo pipefail
+          npx -y netlify-cli@latest deploy \
+            --allow-anonymous \
+            --prod \
+            --dir frontend/out \
+            --no-build \
+            --json > /tmp/netlify-deploy.json
+          node <<'NODE'
+          const fs = require('fs');
+          const deploy = JSON.parse(fs.readFileSync('/tmp/netlify-deploy.json', 'utf8'));
+          const url = deploy.url || deploy.deploy_url || deploy.deployUrl || deploy.ssl_url;
+          if (!url) {
+            console.error('Netlify deploy completed but no public URL was returned.');
+            process.exit(1);
+          }
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `url=${url}\n`);
+          fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, `## Netlify preview\n\n${url}\n`);
+          console.log(`Netlify preview URL: ${url}`);
+          NODE
+
+      - name: Smoke-test deployed homepage
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 5 --retry-delay 2 "${{ steps.netlify.outputs.url }}" > /tmp/netlify-home.html
+          grep -qi "AI Relocation\|Thikana\|relocation" /tmp/netlify-home.html
+          echo "Homepage smoke test passed: ${{ steps.netlify.outputs.url }}"
