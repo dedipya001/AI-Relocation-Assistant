@@ -1,0 +1,100 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    services:
+      mongodb:
+        image: mongo:7
+        ports:
+          - 27017:27017
+        options: >-
+          --health-cmd "mongosh --quiet --eval 'db.runCommand({ ping: 1 })'"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 10
+      redis:
+        image: redis:7-alpine
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 10
+
+    env:
+      ENVIRONMENT: test
+      API_HOST: 127.0.0.1
+      API_PORT: 8001
+      MONGODB_URI: mongodb://127.0.0.1:27017
+      MONGODB_DB: relocation_ai_test
+      REDIS_URL: redis://127.0.0.1:6379/0
+      API_URL: http://127.0.0.1:8001
+      FRONTEND_URL: http://127.0.0.1:3000
+      NEXT_PUBLIC_API_URL: http://127.0.0.1:8001/api/v1
+      OPENAI_API_KEY: ""
+      MAPBOX_ACCESS_TOKEN: ""
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: |
+            backend/package-lock.json
+            frontend/package-lock.json
+
+      - name: Install backend dependencies
+        run: npm --prefix backend ci
+
+      - name: Install frontend dependencies
+        run: npm --prefix frontend ci
+
+      - name: Backend typecheck
+        run: npm --prefix backend run typecheck
+
+      - name: Seed integration-test database
+        run: npm --prefix backend run seed
+
+      - name: Start backend for integration tests
+        run: |
+          npm --prefix backend run dev > /tmp/relocation-backend.log 2>&1 &
+          echo $! > /tmp/relocation-backend.pid
+          for attempt in {1..30}; do
+            if curl --fail --silent http://127.0.0.1:8001/health > /dev/null; then
+              exit 0
+            fi
+            sleep 2
+          done
+          cat /tmp/relocation-backend.log
+          exit 1
+
+      - name: Backend integration tests
+        run: npm --prefix backend test
+
+      - name: Backend deterministic recommendation benchmarks
+        run: npm --prefix backend run test:bench
+
+      - name: Frontend typecheck
+        run: npm --prefix frontend run typecheck
+
+      - name: Frontend production build
+        run: npm --prefix frontend run build
+
+      - name: Print backend logs on failure
+        if: failure()
+        run: cat /tmp/relocation-backend.log || true
