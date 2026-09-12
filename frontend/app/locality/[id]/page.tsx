@@ -3,14 +3,25 @@ import { Activity, Shield, Utensils, Wifi } from "lucide-react";
 import { Nav } from "@/components/nav";
 import { Card } from "@/components/ui/card";
 import { api } from "@/lib/api";
+import { demoLocalities } from "@/lib/demo-data";
 import styles from "./page.module.css";
+
+export function generateStaticParams() {
+  return demoLocalities.map((locality) => ({ id: locality._id }));
+}
 
 export default async function LocalityPage({ params }: { params: { id: string } }) {
   let locality;
-  try {
-    locality = await api.getLocality(params.id);
-  } catch {
-    notFound();
+
+  if (process.env.NETLIFY_STATIC_DEPLOY === "true") {
+    locality = demoLocalities.find((item) => item._id === params.id);
+    if (!locality) notFound();
+  } else {
+    try {
+      locality = await api.getLocality(params.id);
+    } catch {
+      notFound();
+    }
   }
 
   return (
