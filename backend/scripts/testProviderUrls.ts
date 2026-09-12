@@ -25,7 +25,7 @@ assert.equal(property.source_url, property.listing_url);
 assert.equal(property.provider_url, property.listing_url);
 assert.equal(property.lowest_price.url, "https://housing.com/rent/property-for-rent-in-kolkata");
 
-const recommendations = attachRecommendationProviderUrls(
+const recommendations = attachRecommendationProviderUrls<Record<string, any>>(
   [{ entity_id: "provider-test", title: "2BHK test home" }],
   [property]
 );
