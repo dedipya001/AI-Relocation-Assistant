@@ -11,7 +11,7 @@ permissions:
 jobs:
   verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     services:
       mongodb:
         image: mongo:7
@@ -94,6 +94,18 @@ jobs:
 
       - name: Frontend production build
         run: npm --prefix frontend run build
+
+      - name: Validate development Compose configuration
+        run: docker compose -f docker-compose.yml config --quiet
+
+      - name: Validate production Compose configuration
+        run: docker compose -f docker-compose.prod.yml config --quiet
+
+      - name: Build backend production image
+        run: docker build --target production -t ai-relocation-backend:test ./backend
+
+      - name: Build frontend production image
+        run: docker build --target production -t ai-relocation-frontend:test ./frontend
 
       - name: Print backend logs on failure
         if: failure()

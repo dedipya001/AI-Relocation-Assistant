@@ -6,12 +6,12 @@
 
 <p align="center">
   <a href="https://github.com/dedipya001/AI-Relocation-Assistant/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/dedipya001/AI-Relocation-Assistant/actions/workflows/ci.yml/badge.svg" /></a>
-  <img alt="Next.js 15" src="https://img.shields.io/badge/Next.js%2015-React%2019-black?logo=next.js" />
+  <img alt="Next.js 16" src="https://img.shields.io/badge/Next.js%2016-React%2019-black?logo=next.js" />
   <img alt="Express" src="https://img.shields.io/badge/Express-TypeScript-000000?logo=express" />
   <img alt="MongoDB" src="https://img.shields.io/badge/MongoDB-Geospatial%20Data-47A248?logo=mongodb&logoColor=white" />
   <img alt="Redis" src="https://img.shields.io/badge/Redis-Cache-DC382D?logo=redis&logoColor=white" />
   <img alt="Playwright" src="https://img.shields.io/badge/Playwright-Headless%20Scraper-2EAD33?logo=playwright&logoColor=white" />
-  <img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub%20Actions-Bi--Weekly%20Cron-2088FF?logo=github-actions&logoColor=white" />
+  <img alt="Docker" src="https://img.shields.io/badge/Docker-Dev%20%2B%20Prod-2496ED?logo=docker&logoColor=white" />
   <img alt="Status" src="https://img.shields.io/badge/status-active%20development-blue" />
 </p>
 
@@ -27,28 +27,21 @@ Finding a rental home is usually treated as a keyword or listing-filter search. 
 
 ## 🚀 Key Features
 
-- **🧠 Multi-Factor Recommendation Engine**:
-  - Deterministic 7-factor scoring model: *Affordability*, *Commute & Proximity*, *Neighbourhood Safety*, *Internet Reliability*, *Food & Essentials*, *Lifestyle Fit*, and *Property Quality*.
-  - Configurable user personas: `balanced`, `budget_saver`, `tech_professional`, `safety_priority`, `family_first`, and `night_owl`.
-  - Hard constraint boundary enforcement (`max_budget`, `max_commute_minutes`, `min_safety_score`, `min_internet_score`, `must_have_amenities`).
-  - Explainable subscores with itemized weight contributions and narrative decision reasoning.
-
-- **🗺️ Zero-Config Interactive Maps**:
-  - Out-of-the-box map visualization using CartoDB Voyager & OpenStreetMap raster tiles (zero API keys required).
-  - Mapbox GL integration with isochrone commute rings (10/20/30 min travel contours) and directional driving routes.
-  - Interactive property markers with hover price cards, metro tags, and auto-centering bounds.
-
-- **🤖 Automated Ingestion & Scraper Pipeline**:
-  - Resilient Playwright headless scraper extracting Schema.org `application/ld+json` microdata and high-res DOM elements without bot blocks.
-  - Handles multi-unit INR rent denominations (`k`, `Lac`, `Lakh`, `Cr`) with residential outlier filters.
-  - SHA-1 deterministic deduplication and timestamped price fluctuation tracking in `price_history`.
-  - Automated bi-weekly GitHub Actions workflow running on Mondays & Fridays at 08:30 AM IST.
-
-- **🏙️ Multi-City Coverage**:
-  - **Kolkata**: Salt Lake City, Sector V, New Town, Rajarhat, Ballygunge, EM Bypass.
-  - **Bengaluru**: Whitefield, Electronic City, HSR Layout, Koramangala, Bellandur, Indiranagar.
-  - **Mumbai**: Powai, Andheri East, Bandra West, Goregaon East, Thane West.
-  - **Pune**: Hinjewadi, Wakad, Baner, Kharadi, Viman Nagar, Magarpatta.
+- **🧠 Multi-Factor Recommendation Engine**
+  - Deterministic 7-factor scoring: affordability, commute, safety, internet, essentials, lifestyle, and property quality.
+  - Personas: `balanced`, `budget_saver`, `tech_professional`, `safety_priority`, `family_first`, and `night_owl`.
+  - Hard constraints for budget, commute, safety, internet, and must-have amenities.
+  - Explainable score contributions and decision reasoning.
+- **🗺️ Interactive Maps**
+  - CartoDB Voyager/OpenStreetMap zero-key map fallback.
+  - Mapbox integration for commute visualization and routes.
+  - Interactive property markers, metro context, and automatic bounds.
+- **🤖 Automated Property Ingestion**
+  - Playwright-based marketplace ingestion with Schema.org extraction.
+  - INR normalization, deterministic deduplication, and price-history tracking.
+  - Automated scheduled ingestion through GitHub Actions.
+- **🏙️ Multi-City Coverage**
+  - Kolkata, Bengaluru, Mumbai, and Pune datasets and locality coverage.
 
 ---
 
@@ -56,32 +49,13 @@ Finding a rental home is usually treated as a keyword or listing-filter search. 
 
 ```mermaid
 flowchart TD
-    User([👤 User / Relocator]) -->|Searches & Explores| Frontend[⚡ Next.js 15 App\nhttp://localhost:3000]
-    
-    subgraph Frontend Layer
-        Frontend --> Persona[Persona Selector & Filters]
-        Frontend --> MapView[🗺️ Interactive Relocation Map]
-        Frontend --> Modal[Score Breakdown & Explainability]
-    end
-
-    Frontend -->|REST API Requests| Backend[🚀 Express TypeScript Backend\nhttp://localhost:8001/api/v1]
-
-    subgraph Backend Services
-        Backend --> RecoEngine[🧠 Recommendation & Ranking Engine]
-        Backend --> SearchSvc[🔍 Multi-City Search Service]
-        Backend --> PriceSvc[💰 Lowest Price & History Tracker]
-        Backend --> AssistantSvc[🤖 AI Assistant & Summary Generator]
-    end
-
-    Backend --> Mongo[(🗄️ MongoDB\n2,600+ Properties & Localities)]
-    Backend --> Redis[(⚡ Redis Cache)]
-    Backend --> LLM[OpenAI GPT-4o-mini]
-
-    subgraph Automated Pipeline
-        Cron[⏰ GitHub Actions Bi-Weekly Cron\nMon & Fri 08:30 IST] --> Playwright[🎭 Playwright Live Scraper]
-        Playwright --> Mongo
-        Playwright --> Datasets[📁 datasetJson/ Snapshots]
-    end
+    User([👤 User / Relocator]) --> Frontend[⚡ Next.js 16\n:3000]
+    Frontend --> Backend[🚀 Express TypeScript\n:8000]
+    Backend --> Mongo[(🗄️ MongoDB)]
+    Backend --> Redis[(⚡ Redis)]
+    Backend --> LLM[OpenAI]
+    Cron[⏰ GitHub Actions ingestion] --> Playwright[🎭 Playwright scraper]
+    Playwright --> Mongo
 ```
 
 ---
@@ -90,68 +64,93 @@ flowchart TD
 
 ```text
 AI-Relocation-Assistant/
-├── .github/
-│   └── workflows/
-│       ├── ci.yml                     # Continuous integration & test suite
-│       └── scrape-properties.yml      # Bi-weekly automated property ingestion cron
-├── backend/                           # Express TypeScript API server
-│   ├── scripts/
-│   │   ├── populatePropertyData.ts    # Live Playwright microdata scraper & DB sync
-│   │   ├── importMagicBricksDataset.ts# Multi-city batch dataset importer + geocache
-│   │   └── seed.ts                    # Default seed localities and properties
-│   └── src/
-│       ├── api/v1/                    # Express REST endpoints
-│       ├── core/                      # Config & application logging
-│       ├── db/                        # MongoDB client & connections
-│       ├── models/                    # TypeScript interfaces & Zod validation schemas
-│       ├── repositories/              # MongoDB data access layers (properties, localities)
-│       └── services/                  # Recommendation engine, commute, search, OpenAI
-├── datasetJson/                       # Verified date-stamped property datasets
-├── docs/                              # Architecture specifications & API references
-└── frontend/                          # Next.js Web Application
-    ├── app/                           # App router pages
-    ├── components/                    # UI components, modals, maps
-    ├── lib/                           # API client & demo fallback fixtures
-    ├── store/                         # Zustand state management
-    └── types/                         # Shared TypeScript interfaces
+├── .github/workflows/                # CI and ingestion automation
+├── backend/
+│   ├── Dockerfile                    # Development + production backend targets
+│   ├── scripts/                      # Seed, ingestion, tests, benchmarks
+│   └── src/                          # Express API, services, repositories, models
+├── frontend/
+│   ├── Dockerfile                    # Development + standalone production targets
+│   ├── app/                          # Next.js app-router pages
+│   ├── components/                   # Search, map, property, locality UI
+│   └── store/                        # Zustand state
+├── datasetJson/                      # Versioned property snapshots
+├── docs/                             # Architecture and provider documentation
+├── docker-compose.yml                # Live-reload development stack
+└── docker-compose.prod.yml           # Production-like stack
 ```
 
 ---
 
-## 🛠️ Getting Started (Local Development)
+## 🐳 Docker Quick Start
 
-### 1. Prerequisites
-- **Node.js**: v20.x or v22.x
-- **MongoDB**: Running locally on `mongodb://localhost:27017`
-- **Redis**: Running on `redis://localhost:6379/0`
+Docker is the recommended setup because it runs the frontend, backend, MongoDB, and Redis with one command. Copy the root environment template first and put any optional provider/API credentials in `.env`; Compose reads that file automatically.
 
-### 2. Clone and Setup Environment
+```bash
+cp .env.example .env
+
+docker compose up --build
+```
+
+The development stack mounts `backend/` and `frontend/` into their containers for live reload. MongoDB is seeded only when its locality collection is empty, so normal restarts do not overwrite existing data.
+
+Open the frontend at **http://localhost:3000** and the backend health endpoint at **http://localhost:8000/health**.
+
+Useful development commands:
+
+```bash
+# Follow one service
+docker compose logs -f backend
+docker compose logs -f frontend
+
+# See all running services
+docker compose ps
+
+# Rebuild after Dockerfile/dependency changes
+docker compose up --build
+
+# Stop containers but keep Mongo/Redis data
+docker compose down
+
+# Stop and remove local database/cache volumes too
+docker compose down -v
+```
+
+For the production-style stack, both application services are built from their production stages and the Next.js standalone server is used:
+
+```bash
+docker compose -f docker-compose.prod.yml up --build -d
+docker compose -f docker-compose.prod.yml ps
+docker compose -f docker-compose.prod.yml logs -f backend
+docker compose -f docker-compose.prod.yml down
+```
+
+Environment secrets are never baked into the repository. Configure values such as `OPENAI_API_KEY`, `MAPBOX_ACCESS_TOKEN`, `NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN`, proxy credentials, and deployment URLs in the root `.env` before startup.
+
+---
+
+## 🛠️ Native Local Development
+
+If you prefer to run services directly on the host, install Node.js 20/22, MongoDB, and Redis, then:
 
 ```bash
 git clone https://github.com/dedipya001/AI-Relocation-Assistant.git
 cd AI-Relocation-Assistant
-
 cp .env.example .env
 cp backend/.env.example backend/.env
 cp frontend/.env.example frontend/.env.local
-```
 
-### 3. Install & Start Backend
-
-```bash
 npm --prefix backend install
+npm --prefix frontend install
 npm --prefix backend run seed
 npm --prefix backend run dev
 ```
 
-### 4. Install & Start Frontend
+In another terminal:
 
 ```bash
-npm --prefix frontend install
 npm --prefix frontend run dev
 ```
-
-Open **http://localhost:3000** in your browser to start exploring properties.
 
 ---
 
@@ -160,41 +159,39 @@ Open **http://localhost:3000** in your browser to start exploring properties.
 | Method | Endpoint | Description |
 |---|---|---|
 | `GET` | `/api/v1/properties` | Search and filter properties by city, rent budget, and property type. |
-| `GET` | `/api/v1/properties/:id` | Get individual property with price history and locality signals. |
-| `POST` | `/api/v1/recommendations/rank` | Multi-factor recommendation ranking with persona weight overrides and hard constraints. |
+| `GET` | `/api/v1/properties/:id` | Get one property with price history and locality signals. |
+| `POST` | `/api/v1/recommendations/rank` | Rank candidates with persona weights and hard constraints. |
 | `GET` | `/api/v1/recommendations/profiles` | List available scoring personas. |
-| `POST` | `/api/v1/search` | Natural language relocation search with candidate retrieval. |
-| `GET` | `/api/v1/localities` | List locality metadata, safety ratings, internet scores, and transit connectivity. |
-| `POST` | `/api/v1/commute/estimate` | Estimate commute durations between origins and work destinations. |
-| `POST` | `/api/v1/assistant/chat` | AI conversational relocation advisory with context-augmented answers. |
+| `POST` | `/api/v1/search` | Natural-language relocation search. |
+| `GET` | `/api/v1/localities` | List locality metadata and quality signals. |
+| `POST` | `/api/v1/commute/estimate` | Estimate commute duration. |
+| `POST` | `/api/v1/assistant/chat` | Conversational relocation advisory. |
 
 ---
 
 ## 🧪 Verification & Testing
 
-The CI workflow runs on every pull request and every push to `main`. It starts isolated MongoDB and Redis services, seeds the test database, starts the Express API, and runs the complete backend/frontend verification set.
-
-Run the same checks locally from the repository root:
+CI runs on every pull request and push to `main`. It provisions isolated MongoDB/Redis services, runs backend type checking, seeds and exercises the API integration suite, runs deterministic recommendation benchmarks, typechecks/builds Next.js, validates both Compose files, and builds both production Docker images.
 
 ```bash
-# Install exact locked dependencies
 npm --prefix backend ci
 npm --prefix frontend ci
-
-# Backend static verification
 npm --prefix backend run typecheck
 
-# Integration-test prerequisites (MongoDB + Redis must be running)
+# With MongoDB + Redis running:
 npm --prefix backend run seed
 API_PORT=8001 npm --prefix backend run dev
-
-# In another terminal
+# in another terminal:
 API_URL=http://127.0.0.1:8001 npm --prefix backend test
 npm --prefix backend run test:bench
 
-# Frontend verification
 npm --prefix frontend run typecheck
 npm --prefix frontend run build
+
+docker compose -f docker-compose.yml config --quiet
+docker compose -f docker-compose.prod.yml config --quiet
+docker build --target production -t ai-relocation-backend:test ./backend
+docker build --target production -t ai-relocation-frontend:test ./frontend
 ```
 
 ---
@@ -212,6 +209,7 @@ npm --prefix backend run scrape-housing -- --city "Bangalore" --export-json "../
 ## 🗺️ Project Roadmap
 
 - [x] **Recommendation Ranking Engine & Personas** ([#2](https://github.com/dedipya001/AI-Relocation-Assistant/issues/2))
+- [x] **Automated Tests & CI** ([#3](https://github.com/dedipya001/AI-Relocation-Assistant/issues/3))
 - [x] **Automated Bi-Weekly Property Ingestion Pipeline** ([#13](https://github.com/dedipya001/AI-Relocation-Assistant/issues/13))
 - [x] **Multi-City Support for Bengaluru, Mumbai, Pune & Kolkata** ([#11](https://github.com/dedipya001/AI-Relocation-Assistant/issues/11))
 - [ ] **Interactive Commute Isochrones & Transit Overlays** ([#8](https://github.com/dedipya001/AI-Relocation-Assistant/issues/8))
@@ -224,16 +222,14 @@ npm --prefix backend run scrape-housing -- --city "Bangalore" --export-json "../
 
 ## 🤝 Contributing
 
-We welcome contributions from developers, data engineers, and designers!
-
-1. Fork the repository and create your feature branch (`git checkout -b feat/my-new-feature`).
-2. Pick an open issue from the [Roadmap Issues](https://github.com/dedipya001/AI-Relocation-Assistant/issues).
-3. Ensure all CI-equivalent verification commands above pass.
-4. Commit your changes with clear semantic commit messages.
-5. Submit a Pull Request describing your implementation and linking the issue.
+1. Fork the repository and create a feature branch.
+2. Pick an open roadmap issue.
+3. Ensure the CI-equivalent verification commands above pass.
+4. Commit clear, focused changes.
+5. Submit a pull request linking the issue.
 
 ---
 
 ## 📄 License & Attribution
 
-Built with ❤️ by [Dedipya Goswami](https://github.com/dedipya001). Released under the MIT License.
+Built by [Dedipya Goswami](https://github.com/dedipya001). Released under the MIT License.
