@@ -1,12 +1,20 @@
-import type { SearchResponse, Locality, Property, CommuteEstimate, ScoringProfile, ScoringWeights, HardConstraints, Recommendation } from "@/types";
+import type { AuthResponse, CommuteEstimate, GuestPersonalization, GuestProfile, HardConstraints, Locality, Property, Recommendation, ScoringProfile, ScoringWeights, SearchResponse } from "@/types";
 import { demoLocalities, demoProperties, demoSearchResponse } from "@/lib/demo-data";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8001/api/v1";
 
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
   const response = await fetch(`${API_URL}${path}`, { ...init, headers: { "Content-Type": "application/json", ...init?.headers }, cache: "no-store" });
-  if (!response.ok) throw new Error(`API request failed: ${response.status}`);
+  if (!response.ok) {
+    const payload = await response.json().catch(() => ({}));
+    throw new Error(payload?.error || `API request failed: ${response.status}`);
+  }
+  if (response.status === 204) return undefined as T;
   return response.json() as Promise<T>;
+}
+
+function bearer(token: string) {
+  return { Authorization: `Bearer ${token}` };
 }
 
 export interface SearchOptions { profile?: ScoringProfile; weights?: Partial<ScoringWeights>; hard_constraints?: Partial<HardConstraints>; }
@@ -29,4 +37,12 @@ export const api = {
   submitNegotiatedRent: (payload:Record<string,unknown>) => request<Record<string,unknown>>("/feedback/negotiated-rents", { method:"POST", body:JSON.stringify(payload) }),
   submitLocalityFeedback: (payload:Record<string,unknown>) => request<Record<string,unknown>>("/feedback/locality", { method:"POST", body:JSON.stringify(payload) }),
   chat: (message:string) => request<{answer:string;context:SearchResponse}>("/assistant/chat", { method:"POST", body:JSON.stringify({message}) }),
+
+  personalizeGuest: (profile:GuestProfile) => request<GuestPersonalization>("/users/guest-profile", { method:"POST", body:JSON.stringify(profile) }),
+  signup: (payload:{email?:string;password?:string;google_id_token?:string;guest_profile?:GuestProfile;guest_saved_properties?:string[]}) => request<AuthResponse>("/users/signup", { method:"POST", body:JSON.stringify(payload) }),
+  login: (payload:{email?:string;password?:string;google_id_token?:string}) => request<AuthResponse>("/users/login", { method:"POST", body:JSON.stringify(payload) }),
+  getMe: (token:string) => request<AuthResponse["user"]>("/users/me", { headers:bearer(token) }),
+  updateMe: (token:string,payload:{profile?:Partial<GuestProfile>;weight_overrides?:Partial<ScoringWeights>}) => request<AuthResponse["user"]>("/users/me", { method:"PUT",headers:bearer(token),body:JSON.stringify(payload) }),
+  saveShortlistItem: (token:string,propertyId:string) => request<{items:Array<Record<string,unknown>>;count:number}>("/users/shortlist", { method:"POST",headers:bearer(token),body:JSON.stringify({property_id:propertyId}) }),
+  removeShortlistItem: (token:string,propertyId:string) => request<void>(`/users/shortlist/${encodeURIComponent(propertyId)}`, { method:"DELETE",headers:bearer(token) }),
 };
