@@ -5,6 +5,7 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/dedipya001/AI-Relocation-Assistant/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/dedipya001/AI-Relocation-Assistant/actions/workflows/ci.yml/badge.svg" /></a>
   <img alt="Next.js 15" src="https://img.shields.io/badge/Next.js%2015-React%2019-black?logo=next.js" />
   <img alt="Express" src="https://img.shields.io/badge/Express-TypeScript-000000?logo=express" />
   <img alt="MongoDB" src="https://img.shields.io/badge/MongoDB-Geospatial%20Data-47A248?logo=mongodb&logoColor=white" />
@@ -97,7 +98,7 @@ AI-Relocation-Assistant/
 │   ├── scripts/
 │   │   ├── populatePropertyData.ts    # Live Playwright microdata scraper & DB sync
 │   │   ├── importMagicBricksDataset.ts# Multi-city batch dataset importer + geocache
-│   │   └── seedData.ts                # Default seed localities and properties
+│   │   └── seed.ts                    # Default seed localities and properties
 │   └── src/
 │       ├── api/v1/                    # Express REST endpoints
 │       ├── core/                      # Config & application logging
@@ -106,16 +107,10 @@ AI-Relocation-Assistant/
 │       ├── repositories/              # MongoDB data access layers (properties, localities)
 │       └── services/                  # Recommendation engine, commute, search, OpenAI
 ├── datasetJson/                       # Verified date-stamped property datasets
-│   ├── bangalore_2026-08-01_to_2026-08-28.json
-│   ├── kolkata_2026-08-01_to_2026-08-28.json
-│   ├── mumbai_2026-08-01_to_2026-08-28.json
-│   └── pune_2026-08-01_to_2026-08-28.json
 ├── docs/                              # Architecture specifications & API references
-│   ├── scoring-model.md               # 7-factor mathematical scoring specification
-│   └── API_PROVIDERS.md               # External data providers & proxies
-└── frontend/                          # Next.js 15 Web Application
-    ├── app/                           # App router pages (landing, search, assistant)
-    ├── components/                    # Glassmorphic UI components, modals, maps
+└── frontend/                          # Next.js Web Application
+    ├── app/                           # App router pages
+    ├── components/                    # UI components, modals, maps
     ├── lib/                           # API client & demo fallback fixtures
     ├── store/                         # Zustand state management
     └── types/                         # Shared TypeScript interfaces
@@ -128,7 +123,7 @@ AI-Relocation-Assistant/
 ### 1. Prerequisites
 - **Node.js**: v20.x or v22.x
 - **MongoDB**: Running locally on `mongodb://localhost:27017`
-- **Redis** (Optional): Running on `redis://localhost:6379/0`
+- **Redis**: Running on `redis://localhost:6379/0`
 
 ### 2. Clone and Setup Environment
 
@@ -136,7 +131,6 @@ AI-Relocation-Assistant/
 git clone https://github.com/dedipya001/AI-Relocation-Assistant.git
 cd AI-Relocation-Assistant
 
-# Configure environment files
 cp .env.example .env
 cp backend/.env.example backend/.env
 cp frontend/.env.example frontend/.env.local
@@ -145,30 +139,19 @@ cp frontend/.env.example frontend/.env.local
 ### 3. Install & Start Backend
 
 ```bash
-cd backend
-npm install
-npx playwright install --with-deps chromium
-
-# Seed initial localities and import datasets into MongoDB
-npm run seed
-npm run import-dataset
-
-# Start Express dev server on http://localhost:8001
-npm run dev
+npm --prefix backend install
+npm --prefix backend run seed
+npm --prefix backend run dev
 ```
 
 ### 4. Install & Start Frontend
 
 ```bash
-# In a new terminal tab
-cd frontend
-npm install
-
-# Start Next.js dev server on http://localhost:3000
-npm run dev
+npm --prefix frontend install
+npm --prefix frontend run dev
 ```
 
-Open **[http://localhost:3000](http://localhost:3000)** in your browser to start exploring properties!
+Open **http://localhost:3000** in your browser to start exploring properties.
 
 ---
 
@@ -179,28 +162,39 @@ Open **[http://localhost:3000](http://localhost:3000)** in your browser to start
 | `GET` | `/api/v1/properties` | Search and filter properties by city, rent budget, and property type. |
 | `GET` | `/api/v1/properties/:id` | Get individual property with price history and locality signals. |
 | `POST` | `/api/v1/recommendations/rank` | Multi-factor recommendation ranking with persona weight overrides and hard constraints. |
-| `GET` | `/api/v1/recommendations/profiles`| List available scoring personas (`budget_saver`, `tech_professional`, etc.). |
-| `POST` | `/api/v1/search` | Natural language relocation search with LLM parsing and candidate retrieval. |
+| `GET` | `/api/v1/recommendations/profiles` | List available scoring personas. |
+| `POST` | `/api/v1/search` | Natural language relocation search with candidate retrieval. |
 | `GET` | `/api/v1/localities` | List locality metadata, safety ratings, internet scores, and transit connectivity. |
-| `POST` | `/api/v1/commute/estimate` | Estimate driving/transit commute durations between origins and work destinations. |
+| `POST` | `/api/v1/commute/estimate` | Estimate commute durations between origins and work destinations. |
 | `POST` | `/api/v1/assistant/chat` | AI conversational relocation advisory with context-augmented answers. |
 
 ---
 
 ## 🧪 Verification & Testing
 
-Run all unit tests, recommendation benchmarks, and TypeScript typechecks:
+The CI workflow runs on every pull request and every push to `main`. It starts isolated MongoDB and Redis services, seeds the test database, starts the Express API, and runs the complete backend/frontend verification set.
+
+Run the same checks locally from the repository root:
 
 ```bash
-# Run backend integration tests
-npm --prefix backend test
+# Install exact locked dependencies
+npm --prefix backend ci
+npm --prefix frontend ci
 
-# Run deterministic recommendation ranking benchmark suite
+# Backend static verification
+npm --prefix backend run typecheck
+
+# Integration-test prerequisites (MongoDB + Redis must be running)
+npm --prefix backend run seed
+API_PORT=8001 npm --prefix backend run dev
+
+# In another terminal
+API_URL=http://127.0.0.1:8001 npm --prefix backend test
 npm --prefix backend run test:bench
 
-# Typecheck backend and frontend
-npm --prefix backend run build
+# Frontend verification
 npm --prefix frontend run typecheck
+npm --prefix frontend run build
 ```
 
 ---
@@ -208,13 +202,8 @@ npm --prefix frontend run typecheck
 ## ⏰ Data Ingestion Scripts
 
 ```bash
-# Ingest all dataset files in datasetJson/ to MongoDB
 npm --prefix backend run import-dataset
-
-# Run live Playwright scraper for a specific city
 npm --prefix backend run scrape-housing -- --city "Kolkata" --max-pages 2
-
-# Export collected live data directly to JSON
 npm --prefix backend run scrape-housing -- --city "Bangalore" --export-json "../datasetJson/bangalore_recent.json"
 ```
 
@@ -239,7 +228,7 @@ We welcome contributions from developers, data engineers, and designers!
 
 1. Fork the repository and create your feature branch (`git checkout -b feat/my-new-feature`).
 2. Pick an open issue from the [Roadmap Issues](https://github.com/dedipya001/AI-Relocation-Assistant/issues).
-3. Ensure all tests pass (`npm --prefix backend test` and `npm --prefix frontend run typecheck`).
+3. Ensure all CI-equivalent verification commands above pass.
 4. Commit your changes with clear semantic commit messages.
 5. Submit a Pull Request describing your implementation and linking the issue.
 
