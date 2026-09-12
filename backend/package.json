@@ -11,6 +11,7 @@
     "test:bench": "tsx scripts/testRecommendationEngine.ts",
     "test:rag-eval": "tsx scripts/evaluateRetrieval.ts",
     "test:multi-city": "tsx scripts/testMultiCity.ts",
+    "test:telegram-community": "tsx scripts/testTelegramCommunity.ts",
     "typecheck": "tsc --noEmit",
     "seed": "tsx scripts/seed.ts && tsx scripts/seedMultiCity.ts",
     "seed:multi-city": "tsx scripts/seedMultiCity.ts",
