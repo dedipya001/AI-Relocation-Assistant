@@ -232,7 +232,6 @@ export class LocalityComparisonService {
             { locality_id: String(locality._id) },
             { locality: exactRegex(String(locality.name)) },
           ],
-          ...(locality.city ? { city: exactRegex(String(locality.city)) } : {}),
         } as any)
         .toArray();
       docs.push(...rows);
