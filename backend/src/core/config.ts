@@ -13,6 +13,7 @@ const configSchema = z.object({
   API_PORT: z.coerce.number().default(8000),
   PORT: z.coerce.number().optional(),
   FRONTEND_URL: z.string().default("http://localhost:3000"),
+  SITE_URL: z.string().url().default("https://thikanakhojo.com"),
 
   MONGODB_URI: z.string().default("mongodb://localhost:27017"),
   MONGODB_DB: z.string().default("relocation_ai"),
@@ -24,7 +25,11 @@ const configSchema = z.object({
   OPENAI_EMBEDDING_MODEL: z.string().default("text-embedding-3-small"),
 
   GOOGLE_MAPS_API_KEY: z.string().optional(),
+  GOOGLE_CLIENT_ID: z.string().optional(),
   MAPBOX_ACCESS_TOKEN: z.string().optional(),
+
+  JWT_SECRET: z.string().min(16).default("dev-only-change-me-please"),
+  JWT_TTL_SECONDS: z.coerce.number().int().positive().default(60 * 60 * 24 * 7),
 
   APIFY_TOKEN: z.string().optional(),
   APIFY_MAGICBRICKS_ACTOR_ID: z.string().optional(),
