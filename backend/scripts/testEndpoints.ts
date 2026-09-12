@@ -278,6 +278,130 @@ async function main() {
     return `Rank #1 (${first.title}): score ${first.score.total}, Rank #2 marked ineligible (${second.constraint_violations[0]})`;
   });
 
+  const accountEmail = `integration-${Date.now()}@example.com`;
+  const accountPassword = "StrongTestPassword!2026";
+  const guestProfile = {
+    age_group: "25-32",
+    gender: "prefer-not-to-say",
+    profession: "Software Engineer",
+    target_budget: 22000,
+    preferred_city: "Kolkata",
+    priority_amenities: ["Metro", "Women Safety", "Fast Internet", "Work Cafes"],
+  };
+  let accessToken = "";
+
+  // 20. Guest Profile Personalization
+  await runTest("Guest Profile Weight Tuner (POST /api/v1/users/guest-profile)", async () => {
+    const res = await axios.post(`${BASE_URL}/api/v1/users/guest-profile`, guestProfile);
+    const weights = res.data?.weights || {};
+    const weightSum = Object.values(weights).reduce((sum: number, value: any) => sum + Number(value || 0), 0);
+    if (res.status !== 200 || res.data?.scoring_profile !== "tech_professional") {
+      throw new Error(`Unexpected personalization: ${JSON.stringify(res.data)}`);
+    }
+    if (Math.abs(weightSum - 1) > 0.01 || res.data?.recommended_filters?.budget_max !== 22000) {
+      throw new Error(`Weights/filters were not normalized: ${JSON.stringify(res.data)}`);
+    }
+    return `Profile ${res.data.scoring_profile}, normalized weight sum ${weightSum.toFixed(4)}`;
+  });
+
+  // 21. Signup and Guest State Migration
+  await runTest("Signup + Guest State Migration (POST /api/v1/users/signup)", async () => {
+    const res = await axios.post(`${BASE_URL}/api/v1/users/signup`, {
+      email: accountEmail,
+      password: accountPassword,
+      guest_profile: guestProfile,
+      guest_saved_properties: [samplePropertyId],
+    });
+    accessToken = res.data?.access_token || "";
+    if (res.status !== 201 || !accessToken || res.data?.user?.email !== accountEmail) {
+      throw new Error(`Signup failed: ${JSON.stringify(res.data)}`);
+    }
+    if (res.data?.user?.shortlists?.[0]?.property_id !== samplePropertyId || !res.data?.user?.weight_overrides) {
+      throw new Error(`Guest profile/shortlist migration failed: ${JSON.stringify(res.data)}`);
+    }
+    if (JSON.stringify(res.data).includes("password_hash")) {
+      throw new Error("Password hash leaked in signup response.");
+    }
+    return `Created user ${res.data.user.id} and migrated 1 guest bookmark`;
+  });
+
+  // 22. Login and Authenticated Profile
+  await runTest("Login + Authenticated Profile (POST /login, GET /me)", async () => {
+    const login = await axios.post(`${BASE_URL}/api/v1/users/login`, {
+      email: accountEmail,
+      password: accountPassword,
+    });
+    accessToken = login.data?.access_token || accessToken;
+    if (login.status !== 200 || !accessToken) {
+      throw new Error(`Login failed: ${JSON.stringify(login.data)}`);
+    }
+    const me = await axios.get(`${BASE_URL}/api/v1/users/me`, {
+      headers: { Authorization: `Bearer ${accessToken}` },
+    });
+    if (me.status !== 200 || me.data?.email !== accountEmail || !Array.isArray(me.data?.shortlists)) {
+      throw new Error(`Authenticated profile failed: ${JSON.stringify(me.data)}`);
+    }
+    if (JSON.stringify(me.data).includes("password_hash")) {
+      throw new Error("Password hash leaked in profile response.");
+    }
+    return `Authenticated ${me.data.email} with ${me.data.shortlists.length} shortlist item(s)`;
+  });
+
+  // 23. Shortlist Notes and Decision Status
+  await runTest("Shortlist Notes + Status Management", async () => {
+    const headers = { Authorization: `Bearer ${accessToken}` };
+    const save = await axios.post(
+      `${BASE_URL}/api/v1/users/shortlist`,
+      {
+        property_id: samplePropertyId,
+        notes: "Visited on Saturday; maintenance is included.",
+        status: "scheduled_visit",
+      },
+      { headers }
+    );
+    if (save.status !== 201 || !Array.isArray(save.data?.items)) {
+      throw new Error(`Shortlist save failed: ${JSON.stringify(save.data)}`);
+    }
+    const patch = await axios.patch(
+      `${BASE_URL}/api/v1/users/shortlist/${encodeURIComponent(samplePropertyId)}`,
+      { status: "negotiating" },
+      { headers }
+    );
+    if (patch.data?.status !== "negotiating") {
+      throw new Error(`Shortlist status update failed: ${JSON.stringify(patch.data)}`);
+    }
+    const list = await axios.get(`${BASE_URL}/api/v1/users/shortlist`, { headers });
+    const item = list.data?.items?.find((entry: any) => entry.property_id === samplePropertyId);
+    if (!item || item.status !== "negotiating" || !item.notes?.includes("Visited on Saturday") || !item.property?.title) {
+      throw new Error(`Shortlist hydration failed: ${JSON.stringify(list.data)}`);
+    }
+    return `Saved notes and status '${item.status}' for ${item.property.title}`;
+  });
+
+  // 24. Public Read-only Share Link
+  await runTest("Read-only Shared Shortlist Resolution", async () => {
+    const share = await axios.post(
+      `${BASE_URL}/api/v1/users/shortlist/share`,
+      {},
+      { headers: { Authorization: `Bearer ${accessToken}` } }
+    );
+    const shareId = share.data?.share_id;
+    if (share.status !== 200 || !/^sh-[A-Za-z0-9_-]{8,}$/.test(shareId || "")) {
+      throw new Error(`Share creation failed: ${JSON.stringify(share.data)}`);
+    }
+    const publicView = await axios.get(`${BASE_URL}/api/v1/users/shortlist/share/${shareId}`);
+    if (publicView.status !== 200 || publicView.data?.read_only !== true || !Array.isArray(publicView.data?.items)) {
+      throw new Error(`Shared shortlist lookup failed: ${JSON.stringify(publicView.data)}`);
+    }
+    if (!publicView.data.items.some((item: any) => item.property_id === samplePropertyId)) {
+      throw new Error("Shared shortlist did not include the saved property.");
+    }
+    if (publicView.data.email || JSON.stringify(publicView.data).includes(accountEmail)) {
+      throw new Error("Public shortlist leaked the account email.");
+    }
+    return `Resolved ${shareId} publicly with ${publicView.data.items.length} read-only item(s)`;
+  });
+
   // Summary
   console.log("\n=========================================");
   console.log("📊 TEST SUMMARY");
