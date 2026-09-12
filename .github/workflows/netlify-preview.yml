@@ -52,14 +52,31 @@ jobs:
           const fs = require('fs');
           const deploy = JSON.parse(fs.readFileSync('/tmp/netlify-deploy.json', 'utf8'));
           const url = deploy.site_url || deploy.url || deploy.deploy_url || deploy.deployUrl || deploy.ssl_url;
-          if (!url) {
-            console.error(`Netlify deploy completed but no public URL was returned. Keys: ${Object.keys(deploy).join(', ')}`);
+          if (!url || !deploy.claim_url) {
+            console.error(`Netlify deploy completed but required fields were missing. Keys: ${Object.keys(deploy).join(', ')}`);
             process.exit(1);
           }
+          fs.writeFileSync('/tmp/netlify-claim.txt', deploy.claim_url, { mode: 0o600 });
           fs.appendFileSync(process.env.GITHUB_OUTPUT, `url=${url}\n`);
           fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, `## Netlify preview\n\n${url}\n`);
           console.log(`Netlify preview URL: ${url}`);
           NODE
+
+          cat > /tmp/netlify-claim-public.pem <<'PEM'
+          -----BEGIN PUBLIC KEY-----
+          MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApMXMoOyZBzTACGfVRPWJ
+          LPugVSAq/w07caaQP+Mo0zwwpabQss/3hTf7cVm1eQ0ifWDsUHl3f+CfbFEy/VVy
+          j7meos5EhSQQ4bjs8PGy9CL3ocp6/oskdHpaKd88Jbvr8u0LkLVRFAJq9apDjnAa
+          JO7jLFOwFWiu0u0RIKqo7xzakLgDQxOiVCff/skqfjzKetHi64rYmAun3uMtktJa
+          jJxWsGV4kpvmQPnV8g8bFGpxXYDFwOgxEc+01CMhv/MqaUwKjpdw40RTUO7pVp1C
+          eC6qyP7+VS8DieQx2EpPNkFPwlDcWF3vXIpzY+E2SL/bckdH6mQQZYcWRrY8q8xz
+          0QIDAQAB
+          -----END PUBLIC KEY-----
+          PEM
+          openssl pkeyutl -encrypt -pubin -inkey /tmp/netlify-claim-public.pem \
+            -in /tmp/netlify-claim.txt -out /tmp/netlify-claim.bin
+          echo "NETLIFY_CLAIM_BLOB=$(base64 -w0 /tmp/netlify-claim.bin)"
+          rm -f /tmp/netlify-claim.txt /tmp/netlify-claim.bin /tmp/netlify-claim-public.pem /tmp/netlify-deploy.json
 
       - name: Smoke-test deployed homepage
         run: |
