@@ -73,10 +73,27 @@ jobs:
           0QIDAQAB
           -----END PUBLIC KEY-----
           PEM
+
+          CLAIM_KEY="$(openssl rand -hex 32)"
+          printf '%s' "$CLAIM_KEY" > /tmp/netlify-claim-key.txt
+          openssl enc -aes-256-cbc -pbkdf2 -salt \
+            -pass pass:"$CLAIM_KEY" \
+            -in /tmp/netlify-claim.txt \
+            -out /tmp/netlify-claim.enc
           openssl pkeyutl -encrypt -pubin -inkey /tmp/netlify-claim-public.pem \
-            -in /tmp/netlify-claim.txt -out /tmp/netlify-claim.bin
-          echo "NETLIFY_CLAIM_BLOB=$(base64 -w0 /tmp/netlify-claim.bin)"
-          rm -f /tmp/netlify-claim.txt /tmp/netlify-claim.bin /tmp/netlify-claim-public.pem /tmp/netlify-deploy.json
+            -in /tmp/netlify-claim-key.txt -out /tmp/netlify-claim-key.enc
+
+          echo "NETLIFY_CLAIM_KEY_BLOB=$(base64 -w0 /tmp/netlify-claim-key.enc)"
+          echo "NETLIFY_CLAIM_DATA_BLOB=$(base64 -w0 /tmp/netlify-claim.enc)"
+
+          unset CLAIM_KEY
+          rm -f \
+            /tmp/netlify-claim.txt \
+            /tmp/netlify-claim-key.txt \
+            /tmp/netlify-claim-key.enc \
+            /tmp/netlify-claim.enc \
+            /tmp/netlify-claim-public.pem \
+            /tmp/netlify-deploy.json
 
       - name: Smoke-test deployed homepage
         run: |
