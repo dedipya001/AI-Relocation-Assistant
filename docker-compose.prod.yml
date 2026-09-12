@@ -14,7 +14,7 @@ services:
     image: redis:7-alpine
     restart: unless-stopped
     volumes:
-      - redis_data:/data
+      - redis_data:/data/db
     healthcheck:
       test: ["CMD", "redis-cli", "ping"]
       interval: 10s
@@ -56,6 +56,7 @@ services:
       GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID:-}
       JWT_SECRET: ${JWT_SECRET:-dev-only-change-me-please}
       JWT_TTL_SECONDS: ${JWT_TTL_SECONDS:-604800}
+      TELEMETRY_ADMIN_KEY: ${TELEMETRY_ADMIN_KEY:-}
       APIFY_TOKEN: ${APIFY_TOKEN:-}
       BRIGHTDATA_API_KEY: ${BRIGHTDATA_API_KEY:-}
       SCRAPER_PROXY_URL: ${SCRAPER_PROXY_URL:-}
