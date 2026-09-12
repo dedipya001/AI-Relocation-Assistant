@@ -25,14 +25,14 @@ export const GuestProfileRequestSchema = GuestProfileSchema;
 
 export const SignupRequestSchema = z
   .object({
-    email: z.string().trim().email().transform((value) => value.toLowerCase()),
+    email: z.string().trim().email().transform((value) => value.toLowerCase()).optional(),
     password: z.string().min(8).max(200).optional(),
     google_id_token: z.string().min(20).optional(),
     guest_profile: GuestProfileSchema.optional(),
     guest_saved_properties: z.array(z.string().trim().min(1)).max(100).default([]),
   })
-  .refine((value) => Boolean(value.password || value.google_id_token), {
-    message: "password or google_id_token is required",
+  .refine((value) => Boolean(value.google_id_token || (value.email && value.password)), {
+    message: "email/password or google_id_token is required",
   });
 
 export const LoginRequestSchema = z
