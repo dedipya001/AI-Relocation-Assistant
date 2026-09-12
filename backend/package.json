@@ -11,7 +11,8 @@
     "test:bench": "tsx scripts/testRecommendationEngine.ts",
     "test:rag-eval": "tsx scripts/evaluateRetrieval.ts",
     "typecheck": "tsc --noEmit",
-    "seed": "tsx scripts/seed.ts",
+    "seed": "tsx scripts/seed.ts && tsx scripts/seedMultiCity.ts",
+    "seed:multi-city": "tsx scripts/seedMultiCity.ts",
     "import-dataset": "tsx scripts/importMagicBricksDataset.ts",
     "scrape-housing": "tsx scripts/populatePropertyData.ts",
     "capture-housing-state": "tsx scripts/captureHousingStorageState.ts"
@@ -40,7 +41,5 @@
     "tsx": "^4.19.2",
     "typescript": "^5.7.3"
   },
-  "engines": {
-    "node": ">=20.0.0"
-  }
+  "engines": { "node": ">=20.0.0" }
 }
