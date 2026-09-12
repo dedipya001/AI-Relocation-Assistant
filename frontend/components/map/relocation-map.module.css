@@ -1,4 +1,4 @@
-﻿.mapCard {
+.mapCard {
   position: relative;
   width: 100%;
   height: 100%;
@@ -15,7 +15,6 @@
   z-index: 0;
 }
 
-/* ── Property marker pin (numbered circle) ──────────── */
 .propertyMarker {
   position: relative;
   width: 2rem;
@@ -31,7 +30,7 @@
   justify-content: center;
   cursor: pointer;
   box-shadow: 0 4px 14px hsl(228 72% 40% / 0.38), 0 1px 4px hsl(0 0% 0% / 0.14);
-  transition: background 150ms ease, transform 150ms ease, box-shadow 150ms ease;
+  transition: background 150ms ease, transform 150ms ease, box-shadow 150ms ease, opacity 150ms ease;
   padding: 0;
   outline: none;
   line-height: 1;
@@ -44,35 +43,134 @@
   box-shadow: 0 6px 20px hsl(228 72% 40% / 0.48);
 }
 
-/* Active marker: dark fill + pulse ring */
 .activeMarker {
   background: hsl(215 28% 10%);
   border-color: white;
-  box-shadow:
-    0 0 0 0 hsl(228 72% 58% / 0.6),
-    0 6px 20px hsl(215 28% 8% / 0.32);
+  box-shadow: 0 0 0 0 hsl(228 72% 58% / 0.6), 0 6px 20px hsl(215 28% 8% / 0.32);
   animation: markerPulse 2s ease-out infinite;
 }
 
 @keyframes markerPulse {
-  0%   { box-shadow: 0 0 0 0px  hsl(228 72% 58% / 0.55), 0 6px 20px hsl(215 28% 8% / 0.32); }
-  60%  { box-shadow: 0 0 0 11px hsl(228 72% 58% / 0),    0 6px 20px hsl(215 28% 8% / 0.32); }
-  100% { box-shadow: 0 0 0 0px  hsl(228 72% 58% / 0),    0 6px 20px hsl(215 28% 8% / 0.32); }
+  0% { box-shadow: 0 0 0 0 hsl(228 72% 58% / 0.55), 0 6px 20px hsl(215 28% 8% / 0.32); }
+  60% { box-shadow: 0 0 0 11px hsl(228 72% 58% / 0), 0 6px 20px hsl(215 28% 8% / 0.32); }
+  100% { box-shadow: 0 0 0 0 hsl(228 72% 58% / 0), 0 6px 20px hsl(215 28% 8% / 0.32); }
 }
 
-/* ── Office marker pill ─────────────────────────────── */
 .officeMarker {
-  padding: 0.38rem 0.72rem;
-  border-radius: 999px;
+  padding: 0.42rem 0.72rem;
+  border-radius: 0.75rem;
   background: hsl(215 28% 10%);
   color: white;
   font-size: 0.72rem;
   font-weight: 700;
   box-shadow: 0 6px 20px hsl(215 28% 8% / 0.32);
   white-space: nowrap;
+  cursor: grab;
+  text-align: center;
+  border: 2px solid hsl(0 0% 100% / 0.9);
 }
 
-/* ── Overlay toggle controls (bottom-right) ─────────── */
+.officeMarker:active {
+  cursor: grabbing;
+}
+
+.officeMarker small {
+  display: block;
+  margin-top: 0.08rem;
+  font-size: 0.54rem;
+  font-weight: 500;
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.commuteControls {
+  position: absolute;
+  top: 1rem;
+  right: 4.8rem;
+  z-index: 12;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  width: min(31rem, calc(100% - 6rem));
+  padding: 0.65rem;
+  border: 1px solid hsl(215 14% 86% / 0.7);
+  border-radius: 0.9rem;
+  background: hsl(0 0% 100% / 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 6px 22px hsl(215 20% 10% / 0.14);
+}
+
+.modeRow,
+.contourRow {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.modeBtn,
+.contourBtn,
+.withinBtn {
+  border: 1px solid hsl(215 14% 84%);
+  background: hsl(0 0% 100% / 0.9);
+  color: hsl(215 22% 30%);
+  border-radius: 999px;
+  min-height: 2rem;
+  padding: 0.34rem 0.62rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  cursor: pointer;
+  font-size: 0.68rem;
+  font-weight: 650;
+  transition: transform 140ms ease, background 140ms ease, color 140ms ease, border-color 140ms ease;
+}
+
+.modeBtn:hover,
+.contourBtn:hover,
+.withinBtn:hover {
+  transform: translateY(-1px);
+  border-color: hsl(228 72% 70%);
+}
+
+.modeBtnOn {
+  color: white;
+  border-color: hsl(228 72% 54%);
+  background: hsl(228 72% 54%);
+}
+
+.contourBtnOn {
+  border-color: hsl(215 24% 30%);
+  background: hsl(215 24% 18%);
+  color: white;
+}
+
+.contourSwatch {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 999px;
+  flex: 0 0 auto;
+}
+
+.withinBtn {
+  width: fit-content;
+}
+
+.withinBtnOn {
+  background: hsl(152 56% 92%);
+  border-color: hsl(152 45% 52%);
+  color: hsl(152 65% 24%);
+}
+
+.officeHint {
+  margin: 0;
+  color: hsl(215 16% 46%);
+  font-size: 0.62rem;
+  line-height: 1.25;
+}
+
 .overlayControls {
   position: absolute;
   bottom: 2.8rem;
@@ -118,7 +216,6 @@
   background: hsl(228 72% 52%);
 }
 
-/* ── Commute ring legend (bottom-left, above attribution) */
 .ringLegend {
   position: absolute;
   bottom: 1.4rem;
@@ -137,8 +234,8 @@
   margin: 0 0 0.3rem;
   font-size: 0.65rem;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  letter-spacing: 0.03em;
   color: hsl(215 20% 40%);
 }
 
@@ -162,12 +259,48 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: hsl(228 72% 58%);
   flex-shrink: 0;
 }
 
-/* ── Mapbox popup override (scoped here too for specificity) */
 .mapCard :global(.mapboxgl-ctrl-top-right) {
   top: 1rem;
   right: 1rem;
+}
+
+@media (max-width: 760px) {
+  .commuteControls {
+    top: 4.4rem;
+    left: 0.65rem;
+    right: 0.65rem;
+    width: auto;
+    padding: 0.55rem;
+  }
+
+  .modeBtn,
+  .contourBtn,
+  .withinBtn {
+    min-height: 1.85rem;
+    padding: 0.28rem 0.5rem;
+    font-size: 0.63rem;
+  }
+
+  .officeHint {
+    display: none;
+  }
+
+  .overlayControls {
+    right: 0.65rem;
+    bottom: 4.5rem;
+  }
+
+  .ringLegend {
+    left: 0.65rem;
+    bottom: 0.75rem;
+    max-width: calc(100% - 1.3rem);
+  }
+
+  .ringItems {
+    gap: 0.45rem;
+    flex-wrap: wrap;
+  }
 }
