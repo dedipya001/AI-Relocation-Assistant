@@ -62,6 +62,8 @@ jobs:
         run: npm --prefix backend run test:telegram-community
       - name: Validate outbound provider URLs
         run: npm --prefix backend run test:provider-urls
+      - name: Validate locality comparison metrics
+        run: npm --prefix backend run test:locality-compare
       - name: Start backend for integration tests
         run: |
           npm --prefix backend run dev > /tmp/relocation-backend.log 2>&1 &
@@ -72,6 +74,8 @@ jobs:
           done
           cat /tmp/relocation-backend.log
           exit 1
+      - name: Validate locality comparison APIs
+        run: npm --prefix backend run test:locality-compare-api
       - name: Backend integration tests
         run: npm --prefix backend test
       - name: Backend deterministic recommendation benchmarks
