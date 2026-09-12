@@ -1,6 +1,7 @@
 import { Router } from "express";
 import { assistantRouter } from "./assistant.js";
 import { commuteRouter } from "./commute.js";
+import { communityRouter } from "./community.js";
 import { feedbackRouter } from "./feedback.js";
 import { localitiesRouter } from "./localities.js";
 import { propertiesRouter } from "./properties.js";
@@ -16,4 +17,5 @@ apiRouter.use("/commute", commuteRouter);
 apiRouter.use("/feedback", feedbackRouter);
 apiRouter.use("/assistant", assistantRouter);
 apiRouter.use("/recommendations", recommendationsRouter);
+apiRouter.use("/community", communityRouter);
 
