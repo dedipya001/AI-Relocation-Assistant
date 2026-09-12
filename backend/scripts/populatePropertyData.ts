@@ -142,10 +142,8 @@ export class LivePropertyScraper {
               const price = card.querySelector(".mb-srp__card__price--amount")?.textContent?.trim() || "";
               const priceUnit = card.querySelector(".mb-srp__card__price--unit")?.textContent?.trim() || "";
               const society = card.querySelector(".mb-srp__card__society")?.textContent?.trim() || "";
-              const img =
-                (card.querySelector(".mb-srp__card__photo img") as HTMLImageElement)?.src ||
-                (card.querySelector(".mb-srp__card__photo img") as HTMLImageElement)?.getAttribute("data-src") ||
-                "";
+              const imageElement = card.querySelector(".mb-srp__card__photo img") as any;
+              const img = imageElement?.src || imageElement?.getAttribute("data-src") || "";
               return { title, price: `${price} ${priceUnit}`.trim(), society, img };
             })
           );
@@ -361,6 +359,7 @@ export class LivePropertyScraper {
     totalCollected: number;
     upsertedCount: number;
     staleDeactivated: number;
+    allProperties: NormalizedScrapedProperty[];
     sampleProperties: NormalizedScrapedProperty[];
   }> {
     const maxPages = options.maxPages || 2;
