@@ -4,15 +4,26 @@ import { Nav } from "@/components/nav";
 import { BookmarkButton } from "@/components/property/bookmark-button";
 import { Card } from "@/components/ui/card";
 import { api } from "@/lib/api";
+import { demoProperties } from "@/lib/demo-data";
 import { formatRent } from "@/lib/utils";
 import styles from "./page.module.css";
 
+export function generateStaticParams() {
+  return demoProperties.map((property) => ({ id: property._id }));
+}
+
 export default async function PropertyPage({ params }: { params: { id: string } }) {
   let property;
-  try {
-    property = await api.getProperty(params.id);
-  } catch {
-    notFound();
+
+  if (process.env.NETLIFY_STATIC_DEPLOY === "true") {
+    property = demoProperties.find((item) => item._id === params.id);
+    if (!property) notFound();
+  } else {
+    try {
+      property = await api.getProperty(params.id);
+    } catch {
+      notFound();
+    }
   }
 
   return (
