@@ -90,7 +90,7 @@ export async function recordProfileTelemetry(db: Db, profile: GuestProfile): Pro
   for (const priority of priorities) increments[`priorities.${priority}`] = 1;
 
   await db.collection(COLLECTION).updateOne(
-    { _id: date },
+    { date },
     {
       $setOnInsert: { date, created_at: now.toISOString() },
       $set: { updated_at: now.toISOString() },
