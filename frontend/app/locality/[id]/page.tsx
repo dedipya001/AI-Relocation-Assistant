@@ -7,18 +7,21 @@ import { demoLocalities } from "@/lib/demo-data";
 import styles from "./page.module.css";
 
 export function generateStaticParams() {
-  return demoLocalities.map((locality) => ({
-    id: locality._id,
-  }));
+  return demoLocalities.map((locality) => ({ id: locality._id }));
 }
 
-export default async function LocalityPage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params;
+export default async function LocalityPage({ params }: { params: { id: string } }) {
   let locality;
-  try {
-    locality = await api.getLocality(id);
-  } catch {
-    notFound();
+
+  if (process.env.NETLIFY_STATIC_DEPLOY === "true") {
+    locality = demoLocalities.find((item) => item._id === params.id);
+    if (!locality) notFound();
+  } else {
+    try {
+      locality = await api.getLocality(params.id);
+    } catch {
+      notFound();
+    }
   }
 
   return (

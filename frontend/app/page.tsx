@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight, Building, MapPinned, ShieldCheck, Wifi } from "lucide-react";
 import { Nav } from "@/components/nav";
 import { RelocationMap } from "@/components/map/relocation-map";
+import { QuickTailorBar } from "@/components/onboarding/quick-tailor-bar";
 import { SearchBox } from "@/components/search/search-box";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -29,6 +30,7 @@ export default function HomePage() {
           </div>
           <Card className={styles.searchCard}>
             <SearchBox />
+            <QuickTailorBar />
           </Card>
           <div className={styles.signals}>
             {signals.map((signal) => (

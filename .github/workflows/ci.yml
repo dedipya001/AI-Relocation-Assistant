@@ -1,115 +1,106 @@
-name: Continuous Integration & Typecheck
+name: CI
 
 on:
-  pull_request:
-    branches:
-      - dev
-      - main
   push:
-    branches:
-      - dev
-      - main
-      - 'feat/**'
-      - 'fix/**'
-      - 'dedipya-dev'
-  workflow_dispatch:
+    branches: [main]
+  pull_request:
 
-concurrency:
-  group: ci-${{ github.ref }}
-  cancel-in-progress: true
+permissions:
+  contents: read
 
 jobs:
-  security-and-secret-scan:
-    name: Scan Commits for Exposed Secrets
+  verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
-
+    timeout-minutes: 30
+    services:
+      mongodb:
+        image: mongo:7
+        ports: ["27017:27017"]
+        options: >-
+          --health-cmd "mongosh --quiet --eval 'db.runCommand({ ping: 1 })'"
+          --health-interval 10s --health-timeout 5s --health-retries 10
+      redis:
+        image: redis:7-alpine
+        ports: ["6379:6379"]
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s --health-timeout 5s --health-retries 10
+    env:
+      ENVIRONMENT: test
+      API_HOST: 127.0.0.1
+      API_PORT: 8001
+      MONGODB_URI: mongodb://127.0.0.1:27017
+      MONGODB_DB: relocation_ai_test
+      REDIS_URL: redis://127.0.0.1:6379/0
+      API_URL: http://127.0.0.1:8001
+      FRONTEND_URL: http://127.0.0.1:3000
+      NEXT_PUBLIC_API_URL: http://127.0.0.1:8001/api/v1
+      OPENAI_API_KEY: ""
+      MAPBOX_ACCESS_TOKEN: ""
+      TELEMETRY_ADMIN_KEY: ci-telemetry-admin-key
     steps:
-      - name: Checkout Code
+      - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Verify Zero Tracked Secrets
-        shell: bash
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: |
+            backend/package-lock.json
+            frontend/package-lock.json
+      - name: Install backend dependencies
+        run: npm --prefix backend ci
+      - name: Install frontend dependencies
+        run: npm --prefix frontend ci
+      - name: Backend typecheck
+        run: npm --prefix backend run typecheck
+      - name: Seed integration-test database
+        run: npm --prefix backend run seed
+      - name: Validate multi-city partitions
+        run: npm --prefix backend run test:multi-city
+      - name: Validate Telegram community ingestion
+        run: npm --prefix backend run test:telegram-community
+      - name: Validate outbound provider URLs
+        run: npm --prefix backend run test:provider-urls
+      - name: Validate locality comparison metrics
+        run: npm --prefix backend run test:locality-compare
+      - name: Validate transit and lifestyle datasets
+        run: npm --prefix backend run test:transit-lifestyle
+      - name: Start backend for integration tests
         run: |
-          echo "🔍 Checking for uncommitted or exposed .env files..."
-          TRACKED_ENV=$(git ls-files | grep -E "(^\.env|\/\.env|\.env\.local|\.env\.production)" | grep -v "\.env\.example" || true)
-          if [ -n "$TRACKED_ENV" ]; then
-            echo "❌ CRITICAL: .env file tracked in git: $TRACKED_ENV"
-            exit 1
-          fi
-
-          echo "🔍 Scanning code for exposed OpenAI/Mapbox API keys..."
-          FILES=$(git ls-files | grep -v -E "(\.png|\.jpg|\.jpeg|\.svg|\.ico|\.lock|\.json|node_modules|\.next|dist|out)")
-          for file in $FILES; do
-            if [ -f "$file" ]; then
-              if grep -E -n "sk-(proj-)?[a-zA-Z0-9_-]{20,}" "$file" | grep -v "sk-proj-placeholder" | grep -v "sk-placeholder" | grep -v "sk-proj-thikanakhojo" | grep -v "sk-proj-..." | grep -v "sk-..."; then
-                echo "❌ Exposed API Key in: $file"
-                exit 1
-              fi
-            fi
+          npm --prefix backend run dev > /tmp/relocation-backend.log 2>&1 &
+          echo $! > /tmp/relocation-backend.pid
+          for attempt in {1..30}; do
+            if curl --fail --silent http://127.0.0.1:8001/health > /dev/null; then exit 0; fi
+            sleep 2
           done
-          echo "✅ Security check passed. Zero secrets exposed."
-
-  backend-typecheck-and-test:
-    name: Backend Typecheck & Build
-    needs: [security-and-secret-scan]
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js 20
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: 'npm'
-          cache-dependency-path: backend/package-lock.json
-
-      - name: Install Dependencies
-        working-directory: backend
-        run: npm ci
-
-      - name: Run Backend Typecheck
-        working-directory: backend
-        run: npm run typecheck
-
-      - name: Build Backend (tsc)
-        working-directory: backend
-        run: npm run build
-
-      - name: Run Recommendation Benchmark Tests
-        working-directory: backend
-        run: npm run test:bench
-
-  frontend-typecheck-and-build:
-    name: Frontend Typecheck & Build
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js 20
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: 'npm'
-          cache-dependency-path: frontend/package-lock.json
-
-      - name: Install Dependencies
-        working-directory: frontend
-        run: npm ci
-
-      - name: Run Frontend Typecheck
-        working-directory: frontend
-        run: npm run typecheck
-
-      - name: Build Next.js Production App
-        working-directory: frontend
-        env:
-          GITHUB_ACTIONS: "true"
-          NEXT_PUBLIC_API_URL: "http://localhost:8001/api/v1"
-        run: npm run build
+          cat /tmp/relocation-backend.log
+          exit 1
+      - name: Validate locality comparison APIs
+        run: npm --prefix backend run test:locality-compare-api
+      - name: Validate transit and lifestyle APIs
+        run: npm --prefix backend run test:transit-api
+      - name: Backend integration tests
+        run: npm --prefix backend test
+      - name: Validate anonymized profile telemetry
+        run: npm --prefix backend run test:profile-telemetry
+      - name: Backend deterministic recommendation benchmarks
+        run: npm --prefix backend run test:bench
+      - name: RAG retrieval and grounding evaluation
+        run: npm --prefix backend run test:rag-eval
+      - name: Frontend typecheck
+        run: npm --prefix frontend run typecheck
+      - name: Frontend production build
+        run: npm --prefix frontend run build
+      - name: Validate development Compose configuration
+        run: docker compose -f docker-compose.yml config --quiet
+      - name: Validate production Compose configuration
+        run: docker compose -f docker-compose.prod.yml config --quiet
+      - name: Build backend production image
+        run: docker build --target production -t ai-relocation-backend:test ./backend
+      - name: Build frontend production image
+        run: docker build --target production -t ai-relocation-frontend:test ./frontend
+      - name: Print backend logs on failure
+        if: failure()
+        run: cat /tmp/relocation-backend.log || true

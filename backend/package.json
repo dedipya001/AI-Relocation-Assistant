@@ -9,10 +9,22 @@
     "start": "node dist/index.js",
     "test": "tsx scripts/testEndpoints.ts",
     "test:bench": "tsx scripts/testRecommendationEngine.ts",
+    "test:rag-eval": "tsx scripts/evaluateRetrieval.ts",
+    "test:multi-city": "tsx scripts/testMultiCity.ts",
+    "test:telegram-community": "tsx scripts/testTelegramCommunity.ts",
+    "test:provider-urls": "tsx scripts/testProviderUrls.ts",
+    "test:locality-compare": "tsx scripts/testLocalityComparison.ts",
+    "test:locality-compare-api": "tsx scripts/testLocalityComparisonApi.ts",
+    "test:transit-lifestyle": "tsx scripts/testTransitLifestyle.ts",
+    "test:transit-api": "tsx scripts/testTransitApi.ts",
+    "test:profile-telemetry": "tsx scripts/testProfileTelemetry.ts",
     "typecheck": "tsc --noEmit",
-    "seed": "tsx scripts/seed.ts",
+    "seed": "tsx scripts/seed.ts && tsx scripts/seedMultiCity.ts && tsx scripts/enrichTransitLifestyle.ts",
+    "seed:multi-city": "tsx scripts/seedMultiCity.ts && tsx scripts/enrichTransitLifestyle.ts",
+    "seed:transit-lifestyle": "tsx scripts/enrichTransitLifestyle.ts",
     "import-dataset": "tsx scripts/importMagicBricksDataset.ts",
     "scrape-housing": "tsx scripts/populatePropertyData.ts",
+    "scrape:multi-city": "tsx scripts/scrapeMultiCity.ts",
     "capture-housing-state": "tsx scripts/captureHousingStorageState.ts"
   },
   "dependencies": {
@@ -39,7 +51,5 @@
     "tsx": "^4.19.2",
     "typescript": "^5.7.3"
   },
-  "engines": {
-    "node": ">=20.0.0"
-  }
+  "engines": { "node": ">=20.0.0" }
 }

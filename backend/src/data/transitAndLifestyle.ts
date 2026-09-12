@@ -1,836 +1,192 @@
-export interface MetroStation {
-  name: string;
-  line: string;
-  line_code: string;
-  is_interchange: boolean;
-  interchange_lines?: string[];
-  coordinates: [number, number]; // [lon, lat]
-}
+export type GeoPoint = [number, number];
+export type NetworkStatus = "operational" | "partially_operational" | "under_construction" | "planned";
 
-export interface MetroLine {
-  line_id: string;
-  name: string;
-  color_code: string;
+export type MetroLineRecord = {
   city: string;
-  status: "operational" | "under_construction" | "partially_operational";
-  terminal_a: string;
-  terminal_b: string;
-  total_stations: number;
-  length_km: number;
-  operating_hours: string;
-  peak_frequency_mins: number;
-  key_stations: string[];
-  stations: MetroStation[];
-}
-
-export interface BusRoute {
-  route_number: string;
-  agency: string;
-  city: string;
-  service_type: "AC Electric" | "AC Volvo" | "Standard City Bus" | "Rapid Shuttle";
-  origin: string;
-  destination: string;
-  via_stops: string[];
-  first_bus: string;
-  last_bus: string;
-  peak_frequency_mins: number;
-  fare_inr_range: [number, number];
-}
-
-export interface LifestyleVenue {
   id: string;
   name: string;
-  category: "cafe" | "specialty_coffee" | "brewery" | "club" | "lounge" | "cocktail_bar";
+  color: string;
+  status: NetworkStatus;
+  stations: string[];
+  operational_stations?: string[];
+  source_url: string;
+  source_note: string;
+};
+
+export type ProximityPoint = {
   city: string;
-  locality: string;
-  locality_id: string;
-  rating: number;
-  reviews_count: number;
-  price_for_two_inr: number;
-  vibe: string;
-  specialties: string[];
-  has_wifi: boolean;
-  has_outdoor_seating: boolean;
-  open_till: string;
-  coordinates?: [number, number];
+  name: string;
+  category: "metro" | "bus" | "cafe" | "bakery" | "coffee_roaster" | "microbrewery" | "club" | "late_night_cafe" | "tech_hub";
+  coordinates: GeoPoint;
+  line_or_route?: string;
+  locality?: string;
+  operator?: string;
+  address?: string;
+  source_url?: string;
+  coordinate_precision: "station_centroid" | "venue_centroid" | "locality_centroid" | "approximate_public_centroid";
+};
+
+export type BusRouteRecord = {
+  city: string;
+  operator: string;
+  route: string;
+  service_type: string;
+  origin: string;
+  destination: string;
+  stops: string[];
+  source_url: string;
+};
+
+const KOLKATA_BLUE = [
+  "Dakshineswar","Baranagar","Noapara","Dum Dum","Belgachia","Shyambazar","Shobhabazar Sutanuti","Girish Park","Mahatma Gandhi Road","Central","Chandni Chowk","Esplanade","Park Street","Maidan","Rabindra Sadan","Netaji Bhavan","Jatin Das Park","Kalighat","Rabindra Sarobar","Mahanayak Uttam Kumar","Netaji","Masterda Surya Sen","Gitanjali","Kavi Nazrul","Shahid Khudiram","Kavi Subhash"
+];
+const KOLKATA_GREEN = ["Salt Lake Sector V","Karunamoyee","Central Park","City Centre","Bengal Chemical","Salt Lake Stadium","Phoolbagan","Sealdah","Esplanade","Mahakaran","Howrah","Howrah Maidan"];
+const KOLKATA_ORANGE = ["Kavi Subhash","Satyajit Ray","Jyotirindra Nandi","Kavi Sukanta","Hemanta Mukhopadhyay","VIP Bazar","Ritwik Ghatak","Barun Sengupta","Beleghata","Gour Kishor Ghosh","Nalban","IT Centre","Nabadiganta","Nazrul Tirtha","Swapnobhor","Biswa Bangla Convention Centre","Shiksha Tirtha","Mother's Wax Museum","Eco Park","Mangaldeep","City Centre 2","Chinar Park","VIP Road","Jai Hind"];
+const KOLKATA_PURPLE = ["Joka","Thakurpukur","Sakher Bazar","Behala Chowrasta","Behala Bazar","Taratala","Majerhat"];
+const KOLKATA_YELLOW = ["Noapara","Dum Dum Cantonment","Jessore Road","Jai Hind"];
+
+const BENGALURU_PURPLE = ["Whitefield (Kadugodi)","Hopefarm Channasandra","Kadugodi Tree Park","Pattandur Agrahara","Sri Sathya Sai Hospital","Nallurhalli","Kundalahalli","Seetharampalya","Hoodi","Garudacharpalya","Singayyanapalya","Krishnarajapura","Benniganahalli","Baiyappanahalli","Swami Vivekananda Road","Indiranagar","Halasuru","Trinity","Mahatma Gandhi Road","Cubbon Park","Dr. B. R. Ambedkar Station, Vidhana Soudha","Sir M. Visvesvaraya Station, Central College","Nadaprabhu Kempegowda Station, Majestic","Krantivira Sangolli Rayanna Railway Station","Magadi Road","Sri Balagangadharanatha Swamiji Station, Hosahalli","Vijayanagar","Attiguppe","Deepanjali Nagar","Mysore Road","Nayandahalli","Rajarajeshwari Nagar","Jnanabharathi","Pattanagere","Kengeri Bus Terminal","Kengeri","Challaghatta"];
+const BENGALURU_YELLOW = ["Rashtreeya Vidyalaya Road","Ragigudda","Jayadeva Hospital","BTM Layout","Central Silk Board","Bommanahalli","Hongasandra","Kudlu Gate","Singasandra","Hosa Road","Beratena Agrahara","Electronic City","Infosys Foundation Konappana Agrahara","Huskur Road","Biocon Hebbagodi","Delta Electronics Bommasandra"];
+const BENGALURU_BLUE = ["Central Silk Board","HSR Layout","Agara","Ibbalur","Bellandur","Kadubeesanahalli","Kodibisanahalli","Marathahalli","ISRO","Doddanekundi","DRDO Sports Complex","Saraswathi Nagar","Krishnarajapura","Kasturi Nagar","Horamavu","HRBR Layout","Kalyan Nagar","HBR Layout","Nagawara","Veerannapalya","Kempapura","Hebbal","Kodigehalli","Jakkur Cross","Yelahanka","Bagalur Cross","Bettahalasuru","Doddajala","Airport City","Kempegowda International Airport"];
+
+const MUMBAI_LINE1 = ["Versova","D. N. Nagar","Azad Nagar","Andheri","Western Express Highway","Chakala","Airport Road","Marol Naka","Sakinaka","Asalpha Road","Jagruti Nagar","Ghatkopar"];
+const MUMBAI_AQUA = ["Cuffe Parade","Vidhan Bhavan","Churchgate Metro","Hutatma Chowk","Chhatrapati Shivaji Maharaj Terminus Metro","Kalbadevi","Girgaon","Grant Road Metro","Jagannath Shankar Sheth Metro","Mahalaxmi Metro","Science Centre","Acharya Atre Chowk","Worli","Siddhivinayak","Dadar Metro","Shitala Devi Mandir","Dharavi","Bandra-Kurla Complex","Bandra Colony","Santacruz Metro","Chhatrapati Shivaji Maharaj International Airport T1","Sahar Road","Chhatrapati Shivaji Maharaj International Airport T2","Marol Naka","MIDC-Andheri","SEEPZ","Aarey JVLR"];
+
+const PUNE_LINE1 = ["PCMC","Sant Tukaram Nagar","Bhosari (Nashik Phata)","Kasarwadi","Phugewadi","Dapodi","Bopodi","Khadki","Range Hill","Shivaji Nagar","Civil Court","Kasba Peth","Mahatma Phule Mandai","Swargate"];
+const PUNE_LINE2 = ["Vanaz","Anand Nagar","Paud Phata","S.N.D.T College","Garware College","Deccan Gymkhana","Chhatrapati Sambhaji Udyan","PMC","Civil Court","RTO Pune","Pune Railway Station","Ruby Hall Clinic","Bund Garden","Yerawada","Kalyani Nagar","Ramwadi"];
+const PUNE_LINE3 = ["Maan","PMR-2","PMR-3","PMR-4","PMR-5","PMR-6","Hinjawadi","PMR-8","Wakad Chowk","Balewadi Stadium","PMR-11","Ram Nagar","Laxmi Nagar","Balewadi Phata","Baner Gaon","Baner","Krushi Anusandhan","YASHADA","Savitribai Phule Pune University","RBI","Agriculture College","Shivajinagar","Civil Court"];
+
+const DELHI_RED = ["Rithala","Rohini West","Rohini East","Pitampura","Kohat Enclave","Netaji Subhash Place","Keshav Puram","Kanhaiya Nagar","Inderlok","Shastri Nagar","Pratap Nagar","Pul Bangash","Tis Hazari","Kashmere Gate","Shastri Park","Seelampur","Welcome","Shahdara","Mansarovar Park","Jhilmil","Dilshad Garden","Shaheed Nagar","Raj Bagh","Major Mohit Sharma Rajendra Nagar","Shyam Park","Mohan Nagar","Arthala","Hindon River","Shaheed Sthal"];
+const DELHI_YELLOW = ["Samaypur Badli","Rohini Sector 18, 19","Haiderpur Badli Mor","Jahangirpuri","Adarsh Nagar","Azadpur","Model Town","GTB Nagar","Vishwavidyalaya","Vidhan Sabha","Civil Lines","Kashmere Gate","Chandni Chowk","Chawri Bazar","New Delhi","Rajiv Chowk","Patel Chowk","Central Secretariat","Udyog Bhawan","Lok Kalyan Marg","Jor Bagh","Dilli Haat INA","AIIMS","Green Park","Hauz Khas","Malviya Nagar","Saket","Qutub Minar","Chhatarpur","Sultanpur","Ghitorni","Arjan Garh","Guru Dronacharya","Sikanderpur","MG Road","IFFCO Chowk","Millennium City Centre Gurugram"];
+const DELHI_BLUE_MAIN = ["Dwarka Sector 21","Dwarka Sector 8","Dwarka Sector 9","Dwarka Sector 10","Dwarka Sector 11","Dwarka Sector 12","Dwarka Sector 13","Dwarka Sector 14","Dwarka","Dwarka Mor","Nawada","Uttam Nagar West","Uttam Nagar East","Janakpuri West","Janakpuri East","Tilak Nagar","Subhash Nagar","Tagore Garden","Rajouri Garden","Ramesh Nagar","Moti Nagar","Kirti Nagar","Shadipur","Patel Nagar","Rajendra Place","Karol Bagh","Jhandewalan","Ramakrishna Ashram Marg","Rajiv Chowk","Barakhamba Road","Mandi House","Supreme Court","Indraprastha","Yamuna Bank","Akshardham","Mayur Vihar-I","Mayur Vihar Extension","New Ashok Nagar","Noida Sector 15","Noida Sector 16","Noida Sector 18","Botanical Garden","Golf Course","Noida City Centre","Noida Sector 34","Noida Sector 52","Noida Sector 61","Noida Sector 59","Noida Sector 62","Noida Electronic City"];
+const DELHI_BLUE_BRANCH = ["Yamuna Bank","Laxmi Nagar","Nirman Vihar","Preet Vihar","Karkarduma","Anand Vihar ISBT","Kaushambi","Vaishali"];
+const DELHI_GREEN = ["Kirti Nagar","Satguru Ram Singh Marg","Inderlok","Ashok Park Main","Punjabi Bagh","Shivaji Park","Madipur","Paschim Vihar East","Paschim Vihar West","Peera Garhi","Udyog Nagar","Maharaja Surajmal Stadium","Nangloi","Nangloi Railway Station","Rajdhani Park","Mundka","Mundka Industrial Area","Ghevra Metro Station","Tikri Kalan","Tikri Border","Pandit Shree Ram Sharma","Bahadurgarh City","Brigadier Hoshiar Singh"];
+const DELHI_VIOLET = ["Kashmere Gate","Lal Qila","Jama Masjid","Delhi Gate","ITO","Mandi House","Janpath","Central Secretariat","Khan Market","Jawaharlal Nehru Stadium","Jangpura","Lajpat Nagar","Moolchand","Kailash Colony","Nehru Place","Kalkaji Mandir","Govind Puri","Harkesh Nagar Okhla","Jasola Apollo","Sarita Vihar","Mohan Estate","Tughlakabad Station","Badarpur Border","Sarai","NHPC Chowk","Mewla Maharajpur","Sector 28","Badkal Mor","Old Faridabad","Neelam Chowk Ajronda","Bata Chowk","Escorts Mujesar","Sant Surdas (Sihi)","Raja Nahar Singh"];
+const DELHI_PINK = ["Majlis Park","Azadpur","Shalimar Bagh","Netaji Subhash Place","Shakurpur","Punjabi Bagh West","ESI-Basaidarapur","Rajouri Garden","Mayapuri","Naraina Vihar","Delhi Cantt","Durgabai Deshmukh South Campus","Sir M. Vishweshwaraiah Moti Bagh","Bhikaji Cama Place","Sarojini Nagar","Dilli Haat INA","South Extension","Lajpat Nagar","Vinobapuri","Ashram","Sarai Kale Khan-Nizamuddin","Mayur Vihar-I","Mayur Vihar Pocket I","Trilokpuri Sanjay Lake","East Vinod Nagar-Mayur Vihar-II","Mandawali-West Vinod Nagar","IP Extension","Anand Vihar ISBT","Karkarduma","Karkarduma Court","Krishna Nagar","East Azad Nagar","Welcome","Jaffrabad","Maujpur-Babarpur","Gokulpuri","Johri Enclave","Shiv Vihar"];
+const DELHI_MAGENTA = ["Krishna Park Extension","Janakpuri West","Dabri Mor-Janakpuri South","Dashrath Puri","Palam","Sadar Bazaar Cantonment","Terminal 1-IGI Airport","Shankar Vihar","Vasant Vihar","Munirka","RK Puram","IIT Delhi","Hauz Khas","Panchsheel Park","Chirag Delhi","Greater Kailash","Nehru Enclave","Kalkaji Mandir","Okhla NSIC","Sukhdev Vihar","Jamia Millia Islamia","Okhla Vihar","Jasola Vihar Shaheen Bagh","Kalindi Kunj","Okhla Bird Sanctuary","Botanical Garden"];
+const DELHI_GREY = ["Dwarka","Nangli","Najafgarh","Dhansa Bus Stand"];
+const DELHI_AIRPORT = ["New Delhi","Shivaji Stadium","Dhaula Kuan","Delhi Aerocity","IGI Airport","Dwarka Sector 21","Yashobhoomi Dwarka Sector 25"];
+const NOIDA_AQUA = ["Noida Sector 51","Noida Sector 50","Noida Sector 76","Noida Sector 101","Noida Sector 81","NSEZ","Noida Sector 83","Noida Sector 137","Noida Sector 142","Noida Sector 143","Noida Sector 144","Noida Sector 145","Noida Sector 146","Noida Sector 147","Noida Sector 148","Knowledge Park II","Pari Chowk","Alpha 1","Delta 1","GNIDA Office","Depot"];
+const GURUGRAM_RAPID = ["Sector 55-56","Sector 54 Chowk","Sector 53-54","Sector 42-43","Phase 1","Sikanderpur","Phase 2","Belvedere Towers","Cyber City","Moulsari Avenue","Phase 3"];
+
+export const METRO_LINES: MetroLineRecord[] = [
+  {city:"Kolkata",id:"kol-blue",name:"Blue Line",color:"blue",status:"operational",stations:KOLKATA_BLUE,source_url:"https://mtp.indianrailways.gov.in/",source_note:"Metro Railway Kolkata passenger information and operating rules."},
+  {city:"Kolkata",id:"kol-green",name:"Green Line (East-West)",color:"green",status:"operational",stations:KOLKATA_GREEN,source_url:"https://mtp.indianrailways.gov.in/",source_note:"Metro Railway Kolkata Green Line station table; through corridor completed in stages."},
+  {city:"Kolkata",id:"kol-orange",name:"Orange Line",color:"orange",status:"partially_operational",stations:KOLKATA_ORANGE,operational_stations:KOLKATA_ORANGE.slice(0,9),source_url:"https://mtp.indianrailways.gov.in/",source_note:"Kavi Subhash-Beleghata commissioned; full airport corridor retained with partial-operation status."},
+  {city:"Kolkata",id:"kol-purple",name:"Purple Line",color:"purple",status:"partially_operational",stations:KOLKATA_PURPLE,operational_stations:KOLKATA_PURPLE,source_url:"https://mtp.indianrailways.gov.in/",source_note:"Joka-Majerhat operational segment of the Joka-Esplanade corridor."},
+  {city:"Kolkata",id:"kol-yellow",name:"Yellow Line",color:"yellow",status:"partially_operational",stations:KOLKATA_YELLOW,operational_stations:KOLKATA_YELLOW,source_url:"https://mtp.indianrailways.gov.in/",source_note:"Noapara-Jai Hind airport section commissioned in FY 2025-26."},
+  {city:"Bengaluru",id:"blr-purple",name:"Purple Line",color:"purple",status:"operational",stations:BENGALURU_PURPLE,source_url:"https://english.bmrc.co.in/",source_note:"Namma Metro Purple Line network catalogue."},
+  {city:"Bengaluru",id:"blr-yellow",name:"Yellow Line",color:"yellow",status:"operational",stations:BENGALURU_YELLOW,source_url:"https://english.bmrc.co.in/",source_note:"RV Road-Bommasandra corridor opened in August 2025."},
+  {city:"Bengaluru",id:"blr-blue",name:"Blue Line",color:"blue",status:"under_construction",stations:BENGALURU_BLUE,source_url:"https://english.bmrc.co.in/",source_note:"Phase 2A/2B ORR-airport corridor; do not present as operational until BMRCL publishes commissioning."},
+  {city:"Mumbai",id:"mum-line-1",name:"Metro Line 1",color:"blue",status:"operational",stations:MUMBAI_LINE1,source_url:"https://www.mmrda.maharashtra.gov.in/en/projects/transport/metro-line-1/overview",source_note:"MMRDA published 12-station Versova-Andheri-Ghatkopar corridor."},
+  {city:"Mumbai",id:"mum-aqua",name:"Metro Line 3 (Aqua)",color:"aqua",status:"partially_operational",stations:MUMBAI_AQUA,source_url:"https://mmrcl.com/",source_note:"Full statutory 27-station corridor catalogue; operation status is kept conservative because openings occurred in phases."},
+  {city:"Pune",id:"pune-line-1",name:"Corridor 1",color:"purple",status:"operational",stations:PUNE_LINE1,source_url:"https://www.punemetrorail.org/route-map.aspx?lang=en-US",source_note:"PCMC-Swargate corridor from official Pune Metro route map."},
+  {city:"Pune",id:"pune-line-2",name:"Corridor 2",color:"aqua",status:"operational",stations:PUNE_LINE2,source_url:"https://www.punemetrorail.org/route-map.aspx?lang=en-US",source_note:"Vanaz-Ramwadi corridor from official Pune Metro route map."},
+  {city:"Pune",id:"pune-line-3",name:"Line 3 (Maan-Hinjawadi-Shivajinagar)",color:"red",status:"under_construction",stations:PUNE_LINE3,source_url:"https://www.pmrda.gov.in/en/pune-metro-line-3/",source_note:"23-station PMRDA Line 3; current PMRDA status remains project/construction status, not assumed fully operational."},
+  {city:"Delhi NCR",id:"del-red",name:"Red Line",color:"red",status:"operational",stations:DELHI_RED,source_url:"https://delhimetrorail.com/",source_note:"DMRC January 2026 operational network."},
+  {city:"Delhi NCR",id:"del-yellow",name:"Yellow Line",color:"yellow",status:"operational",stations:DELHI_YELLOW,source_url:"https://delhimetrorail.com/",source_note:"DMRC January 2026 operational network."},
+  {city:"Delhi NCR",id:"del-blue-main",name:"Blue Line - Main",color:"blue",status:"operational",stations:DELHI_BLUE_MAIN,source_url:"https://delhimetrorail.com/",source_note:"DMRC Line 3 operational network."},
+  {city:"Delhi NCR",id:"del-blue-branch",name:"Blue Line - Vaishali Branch",color:"blue",status:"operational",stations:DELHI_BLUE_BRANCH,source_url:"https://delhimetrorail.com/",source_note:"DMRC Line 4 operational branch."},
+  {city:"Delhi NCR",id:"del-green",name:"Green Line",color:"green",status:"operational",stations:DELHI_GREEN,source_url:"https://delhimetrorail.com/",source_note:"DMRC January 2026 operational network."},
+  {city:"Delhi NCR",id:"del-violet",name:"Violet Line",color:"violet",status:"operational",stations:DELHI_VIOLET,source_url:"https://delhimetrorail.com/",source_note:"DMRC January 2026 operational network."},
+  {city:"Delhi NCR",id:"del-pink",name:"Pink Line",color:"pink",status:"operational",stations:DELHI_PINK,source_url:"https://delhimetrorail.com/",source_note:"DMRC January 2026 operational network."},
+  {city:"Delhi NCR",id:"del-magenta",name:"Magenta Line",color:"magenta",status:"operational",stations:DELHI_MAGENTA,source_url:"https://delhimetrorail.com/",source_note:"Includes Krishna Park Extension commissioned section shown on the January 2026 DMRC map."},
+  {city:"Delhi NCR",id:"del-grey",name:"Grey Line",color:"grey",status:"operational",stations:DELHI_GREY,source_url:"https://delhimetrorail.com/",source_note:"DMRC January 2026 operational network."},
+  {city:"Delhi NCR",id:"del-airport",name:"Airport Express",color:"orange",status:"operational",stations:DELHI_AIRPORT,source_url:"https://delhimetrorail.com/",source_note:"New Delhi-Yashobhoomi Dwarka Sector 25 airport corridor."},
+  {city:"Delhi NCR",id:"noida-aqua",name:"Noida Aqua Line",color:"aqua",status:"operational",stations:NOIDA_AQUA,source_url:"https://delhimetrorail.com/",source_note:"NMRC line shown under other NCR metros on DMRC network map."},
+  {city:"Delhi NCR",id:"gurugram-rapid",name:"Rapid Metro Gurugram",color:"blue",status:"operational",stations:GURUGRAM_RAPID,source_url:"https://delhimetrorail.com/",source_note:"Rapid Metro shown under other NCR metros on DMRC network map."}
+];
+
+export const BUS_ROUTES: BusRouteRecord[] = [
+  {city:"Kolkata",operator:"WBTC",route:"AC-9B",service_type:"AC city bus",origin:"Jadavpore",destination:"Eco Space",stops:["Jadavpore","Ajoynagar","Science City","Chingrihata","SDF","College More","New Town","Narkel Bagan","Eco Space"],source_url:"https://wbtconline.in/home"},
+  {city:"Kolkata",operator:"WBTC",route:"AC-23A",service_type:"AC city bus",origin:"Salt Lake Depot Gate",destination:"Rajchandrapur",stops:["College More","New Town","Unitech","Eco Space","Aliah University","Eco Park","City Centre II","Airport Gate No. 1","Dakshineswar"],source_url:"https://wbtconline.in/home"},
+  {city:"Kolkata",operator:"WBTC",route:"AC-30S (IT Spl.)",service_type:"AC IT special",origin:"Ultadanga",destination:"Sapoorji",stops:["Ultadanga","Chingrihata","SDF","College More","New Town Bus Terminus","Narkel Bagan","Unitech","Sapoorji"],source_url:"https://wbtconline.in/home"},
+  {city:"Bengaluru",operator:"BMTC",route:"500D/23",service_type:"ORR trunk/Vajra corridor",origin:"Hebbal",destination:"Central Silk Board",stops:["Hebbal","Manyata Tech Park","Nagawara","Kalyan Nagar","Tin Factory","KR Pura","Marathahalli","Kadubeesanahalli","Bellandur","Agara","HSR Layout","Central Silk Board"],source_url:"https://saiindia.gov.in/"},
+  {city:"Bengaluru",operator:"BMTC",route:"V-500CA",service_type:"Vajra AC Volvo",origin:"ITPL",destination:"Banashankari TTMC",stops:["ITPL","Pattandur Agrahara","Sathya Sai Hospital","Kundalahalli","Marathahalli Bridge","Kadubeesanahalli","Eco Space","Bellandur","Agara","HSR Layout","Central Silk Board","BTM Layout","Jayadeva Hospital","Banashankari TTMC"],source_url:"https://www.bmtcvolvo.com/"},
+  {city:"Bengaluru",operator:"BMTC",route:"V-335E",service_type:"Vajra AC Volvo",origin:"Majestic",destination:"Kadugodi",stops:["Majestic","KR Circle","Richmond Circle","Mayo Hall","Domlur","HAL","Marathahalli","Kundalahalli","ITPL","Hope Farm","Kadugodi"],source_url:"https://www.bmtcvolvo.com/"},
+  {city:"Mumbai",operator:"BEST",route:"BKC-22",service_type:"AC BKC shuttle",origin:"Kurla Station West",destination:"SEBI/BKC",stops:["Kurla Station West","Kapadia Nagar","BKC","Diamond Market","Canara Bank","SEBI/BKC"],source_url:"https://www.bestundertaking.com/assets/pdf/mmrconnect.pdf"},
+  {city:"Mumbai",operator:"BEST",route:"BKC-23",service_type:"AC BKC shuttle",origin:"Bandra Railway Terminus",destination:"CA Institute/BKC",stops:["Bandra Railway Terminus","Kala Nagar","MMRDA","RBI Bank","Bharat Nagar","Canara Bank","CA Institute/BKC"],source_url:"https://www.bestundertaking.com/assets/pdf/mmrconnect.pdf"},
+  {city:"Pune",operator:"PMPML",route:"333",service_type:"city bus",origin:"Hinjawadi",destination:"Pune",stops:["Hinjawadi","Wakad","Aundh","Shivajinagar","Pune"],source_url:"https://www.pcmcindia.gov.in/sutp/by_pmpml.html"},
+  {city:"Pune",operator:"PMPML",route:"372",service_type:"IT corridor bus",origin:"Nigdi",destination:"Hinjawadi",stops:["Nigdi","Wakad","Hinjawadi"],source_url:"https://www.pcmcindia.gov.in/sutp/by_pmpml.html"}
+];
+
+export const PROXIMITY_POINTS: ProximityPoint[] = [
+  {city:"Kolkata",name:"Salt Lake Sector V",category:"metro",coordinates:[88.4335,22.5762],line_or_route:"Green Line",coordinate_precision:"station_centroid"},
+  {city:"Kolkata",name:"Central Park",category:"metro",coordinates:[88.4142,22.5851],line_or_route:"Green Line",coordinate_precision:"approximate_public_centroid"},
+  {city:"Kolkata",name:"Sealdah",category:"metro",coordinates:[88.3712,22.5677],line_or_route:"Green Line",coordinate_precision:"approximate_public_centroid"},
+  {city:"Kolkata",name:"Esplanade",category:"metro",coordinates:[88.3503,22.5645],line_or_route:"Blue / Green",coordinate_precision:"approximate_public_centroid"},
+  {city:"Kolkata",name:"Howrah",category:"metro",coordinates:[88.3428,22.5839],line_or_route:"Green Line",coordinate_precision:"approximate_public_centroid"},
+  {city:"Kolkata",name:"Kavi Subhash",category:"metro",coordinates:[88.4122,22.4696],line_or_route:"Blue / Orange",coordinate_precision:"approximate_public_centroid"},
+  {city:"Kolkata",name:"Hemanta Mukhopadhyay",category:"metro",coordinates:[88.4007,22.5161],line_or_route:"Orange Line",coordinate_precision:"approximate_public_centroid"},
+  {city:"Kolkata",name:"Noapara",category:"metro",coordinates:[88.3926,22.6393],line_or_route:"Blue / Yellow",coordinate_precision:"approximate_public_centroid"},
+  {city:"Kolkata",name:"Jai Hind (Airport)",category:"metro",coordinates:[88.4467,22.6509],line_or_route:"Yellow Line",coordinate_precision:"approximate_public_centroid"},
+
+  {city:"Bengaluru",name:"Whitefield (Kadugodi)",category:"metro",coordinates:[77.7576,12.9954],line_or_route:"Purple Line",coordinate_precision:"approximate_public_centroid"},
+  {city:"Bengaluru",name:"Krishnarajapura",category:"metro",coordinates:[77.6954,13.0005],line_or_route:"Purple Line",coordinate_precision:"approximate_public_centroid"},
+  {city:"Bengaluru",name:"Indiranagar",category:"metro",coordinates:[77.6385,12.9784],line_or_route:"Purple Line",coordinate_precision:"approximate_public_centroid"},
+  {city:"Bengaluru",name:"Mahatma Gandhi Road",category:"metro",coordinates:[77.6068,12.9756],line_or_route:"Purple Line",coordinate_precision:"approximate_public_centroid"},
+  {city:"Bengaluru",name:"Nadaprabhu Kempegowda Station, Majestic",category:"metro",coordinates:[77.5713,12.9772],line_or_route:"Purple / Green",coordinate_precision:"approximate_public_centroid"},
+  {city:"Bengaluru",name:"Rashtreeya Vidyalaya Road",category:"metro",coordinates:[77.5801,12.9215],line_or_route:"Yellow / Green",coordinate_precision:"approximate_public_centroid"},
+  {city:"Bengaluru",name:"Central Silk Board",category:"metro",coordinates:[77.6227,12.9175],line_or_route:"Yellow / future Blue",coordinate_precision:"approximate_public_centroid"},
+  {city:"Bengaluru",name:"Electronic City",category:"metro",coordinates:[77.6642,12.8455],line_or_route:"Yellow Line",coordinate_precision:"approximate_public_centroid"},
+
+  {city:"Mumbai",name:"Versova",category:"metro",coordinates:[72.8146,19.1306],line_or_route:"Line 1",coordinate_precision:"approximate_public_centroid"},
+  {city:"Mumbai",name:"Andheri",category:"metro",coordinates:[72.8490,19.1202],line_or_route:"Line 1",coordinate_precision:"approximate_public_centroid"},
+  {city:"Mumbai",name:"Ghatkopar",category:"metro",coordinates:[72.9082,19.0861],line_or_route:"Line 1",coordinate_precision:"approximate_public_centroid"},
+  {city:"Mumbai",name:"Bandra-Kurla Complex",category:"metro",coordinates:[72.8684,19.0633],line_or_route:"Line 3 Aqua",coordinate_precision:"approximate_public_centroid"},
+  {city:"Mumbai",name:"Marol Naka",category:"metro",coordinates:[72.8812,19.1086],line_or_route:"Line 1 / Line 3",coordinate_precision:"approximate_public_centroid"},
+  {city:"Mumbai",name:"SEEPZ",category:"metro",coordinates:[72.8737,19.1268],line_or_route:"Line 3 Aqua",coordinate_precision:"approximate_public_centroid"},
+  {city:"Mumbai",name:"Aarey JVLR",category:"metro",coordinates:[72.8846,19.1305],line_or_route:"Line 3 Aqua",coordinate_precision:"approximate_public_centroid"},
+
+  {city:"Pune",name:"PCMC",category:"metro",coordinates:[73.8031,18.6298],line_or_route:"Corridor 1",coordinate_precision:"approximate_public_centroid"},
+  {city:"Pune",name:"Civil Court",category:"metro",coordinates:[73.8564,18.5295],line_or_route:"Corridor 1 / Corridor 2",coordinate_precision:"approximate_public_centroid"},
+  {city:"Pune",name:"Ramwadi",category:"metro",coordinates:[73.9143,18.5627],line_or_route:"Corridor 2",coordinate_precision:"approximate_public_centroid"},
+  {city:"Pune",name:"Hinjawadi",category:"metro",coordinates:[73.7389,18.5913],line_or_route:"Line 3",coordinate_precision:"locality_centroid"},
+  {city:"Pune",name:"Baner",category:"metro",coordinates:[73.7868,18.5590],line_or_route:"Line 3",coordinate_precision:"locality_centroid"},
+
+  {city:"Delhi NCR",name:"Rajiv Chowk",category:"metro",coordinates:[77.2180,28.6328],line_or_route:"Blue / Yellow",coordinate_precision:"approximate_public_centroid"},
+  {city:"Delhi NCR",name:"New Delhi",category:"metro",coordinates:[77.2207,28.6430],line_or_route:"Yellow / Airport Express",coordinate_precision:"approximate_public_centroid"},
+  {city:"Delhi NCR",name:"Hauz Khas",category:"metro",coordinates:[77.2063,28.5433],line_or_route:"Yellow / Magenta",coordinate_precision:"approximate_public_centroid"},
+  {city:"Delhi NCR",name:"Cyber City",category:"metro",coordinates:[77.0889,28.4949],line_or_route:"Rapid Metro",coordinate_precision:"approximate_public_centroid"},
+  {city:"Delhi NCR",name:"Noida Electronic City",category:"metro",coordinates:[77.3752,28.6280],line_or_route:"Blue Line",coordinate_precision:"approximate_public_centroid"},
+
+  {city:"Kolkata",name:"College More / Sector V",category:"bus",coordinates:[88.4308,22.5770],line_or_route:"WBTC AC-9B / AC-23A / AC-30S",operator:"WBTC",coordinate_precision:"approximate_public_centroid"},
+  {city:"Kolkata",name:"Eco Space",category:"bus",coordinates:[88.4820,22.5885],line_or_route:"WBTC AC-9B / AC-23A",operator:"WBTC",coordinate_precision:"approximate_public_centroid"},
+  {city:"Bengaluru",name:"Central Silk Board Bus Stop",category:"bus",coordinates:[77.6227,12.9175],line_or_route:"BMTC 500D / V-500CA",operator:"BMTC",coordinate_precision:"approximate_public_centroid"},
+  {city:"Bengaluru",name:"ITPL Bus Stop",category:"bus",coordinates:[77.7377,12.9855],line_or_route:"BMTC V-500CA / V-335E",operator:"BMTC",coordinate_precision:"approximate_public_centroid"},
+  {city:"Mumbai",name:"BKC Diamond Market",category:"bus",coordinates:[72.8677,19.0675],line_or_route:"BEST BKC routes",operator:"BEST",coordinate_precision:"approximate_public_centroid"},
+  {city:"Pune",name:"Hinjawadi Bus Hub",category:"bus",coordinates:[73.7389,18.5913],line_or_route:"PMPML 333 / 372",operator:"PMPML",coordinate_precision:"locality_centroid"},
+
+  {city:"Kolkata",name:"Blue Tokai Coffee Roasters - Sector 5 Salt Lake",category:"coffee_roaster",coordinates:[88.4314,22.5825],locality:"Sector V",address:"Mahisbathan Road, Sector 5, Salt Lake",source_url:"https://stores.bluetokaicoffee.com/",coordinate_precision:"approximate_public_centroid"},
+  {city:"Bengaluru",name:"Ganbeii Microbrewery",category:"microbrewery",coordinates:[77.6155,12.9346],locality:"Koramangala",address:"Jyoti Nivas College Road, 5th Block, Koramangala",source_url:"https://ganbeii.in/",coordinate_precision:"approximate_public_centroid"},
+  {city:"Bengaluru",name:"Blue Tokai Coffee Roasters - RMZ Ecoworld",category:"coffee_roaster",coordinates:[77.6849,12.9277],locality:"Bellandur",address:"RMZ Ecoworld, Bengaluru",source_url:"https://stores.bluetokaicoffee.com/",coordinate_precision:"approximate_public_centroid"},
+  {city:"Pune",name:"Blue Tokai Coffee Roasters - Koregaon Park",category:"coffee_roaster",coordinates:[73.8953,18.5362],locality:"Koregaon Park",source_url:"https://stores.bluetokaicoffee.com/",coordinate_precision:"approximate_public_centroid"},
+  {city:"Pune",name:"Night Owl Cafe",category:"late_night_cafe",coordinates:[73.9155,18.6060],locality:"Lohegaon",address:"Porwal Road, Pune",coordinate_precision:"approximate_public_centroid"},
+  {city:"Mumbai",name:"Starbucks - Maker Maxity BKC",category:"cafe",coordinates:[72.8680,19.0609],locality:"Bandra Kurla Complex",address:"Maker Maxity, BKC",coordinate_precision:"approximate_public_centroid"},
+  {city:"Mumbai",name:"The Berliner Bar",category:"microbrewery",coordinates:[72.8148,19.1322],locality:"Versova",address:"JP Road, Versova, Andheri West",coordinate_precision:"approximate_public_centroid"},
+  {city:"Delhi NCR",name:"Cyber Hub SOCIAL",category:"club",coordinates:[77.0889,28.4949],locality:"DLF Cyber City",address:"DLF Cyber Hub, Gurugram",source_url:"https://socialoffline.in/",coordinate_precision:"venue_centroid"},
+
+  {city:"Kolkata",name:"Sector V IT Hub",category:"tech_hub",coordinates:[88.4335,22.5762],locality:"Sector V",coordinate_precision:"locality_centroid"},
+  {city:"Kolkata",name:"New Town Business District",category:"tech_hub",coordinates:[88.4798,22.5797],locality:"New Town",coordinate_precision:"locality_centroid"},
+  {city:"Bengaluru",name:"Manyata Tech Park",category:"tech_hub",coordinates:[77.6209,13.0456],locality:"Nagawara",coordinate_precision:"locality_centroid"},
+  {city:"Bengaluru",name:"International Tech Park Whitefield",category:"tech_hub",coordinates:[77.7377,12.9855],locality:"Whitefield",coordinate_precision:"locality_centroid"},
+  {city:"Bengaluru",name:"Electronic City",category:"tech_hub",coordinates:[77.6642,12.8399],locality:"Electronic City",coordinate_precision:"locality_centroid"},
+  {city:"Pune",name:"Rajiv Gandhi Infotech Park Hinjawadi",category:"tech_hub",coordinates:[73.7389,18.5913],locality:"Hinjawadi",coordinate_precision:"locality_centroid"},
+  {city:"Pune",name:"EON IT Park Kharadi",category:"tech_hub",coordinates:[73.9472,18.5514],locality:"Kharadi",coordinate_precision:"locality_centroid"},
+  {city:"Mumbai",name:"Bandra Kurla Complex",category:"tech_hub",coordinates:[72.8684,19.0633],locality:"BKC",coordinate_precision:"locality_centroid"},
+  {city:"Mumbai",name:"SEEPZ",category:"tech_hub",coordinates:[72.8737,19.1268],locality:"Andheri East",coordinate_precision:"locality_centroid"},
+  {city:"Delhi NCR",name:"DLF Cyber City",category:"tech_hub",coordinates:[77.0889,28.4949],locality:"Gurugram",coordinate_precision:"locality_centroid"},
+  {city:"Delhi NCR",name:"Noida Sector 62 IT Hub",category:"tech_hub",coordinates:[77.3649,28.6273],locality:"Noida Sector 62",coordinate_precision:"locality_centroid"}
+];
+
+export const DATASET_VERIFIED_AT = "2026-09-12";
+
+export function normalizeTransitCity(city: string): string {
+  const value = city.trim().toLowerCase();
+  if (value.includes("bangalore") || value.includes("bengaluru")) return "Bengaluru";
+  if (value.includes("delhi") || value.includes("gurugram") || value.includes("gurgaon") || value.includes("noida")) return "Delhi NCR";
+  if (value.includes("kolkata") || value.includes("calcutta")) return "Kolkata";
+  if (value.includes("mumbai") || value.includes("bombay")) return "Mumbai";
+  if (value.includes("pune")) return "Pune";
+  return city.trim();
 }
-
-// ==========================================
-// 1. COMPREHENSIVE REAL METRO NETWORKS
-// ==========================================
-export const REAL_METRO_LINES: MetroLine[] = [
-  // --- KOLKATA METRO ---
-  {
-    line_id: "kolkata-line-1-blue",
-    name: "Line 1 (Blue Line / North-South Corridor)",
-    color_code: "#0072CE",
-    city: "Kolkata",
-    status: "operational",
-    terminal_a: "Dakshineswar",
-    terminal_b: "Kavi Subhash (New Garia)",
-    total_stations: 26,
-    length_km: 32.25,
-    operating_hours: "06:45 AM - 10:45 PM",
-    peak_frequency_mins: 5,
-    key_stations: ["Dakshineswar", "Dum Dum", "Shyambazar", "Central", "Chandni Chowk", "Esplanade", "Park Street", "Rabindra Sadan", "Kalighat", "Mahanayak Uttam Kumar (Tollygunge)", "Kavi Subhash"],
-    stations: [
-      { name: "Dakshineswar", line: "Blue Line", line_code: "Line 1", is_interchange: false, coordinates: [88.3585, 22.6548] },
-      { name: "Dum Dum", line: "Blue Line", line_code: "Line 1", is_interchange: true, interchange_lines: ["Eastern Railway Suburban"], coordinates: [88.3932, 22.6217] },
-      { name: "Belgachia", line: "Blue Line", line_code: "Line 1", is_interchange: false, coordinates: [88.3812, 22.6041] },
-      { name: "Shyambazar", line: "Blue Line", line_code: "Line 1", is_interchange: false, coordinates: [88.3702, 22.6015] },
-      { name: "Sovabazar Sutanuti", line: "Blue Line", line_code: "Line 1", is_interchange: false, coordinates: [88.3685, 22.5938] },
-      { name: "Girish Park", line: "Blue Line", line_code: "Line 1", is_interchange: false, coordinates: [88.3621, 22.5857] },
-      { name: "Mahatma Gandhi Road", line: "Blue Line", line_code: "Line 1", is_interchange: false, coordinates: [88.3614, 22.5801] },
-      { name: "Central", line: "Blue Line", line_code: "Line 1", is_interchange: false, coordinates: [88.3592, 22.5694] },
-      { name: "Chandni Chowk", line: "Blue Line", line_code: "Line 1", is_interchange: false, coordinates: [88.3546, 22.5658] },
-      { name: "Esplanade", line: "Blue Line", line_code: "Line 1", is_interchange: true, interchange_lines: ["Green Line (Line 2)", "Purple Line (Line 3)"], coordinates: [88.3517, 22.5631] },
-      { name: "Park Street", line: "Blue Line", line_code: "Line 1", is_interchange: true, interchange_lines: ["Purple Line (Line 3)"], coordinates: [88.3514, 22.5539] },
-      { name: "Maidan", line: "Blue Line", line_code: "Line 1", is_interchange: false, coordinates: [88.3496, 22.5458] },
-      { name: "Rabindra Sadan", line: "Blue Line", line_code: "Line 1", is_interchange: false, coordinates: [88.3468, 22.5381] },
-      { name: "Netaji Bhavan", line: "Blue Line", line_code: "Line 1", is_interchange: false, coordinates: [88.3452, 22.5309] },
-      { name: "Jatin Das Park", line: "Blue Line", line_code: "Line 1", is_interchange: false, coordinates: [88.3456, 22.5226] },
-      { name: "Kalighat", line: "Blue Line", line_code: "Line 1", is_interchange: false, coordinates: [88.3461, 22.5168] },
-      { name: "Rabindra Sarobar", line: "Blue Line", line_code: "Line 1", is_interchange: true, interchange_lines: ["Circular Railway"], coordinates: [88.3469, 22.5085] },
-      { name: "Mahanayak Uttam Kumar (Tollygunge)", line: "Blue Line", line_code: "Line 1", is_interchange: false, coordinates: [88.3458, 22.4988] },
-      { name: "Netaji (Kudghat)", line: "Blue Line", line_code: "Line 1", is_interchange: false, coordinates: [88.3475, 22.4891] },
-      { name: "Masterda Surya Sen (Bansdroni)", line: "Blue Line", line_code: "Line 1", is_interchange: false, coordinates: [88.3541, 22.4796] },
-      { name: "Gitanjali (Naktala)", line: "Blue Line", line_code: "Line 1", is_interchange: false, coordinates: [88.3615, 22.4721] },
-      { name: "Kavi Nazrul (Garia Bazar)", line: "Blue Line", line_code: "Line 1", is_interchange: false, coordinates: [88.3742, 22.4645] },
-      { name: "Shahid Khudiram (Birji)", line: "Blue Line", line_code: "Line 1", is_interchange: false, coordinates: [88.3846, 22.4592] },
-      { name: "Kavi Subhash (New Garia)", line: "Blue Line", line_code: "Line 1", is_interchange: true, interchange_lines: ["Orange Line (Line 6)", "Eastern Railway Sealdah South"], coordinates: [88.3972, 22.4568] },
-    ],
-  },
-  {
-    line_id: "kolkata-line-2-green",
-    name: "Line 2 (Green Line / East-West Metro & Underwater River Tunnel)",
-    color_code: "#00A651",
-    city: "Kolkata",
-    status: "operational",
-    terminal_a: "Howrah Maidan",
-    terminal_b: "Salt Lake Sector V",
-    total_stations: 12,
-    length_km: 16.6,
-    operating_hours: "07:00 AM - 10:00 PM",
-    peak_frequency_mins: 8,
-    key_stations: ["Howrah Maidan", "Howrah Railway Station", "BBD Bagh / Mahakaran", "Esplanade", "Sealdah Railway Station", "Phoolbagan", "Salt Lake Stadium", "City Centre Salt Lake", "Karunamoyee", "Salt Lake Sector V"],
-    stations: [
-      { name: "Howrah Maidan", line: "Green Line", line_code: "Line 2", is_interchange: false, coordinates: [88.3242, 22.5855] },
-      { name: "Howrah Railway Station", line: "Green Line", line_code: "Line 2", is_interchange: true, interchange_lines: ["Indian Railways (Eastern & South Eastern)"], coordinates: [88.3411, 22.5831] },
-      { name: "Mahakaran (BBD Bagh)", line: "Green Line", line_code: "Line 2", is_interchange: false, coordinates: [88.3491, 22.5718] },
-      { name: "Esplanade", line: "Green Line", line_code: "Line 2", is_interchange: true, interchange_lines: ["Blue Line (Line 1)"], coordinates: [88.3517, 22.5631] },
-      { name: "Sealdah Railway Station", line: "Green Line", line_code: "Line 2", is_interchange: true, interchange_lines: ["Indian Railways Eastern Sealdah Division"], coordinates: [88.3712, 22.5678] },
-      { name: "Phoolbagan", line: "Green Line", line_code: "Line 2", is_interchange: false, coordinates: [88.3905, 22.5714] },
-      { name: "Salt Lake Stadium (Yuva Bharati)", line: "Green Line", line_code: "Line 2", is_interchange: false, coordinates: [88.4048, 22.5721] },
-      { name: "Bengal Chemical", line: "Green Line", line_code: "Line 2", is_interchange: false, coordinates: [88.4095, 22.5794] },
-      { name: "City Centre Salt Lake", line: "Green Line", line_code: "Line 2", is_interchange: false, coordinates: [88.4116, 22.5886] },
-      { name: "Central Park Salt Lake", line: "Green Line", line_code: "Line 2", is_interchange: false, coordinates: [88.4182, 22.5898] },
-      { name: "Karunamoyee", line: "Green Line", line_code: "Line 2", is_interchange: true, interchange_lines: ["Karunamoyee Central Bus Terminus"], coordinates: [88.4241, 22.5861] },
-      { name: "Salt Lake Sector V", line: "Green Line", line_code: "Line 2", is_interchange: true, interchange_lines: ["Orange Line (Line 6 - Sector V Junction)"], coordinates: [88.4335, 22.5762] },
-    ],
-  },
-  {
-    line_id: "kolkata-line-6-orange",
-    name: "Line 6 (Orange Line / EM Bypass - Airport Expressway Metro)",
-    color_code: "#F58220",
-    city: "Kolkata",
-    status: "partially_operational",
-    terminal_a: "Kavi Subhash (New Garia)",
-    terminal_b: "Jai Hind (NSCB International Airport)",
-    total_stations: 24,
-    length_km: 29.87,
-    operating_hours: "08:00 AM - 08:30 PM",
-    peak_frequency_mins: 15,
-    key_stations: ["Kavi Subhash", "Satyajit Ray (Hiland Park)", "Jyotirindra Nandi (Mukundapur)", "Kavi Sukanta (Kalikapur)", "Hemanta Mukherjee (Ruby More)", "VIP Bazar", "Science City", "Salt Lake Sector V", "New Town AA1", "Eco Park", "Jai Hind Airport"],
-    stations: [
-      { name: "Kavi Subhash (New Garia)", line: "Orange Line", line_code: "Line 6", is_interchange: true, interchange_lines: ["Blue Line (Line 1)"], coordinates: [88.3972, 22.4568] },
-      { name: "Satyajit Ray (Hiland Park)", line: "Orange Line", line_code: "Line 6", is_interchange: false, coordinates: [88.3995, 22.4789] },
-      { name: "Jyotirindra Nandi (Mukundapur/Peerless)", line: "Orange Line", line_code: "Line 6", is_interchange: false, coordinates: [88.4011, 22.4932] },
-      { name: "Kavi Sukanta (Kalikapur/Santoshpur)", line: "Orange Line", line_code: "Line 6", is_interchange: false, coordinates: [88.4035, 22.5041] },
-      { name: "Hemanta Mukherjee (Ruby Hospital / Kasba)", line: "Orange Line", line_code: "Line 6", is_interchange: false, coordinates: [88.4052, 22.5186] },
-      { name: "VIP Bazar", line: "Orange Line", line_code: "Line 6", is_interchange: false, coordinates: [88.4068, 22.5312] },
-      { name: "Science City (Barun Sengupta)", line: "Orange Line", line_code: "Line 6", is_interchange: false, coordinates: [88.4082, 22.5428] },
-      { name: "Chingrighata / Beliaghata", line: "Orange Line", line_code: "Line 6", is_interchange: false, coordinates: [88.4121, 22.5574] },
-      { name: "Salt Lake Sector V Junction", line: "Orange Line", line_code: "Line 6", is_interchange: true, interchange_lines: ["Green Line (Line 2)"], coordinates: [88.4335, 22.5762] },
-      { name: "Nazrul Tirtha (New Town AA 1)", line: "Orange Line", line_code: "Line 6", is_interchange: false, coordinates: [88.4521, 22.5841] },
-      { name: "Swapno Bhor (Eco Park New Town)", line: "Orange Line", line_code: "Line 6", is_interchange: false, coordinates: [88.4682, 22.6021] },
-      { name: "Jai Hind (Kolkata International Airport)", line: "Orange Line", line_code: "Line 6", is_interchange: true, interchange_lines: ["Yellow Line (Line 4)"], coordinates: [88.4467, 22.6542] },
-    ],
-  },
-
-  // --- BANGALORE (NAMMA METRO) ---
-  {
-    line_id: "blr-purple-line",
-    name: "Purple Line (Challaghatta ↔ Whitefield / Kadugodi)",
-    color_code: "#800080",
-    city: "Bangalore",
-    status: "operational",
-    terminal_a: "Challaghatta",
-    terminal_b: "Whitefield (Kadugodi)",
-    total_stations: 37,
-    length_km: 43.49,
-    operating_hours: "05:00 AM - 11:30 PM",
-    peak_frequency_mins: 4,
-    key_stations: ["Kengeri", "Mysuru Road", "Vijayanagar", "Majestic (Nadaprabhu Kempegowda)", "Vidhana Soudha", "MG Road", "Indiranagar", "Baiyappanahalli", "KR Puram", "Garudacharapalya", "ITPL (Pattandur Agrahara)", "Whitefield"],
-    stations: [
-      { name: "Majestic (Nadaprabhu Kempegowda)", line: "Purple Line", line_code: "BLR-PL", is_interchange: true, interchange_lines: ["Green Line"], coordinates: [77.5714, 12.9756] },
-      { name: "Vidhana Soudha", line: "Purple Line", line_code: "BLR-PL", is_interchange: false, coordinates: [77.5926, 12.9798] },
-      { name: "MG Road", line: "Purple Line", line_code: "BLR-PL", is_interchange: true, interchange_lines: ["Pink Line (Upcoming)"], coordinates: [77.6078, 12.9754] },
-      { name: "Trinity", line: "Purple Line", line_code: "BLR-PL", is_interchange: false, coordinates: [77.6171, 12.9729] },
-      { name: "Halasuru", line: "Purple Line", line_code: "BLR-PL", is_interchange: false, coordinates: [77.6272, 12.9774] },
-      { name: "Indiranagar", line: "Purple Line", line_code: "BLR-PL", is_interchange: false, coordinates: [77.6384, 12.9783] },
-      { name: "Swami Vivekananda Road", line: "Purple Line", line_code: "BLR-PL", is_interchange: false, coordinates: [77.6492, 12.9861] },
-      { name: "Baiyappanahalli", line: "Purple Line", line_code: "BLR-PL", is_interchange: true, interchange_lines: ["South Western Railway Suburban"], coordinates: [77.6521, 12.9912] },
-      { name: "KR Puram (Krishnarajapuram)", line: "Purple Line", line_code: "BLR-PL", is_interchange: true, interchange_lines: ["Blue Line (Airport ORR Line)"], coordinates: [77.6942, 12.9984] },
-      { name: "Singayyanapalya", line: "Purple Line", line_code: "BLR-PL", is_interchange: false, coordinates: [77.7028, 12.9932] },
-      { name: "Garudacharapalya", line: "Purple Line", line_code: "BLR-PL", is_interchange: false, coordinates: [77.7121, 12.9881] },
-      { name: "Hoodi", line: "Purple Line", line_code: "BLR-PL", is_interchange: false, coordinates: [77.7245, 12.9892] },
-      { name: "ITPL (Pattandur Agrahara)", line: "Purple Line", line_code: "BLR-PL", is_interchange: false, coordinates: [77.7421, 12.9878] },
-      { name: "Kadugodi Tree Park", line: "Purple Line", line_code: "BLR-PL", is_interchange: false, coordinates: [77.7548, 12.9924] },
-      { name: "Whitefield (Kadugodi)", line: "Purple Line", line_code: "BLR-PL", is_interchange: true, interchange_lines: ["Whitefield Railway Station"], coordinates: [77.7612, 12.9961] },
-    ],
-  },
-  {
-    line_id: "blr-yellow-line",
-    name: "Yellow Line (RV Road ↔ Silk Board ↔ Electronic City ↔ Bommasandra)",
-    color_code: "#F1B500",
-    city: "Bangalore",
-    status: "operational",
-    terminal_a: "Rashtreeya Vidyalaya (RV) Road",
-    terminal_b: "Bommasandra",
-    total_stations: 16,
-    length_km: 18.82,
-    operating_hours: "05:30 AM - 11:00 PM",
-    peak_frequency_mins: 6,
-    key_stations: ["RV Road", "Jayadeva Hospital", "BTM Layout", "Central Silk Board", "Hosa Road", "Electronic City 1", "Electronic City 2", "Infosys Foundation Konappana Agrahara", "Bommasandra"],
-    stations: [
-      { name: "RV Road", line: "Yellow Line", line_code: "BLR-YL", is_interchange: true, interchange_lines: ["Green Line"], coordinates: [77.5801, 12.9212] },
-      { name: "Jayadeva Hospital", line: "Yellow Line", line_code: "BLR-YL", is_interchange: true, interchange_lines: ["Pink Line"], coordinates: [77.5985, 12.9174] },
-      { name: "BTM Layout", line: "Yellow Line", line_code: "BLR-YL", is_interchange: false, coordinates: [77.6102, 12.9152] },
-      { name: "Central Silk Board", line: "Yellow Line", line_code: "BLR-YL", is_interchange: true, interchange_lines: ["Blue Line (ORR-Airport Line)"], coordinates: [77.6231, 12.9178] },
-      { name: "HSR Layout / Bommanahalli", line: "Yellow Line", line_code: "BLR-YL", is_interchange: false, coordinates: [77.6321, 12.9062] },
-      { name: "Kudlu Gate", line: "Yellow Line", line_code: "BLR-YL", is_interchange: false, coordinates: [77.6492, 12.8912] },
-      { name: "Hosa Road", line: "Yellow Line", line_code: "BLR-YL", is_interchange: false, coordinates: [77.6621, 12.8715] },
-      { name: "Electronic City 1", line: "Yellow Line", line_code: "BLR-YL", is_interchange: false, coordinates: [77.6748, 12.8524] },
-      { name: "Infosys Foundation Konappana Agrahara (E-City 2)", line: "Yellow Line", line_code: "BLR-YL", is_interchange: false, coordinates: [77.6842, 12.8421] },
-      { name: "Hebbagodi", line: "Yellow Line", line_code: "BLR-YL", is_interchange: false, coordinates: [77.6894, 12.8271] },
-      { name: "Bommasandra", line: "Yellow Line", line_code: "BLR-YL", is_interchange: false, coordinates: [77.6948, 12.8124] },
-    ],
-  },
-
-  // --- MUMBAI METRO ---
-  {
-    line_id: "mumbai-line-1-blue",
-    name: "Line 1 (Versova ↔ Andheri ↔ Ghatkopar)",
-    color_code: "#0072CE",
-    city: "Mumbai",
-    status: "operational",
-    terminal_a: "Versova",
-    terminal_b: "Ghatkopar",
-    total_stations: 12,
-    length_km: 11.4,
-    operating_hours: "05:30 AM - 11:45 PM",
-    peak_frequency_mins: 3,
-    key_stations: ["Versova", "DN Nagar", "Azad Nagar", "Andheri Railway Station", "Western Express Highway (WEH)", "Chakala (J.B. Nagar)", "Airport Road", "Marol Naka", "Saki Naka", "Ghatkopar Railway Station"],
-    stations: [
-      { name: "Versova", line: "Line 1", line_code: "MUM-L1", is_interchange: false, coordinates: [72.8212, 19.1314] },
-      { name: "DN Nagar (Andheri West)", line: "Line 1", line_code: "MUM-L1", is_interchange: true, interchange_lines: ["Line 2A (Yellow Line)", "Line 2B"], coordinates: [72.8345, 19.1245] },
-      { name: "Azad Nagar", line: "Line 1", line_code: "MUM-L1", is_interchange: false, coordinates: [72.8421, 19.1212] },
-      { name: "Andheri (Western Railway Interchange)", line: "Line 1", line_code: "MUM-L1", is_interchange: true, interchange_lines: ["Western Suburban Railway"], coordinates: [72.8468, 19.1198] },
-      { name: "Western Express Highway (WEH)", line: "Line 1", line_code: "MUM-L1", is_interchange: true, interchange_lines: ["Line 7 (Gundavali)"], coordinates: [72.8574, 19.1165] },
-      { name: "Chakala (J.B. Nagar)", line: "Line 1", line_code: "MUM-L1", is_interchange: false, coordinates: [72.8682, 19.1124] },
-      { name: "Airport Road", line: "Line 1", line_code: "MUM-L1", is_interchange: false, coordinates: [72.8765, 19.1098] },
-      { name: "Marol Naka", line: "Line 1", line_code: "MUM-L1", is_interchange: true, interchange_lines: ["Line 3 (Aqua Line)"], coordinates: [72.8854, 19.1082] },
-      { name: "Saki Naka", line: "Line 1", line_code: "MUM-L1", is_interchange: false, coordinates: [72.8892, 19.1045] },
-      { name: "Ghatkopar (Central Railway Interchange)", line: "Line 1", line_code: "MUM-L1", is_interchange: true, interchange_lines: ["Central Suburban Railway"], coordinates: [72.9082, 19.0864] },
-    ],
-  },
-  {
-    line_id: "mumbai-line-3-aqua",
-    name: "Line 3 (Aqua Line / Underground Colaba - BKC - SEEPZ - Aarey)",
-    color_code: "#00C0F3",
-    city: "Mumbai",
-    status: "operational",
-    terminal_a: "Aarey JVLR",
-    terminal_b: "Cuffe Parade",
-    total_stations: 27,
-    length_km: 33.5,
-    operating_hours: "06:30 AM - 10:30 PM",
-    peak_frequency_mins: 6,
-    key_stations: ["Aarey JVLR", "SEEPZ", "MIDC", "Marol Naka", "CSMIA T2 Airport", "CSMIA T1 Airport", "BKC (Bandra Kurla Complex)", "Dadar", "Worli", "Churchgate", "Cuffe Parade"],
-    stations: [
-      { name: "Aarey JVLR", line: "Aqua Line 3", line_code: "MUM-L3", is_interchange: false, coordinates: [72.8895, 19.1412] },
-      { name: "SEEPZ", line: "Aqua Line 3", line_code: "MUM-L3", is_interchange: false, coordinates: [72.8812, 19.1298] },
-      { name: "Marol Naka", line: "Aqua Line 3", line_code: "MUM-L3", is_interchange: true, interchange_lines: ["Line 1 (Blue Line)"], coordinates: [72.8854, 19.1082] },
-      { name: "CSMIA T2 (International Airport)", line: "Aqua Line 3", line_code: "MUM-L3", is_interchange: false, coordinates: [72.8741, 19.0945] },
-      { name: "CSMIA T1 (Domestic Airport)", line: "Aqua Line 3", line_code: "MUM-L3", is_interchange: false, coordinates: [72.8592, 19.0884] },
-      { name: "BKC (Bandra Kurla Complex)", line: "Aqua Line 3", line_code: "MUM-L3", is_interchange: true, interchange_lines: ["Bullet Train Terminal / Line 2B"], coordinates: [72.8685, 19.0654] },
-      { name: "Dharavi", line: "Aqua Line 3", line_code: "MUM-L3", is_interchange: false, coordinates: [72.8562, 19.0482] },
-      { name: "Dadar Metro", line: "Aqua Line 3", line_code: "MUM-L3", is_interchange: true, interchange_lines: ["Western & Central Railway Dadar"], coordinates: [72.8421, 19.0192] },
-      { name: "Worli", line: "Aqua Line 3", line_code: "MUM-L3", is_interchange: false, coordinates: [72.8184, 19.0041] },
-      { name: "Churchgate Metro", line: "Aqua Line 3", line_code: "MUM-L3", is_interchange: true, interchange_lines: ["Western Railway Terminal"], coordinates: [72.8274, 18.9348] },
-      { name: "Cuffe Parade", line: "Aqua Line 3", line_code: "MUM-L3", is_interchange: false, coordinates: [72.8198, 18.9142] },
-    ],
-  },
-
-  // --- PUNE METRO ---
-  {
-    line_id: "pune-line-3-hinjawadi",
-    name: "Line 3 (Pune IT Metro / Hinjawadi Megapolis ↔ Civil Court)",
-    color_code: "#EE1C25",
-    city: "Pune",
-    status: "partially_operational",
-    terminal_a: "Megapolis Circle (Hinjawadi Phase 3)",
-    terminal_b: "Civil Court Intermodal Hub",
-    total_stations: 23,
-    length_km: 23.3,
-    operating_hours: "06:00 AM - 10:00 PM",
-    peak_frequency_mins: 7,
-    key_stations: ["Megapolis Circle (Phase 3)", "Wipro Circle (Phase 2)", "Infosys Circle (Phase 1)", "Wakad Chowk", "Balewadi Stadium", "Baner Phata", "Aundh", "Savitribai Phule Pune University", "Shivaji Nagar", "Civil Court"],
-    stations: [
-      { name: "Megapolis Circle (Phase 3)", line: "Pune Line 3", line_code: "PUN-L3", is_interchange: false, coordinates: [73.6841, 18.5812] },
-      { name: "Wipro Phase 2", line: "Pune Line 3", line_code: "PUN-L3", is_interchange: false, coordinates: [73.7012, 18.5894] },
-      { name: "Infosys Circle Phase 1", line: "Pune Line 3", line_code: "PUN-L3", is_interchange: false, coordinates: [73.7245, 18.5941] },
-      { name: "Wakad Chowk", line: "Pune Line 3", line_code: "PUN-L3", is_interchange: false, coordinates: [73.7482, 18.5985] },
-      { name: "Balewadi Stadium (High Street)", line: "Pune Line 3", line_code: "PUN-L3", is_interchange: false, coordinates: [73.7684, 18.5794] },
-      { name: "Baner Phata", line: "Pune Line 3", line_code: "PUN-L3", is_interchange: false, coordinates: [73.7892, 18.5621] },
-      { name: "Aundh", line: "Pune Line 3", line_code: "PUN-L3", is_interchange: false, coordinates: [73.8045, 18.5584] },
-      { name: "Pune University", line: "Pune Line 3", line_code: "PUN-L3", is_interchange: false, coordinates: [73.8241, 18.5492] },
-      { name: "Shivaji Nagar", line: "Pune Line 3", line_code: "PUN-L3", is_interchange: true, interchange_lines: ["Pune Line 1 (Purple Line)"], coordinates: [73.8512, 18.5312] },
-      { name: "Civil Court Hub", line: "Pune Line 3", line_code: "PUN-L3", is_interchange: true, interchange_lines: ["Line 1", "Line 2 (Aqua Line)"], coordinates: [73.8562, 18.5284] },
-    ],
-  },
-];
-
-// ==========================================
-// 2. REAL BUS ROUTES & CORRIDORS
-// ==========================================
-export const REAL_BUS_ROUTES: BusRoute[] = [
-  // --- KOLKATA (WBTC / AC VOLVO / AUTO CORRIDORS) ---
-  {
-    route_number: "AC-12",
-    agency: "WBTC (West Bengal Transport Corp)",
-    city: "Kolkata",
-    service_type: "AC Electric",
-    origin: "Howrah Railway Station",
-    destination: "Sapoorji Complex (New Town Action Area 3)",
-    via_stops: ["Esplanade", "Sealdah", "Ultadanga / EM Bypass", "Salt Lake Sector V (College More)", "Karunamoyee", "New Town Bus Stand", "Eco Space", "Unitech Infospace", "Sapoorji"],
-    first_bus: "06:00 AM",
-    last_bus: "10:30 PM",
-    peak_frequency_mins: 10,
-    fare_inr_range: [20, 50],
-  },
-  {
-    route_number: "AC-43",
-    agency: "WBTC",
-    city: "Kolkata",
-    service_type: "AC Volvo",
-    origin: "Dakshineswar / Airport",
-    destination: "Howrah Railway Station",
-    via_stops: ["Airport Gate 1", "Baguiati / VIP Road", "Lake Town Clock Tower", "Ultadanga Hudco", "Kankurgachi", "Sealdah", "Howrah"],
-    first_bus: "06:30 AM",
-    last_bus: "09:45 PM",
-    peak_frequency_mins: 12,
-    fare_inr_range: [25, 45],
-  },
-  {
-    route_number: "AC-39 / 215A",
-    agency: "WBTC & Private AC",
-    city: "Kolkata",
-    service_type: "AC Electric",
-    origin: "Salt Lake Sector V (Technopolis)",
-    destination: "Gariahat / Jadavpur 8B",
-    via_stops: ["Sector V SDF", "Chingrighata", "Science City / Parama Flyover", "Ruby Hospital (Kasba)", "Ballygunge Phari", "Gariahat Crossing"],
-    first_bus: "06:45 AM",
-    last_bus: "10:15 PM",
-    peak_frequency_mins: 8,
-    fare_inr_range: [20, 40],
-  },
-  {
-    route_number: "VS-1 / V-1",
-    agency: "WBTC Airport Express",
-    city: "Kolkata",
-    service_type: "AC Volvo",
-    origin: "Kolkata International Airport (CCU)",
-    destination: "Tollygunge / Kudghat Metro",
-    via_stops: ["Airport Gate 1", "Chinar Park", "Haldiram VIP Road", "Ultadanga", "EM Bypass", "Ruby Hospital", "Gariahat", "Tollygunge Tram Depot"],
-    first_bus: "05:00 AM",
-    last_bus: "11:15 PM",
-    peak_frequency_mins: 15,
-    fare_inr_range: [45, 100],
-  },
-  {
-    route_number: "Kestopur-SectorV Auto",
-    agency: "Kolkata Auto-Rickshaw Union",
-    city: "Kolkata",
-    service_type: "Rapid Shuttle",
-    origin: "Kestopur VIP Road Footbridge",
-    destination: "Sector V College More / Wipro More",
-    via_stops: ["Kestopur Canal Bridge", "Salt Lake AL Block", "Sector V Webel More", "College More"],
-    first_bus: "06:00 AM",
-    last_bus: "11:30 PM",
-    peak_frequency_mins: 2,
-    fare_inr_range: [15, 20],
-  },
-
-  // --- BANGALORE (BMTC VAJRA VOLVO) ---
-  {
-    route_number: "500-D",
-    agency: "BMTC Vajra AC",
-    city: "Bangalore",
-    service_type: "AC Volvo",
-    origin: "Hebbal Flyover",
-    destination: "Central Silk Board",
-    via_stops: ["Manyata Tech Park", "Kalyan Nagar", "Kasturi Nagar", "KR Puram Railway Station", "Marathahalli Multiplex", "Kadubeesanahalli", "Bellandur Eco Space", "Iblur / HSR", "Silk Board"],
-    first_bus: "05:30 AM",
-    last_bus: "11:45 PM",
-    peak_frequency_mins: 4,
-    fare_inr_range: [30, 85],
-  },
-  {
-    route_number: "335-E",
-    agency: "BMTC Vajra",
-    city: "Bangalore",
-    service_type: "AC Volvo",
-    origin: "Kempegowda Bus Station (Majestic)",
-    destination: "Kadugodi / ITPL Whitefield",
-    via_stops: ["Richmond Circle", "Domlur", "Indiranagar 100ft Rd", "HAL Main Gate", "Marathahalli", "Kundalahalli Gate", "Graphite India", "ITPL"],
-    first_bus: "05:45 AM",
-    last_bus: "11:00 PM",
-    peak_frequency_mins: 6,
-    fare_inr_range: [35, 95],
-  },
-  {
-    route_number: "KIA-8",
-    agency: "BMTC Vayu Vajra Airport",
-    city: "Bangalore",
-    service_type: "AC Volvo",
-    origin: "Electronic City Phase 1 (Infosys Gate)",
-    destination: "Kempegowda International Airport (BLR)",
-    via_stops: ["Silk Board", "HSR Layout", "Bellandur", "Marathahalli", "KR Puram", "Hebbal", "Yelahanka", "Airport Terminal 1 & 2"],
-    first_bus: "24x7 Round the Clock",
-    last_bus: "24x7 Round the Clock",
-    peak_frequency_mins: 20,
-    fare_inr_range: [250, 380],
-  },
-
-  // --- MUMBAI (BEST & CHALO ELECTRIC) ---
-  {
-    route_number: "AS-524",
-    agency: "BEST Chalo AC Electric",
-    city: "Mumbai",
-    service_type: "AC Electric",
-    origin: "Borivali Station (West)",
-    destination: "BKC (Bandra Kurla Complex) Diamond Bourse",
-    via_stops: ["Kandivali", "Malad", "Goregaon WEH", "Andheri Flyover", "Bandra Kalanagar", "BKC Jio World Drive", "BKC Canara Bank"],
-    first_bus: "06:15 AM",
-    last_bus: "10:45 PM",
-    peak_frequency_mins: 8,
-    fare_inr_range: [15, 45],
-  },
-  {
-    route_number: "A-357",
-    agency: "BEST",
-    city: "Mumbai",
-    service_type: "AC Electric",
-    origin: "Bandra Railway Station (East)",
-    destination: "Shivaji Nagar / BKC MTNL",
-    via_stops: ["Kalanagar", "Family Court BKC", "Jio World Garden", "US Consulate BKC", "BKC Connector"],
-    first_bus: "06:00 AM",
-    last_bus: "11:30 PM",
-    peak_frequency_mins: 5,
-    fare_inr_range: [6, 20],
-  },
-
-  // --- PUNE (PMPML & IT EXPRESS) ---
-  {
-    route_number: "100-IT",
-    agency: "PMPML AC Electric",
-    city: "Pune",
-    service_type: "AC Electric",
-    origin: "Pune Railway Station",
-    destination: "Hinjawadi Phase 3 (Megapolis)",
-    via_stops: ["Shivaji Nagar", "Pune University", "Aundh Parihar Chowk", "Baner High Street", "Wakad Highway Bridge", "Hinjawadi Phase 1 & 2", "Megapolis Circle"],
-    first_bus: "05:45 AM",
-    last_bus: "11:15 PM",
-    peak_frequency_mins: 8,
-    fare_inr_range: [20, 50],
-  },
-];
-
-// ==========================================
-// 3. REAL CAFES, BARS, CLUBS & NIGHTLIFE
-// ==========================================
-export const REAL_LIFESTYLE_VENUES: LifestyleVenue[] = [
-  // --- KOLKATA: SECTOR V, SALT LAKE ---
-  {
-    id: "ven-sec5-blue-tokai",
-    name: "Blue Tokai Coffee Roasters",
-    category: "specialty_coffee",
-    city: "Kolkata",
-    locality: "Sector V, Salt Lake",
-    locality_id: "loc-sector-v",
-    rating: 4.6,
-    reviews_count: 1420,
-    price_for_two_inr: 650,
-    vibe: "Quiet, artisanal coffee with fast Wi-Fi, perfect for remote working & tech meetings",
-    specialties: ["Pour Over Single Origin", "Iced Sea Salt Mocha", "Sourdough Avocado Toast", "Almond Croissants"],
-    has_wifi: true,
-    has_outdoor_seating: true,
-    open_till: "11:00 PM",
-    coordinates: [88.4348, 22.5784],
-  },
-  {
-    id: "ven-sec5-starbucks",
-    name: "Starbucks Coffee (RDB Boulevard)",
-    category: "cafe",
-    city: "Kolkata",
-    locality: "Sector V, Salt Lake",
-    locality_id: "loc-sector-v",
-    rating: 4.4,
-    reviews_count: 2850,
-    price_for_two_inr: 800,
-    vibe: "Spacious dual-level cafe at RDB Boulevard, active tech crowd & late evening work",
-    specialties: ["Java Chip Frappuccino", "Caramel Macchiato", "Smoked Chicken Sandwich"],
-    has_wifi: true,
-    has_outdoor_seating: false,
-    open_till: "12:00 AM (Midnight)",
-    coordinates: [88.4312, 22.5741],
-  },
-  {
-    id: "ven-sec5-the-grid",
-    name: "The GRID - Haute Gastropub & Microbrewery",
-    category: "brewery",
-    city: "Kolkata",
-    locality: "Sector V, Salt Lake",
-    locality_id: "loc-sector-v",
-    rating: 4.7,
-    reviews_count: 4890,
-    price_for_two_inr: 2200,
-    vibe: "Kolkata's flagship 10,000 sq.ft industrial gastropub with craft beers on tap & high-energy DJ",
-    specialties: ["Towertini Craft Brew", "Smoked Truffle Pizza", "Crispy Calamari", "Craft IPAs"],
-    has_wifi: true,
-    has_outdoor_seating: true,
-    open_till: "02:00 AM",
-    coordinates: [88.4362, 22.5752],
-  },
-  {
-    id: "ven-sec5-refinery091",
-    name: "Refinery 091 (Globsyn Crystal)",
-    category: "club",
-    city: "Kolkata",
-    locality: "Sector V, Salt Lake",
-    locality_id: "loc-sector-v",
-    rating: 4.5,
-    reviews_count: 3620,
-    price_for_two_inr: 1800,
-    vibe: "Steampunk-inspired craft brewery & high-octane dance floor for weekend after-hours",
-    specialties: ["Belgian Witbier", "Nitro Cocktails", "Peri Peri Tandoori Platter"],
-    has_wifi: false,
-    has_outdoor_seating: false,
-    open_till: "02:30 AM",
-    coordinates: [88.4328, 22.5768],
-  },
-  {
-    id: "ven-sec5-lord-of-the-drinks",
-    name: "Lord of the Drinks (Sector V)",
-    category: "lounge",
-    city: "Kolkata",
-    locality: "Sector V, Salt Lake",
-    locality_id: "loc-sector-v",
-    rating: 4.6,
-    reviews_count: 3910,
-    price_for_two_inr: 2000,
-    vibe: "Expansive lavish lounge with signature botanical cocktails and panoramic city views",
-    specialties: ["Butter Beer", "Herb Crusted Lamb Chops", "Signature Woodfired Pizzas"],
-    has_wifi: true,
-    has_outdoor_seating: true,
-    open_till: "02:00 AM",
-    coordinates: [88.4355, 22.5739],
-  },
-
-  // --- KOLKATA: NEW TOWN (AA 1 & 2) ---
-  {
-    id: "ven-nt-cafe-ekante",
-    name: "Cafe Ekante (Eco Island Lakeview)",
-    category: "cafe",
-    city: "Kolkata",
-    locality: "New Town (AA 1 & 2)",
-    locality_id: "loc-new-town",
-    rating: 4.6,
-    reviews_count: 5120,
-    price_for_two_inr: 950,
-    vibe: "Island cafe reachable by electric boat in Eco Park lake, serene sunset views & Bengal cuisine",
-    specialties: ["Gondhoraj Fried Chicken", "Kosha Mangsho with Radhabhallavi", "Filter Coffee", "Darjeeling First Flush"],
-    has_wifi: false,
-    has_outdoor_seating: true,
-    open_till: "10:30 PM",
-    coordinates: [88.4688, 22.6012],
-  },
-  {
-    id: "ven-nt-country-roads",
-    name: "Country Roads Microbrewery (City Centre 2)",
-    category: "brewery",
-    city: "Kolkata",
-    locality: "New Town (AA 1 & 2)",
-    locality_id: "loc-new-town",
-    rating: 4.4,
-    reviews_count: 2750,
-    price_for_two_inr: 1600,
-    vibe: "Microbrewery with fresh Belgian Wit, German Hefeweizen & live sports screenings",
-    specialties: ["German Wheat Beer", "BBQ Chicken Wings", "Woodfired Quattro Formaggi"],
-    has_wifi: true,
-    has_outdoor_seating: true,
-    open_till: "01:30 AM",
-    coordinates: [88.4528, 22.6285],
-  },
-  {
-    id: "ven-nt-the-black-cat",
-    name: "The Black Cat Lounge & Bar",
-    category: "lounge",
-    city: "Kolkata",
-    locality: "New Town (AA 1 & 2)",
-    locality_id: "loc-new-town",
-    rating: 4.3,
-    reviews_count: 1890,
-    price_for_two_inr: 1500,
-    vibe: "Chic modern lounge near Novotel with weekend DJ sessions & cocktail specials",
-    specialties: ["Smoky Bourbon Cocktails", "Prawn Tempura", "Mezze Platter"],
-    has_wifi: true,
-    has_outdoor_seating: false,
-    open_till: "02:00 AM",
-    coordinates: [88.4514, 22.5862],
-  },
-
-  // --- KOLKATA: KASBA / BALLYGUNGE ---
-  {
-    id: "ven-kasba-sienna",
-    name: "Sienna Store & Cafe (Hindustan Park)",
-    category: "specialty_coffee",
-    city: "Kolkata",
-    locality: "Kasba / Ballygunge",
-    locality_id: "loc-kasba",
-    rating: 4.7,
-    reviews_count: 3840,
-    price_for_two_inr: 1200,
-    vibe: "Artisan boutique courtyard cafe serving locally sourced farm-to-table salads, pasta & filter brews",
-    specialties: ["Bandel Cheese Salad", "Handmade Tagliatelle", "Iced Cold Brew Tonic", "Walnut Brownie"],
-    has_wifi: true,
-    has_outdoor_seating: true,
-    open_till: "10:00 PM",
-    coordinates: [88.3582, 22.5184],
-  },
-  {
-    id: "ven-kasba-roastery",
-    name: "Roastery Coffee House (Southern Avenue / Ballygunge)",
-    category: "specialty_coffee",
-    city: "Kolkata",
-    locality: "Kasba / Ballygunge",
-    locality_id: "loc-kasba",
-    rating: 4.8,
-    reviews_count: 6200,
-    price_for_two_inr: 850,
-    vibe: "Heritage bungalow cafe with lush green patio, Kolkata's premier specialty coffee destination",
-    specialties: ["Cascara Coffee Cherry Tea", "Flat White", "Mac & Cheese", "Onion Rings Basket"],
-    has_wifi: true,
-    has_outdoor_seating: true,
-    open_till: "11:00 PM",
-    coordinates: [88.3524, 22.5121],
-  },
-  {
-    id: "ven-kasba-someplace-else",
-    name: "Someplace Else & Tantra (Park Street / Central)",
-    category: "club",
-    city: "Kolkata",
-    locality: "Kasba / Ballygunge",
-    locality_id: "loc-kasba",
-    rating: 4.6,
-    reviews_count: 7800,
-    price_for_two_inr: 2500,
-    vibe: "India's most legendary live rock pub & high-energy nightclub at The Park",
-    specialties: ["Single Malts", "Classic Mojito", "Fish & Chips", "Loaded Nachos"],
-    has_wifi: false,
-    has_outdoor_seating: false,
-    open_till: "04:00 AM",
-    coordinates: [88.3512, 22.5528],
-  },
-
-  // --- BANGALORE: INDIRANAGAR ---
-  {
-    id: "ven-ind-toit",
-    name: "Toit Brewpub (100ft Road Indiranagar)",
-    category: "brewery",
-    city: "Bangalore",
-    locality: "Indiranagar",
-    locality_id: "loc-indiranagar",
-    rating: 4.8,
-    reviews_count: 18900,
-    price_for_two_inr: 2100,
-    vibe: "Iconic Bangalore multi-level craft brewpub, buzzing vibe, pet-friendly & exceptional sourdough pizzas",
-    specialties: ["Toit Tint-in-Wit", "Basmati Blonde", "Colonial Toit IPA", "Baked Nachos", "Tartufo Pizza"],
-    has_wifi: true,
-    has_outdoor_seating: true,
-    open_till: "01:00 AM",
-    coordinates: [77.6405, 12.9792],
-  },
-  {
-    id: "ven-ind-third-wave",
-    name: "Third Wave Coffee (12th Main)",
-    category: "specialty_coffee",
-    city: "Bangalore",
-    locality: "Indiranagar",
-    locality_id: "loc-indiranagar",
-    rating: 4.6,
-    reviews_count: 3410,
-    price_for_two_inr: 700,
-    vibe: "Specialty coffee flagship with power plug points at every table, loved by startup founders & remote coders",
-    specialties: ["Orange Zest Mocha", "Aeropress Single Estate", "Bagel with Cream Cheese", "Almond Butter Croissant"],
-    has_wifi: true,
-    has_outdoor_seating: true,
-    open_till: "01:30 AM",
-    coordinates: [77.6441, 12.9721],
-  },
-
-  // --- BANGALORE: KORAMANGALA ---
-  {
-    id: "ven-kora-bier-library",
-    name: "The Bier Library Brewery & Kitchen",
-    category: "brewery",
-    city: "Bangalore",
-    locality: "Koramangala",
-    locality_id: "loc-koramangala",
-    rating: 4.7,
-    reviews_count: 11200,
-    price_for_two_inr: 2200,
-    vibe: "Massive open-air courtyard with koi fish pond, craft brews, Sunday brunches & live music",
-    specialties: ["Very Weiss Hefeweizen", "Belgian Dubbel", "21-inch Giant Slice Pizzas", "Pork Ribs"],
-    has_wifi: true,
-    has_outdoor_seating: true,
-    open_till: "01:00 AM",
-    coordinates: [77.6212, 12.9348],
-  },
-  {
-    id: "ven-kora-dyu-art-cafe",
-    name: "DYU Art Cafe",
-    category: "cafe",
-    city: "Koramangala",
-    locality: "Koramangala",
-    locality_id: "loc-koramangala",
-    rating: 4.7,
-    reviews_count: 9400,
-    price_for_two_inr: 750,
-    vibe: "Traditional Kerala-style heritage home with open courtyard, art gallery & peaceful reading corners",
-    specialties: ["Banoffee Pie", "Tender Coconut Pudding", "Hot Chocolate", "Chicken Melt Sandwich"],
-    has_wifi: true,
-    has_outdoor_seating: true,
-    open_till: "10:30 PM",
-    coordinates: [77.6185, 12.9312],
-  },
-
-  // --- BANGALORE: BELLANDUR / ORR ---
-  {
-    id: "ven-bell-byg-brewski",
-    name: "Byg Brewski Brewing Company (Sarjapur / Bellandur)",
-    category: "brewery",
-    city: "Bangalore",
-    locality: "Bellandur & ORR",
-    locality_id: "loc-bellandur",
-    rating: 4.7,
-    reviews_count: 24500,
-    price_for_two_inr: 2400,
-    vibe: "One of Asia's largest open-air breweries around a natural waterbody, electrifying atmosphere",
-    specialties: ["Byg Witbier", "Kolsch", "Smoked Duck Pizza", "Golden Fried Prawns"],
-    has_wifi: true,
-    has_outdoor_seating: true,
-    open_till: "01:00 AM",
-    coordinates: [77.6812, 12.9124],
-  },
-
-  // --- PUNE: BANER & HINJAWADI ---
-  {
-    id: "ven-baner-balewadi-highstreet",
-    name: "Effingut Brewerkz (Balewadi High Street)",
-    category: "brewery",
-    city: "Pune",
-    locality: "Baner & Balewadi",
-    locality_id: "loc-baner",
-    rating: 4.7,
-    reviews_count: 8200,
-    price_for_two_inr: 2000,
-    vibe: "Legendary craft brewery on Balewadi High Street with Apple Cider, IPAs, and rock anthems",
-    specialties: ["Heffeweizen", "Apple Cider", "Crispy Bacon Wrapped Sausages", "Butter Chicken Pizza"],
-    has_wifi: true,
-    has_outdoor_seating: true,
-    open_till: "01:30 AM",
-    coordinates: [73.7745, 18.5781],
-  },
-  {
-    id: "ven-hinj-24k",
-    name: "24K Kraft Brewzz (Hinjawadi Phase 1)",
-    category: "brewery",
-    city: "Pune",
-    locality: "Hinjawadi (Phase 1, 2, 3)",
-    locality_id: "loc-hinjawadi",
-    rating: 4.5,
-    reviews_count: 4100,
-    price_for_two_inr: 1700,
-    vibe: "Spacious techie retreat right outside Rajiv Gandhi Infotech Park with pool tables & craft beers",
-    specialties: ["Belgian Blonde", "Mango Wheat Beer (Seasonal)", "BBQ Chicken Flatbread"],
-    has_wifi: true,
-    has_outdoor_seating: true,
-    open_till: "01:00 AM",
-    coordinates: [73.7291, 18.5912],
-  },
-
-  // --- MUMBAI: BKC & BANDRA ---
-  {
-    id: "ven-bkc-toast-tonic",
-    name: "Toast & Tonic (BKC)",
-    category: "cocktail_bar",
-    city: "Mumbai",
-    locality: "Bandra Kurla Complex (BKC)",
-    locality_id: "loc-bkc",
-    rating: 4.7,
-    reviews_count: 4200,
-    price_for_two_inr: 3200,
-    vibe: "East Village-style chic gastropub with in-house artisanal tonics, gin cocktails & fine dining",
-    specialties: ["Herbalist G&T", "Soft Shell Crab Burger", "Pork Belly", "Artisanal Flatbreads"],
-    has_wifi: true,
-    has_outdoor_seating: false,
-    open_till: "01:30 AM",
-    coordinates: [72.8672, 19.0661],
-  },
-  {
-    id: "ven-bandra-subko",
-    name: "Subko Specialty Coffee Roasters & Craft Bakehouse (Bandra)",
-    category: "specialty_coffee",
-    city: "Mumbai",
-    locality: "Bandra Kurla Complex (BKC)",
-    locality_id: "loc-bkc",
-    rating: 4.8,
-    reviews_count: 7600,
-    price_for_two_inr: 950,
-    vibe: "Iconic converted heritage bungalow in Ranwar Village, India's most celebrated specialty roastery",
-    specialties: ["South Asian Estate Pour Over", "Sourdough Toast with Podi Butter", "Pod-to-Bar Chocolate Croissants"],
-    has_wifi: true,
-    has_outdoor_seating: true,
-    open_till: "11:00 PM",
-    coordinates: [72.8312, 19.0541],
-  },
-  {
-    id: "ven-andheri-the-little-door",
-    name: "The Little Door (Andheri West)",
-    category: "club",
-    city: "Mumbai",
-    locality: "Andheri West",
-    locality_id: "loc-andheri-west",
-    rating: 4.6,
-    reviews_count: 6500,
-    price_for_two_inr: 2200,
-    vibe: "Mediterranean-themed high-energy lounge famous for karaoke Sundays, sangrias & dancing",
-    specialties: ["Greek Nachos", "Wood-fired Calzone", "Berry Sangria Pitcher", "Tiramisu"],
-    has_wifi: true,
-    has_outdoor_seating: true,
-    open_till: "01:30 AM",
-    coordinates: [72.8319, 19.1384],
-  },
-];

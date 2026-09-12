@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { AccountSyncModal } from "@/components/onboarding/account-sync-modal";
+import { ShortlistDrawer } from "@/components/shortlist/shortlist-drawer";
 import "mapbox-gl/dist/mapbox-gl.css";
 import "./globals.css";
 
@@ -12,8 +14,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" data-scroll-behavior="smooth">
-      <body className={inter.className}>{children}</body>
+    <html lang="en">
+      <body className={inter.className}>
+        {children}
+        <ShortlistDrawer />
+        <AccountSyncModal />
+      </body>
     </html>
   );
 }

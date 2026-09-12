@@ -1,60 +1,26 @@
 import { Router, Request, Response } from "express";
+import { ObjectId } from "mongodb";
 import { getDatabase } from "../../db/mongo.js";
-import {
-  NegotiatedRentInSchema,
-  UserFeedbackInSchema,
-} from "../../models/feedback.js";
+import { NegotiatedRentInSchema, UserFeedbackInSchema } from "../../models/feedback.js";
 import { serializeDoc } from "../../repositories/base.js";
-import { emailService } from "../../services/emailService.js";
 
 export const feedbackRouter = Router();
+type RateState = { count: number; windowStart: number };
+const rateState = new Map<string, RateState>();
+const RATE_WINDOW_MS = 60 * 60 * 1000;
+const RATE_LIMIT = 12;
 
-// POST /api/v1/feedback/negotiated-rents
-feedbackRouter.post("/negotiated-rents", async (req: Request, res: Response): Promise<void> => {
-  try {
-    const parsed = NegotiatedRentInSchema.parse(req.body);
-    const db = getDatabase();
-    const doc = {
-      ...parsed,
-      created_at: new Date().toISOString(),
-    };
-    const result = await db.collection("negotiated_rents").insertOne(doc);
+function enforceRateLimit(req: Request, res: Response): boolean {
+  const key = req.ip || req.socket.remoteAddress || "unknown"; const now = Date.now(); const current = rateState.get(key);
+  if (!current || now - current.windowStart > RATE_WINDOW_MS) { rateState.set(key, { count: 1, windowStart: now }); return true; }
+  if (current.count >= RATE_LIMIT) { res.status(429).json({ error: "Too many community submissions. Please try again later." }); return false; }
+  current.count += 1; return true;
+}
+function median(values:number[]):number|null { if(!values.length)return null; const sorted=[...values].sort((a,b)=>a-b); const mid=Math.floor(sorted.length/2); return sorted.length%2?sorted[mid]:(sorted[mid-1]+sorted[mid])/2; }
+async function validateRentOutlier(localityId:string, listedRent:number, negotiatedRent:number){ const db=getDatabase(); const prior=await db.collection("negotiated_rents").find({locality_id:localityId,verification_status:{$ne:"rejected"}}).limit(100).toArray(); const baseline=median(prior.flatMap((doc)=>[Number(doc.listed_rent),Number(doc.negotiated_rent)].filter((value)=>Number.isFinite(value)&&value>0))); if(baseline&&(listedRent>baseline*5||negotiatedRent>baseline*5))throw new Error(`Rent appears to be an outlier for this locality (community median ${Math.round(baseline)}).`); if(negotiatedRent>listedRent*1.5)throw new Error("Negotiated rent is implausibly higher than listed rent."); }
+async function recomputeApprovedLocalityScores(localityId:string){ const db=getDatabase(); const reviews=await db.collection("user_feedback").find({locality_id:localityId,verification_status:"approved"}).limit(500).toArray(); if(!reviews.length)return; const avg=(field:string,fallback:number)=>{const values=reviews.map((review)=>Number(review[field])).filter((value)=>Number.isFinite(value)); return values.length?Math.round(values.reduce((sum,value)=>sum+value,0)/values.length):fallback;}; const locality=await db.collection("localities").findOne({$or:[{_id:localityId as any},{slug:localityId}]} as any); if(!locality)return; const current=locality.scores||{}; const safety=avg("safety_score",current.overall??50); const womenSafety=avg("women_safety_score",current.women_safety??safety); const lateNight=avg("late_night_score",current.late_night??safety); const internet=avg("internet_score",current.internet??50); const overall=Math.round((safety+womenSafety+lateNight+internet+Number(current.food_access??50)+Number(current.commute_reliability??50))/6); await db.collection("localities").updateOne({_id:locality._id},{$set:{"scores.overall":overall,"scores.women_safety":womenSafety,"scores.late_night":lateNight,"scores.internet":internet,updated_at:new Date().toISOString()}}); }
 
-    // Notify admin email asynchronously
-    emailService.sendNegotiatedRentAlert({
-      property_id: parsed.property_id,
-      listed_rent: parsed.listed_rent,
-      negotiated_rent: parsed.negotiated_rent,
-      locality: parsed.locality_id,
-    }).catch(() => {});
-
-    res.json(serializeDoc({ ...doc, _id: result.insertedId }));
-  } catch (error) {
-    res.status(400).json({ error: (error as Error).message });
-  }
-});
-
-// POST /api/v1/feedback/locality
-feedbackRouter.post("/locality", async (req: Request, res: Response): Promise<void> => {
-  try {
-    const parsed = UserFeedbackInSchema.parse(req.body);
-    const db = getDatabase();
-    const doc = {
-      ...parsed,
-      created_at: new Date().toISOString(),
-    };
-    const result = await db.collection("user_feedback").insertOne(doc);
-
-    // Notify admin email asynchronously
-    emailService.sendLocalityFeedbackAlert({
-      locality_id: parsed.locality_id,
-      score: parsed.score,
-      comment: parsed.comment,
-    }).catch(() => {});
-
-    res.json(serializeDoc({ ...doc, _id: result.insertedId }));
-  } catch (error) {
-    res.status(400).json({ error: (error as Error).message });
-  }
-});
-
+feedbackRouter.post("/negotiated-rents", async(req:Request,res:Response):Promise<void>=>{try{if(!enforceRateLimit(req,res))return;const parsed=NegotiatedRentInSchema.parse(req.body);if(parsed._website){res.status(400).json({error:"Spam submission rejected."});return;}await validateRentOutlier(parsed.locality_id,parsed.listed_rent,parsed.negotiated_rent);const{_website,...payload}=parsed;const doc={...payload,verification_status:"pending",created_at:new Date().toISOString()};const db=getDatabase();const result=await db.collection("negotiated_rents").insertOne(doc);res.json(serializeDoc({...doc,_id:result.insertedId}));}catch(error){res.status(400).json({error:(error as Error).message});}});
+feedbackRouter.post("/locality",async(req:Request,res:Response):Promise<void>=>{try{if(!enforceRateLimit(req,res))return;const parsed=UserFeedbackInSchema.parse(req.body);if(parsed._website){res.status(400).json({error:"Spam submission rejected."});return;}const{_website,...payload}=parsed;const doc={...payload,verification_status:"pending",created_at:new Date().toISOString()};const db=getDatabase();const result=await db.collection("user_feedback").insertOne(doc);res.json(serializeDoc({...doc,_id:result.insertedId}));}catch(error){res.status(400).json({error:(error as Error).message});}});
+feedbackRouter.get("/insights",async(req:Request,res:Response):Promise<void>=>{try{const localityId=String(req.query.locality_id||"");const propertyId=String(req.query.property_id||"");if(!localityId&&!propertyId){res.status(400).json({error:"locality_id or property_id is required"});return;}const db=getDatabase();const filter:any={verification_status:{$ne:"rejected"}};if(localityId)filter.locality_id=localityId;if(propertyId)filter.$or=[{property_id:propertyId},...(localityId?[{locality_id:localityId}]:[])];const rents=await db.collection("negotiated_rents").find(filter).sort({created_at:-1}).limit(250).toArray();const listedMedian=median(rents.map((item)=>Number(item.listed_rent)).filter(Number.isFinite));const negotiatedMedian=median(rents.map((item)=>Number(item.negotiated_rent)).filter(Number.isFinite));const savingsPercent=listedMedian&&negotiatedMedian?Math.max(0,((listedMedian-negotiatedMedian)/listedMedian)*100):0;const negotiationPowerIndex=Math.min(100,Math.round(savingsPercent*6+Math.min(rents.length,20)*2));const maintenanceMedian=median(rents.map((item)=>Number(item.maintenance_charges)).filter((value)=>Number.isFinite(value)&&value>=0));const brokerageMedian=median(rents.map((item)=>Number(item.broker_commission)).filter((value)=>Number.isFinite(value)&&value>=0));const wifiSpeedMedian=median(rents.map((item)=>Number(item.wifi_speed_mbps)).filter((value)=>Number.isFinite(value)&&value>0));res.json({sample_size:rents.length,median_listed_rent:listedMedian,median_negotiated_rent:negotiatedMedian,median_maintenance:maintenanceMedian,median_brokerage:brokerageMedian,median_wifi_speed_mbps:wifiSpeedMedian,average_savings_percent:Number(savingsPercent.toFixed(1)),negotiation_power_index:negotiationPowerIndex});}catch(error){res.status(500).json({error:(error as Error).message});}});
+feedbackRouter.patch("/locality/:id/approve",async(req:Request,res:Response):Promise<void>=>{try{const adminKey=process.env.FEEDBACK_ADMIN_KEY;if(!adminKey||req.header("x-admin-key")!==adminKey){res.status(403).json({error:"Admin verification key required."});return;}const rawId=req.params.id;const reviewId=Array.isArray(rawId)?rawId[0]:rawId;if(!reviewId||!ObjectId.isValid(reviewId)){res.status(400).json({error:"Invalid review id."});return;}const db=getDatabase();const review=await db.collection("user_feedback").findOneAndUpdate({_id:new ObjectId(reviewId)},{$set:{verification_status:"approved",verified_at:new Date().toISOString()}},{returnDocument:"after"});if(!review){res.status(404).json({error:"Review not found."});return;}await recomputeApprovedLocalityScores(String(review.locality_id));res.json(serializeDoc(review));}catch(error){res.status(500).json({error:(error as Error).message});}});

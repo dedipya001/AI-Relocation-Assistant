@@ -184,55 +184,45 @@ function normalizeListing(
 ): Record<string, any> | null {
   const { city, locality, lon, lat, runId } = options;
   const title = (raw.title || "").trim();
-  const rent = parseIntSafe(raw.rent ?? raw.price_inr ?? raw.price);
+  const rent = parseIntSafe(raw.price_inr);
 
   if (!title || !rent || rent <= 0) return null;
 
   const localityId = stableLocalityId(city, locality);
-  const sourceUrl = raw.source_url || raw.url || null;
+  const sourceUrl = raw.url || null;
   const dedupeKey = buildDedupeKey(title, rent, localityId, sourceUrl);
   const now = new Date().toISOString();
 
   const furnishing = raw.furnishing || null;
-  let amenities: string[] = [];
-  if (Array.isArray(raw.amenities) && raw.amenities.length > 0) {
-    amenities = [...raw.amenities];
-  } else {
-    amenities = [SourcePlatform.MagicBricks, "dataset-imported"];
-    if (typeof furnishing === "string" && furnishing.trim()) {
-      amenities.push(furnishing.trim());
-    }
-    const bhk = parseIntSafe(raw.bhk);
-    if (bhk) {
-      amenities.push(`${bhk}bhk`);
-    }
+  const amenities = [SourcePlatform.MagicBricks, "dataset-imported"];
+  if (typeof furnishing === "string" && furnishing.trim()) {
+    amenities.push(furnishing.trim());
   }
 
-  const images = Array.isArray(raw.images) ? raw.images : [];
-  const coords: [number, number] =
-    Array.isArray(raw.location?.coordinates) && raw.location.coordinates.length >= 2
-      ? [parseFloat(raw.location.coordinates[0]), parseFloat(raw.location.coordinates[1])]
-      : [lon, lat];
+  const bhk = parseIntSafe(raw.bhk);
+  if (bhk) {
+    amenities.push(`${bhk}bhk`);
+  }
 
   return {
     title,
-    source_platform: raw.source_platform || SourcePlatform.MagicBricks,
+    source_platform: SourcePlatform.MagicBricks,
     source_url: sourceUrl,
-    property_type: normalizePropertyType(raw.property_type || raw.propertyType, title),
+    property_type: normalizePropertyType(raw.propertyType, title),
     rent,
-    deposit: parseIntSafe(raw.deposit) ?? rent * 2,
-    area_sqft: parseIntSafe(raw.area_sqft ?? raw.carpet_area_sqft),
+    deposit: rent,
+    area_sqft: parseIntSafe(raw.carpet_area_sqft),
     furnishing,
-    images,
+    images: [],
     amenities,
-    location: { type: "Point", coordinates: coords },
+    location: { type: "Point", coordinates: [lon, lat] },
     locality_id: localityId,
-    nearby_metro: raw.nearby_metro || null,
-    commute_estimate_minutes: parseIntSafe(raw.commute_estimate_minutes) ?? null,
+    nearby_metro: null,
+    commute_estimate_minutes: null,
     dedupe_key: dedupeKey,
     price_history: [
       {
-        source: raw.source_platform || SourcePlatform.MagicBricks,
+        source: SourcePlatform.MagicBricks,
         rent,
         url: sourceUrl,
         observed_at: now,
@@ -342,19 +332,7 @@ async function run() {
           seenCityIndexes.add(cityCollName);
         }
 
-        let lon = 0;
-        let lat = 0;
-        let quality = "dataset-embedded";
-        if (Array.isArray(raw.location?.coordinates) && raw.location.coordinates.length >= 2) {
-          lon = parseFloat(raw.location.coordinates[0]);
-          lat = parseFloat(raw.location.coordinates[1]);
-        } else {
-          const resolved = await geocoder.resolve(city, locality, stats);
-          lon = resolved[0];
-          lat = resolved[1];
-          quality = resolved[2];
-        }
-
+        const [lon, lat, quality] = await geocoder.resolve(city, locality, stats);
         const payload = normalizeListing(raw, { city, locality, lon, lat, runId });
         if (!payload) {
           stats.records_skipped++;

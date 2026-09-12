@@ -5,7 +5,6 @@ import { PropertyRepository } from "../../repositories/properties.js";
 import { IntentParser } from "../../services/intentParser.js";
 import { LowestPriceEngine } from "../../services/lowestPrice.js";
 import { RecommendationEngine } from "../../services/recommendations.js";
-import { AIAdvisor } from "../../services/aiAdvisor.js";
 import {
   keepNearbyRelocationOptions,
   rankByOfficeProximity,
@@ -26,7 +25,7 @@ assistantRouter.post("/chat", async (req: Request, res: Response): Promise<void>
     let properties = await propertyRepo.search(intent.filters);
 
     const officeCoordinates = intent.filters.office_location
-      ? await resolveOfficeCoordinates(intent.filters.office_location, intent.filters.city)
+      ? await resolveOfficeCoordinates(intent.filters.office_location)
       : null;
 
     if (officeCoordinates) {
@@ -62,20 +61,17 @@ assistantRouter.post("/chat", async (req: Request, res: Response): Promise<void>
       properties: enriched,
     };
 
-    const advisor = new AIAdvisor();
-    const advice = await advisor.generateAdvice({
-      message,
-      intent,
-      properties: enriched,
-      localitiesById,
-      officeCoordinates,
-    });
+    const top = recommendations.slice(0, 3);
+    let answer: string;
+    if (top.length === 0) {
+      answer =
+        "I need a little more detail to recommend areas. Share office location, budget, commute preference, and must-haves.";
+    } else {
+      const names = top.map((item) => item.title).join(", ");
+      answer = `I found ${top.length} strong options: ${names}. I ranked them by commute, affordability, safety, internet, and lifestyle fit.`;
+    }
 
-    res.json({
-      answer: advice.answer,
-      real_world_insights: advice.realWorldInsights,
-      context: searchResult,
-    });
+    res.json({ answer, context: searchResult });
   } catch (error) {
     res.status(500).json({ error: (error as Error).message });
   }

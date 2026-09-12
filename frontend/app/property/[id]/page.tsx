@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { Clock, IndianRupee, MapPin, ShieldCheck } from "lucide-react";
 import { Nav } from "@/components/nav";
+import { BookmarkButton } from "@/components/property/bookmark-button";
 import { Card } from "@/components/ui/card";
 import { api } from "@/lib/api";
 import { demoProperties } from "@/lib/demo-data";
@@ -8,18 +9,21 @@ import { formatRent } from "@/lib/utils";
 import styles from "./page.module.css";
 
 export function generateStaticParams() {
-  return demoProperties.slice(0, 100).map((property) => ({
-    id: property._id,
-  }));
+  return demoProperties.map((property) => ({ id: property._id }));
 }
 
-export default async function PropertyPage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params;
+export default async function PropertyPage({ params }: { params: { id: string } }) {
   let property;
-  try {
-    property = await api.getProperty(id);
-  } catch {
-    notFound();
+
+  if (process.env.NETLIFY_STATIC_DEPLOY === "true") {
+    property = demoProperties.find((item) => item._id === params.id);
+    if (!property) notFound();
+  } else {
+    try {
+      property = await api.getProperty(params.id);
+    } catch {
+      notFound();
+    }
   }
 
   return (
@@ -48,6 +52,7 @@ export default async function PropertyPage({ params }: { params: Promise<{ id: s
                   Lowest price found online: {formatRent(property.lowest_price.rent)} on {property.lowest_price.source}
                 </p>
               )}
+              <BookmarkButton property={property} />
             </Card>
             <Metric icon={Clock} label="Commute" value={`${property.commute_estimate_minutes ?? "TBD"} min`} />
             <Metric icon={MapPin} label="Nearby metro" value={property.nearby_metro ?? "TBD"} />
