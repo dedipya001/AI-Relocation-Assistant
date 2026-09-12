@@ -13,6 +13,8 @@
     "test:multi-city": "tsx scripts/testMultiCity.ts",
     "test:telegram-community": "tsx scripts/testTelegramCommunity.ts",
     "test:provider-urls": "tsx scripts/testProviderUrls.ts",
+    "test:locality-compare": "tsx scripts/testLocalityComparison.ts",
+    "test:locality-compare-api": "tsx scripts/testLocalityComparisonApi.ts",
     "typecheck": "tsc --noEmit",
     "seed": "tsx scripts/seed.ts && tsx scripts/seedMultiCity.ts",
     "seed:multi-city": "tsx scripts/seedMultiCity.ts",
