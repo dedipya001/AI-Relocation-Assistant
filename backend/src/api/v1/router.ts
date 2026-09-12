@@ -7,6 +7,7 @@ import { localitiesRouter } from "./localities.js";
 import { propertiesRouter } from "./properties.js";
 import { recommendationsRouter } from "./recommendations.js";
 import { searchRouter } from "./search.js";
+import { transitRouter } from "./transit.js";
 
 export const apiRouter = Router();
 
@@ -18,4 +19,5 @@ apiRouter.use("/feedback", feedbackRouter);
 apiRouter.use("/assistant", assistantRouter);
 apiRouter.use("/recommendations", recommendationsRouter);
 apiRouter.use("/community", communityRouter);
+apiRouter.use("/transit", transitRouter);
 
