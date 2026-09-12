@@ -43,6 +43,7 @@ jobs:
           set -euo pipefail
           npx -y netlify-cli@latest deploy \
             --allow-anonymous \
+            --created-via cli \
             --prod \
             --dir frontend/out \
             --no-build \
@@ -50,9 +51,9 @@ jobs:
           node <<'NODE'
           const fs = require('fs');
           const deploy = JSON.parse(fs.readFileSync('/tmp/netlify-deploy.json', 'utf8'));
-          const url = deploy.url || deploy.deploy_url || deploy.deployUrl || deploy.ssl_url;
+          const url = deploy.site_url || deploy.url || deploy.deploy_url || deploy.deployUrl || deploy.ssl_url;
           if (!url) {
-            console.error('Netlify deploy completed but no public URL was returned.');
+            console.error(`Netlify deploy completed but no public URL was returned. Keys: ${Object.keys(deploy).join(', ')}`);
             process.exit(1);
           }
           fs.appendFileSync(process.env.GITHUB_OUTPUT, `url=${url}\n`);
