@@ -320,7 +320,7 @@ export class LocalityComparisonService {
         methodology: [
           "Power reliability is a proxy using locality reliability scores plus power-backup amenity prevalence.",
           "Water supply is a proxy using locality overall score plus water-related amenity prevalence; it is not a utility-quality measurement.",
-          "ISP infrastructure combines locality internet score with internet/fiber/Wi-Fi amenity prevalence.",
+          "ISP infrastructure is a proxy combining the locality internet score with internet/fiber/Wi-Fi amenity prevalence.",
         ],
       },
       source_quality: {
