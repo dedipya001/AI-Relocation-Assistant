@@ -10,6 +10,7 @@
     "test": "tsx scripts/testEndpoints.ts",
     "test:bench": "tsx scripts/testRecommendationEngine.ts",
     "test:rag-eval": "tsx scripts/evaluateRetrieval.ts",
+    "test:multi-city": "tsx scripts/testMultiCity.ts",
     "typecheck": "tsc --noEmit",
     "seed": "tsx scripts/seed.ts && tsx scripts/seedMultiCity.ts",
     "seed:multi-city": "tsx scripts/seedMultiCity.ts",
