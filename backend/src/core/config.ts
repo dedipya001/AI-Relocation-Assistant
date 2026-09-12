@@ -30,6 +30,7 @@ const configSchema = z.object({
 
   JWT_SECRET: z.string().min(16).default("dev-only-change-me-please"),
   JWT_TTL_SECONDS: z.coerce.number().int().positive().default(60 * 60 * 24 * 7),
+  TELEMETRY_ADMIN_KEY: z.string().min(12).optional(),
 
   APIFY_TOKEN: z.string().optional(),
   APIFY_MAGICBRICKS_ACTOR_ID: z.string().optional(),
