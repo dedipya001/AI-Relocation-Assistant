@@ -89,6 +89,9 @@ jobs:
       - name: Backend deterministic recommendation benchmarks
         run: npm --prefix backend run test:bench
 
+      - name: RAG retrieval and grounding evaluation
+        run: npm --prefix backend run test:rag-eval
+
       - name: Frontend typecheck
         run: npm --prefix frontend run typecheck
 
