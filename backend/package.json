@@ -12,6 +12,7 @@
     "test:rag-eval": "tsx scripts/evaluateRetrieval.ts",
     "test:multi-city": "tsx scripts/testMultiCity.ts",
     "test:telegram-community": "tsx scripts/testTelegramCommunity.ts",
+    "test:provider-urls": "tsx scripts/testProviderUrls.ts",
     "typecheck": "tsc --noEmit",
     "seed": "tsx scripts/seed.ts && tsx scripts/seedMultiCity.ts",
     "seed:multi-city": "tsx scripts/seedMultiCity.ts",
@@ -37,7 +38,7 @@
     "zod": "^3.24.1"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.17",
+    "@types/cors": "^8.2.0",
     "@types/express": "^5.0.0",
     "@types/morgan": "^1.9.9",
     "@types/node": "^22.13.4",
