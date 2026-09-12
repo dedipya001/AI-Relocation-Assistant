@@ -5,6 +5,23 @@ import morgan from "morgan";
 import { apiRouter } from "./api/v1/router.js";
 import { config } from "./core/config.js";
 import { logger } from "./core/logger.js";
+import { connectMongo } from "./db/mongo.js";
+import { connectRedis } from "./db/redis.js";
+
+let runtimeInitPromise: Promise<void> | null = null;
+
+async function ensureRuntimeDependencies(): Promise<void> {
+  if (!runtimeInitPromise) {
+    runtimeInitPromise = Promise.all([connectMongo(), connectRedis()])
+      .then(() => undefined)
+      .catch((error) => {
+        runtimeInitPromise = null;
+        throw error;
+      });
+  }
+
+  await runtimeInitPromise;
+}
 
 export function createServer(): Express {
   const app = express();
@@ -50,9 +67,19 @@ export function createServer(): Express {
     })
   );
 
-  // Health check endpoint
+  // Health check endpoint stays independent of database/cache availability.
   app.get("/health", (_req: Request, res: Response) => {
     res.json({ status: "ok" });
+  });
+
+  // Initialize runtime dependencies lazily for serverless requests.
+  app.use(async (_req: Request, _res: Response, next: NextFunction) => {
+    try {
+      await ensureRuntimeDependencies();
+      next();
+    } catch (error) {
+      next(error);
+    }
   });
 
   // Mount API v1 router
@@ -71,3 +98,6 @@ export function createServer(): Express {
 
   return app;
 }
+
+const app = createServer();
+export default app;
