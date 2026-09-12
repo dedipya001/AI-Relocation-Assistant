@@ -58,6 +58,8 @@ jobs:
         run: npm --prefix backend run seed
       - name: Validate multi-city partitions
         run: npm --prefix backend run test:multi-city
+      - name: Validate Telegram community ingestion
+        run: npm --prefix backend run test:telegram-community
       - name: Start backend for integration tests
         run: |
           npm --prefix backend run dev > /tmp/relocation-backend.log 2>&1 &
