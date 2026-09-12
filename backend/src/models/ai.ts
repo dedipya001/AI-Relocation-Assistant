@@ -12,15 +12,7 @@ export const ScoringWeightsSchema = z.object({
 });
 export type ScoringWeights = z.infer<typeof ScoringWeightsSchema>;
 
-export const ScoringProfileEnum = z.enum([
-  "balanced",
-  "budget_saver",
-  "tech_professional",
-  "safety_priority",
-  "family_first",
-  "night_owl",
-  "custom",
-]);
+export const ScoringProfileEnum = z.enum(["balanced","budget_saver","tech_professional","safety_priority","family_first","night_owl","custom"]);
 export type ScoringProfile = z.infer<typeof ScoringProfileEnum>;
 
 export const HardConstraintsSchema = z.object({
@@ -34,78 +26,26 @@ export const HardConstraintsSchema = z.object({
 });
 export type HardConstraints = z.infer<typeof HardConstraintsSchema>;
 
-export const SubScoreDetailSchema = z.object({
-  score: z.number().min(0).max(100),
-  weight: z.number().min(0).max(1),
-  contribution: z.number(),
-  label: z.string(),
-  details: z.string(),
-});
+export const SubScoreDetailSchema = z.object({ score:z.number().min(0).max(100), weight:z.number().min(0).max(1), contribution:z.number(), label:z.string(), details:z.string() });
 export type SubScoreDetail = z.infer<typeof SubScoreDetailSchema>;
-
-export const PenaltyDetailSchema = z.object({
-  reason: z.string(),
-  penalty_points: z.number(),
-});
+export const PenaltyDetailSchema = z.object({ reason:z.string(), penalty_points:z.number() });
 export type PenaltyDetail = z.infer<typeof PenaltyDetailSchema>;
 
-export const SearchIntentSchema = z.object({
-  query: z.string(),
-  filters: PropertySearchFiltersSchema,
-  inferred_lifestyle: z.array(z.string()).default([]),
-  follow_up_questions: z.array(z.string()).default([]),
-});
+export const SearchIntentSchema = z.object({ query:z.string(), filters:PropertySearchFiltersSchema, inferred_lifestyle:z.array(z.string()).default([]), follow_up_questions:z.array(z.string()).default([]) });
 export type SearchIntent = z.infer<typeof SearchIntentSchema>;
 
 export const RecommendationScoreSchema = z.object({
-  affordability: z.number(),
-  commute: z.number(),
-  safety: z.number(),
-  internet: z.number(),
-  food_access: z.number(),
-  lifestyle_fit: z.number(),
-  property_quality: z.number().default(70),
-  total: z.number(),
-  confidence_score: z.number().default(85),
-  explanation: z.string(),
-  subscores: z.record(SubScoreDetailSchema).optional(),
-  penalties: z.array(PenaltyDetailSchema).default([]),
+  affordability:z.number(), commute:z.number(), safety:z.number(), internet:z.number(), food_access:z.number(), lifestyle_fit:z.number(), property_quality:z.number().default(70), total:z.number(), confidence_score:z.number().default(85), explanation:z.string(), subscores:z.record(SubScoreDetailSchema).optional(), penalties:z.array(PenaltyDetailSchema).default([]),
 });
 export type RecommendationScore = z.infer<typeof RecommendationScoreSchema>;
 
 export const AIRecommendationSchema = z.object({
-  rank: z.number().optional(),
-  entity_type: z.string(),
-  entity_id: z.string(),
-  title: z.string(),
-  locality_name: z.string().nullable().optional(),
-  score: RecommendationScoreSchema,
-  highlights: z.array(z.string()).default([]),
-  tradeoffs: z.array(z.string()).default([]),
-  constraint_violations: z.array(z.string()).default([]),
-  scoring_profile: z.string().default("balanced"),
-  is_eligible: z.boolean().default(true),
+  rank:z.number().optional(), entity_type:z.string(), entity_id:z.string(), title:z.string(), locality_name:z.string().nullable().optional(), source_platform:z.string().nullable().optional(), source_url:z.string().nullable().optional(), listing_url:z.string().nullable().optional(), provider_url:z.string().nullable().optional(), score:RecommendationScoreSchema, highlights:z.array(z.string()).default([]), tradeoffs:z.array(z.string()).default([]), constraint_violations:z.array(z.string()).default([]), scoring_profile:z.string().default("balanced"), is_eligible:z.boolean().default(true),
 });
 export type AIRecommendation = z.infer<typeof AIRecommendationSchema>;
 
-export const RankRequestSchema = z.object({
-  properties: z.array(z.record(z.any())),
-  localities_by_id: z.record(z.record(z.any())).optional(),
-  profile: ScoringProfileEnum.optional(),
-  weights: ScoringWeightsSchema.partial().optional(),
-  hard_constraints: HardConstraintsSchema.optional(),
-  preferences: z.array(z.string()).default([]),
-  budget_max: z.number().nullable().optional(),
-});
+export const RankRequestSchema = z.object({ properties:z.array(z.record(z.any())), localities_by_id:z.record(z.record(z.any())).optional(), profile:ScoringProfileEnum.optional(), weights:ScoringWeightsSchema.partial().optional(), hard_constraints:HardConstraintsSchema.optional(), preferences:z.array(z.string()).default([]), budget_max:z.number().nullable().optional() });
 export type RankRequest = z.infer<typeof RankRequestSchema>;
 
-export const AISummarySchema = z.object({
-  _id: z.string().optional(),
-  entity_type: z.string(),
-  entity_id: z.string(),
-  summary: z.string(),
-  source_count: z.number(),
-  model: z.string(),
-  created_at: z.union([z.date(), z.string()]).default(() => new Date().toISOString()),
-});
+export const AISummarySchema = z.object({ _id:z.string().optional(), entity_type:z.string(), entity_id:z.string(), summary:z.string(), source_count:z.number(), model:z.string(), created_at:z.union([z.date(),z.string()]).default(()=>new Date().toISOString()) });
 export type AISummary = z.infer<typeof AISummarySchema>;
