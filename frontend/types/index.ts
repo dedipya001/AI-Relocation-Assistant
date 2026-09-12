@@ -19,6 +19,13 @@ export type Locality = {
   things_to_do: Array<{ name: string; category: string; distance_meters: number; rating?: number }>;
 };
 
+export type PriceObservation = {
+  source: string;
+  rent: number;
+  url?: string;
+  observed_at?: string;
+};
+
 export type Property = {
   _id: string;
   title: string;
@@ -37,7 +44,8 @@ export type Property = {
   locality_id: string;
   nearby_metro?: string;
   commute_estimate_minutes?: number;
-  lowest_price?: { source: string; rent: number; url?: string; observed_at?: string };
+  price_history?: PriceObservation[];
+  lowest_price?: PriceObservation;
   distance_to_office_km?: number;
   city?: string;
   locality?: string;
