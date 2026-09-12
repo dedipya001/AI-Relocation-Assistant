@@ -79,17 +79,22 @@ usersRouter.post("/signup", async (req: Request, res: Response): Promise<void> =
   try {
     const parsed = SignupRequestSchema.parse(req.body);
     const db = getDatabase();
-    let email = parsed.email;
+    let email: string;
     let googleSub: string | undefined;
 
     if (parsed.google_id_token) {
       const identity = await verifyGoogleIdToken(parsed.google_id_token);
-      if (identity.email !== parsed.email) {
+      if (parsed.email && identity.email !== parsed.email) {
         res.status(400).json({ error: "Google account email does not match signup email." });
         return;
       }
       email = identity.email;
       googleSub = identity.sub;
+    } else if (parsed.email) {
+      email = parsed.email;
+    } else {
+      res.status(400).json({ error: "Email is required for password signup." });
+      return;
     }
 
     const existing = await findUserByEmail(db, email);
