@@ -1,6 +1,8 @@
+import { timingSafeEqual } from "crypto";
 import { Router, type Request, type Response } from "express";
 import { ObjectId } from "mongodb";
 import { config } from "../../core/config.js";
+import { logger } from "../../core/logger.js";
 import { getDatabase } from "../../db/mongo.js";
 import {
   GuestProfileRequestSchema,
@@ -18,6 +20,7 @@ import {
   verifyGoogleIdToken,
   verifyPassword,
 } from "../../services/authService.js";
+import { getProfileTelemetrySummary, recordProfileTelemetry } from "../../services/profileTelemetryService.js";
 import {
   computeGuestPersonalization,
   createUser,
@@ -66,12 +69,43 @@ function authResponse(user: Record<string, any>) {
   };
 }
 
+function validTelemetryAdminKey(candidate?: string): boolean {
+  if (!config.TELEMETRY_ADMIN_KEY || !candidate) return false;
+  const expected = Buffer.from(config.TELEMETRY_ADMIN_KEY);
+  const actual = Buffer.from(candidate);
+  return expected.length === actual.length && timingSafeEqual(expected, actual);
+}
+
 usersRouter.post("/guest-profile", async (req: Request, res: Response): Promise<void> => {
   try {
     const profile = GuestProfileRequestSchema.parse(req.body);
-    res.json(computeGuestPersonalization(profile));
+    const personalization = computeGuestPersonalization(profile);
+    try {
+      await recordProfileTelemetry(getDatabase(), profile);
+    } catch (telemetryError) {
+      logger.warn({ error: telemetryError }, "profile_telemetry_record_failed");
+    }
+    res.json(personalization);
   } catch (error) {
     res.status(400).json({ error: (error as Error).message });
+  }
+});
+
+usersRouter.get("/admin/telemetry", async (req: Request, res: Response): Promise<void> => {
+  if (!config.TELEMETRY_ADMIN_KEY) {
+    res.status(503).json({ error: "Telemetry admin access is not configured." });
+    return;
+  }
+  if (!validTelemetryAdminKey(req.header("x-admin-key"))) {
+    res.status(403).json({ error: "Valid telemetry admin key required." });
+    return;
+  }
+  const parsedDays = Number(req.query.days ?? 30);
+  const days = Number.isFinite(parsedDays) ? Math.max(1, Math.min(365, Math.floor(parsedDays))) : 30;
+  try {
+    res.json(await getProfileTelemetrySummary(getDatabase(), days));
+  } catch (error) {
+    res.status(500).json({ error: (error as Error).message });
   }
 });
 
