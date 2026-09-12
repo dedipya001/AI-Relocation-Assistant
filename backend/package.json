@@ -15,6 +15,7 @@
     "seed:multi-city": "tsx scripts/seedMultiCity.ts",
     "import-dataset": "tsx scripts/importMagicBricksDataset.ts",
     "scrape-housing": "tsx scripts/populatePropertyData.ts",
+    "scrape:multi-city": "tsx scripts/scrapeMultiCity.ts",
     "capture-housing-state": "tsx scripts/captureHousingStorageState.ts"
   },
   "dependencies": {
