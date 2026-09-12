@@ -1,0 +1,79 @@
+{
+  "version": "1.0.0",
+  "documents": [
+    {
+      "id": "kolkata-salt-lake-sector-v",
+      "locality": "Salt Lake / Sector V",
+      "city": "Kolkata",
+      "text": "Salt Lake Sector V is close to Kolkata's technology offices. Typical sample rent is around 22000 INR. Internet reliability is strong, safety is generally good, and Sector V metro access supports office commutes."
+    },
+    {
+      "id": "kolkata-new-town",
+      "locality": "New Town",
+      "city": "Kolkata",
+      "text": "New Town Kolkata offers newer apartments near Ecospace and major office parks. Sample rents are around 26000 INR. Safety and broadband availability are strong, while commute time to Sector V varies by road traffic."
+    },
+    {
+      "id": "bengaluru-whitefield",
+      "locality": "Whitefield",
+      "city": "Bengaluru",
+      "text": "Whitefield Bengaluru is a major technology corridor with metro connectivity. Internet availability is strong and the locality has broad rental supply. Peak-hour road commute can be slow and safety varies by micro-market."
+    },
+    {
+      "id": "pune-hinjewadi",
+      "locality": "Hinjewadi",
+      "city": "Pune",
+      "text": "Hinjewadi Pune is centered around Rajiv Gandhi Infotech Park. Rental options serve technology workers, broadband availability is generally good, and commute quality depends strongly on distance from the office phase and peak traffic."
+    },
+    {
+      "id": "data-quality-policy",
+      "locality": "Evidence policy",
+      "city": "Global",
+      "text": "Relocation answers must not invent missing rent, commute, safety, or internet facts. Conflicting or stale records should be disclosed and the answer should recommend verification instead of presenting uncertain information as current fact."
+    }
+  ],
+  "cases": [
+    {
+      "id": "budget-sector-v",
+      "question": "Which Kolkata locality near Sector V can fit a monthly budget around 25000 with strong internet?",
+      "expected_document_ids": ["kolkata-salt-lake-sector-v"],
+      "required_answer_terms": ["Salt Lake", "Sector V"],
+      "unsupported": false
+    },
+    {
+      "id": "office-commute-comparison",
+      "question": "Compare New Town and Salt Lake for commuting to Ecospace and Sector V offices.",
+      "expected_document_ids": ["kolkata-new-town", "kolkata-salt-lake-sector-v"],
+      "required_answer_terms": ["New Town", "Salt Lake"],
+      "unsupported": false
+    },
+    {
+      "id": "whitefield-safety-internet",
+      "question": "What does the evidence say about safety, internet and metro access in Whitefield Bengaluru?",
+      "expected_document_ids": ["bengaluru-whitefield"],
+      "required_answer_terms": ["Whitefield"],
+      "unsupported": false
+    },
+    {
+      "id": "hard-constraint-no-match",
+      "question": "Guarantee me a home with rent below 5000, a five minute commute, perfect safety and gigabit internet in every city.",
+      "expected_document_ids": ["data-quality-policy"],
+      "required_answer_terms": ["cannot verify"],
+      "unsupported": true
+    },
+    {
+      "id": "missing-data",
+      "question": "What is the exact current crime count and exact broadband uptime for Hinjewadi?",
+      "expected_document_ids": ["pune-hinjewadi", "data-quality-policy"],
+      "required_answer_terms": ["not available", "Hinjewadi"],
+      "unsupported": true
+    },
+    {
+      "id": "stale-conflict",
+      "question": "How should the assistant handle conflicting or stale locality information?",
+      "expected_document_ids": ["data-quality-policy"],
+      "required_answer_terms": ["verification"],
+      "unsupported": false
+    }
+  ]
+}
