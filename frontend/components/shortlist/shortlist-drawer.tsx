@@ -2,9 +2,10 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { Bookmark, Bell, Download, Link2, Search, Trash2, X } from "lucide-react";
+import { Bookmark, Bell, Download, Link2, Search, Smartphone, Trash2, X } from "lucide-react";
 import { buildDecisionShareUrl, useShortlistStore } from "@/store/shortlist-store";
 import { useSearchStore } from "@/store/search-store";
+import { useUserProfileStore } from "@/store/user-profile-store";
 import type { Property } from "@/types";
 import styles from "./shortlist-drawer.module.css";
 
@@ -56,11 +57,16 @@ export function ShortlistDrawer() {
   const savedSearches = useShortlistStore((state) => state.savedSearches);
   const priceAlerts = useShortlistStore((state) => state.priceAlerts);
   const drawerOpen = useShortlistStore((state) => state.drawerOpen);
-  const removeProperty = useShortlistStore((state) => state.removeProperty);
+  const removeLocalProperty = useShortlistStore((state) => state.removeProperty);
   const saveSearch = useShortlistStore((state) => state.saveSearch);
   const removeSearch = useShortlistStore((state) => state.removeSearch);
   const registerAlert = useShortlistStore((state) => state.registerAlert);
   const setDrawerOpen = useShortlistStore((state) => state.setDrawerOpen);
+
+  const authToken = useUserProfileStore((state) => state.authToken);
+  const userEmail = useUserProfileStore((state) => state.userEmail);
+  const requestLogin = useUserProfileStore((state) => state.requestLogin);
+  const removeSyncedProperty = useUserProfileStore((state) => state.removeProperty);
 
   const { query, selectedProfile, selectedCity, hardConstraints, setQuery, setCity, setSelectedProfile, setHardConstraints } = useSearchStore();
   const [alertFor, setAlertFor] = useState<string | null>(null);
@@ -96,6 +102,11 @@ export function ShortlistDrawer() {
     URL.revokeObjectURL(url);
   }
 
+  function removeProperty(propertyId:string){
+    removeLocalProperty(propertyId);
+    void removeSyncedProperty(propertyId);
+  }
+
   return (
     <>
       <button type="button" className={styles.fab} onClick={() => setDrawerOpen(true)} aria-label="Open shortlist">
@@ -107,7 +118,7 @@ export function ShortlistDrawer() {
       {drawerOpen && <button className={styles.backdrop} aria-label="Close shortlist" onClick={() => setDrawerOpen(false)} />}
       <aside className={`${styles.drawer} ${drawerOpen ? styles.open : ""}`} aria-hidden={!drawerOpen}>
         <div className={styles.header}>
-          <div><strong>Your relocation shortlist</strong><span>Saved locally on this browser</span></div>
+          <div><strong>Your relocation shortlist</strong><span>{authToken?`Synced to ${userEmail??"your account"}`:"Saved locally on this browser"}</span></div>
           <button type="button" onClick={() => setDrawerOpen(false)} aria-label="Close"><X size={17} /></button>
         </div>
 
@@ -120,6 +131,7 @@ export function ShortlistDrawer() {
         <div className={styles.toolbar}>
           <button type="button" disabled={!savedProperties.length} onClick={() => navigator.clipboard.writeText(shareUrl)}><Link2 size={13}/> Copy decision link</button>
           <button type="button" disabled={!savedProperties.length} onClick={downloadMarkdown}><Download size={13}/> Markdown brief</button>
+          <button type="button" onClick={()=>{if(!authToken)requestLogin("sync");}} disabled={Boolean(authToken)}><Smartphone size={13}/>{authToken?"Synced":"Sync to mobile"}</button>
           {savedProperties.length > 0 && <Link href={buildDecisionShareUrl({ properties: savedProperties, query, profile: selectedProfile, city: selectedCity, hardConstraints })}>Open / PDF</Link>}
         </div>
 
@@ -137,7 +149,7 @@ export function ShortlistDrawer() {
                 {dropped && <em>Price history shows a lower observed rent: {money(observed)}</em>}
               </div>
               <div className={styles.itemActions}>
-                <button type="button" title="Register price alert" onClick={() => setAlertFor(alertFor === property._id ? null : property._id)}><Bell size={13}/>{hasAlert ? "Alert set" : "Alert"}</button>
+                <button type="button" title="Register price alert" onClick={() => {if(!authToken){requestLogin("price_alert");return;}setAlertFor(alertFor === property._id ? null : property._id);}}><Bell size={13}/>{hasAlert ? "Alert set" : "Alert"}</button>
                 <button type="button" title="Remove" onClick={() => removeProperty(property._id)}><Trash2 size={13}/></button>
               </div>
               {alertFor === property._id && <div className={styles.alertForm}>
