@@ -39,8 +39,8 @@ type UserProfileState={
   setGuestProfile:(profile:GuestProfile)=>Promise<void>;
   selectRole:(role:QuickRole)=>Promise<void>;
   togglePriority:(priority:string)=>Promise<void>;
-  addGuestSavedProperty:(propertyId:string)=>void;
-  removeGuestSavedProperty:(propertyId:string)=>void;
+  saveProperty:(propertyId:string)=>Promise<void>;
+  removeProperty:(propertyId:string)=>Promise<void>;
   signupWithEmail:(email:string,password:string)=>Promise<void>;
   loginWithEmail:(email:string,password:string)=>Promise<void>;
   loginWithGoogleCredential:(credential:string)=>Promise<void>;
@@ -102,8 +102,16 @@ export const useUserProfileStore=create<UserProfileState>()(persist((set,get)=>(
     const personalization=await applyPersonalization(guestProfile);
     set({guestProfile,personalization,isDismissed:false});
   },
-  addGuestSavedProperty:(propertyId)=>set((state)=>({guestSavedProperties:state.guestSavedProperties.includes(propertyId)?state.guestSavedProperties:[...state.guestSavedProperties,propertyId]})),
-  removeGuestSavedProperty:(propertyId)=>set((state)=>({guestSavedProperties:state.guestSavedProperties.filter((item)=>item!==propertyId)})),
+  saveProperty:async(propertyId)=>{
+    const state=get();
+    if(state.authToken){await api.saveShortlistItem(state.authToken,propertyId);return;}
+    set({guestSavedProperties:state.guestSavedProperties.includes(propertyId)?state.guestSavedProperties:[...state.guestSavedProperties,propertyId]});
+  },
+  removeProperty:async(propertyId)=>{
+    const state=get();
+    if(state.authToken){await api.removeShortlistItem(state.authToken,propertyId).catch(()=>undefined);return;}
+    set({guestSavedProperties:state.guestSavedProperties.filter((item)=>item!==propertyId)});
+  },
   signupWithEmail:async(email,password)=>{
     set({authLoading:true,authError:undefined});
     try{
