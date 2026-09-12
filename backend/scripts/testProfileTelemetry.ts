@@ -3,6 +3,19 @@ import axios from "axios";
 const BASE_URL = process.env.API_URL || "http://localhost:8001";
 const ADMIN_KEY = process.env.TELEMETRY_ADMIN_KEY || "";
 
+function collectKeys(value: unknown, keys = new Set<string>()): Set<string> {
+  if (!value || typeof value !== "object") return keys;
+  if (Array.isArray(value)) {
+    for (const item of value) collectKeys(item, keys);
+    return keys;
+  }
+  for (const [key, child] of Object.entries(value as Record<string, unknown>)) {
+    keys.add(key.toLowerCase());
+    collectKeys(child, keys);
+  }
+  return keys;
+}
+
 async function main() {
   if (!ADMIN_KEY) throw new Error("TELEMETRY_ADMIN_KEY is required for telemetry integration tests.");
 
@@ -42,10 +55,10 @@ async function main() {
     throw new Error(`Privacy declaration missing or unsafe: ${JSON.stringify(data.privacy)}`);
   }
 
-  const serialized = JSON.stringify(data).toLowerCase();
-  if (serialized.includes("email") || serialized.includes("user_id") || serialized.includes("ip_address")) {
-    throw new Error("Telemetry response unexpectedly exposes an identifier field.");
-  }
+  const keys = collectKeys(data);
+  const forbiddenKeys = ["email", "user_id", "account_id", "ip", "ip_address", "profile", "profession"];
+  const leaked = forbiddenKeys.filter((key) => keys.has(key));
+  if (leaked.length) throw new Error(`Telemetry response exposes identifier/raw-profile fields: ${leaked.join(", ")}`);
 
   console.log(`✅ Profile telemetry aggregation passed (${data.total_profiles} aggregate profile event(s) in range).`);
 }
