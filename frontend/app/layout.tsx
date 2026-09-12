@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { AccountSyncModal } from "@/components/onboarding/account-sync-modal";
 import { ShortlistDrawer } from "@/components/shortlist/shortlist-drawer";
 import "mapbox-gl/dist/mapbox-gl.css";
 import "./globals.css";
@@ -17,6 +18,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body className={inter.className}>
         {children}
         <ShortlistDrawer />
+        <AccountSyncModal />
       </body>
     </html>
   );
