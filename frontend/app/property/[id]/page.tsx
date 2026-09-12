@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { Clock, IndianRupee, MapPin, ShieldCheck } from "lucide-react";
 import { Nav } from "@/components/nav";
+import { BookmarkButton } from "@/components/property/bookmark-button";
 import { Card } from "@/components/ui/card";
 import { api } from "@/lib/api";
 import { formatRent } from "@/lib/utils";
@@ -40,6 +41,7 @@ export default async function PropertyPage({ params }: { params: { id: string } 
                   Lowest price found online: {formatRent(property.lowest_price.rent)} on {property.lowest_price.source}
                 </p>
               )}
+              <BookmarkButton property={property} />
             </Card>
             <Metric icon={Clock} label="Commute" value={`${property.commute_estimate_minutes ?? "TBD"} min`} />
             <Metric icon={MapPin} label="Nearby metro" value={property.nearby_metro ?? "TBD"} />
