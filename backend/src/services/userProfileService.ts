@@ -1,3 +1,4 @@
+import { randomBytes } from "crypto";
 import { ObjectId, type Db } from "mongodb";
 import { config } from "../core/config.js";
 import type { ScoringProfile, ScoringWeights } from "../models/ai.js";
@@ -5,6 +6,7 @@ import {
   GuestProfileSchema,
   type GuestProfile,
   type ShortlistItemInput,
+  type ShortlistStatus,
   type StoredShortlistItem,
   type UserDocument,
 } from "../models/user.js";
@@ -32,8 +34,8 @@ function chooseProfile(profile: GuestProfile): ScoringProfile {
   const profession = profile.profession.toLowerCase();
   const priorities = normalizedText(profile.priority_amenities);
   if (/student|intern|trainee/.test(profession)) return "budget_saver";
-  if (/family|parent/.test(profession) || profile.age_group === "33-45") return "family_first";
   if (/software|developer|engineer|tech|it\b|data|product/.test(profession)) return "tech_professional";
+  if (/family|parent|homemaker/.test(profession)) return "family_first";
   if (/women safety|safety|security/.test(priorities)) return "safety_priority";
   if (/night|late/.test(priorities)) return "night_owl";
   return "balanced";
@@ -274,7 +276,7 @@ export async function updateShortlistItem(
   db: Db,
   user: Record<string, any>,
   propertyId: string,
-  patch: { notes?: string; status?: string }
+  patch: { notes?: string; status?: ShortlistStatus }
 ) {
   const existing: StoredShortlistItem[] = Array.isArray(user.shortlists) ? user.shortlists : [];
   const index = existing.findIndex((item) => item.property_id === propertyId);
@@ -283,7 +285,7 @@ export async function updateShortlistItem(
   next[index] = {
     ...next[index],
     ...(patch.notes !== undefined ? { notes: patch.notes } : {}),
-    ...(patch.status !== undefined ? { status: patch.status as any } : {}),
+    ...(patch.status !== undefined ? { status: patch.status } : {}),
     updated_at: new Date().toISOString(),
   };
   await db.collection("users").updateOne(
@@ -316,7 +318,7 @@ export async function hydrateShortlist(db: Db, shortlists: StoredShortlistItem[]
 export async function ensureShareToken(db: Db, user: Record<string, any>) {
   if (user.share_token) return String(user.share_token);
   for (let attempt = 0; attempt < 5; attempt += 1) {
-    const token = `sh-${Buffer.from(cryptoRandom(9)).toString("base64url")}`;
+    const token = `sh-${randomBytes(12).toString("base64url")}`;
     const exists = await db.collection("users").findOne({ share_token: token }, { projection: { _id: 1 } });
     if (exists) continue;
     await db.collection("users").updateOne(
@@ -326,11 +328,6 @@ export async function ensureShareToken(db: Db, user: Record<string, any>) {
     return token;
   }
   throw new Error("Unable to create a unique share link.");
-}
-
-function cryptoRandom(length: number) {
-  // Kept local to make share-token generation easy to audit separately from auth tokens.
-  return Object.freeze(Array.from({ length }, () => Math.floor(Math.random() * 256)));
 }
 
 export async function getSharedShortlist(db: Db, shareToken: string) {
