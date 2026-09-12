@@ -9,6 +9,7 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
     const payload = await response.json().catch(() => ({}));
     throw new Error(payload?.error || `API request failed: ${response.status}`);
   }
+  if (response.status === 204) return undefined as T;
   return response.json() as Promise<T>;
 }
 
@@ -43,4 +44,5 @@ export const api = {
   getMe: (token:string) => request<AuthResponse["user"]>("/users/me", { headers:bearer(token) }),
   updateMe: (token:string,payload:{profile?:Partial<GuestProfile>;weight_overrides?:Partial<ScoringWeights>}) => request<AuthResponse["user"]>("/users/me", { method:"PUT",headers:bearer(token),body:JSON.stringify(payload) }),
   saveShortlistItem: (token:string,propertyId:string) => request<{items:Array<Record<string,unknown>>;count:number}>("/users/shortlist", { method:"POST",headers:bearer(token),body:JSON.stringify({property_id:propertyId}) }),
+  removeShortlistItem: (token:string,propertyId:string) => request<void>(`/users/shortlist/${encodeURIComponent(propertyId)}`, { method:"DELETE",headers:bearer(token) }),
 };
