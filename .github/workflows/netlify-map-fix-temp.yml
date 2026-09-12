@@ -1,0 +1,62 @@
+name: Netlify Map Fix Preview
+
+on:
+  push:
+    branches: [dev]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout dev
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install frontend dependencies
+        run: npm --prefix frontend ci
+
+      - name: Build static frontend with Mapbox
+        env:
+          NETLIFY_STATIC_DEPLOY: "true"
+          NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN: "pk.eyJ1IjoiZGVkaXB5YTAwMSIsImEiOiJjbTU4ZjhjYXcxZTZ6MmtzMjg0dHd5NGpvIn0.Xvnpw6pW4Y__UpWn15Y6tA"
+          NEXT_PUBLIC_GOOGLE_CLIENT_ID: ""
+        run: npm --prefix frontend run build
+
+      - name: Deploy anonymously to Netlify
+        id: netlify
+        shell: bash
+        run: |
+          set -euo pipefail
+          npx -y netlify-cli@latest deploy \
+            --allow-anonymous \
+            --created-via cli \
+            --prod \
+            --dir frontend/out \
+            --no-build \
+            --json > /tmp/netlify-deploy.json
+          node <<'NODE'
+          const fs = require('fs');
+          const deploy = JSON.parse(fs.readFileSync('/tmp/netlify-deploy.json', 'utf8'));
+          const url = deploy.site_url || deploy.url || deploy.deploy_url || deploy.deployUrl || deploy.ssl_url;
+          if (!url) process.exit(1);
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `url=${url}\n`);
+          fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, `## Netlify map-fix preview\n\n${url}\n`);
+          console.log(`Netlify preview URL: ${url}`);
+          NODE
+
+      - name: Smoke-test homepage
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 5 --retry-delay 2 "${{ steps.netlify.outputs.url }}" > /tmp/home.html
+          grep -qi "AI Relocation\|Relocation AI\|relocation" /tmp/home.html
+          echo "Homepage smoke test passed: ${{ steps.netlify.outputs.url }}"
