@@ -55,6 +55,7 @@ export async function ensureIndexes(db: Db): Promise<void> {
     await db.collection("users").createIndex({ email: 1 }, { unique: true });
     await db.collection("users").createIndex({ google_sub: 1 }, { unique: true, sparse: true });
     await db.collection("users").createIndex({ share_token: 1 }, { unique: true, sparse: true });
+    await db.collection("profile_telemetry_daily").createIndex({ date: 1 }, { unique: true });
   } catch (error) {
     logger.warn({ error }, "ensure_indexes_warning");
   }

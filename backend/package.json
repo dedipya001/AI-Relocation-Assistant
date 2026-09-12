@@ -17,6 +17,7 @@
     "test:locality-compare-api": "tsx scripts/testLocalityComparisonApi.ts",
     "test:transit-lifestyle": "tsx scripts/testTransitLifestyle.ts",
     "test:transit-api": "tsx scripts/testTransitApi.ts",
+    "test:profile-telemetry": "tsx scripts/testProfileTelemetry.ts",
     "typecheck": "tsc --noEmit",
     "seed": "tsx scripts/seed.ts && tsx scripts/seedMultiCity.ts && tsx scripts/enrichTransitLifestyle.ts",
     "seed:multi-city": "tsx scripts/seedMultiCity.ts && tsx scripts/enrichTransitLifestyle.ts",
