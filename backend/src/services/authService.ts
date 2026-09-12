@@ -2,6 +2,8 @@ import axios from "axios";
 import { createHmac, randomBytes, scryptSync, timingSafeEqual } from "crypto";
 import { config } from "../core/config.js";
 
+const DEVELOPMENT_JWT_SECRET = "dev-only-change-me-please";
+
 export interface AccessTokenClaims {
   sub: string;
   email: string;
@@ -18,7 +20,14 @@ function encodeJson(value: unknown): string {
   return Buffer.from(JSON.stringify(value), "utf8").toString("base64url");
 }
 
+function assertJwtSecret(): void {
+  if (config.ENVIRONMENT === "production" && config.JWT_SECRET === DEVELOPMENT_JWT_SECRET) {
+    throw new Error("JWT_SECRET must be configured before using account authentication in production.");
+  }
+}
+
 function sign(input: string): string {
+  assertJwtSecret();
   return createHmac("sha256", config.JWT_SECRET).update(input).digest("base64url");
 }
 
