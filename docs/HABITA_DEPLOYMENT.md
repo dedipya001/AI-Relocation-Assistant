@@ -1,23 +1,22 @@
-# Habita AI frontend + backend deployment
+# Habita AI deployment: JSON-backed property data
 
-## Unified navigation
-- Landing page: `/`, with `/landing` retained as an alias.
-- Existing interactive dashboard: `/app`.
-- Existing routes: `/search`, `/assistant`, `/compare`, `/locality/[id]`, `/property/[id]`, `/shortlist` etc.
-- Marketing launch buttons now point to `/app`; shared application navigation links back to the landing page.
+## Site routes
+- `/` — Habita AI landing page
+- `/app` — interactive relocation dashboard
+- `/search`, `/compare`, `/assistant` — existing product pages
 
-## Separate Vercel projects
-1. `habita-ai`: **Next.js** frontend from repository root directory `frontend`. Its public production URL is `https://habita-ai.vercel.app`.
-2. `ai-relocation-assistant`: existing **Express** backend from `backend`. Do not point browser landing pages at this project.
-3. The Next.js rewrite in `frontend/next.config.mjs` proxies `/api/v1/*` to `BACKEND_URL`. The browser should use same-origin `/api/v1` via `NEXT_PUBLIC_API_URL`. Never ship localhost URLs for production APIs.
+## Read-only data (no MongoDB required)
+The Next.js project **habita-ai** runs from the `frontend` root directory on Vercel. Its `/api/v1/properties`, `/api/v1/localities`, `/api/v1/search`, and `/api/v1/recommendations/*` endpoints read versioned JSON property snapshots included in `frontend/data`. They are copied from the repository's `datasetJson` snapshots for Kolkata, Bengaluru, Mumbai, and Pune.
 
-## Backend requires external services
-Vercel serverless does not run a MongoDB instance at `127.0.0.1:27017`. At the time of this change, calling `/api/v1/localities` returned HTTP 500 and `connect ECONNREFUSED 127.0.0.1:27017`. Set the actual **backend** environment database connection string to an existing reachable managed MongoDB deployment, verify network access, and redeploy backend. Redis-backed functionality may also require external Redis.
+No MongoDB or Redis connection is needed for those Next.js routes. The underlying data are **dated snapshots**, not guaranteed live listings. Some locality demo scores are bundled for demonstration; unknown scores should not be interpreted as measured or verified.
 
-Do not put database credentials in Git. Frontend includes demo property/search/locality fallbacks, but this does **not** restore authentication, persistence, AI assistant, or other live API functionality.
+The older Express backend project is still separate. Routes for user accounts, user shortlist persistence, community submissions, and advanced conversational AI may continue to depend on that backend and its runtime services. These capabilities are **not** automatically converted to JSON-backed operation.
 
-## Validation
-1. Run `npm --prefix frontend run typecheck && npm --prefix frontend run build`.
-2. Verify `/`, `/app`, `/search`, `/assistant`, `/compare` return pages.
-3. Exercise the full user journey: landing → Explore → search → map → compare → assistant.
-4. Verify `/api/v1/localities` returns 200 before calling real-data features operational.
+## Validate
+Run `npm --prefix frontend run typecheck && npm --prefix frontend run build` and verify:
+- GET `/api/v1/properties` returns a JSON array of properties
+- GET `/api/v1/localities` returns a JSON array
+- POST `/api/v1/search` with `{"query":"Kolkata budget 15000"}` returns ranked results
+- Landing → `/app` → `/search` works
+
+To refresh snapshot data, update the checked-in source JSON and synchronized `frontend/data` copies and redeploy; do not assume updates are automatic.
