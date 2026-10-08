@@ -4,7 +4,7 @@ import { MapPin } from "lucide-react";
 import { useSearchStore, type SupportedCity } from "@/store/search-store";
 import styles from "./city-switcher.module.css";
 
-const CITIES:SupportedCity[]=["Kolkata","Bengaluru","Pune","Hyderabad"];
+const CITIES:SupportedCity[]=["Kolkata","Bengaluru","Pune","Mumbai"];
 
 export function CitySwitcher({ compact=false }:{compact?:boolean}){
   const selectedCity=useSearchStore((state)=>state.selectedCity);const setCity=useSearchStore((state)=>state.setCity);
