@@ -1,4 +1,17 @@
-# 🌆 AI Relocation Intelligence
+# Habita AI — Find where you belong
+
+**An open-source, early-stage AI relocation intelligence platform.** Compare homes and neighborhoods by commute, affordability, safety, internet access, and lifestyle fit with explainable recommendations.
+
+- **Landing page:** `/landing` (after deploying the Next.js frontend)
+- **Application:** `/` (existing search experience preserved)
+- **Deployment guide:** [Habita AI deployment](docs/HABITA_DEPLOYMENT.md)
+- **Contribute:** [GitHub issues](https://github.com/dedipya001/AI-Relocation-Assistant/issues)
+
+> Habita AI is being developed as an open-source product with potential hosted cloud offerings. Production SaaS availability and a custom domain are not implied.
+
+---
+
+## Technical documentation (formerly AI Relocation Intelligence)
 
 <p align="center">
   <strong>An AI-powered multi-factor decision & recommendation platform for choosing where to live near work.</strong>
