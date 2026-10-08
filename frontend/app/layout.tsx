@@ -8,8 +8,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Relocation Intelligence",
-  description: "AI-powered locality, commute, and rental intelligence."
+  title: "Habita AI | Relocation Intelligence",
+  description: "Habita AI: open-source relocation intelligence for smarter home and neighborhood decisions."
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
