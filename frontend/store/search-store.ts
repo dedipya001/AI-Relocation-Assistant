@@ -5,13 +5,13 @@ import { persist } from "zustand/middleware";
 import { api } from "@/lib/api";
 import type { HardConstraints, ScoringProfile, ScoringWeights, SearchResponse } from "@/types";
 
-export type SupportedCity = "Kolkata" | "Bengaluru" | "Pune" | "Hyderabad";
-export const SUPPORTED_CITIES: SupportedCity[] = ["Kolkata", "Bengaluru", "Pune", "Hyderabad"];
+export type SupportedCity = "Kolkata" | "Bengaluru" | "Pune" | "Mumbai";
+export const SUPPORTED_CITIES: SupportedCity[] = ["Kolkata", "Bengaluru", "Pune", "Mumbai"];
 const DEFAULT_QUERIES:Record<SupportedCity,string>={
   Kolkata:"I work in Sector V Kolkata, budget is 15k, need peaceful place, fast internet, good food nearby.",
   Bengaluru:"I work in Bengaluru, budget is 25k, need a reliable commute to a tech park and fast internet.",
   Pune:"I work near Hinjewadi Pune, budget is 22k, want metro or bus access and a calm neighborhood.",
-  Hyderabad:"I work near Hitec City Hyderabad, budget is 25k, need safe housing with reliable internet and short commute.",
+  Mumbai:"I work in Mumbai, budget is 30k, need an affordable home with a reliable commute.",
 };
 
 function supportedCity(value:string):SupportedCity|undefined {
