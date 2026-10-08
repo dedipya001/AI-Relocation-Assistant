@@ -2,12 +2,12 @@
 
 **An open-source, early-stage AI relocation intelligence platform.** Compare homes and neighborhoods by commute, affordability, safety, internet access, and lifestyle fit with explainable recommendations.
 
-- **Landing page:** `/landing` (after deploying the Next.js frontend)
-- **Application:** `/` (existing search experience preserved)
+- **Landing page:** `/` (also available at `/landing`) (after deploying the Next.js frontend)
+- **Application:** `/app` (original interactive dashboard), plus `/search`, `/assistant`, `/compare` and existing feature routes
 - **Deployment guide:** [Habita AI deployment](docs/HABITA_DEPLOYMENT.md)
 - **Contribute:** [GitHub issues](https://github.com/dedipya001/AI-Relocation-Assistant/issues)
 
-> Habita AI is being developed as an open-source product with potential hosted cloud offerings. Production SaaS availability and a custom domain are not implied.
+> Live-data and account features require a reachable production MongoDB connection in the backend; demo fallbacks in the frontend do not replace live services.\n\n> Habita AI is being developed as an open-source product with potential hosted cloud offerings. Production SaaS availability and a custom domain are not implied.
 
 ---
 
@@ -34,7 +34,7 @@
 
 Finding a rental home is usually treated as a keyword or listing-filter search. In reality, relocating involves balancing **rent, commute time, safety, internet reliability, food access, and lifestyle fit** under personal constraints.
 
-**AI Relocation Intelligence** turns this multi-factor challenge into a guided, explainable decision platform. Users can search naturally, filter by pre-tuned relocation personas, inspect composite score breakdowns with full mathematical transparency, and explore interactive property maps across major Indian tech corridors.
+**Habita AI** turns this multi-factor challenge into a guided, explainable decision platform. Users can search naturally, filter by pre-tuned relocation personas, inspect composite score breakdowns with full mathematical transparency, and explore interactive property maps across major Indian tech corridors.
 
 ---
 

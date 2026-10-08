@@ -29,7 +29,7 @@ export function AIPanel({ properties, activeIndex, onSelect }: AIPanelProps) {
   return (
     <aside className={styles.panel}>
       <div className={styles.header}>
-        <div className={styles.brand}><div className={styles.brandMark}><Sparkles size={13} /></div><span className={styles.brandText}>Relocation AI</span></div>
+        <div className={styles.brand}><div className={styles.brandMark}><Sparkles size={13} /></div><span className={styles.brandText}>Habita AI</span></div>
         <SearchBox compact />
       </div>
       <PersonaSelector />

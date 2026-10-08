@@ -1,23 +1,23 @@
-# Habita AI landing page deployment
+# Habita AI frontend + backend deployment
 
-The public marketing page is at `/landing` and the existing application stays at `/`. This is intentional: the search, maps, user onboarding, assistant, and other app routes remain untouched.
+## Unified navigation
+- Landing page: `/`, with `/landing` retained as an alias.
+- Existing interactive dashboard: `/app`.
+- Existing routes: `/search`, `/assistant`, `/compare`, `/locality/[id]`, `/property/[id]`, `/shortlist` etc.
+- Marketing launch buttons now point to `/app`; shared application navigation links back to the landing page.
 
-## Netlify (existing configuration)
+## Separate Vercel projects
+1. `habita-ai`: **Next.js** frontend from repository root directory `frontend`. Its public production URL is `https://habita-ai.vercel.app`.
+2. `ai-relocation-assistant`: existing **Express** backend from `backend`. Do not point browser landing pages at this project.
+3. The Next.js rewrite in `frontend/next.config.mjs` proxies `/api/v1/*` to `BACKEND_URL`. The browser should use same-origin `/api/v1` via `NEXT_PUBLIC_API_URL`. Never ship localhost URLs for production APIs.
 
-1. Import `dedipya001/AI-Relocation-Assistant` into Netlify (or use the existing linked site).
-2. Keep the checked-in `netlify.toml` settings: base `frontend`, build `npm run build`, publish `.next`, Node.js 22. Use Netlify's current Next.js runtime/integration.
-3. Set any required environment variables in Netlify's project settings, **not** in Git. Set application API/server URLs and provider keys as appropriate; never expose private credentials through `NEXT_PUBLIC_*`.
-4. Deploy `main` and visit `https://<your-netlify-domain>/landing`. Check `/`, `/search` and other app routes as well.
-5. To use a custom domain, add it in Netlify's Domain management and follow its DNS verification instructions. No domain or deploy is provisioned by this commit.
+## Backend requires external services
+Vercel serverless does not run a MongoDB instance at `127.0.0.1:27017`. At the time of this change, calling `/api/v1/localities` returned HTTP 500 and `connect ECONNREFUSED 127.0.0.1:27017`. Set the actual **backend** environment database connection string to an existing reachable managed MongoDB deployment, verify network access, and redeploy backend. Redis-backed functionality may also require external Redis.
 
-This repository also has production Vercel integration work. If deploying the whole app via Vercel instead, use its existing project configuration, deploy the Next.js frontend, and verify the `/landing` route at the resulting hostname. Server APIs, databases and authentication require their own configured environments.
+Do not put database credentials in Git. Frontend includes demo property/search/locality fallbacks, but this does **not** restore authentication, persistence, AI assistant, or other live API functionality.
 
-## Smoke checks
-
-```bash
-npm --prefix frontend ci
-npm --prefix frontend run typecheck
-npm --prefix frontend run build
-```
-
-Visit `/landing` and check its app/GitHub links, mobile layout, `/`, `/search`, and `/assistant`. Marketing copy describes current repository capabilities and makes no claim that production SaaS hosting is already available.
+## Validation
+1. Run `npm --prefix frontend run typecheck && npm --prefix frontend run build`.
+2. Verify `/`, `/app`, `/search`, `/assistant`, `/compare` return pages.
+3. Exercise the full user journey: landing → Explore → search → map → compare → assistant.
+4. Verify `/api/v1/localities` returns 200 before calling real-data features operational.

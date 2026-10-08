@@ -9,7 +9,7 @@ export default function AssistantPage() {
       <Nav />
       <main className={styles.main}>
         <section>
-          <h1 className={styles.title}>Conversational relocation assistant</h1>
+          <h1 className={styles.title}>Habita AI relocation assistant</h1>
           <p className={styles.copy}>
             Ask about office proximity, late-night commute, locality tradeoffs, negotiated rents, and internet reliability.
           </p>

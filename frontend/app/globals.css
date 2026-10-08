@@ -14,9 +14,9 @@
   /* Pure card surface */
   --surface:     0 0% 100%;
   /* Indigo-blue brand */
-  --primary:     228 72% 58%;
+  --primary:     157 50% 31%;
   /* Warm amber highlight */
-  --accent:      25 90% 58%;
+  --accent:      146 65% 56%;
   /* Soft green positive */
   --positive:    160 55% 38%;
 }
@@ -88,7 +88,7 @@ img {
   width: 1.3rem;
   height: 1.3rem;
   border-radius: 50%;
-  background: hsl(228 72% 58%);
+  background: hsl(157 50% 31%);
   color: white;
   font-size: 0.62rem;
   font-weight: 800;
@@ -129,6 +129,6 @@ img {
 
 .relo-popup-tag-commute {
   background: hsl(228 72% 58% / 0.12);
-  color: hsl(228 72% 45%);
+  color: hsl(157 50% 31%);
 }
 
