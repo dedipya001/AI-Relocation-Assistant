@@ -7,7 +7,7 @@
 - **Deployment guide:** [Habita AI deployment](docs/HABITA_DEPLOYMENT.md)
 - **Contribute:** [GitHub issues](https://github.com/dedipya001/AI-Relocation-Assistant/issues)
 
-> Live-data and account features require a reachable production MongoDB connection in the backend; demo fallbacks in the frontend do not replace live services.\n\n> Habita AI is being developed as an open-source product with potential hosted cloud offerings. Production SaaS availability and a custom domain are not implied.
+> Property browsing, locality reads and basic recommendation endpoints run from versioned city JSON snapshots inside the Next.js deployment, without MongoDB. User account persistence, community submissions and advanced AI chat still depend on separately configured backend services. The JSON listings are dated snapshots, not real-time availability.\n\n> Habita AI is being developed as an open-source product with potential hosted cloud offerings. Production SaaS availability and a custom domain are not implied.
 
 ---
 
