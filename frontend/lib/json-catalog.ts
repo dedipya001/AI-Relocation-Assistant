@@ -7,10 +7,10 @@ import { demoLocalities } from "@/lib/demo-data";
 
 type SourceProperty = Partial<Property> & { dedupe_key?: string };
 const raw: Record<string, SourceProperty[]> = {
-  Kolkata: kolkata as SourceProperty[],
-  Bengaluru: bangalore as SourceProperty[],
-  Mumbai: mumbai as SourceProperty[],
-  Pune: pune as SourceProperty[],
+  Kolkata: kolkata as unknown as SourceProperty[],
+  Bengaluru: bangalore as unknown as SourceProperty[],
+  Mumbai: mumbai as unknown as SourceProperty[],
+  Pune: pune as unknown as SourceProperty[],
 };
 export const cityNames = Object.keys(raw);
 const catalog: Property[] = Object.entries(raw).flatMap(([city, entries]) => entries.map((entry, index) => ({
