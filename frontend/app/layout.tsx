@@ -8,7 +8,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Habita AI | Relocation Intelligence",
+  title: "Habita AI | Find where you belong",
   description: "Habita AI: open-source relocation intelligence for smarter home and neighborhood decisions."
 };
 
